@@ -1,0 +1,78 @@
+repositoryUrl: https://github.com/dynamsoft-docs/capture-vision-docs-server/blob/main
+repository: dynamsoft-docs/capture-vision-docs-server
+docFullPath: https://www.dynamsoft.com/capture-vision-router/docs/server/
+
+useVersionTree: true
+
+enumerations: /capture-vision-router/docs/core/enums/
+
+cpp: /capture-vision-router/docs/server/programming/cplusplus/
+cpp_api: /capture-vision-router/docs/server/programming/cplusplus/api-reference/
+
+dotnet: /capture-vision-router/docs/server/programming/dotnet/
+dotnet_api: /capture-vision-router/docs/server/programming/dotnet/api-reference/
+
+java: /capture-vision-router/docs/server/programming/java/
+java_api: /capture-vision-router/docs/server/programming/java/api-reference/
+
+python: /capture-vision-router/docs/server/programming/python/
+python_api: /capture-vision-router/docs/server/programming/python/api-reference/
+
+parameters_reference: /capture-vision-router/docs/core/parameters/reference/
+
+baseurl: "/capture-vision-router/docs/server"
+plugins:
+  - jemoji
+
+edition: desktop
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      category: "original-repo"
+      edition: "algorithm"
+  - scope:
+      path: "programming/javascript"
+    values:
+      category: "js-repo"
+      edition: "js"
+  - scope:
+      path: "programming/android"
+    values:
+      category: "mobile-repo"
+      edition: "mobile"
+  - scope:
+      path: "programming/objectivec-swift"
+    values:
+      category: "mobile-repo"
+      edition: "mobile"
+  - scope:
+      path: "programming/cplusplus"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+  - scope:
+      path: "programming/dotnet"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+  - scope:
+      path: "programming/python"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+  - scope:
+      path: "programming/java"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+  - scope:
+      path: ""
+    values:
+      layout: "default-layout"
+      noTitleIndex: true
+      needAutoGenerateSidebar: true
+      needGenerateH3Content: true
+
+url: "https://www.dynamsoft.com" # sitemap root
