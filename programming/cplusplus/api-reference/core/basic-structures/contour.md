@@ -8,8 +8,47 @@ needAutoGenerateSidebar: true
 
 # CContour
 
-[Given a short description about the class]
+The CContour class represents a contour in 2D space. It contains an array of CPoint objects, which represent the vertices of the contour.
 
 ```cpp
 class dynamsoft::core::basic_structures::CContour 
+```
+
+---
+
+## Attributes Summary
+  
+| Attribute | Type |
+|---------- | ---- |
+| [`pointsCount`](#pointscount) | *int* |
+| [`points`](#points)| *CPoint\** |
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`~CContour`](#ccontour-destructor) | The destructor of CContour. |
+
+### pointsCount
+
+The number of points in the contour.
+
+```cpp
+int pointsCount
+```
+
+### points
+
+The point array of the contour. The memory will be released by CContour.
+
+```cpp
+CPoint* points
+```
+
+### ~CContour Destructor
+
+The destructor of CContour. It releases the memory of the point array.
+
+```cpp
+~CContour()
 ```
