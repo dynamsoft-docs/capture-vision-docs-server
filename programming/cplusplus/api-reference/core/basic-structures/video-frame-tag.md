@@ -108,7 +108,7 @@ CVideoFrameTag(VideoFrameQuality quality, bool isCropped, const CRect* cropRegio
 
 `[in] originalHeight` The original height of the video frame.
 
-### ~CVideoFrameTag Destructor
+### CVideoFrameTag Destructor
 
 The destructor of the CVideoFrameTag class.
 
