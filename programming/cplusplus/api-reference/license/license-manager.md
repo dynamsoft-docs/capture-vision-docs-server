@@ -99,7 +99,7 @@ static int GetDeviceUUID(int uuidGenerationMethod, char uuidBuffer[] , const int
 
 `[in] uuidGenerationMethod` The method to generate the UUID.
 
-`[out] uuidBuffer` The buffer to store the UUID.
+`[in, out] uuidBuffer` The buffer to store the UUID.
 
 `[in] uuidBufferLen` The length of the UUID buffer. It is recommended to be greater than 36.
 
