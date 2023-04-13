@@ -5,7 +5,11 @@ firstLevelUrl: /capture-vision/docs/server
 
 useVersionTree: true
 
-enumerations: /capture-vision/docs/core/enums/
+introduction: /capture-vision2/docs/introduction/
+architecture: /capture-vision2/docs/architecture/
+parameter: /capture-vision2/docs/parameters/
+enums: /capture-vision2/docs/enums/
+
 
 cpp: /capture-vision/docs/server/programming/cplusplus/
 cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
