@@ -20,16 +20,16 @@ class dynamsoft::core::basic_structures::CCapturedResult
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetSourceImageHashId`](#getsourceimagehashid) | It is used to get the hash ID of the source image.|
-| [`GetSourceImageTag`](#getsourceimagetag) | It is used to get the tag of the source image.|
-| [`GetCount`](#getcount) | It is used to get the number of items in the captured result.|
-| [`GetItem`](#getitem) | It is used to get a specific item in the captured result.|
-| [`GetErrorCode`](#geterrorcode) | It is used to get the error code of the capture operation.|
-| [`GetErrorString`](#geterrorstring) | It is used to get the error message of the capture operation.|
+| [`GetSourceImageHashId`](#getsourceimagehashid) | Gets the hash ID of the source image.|
+| [`GetSourceImageTag`](#getsourceimagetag) | Gets the tag of the source image.|
+| [`GetCount`](#getcount) | Gets the number of items in the captured result.|
+| [`GetItem`](#getitem) | Gets a specific item in the captured result.|
+| [`GetErrorCode`](#geterrorcode) | Gets the error code of the capture operation.|
+| [`GetErrorString`](#geterrorstring) | Gets the error message of the capture operation.|
 
 ### GetSourceImageHashId
 
-It is used to get the hash ID of the source image.
+Gets the hash ID of the source image.
 
 ```cpp
 const char* GetSourceImageHashId() const
@@ -41,7 +41,7 @@ Returns the hash ID of the source image as a null-terminated string. You are not
 
 ### GetSourceImageTag
 
-It is used to get the tag of the source image.
+Gets the tag of the source image.
 
 ```cpp
 const CImageTag* GetSourceImageTag() const
@@ -53,7 +53,7 @@ Returns a pointer to the CImageTag object containing the tag of the source image
 
 ### GetCount
 
-It is used to get the number of items in the captured result.
+Gets the number of items in the captured result.
 
 ```cpp
 int GetCount() const
@@ -65,7 +65,7 @@ Returns the number of items in the captured result.
 
 ### GetItem
 
-It is used to get a specific item in the captured result.
+Gets a specific item in the captured result.
 
 ```cpp
 const CCapturedResultItem* GetItem(int index) const
@@ -81,7 +81,7 @@ Returns a pointer to the CCapturedResultItem object at the specified index.
 
 ### GetErrorCode
 
-It is used to get the error code of the capture operation.
+Gets the error code of the capture operation.
 
 ```cpp
 int GetErrorCode() const
@@ -93,7 +93,7 @@ Returns the error code of the capture operation.
 
 ### GetErrorString
 
-It is used to get the error message of the capture operation.
+Gets the error message of the capture operation.
 
 ```cpp
 const char* GetErrorString() const

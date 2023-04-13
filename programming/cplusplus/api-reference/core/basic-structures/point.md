@@ -26,7 +26,7 @@ class dynamsoft::core::basic_structures::CPoint
 
 | Method               | Description |
 |----------------------|-------------|
-| [`TransformCoordinates`](#transformcoordinates) | It is used to transform the coordinates of a point using a given transformation matrix. |
+| [`TransformCoordinates`](#transformcoordinates) | Transforms the coordinates of a point using a given transformation matrix. |
 
 ### coordinate
 
@@ -38,7 +38,7 @@ int coordinate[2]
 
 ### TransformCoordinates
 
-It is used to transform the coordinates of a point using a given transformation matrix.
+Transforms the coordinates of a point using a given transformation matrix.
 
 ```cpp
 static CPoint TransformCoordinates(CPoint originalPoint, double transformationMatrix[9])

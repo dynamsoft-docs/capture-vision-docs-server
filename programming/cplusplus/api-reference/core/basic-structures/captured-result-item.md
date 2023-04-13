@@ -21,8 +21,8 @@ class dynamsoft::core::basic_structures::CCapturedResultItem
 | Method                         | Description|
 |--------------------------------|------------|
 | [`~CCapturedResultItem`](#ccapturedresultitem-destructor) | This is the class destructor.                                                                                                |
-| [`GetType`](#gettype)              | It is used to get the type of the captured result item.                                                                                                       |
-| [`GetReferencedItem`](#getreferenceditem)    | It is used to get a pointer to the referenced item in the captured result.                                                                                      |
+| [`GetType`](#gettype)              | Gets the type of the captured result item.                                                                                                       |
+| [`GetReferencedItem`](#getreferenceditem)    | Gets a pointer to the referenced item in the captured result.                                                                                      |
 
 ### CCapturedResultItem Destructor
 
@@ -34,7 +34,7 @@ virtual ~CCapturedResultItem(){};
 
 ### GetType
 
-It is used to get the type of the captured result item.
+Gets the type of the captured result item.
 
 ```cpp
 virtual CapturedResultItemType GetType() const
@@ -46,7 +46,7 @@ Returns the type of the captured result item.
 
 ### GetReferencedItem
 
-It is used to get a pointer to the referenced item in the captured result item.
+Gets a pointer to the referenced item in the captured result item.
 
 ```cpp
 virtual const CCapturedResultItem* GetReferencedItem() const

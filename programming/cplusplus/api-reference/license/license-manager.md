@@ -8,35 +8,44 @@ needAutoGenerateSidebar: true
 
 # CLicenseManager
 
-[Given a short description about the class]
+The CLicenseManager class provides a set of APIs to manage SDK licensing.
 
 ```cpp
 class dynamsoft::license::CLicenseManager 
 ```
 
-| Method | Description |
-|--------|-------------|
-| [`InitLicense`](#initlicense) | Sets the license key and activates the SDK.|
+---
 
-## InitLicense
+## Methods Summary
 
-Sets the license key and activates the SDK.
+| Method               | Description |
+|----------------------|-------------|
+| [`InitLicense`](#initlicense) | It is used to initialize the license using a license key. |
+| [`SetDeviceFriendlyName`](#setdevicefriendlyname) | It is used to set the friendly name of the device. |
+| [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | It is used to set the maximum number of allowed instances for the given device and process. |
+| [`GetDeviceUUID`](#getdeviceuuid) | It is used to get the unique identifier of the device. |
+| [`SetLicenseCachePath`](#setlicensecachepath) | It is used to set the directory path for the license cache. |
+| [`GetVersion`](#getversion) | It is used to get the version of the licensing library. |
+
+### InitLicense
+
+It is used to initialize the license using a license key.
 
 ```cpp
-static int InitLicense(const char *license, char errorMsgBuffer[], const int errorMsgBufferLen) 
+static int InitLicense(const char* pLicense, char errorMsgBuffer[] = NULL, const int errorMsgBufferLen = 0)
 ```
 
 **Parameters**
 
-`[in] pLicense` The license key.
+`[in] pLicense` The license key as a string.
 
-`[in, out] errorMsgBuffer` The buffer is allocated by caller and the recommended length is 256. The error message will be copied to the buffer.
+`[in, out] errorMsgBuffer` The buffer is allocated by caller and the recommended length is 256. The error message will be copied to the buffer. It can be set to NULL if error messages are not required.
 
-`[in] errorMsgBufferLen` The length of the allocated buffer.
+`[in] errorMsgBufferLen` The length of the error message buffer. It is ignored if errorMsgBuffer is set to NULL.
 
-**Return Value**
+**Return value**
 
-Returns error code (returns 0 if the function operates successfully).
+Returns 0 if the license is initialized successfully, a negative value indicating an error otherwise.
 
 **Code Snippet**
 
@@ -47,3 +56,81 @@ errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 if (errorCode != EC_OK)
     cout << szErrorMsg << endl;
 ```
+
+### SetDeviceFriendlyName
+
+It is used to set the friendly name of the device.
+
+```cpp
+static int SetDeviceFriendlyName(const char* name)
+```
+
+**Parameters**
+
+`[in] name` The friendly name of the device.
+
+**Return value**
+
+Returns 0 if the friendly name is set successfully, a negative value indicating an error otherwise.
+
+### SetMaxConcurrentInstanceCount
+
+It is used to set the maximum number of allowed instances for the given device and process.
+
+```cpp
+static void SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
+```
+
+**Parameters**
+
+`[in] countForThisDevice` The maximum number of allowed instances for the device.
+
+`[in] countForThisProcess` The maximum number of allowed instances for the process. It is optional and set to 0 by default.
+
+### GetDeviceUUID
+
+It is used to get the unique identifier of the device.
+
+```cpp
+static int GetDeviceUUID(int uuidGenerationMethod, char uuidBuffer[] , const int uuidBufferLen)
+```
+
+**Parameters**
+
+`[in] uuidGenerationMethod` The method to generate the UUID.
+
+`[out] uuidBuffer` The buffer to store the UUID.
+
+`[in] uuidBufferLen` The length of the UUID buffer. It is recommended to be greater than 36.
+
+**Return value**
+
+Returns 0 if the UUID is generated successfully, a negative value indicating an error otherwise.
+
+### SetLicenseCachePath
+
+It is used to set the directory path for the license cache.
+
+```cpp
+static int SetLicenseCachePath(const char* directoryPath)
+```
+
+**Parameters**
+
+`[in] directoryPath` The directory path for the license cache.
+
+**Return value**
+
+Returns 0 if the directory path is set successfully, a negative value indicating an error otherwise.
+
+### GetVersion
+
+It is used to get the version of the licensing library.
+
+```cpp
+static const char* GetVersion()
+```
+
+**Return value**
+
+Returns the version of the licensing library as a string.

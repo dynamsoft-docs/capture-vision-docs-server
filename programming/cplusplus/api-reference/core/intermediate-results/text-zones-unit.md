@@ -8,8 +8,49 @@ needAutoGenerateSidebar: true
 
 # CTextZonesUnit
 
-[Given a short description about the class]
+The CTextZonesUnit class represents a unit that contains text zones. It is derived from CIntermediateResultUnit class and provides methods to retrieve the count and details of text zones.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CTextZonesUnit 
+class dynamsoft::core::intermediate_results::CTextZonesUnit : public CIntermediateResultUnit
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetCount`](#getcount) | Gets the number of text zones.|
+| [`GetTextZone`](#gettextzone) | Gets the quadrilateral shape of the text zone at the specified index.|
+
+### GetCount
+
+Gets the number of text zones in the unit.
+
+```cpp
+virtual int GetCount() const
+```
+
+**Return value**
+
+Returns the number of text zones in the unit.
+
+### GetTextZone
+
+Gets the quadrilateral shape of the text zone at the specified index.
+
+```cpp
+virtual int GetTextZone(int index, CQuadrilateral* quad) const
+```
+
+**Parameters**
+
+`[in] index` The index of the text zone.
+
+`[in, out] quad` A pointer to a CQuadrilateral object to receive the quadrilateral shape of the text zone.
+
+**Return value**
+
+Returns 0 if the operation succeeds, or a nonzero error code if the operation fails.
+
+Note: The caller of this method is responsible for allocating memory for the `quad` pointer.

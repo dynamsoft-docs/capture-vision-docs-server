@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CPDFReadingParameter
 
-The CPDFReadingParameter class represents the parameters for reading a PDF file. It contains the mode of PDF reading, the DPI (dots per inch) value, and the target type.
+The CPDFReadingParameter class represents the parameters for reading a PDF file. It contains the mode of PDF reading, the DPI (dots per inch) value, and the tarGetstype.
 
 ```cpp
 class dynamsoft::core::basic_structures::CPDFReadingParameter 
@@ -42,7 +42,7 @@ int dpi
 
 ### type
 
-The target type.
+The tarGetstype.
 
 ```cpp
 TargetType type

@@ -23,15 +23,15 @@ class dynamsoft::core::basic_structures::CImageData
 | [`CImageData()`](#cimagedata-constructor) | Constructs an empty image data object. |
 | [`CImageData(int _bytesLength, const unsigned char* _bytes, int _width, int _height, int _stride, ImagePixelFormat _format, int _orientation=0, const CImageTag* _tag = NULL)`](#cimagedata-constructor2) | Constructs an image data object with the specified parameters. |
 | [`~CImageData()`](#cimagedata-destructor) | Destructs the image data object and frees the allocated memory. |
-| [`GetBytes`](#getbytes) | It is used to get the image byte array. |
-| [`GetBytesLength`](#getbyteslength) | It is used to get the length of the image byte array. |
-| [`GetWidth`](#getwidth) | It is used to get the width of the image. |
-| [`GetHeight`](#getheight) | It is used to get the height of the image. |
-| [`GetStride`](#getstride) | It is used to get the stride of the image. |
-| [`GetImagePixelFormat`](#getimagepixelformat) | It is used to get the pixel format of the image. |
-| [`GetOrientation`](#getorientation) | It is used to get the orientation of the image. |
-| [`GetImageTag`](#getimagetag) | It is used to get the tag of the image. |
-| [`SetImageTag`](#setimagetag) | It is used to set the tag of the image. |
+| [`GetBytes`](#getbytes) | Gets the image byte array. |
+| [`GetBytesLength`](#getbyteslength) | Gets the length of the image byte array. |
+| [`GetWidth`](#getwidth) | Gets the width of the image. |
+| [`GetHeight`](#getheight) | Gets the height of the image. |
+| [`GetStride`](#getstride) | Gets the stride of the image. |
+| [`GetImagePixelFormat`](#getimagepixelformat) | Gets the pixel format of the image. |
+| [`GetOrientation`](#getorientation) | Gets the orientation of the image. |
+| [`GetImageTag`](#getimagetag) | Gets the tag of the image. |
+| [`SetImageTag`](#setimagetag) | Sets the tag of the image. |
 
 ### CImageData Constructor
 
@@ -77,7 +77,7 @@ virtual ~CImageData()
 
 ### GetBytes
 
-It is used to get the image byte array.
+Gets the image byte array.
 
 ```cpp
 const unsigned char* GetBytes() const
@@ -89,7 +89,7 @@ Returns a pointer to the image byte array.
 
 ### GetBytesLength
 
-It is used to get the length of the image byte array.
+Gets the length of the image byte array.
 
 ```cpp
 int GetBytesLength() const
@@ -101,7 +101,7 @@ Returns the length of the image byte array.
 
 ### GetWidth
 
-It is used to get the width of the image.
+Gets the width of the image.
 
 ```cpp
 int GetWidth() const
@@ -113,7 +113,7 @@ Returns the width of the image.
 
 ### GetHeight
 
-It is used to get the height of the image.
+Gets the height of the image.
 
 ```cpp
 int GetHeight() const
@@ -125,7 +125,7 @@ Returns the height of the image.
 
 ### GetStride
 
-It is used to get the stride of the image.
+Gets the stride of the image.
 
 ```cpp
 int GetStride() const
@@ -137,7 +137,7 @@ Returns the stride of the image.
 
 ### GetImagePixelFormat
 
-It is used to get the pixel format of the image.
+Gets the pixel format of the image.
 
 ```cpp
 ImagePixelFormat GetImagePixelFormat() const
@@ -149,7 +149,7 @@ Returns the pixel format of the image.
 
 ### GetOrientation
 
-It is used to get the orientation of the image.
+Gets the orientation of the image.
 
 ```cpp
 int GetOrientation() const
@@ -161,7 +161,7 @@ Returns the orientation of the image.
 
 ### GetImageTag
 
-It is used to get the tag of the image.
+Gets the tag of the image.
 
 ```cpp
 const CImageTag* GetImageTag() const
@@ -173,7 +173,7 @@ Returns a pointer to the tag of the image.
 
 ### SetImageTag
 
-It is used to set the tag of the image.
+Sets the tag of the image.
 
 ```cpp
 void SetImageTag(const CImageTag* _tag)

@@ -20,14 +20,14 @@ class dynamsoft::core::basic_structures::CFileImageTag : public CImageTag
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetFilePath`](#getfilepath) | It is used to get the file path of the image tag.|
-| [`GetPageNumber`](#getpagenumber) | It is used to get the page number of the image tag.|
+| [`GetFilePath`](#getfilepath) | Gets the file path of the image tag.|
+| [`GetPageNumber`](#getpagenumber) | Gets the page number of the image tag.|
 | [`CFileImageTag`](#cfileimagetag-constructor) | The constructor of CContour. |
 | [`~CFileImageTag`](#cfileimagetag-destructor) | The destructor of CContour. |
 
 ### GetFilePath
 
-It is used to get the file path of the image tag.
+Gets the file path of the image tag.
 
 ```cpp
 const char* GetFilePath() const
@@ -39,7 +39,7 @@ Returns the file path of the image tag.
 
 ### GetPageNumber
 
-It is used to get the page number of the image tag.
+Gets the page number of the image tag.
 
 ```cpp
 int GetPageNumber() const

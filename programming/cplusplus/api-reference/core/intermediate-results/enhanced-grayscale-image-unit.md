@@ -8,8 +8,28 @@ needAutoGenerateSidebar: true
 
 # CEnhancedGrayscaleImageUnit
 
-[Given a short description about the class]
+The CEnhancedGrayscaleImageUnit class represents an intermediate result unit that contains an enhanced grayscale image data. Gray enhancement methods include gray equalization, gray smoothing, gray sharpening and smoothing.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CEnhancedGrayscaleImageUnit 
+class dynamsoft::core::intermediate_results::CEnhancedGrayscaleImageUnit  : public CIntermediateResultUnit
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetImageData`](#getimagedata) | Gets the enhanced grayscale image data.|
+
+### GetImageData
+
+Gets the enhanced grayscale image data.
+
+```cpp
+virtual const CImageData* GetImageData() const
+```
+
+**Return value**
+
+Returns a const pointer to the CImageData object that contains the enhanced grayscale image data. You don't need to release the memory pointed to by the returned pointer.

@@ -20,17 +20,17 @@ class dynamsoft::core::basic_structures::CVideoFrameTag: public CImageTag
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetVideoFrameQuality`](#getvideoframequality) | It is used to get the quality of the video frame.|
-| [`IsCropped`](#iscropped) | It is used to determine whether the video frame is cropped. |
-| [`GetCropRegion`](#getcropregion) | It is used to get the crop region of the video frame. |
-| [`GetOriginalWidth`](#getoriginalwidth) | It is used to get the original width of the video frame. |
-| [`GetOriginalHeight`](#getoriginalheight) | It is used to get the original height of the video frame. |
+| [`GetVideoFrameQuality`](#getvideoframequality) | Gets the quality of the video frame.|
+| [`IsCropped`](#iscropped) | Determines whether the video frame is cropped. |
+| [`GetCropRegion`](#getcropregion) | Gets the crop region of the video frame. |
+| [`GetOriginalWidth`](#getoriginalwidth) | Gets the original width of the video frame. |
+| [`GetOriginalHeight`](#getoriginalheight) | Gets the original height of the video frame. |
 | [`CVideoFrameTag`](#cvideoframetag-constructor) | The constructor of the CVideoFrameTag class. |
 | [`~CVideoFrameTag`](#cvideoframetag-destructor) | The destructor of the CVideoFrameTag class. |
 
 ### GetVideoFrameQuality
 
-It is used to get the quality of the video frame.
+Gets the quality of the video frame.
 
 ```cpp
 VideoFrameQuality GetVideoFrameQuality() const
@@ -42,7 +42,7 @@ Returns the quality of the video frame.
 
 ### IsCropped
 
-It is used to determine whether the video frame is cropped.
+Determines whether the video frame is cropped.
 
 ```cpp
 bool IsCropped() const
@@ -54,7 +54,7 @@ Returns true if the video frame is cropped, false otherwise.
 
 ### GetCropRegion
 
-It is used to get the crop region of the video frame.
+Gets the crop region of the video frame.
 
 ```cpp
 const CRect* GetCropRegion() const
@@ -66,7 +66,7 @@ Returns a pointer to a CRect object that represents the crop region of the video
 
 ### GetOriginalWidth
 
-It is used to get the original width of the video frame.
+Gets the original width of the video frame.
 
 ```cpp
 int GetOriginalWidth() const
@@ -78,7 +78,7 @@ Returns the original width of the video frame.
 
 ### GetOriginalHeight
 
-It is used to get the original height of the video frame.
+Gets the original height of the video frame.
 
 ```cpp
 int GetOriginalHeight() const

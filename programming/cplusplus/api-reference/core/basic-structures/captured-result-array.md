@@ -20,12 +20,12 @@ class dynamsoft::core::basic_structures::CCapturedResultArray
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetCount`](#getcount) | It is used to get the count of captured results.|
-| [`GetResult`](#getresult) | It is used to get a specific captured result at a given index. |
+| [`GetCount`](#getcount) | Gets the count of captured results.|
+| [`GetResult`](#getresult) | Gets a specific captured result at a given index. |
 
 ### GetCount
 
-It is used to get the count of captured results.
+Gets the count of captured results.
 
 ```cpp
 virtual int GetCount() const
@@ -37,7 +37,7 @@ Returns the count of captured results.
 
 ### GetResult
 
-It is used to get a specific captured result at a given index.
+Gets a specific captured result at a given index.
 
 ```cpp
 virtual const CCapturedResult* GetResult(int index) const

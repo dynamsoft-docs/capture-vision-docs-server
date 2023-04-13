@@ -26,8 +26,8 @@ class dynamsoft::core::basic_structures::CQuadrilateral
 
 | Method               | Description |
 |----------------------|-------------|
-| [`Contains`](#contains) | It is used to determine whether a point is inside the quadrilateral.|
-| [`GetArea`](#getarea) | It is used to get the area of the quadrilateral. |
+| [`Contains`](#contains) | Determines whether a point is inside the quadrilateral.|
+| [`GetArea`](#getarea) | Gets the area of the quadrilateral. |
 
 ### points
 
@@ -39,7 +39,7 @@ CPoint points[4]
 
 ### Contains
 
-It is used to determine whether a point is inside the quadrilateral.
+Determines whether a point is inside the quadrilateral.
 
 ```cpp
 bool Contains(const CPoint* point) const
@@ -55,7 +55,7 @@ Returns true if the point inside the quadrilateral, false otherwise.
 
 ### GetArea
 
-It is used to get the area of the quadrilateral.
+Gets the area of the quadrilateral.
 
 ```cpp
 int GetArea() const

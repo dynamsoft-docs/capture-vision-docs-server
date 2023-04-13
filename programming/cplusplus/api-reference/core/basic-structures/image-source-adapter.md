@@ -16,20 +16,6 @@ class dynamsoft::core::basic_structures::CImageSourceAdapter
 
 ---
 
-## Constructors
-
-| Constructor | Description |
-|-------------|-------------|
-| `CImageSourceAdapter()` | Constructs a new CImageSourceAdapter object. |
-
-## Destructors
-
-| Destructor | Description |
-|------------|-------------|
-| `virtual ~CImageSourceAdapter()` | Destroys the CImageSourceAdapter object. |
-
----
-
 ## Methods Summary
 
 | Method | Description |

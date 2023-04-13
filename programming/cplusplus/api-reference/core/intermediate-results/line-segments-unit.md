@@ -8,8 +8,49 @@ needAutoGenerateSidebar: true
 
 # CLineSegmentsUnit
 
-[Given a short description about the class]
+The CLineSegmentsUnit class represents a collection of line segments in 2D space. It is a derived class of CIntermediateResultUnit.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CLineSegmentsUnit 
+class dynamsoft::core::intermediate_results::CLineSegmentsUnit: public CIntermediateResultUnit 
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetCount`](#getcount) | Gets the number of line segments in the collection.|
+| [`GetLineSegment`](#getlinesegment) | Gets the specified line segment from the collection. |
+
+### GetCount
+
+Gets the number of line segments in the collection.
+
+```cpp
+virtual int GetCount() const
+```
+
+**Return value**
+
+Returns the number of line segments in the collection.
+
+### GetLineSegment
+
+Gets the specified line segment from the collection.
+
+```cpp
+virtual int GetLineSegement(int index, CLineSegment* line) const
+```
+
+**Parameters**
+
+`[in] index` The index of the line segment to retrieve.
+
+`[in, out] line` The CLineSegment object to store the retrieved line segment.
+
+**Return value**
+
+Returns 0 if the operation succeeds, or a negative value if an error occurs.
+
+Note: The caller of this method is responsible for allocating memory for the `line` pointer.

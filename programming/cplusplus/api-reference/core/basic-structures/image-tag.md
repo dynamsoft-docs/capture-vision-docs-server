@@ -20,16 +20,16 @@ class dynamsoft::core::basic_structures::CImageTag
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetType`](#gettype) | It is used to get the type of the image tag. |
-| [`Clone`](#clone) | It is used to create a copy of the image tag. |
-| [`GetImageId`](#getimageid) | It is used to get the ID of the image. |
-| [`SetImageId`](#setimageid) | It is used to set the ID of the image. |
-| [`GetImageCaptureDistanceMode`](#getimagecapturedistancemode) | It is used to get the capture distance mode of the image. |
-| [`SetImageCaptureDistanceMode`](#setimagecapturedistancemode) | It is used to set the capture distance mode of the image. |
+| [`GetType`](#gettype) | Gets the type of the image tag. |
+| [`Clone`](#clone) | Creates a copy of the image tag. |
+| [`GetImageId`](#getimageid) | Gets the ID of the image. |
+| [`SetImageId`](#setimageid) | Sets the ID of the image. |
+| [`GetImageCaptureDistanceMode`](#getimagecapturedistancemode) | Gets the capture distance mode of the image. |
+| [`SetImageCaptureDistanceMode`](#setimagecapturedistancemode) | Sets the capture distance mode of the image. |
 
 ### GetType
 
-It is used to get the type of the image tag.
+Gets the type of the image tag.
 
 ```cpp
 virtual ImageTagType GetType() const
@@ -41,7 +41,7 @@ Returns the type of the image tag.
 
 ### Clone
 
-It is used to create a copy of the image tag.
+Creates a copy of the image tag.
 
 ```cpp
 virtual CImageTag* Clone() const
@@ -53,7 +53,7 @@ Returns a pointer to a copy of the image tag.
 
 ### GetImageId
 
-It is used to get the ID of the image.
+Gets the ID of the image.
 
 ```cpp
 int GetImageId() const
@@ -65,7 +65,7 @@ Returns the ID of the image.
 
 ### SetImageId
 
-It is used to set the ID of the image.
+Sets the ID of the image.
 
 ```cpp
 void SetImageId(int imgId)
@@ -77,7 +77,7 @@ void SetImageId(int imgId)
 
 ### GetImageCaptureDistanceMode
 
-It is used to get the capture distance mode of the image.
+Gets the capture distance mode of the image.
 
 ```cpp
 ImageCaptureDistanceMode GetImageCaptureDistanceMode() const
@@ -89,7 +89,7 @@ Returns the capture distance mode of the image.
 
 ### SetImageCaptureDistanceMode
 
-It is used to set the capture distance mode of the image.
+Sets the capture distance mode of the image.
 
 ```cpp
 void SetImageCaptureDistanceMode(ImageCaptureDistanceMode mode)
