@@ -1,12 +1,12 @@
-
 ---
 layout: default-layout
-title: CaptureVisionRouter Constructor and Destructor - Dynamsoft Capture Vision C++ Edition API
-description: This page introduces APIs related to the instantiation of CaptureVisionRouter of Dynamsoft Capture Vision C++ Edition.
-keywords: capture vision, router, instance, api reference, C++, js
+title: CCaptureVisionRouter Constructor and Destructor - Dynamsoft Capture Vision C++ Edition API
+description: This page introduces APIs related to the instantiation of the CCaptureVisionRouter class of Dynamsoft Capture Vision C++ Edition.
+keywords: capture vision, router, instance, api reference, C++, Constructor, Destructor
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
-permalink: /programming/cplusplus/api-reference/cvr/instantiate.html
+breadcrumbText: CVR C++ Constructor and Destructor
+permalink: /programming/cplusplus/api-reference/capture-vision-router/instantiate.html
 ---
 
 # Capture Vision Router C++ API Reference - Constructor and Destructor

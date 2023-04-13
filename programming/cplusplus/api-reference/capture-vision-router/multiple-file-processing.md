@@ -1,18 +1,19 @@
 ---
 layout: default-layout
-title: CaptureVisionRouter Consecutive Process - Dynamsoft Capture Vision C++ Edition API
-description: This page introduces APIs related to Consecutive Process of Dynamsoft Capture Vision C++ Edition.
-keywords: capture vision, consecutive process, api reference, C++, js
+title: CaptureVisionRouter Multiple-File Processing - Dynamsoft Capture Vision C++ Edition API
+description: This page introduces APIs related to "Multiple-File Processing" by the CCaptureVisionRouter class of the Dynamsoft Capture Vision C++ Edition.
+keywords: capture vision, multiple-file processing, api reference, C++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
-permalink: /programming/cplusplus/api-reference/cvr/consecutive-process.html
+breadcrumbText: CVR C++ Multiple-File Processing
+permalink: /programming/cplusplus/api-reference/capture-vision-router/multiple-file-processing.html
 ---
 
-# Capture Vision Router C++ API Reference - Consecutive Process
+# Capture Vision Router C++ API Reference - Multiple-File Processing
 
 | API Name                                                            | Description                                                                  |
 | ------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [SetInput()](#setinput)                                             | Sets an image source to provide images for consecutive process.              |
+| [SetInput()](#setinput)                                             | Sets an image source to provide images for consecutive processing.         |
 | [AddCaptureStateListener()](#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
 | [RemoveCaptureStateListener()](#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
 | [AddImageSourceStateListener()](#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
@@ -20,27 +21,25 @@ permalink: /programming/cplusplus/api-reference/cvr/consecutive-process.html
 | [AddResultReceiver()](#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
 | [RemoveResultReceiver()](#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
 | [StartCapturing()](#startcapturing)                                 | Starts to process images consecutively.                                      |
-| [StopCapturing()](#stopcapturing)                                   | Stops the consecutive process.                                               |
+| [StopCapturing()](#stopcapturing)                                   | Stops the consecutive processing.                                          |
 
 ## SetInput
 
-Sets an image source to provide images for consecutive process.
+Sets an image source to provide images for consecutive processing.
 
 ```cpp
 void SetInput(CImageSourceAdapter* pAdaptor);
 ```
 
-### Parameters
+**Parameters**
 
-| Name       | Description                                                                                                                    |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `pAdaptor` | Specifies an object which has implemented the [Image Source Adapter Interface]({{architecture}}input.md#image-source-adapter). |
+`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{architecture}}input.md#image-source-adapter).
 
-### Return value
+**Return Value**
 
 None.
 
-### Code Snippet
+**Code Snippet**
 
 ```cpp
 int errorCode = 0;
@@ -61,17 +60,15 @@ Adds an object that listens to the state changes of the capture process.
 void AddCaptureStateListener(CCaptureStateListener* listener);
 ```
 
-### Parameters
+**Parameters**
 
-| Name       | Description                                                                                                                      |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `listener` | Specifies a listening object of the type [`CCaptureStateListener`](capture-state-listener.md#ccapturestatelistener) to be added. |
+`[in] listener` Specifies a listening object of the type [`CCaptureStateListener`](capture-state-listener.md#ccapturestatelistener) to be added.
 
-### Return value
+**Return Value**
 
 None.
 
-### Code Snippet
+**Code Snippet**
 
 ```cpp
 int errorCode = 0;
@@ -92,17 +89,15 @@ Removes an object which listens to the state changes of the capture process.
 void RemoveCaptureStateListener(CCaptureStateListener* listener);
 ```
 
-### Parameters
+**Parameters**
 
-| Name       | Description                                                                                                                        |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `listener` | Specifies a listening object of the type [`CCaptureStateListener`](capture-state-listener.md#ccapturestatelistener) to be removed. |
+`[in] listener` Specifies a listening object of the type [`CCaptureStateListener`](capture-state-listener.md#ccapturestatelistener) to be removed.
 
-### Return value
+**Return Value**
 
 None.
 
-### Code Snippet
+**Code Snippet**
 
 ```cpp
 int errorCode = 0;
@@ -124,17 +119,15 @@ Adds an object that listens to state changes of the image source.
 void AddImageSourceStateListener(CImageSourceStateListener* listener);
 ```
 
-### Parameters
+**Parameters**
 
-| Name       | Description                                                                                                                          |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| `listener` | Specifies a listening object of the type [`CImageSourceStateListener`](capture-state-listener.md#ccapturestatelistener) to be added. |
+`[in] listener` Specifies a listening object of the type [`CImageSourceStateListener`](capture-state-listener.md#ccapturestatelistener) to be added.
 
-### Return value
+**Return Value**
 
 None.
 
-### Code Snippet
+**Code Snippet**
 
 ```cpp
 int errorCode = 0;
@@ -155,17 +148,15 @@ Removes an object which listens to state changes of the image source.
 void RemoveImageSourceStateListener(CImageSourceStateListener* listener);
 ```
 
-### Parameters
+**Parameters**
 
-| Name       | Description                                                                                                                            |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `listener` | Specifies a listening object of the type [`CImageSourceStateListener`](capture-state-listener.md#ccapturestatelistener) to be removed. |
+`[in] listener` Specifies a listening object of the type [`CImageSourceStateListener`](capture-state-listener.md#ccapturestatelistener) to be removed.
 
-### Return value
+**Return Value**
 
 None.
 
-### Code Snippet
+**Code Snippet**
 
 ```cpp
 int errorCode = 0;
@@ -187,17 +178,15 @@ Adds an object as the receiver of captured results.
 void AddResultReceiver(CCapturedResultReceiver* receiver);
 ```
 
-### Parameters
+**Parameters**
 
-| Name       | Description                                                                                                                       |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `receiver` | Specifies a receiver object of the type [`CCapturedResultReceiver`](capture-state-listener.md#ccapturestatelistener) to be added. |
+`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`](capture-state-listener.md#ccapturestatelistener) to be added.
 
-### Return value
+**Return Value**
 
 None.
 
-### Code Snippet
+**Code Snippet**
 
 ```cpp
 int errorCode = 0;
@@ -218,17 +207,15 @@ Removes an object which was added as a receiver of captured results.
 void RemoveResultReceiver(CCapturedResultReceiver* receiver);
 ```
 
-### Parameters
+**Parameters**
 
-| Name       | Description                                                                                                                         |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `receiver` | Specifies a receiver object of the type [`CCapturedResultReceiver`](capture-state-listener.md#ccapturestatelistener) to be removed. |
+`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`](capture-state-listener.md#ccapturestatelistener) to be removed.
 
-### Return value
+**Return Value**
 
 None.
 
-### Code Snippet
+**Code Snippet**
 
 ```cpp
 int errorCode = 0;
@@ -250,20 +237,21 @@ Starts to process images consecutively.
 int StartCapturing(const char* templateName = "", bool waitForCompletion = false, char errorMsgBuffer[]=NULL, const int errorMsgBufferLen=0);
 ```
 
-### Parameters
+**Parameters**
 
-| Name                | Description                                                                                                                               |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `templateName`      | Specifies a template to use for capturing. If no template is specified, an empty string is used which means the factory default template. |
-| `waitForCompletion` | Indicates whether to wait for the capture process to complete before returning. The default value is false.                               |
-| `errorMsgBuffer`    | Stores any error messages generated during the capturing process. If no buffer is provided, the error messages will not be output.        |
-| `errorMsgBufferLen` | Specifies the length of the provided error message buffer. If no buffer is provided, this parameter is ignored.                           |
+`[in] templateName` Specifies a template to use for capturing. If not specified, an empty string is used which means the factory default template.
 
-### Return value
+`[in] waitForCompletion` Indicates whether to wait for the capture process to complete before returning. The default value is false.
+
+`[out] errorMsgBuffer` Stores any error messages generated during the capturing process. If no buffer is provided, the error messages will not be output.
+
+`[in] errorMsgBufferLen` Specifies the length of the provided error message buffer. If no buffer is provided, this parameter is ignored.
+
+**Return Value**
 
 The function returns an integer value representing the success or failure of the capturing process. A value of 0 indicates success, while a non-zero value indicates failure. If an error message buffer is provided, any error messages generated during the capturing process will be stored in the buffer.
 
-### Code Snippet
+**Code Snippet**
 
 ```cpp
 int errorCode = 0;
@@ -278,23 +266,21 @@ delete router;
 
 ## StopCapturing()
 
-Stops the consecutive process.
+Stops the multiple-file processing.
 
 ```cpp
 void StopCapturing(bool waitForCompletion = true);
 ```
 
-### Parameters
+**Parameters**
 
-| Name                | Description                                                                                                 |
-| ------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `waitForCompletion` | Indicates whether to wait for the capture process to complete before returning. The default value is false. |
+`[in] waitForCompletion` Indicates whether to wait for the capture process to complete before returning. The default value is false.
 
-### Return value
+**Return Value**
 
 None.
 
-### Code Snippet
+**Code Snippet**
 
 ```cpp
 int errorCode = 0;
