@@ -5,6 +5,7 @@ docFullPath: https://www.dynamsoft.com/capture-vision-router/docs/server/
 useVersionTree: true
 
 enumerations: /capture-vision-router/docs/core/enums/
+architecture: /capture-vision2/docs/architecture/
 
 cpp: /capture-vision-router/docs/server/programming/cplusplus/
 cpp_api: /capture-vision-router/docs/server/programming/cplusplus/api-reference/
