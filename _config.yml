@@ -1,6 +1,7 @@
 repositoryUrl: https://github.com/dynamsoft-docs/capture-vision-docs-server/blob/main
 repository: dynamsoft-docs/capture-vision-docs-server
-docFullPath: https://www.dynamsoft.com/capture-vision-router/docs/server/
+docFullPath: https://www.dynamsoft.com/capture-vision/docs/server/
+firstLevelUrl: /capture-vision/docs/server
 
 useVersionTree: true
 
@@ -9,21 +10,31 @@ architecture: /capture-vision2/docs/architecture/
 parameter: /capture-vision2/docs/parameters/
 enums: /capture-vision2/docs/enums/
 
-cpp: /capture-vision-router/docs/server/programming/cplusplus/
-cpp_api: /capture-vision-router/docs/server/programming/cplusplus/api-reference/
 
-dotnet: /capture-vision-router/docs/server/programming/dotnet/
-dotnet_api: /capture-vision-router/docs/server/programming/dotnet/api-reference/
+cpp: /capture-vision/docs/server/programming/cplusplus/
+cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
 
-java: /capture-vision-router/docs/server/programming/java/
-java_api: /capture-vision-router/docs/server/programming/java/api-reference/
+dotnet: /capture-vision/docs/server/programming/dotnet/
+dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
 
-python: /capture-vision-router/docs/server/programming/python/
-python_api: /capture-vision-router/docs/server/programming/python/api-reference/
+java: /capture-vision/docs/server/programming/java/
+java_api: /capture-vision/docs/server/programming/java/api-reference/
 
-parameters_reference: /capture-vision-router/docs/core/parameters/reference/
+python: /capture-vision/docs/server/programming/python/
+python_api: /capture-vision/docs/server/programming/python/api-reference/
 
-baseurl: "/capture-vision-router/docs/server"
+parameters_reference: /capture-vision/docs/core/parameters/reference/
+
+baseurl: "/capture-vision/docs/server"
+
+assets: /capture-vision/docs/server/assets/
+edit_icon: /capture-vision/docs/server/assets/img-icon/edit-icon.png
+smile_icon: /capture-vision/docs/server/assets/img-icon/icon-smile.png
+sad_icon: /capture-vision/docs/server/assets/img-icon/icon-sad.png
+dbr_icon: /capture-vision/docs/server/assets/img-icon/icon-dbr.svg
+dwt_icon: /capture-vision/docs/server/assets/img-icon/icon-dwt.svg
+dnt_icon: /capture-vision/docs/server/assets/img-icon/icon-dnt.svg
+
 plugins:
   - jemoji
 

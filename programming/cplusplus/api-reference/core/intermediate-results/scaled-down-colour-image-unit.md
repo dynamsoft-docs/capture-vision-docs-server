@@ -8,8 +8,28 @@ needAutoGenerateSidebar: true
 
 # CScaledDownColourImageUnit
 
-[Given a short description about the class]
+The CScaledDownColourImageUnit class represents an intermediate result unit that contains scaled down color image. It is derived from the CIntermediateResultUnit class.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CScaledDownColourImageUnit 
+class dynamsoft::core::intermediate_results::CScaledDownColourImageUnit : public CIntermediateResultUnit
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetImageData`](#getimagedata) | Gets the image data of the unit.|
+
+### GetImageData
+
+Gets the image data of the unit.
+
+```cpp
+virtual const CImageData* GetImageData() const
+```
+
+**Return value**
+
+Returns a pointer to the CImageData object that contains the image data of the unit. You are not required to release the memory pointed to by the returned pointer.

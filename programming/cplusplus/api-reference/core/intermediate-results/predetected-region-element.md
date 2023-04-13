@@ -8,8 +8,28 @@ needAutoGenerateSidebar: true
 
 # CPredetectedRegionElement
 
-[Given a short description about the class]
+The CPredetectedRegionElement class represents a region element that has been pre-detected in an image. It is a subclass of the CRegionObjectElement.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CPredetectedRegionElement 
+class dynamsoft::core::intermediate_results::CPredetectedRegionElement : public CRegionObjectElement
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetModeName`](#getmodename) | Gets the name of the detection mode used to detect this region element. |
+
+### GetModeName
+
+Gets the name of the detection mode used to detect this region element.
+
+```cpp
+virtual const char* GetModeName() const;
+```
+
+**Return value**
+
+Returns the name of the detection mode used to detect this region element.

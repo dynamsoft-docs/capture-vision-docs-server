@@ -8,8 +8,41 @@ needAutoGenerateSidebar: true
 
 # CTextureDetectionResultUnit
 
-[Given a short description about the class]
+The CTextureDetectionResultUnit class represents an intermediate result unit for texture detection. It is derived from the CIntermediateResultUnit class and contains the x-direction spacing and y-direction spacing of the texture stripes.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CTextureDetectionResultUnit 
+class dynamsoft::core::intermediate_results::CTextureDetectionResultUnit : public CIntermediateResultUnit 
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetXSpacing`](#getxspacing) | Gets x-direction spacing of the texture stripes. |
+| [`GetYSpacing`](#getyspacing) | Gets y-direction spacing of the texture stripes. |
+
+### GetXSpacing
+
+Gets x-direction spacing of the texture stripes.
+
+```cpp
+virtual int GetXSpacing() 
+```
+
+**Return value**
+
+Returns the x-direction spacing of the texture stripes.
+
+### GetYSpacing
+
+Gets y-direction spacing of the texture stripes.
+
+```cpp
+virtual int GetYSpacing() 
+```
+
+**Return value**
+
+Returns the y-direction spacing of the texture stripes.

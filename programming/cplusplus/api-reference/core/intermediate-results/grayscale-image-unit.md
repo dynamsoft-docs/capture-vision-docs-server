@@ -8,8 +8,28 @@ needAutoGenerateSidebar: true
 
 # CGrayscaleImageUnit
 
-[Given a short description about the class]
+The CGrayscaleImageUnit class represents a grayscale image unit. It is a subclass of CIntermediateResultUnit. It is derived from the CIntermediateResultUnit class.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CGrayscaleImageUnit 
+class dynamsoft::core::intermediate_results::CGrayscaleImageUnit : public CIntermediateResultUnit 
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetImageData`](#getimagedata) | Gets the image data of the grayscale image.|
+
+### GetImageData
+
+Gets the image data of the grayscale image.
+
+```cpp
+virtual const CImageData* GetImageData() const
+```
+
+**Return value**
+
+Returns a pointer to the CImageData object that contains the grayscale image. You are not required to release the memory pointed to by the returned pointer.

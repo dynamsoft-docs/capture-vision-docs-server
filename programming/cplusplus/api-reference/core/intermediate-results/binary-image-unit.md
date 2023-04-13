@@ -8,8 +8,28 @@ needAutoGenerateSidebar: true
 
 # CBinaryImageUnit
 
-[Given a short description about the class]
+The CBinaryImageUnit class represents a binary image unit that inherits from CIntermediateResultUnit. It inherits from the CIntermediateResultUnit class and stores binary image data.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CBinaryImageUnit 
+class dynamsoft::core::intermediate_results::CBinaryImageUnit : public CIntermediateResultUnit 
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetImageData`](#getimagedata) | Gets a pointer to the binary image data. |
+
+### GetImageData
+
+Gets a pointer to the binary image data.
+
+```cpp
+virtual const CImageData* GetImageData() const
+```
+
+**Return value**
+
+Returns a pointer to the CBinaryImageData object containing the binary image data. You don't need to release the memory pointed to by the returned pointer.

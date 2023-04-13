@@ -8,8 +8,28 @@ needAutoGenerateSidebar: true
 
 # CTextureRemovedGrayscaleImageUnit
 
-[Given a short description about the class]
+The CTextureRemovedGrayscaleImageUnit class represents an intermediate result unit that contains grayscale image data with textures removed.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CTextureRemovedGrayscaleImageUnit 
+class dynamsoft::core::intermediate_results::CTextureRemovedGrayscaleImageUnit : public CIntermediateResultUnit 
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetImageData`](#getimagedata) | Gets the grayscale image data with textures removed.|
+
+### GetImageData
+
+Gets the grayscale image data with textures removed.
+
+```cpp
+virtual const CImageData* GetImageData() const
+```
+
+**Return value**
+
+Returns a constant pointer to the grayscale image data with textures removed. You don't need to release the memory pointed to by the returned pointer.

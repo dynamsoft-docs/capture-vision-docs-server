@@ -8,8 +8,28 @@ needAutoGenerateSidebar: true
 
 # CColourImageUnit
 
-[Given a short description about the class]
+The CColourImageUnit class represents a unit that contains color image. It is derived from the CIntermediateResultUnit class.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CColourImageUnit 
+class dynamsoft::core::intermediate_results::CColourImageUnit : public CIntermediateResultUnit
 ```
+
+---
+
+## Methods Summary
+
+| Method               | Description |
+|----------------------|-------------|
+| [`GetImageData`](#getimagedata) | Gets the image data of the color image unit. |
+
+### GetImageData
+
+Gets the image data of the color image unit.
+
+```cpp
+virtual const CImageData* GetImageData() const;
+```
+
+**Return value**
+
+Returns a pointer to the CImageData object that contains the image data of the color image unit. You are not required to release the memory pointed to by the returned pointer.
