@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CCapturedResultArray class represents an array of captured results.
 
 ```cpp
-class dynamsoft::core::basic_structures::CCapturedResultArray 
+class dynamsoft::basic_structures::CCapturedResultArray 
 ```
 
 ---

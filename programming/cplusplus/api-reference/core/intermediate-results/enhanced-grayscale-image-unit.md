@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CEnhancedGrayscaleImageUnit class represents an intermediate result unit that contains an enhanced grayscale image data. Gray enhancement methods include gray equalization, gray smoothing, gray sharpening and smoothing.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CEnhancedGrayscaleImageUnit  : public CIntermediateResultUnit
+class dynamsoft::intermediate_results::CEnhancedGrayscaleImageUnit  : public CIntermediateResultUnit
 ```
 
 ---

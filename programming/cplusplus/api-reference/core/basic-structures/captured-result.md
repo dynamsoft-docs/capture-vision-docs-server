@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CCapturedResult class represents the result of a capture operation on an image. Internally, CaptureResult stores an array that contains multiple items, each of which may be a barcode, text line, detected quad, normalized image, raw image, parsed item, etc.
 
 ```cpp
-class dynamsoft::core::basic_structures::CCapturedResult 
+class dynamsoft::basic_structures::CCapturedResult 
 ```
 
 ---

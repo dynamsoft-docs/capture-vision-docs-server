@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CTextRemovedBinaryImageUnit class represents an intermediate result unit that contains a binary image with the text removed.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CTextRemovedBinaryImageUnit : public CIntermediateResultUnit 
+class dynamsoft::intermediate_results::CTextRemovedBinaryImageUnit : public CIntermediateResultUnit 
 ```
 
 ---

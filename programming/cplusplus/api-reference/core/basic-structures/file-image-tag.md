@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CFileImageTag class represents an image tag that is associated with a file. It inherits from the CImageTag class and adds two attributes, a file path and a page number.
 
 ```cpp
-class dynamsoft::core::basic_structures::CFileImageTag : public CImageTag
+class dynamsoft::basic_structures::CFileImageTag : public CImageTag
 ```
 
 ---
