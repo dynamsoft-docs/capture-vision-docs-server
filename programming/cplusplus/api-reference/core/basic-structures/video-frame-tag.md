@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CVideoFrameTag class represents a video frame tag, which is a type of image tag that is used to store additional information about a video frame. It inherits from the CImageTag class and adds additional attributes and methods specific to video frames.
 
 ```cpp
-class dynamsoft::core::basic_structures::CVideoFrameTag: public CImageTag 
+class dynamsoft::basic_structures::CVideoFrameTag: public CImageTag 
 ```
 
 ---

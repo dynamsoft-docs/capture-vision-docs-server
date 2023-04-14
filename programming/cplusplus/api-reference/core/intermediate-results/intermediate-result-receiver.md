@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CIntermediateResultReceiver class is responsible for receiving intermediate results of different types. It provides virtual functions for each type of result, which are called when the corresponding result is received.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CIntermediateResultReceiver 
+class dynamsoft::intermediate_results::CIntermediateResultReceiver 
 ```
 
 ---

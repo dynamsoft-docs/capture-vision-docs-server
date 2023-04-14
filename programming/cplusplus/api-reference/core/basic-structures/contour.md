@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CContour class represents a contour in 2D space. It contains an array of CPoint objects, which represent the vertices of the contour.
 
 ```cpp
-class dynamsoft::core::basic_structures::CContour 
+class dynamsoft::basic_structures::CContour 
 ```
 
 ---

@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CCapturedResultItem class represents an item in a captured result. It is an abstract base class with multiple subclasses, each representing a different type of captured item such as barcode, text line, detected quad, normalized image, raw image, parsed item, etc.
 
 ```cpp
-class dynamsoft::core::basic_structures::CCapturedResultItem 
+class dynamsoft::basic_structures::CCapturedResultItem 
 ```
 
 ---

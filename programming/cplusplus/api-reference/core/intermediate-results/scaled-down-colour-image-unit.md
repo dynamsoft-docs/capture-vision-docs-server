@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
 The CScaledDownColourImageUnit class represents an intermediate result unit that contains scaled down color image. It is derived from the CIntermediateResultUnit class.
 
 ```cpp
-class dynamsoft::core::intermediate_results::CScaledDownColourImageUnit : public CIntermediateResultUnit
+class dynamsoft::intermediate_results::CScaledDownColourImageUnit : public CIntermediateResultUnit
 ```
 
 ---
