@@ -66,7 +66,7 @@ Returns a RegionObjectElementType enum value which represents the type of the re
 Gets the rotation transform matrix of the region object element.
 
 ```cpp
-void GetRotatationTransformMatrix(double matrix[9]) const
+void GetRotationTransformMatrix(double matrix[9]) const
 ```
 
 **Parameters**
