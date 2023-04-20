@@ -14,15 +14,23 @@ The CPoint class represents a point in 2D space. It contains an array of two int
 class dynamsoft::basic_structures::CPoint 
 ```
 
----
+## Definition
 
-## Attributes Summary
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore.dll
+
+```cpp
+class CPoint
+```
+
+## Attributes
 
 | Attribute | Type |
 |---------- | ---- |
 | [`coordinate`](#coordinate) | *int[2]* |
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

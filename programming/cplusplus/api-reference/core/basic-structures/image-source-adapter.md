@@ -10,13 +10,17 @@ needAutoGenerateSidebar: true
 
 The CImageSourceAdapter class provides an interface for fetching and buffering images. It is an abstract class that needs to be implemented by a concrete class to provide actual functionality.
 
+## Definition
+
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::basic_structures::CImageSourceAdapter 
+class CImageSourceAdapter
 ```
 
----
-
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

@@ -10,13 +10,17 @@ needAutoGenerateSidebar: true
 
 The CLicenseManager class provides a set of APIs to manage SDK licensing.
 
+## Definition
+
+*Namespace:* dynamsoft::license
+
+*Assembly:* DynamsoftLicense.dll
+
 ```cpp
-class dynamsoft::license::CLicenseManager 
+class CLicenseManager
 ```
 
----
-
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

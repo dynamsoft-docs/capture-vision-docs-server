@@ -10,14 +10,17 @@ needAutoGenerateSidebar: true
 
 The CIntermediateResultUnit class represents an intermediate result unit used in image processing. It is an abstract base class with multiple subclasses, each representing a different type of unit such as pre-detected regions, localized barcodes, decoded barcodes, localized text lines, binary image, gray image, etc.
 
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::intermediate_results::CIntermediateResultUnit 
+class CIntermediateResultUnit
 ```
 
----
-
-
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

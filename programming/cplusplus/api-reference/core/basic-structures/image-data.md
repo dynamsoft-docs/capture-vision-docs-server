@@ -10,13 +10,17 @@ needAutoGenerateSidebar: true
 
 The CImageData class represents image data, which contains the image bytes, width, height, stride, pixel format, orientation and a tag.
 
+## Definition
+
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::basic_structures::CImageData 
+class CImageTag
 ```
 
----
-
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

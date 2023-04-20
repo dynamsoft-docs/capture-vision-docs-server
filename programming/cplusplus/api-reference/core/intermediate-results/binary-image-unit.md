@@ -10,13 +10,19 @@ needAutoGenerateSidebar: true
 
 The CBinaryImageUnit class represents a binary image unit that inherits from CIntermediateResultUnit. It inherits from the CIntermediateResultUnit class and stores binary image data.
 
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::intermediate_results::CBinaryImageUnit : public CIntermediateResultUnit 
+class CBinaryImageUnit : public CIntermediateResultUnit
 ```
 
----
+*Inheritance:* [CIntermediateResultUnit](intermediate-result-unit.md) -> CBinaryImageUnit
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

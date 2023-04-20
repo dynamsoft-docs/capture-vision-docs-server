@@ -10,13 +10,17 @@ needAutoGenerateSidebar: true
 
 The CRegionObjectElement class represents an element of a region object in 2D space. It is an abstract class that provides the interface for region object elements.
 
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::intermediate_results::CRegionObjectElement 
+class CRegionObjectElement
 ```
 
----
-
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

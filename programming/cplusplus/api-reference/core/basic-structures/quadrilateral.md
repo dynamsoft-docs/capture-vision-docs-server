@@ -10,13 +10,17 @@ needAutoGenerateSidebar: true
 
 The CQuadrilateral class represents a quadrilateral shape in 2D space. It contains an array of four CPoint objects, which represent the vertices of the quadrilateral.
 
+## Definition
+
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::basic_structures::CQuadrilateral 
+class CQuadrilateral
 ```
 
----
-
-## Attributes Summary
+## Attributes
   
 | Attribute | Type |
 |---------- | ---- |
