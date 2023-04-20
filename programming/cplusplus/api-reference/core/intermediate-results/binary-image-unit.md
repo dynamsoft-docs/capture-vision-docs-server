@@ -32,4 +32,4 @@ virtual const CImageData* GetImageData() const
 
 **Return value**
 
-Returns a pointer to the CBinaryImageData object containing the binary image data. You don't need to release the memory pointed to by the returned pointer.
+Returns a pointer to the CImageData object containing the binary image data. You don't need to release the memory pointed to by the returned pointer.
