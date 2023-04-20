@@ -16,7 +16,7 @@ The "Capture Vision Router" module is defined in the namespace `Dynamsoft.CVR` w
 
 ## Main Class - `CCaptureVisionRouter`
 
-The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{architecture}}output.md#final-results) or [Intermediate Results]({{architecture}}output.md#intermediate-results).
+The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.architecture}}output.md#final-results) or [Intermediate Results]({{site.architecture}}output.md#intermediate-results).
 
 Read more about the class [`CCaptureVisionRouter`](capture-vision-router.md).
 

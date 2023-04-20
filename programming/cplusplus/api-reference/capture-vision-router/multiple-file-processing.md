@@ -33,7 +33,7 @@ void SetInput(CImageSourceAdapter* pAdaptor);
 
 **Parameters**
 
-`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{architecture}}input.md#image-source-adapter).
+`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{site.architecture}}input.md#image-source-adapter).
 
 **Return Value**
 
