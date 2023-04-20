@@ -7,7 +7,7 @@ needAutoGenerateSidebar: true
 needGenerateH3Content: true
 noTitleIndex: true
 breadcrumbText: CVR C++ API Reference Index
-permalink: /programming/cplusplus/api-reference/capture-vision-router/index.md
+permalink: /programming/cplusplus/api-reference/capture-vision-router/index.html
 ---
 
 # Capture Vision Router C++ API Reference Index
