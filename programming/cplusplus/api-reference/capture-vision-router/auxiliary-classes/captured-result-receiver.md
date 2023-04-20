@@ -6,7 +6,7 @@ keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ CCaptureResultReceiver Class
-permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-classes/capture-result-receiver.html
+permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-classes/captured-result-receiver.html
 ---
 
 # CCaptureResultReceiver
