@@ -6,7 +6,7 @@ keywords: struct, c++, SimplifiedCaptureVisionSettings
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ SimplifiedCaptureVisionSettings Struct
-permalink: /programming/cplusplus/api-reference/capture-vision-router/struct/simplified-capture-vision-settings.html
+permalink: /programming/cplusplus/api-reference/capture-vision-router/structs/simplified-capture-vision-settings.html
 ---
 
 # SimplifiedCaptureVisionSettings

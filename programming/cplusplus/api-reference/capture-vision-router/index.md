@@ -33,7 +33,7 @@ The following are the auxiliary classes:
 
 At present, there is only one struct in the "Capture Vision Router" module:
 
-* [SimplifiedCaptureVisionSettings](struct/simplified-capture-vision-settings.md)
+* [SimplifiedCaptureVisionSettings](structs/simplified-capture-vision-settings.md)
 
 ## Enums
 
