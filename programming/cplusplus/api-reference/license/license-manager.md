@@ -24,16 +24,16 @@ class CLicenseManager
 
 | Method               | Description |
 |----------------------|-------------|
-| [`InitLicense`](#initlicense) | It is used to initialize the license using a license key. |
-| [`SetDeviceFriendlyName`](#setdevicefriendlyname) | It is used to set the friendly name of the device. |
-| [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | It is used to set the maximum number of allowed instances for the given device and process. |
-| [`GetDeviceUUID`](#getdeviceuuid) | It is used to get the unique identifier of the device. |
-| [`SetLicenseCachePath`](#setlicensecachepath) | It is used to set the directory path for the license cache. |
-| [`GetVersion`](#getversion) | It is used to get the version of the licensing library. |
+| [`InitLicense`](#initlicense) | Initializes the license using a license key. |
+| [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets the friendly name of the device. |
+| [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the maximum number of allowed instances for the given device and process. |
+| [`GetDeviceUUID`](#getdeviceuuid) | Gets the unique identifier of the device. |
+| [`SetLicenseCachePath`](#setlicensecachepath) | Sets the directory path for the license cache. |
+| [`GetVersion`](#getversion) | Gets the version of the licensing library. |
 
 ### InitLicense
 
-It is used to initialize the license using a license key.
+Initializes the license using a license key.
 
 ```cpp
 static int InitLicense(const char* pLicense, char errorMsgBuffer[] = NULL, const int errorMsgBufferLen = 0)
@@ -63,7 +63,7 @@ if (errorCode != EC_OK)
 
 ### SetDeviceFriendlyName
 
-It is used to set the friendly name of the device.
+Sets the friendly name of the device.
 
 ```cpp
 static int SetDeviceFriendlyName(const char* name)
@@ -79,7 +79,7 @@ Returns 0 if the friendly name is set successfully, a negative value indicating 
 
 ### SetMaxConcurrentInstanceCount
 
-It is used to set the maximum number of allowed instances for the given device and process.
+Sets the maximum number of allowed instances for the given device and process.
 
 ```cpp
 static void SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
@@ -93,7 +93,7 @@ static void SetMaxConcurrentInstanceCount(int countForThisDevice, int countForTh
 
 ### GetDeviceUUID
 
-It is used to get the unique identifier of the device.
+Gets the unique identifier of the device.
 
 ```cpp
 static int GetDeviceUUID(int uuidGenerationMethod, char uuidBuffer[] , const int uuidBufferLen)
@@ -113,7 +113,7 @@ Returns 0 if the UUID is generated successfully, a negative value indicating an 
 
 ### SetLicenseCachePath
 
-It is used to set the directory path for the license cache.
+Sets the directory path for the license cache.
 
 ```cpp
 static int SetLicenseCachePath(const char* directoryPath)
@@ -129,7 +129,7 @@ Returns 0 if the directory path is set successfully, a negative value indicating
 
 ### GetVersion
 
-It is used to get the version of the licensing library.
+Gets the version of the licensing library.
 
 ```cpp
 static const char* GetVersion()
