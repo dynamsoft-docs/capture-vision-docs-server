@@ -6,4 +6,4 @@ keywords: API reference, index, c++
 needAutoGenerateSidebar: true
 ---
 
-# Dynamsoft Capture Vision Documentation for C++ Edition
+# Dynamsoft Capture Vision API Reference - C++ Edition
