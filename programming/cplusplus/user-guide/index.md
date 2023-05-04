@@ -64,10 +64,10 @@ Let's start by creating a console application which demonstrates the minimum cod
     CC=gcc
     CCFLAGS=-c
 
-    DLRMODEL_PATH=../../../CharacterModel
-    DLRLIB_PATH=../../../Lib/Linux/x64
-    LDFLAGS=-L $(DLRLIB_PATH) -Wl,-rpath=$(DLRLIB_PATH) -Wl,-rpath=./
-    DLRLIB=-lDynamsoftCaptureVisionRouter -lDynamsoftCore -lDynamsoftLicense -lDynamsoftUtitlity
+    DCVMODEL_PATH=../../../CharacterModel
+    DCVLIB_PATH=../../../Lib/Linux/x64
+    LDFLAGS=-L $(DCVLIB_PATH) -Wl,-rpath=$(DCVLIB_PATH) -Wl,-rpath=./
+    DCVLIB=-lDynamsoftCaptureVisionRouter -lDynamsoftCore -lDynamsoftLicense -lDynamsoftUtitlity
 
     STDLIB=-lstdc++
 
@@ -77,8 +77,8 @@ Let's start by creating a console application which demonstrates the minimum cod
 
     # build rule for target.
     $(TARGET): $(OBJECT)
-        $(CC) -o $(TARGET) $(OBJECT) $(STDLIB) $(DLRLIB) $(LDFLAGS)
-        cp -r $(DLRMODEL_PATH) $(DLRLIB_PATH)
+        $(CC) -o $(TARGET) $(OBJECT) $(STDLIB) $(DCVLIB) $(LDFLAGS)
+        cp -r $(DCVMODEL_PATH) $(DCVLIB_PATH)
 
     # target to build an object file
     $(OBJECT): $(SOURCE)
@@ -87,10 +87,10 @@ Let's start by creating a console application which demonstrates the minimum cod
     # the clean target
     .PHONY : clean
     clean: 
-        rm -f $(OBJECT) $(TARGET) -r $(DLRLIB_PATH)/CharacterModel
+        rm -f $(OBJECT) $(TARGET) -r $(DCVLIB_PATH)/CharacterModel
     ```
 
-    >Note: The `DLRLIB_PATH` variable should be set to the correct directory where the DLR library files are located. The files and character models directory can be found in `[INSTALLATION FOLDER]/Lib/Linux/x64`.
+    >Note: The `DCVLIB_PATH` variable should be set to the correct directory where the DLR library files are located. The files and character models directory can be found in `[INSTALLATION FOLDER]/Lib/Linux/x64`.
 
 ### Include the Library
 
@@ -98,18 +98,15 @@ Let's start by creating a console application which demonstrates the minimum cod
 
     ```cpp
     #include <iostream>
-    #include "<relative path>/Include/DynamsoftCaptureVisionRouter.h"
-    #include "<relative path>/Include/DynamsoftBarcodeReader.h"
-    #include "<relative path>/Include/DynamsoftDocumentNormalizer.h"
-    #include "<relative path>/Include/DynamsoftLabelRecognizer.h"
-    #include "<relative path>/Include/DynamsoftLicense.h"
-    #include "<relative path>/Include/DynamsoftUtility.h"
+    #include "Include/DynamsoftLicense.h"
+    #include "Include/DynamsoftCaptureVisionRouter.h"
+    #include "Include/DynamsoftUtility.h"
 
     using namespace std;
     using namespace dynamsoft::cvr;
     using namespace dynamsoft::dbr;
-    using namespace dynamsoft::ddn;
     using namespace dynamsoft::dlr;
+    using namespace dynamsoft::ddn;
     using namespace dynamsoft::license;
     using namespace dynamsoft::basic_structures;
     using namespace dynamsoft::utility;
@@ -117,21 +114,15 @@ Let's start by creating a console application which demonstrates the minimum cod
     // The following code only applies to Windows.
     #if defined(_WIN64) || defined(_WIN32)
         #ifdef _WIN64
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftBarcodeReaderx64.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftDocumentNormalizerx64.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftLabelRecognizerx64.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftCorex64.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftUtilityx64.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftLicensex64.lib")
+            #pragma comment(lib, "C:/DCVSample/DCVSample/Lib/Windows/x64/DynamsoftCorex64.lib")
+            #pragma comment(lib, "C:/DCVSample/DCVSample/Lib/Windows/x64/DynamsoftLicensex64.lib")
+            #pragma comment(lib, "C:/DCVSample/DCVSample/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+            #pragma comment(lib, "C:/DCVSample/DCVSample/Lib/Windows/x64/DynamsoftUtilityx64.lib")
         #else
-            #pragma comment(lib, "<relative path>/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftBarcodeReaderx86.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftDocumentNormalizerx86.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftLabelRecognizerx86.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x86/DynamsoftCorex86.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x64/DynamsoftUtilityx86.lib")
-            #pragma comment(lib, "<relative path>/Lib/Windows/x86/DynamsoftLicensex86.lib")
+            #pragma comment(lib, "C:/DCVSample/DCVSample/Lib/Windows/x86/DynamsoftCorex86.lib")
+            #pragma comment(lib, "C:/DCVSample/DCVSample/Lib/Windows/x86/DynamsoftLicensex86.lib")
+            #pragma comment(lib, "C:/DCVSample/DCVSample/Lib/Windows/x86/DynamsoftCaptureVisionRouterx64.lib")
+            #pragma comment(lib, "C:/DCVSample/DCVSample/Lib/Windows/x86/DynamsoftUtilityx86.lib")
         #endif
     #endif
     ```
@@ -143,10 +134,13 @@ Let's start by creating a console application which demonstrates the minimum cod
 1. Initialize the license key
 
     ```cpp
-    char error[512];
-    
-    CLicenseManger::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", error, 512);
-    cout << "License initialization: " << error << endl;
+    int main()
+    {
+        int errorCode = 0;
+        char error[256];
+        errorCode = CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", error, 256);
+        cout << "License initialization: " << errorCode << endl;
+    }
     ```
 
     >Note:
@@ -166,10 +160,15 @@ Let's start by creating a console application which demonstrates the minimum cod
 1. Setting up a directory fetcher to retrieve image data sources from a directory.
 
     ```cpp
-    CDirectoryFetcher dirFetcher;
-    dirFetcher.SetDirectory("[Your Image Path]");
+    int main()
+    {
+        //...
+        CDirectoryFetcher dirFetcher;
+        errorCode = dirFetcher.SetDirectory("[Your Image Path]");
+        cout << "Set Image Source: " << errorCode << endl;
 
-    router.SetInput(&dirFetcher);
+        router.SetInput(&dirFetcher);
+    }
     ```
 
 2. Create a class `MyImageSourceStateListener` to implement the `CImageSourceStateListenter` interface, and call `StopCapturing` in the callback function.
@@ -187,7 +186,7 @@ Let's start by creating a console application which demonstrates the minimum cod
 
         virtual void OnImageSourceStateChanged(ImageSourceState state)
         {
-            if(state == ISS_EXHAUSTED)
+            if (state == ISS_EXHAUSTED)
                 m_router->StopCapturing();
         }
     };
@@ -196,8 +195,12 @@ Let's start by creating a console application which demonstrates the minimum cod
 3. Register the `MyImageSourceStateListener` object to monitor the status of the image source.
 
     ```cpp
-    MyImageSourceStateListener listener(&router);
-    router.AddImageSourceAdapterStateListener(&listener);
+    int main()
+    {
+        //...
+        MyImageSourceStateListener listener(&router);
+        router.AddImageSourceStateListener(&listener);
+    }
     ```
 
 ### Add Captured Result Receiver
@@ -208,36 +211,9 @@ Let's start by creating a console application which demonstrates the minimum cod
     class MyResultReceiver : public CCapturedResultReceiver
     {
     public:
-        virtual void OnDecodedBarcodesReceived(const CDecodedBarcodesResult* pResult)
-        {
-            if(pResult->GetErrorCode() != EC_OK)
-                cout << "Error: " << pResult->GetErrorString() << endl;
-
-            int lCount = pResult->GetCount();
-            cout << "Decoded " << lCount << " barcodes" << endl;
-            for (int li = 0; li < lCount; ++li)
-            {
-                const CTextLineResultItem* textLine = pResult->GetItem(li);
-                cout << ">>Barcode result " << li << ": " << textLine->GetText() << endl;
-            }
-        }
-        virtual void OnNormalizedImagesReceived(const CNormalizedImagesResult* pResult)
-        {
-            if(pResult->GetErrorCode() != EC_OK)
-                cout << "Error: " << pResult->GetErrorString() << endl;
-
-            int lCount = pResult->GetCount();
-            cout << "Normalized " << lCount << " images" << endl;
-            for (int li = 0; li < lCount; ++li)
-            {
-                const CNormalizedImageResultItem* normalizeResult = dynamic_cast<const CNormalizedImageResultItem*>(pResult);
-                const CImageData* imageData = normalizeResult->GetImageData();
-                int res = normalizeResult->SaveToFile("[Your file path]");
-            }
-        }
         virtual void OnRecognizedTextLinesReceived(const CRecognizedTextLinesResult* pResult)
         {
-            if(pResult->GetErrorCode() != EC_OK)
+            if (pResult->GetErrorCode() != EC_OK)
                 cout << "Error: " << pResult->GetErrorString() << endl;
 
             int lCount = pResult->GetCount();
@@ -248,16 +224,33 @@ Let's start by creating a console application which demonstrates the minimum cod
                 cout << ">>Text line result " << li << ": " << textLine->GetText() << endl;
             }
         }
+        virtual void OnDecodedBarcodesReceived(const CDecodedBarcodesResult* pResult)
+        {
+            if (pResult->GetErrorCode() != EC_OK)
+                cout << "Error: " << pResult->GetErrorString() << endl;
+
+            int lCount = pResult->GetCount();
+            cout << "Decoded " << lCount << " Barcodes" << endl;
+            for (int li = 0; li < lCount; ++li)
+            {
+                const CBarcodeResultItem* barcode = pResult->GetItem(li);
+                cout << ">>Barcode result " << li << ": " << barcode->GetText() << endl;
+            }
+        }
     };
     ```
 
-    >For the error handling mechanism, the SDK returns Error Code in the `CRecognizedTextLinesResult` object. You can add error handling code as needed. See [Error Code]({{site.dcv_enumerations}}error-code.html) for a full list of supported error codes.
+    >For the error handling mechanism, the SDK returns Error Code in the result objects such as `CRecognizedTextLinesResult` or `CDecodedBarcodesResult`. You can add error handling code as needed. See [Error Code]({{site.dcv_enumerations}}error-code.html) for a full list of supported error codes.
 
 2. Register the `MyResultReceiver` object to monitor the captured results of the router.
 
     ```cpp
-    MyResultReceiver recv;
-    router.AddResultReceiver(&recv);
+    int main()
+    {
+        //...
+        MyResultReceiver recv;
+        router.AddResultReceiver(&recv);
+    }
     ```
 
 ### Start Recognition
@@ -265,15 +258,21 @@ Let's start by creating a console application which demonstrates the minimum cod
 1. Start recognition with the default Label Recognizer Template.
 
     ```cpp
-    router.StartCapturing("recognize-textlines", true);
+    int main()
+    {
+        //...
+        errorCode = router.StartCapturing("default", true);
+        if (errorCode != EC_OK)
+            cout << "StartCapturing Error: " << errorCode << endl;
+    }
     ```
 
     > Note:
     >
     >- The second parameter is set to true, all images in the folder will be processed before returning. If set to false, it will return immediately.
-    >- You can also manually call StopCapturing to stop the current recognition task..
+    >- You can also manually call StopCapturing to stop the current capture task.
 
-You can download the similar complete source code from [Here](https://github.com/Dynamsoft/label-recognizer-c-cpp-samples/tree/master/samples/C++/HelloWorld).
+You can download the similar complete source code from [Here](https://github.com/Dynamsoft/capture-vision-cpp-samples/tree/master/samples/C++/HelloWorld).
 
 ### Build and Run the Project
 
