@@ -208,30 +208,31 @@ Let's start by creating a console application which demonstrates the minimum cod
     class MyResultReceiver : public CCapturedResultReceiver
     {
     public:
-        virtual void OnRecognizedTextLinesReceived(const CRecognizedTextLinesResult* pResult)
+        virtual void OnDecodedBarcodesReceived(const CDecodedBarcodesResult* pResult)
         {
             if(pResult->GetErrorCode() != EC_OK)
                 cout << "Error: " << pResult->GetErrorString() << endl;
 
             int lCount = pResult->GetCount();
-            cout << "Recognized " << lCount << " text lines" << endl;
+            cout << "Decoded " << lCount << " barcodes" << endl;
             for (int li = 0; li < lCount; ++li)
             {
                 const CTextLineResultItem* textLine = pResult->GetItem(li);
-                cout << ">>Text line result " << li << ": " << textLine->GetText() << endl;
+                cout << ">>Barcode result " << li << ": " << textLine->GetText() << endl;
             }
         }
-        virtual void OnRecognizedTextLinesReceived(const CRecognizedTextLinesResult* pResult)
+        virtual void OnNormalizedImagesReceived(const CNormalizedImagesResult* pResult)
         {
             if(pResult->GetErrorCode() != EC_OK)
                 cout << "Error: " << pResult->GetErrorString() << endl;
 
             int lCount = pResult->GetCount();
-            cout << "Recognized " << lCount << " text lines" << endl;
+            cout << "Normalized " << lCount << " images" << endl;
             for (int li = 0; li < lCount; ++li)
             {
-                const CTextLineResultItem* textLine = pResult->GetItem(li);
-                cout << ">>Text line result " << li << ": " << textLine->GetText() << endl;
+                const CNormalizedImageResultItem* normalizeResult = dynamic_cast<const CNormalizedImageResultItem*>(pResult);
+                const CImageData* imageData = normalizeResult->GetImageData();
+                int res = normalizeResult->SaveToFile("[Your file path]");
             }
         }
         virtual void OnRecognizedTextLinesReceived(const CRecognizedTextLinesResult* pResult)
@@ -267,7 +268,7 @@ Let's start by creating a console application which demonstrates the minimum cod
     router.StartCapturing("recognize-textlines", true);
     ```
 
-   >Note:
+    > Note:
     >
     >- The second parameter is set to true, all images in the folder will be processed before returning. If set to false, it will return immediately.
     >- You can also manually call StopCapturing to stop the current recognition task..
