@@ -37,6 +37,7 @@ class CImageSourceAdapter
 | [`SetNextImageToReturn`](#setnextimagetoreturn) | Sets the next image to return. |
 | [`GetImageCount`](#getimagecount) | Returns the actual count of buffered images. |
 | [`IsBufferEmpty`](#isbufferempty) | Determines whether the buffer is empty. |
+| [`ClearBuffer`](#clearbuffer) | Clears the buffer. |
 
 ---
 
@@ -203,3 +204,11 @@ bool IsBufferEmpty() const;
 **Return value**
 
 Returns true if the buffer is empty, false otherwise.
+
+### ClearBuffer
+
+Clears the buffer.
+
+```cpp
+void ClearBuffer();
+```

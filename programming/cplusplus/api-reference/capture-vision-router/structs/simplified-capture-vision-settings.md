@@ -31,13 +31,13 @@ typedef struct tagSimplifiedCaptureVisionSettings
 
 | Attribute                                             | Type                                |
 | ----------------------------------------------------- | ----------------------------------- |
-| [`capturedResultItemTypes`](#capturedResultItemTypes) | *int*                               |
+| [`capturedResultItemTypes`](#capturedresultitemtypes) | *int*                               |
 | [`roi`](#roi)                                         | *CQuadrilateral*                    |
-| [`roiMeasuredInPercentage`](#roiMeasuredInPercentage) | *int*                               |
-| [`maxParallelTasks`](#maxParallelTasks)               | *int*                               |
+| [`roiMeasuredInPercentage`](#roimeasuredinpercentage) | *int*                               |
+| [`maxParallelTasks`](#maxparalleltasks)               | *int*                               |
 | [`timeout`](#timeout)                                 | *int*                               |
-| [`barcodeSettings`](#barcodeSettings)                 | *SimplifiedBarcodeReaderSettings*   |
-| [`labelSettings`](#labelSettings)                     | *SimplifiedLabelRecognizerSettings* |
+| [`barcodeSettings`](#barcodesettings)                 | *SimplifiedBarcodeReaderSettings*   |
+| [`labelSettings`](#labelsettings)                     | *SimplifiedLabelRecognizerSettings* |
 | `reserved`                                            | *char[2048]*                        |
 
 ### capturedResultItemTypes

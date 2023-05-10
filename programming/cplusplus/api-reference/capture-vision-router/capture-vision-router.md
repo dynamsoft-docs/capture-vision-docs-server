@@ -33,6 +33,7 @@ The APIs for this class include:
 | API Name                                                                                       | Description                                                                  |
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | [SetInput()](multiple-file-processing.md#setinput)                                             | Sets an image source to provide images for consecutive process.              |
+| [GetInput()](multiple-file-processing.md#getinput)                                             | Get the object of CImageSourceAdapter that act as the input.                 |
 | [AddCaptureStateListener()](multiple-file-processing.md#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
 | [RemoveCaptureStateListener()](multiple-file-processing.md#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
 | [AddImageSourceStateListener()](multiple-file-processing.md#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
