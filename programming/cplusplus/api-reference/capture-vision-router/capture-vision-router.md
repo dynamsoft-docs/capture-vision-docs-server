@@ -17,55 +17,55 @@ The APIs for this class include:
 
 ## Constructor and Destructor
 
-| Method                                                           | Description                                           |
-| ---------------------------------------------------------------- | ----------------------------------------------------- |
-| [`CCaptureVisionRouter`](instantiate.md#ccapturevisionrouter)    | Default constructor of `CCaptureVisionRouter` object. |
-| [`~CCaptureVisionRouter`](instantiate.md#ccapturevisionrouter-1) | Destructor of `CCaptureVisionRouter` object.          |
+| Method | Description |
+| ------ | ----------- |
+| [`CCaptureVisionRouter`](instantiate.md#ccapturevisionrouter) | Default constructor of `CCaptureVisionRouter` object. |
+| [`~CCaptureVisionRouter`](instantiate.md#ccapturevisionrouter-1) | Destructor of `CCaptureVisionRouter` object. |
 
 ## Single-File Processing
 
-| API Name                                       | Description                                               |
-| ---------------------------------------------- | --------------------------------------------------------- |
+| API Name   | Description   |
+| ---------- | ------------- |
 | [capture()](single-file-processing.md#capture) | Process an image or file to derive important information. |
 
 ## Multiple-File Processing
 
-| API Name                                                                                       | Description                                                                  |
-| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [SetInput()](multiple-file-processing.md#setinput)                                             | Sets an image source to provide images for consecutive process.              |
-| [GetInput()](multiple-file-processing.md#getinput)                                             | Get the object of CImageSourceAdapter that act as the input.                 |
-| [AddCaptureStateListener()](multiple-file-processing.md#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
-| [RemoveCaptureStateListener()](multiple-file-processing.md#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
-| [AddImageSourceStateListener()](multiple-file-processing.md#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
-| [RemoveImageSourceStateListener()](multiple-file-processing.md#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.        |
-| [AddResultReceiver()](multiple-file-processing.md#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
-| [RemoveResultReceiver()](multiple-file-processing.md#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
-| [StartCapturing()](multiple-file-processing.md#startcapturing)                                 | Starts to process images consecutively.                                      |
-| [StopCapturing()](multiple-file-processing.md#stopcapturing)                                   | Stops the consecutive process.                                               |
+| API Name   | Description   |
+| ---------- | ------------- |
+| [SetInput()](multiple-file-processing.md#setinput) | Sets an image source to provide images for consecutive process. |
+| [GetInput()](multiple-file-processing.md#getinput) | Get the object of CImageSourceAdapter that act as the input. |
+| [AddCaptureStateListener()](multiple-file-processing.md#addcapturestatelistener) | Adds an object that listens to the state changes of the capture process. |
+| [RemoveCaptureStateListener()](multiple-file-processing.md#removecapturestatelistener) | Removes an object which listens to the state changes of the capture process. |
+| [AddImageSourceStateListener()](multiple-file-processing.md#addimagesourcestatelistener) | Adds an object that listens to state changes of the image source. |
+| [RemoveImageSourceStateListener()](multiple-file-processing.md#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source. |
+| [AddResultReceiver()](multiple-file-processing.md#addresultreceiver)  | Adds an object as the receiver of captured results. |
+| [RemoveResultReceiver()](multiple-file-processing.md#removeresultreceiver) | Removes an object which was added as a receiver of captured results. |
+| [StartCapturing()](multiple-file-processing.md#startcapturing)  | Starts to process images consecutively. |
+| [StopCapturing()](multiple-file-processing.md#stopcapturing)  | Stops the consecutive process. |
 
 ## Settings
 
-| API Name                                                     | Description                                                                                  |
-| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| [`InitSettings`](settings.md#initsettings)                   | Loads and initializes a template from a string.                                              |
-| [`InitSettingsFromFile`](settings.md#initsettingsfromfile)   | Loads and initializes a template from a file.                                                |
-| [`OutputSettings`](settings.md#outputsettings)               | Exports a specific `CaptureVisionTemplate` to a string.                                      |
-| [`OutputSettingsToFile`](settings.md#outputsettingstofile)   | Exports a specific `CaptureVisionTemplate` to a file.                                        |
+| API Name   | Description   |
+| ---------- | ------------- |
+| [`InitSettings`](settings.md#initsettings)  | Loads and initializes a template from a string.  |
+| [`InitSettingsFromFile`](settings.md#initsettingsfromfile)   | Loads and initializes a template from a file. |
+| [`OutputSettings`](settings.md#outputsettings) | Exports a specific `CaptureVisionTemplate` to a string.  |
+| [`OutputSettingsToFile`](settings.md#outputsettingstofile)   | Exports a specific `CaptureVisionTemplate` to a file. |
 | [`GetSimplifiedSettings`](settings.md#getsimplifiedsettings) | Retrieves a `SimplifiedCaptureVisionSettings` object for a specific `CaptureVisionTemplate`. |
-| [`UpdateSettings`](settings.md#updatesettings)               | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.             |
-| [`ResetSettings`](settings.md#resetsettings)                 | Resets all templates to factory settings.                                                    |
+| [`UpdateSettings`](settings.md#updatesettings) | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.  |
+| [`ResetSettings`](settings.md#resetsettings)   | Resets all templates to factory settings.  |
 
 ## Intermediate Result
 
 The following method returns an `CIntermediateResultManager` object which allows the application to tap into the algorithmic process.
 
-| API Name                                                                            | Description                                     |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------- |
+| API Name   | Description   |
+| ---------- | ------------- |
 | [GetIntermediateResultManager](intermediate-result.md#getintermediateresultmanager) | Returns an `CIntermediateResultManager` object. |
 
 ## Auxiliary
 
-| API Name                                      | Description                                               |
-| --------------------------------------------- | --------------------------------------------------------- |
+| API Name   | Description   |
+| ---------- | ------------- |
 | [GetVersion](auxiliary-methods.md#getversion) | Returns the version of the `CCaptureVisionRouter` object. |
-| [FreeString](auxiliary-methods.md#freestring) | Frees the memory allocated for a string.                  |
+| [FreeString](auxiliary-methods.md#freestring) | Frees the memory allocated for a string. |

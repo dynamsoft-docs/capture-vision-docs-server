@@ -21,14 +21,14 @@ class dynamsoft::cvr::CImageSourceStateListener
 
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |
-| [`OnImageSourceStateChanged`](#onimagesourcestatechanged) | Called when the state of the image source changes. |
+| [`OnImageSourceStateReceived`](#onimagesourcestatereceived) | Called when the state of the image source changes. |
 
-### OnImageSourceStateChanged
+### OnImageSourceStateReceived
 
 This method is called when the state of the image source changes.
 
 ```cpp
-virtual void OnImageSourceStateChanged(ImageSourceState state) = 0;
+virtual void OnImageSourceStateReceived(ImageSourceState state) = 0;
 ```
 
 **Parameters**

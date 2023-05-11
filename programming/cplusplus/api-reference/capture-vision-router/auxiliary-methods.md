@@ -11,10 +11,10 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-
 
 # Capture Vision Router C++ API Reference - Auxiliary Methods
 
-| API Name                                                      | Description                                               |
-| ------------------------------------------------------------- | --------------------------------------------------------- |
-| [GetVersion](#getversion)                                     | Returns the version of the `CCaptureVisionRouter` object. |
-| [FreeString](#freestring)                                     | Frees the memory allocated for a string.                  |
+| API Name | Description |
+| -------- | ----------- |
+| [GetVersion](#getversion) | Returns the version of the `CCaptureVisionRouter` object. |
+| [FreeString](#freestring) | Frees the memory allocated for a string. |
 
 ## GetVersion
 
