@@ -16,7 +16,7 @@ cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
 dbr_cpp_api: /barcode-reader/docs/server/programming/cplusplus/api-reference/
 dlr_cpp_api: /label-recognition/docs/server/programming/c-cplusplus/api-reference/
 ddn_cpp_api: /document-normalizer/docs/server/programming/cplusplus/api-reference/
-dcp_cpp_api: /code-parser/docs/server/programming/cplusplus/api-reference/
+dcp_cpp_api: /code-parser/docs/server/programming/cplusplus/api-reference/class/
 
 dotnet: /capture-vision/docs/server/programming/dotnet/
 dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
