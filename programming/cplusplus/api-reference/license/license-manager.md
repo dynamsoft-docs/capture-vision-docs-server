@@ -111,6 +111,10 @@ static int GetDeviceUUID(int uuidGenerationMethod, char uuidBuffer[] , const int
 
 Returns 0 if the UUID is generated successfully, a negative value indicating an error otherwise.
 
+**Remarks**
+
+If you are going to change the license cache path by `SetLicenseCachePath` , make sure `GetDeviceUUID` is called AFTER `SetLicenseCachePath`.
+
 ### SetLicenseCachePath
 
 Sets the directory path for the license cache.
