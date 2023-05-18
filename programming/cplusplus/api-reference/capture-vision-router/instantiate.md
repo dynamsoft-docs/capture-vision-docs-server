@@ -9,7 +9,7 @@ breadcrumbText: CVR C++ Constructor and Destructor
 permalink: /programming/cplusplus/api-reference/capture-vision-router/instantiate.html
 ---
 
-# Capture Vision Router C++ API Reference - Constructor and Destructor
+# Constructor and Destructor
 
 | Method                                             | Description                                           |
 | -------------------------------------------------- | ----------------------------------------------------- |

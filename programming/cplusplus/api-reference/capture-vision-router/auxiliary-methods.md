@@ -9,7 +9,7 @@ breadcrumbText: CVR C++ Auxiliary Methods
 permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-methods.html
 ---
 
-# Capture Vision Router C++ API Reference - Auxiliary Methods
+# Auxiliary Methods - Capture Vision Router C++ API Reference
 
 | API Name                                                      | Description                                               |
 | ------------------------------------------------------------- | --------------------------------------------------------- |

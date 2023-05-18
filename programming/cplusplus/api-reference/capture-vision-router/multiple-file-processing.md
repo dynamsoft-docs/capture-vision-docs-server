@@ -9,7 +9,7 @@ breadcrumbText: CVR C++ Multiple-File Processing
 permalink: /programming/cplusplus/api-reference/capture-vision-router/multiple-file-processing.html
 ---
 
-# Capture Vision Router C++ API Reference - Multiple-File Processing
+# Multiple-File Processing
 
 | API Name                                                            | Description                                                                  |
 | ------------------------------------------------------------------- | ---------------------------------------------------------------------------- |

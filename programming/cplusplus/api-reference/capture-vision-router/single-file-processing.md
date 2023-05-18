@@ -9,7 +9,7 @@ breadcrumbText: CVR C++ Single-File Processing
 permalink: /programming/cplusplus/api-reference/capture-vision-router/single-file-process.html
 ---
 
-# Capture Vision Router C++ API Reference - Single-File Processing
+# Single-File Processing
 
 | API Name              | Description                                               |
 | --------------------- | --------------------------------------------------------- |
