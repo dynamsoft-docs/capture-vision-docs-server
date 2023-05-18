@@ -7,7 +7,7 @@ needAutoGenerateSidebar: true
 needGenerateH3Content: true
 noTitleIndex: true
 breadcrumbText: CVR C++ API Reference Index
-permalink: /programming/cplusplus/api-reference/capture-vision-router/index.html
+permalink: /programming/cplusplus/api-reference/capture-vision-router/index.md
 ---
 
 # Capture Vision Router C++ API Reference Index
@@ -16,7 +16,7 @@ The "Capture Vision Router" module is defined in the namespace `Dynamsoft.CVR` w
 
 ## Main Class - `CCaptureVisionRouter`
 
-The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.architecture}}output.html#final-results) or [Intermediate Results]({{site.architecture}}output.html#intermediate-results).
+The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{architecture}}output.md#final-results) or [Intermediate Results]({{architecture}}output.md#intermediate-results).
 
 Read more about the class [`CCaptureVisionRouter`](capture-vision-router.md).
 
@@ -33,9 +33,9 @@ The following are the auxiliary classes:
 
 At present, there is only one struct in the "Capture Vision Router" module:
 
-* [SimplifiedCaptureVisionSettings](structs/simplified-capture-vision-settings.md)
+* [SimplifiedCaptureVisionSettings](struct/simplified-capture-vision-settings.md)
 
 ## Enums
 
-* [EnumImageSourceState]({{site.enums}}core/image-source-state.html?lang=cpp)
-* [EnumCaptureState]({{site.enums}}core/capture-state.html?lang=cpp)
+* [EnumImageSourceState]({{enums}}core/image-source-state.md?lang=cpp)
+* [EnumCaptureState]({{enums}}core/capture-state.md?lang=cpp)

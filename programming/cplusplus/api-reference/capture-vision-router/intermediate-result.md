@@ -9,7 +9,7 @@ breadcrumbText: CVR C++ Intermediate Result
 permalink: /programming/cplusplus/api-reference/capture-vision-router/intermediate-result.html
 ---
 
-# Capture Vision Router C++ API Reference - Intermediate Result
+# Intermediate Result
 
 | API Name                                                      | Description                                               |
 | ------------------------------------------------------------- | --------------------------------------------------------- |

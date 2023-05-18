@@ -10,22 +10,18 @@ needAutoGenerateSidebar: true
 
 The CIntermediateResultReceiver class is responsible for receiving intermediate results of different types. It provides virtual functions for each type of result, which are called when the corresponding result is received.
 
-## Definition
-
-*Namespace:* dynamsoft::intermediate_results
-
-*Assembly:* DynamsoftCore.dll
-
 ```cpp
-class CIntermediateResultReceiver
+class dynamsoft::intermediate_results::CIntermediateResultReceiver 
 ```
 
-## Methods
+---
+
+## Methods Summary
 
 | Method | Description |
 |--------|-------------|
 | [`GetObservedResultUnitTypes`](#getobservedresultunittypes) | Gets the types of intermediate result units that have been observed. |
-| [`OnTaskResultsReceived`](#ontaskresultsreceived) | Called when task results have been received. |
+| [`GetResultLevel`](#getresultlevel) | Gets the result generation level of the intermediate result receiver. |
 | [`OnPredetectedRegionsReceived`](#onpredetectedregionsreceived) | Called when predetected regions have been received. |
 | [`OnLocalizedBarcodesReceived`](#onlocalizedbarcodesreceived) | Called when localized barcodes have been received. |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived) | Called when decoded barcodes have been received. |
@@ -66,22 +62,17 @@ unsigned long long GetObservedResultUnitTypes()
 
 Returns a bit mask of the intermediate result unit types that have been observed.
 
-### OnTaskResultsReceived
+### GetResultLevel
 
-Called when task results have been received.
+Gets the result generation level of the intermediate result receiver.
 
 ```cpp
-virtual void OnTaskResultsReceived(const char* targetROIDefName, const char* taskName, const CIntermediateResult* pResult);
+int GetResultLevel()
 ```
 
-**Parameters**
+**Return value**
 
-`[in] targetROIDefName` The name of the target region of interest definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] pResult` A pointer to the `CIntermediateResult` object. It may contain from one to three `CIntermediateResultUnit` objects.
-
+Returns the result generation level of the intermediate result receiver.
 
 ### OnPredetectedRegionsReceived
 
@@ -90,7 +81,6 @@ Called when predetected regions have been received.
 ```cpp
 virtual void OnPredetectedRegionsReceived(const char* targetROIDefName, 
                                           const char* taskName, 
-                                          bool isSectionLevelResult,
                                           const CPredetectedRegionsUnit *pResult)
 ```
 
@@ -99,8 +89,6 @@ virtual void OnPredetectedRegionsReceived(const char* targetROIDefName,
 `[in] targetROIDefName` The name of the target region of interest definition.
 
 `[in] taskName` The name of the task that produced the result.
-
-`[in] isSectionLevelResult` Indicates that the result was generated at the section or stage level.
 
 `[in] pResult` A pointer to the CPredetectedRegionsUnit object that contains the result.
 
@@ -111,7 +99,6 @@ Called when localized barcodes have been received.
 ```cpp
 virtual void OnLocalizedBarcodesReceived(const char* targetROIDefName, 
                                           const char* taskName, 
-                                          bool isSectionLevelResult,
                                           const dbr::intermediate_results::CLocalizedBarcodesUnit *pResult)
 ```
 
@@ -120,8 +107,6 @@ virtual void OnLocalizedBarcodesReceived(const char* targetROIDefName,
 `[in] targetROIDefName` The name of the target region of interest definition.
 
 `[in] taskName` The name of the task that produced the result.
-
-`[in] isSectionLevelResult` Indicates that the result was generated at the section or stage level.
 
 `[in] pResult` A pointer to the CLocalizedBarcodesUnit object that contains the result.
 
@@ -132,7 +117,6 @@ Called when decoded barcodes have been received.
 ```cpp
 virtual void OnDecodedBarcodesReceived(const char* targetROIDefName, 
                                           const char* taskName, 
-                                          bool isSectionLevelResult,
                                           const dbr::intermediate_results::CDecodedBarcodesUnit *pResult)
 ```
 
@@ -141,8 +125,6 @@ virtual void OnDecodedBarcodesReceived(const char* targetROIDefName,
 `[in] targetROIDefName` The name of the target region of interest definition.
 
 `[in] taskName` The name of the task that produced the result.
-
-`[in] isSectionLevelResult` Indicates that the result was generated at the section or stage level.
 
 `[in] pResult` A pointer to the CDecodedBarcodesUnit object that contains the result.
 
@@ -153,7 +135,6 @@ Called when localized text lines have been received.
 ```cpp
 virtual void OnLocalizedTextLinesReceived(const char* targetROIDefName, 
                                           const char* taskName, 
-                                          bool isSectionLevelResult,
                                           const dlr::intermediate_results::CLocalizedTextLinesUnit *pResult)
 ```
 
@@ -162,8 +143,6 @@ virtual void OnLocalizedTextLinesReceived(const char* targetROIDefName,
 `[in] targetROIDefName` The name of the target region of interest definition.
 
 `[in] taskName` The name of the task that produced the result.
-
-`[in] isSectionLevelResult` Indicates that the result was generated at the section or stage level.
 
 `[in] pResult` A pointer to the CLocalizedTextLinesUnit object that contains the result.
 
@@ -174,7 +153,6 @@ Called when recognized text lines have been received.
 ```cpp
 virtual void OnRecognizedTextLinesReceived(const char* targetROIDefName, 
                                           const char* taskName, 
-                                          bool isSectionLevelResult,
                                           const dlr::intermediate_results::CRecognizedTextLinesUnit *pResult)
 ```
 
@@ -183,8 +161,6 @@ virtual void OnRecognizedTextLinesReceived(const char* targetROIDefName,
 `[in] targetROIDefName` The name of the target region of interest definition.
 
 `[in] taskName` The name of the task that produced the result.
-
-`[in] isSectionLevelResult` Indicates that the result was generated at the section or stage level.
 
 `[in] pResult` A pointer to the CRecognizedTextLinesUnit object that contains the result.
 
@@ -195,7 +171,6 @@ Called when detected quadrilaterals have been received.
 ```cpp
 virtual void OnDetectedQuadsReceived(const char* targetROIDefName, 
                                           const char* taskName, 
-                                          bool isSectionLevelResult,
                                           const ddn::intermediate_results::CDetectedQuadsUnit *pResult)
 ```
 
@@ -204,8 +179,6 @@ virtual void OnDetectedQuadsReceived(const char* targetROIDefName,
 `[in] targetROIDefName` The name of the target region of interest definition.
 
 `[in] taskName` The name of the task that produced the result.
-
-`[in] isSectionLevelResult` Indicates that the result was generated at the section or stage level.
 
 `[in] pResult` A pointer to the CDetectedQuadsUnit object that contains the result.
 
@@ -216,7 +189,6 @@ Called when normalized images have been received.
 ```cpp
 virtual void OnNormalizedImagesReceived(const char* targetROIDefName, 
                                           const char* taskName, 
-                                          bool isSectionLevelResult,
                                           const ddn::intermediate_results::CNormalizedImageUnit *pResult)
 ```
 
@@ -225,8 +197,6 @@ virtual void OnNormalizedImagesReceived(const char* targetROIDefName,
 `[in] targetROIDefName` The name of the target region of interest definition.
 
 `[in] taskName` The name of the task that produced the result.
-
-`[in] isSectionLevelResult` Indicates that the result was generated at the section or stage level.
 
 `[in] pResult` A pointer to the CNormalizedImageUnit object that contains the result.
 

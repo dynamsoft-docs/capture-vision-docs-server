@@ -10,19 +10,13 @@ needAutoGenerateSidebar: true
 
 The CPredetectedRegionElement class represents a region element that has been pre-detected in an image. It is a subclass of the CRegionObjectElement.
 
-## Definition
-
-*Namespace:* dynamsoft::intermediate_results
-
-*Assembly:* DynamsoftCore.dll
-
 ```cpp
-class CPredetectedRegionElement : public CRegionObjectElement
+class dynamsoft::intermediate_results::CPredetectedRegionElement : public CRegionObjectElement
 ```
 
-*Inheritance:* [CRegionObjectElement](region-object-element.md) -> CPredetectedRegionElement
+---
 
-## Methods
+## Methods Summary
 
 | Method               | Description |
 |----------------------|-------------|

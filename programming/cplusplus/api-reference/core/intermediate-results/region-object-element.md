@@ -10,17 +10,13 @@ needAutoGenerateSidebar: true
 
 The CRegionObjectElement class represents an element of a region object in 2D space. It is an abstract class that provides the interface for region object elements.
 
-## Definition
-
-*Namespace:* dynamsoft::intermediate_results
-
-*Assembly:* DynamsoftCore.dll
-
 ```cpp
-class CRegionObjectElement
+class dynamsoft::intermediate_results::CRegionObjectElement 
 ```
 
-## Methods
+---
+
+## Methods Summary
 
 | Method               | Description |
 |----------------------|-------------|
@@ -70,7 +66,7 @@ Returns a RegionObjectElementType enum value which represents the type of the re
 Gets the rotation transform matrix of the region object element.
 
 ```cpp
-void GetRotationTransformMatrix(double matrix[9]) const
+void GetRotatationTransformMatrix(double matrix[9]) const
 ```
 
 **Parameters**

@@ -10,30 +10,26 @@ needAutoGenerateSidebar: true
 
 The CLicenseManager class provides a set of APIs to manage SDK licensing.
 
-## Definition
-
-*Namespace:* dynamsoft::license
-
-*Assembly:* DynamsoftLicense.dll
-
 ```cpp
-class CLicenseManager
+class dynamsoft::license::CLicenseManager 
 ```
 
-## Methods
+---
+
+## Methods Summary
 
 | Method               | Description |
 |----------------------|-------------|
-| [`InitLicense`](#initlicense) | Initializes the license using a license key. |
-| [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets the friendly name of the device. |
-| [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the maximum number of allowed instances for the given device and process. |
-| [`GetDeviceUUID`](#getdeviceuuid) | Gets the unique identifier of the device. |
-| [`SetLicenseCachePath`](#setlicensecachepath) | Sets the directory path for the license cache. |
-| [`GetVersion`](#getversion) | Gets the version of the licensing library. |
+| [`InitLicense`](#initlicense) | It is used to initialize the license using a license key. |
+| [`SetDeviceFriendlyName`](#setdevicefriendlyname) | It is used to set the friendly name of the device. |
+| [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | It is used to set the maximum number of allowed instances for the given device and process. |
+| [`GetDeviceUUID`](#getdeviceuuid) | It is used to get the unique identifier of the device. |
+| [`SetLicenseCachePath`](#setlicensecachepath) | It is used to set the directory path for the license cache. |
+| [`GetVersion`](#getversion) | It is used to get the version of the licensing library. |
 
 ### InitLicense
 
-Initializes the license using a license key.
+It is used to initialize the license using a license key.
 
 ```cpp
 static int InitLicense(const char* pLicense, char errorMsgBuffer[] = NULL, const int errorMsgBufferLen = 0)
@@ -63,7 +59,7 @@ if (errorCode != EC_OK)
 
 ### SetDeviceFriendlyName
 
-Sets the friendly name of the device.
+It is used to set the friendly name of the device.
 
 ```cpp
 static int SetDeviceFriendlyName(const char* name)
@@ -79,7 +75,7 @@ Returns 0 if the friendly name is set successfully, a negative value indicating 
 
 ### SetMaxConcurrentInstanceCount
 
-Sets the maximum number of allowed instances for the given device and process.
+It is used to set the maximum number of allowed instances for the given device and process.
 
 ```cpp
 static void SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
@@ -93,7 +89,7 @@ static void SetMaxConcurrentInstanceCount(int countForThisDevice, int countForTh
 
 ### GetDeviceUUID
 
-Gets the unique identifier of the device.
+It is used to get the unique identifier of the device.
 
 ```cpp
 static int GetDeviceUUID(int uuidGenerationMethod, char uuidBuffer[] , const int uuidBufferLen)
@@ -111,13 +107,9 @@ static int GetDeviceUUID(int uuidGenerationMethod, char uuidBuffer[] , const int
 
 Returns 0 if the UUID is generated successfully, a negative value indicating an error otherwise.
 
-**Remarks**
-
-If you are going to change the license cache path by `SetLicenseCachePath` , make sure `GetDeviceUUID` is called AFTER `SetLicenseCachePath`.
-
 ### SetLicenseCachePath
 
-Sets the directory path for the license cache.
+It is used to set the directory path for the license cache.
 
 ```cpp
 static int SetLicenseCachePath(const char* directoryPath)
@@ -133,7 +125,7 @@ Returns 0 if the directory path is set successfully, a negative value indicating
 
 ### GetVersion
 
-Gets the version of the licensing library.
+It is used to get the version of the licensing library.
 
 ```cpp
 static const char* GetVersion()

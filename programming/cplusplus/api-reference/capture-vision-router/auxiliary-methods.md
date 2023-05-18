@@ -9,12 +9,12 @@ breadcrumbText: CVR C++ Auxiliary Methods
 permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-methods.html
 ---
 
-# Capture Vision Router C++ API Reference - Auxiliary Methods
+# Auxiliary Methods - Capture Vision Router C++ API Reference
 
-| API Name | Description |
-| -------- | ----------- |
-| [GetVersion](#getversion) | Returns the version of the `CCaptureVisionRouter` object. |
-| [FreeString](#freestring) | Frees the memory allocated for a string. |
+| API Name                                                      | Description                                               |
+| ------------------------------------------------------------- | --------------------------------------------------------- |
+| [GetVersion](#getversion)                                     | Returns the version of the `CCaptureVisionRouter` object. |
+| [FreeString](#freestring)                                     | Frees the memory allocated for a string.                  |
 
 ## GetVersion
 

@@ -9,20 +9,19 @@ breadcrumbText: CVR C++ Multiple-File Processing
 permalink: /programming/cplusplus/api-reference/capture-vision-router/multiple-file-processing.html
 ---
 
-# Capture Vision Router C++ API Reference - Multiple-File Processing
+# Multiple-File Processing
 
-| API Name  | Description  |
-| --------- | ------------ |
-| [SetInput()](#setinput) | Sets an image source to provide images for consecutive processing. |
-| [GetInput()](#getinput) | Get the object of CImageSourceAdapter that act as the input. |
-| [AddCaptureStateListener()](#addcapturestatelistener) | Adds an object that listens to the state changes of the capture process. |
-| [RemoveCaptureStateListener()](#removecapturestatelistener) | Removes an object which listens to the state changes of the capture process. |
-| [AddImageSourceStateListener()](#addimagesourcestatelistener) | Adds an object that listens to state changes of the image source.  |
-| [RemoveImageSourceStateListener()](#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.  |
-| [AddResultReceiver()](#addresultreceiver) | Adds an object as the receiver of captured results.  |
-| [RemoveResultReceiver()](#removeresultreceiver) | Removes an object which was added as a receiver of captured results. |
-| [StartCapturing()](#startcapturing) | Starts to process images consecutively.  |
-| [StopCapturing()](#stopcapturing) | Stops the consecutive processing.  |
+| API Name                                                            | Description                                                                  |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [SetInput()](#setinput)                                             | Sets an image source to provide images for consecutive processing.         |
+| [AddCaptureStateListener()](#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
+| [RemoveCaptureStateListener()](#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
+| [AddImageSourceStateListener()](#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
+| [RemoveImageSourceStateListener()](#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.        |
+| [AddResultReceiver()](#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
+| [RemoveResultReceiver()](#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
+| [StartCapturing()](#startcapturing)                                 | Starts to process images consecutively.                                      |
+| [StopCapturing()](#stopcapturing)                                   | Stops the consecutive processing.                                          |
 
 ## SetInput
 
@@ -34,7 +33,7 @@ void SetInput(CImageSourceAdapter* pAdaptor);
 
 **Parameters**
 
-`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{site.architecture}}input.html#image-source-adapter).
+`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{architecture}}input.md#image-source-adapter).
 
 **Return Value**
 
@@ -52,18 +51,6 @@ router->SetInput(fetcher);
 //...
 delete router;
 ```
-
-## GetInput
-
-Get the object of CImageSourceAdapter that act as the input.
-
-```cpp
-CImageSourceAdapter* GetInput();
-```
-
-**Return Value**
-
-An object of CImageSourceAdapter that act as the input.
 
 ## AddCaptureStateListener
 

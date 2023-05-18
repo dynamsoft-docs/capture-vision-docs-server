@@ -10,19 +10,13 @@ needAutoGenerateSidebar: true
 
 The CLineSegmentsUnit class represents a collection of line segments in 2D space. It is a derived class of CIntermediateResultUnit.
 
-## Definition
-
-*Namespace:* dynamsoft::intermediate_results
-
-*Assembly:* DynamsoftCore.dll
-
 ```cpp
-class CLineSegmentsUnit : public CIntermediateResultUnit
+class dynamsoft::intermediate_results::CLineSegmentsUnit: public CIntermediateResultUnit 
 ```
 
-*Inheritance:* [CIntermediateResultUnit](intermediate-result-unit.md) -> CLineSegmentsUnit
+---
 
-## Methods
+## Methods Summary
 
 | Method               | Description |
 |----------------------|-------------|

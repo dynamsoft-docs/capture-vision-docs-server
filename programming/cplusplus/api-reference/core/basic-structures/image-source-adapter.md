@@ -10,17 +10,13 @@ needAutoGenerateSidebar: true
 
 The CImageSourceAdapter class provides an interface for fetching and buffering images. It is an abstract class that needs to be implemented by a concrete class to provide actual functionality.
 
-## Definition
-
-*Namespace:* dynamsoft::basic_structures
-
-*Assembly:* DynamsoftCore.dll
-
 ```cpp
-class CImageSourceAdapter
+class dynamsoft::basic_structures::CImageSourceAdapter 
 ```
 
-## Methods
+---
+
+## Methods Summary
 
 | Method | Description |
 |--------|-------------|
@@ -37,7 +33,6 @@ class CImageSourceAdapter
 | [`SetNextImageToReturn`](#setnextimagetoreturn) | Sets the next image to return. |
 | [`GetImageCount`](#getimagecount) | Returns the actual count of buffered images. |
 | [`IsBufferEmpty`](#isbufferempty) | Determines whether the buffer is empty. |
-| [`ClearBuffer`](#clearbuffer) | Clears the buffer. |
 
 ---
 
@@ -204,11 +199,3 @@ bool IsBufferEmpty() const;
 **Return value**
 
 Returns true if the buffer is empty, false otherwise.
-
-### ClearBuffer
-
-Clears the buffer.
-
-```cpp
-void ClearBuffer();
-```

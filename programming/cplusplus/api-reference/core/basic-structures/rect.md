@@ -10,17 +10,13 @@ needAutoGenerateSidebar: true
 
 The CRect class represents a rectangle in 2D space. It contains four integer values that specify the top, left, right, and bottom edges of the rectangle.
 
-## Definition
-
-*Namespace:* dynamsoft::basic_structures
-
-*Assembly:* DynamsoftCore.dll
-
 ```cpp
-class CRect
+class dynamsoft::basic_structures::CRect 
 ```
 
-## Attributes
+---
+
+## Attributes Summary
 
 | Attribute | Type |
 |---------- | ---- |

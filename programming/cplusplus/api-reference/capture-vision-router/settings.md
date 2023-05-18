@@ -9,7 +9,7 @@ breadcrumbText: CVR C++ Settings
 permalink: /programming/cplusplus/api-reference/capture-vision-router/settings.html
 ---
 
-# Capture Vision Router C++ API Reference - Settings
+# Settings
 
 | API Name                                          | Description                                                                                  |
 | ------------------------------------------------- | -------------------------------------------------------------------------------------------- |

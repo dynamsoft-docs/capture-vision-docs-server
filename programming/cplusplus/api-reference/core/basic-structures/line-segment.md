@@ -10,17 +10,13 @@ needAutoGenerateSidebar: true
 
 The CLineSegment class represents a line segment in 2D space. It contains two CPoint objects, which represent the start point and end point of the line segment.
 
-## Definition
-
-*Namespace:* dynamsoft::basic_structures
-
-*Assembly:* DynamsoftCore.dll
-
 ```cpp
-class CLineSegment
+class dynamsoft::basic_structures::CLineSegment 
 ```
 
-## Attributes
+---
+
+## Attributes Summary
 
 | Attribute | Type |
 |---------- | ---- |
