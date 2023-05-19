@@ -6,14 +6,14 @@ keywords: capture vision, capture, image processing, api reference, C++, single-
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
 breadcrumbText: CVR C++ Single-File Processing
-permalink: /programming/cplusplus/api-reference/capture-vision-router/single-file-process.html
+permalink: /programming/cplusplus/api-reference/capture-vision-router/single-file-processing.html
 ---
 
 # Single-File Processing
 
 | API Name              | Description                                               |
 | --------------------- | --------------------------------------------------------- |
-| [capture()](#capture) | Process an image or file to derive important information. |
+| [Capture()](#capture) | Process an image or file to derive important information. |
 
 ## Capture
 
