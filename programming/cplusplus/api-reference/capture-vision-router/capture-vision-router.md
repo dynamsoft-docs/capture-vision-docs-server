@@ -26,7 +26,7 @@ The APIs for this class include:
 
 | API Name                                       | Description                                               |
 | ---------------------------------------------- | --------------------------------------------------------- |
-| [capture()](single-file-processing.md#capture) | Process an image or file to derive important information. |
+| [Capture()](single-file-processing.md#capture) | Process an image or file to derive important information. |
 
 ## Multiple-File Processing
 
@@ -66,5 +66,4 @@ The following method returns an `CIntermediateResultManager` object which allows
 
 | API Name                                      | Description                                               |
 | --------------------------------------------- | --------------------------------------------------------- |
-| [GetVersion](auxiliary-methods.md#getversion) | Returns the version of the `CCaptureVisionRouter` object. |
 | [FreeString](auxiliary-methods.md#freestring) | Frees the memory allocated for a string.                  |
