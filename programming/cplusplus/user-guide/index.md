@@ -22,6 +22,7 @@ needAutoGenerateSidebar: true
     - [Set Input Image Source](#set-input-image-source)
     - [Add Captured Result Receiver](#add-captured-result-receiver)
     - [Start Recognition](#start-recognition)
+    - [Release Allocated Memory](#release-allocated-memory)
     - [Build and Run the Project](#build-and-run-the-project)
       - [On windows](#on-windows)
       - [On Linux](#on-linux)
@@ -38,7 +39,7 @@ needAutoGenerateSidebar: true
 
 ## Installation
 
-If you don't have SDK yet, please go to <a href="https://www.dynamsoft.com/survey/dlr/?utm_source=docs" target="_blank">Dynamsoft website</a> to get it. Once the folder is decompressed, the root directory of the DLR installation package is `DynamsoftLabelRecognizer`, which we will refer to as `[INSTALLATION FOLDER]` throughout this guide.
+If you don't have SDK yet, please go to <a href="https://www.dynamsoft.com/survey/dlr/?utm_source=docs" target="_blank">Dynamsoft website</a> to get it. Once the folder is decompressed, the root directory of the DLR installation package is `Dynamsoft\LabelRecognizer`, which we will refer to as `[INSTALLATION FOLDER]` throughout this guide.
 
 ## Build Your First Application
 
@@ -152,7 +153,7 @@ Let's start by creating a console application which demonstrates the minimum cod
 2. Create an instance of Dynamsoft Capture Vision Router
 
     ```cpp
-    CCaptureVisionRouter router;
+    CCaptureVisionRouter* router = new CCaptureVisionRouter();
     ```
 
 ### Set Input Image Source
@@ -163,11 +164,11 @@ Let's start by creating a console application which demonstrates the minimum cod
     int main()
     {
         //...
-        CDirectoryFetcher dirFetcher;
-        errorCode = dirFetcher.SetDirectory("[Your Image Path]");
+        CImageSourceAdapter *dirFetcher = new CDirectoryFetcher;
+        errorCode = dirFetcher->SetDirectory("[Your Image Path]");
         cout << "Set Image Source: " << errorCode << endl;
 
-        router.SetInput(&dirFetcher);
+        router->SetInput(dirFetcher);
     }
     ```
 
@@ -198,8 +199,8 @@ Let's start by creating a console application which demonstrates the minimum cod
     int main()
     {
         //...
-        MyImageSourceStateListener listener(&router);
-        router.AddImageSourceStateListener(&listener);
+        CImageSourceStateListener *listener = new MyImageSourceStateListener(router);
+        router->AddImageSourceStateListener(listener);
     }
     ```
 
@@ -248,8 +249,8 @@ Let's start by creating a console application which demonstrates the minimum cod
     int main()
     {
         //...
-        MyResultReceiver recv;
-        router.AddResultReceiver(&recv);
+        CCapturedResultReceiver* recv = new MyResultReceiver();
+        router->AddResultReceiver(recv);
     }
     ```
 
@@ -261,7 +262,7 @@ Let's start by creating a console application which demonstrates the minimum cod
     int main()
     {
         //...
-        errorCode = router.StartCapturing("default", true);
+        errorCode = router->StartCapturing("default", true);
         if (errorCode != EC_OK)
             cout << "StartCapturing Error: " << errorCode << endl;
     }
@@ -271,6 +272,20 @@ Let's start by creating a console application which demonstrates the minimum cod
     >
     >- The second parameter is set to true, all images in the folder will be processed before returning. If set to false, it will return immediately.
     >- You can also manually call StopCapturing to stop the current capture task.
+
+### Release Allocated Memory
+
+1. Release the `CCaptureVisionRouter` instance.
+
+   ```cpp
+   delete router, router = NULL;
+   ```
+
+   >Note:
+   >You only need to explicitly dispose of the `CImageSourceAdapter` instance, as ownership of the following associated instances will be automatically transferred to the `CCaptureVisionRouter` instance:
+   >- `CImageSourceAdapter` instance associated using `SetInput`.
+   >- `CCapturedResultReceiver` instance associated using `AddResultReceiver`.
+   >- `CImageSourceStateListener` instance associated using `AddImageSourceStateListener`.
 
 You can download the similar complete source code from [Here](https://github.com/Dynamsoft/capture-vision-cpp-samples/tree/master/samples/C++/HelloWorld).
 
