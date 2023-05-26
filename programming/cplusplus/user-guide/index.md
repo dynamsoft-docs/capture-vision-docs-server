@@ -164,7 +164,7 @@ Let's start by creating a console application which demonstrates the minimum cod
     int main()
     {
         //...
-        CImageSourceAdapter *dirFetcher = new CDirectoryFetcher;
+        CDirectoryFetcher *dirFetcher = new CDirectoryFetcher;
         errorCode = dirFetcher->SetDirectory("[Your Image Path]");
         cout << "Set Image Source: " << errorCode << endl;
 
