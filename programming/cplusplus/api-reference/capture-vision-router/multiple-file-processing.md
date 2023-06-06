@@ -20,6 +20,8 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/multiple-f
 | [RemoveImageSourceStateListener()](#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.        |
 | [AddResultReceiver()](#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
 | [RemoveResultReceiver()](#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
+| [AddResultFilter()](#addresultfilter)                               | Adds an object as the filter of captured results.                          |
+| [RemoveResultFilter()](#removeresultfilter)                         | Removes an object which was added as a filter of captured results.         |
 | [StartCapturing()](#startcapturing)                                 | Starts to process images consecutively.                                      |
 | [StopCapturing()](#stopcapturing)                                   | Stops the consecutive processing.                                          |
 
@@ -28,7 +30,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/multiple-f
 Sets an image source to provide images for consecutive processing.
 
 ```cpp
-void SetInput(CImageSourceAdapter* pAdaptor);
+int SetInput(CImageSourceAdapter* pAdaptor);
 ```
 
 **Parameters**
@@ -37,7 +39,7 @@ void SetInput(CImageSourceAdapter* pAdaptor);
 
 **Return Value**
 
-None.
+Returns an error code. Zero indicates success.
 
 **Code Snippet**
 
@@ -57,7 +59,7 @@ delete router;
 Adds an object that listens to the state changes of the capture process.
 
 ```cpp
-void AddCaptureStateListener(CCaptureStateListener* listener);
+int AddCaptureStateListener(CCaptureStateListener* listener);
 ```
 
 **Parameters**
@@ -66,16 +68,23 @@ void AddCaptureStateListener(CCaptureStateListener* listener);
 
 **Return Value**
 
-None.
+Returns an error code. Zero indicates success.
 
 **Code Snippet**
 
 ```cpp
+class MyCaptureStateListener: public CCaptureStateListener
+{
+public:
+    void OnCaptureStateChanged(CaptureState state) {
+        // user code...
+    }
+};
 int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 CCaptureVisionRouter* router = new CCaptureVisionRouter();
-CCaptureStateListener* listener = new CCaptureStateListener();
+CCaptureStateListener* listener = new MyCaptureStateListener();
 router->AddCaptureStateListener(listener);
 //...
 delete router;
@@ -86,7 +95,7 @@ delete router;
 Removes an object which listens to the state changes of the capture process.
 
 ```cpp
-void RemoveCaptureStateListener(CCaptureStateListener* listener);
+int RemoveCaptureStateListener(CCaptureStateListener* listener);
 ```
 
 **Parameters**
@@ -95,16 +104,23 @@ void RemoveCaptureStateListener(CCaptureStateListener* listener);
 
 **Return Value**
 
-None.
+Returns an error code. Zero indicates success.
 
 **Code Snippet**
 
 ```cpp
+class MyCaptureStateListener: public CCaptureStateListener
+{
+public:
+    void OnCaptureStateChanged(CaptureState state) {
+        // user code...
+    }
+};
 int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 CCaptureVisionRouter* router = new CCaptureVisionRouter();
-CCaptureStateListener* listener = new CCaptureStateListener();
+CCaptureStateListener* listener = new MyCaptureStateListener();
 router->AddCaptureStateListener(listener);
 //...
 router->RemoveCaptureStateListener(listener);
@@ -116,7 +132,7 @@ delete router;
 Adds an object that listens to state changes of the image source.
 
 ```cpp
-void AddImageSourceStateListener(CImageSourceStateListener* listener);
+int AddImageSourceStateListener(CImageSourceStateListener* listener);
 ```
 
 **Parameters**
@@ -125,11 +141,18 @@ void AddImageSourceStateListener(CImageSourceStateListener* listener);
 
 **Return Value**
 
-None.
+Returns an error code. Zero indicates success.
 
 **Code Snippet**
 
 ```cpp
+class CMyImageSourceStateListener: public CImageSourceStateListener
+{
+public:
+    void OnImageSourceStateReceived(ImageSourceState state) {
+        // user code...
+    }
+};
 int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
@@ -145,7 +168,7 @@ delete router;
 Removes an object which listens to state changes of the image source.
 
 ```cpp
-void RemoveImageSourceStateListener(CImageSourceStateListener* listener);
+int RemoveImageSourceStateListener(CImageSourceStateListener* listener);
 ```
 
 **Parameters**
@@ -154,16 +177,23 @@ void RemoveImageSourceStateListener(CImageSourceStateListener* listener);
 
 **Return Value**
 
-None.
+Returns an error code. Zero indicates success.
 
 **Code Snippet**
 
 ```cpp
+class CMyImageSourceStateListener: public CImageSourceStateListener
+{
+public:
+    void OnImageSourceStateReceived(ImageSourceState state) {
+        // user code...
+    }
+};
 int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 CCaptureVisionRouter* router = new CCaptureVisionRouter();
-CImageSourceStateListener* listener = new CImageSourceStateListener();
+CImageSourceStateListener* listener = new CMyImageSourceStateListener();
 router->AddImageSourceStateListener(listener);
 //...
 router->RemoveImageSourceStateListener(listener);
@@ -175,7 +205,7 @@ delete router;
 Adds an object as the receiver of captured results.
 
 ```cpp
-void AddResultReceiver(CCapturedResultReceiver* receiver);
+int AddResultReceiver(CCapturedResultReceiver* receiver);
 ```
 
 **Parameters**
@@ -184,16 +214,23 @@ void AddResultReceiver(CCapturedResultReceiver* receiver);
 
 **Return Value**
 
-None.
+Returns an error code. Zero indicates success.
 
 **Code Snippet**
 
 ```cpp
+class MyResultReceiver: public CCapturedResultReceiver
+{
+public:
+    void OnCapturedResultReceived(const CCapturedResult* result) {
+        // user code...
+    }
+};
 int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 CCaptureVisionRouter* router = new CCaptureVisionRouter();
-CCapturedResultReceiver* receiver = new CCapturedResultReceiver();
+CCapturedResultReceiver* receiver = new MyResultReceiver();
 router->AddResultReceiver(receiver);
 //...
 delete router;
@@ -204,7 +241,7 @@ delete router;
 Removes an object which was added as a receiver of captured results.
 
 ```cpp
-void RemoveResultReceiver(CCapturedResultReceiver* receiver);
+int RemoveResultReceiver(CCapturedResultReceiver* receiver);
 ```
 
 **Parameters**
@@ -213,7 +250,44 @@ void RemoveResultReceiver(CCapturedResultReceiver* receiver);
 
 **Return Value**
 
-None.
+Returns an error code. Zero indicates success.
+
+**Code Snippet**
+
+```cpp
+class MyResultReceiver: public CCapturedResultReceiver
+{
+public:
+    void OnCapturedResultReceived(const CCapturedResult* result) {
+        // user code...
+    }
+};
+int errorCode = 0;
+char szErrorMsg[256];
+errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
+CCaptureVisionRouter* router = new CCaptureVisionRouter();
+CCapturedResultReceiver* receiver = new MyResultReceiver();
+router->AddResultReceiver(receiver);
+//...
+router->RemoveResultReceiver(receiver);
+delete router;
+```
+
+## AddResultFilter
+
+Adds an object as the filter of captured results.
+
+```cpp
+int AddResultFilter(CCapturedResultFilter* filter);
+```
+
+**Parameters**
+
+`[in] filter` Specifies a filter object of the type [`CCapturedResultFilter`](../core/basic-structures/captured-result-filter.md) to be added.
+
+**Return Value**
+
+Returns an error code. Zero indicates success.
 
 **Code Snippet**
 
@@ -222,10 +296,39 @@ int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 CCaptureVisionRouter* router = new CCaptureVisionRouter();
-CCapturedResultReceiver* receiver = new CCapturedResultReceiver();
-router->AddResultReceiver(receiver);
+CCapturedResultFilter* filter = new CMultiFrameResultCrossFilter();
+router->AddResultFilter(filter);
 //...
-router->RemoveResultReceiver(receiver);
+delete router;
+```
+
+## RemoveResultFilter
+
+Removes an object which was added as a filter of captured results.
+
+```cpp
+int RemoveResultFilter(CCapturedResultFilter* filter);
+```
+
+**Parameters**
+
+`[in] filter` Specifies a filter object of the type [`CCapturedResultFilter`](../core/basic-structures/captured-result-filter.md) to be removed.
+
+**Return Value**
+
+Returns an error code. Zero indicates success.
+
+**Code Snippet**
+
+```cpp
+int errorCode = 0;
+char szErrorMsg[256];
+errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
+CCaptureVisionRouter* router = new CCaptureVisionRouter();
+CCapturedResultFilter* filter = new CMultiFrameResultCrossFilter();
+router->AddResultFilter(filter);
+//...
+router->RemoveResultFilter(filter);
 delete router;
 ```
 
@@ -234,14 +337,14 @@ delete router;
 Starts to process images consecutively.
 
 ```cpp
-int StartCapturing(const char* templateName = "", bool waitForCompletion = false, char errorMsgBuffer[]=NULL, const int errorMsgBufferLen=0);
+int StartCapturing(const char* templateName = "", bool waitForThreadExit = false, char errorMsgBuffer[]=NULL, const int errorMsgBufferLen=0);
 ```
 
 **Parameters**
 
 `[in] templateName` Specifies a template to use for capturing. If not specified, an empty string is used which means the factory default template.
 
-`[in] waitForCompletion` Indicates whether to wait for the capture process to complete before returning. The default value is false.
+`[in] waitForThreadExit` Indicates whether to wait for the capture process to complete before returning. The default value is false.
 
 `[out] errorMsgBuffer` Stores any error messages generated during the capturing process. If no buffer is provided, the error messages will not be output.
 
@@ -258,8 +361,7 @@ int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 CCaptureVisionRouter* router = new CCaptureVisionRouter();
-char szErrorMsg2[256];
-router->StartCapturing("myTemplate", true, szErrorMsg2, 256);
+router->StartCapturing("myTemplate", true, szErrorMsg, 256);
 //...
 delete router;
 ```
@@ -269,12 +371,13 @@ delete router;
 Stops the multiple-file processing.
 
 ```cpp
-void StopCapturing(bool waitForCompletion = true);
+void StopCapturing(bool waitForRemainingTasks = true, bool waitForThreadExit = false);
 ```
 
 **Parameters**
 
-`[in] waitForCompletion` Indicates whether to wait for the capture process to complete before returning. The default value is false.
+`[in] waitForRemainingTasks` Indicates whether to wait for the remaining tasks to complete before returning. The default value is true.
+`[in] waitForThreadExit` Indicates whether to wait for the capture process to complete before returning. The default value is false.
 
 **Return Value**
 

@@ -10,8 +10,14 @@ needAutoGenerateSidebar: true
 
 The CTransformedGrayscaleImageUnit class is a subclass of CIntermediateResultUnit that represents a transformed grayscale image. It may be the original grayscale image or the inverted image of the original grayscale image.
 
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::intermediate_results::CTransformedGrayscaleImageUnit : public CIntermediateResultUnit 
+class CTransformedGrayscaleImageUnit : public CIntermediateResultUnit 
 ```
 
 ---

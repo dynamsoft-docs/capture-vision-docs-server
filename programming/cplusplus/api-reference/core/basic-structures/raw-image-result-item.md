@@ -6,15 +6,21 @@ keywords: raw image, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ CRawImageResultItem Class
-permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-classes/raw-image-result-item.html
+permalink: /programming/cplusplus/api-reference/core/basic_structures/raw-image-result-item.html
 ---
 
 # CRawImageResultItem
 
 The `CRawImageResultItem` class represents a captured raw image result item. It is a derived class of `CCapturedResultItem` and provides an interface to get the image data.
 
+## Definition
+
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::cvr::CRawImageResultItem 
+class CRawImageResultItem ： public CCapturedResultItem
 ```
 
 ## Methods Summary

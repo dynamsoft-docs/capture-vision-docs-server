@@ -10,8 +10,14 @@ needAutoGenerateSidebar: true
 
 The CImageSourceAdapter class provides an interface for fetching and buffering images. It is an abstract class that needs to be implemented by a concrete class to provide actual functionality.
 
+## Definition
+
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::basic_structures::CImageSourceAdapter 
+class CImageSourceAdapter 
 ```
 
 ---
@@ -33,6 +39,9 @@ class dynamsoft::basic_structures::CImageSourceAdapter
 | [`SetNextImageToReturn`](#setnextimagetoreturn) | Sets the next image to return. |
 | [`GetImageCount`](#getimagecount) | Returns the actual count of buffered images. |
 | [`IsBufferEmpty`](#isbufferempty) | Determines whether the buffer is empty. |
+| [`ClearBuffer`](#clearbuffer) | Clears the image buffer. |
+| [`SetColourChannelUsageType`](#setcolourchannelusagetype) | Sets the usage type of a color channel in an image. |
+| [`GetColourChannelUsageType`](#getcolourchannelusagetype) | Gets the usage type of a color channel in an image. |
 
 ---
 
@@ -199,3 +208,31 @@ bool IsBufferEmpty() const;
 **Return value**
 
 Returns true if the buffer is empty, false otherwise.
+
+### ClearBuffer
+
+Clear the image buffer.
+
+```cpp
+void ClearBuffer();
+```
+
+### SetColourChannelUsageType
+
+Sets the usage type of a color channel in images.
+
+```cpp
+void SetColourChannelUsageType(ColourChannelUsageType type);
+```
+
+### GetColourChannelUsageType
+
+Gets the usage type of a color channel in images.
+
+```cpp
+ColourChannelUsageType GetColourChannelUsageType() const;
+```
+
+**Return value**
+
+Returns the usage type of a color channel in images.

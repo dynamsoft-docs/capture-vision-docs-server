@@ -142,5 +142,9 @@ Returns an error code. Zero indicates success.
 Resets all templates to factory settings.
 
 ```cpp
-void ResetSettings()
+int ResetSettings()
 ```
+
+**Return value**
+
+Returns an error code. Zero indicates success.

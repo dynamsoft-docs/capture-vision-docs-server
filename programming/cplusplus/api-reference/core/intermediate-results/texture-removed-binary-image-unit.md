@@ -10,8 +10,14 @@ needAutoGenerateSidebar: true
 
 The CTextureRemovedBinaryImageUnit class represents an intermediate result unit that stores binary image data with texture removed.
 
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::intermediate_results::CTextureRemovedBinaryImageUnit : public CIntermediateResultUnit 
+class CTextureRemovedBinaryImageUnit : public CIntermediateResultUnit 
 ```
 
 ---

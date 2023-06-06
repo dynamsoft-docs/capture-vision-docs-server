@@ -10,8 +10,14 @@ needAutoGenerateSidebar: true
 
 The CColourImageUnit class represents a unit that contains color image. It is derived from the CIntermediateResultUnit class.
 
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::intermediate_results::CColourImageUnit : public CIntermediateResultUnit
+class CColourImageUnit : public CIntermediateResultUnit
 ```
 
 ---

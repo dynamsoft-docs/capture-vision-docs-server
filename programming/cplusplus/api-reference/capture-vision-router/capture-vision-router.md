@@ -13,6 +13,16 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/capture-vi
 
 The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{architecture}}output.md#final-results) or [Intermediate Results]({{architecture}}output.md#intermediate-results).
 
+## Definition
+
+*Namespace:* dynamsoft::cvr
+
+*Assembly:* DynamsoftCaptureVisionRouter.dll
+
+```cpp
+class CCaptureVisionRouter
+```
+
 The APIs for this class include:
 
 ## Constructor and Destructor
@@ -39,6 +49,8 @@ The APIs for this class include:
 | [RemoveImageSourceStateListener()](multiple-file-processing.md#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.        |
 | [AddResultReceiver()](multiple-file-processing.md#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
 | [RemoveResultReceiver()](multiple-file-processing.md#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
+| [AddResultFilter()](multiple-file-processing.md#addresultfilter)                           | Adds an object as the filter of captured results.                          |
+| [RemoveResultFilter()](multiple-file-processing.md#removeresultfilter)                     | Removes an object which was added as a filter of captured results.         |
 | [StartCapturing()](multiple-file-processing.md#startcapturing)                                 | Starts to process images consecutively.                                      |
 | [StopCapturing()](multiple-file-processing.md#stopcapturing)                                   | Stops the consecutive process.                                               |
 

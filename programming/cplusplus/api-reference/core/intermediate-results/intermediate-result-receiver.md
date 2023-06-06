@@ -10,8 +10,14 @@ needAutoGenerateSidebar: true
 
 The CIntermediateResultReceiver class is responsible for receiving intermediate results of different types. It provides virtual functions for each type of result, which are called when the corresponding result is received.
 
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::intermediate_results::CIntermediateResultReceiver 
+class CIntermediateResultReceiver 
 ```
 
 ---
@@ -21,7 +27,6 @@ class dynamsoft::intermediate_results::CIntermediateResultReceiver
 | Method | Description |
 |--------|-------------|
 | [`GetObservedResultUnitTypes`](#getobservedresultunittypes) | Gets the types of intermediate result units that have been observed. |
-| [`GetResultLevel`](#getresultlevel) | Gets the result generation level of the intermediate result receiver. |
 | [`OnPredetectedRegionsReceived`](#onpredetectedregionsreceived) | Called when predetected regions have been received. |
 | [`OnLocalizedBarcodesReceived`](#onlocalizedbarcodesreceived) | Called when localized barcodes have been received. |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived) | Called when decoded barcodes have been received. |
@@ -61,18 +66,6 @@ unsigned long long GetObservedResultUnitTypes()
 **Return value**
 
 Returns a bit mask of the intermediate result unit types that have been observed.
-
-### GetResultLevel
-
-Gets the result generation level of the intermediate result receiver.
-
-```cpp
-int GetResultLevel()
-```
-
-**Return value**
-
-Returns the result generation level of the intermediate result receiver.
 
 ### OnPredetectedRegionsReceived
 

@@ -10,8 +10,14 @@ needAutoGenerateSidebar: true
 
 The CProactiveImageSourceAdapter class is an abstract base class that extends the CImageSourceAdapter class. It provides an interface for proactively fetching images in a separate thread.
 
+## Definition
+
+*Namespace:* dynamsoft::utility
+
+*Assembly:* DynamsoftUtility.dll
+
 ```cpp
-class dynamsoft::utility::CProactiveImageSourceAdapter: public CImageSourceAdapter
+class CProactiveImageSourceAdapter: public CImageSourceAdapter
 ```
 
 ---

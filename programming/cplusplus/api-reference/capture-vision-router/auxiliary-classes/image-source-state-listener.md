@@ -13,27 +13,33 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-
 
 The `CImageSourceStateListener` class is an abstract class that defines a listener for image source state changes.
 
+## Definition
+
+*Namespace:* dynamsoft::cvr
+
+*Assembly:* DynamsoftCaptureVisionRouter.dll
+
 ```cpp
-class dynamsoft::cvr::CImageSourceStateListener 
+class CImageSourceStateListener 
 ```
 
 ## Methods Summary
 
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |
-| [`OnImageSourceStateChanged`](#onimagesourcestatechanged) | Called when the state of the image source changes. |
+| [`OnImageSourceStateReceived`](#onimagesourcestatereceived) | Called when the state of the image source changes. |
 
-### OnImageSourceStateChanged
+### OnImageSourceStateReceived
 
 This method is called when the state of the image source changes.
 
 ```cpp
-virtual void OnImageSourceStateChanged(ImageSourceState state) = 0;
+virtual void OnImageSourceStateReceived(ImageSourceState state) = 0;
 ```
 
 **Parameters**
 
-`[in] state` The new state of the image source.
+`[in] state` The state of the image source.
 
 **Return value**
 

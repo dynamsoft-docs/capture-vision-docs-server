@@ -10,8 +10,14 @@ needAutoGenerateSidebar: true
 
 The CTextureRemovedGrayscaleImageUnit class represents an intermediate result unit that contains grayscale image data with textures removed.
 
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::intermediate_results::CTextureRemovedGrayscaleImageUnit : public CIntermediateResultUnit 
+class CTextureRemovedGrayscaleImageUnit : public CIntermediateResultUnit 
 ```
 
 ---

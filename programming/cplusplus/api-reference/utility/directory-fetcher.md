@@ -10,8 +10,14 @@ needAutoGenerateSidebar: true
 
 The CDirectoryFetcher class is a utility class that retrieves a list of files from a specified directory based on certain criteria. It inherits from the CProactiveImageSourceAdapter class.
 
+## Definition
+
+*Namespace:* dynamsoft::utility
+
+*Assembly:* DynamsoftUtility.dll
+
 ```cpp
-class dynamsoft::utility::CDirectoryFetcher : public CProactiveImageSourceAdapter
+class CDirectoryFetcher : public CProactiveImageSourceAdapter
 ```
 
 ---

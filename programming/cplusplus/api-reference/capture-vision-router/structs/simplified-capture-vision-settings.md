@@ -13,6 +13,10 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/structs/si
 
 The `SimplifiedCaptureVisionSettings` struct contains settings for capturing and recognizing images with the `CCaptureVisionRouter` class.
 
+## Definition
+
+*Assembly:* DynamsoftCaptureVisionRouter.dll
+
 ```cpp
 typedef struct tagSimplifiedCaptureVisionSettings
 {
@@ -38,7 +42,7 @@ typedef struct tagSimplifiedCaptureVisionSettings
 | [`timeout`](#timeout)                                 | *int*                               |
 | [`barcodeSettings`](#barcodesettings)                 | *SimplifiedBarcodeReaderSettings*   |
 | [`labelSettings`](#labelsettings)                     | *SimplifiedLabelRecognizerSettings* |
-| `reserved`                                            | *char[2048]*                        |
+| [`reserved`](#reserved)                                           | *char[2048]*                        |
 
 ### capturedResultItemTypes
 

@@ -10,8 +10,14 @@ needAutoGenerateSidebar: true
 
 The CIntermediateResultUnit class represents an intermediate result unit used in image processing. It is an abstract base class with multiple subclasses, each representing a different type of unit such as pre-detected regions, localized barcodes, decoded barcodes, localized text lines, binary image, gray image, etc.
 
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::intermediate_results::CIntermediateResultUnit 
+class CIntermediateResultUnit 
 ```
 
 ---
@@ -32,6 +38,7 @@ class dynamsoft::intermediate_results::CIntermediateResultUnit
 | [`SetSourceImageTag`](#setsourceimagetag) | Sets the image tag of the source image. |
 | [`Retain`](#retain) | Increases the reference count of the unit. |
 | [`Release`](#release) | Decreases the reference count of the unit. |
+| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Get the rotation transformation matrix of the original image relative to the rotated image.|
 
 ### GetHashId
 
@@ -156,3 +163,15 @@ Decreases the reference count of the intermediate result unit.
 ```cpp
 virtual void Release() = 0
 ```
+
+### GetRotationTransformMatrix
+
+Get the rotation transformation matrix of the original image relative to the rotated image.
+
+```cpp
+void GetRotationTransformMatrix(double matrix[9]) const;
+```
+
+**Parameters**
+
+`[out] matrix` A double array which represents the rotation transform matrix.

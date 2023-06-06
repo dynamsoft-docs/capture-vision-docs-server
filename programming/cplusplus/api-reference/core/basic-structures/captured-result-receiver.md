@@ -1,27 +1,27 @@
 ---
 layout: default-layout
 title: class CCaptureResultReceiver - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCaptureResultReceiver in Dynamsoft Capture Vision Router Module.
+description: This page shows the C++ edition of the class CCaptureResultReceiver in Core Module.
 keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-breadcrumbText: CVR C++ CCaptureResultReceiver Class
-permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-classes/captured-result-receiver.html
+breadcrumbText: C++ CCaptureResultReceiver Class
+permalink: /programming/cplusplus/api-reference/core/basic_structures/captured-result-receiver.html
 ---
 
 # CCaptureResultReceiver
 
 The `CCaptureResultReceiver` class is responsible for receiving captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
 
+## Definition
+
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore.dll
+
 ```cpp
-class dynamsoft::cvr::CCaptureResultReceiver 
+class CCaptureResultReceiver 
 ```
-
-## Attributes Summary
-
-| Attribute                 | Type           |
-| ------------------------- | -------------- |
-| `observedResultItemTypes` | *unsigned int* |
 
 ## Methods Summary
 

@@ -24,16 +24,14 @@ Read more about the class [`CCaptureVisionRouter`](capture-vision-router.md).
 
 The following are the auxiliary classes:
 
-* [CaptureResultReceiver](auxiliary-classes/capture-result-receiver.md)
 * [CaptureStateListener](auxiliary-classes/capture-state-listener.md)
 * [ImageSourceStateListener](auxiliary-classes/image-source-state-listener.md)
-* [RawImageResultItem](auxiliary-classes/raw-image-result-item.md)
 
 ## Structs
 
 At present, there is only one struct in the "Capture Vision Router" module:
 
-* [SimplifiedCaptureVisionSettings](struct/simplified-capture-vision-settings.md)
+* [SimplifiedCaptureVisionSettings](structs/simplified-capture-vision-settings.md)
 
 ## Enums
 
