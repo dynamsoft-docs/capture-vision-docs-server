@@ -11,7 +11,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/capture-vi
 
 # CCaptureVisionRouter
 
-The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.architecture}}output.html#final-results) or [Intermediate Results]({{site.architecture}}output.html#intermediate-results).
+The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.architecture}}output.html#final-results?lang=cpp) or [Intermediate Results]({{site.architecture}}output.html#intermediate-results?lang=cpp).
 
 ## Definition
 
@@ -22,8 +22,6 @@ The CCaptureVisionRouter class is what a user uses to interact with image-proces
 ```cpp
 class CCaptureVisionRouter
 ```
-
-The APIs for this class include:
 
 ## Constructor and Destructor
 
