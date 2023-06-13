@@ -11,7 +11,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/capture-vi
 
 # CCaptureVisionRouter
 
-The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{architecture}}output.md#final-results) or [Intermediate Results]({{architecture}}output.md#intermediate-results).
+The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.architecture}}output.html#final-results) or [Intermediate Results]({{site.architecture}}output.html#intermediate-results).
 
 ## Definition
 
