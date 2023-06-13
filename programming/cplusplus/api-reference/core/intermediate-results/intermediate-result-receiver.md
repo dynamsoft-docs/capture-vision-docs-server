@@ -26,7 +26,8 @@ class CIntermediateResultReceiver
 
 | Method | Description |
 |--------|-------------|
-| [`GetObservedResultUnitTypes`](#getobservedresultunittypes) | Gets the types of intermediate result units that have been observed. |
+| [`GetObservedParameters`](#getobservedparameters) | Gets the types of intermediate result units that have been observed. |
+| [`OnTaskResultsReceived`](#ontaskresultsreceived) | Called when a task result has been received. |
 | [`OnPredetectedRegionsReceived`](#onpredetectedregionsreceived) | Called when predetected regions have been received. |
 | [`OnLocalizedBarcodesReceived`](#onlocalizedbarcodesreceived) | Called when localized barcodes have been received. |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived) | Called when decoded barcodes have been received. |
@@ -55,539 +56,406 @@ class CIntermediateResultReceiver
 | [`OnDeformationResistedBarcodeImageUnitReceived`](#ondeformationresistedbarcodeimageunitreceived) | Called when deformation resisted barcode image units have been received. |
 | [`OnComplementedBarcodeImageUnitReceived`](#oncomplementedbarcodeimageunitreceived) | Called when complemented barcode image units have been received. |
 
-### GetObservedResultUnitTypes
+### GetObservedParameters
 
-Gets the types of intermediate result units that have been observed.
+Gets the observed parameters of the intermediate result receiver.
 
 ```cpp
-unsigned long long GetObservedResultUnitTypes()
+CObservedParameters* GetObservedParameters()
 ```
 
 **Return value**
 
-Returns a bit mask of the intermediate result unit types that have been observed.
+Returns the object of CObservedParameters. The default parameters are to observe all intermediate result unit types and all tasks.
+
+### OnTaskResultsReceived
+
+Called when a task result has been received.
+
+```cpp
+virtual void OnTaskResultsReceived(const CIntermediateResult *pResult, const IntermediateResultExtraInfo* info)
+```
+
+**Parameters**
+
+`[in] pResult` A pointer to the CIntermediateResult object that contains several result units.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnPredetectedRegionsReceived
 
 Called when predetected regions have been received.
 
 ```cpp
-virtual void OnPredetectedRegionsReceived(const char* targetROIDefName, 
-                                          const char* taskName, 
-                                          const CPredetectedRegionsUnit *pResult)
+virtual void OnPredetectedRegionsReceived(CPredetectedRegionsUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target region of interest definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the CPredetectedRegionsUnit object that contains the result.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnLocalizedBarcodesReceived
 
 Called when localized barcodes have been received.
 
 ```cpp
-virtual void OnLocalizedBarcodesReceived(const char* targetROIDefName, 
-                                          const char* taskName, 
-                                          const dbr::intermediate_results::CLocalizedBarcodesUnit *pResult)
+virtual void OnLocalizedBarcodesReceived(dbr::intermediate_results::CLocalizedBarcodesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target region of interest definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the CLocalizedBarcodesUnit object that contains the result.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnDecodedBarcodesReceived
 
 Called when decoded barcodes have been received.
 
 ```cpp
-virtual void OnDecodedBarcodesReceived(const char* targetROIDefName, 
-                                          const char* taskName, 
-                                          const dbr::intermediate_results::CDecodedBarcodesUnit *pResult)
+virtual void OnDecodedBarcodesReceived(dbr::intermediate_results::CDecodedBarcodesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target region of interest definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the CDecodedBarcodesUnit object that contains the result.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnLocalizedTextLinesReceived
 
 Called when localized text lines have been received.
 
 ```cpp
-virtual void OnLocalizedTextLinesReceived(const char* targetROIDefName, 
-                                          const char* taskName, 
-                                          const dlr::intermediate_results::CLocalizedTextLinesUnit *pResult)
+virtual void OnLocalizedTextLinesReceived(dlr::intermediate_results::CLocalizedTextLinesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target region of interest definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the CLocalizedTextLinesUnit object that contains the result.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnRecognizedTextLinesReceived
 
 Called when recognized text lines have been received.
 
 ```cpp
-virtual void OnRecognizedTextLinesReceived(const char* targetROIDefName, 
-                                          const char* taskName, 
-                                          const dlr::intermediate_results::CRecognizedTextLinesUnit *pResult)
+virtual void OnRecognizedTextLinesReceived(dlr::intermediate_results::CRecognizedTextLinesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target region of interest definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the CRecognizedTextLinesUnit object that contains the result.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnDetectedQuadsReceived
 
 Called when detected quadrilaterals have been received.
 
 ```cpp
-virtual void OnDetectedQuadsReceived(const char* targetROIDefName, 
-                                          const char* taskName, 
-                                          const ddn::intermediate_results::CDetectedQuadsUnit *pResult)
+virtual void OnDetectedQuadsReceived(ddn::intermediate_results::CDetectedQuadsUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target region of interest definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the CDetectedQuadsUnit object that contains the result.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnNormalizedImagesReceived
 
 Called when normalized images have been received.
 
 ```cpp
-virtual void OnNormalizedImagesReceived(const char* targetROIDefName, 
-                                          const char* taskName, 
-                                          const ddn::intermediate_results::CNormalizedImageUnit *pResult)
+virtual void OnNormalizedImagesReceived(ddn::intermediate_results::CNormalizedImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target region of interest definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the CNormalizedImageUnit object that contains the result.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnColourImageUnitReceived
 
 Called when colour image units have been received.
 
 ```cpp
-virtual void OnColourImageUnitReceived(const char* targetROIDefName, 
-                                          const char* taskName, 
-                                          SectionType sectionType, 
-                                          const CColourImageUnit *pResult)
+virtual void OnColourImageUnitReceived(CColourImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target region of interest definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the received colour image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnScaledDownColourImageUnitReceived
 
 Handles the receipt of a scaled-down colour image unit.
 
 ```cpp
-virtual void OnScaledDownColourImageUnitReceived(const char* targetROIDefName, 
-                                                    const char* taskName, 
-                                                    SectionType sectionType, 
-                                                    const CScaledDownColourImageUnit *pResult);
+virtual void OnScaledDownColourImageUnitReceived(CScaledDownColourImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the received scaled-down colour image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnGrayscaleImageUnitReceived
 
 Handles the receipt of a grayscale image unit.
 
 ```cpp
-virtual void OnGrayscaleImageUnitReceived(const char* targetROIDefName, 
-                                            const char* taskName, 
-                                            SectionType sectionType, 
-                                            const CGrayscaleImageUnit *pResult);
+virtual void OnGrayscaleImageUnitReceived(CGrayscaleImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the received grayscale image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnTransformedGrayscaleImageUnitReceived
 
 Handles the receipt of a transformed grayscale image unit.
 
 ```cpp
-virtual void OnTransformedGrayscaleImageUnitReceived(const char* targetROIDefName, 
-                                                        const char* taskName, 
-                                                        SectionType sectionType, 
-                                                        const CTransformedGrayscaleImageUnit *pResult);
+virtual void OnTransformedGrayscaleImageUnitReceived(CTransformedGrayscaleImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the received transformed grayscale image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnEnhancedGrayscaleImageUnitReceived
 
 Handles the receipt of an enhanced grayscale image unit.
 
 ```cpp
-virtual void OnEnhancedGrayscaleImageUnitReceived(const char* targetROIDefName, 
-                                                    const char* taskName, 
-                                                    SectionType sectionType, 
-                                                    const CEnhancedGrayscaleImageUnit *pResult);
+virtual void OnEnhancedGrayscaleImageUnitReceived(CEnhancedGrayscaleImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the received enhanced grayscale image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnBinaryImageUnitReceived
 
 Handles the receipt of a binary image unit.
 
 ```cpp
-virtual void OnBinaryImageUnitReceived(const char* targetROIDefName, 
-                                        const char* taskName, 
-                                        SectionType sectionType, 
-                                        const CBinaryImageUnit *pResult);
+virtual void OnBinaryImageUnitReceived(CBinaryImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the received binary image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnTextureDetectionResultUnitReceived
 
 Handles the receipt of a texture detection result unit.
 
 ```cpp
-virtual void OnTextureDetectionResultUnitReceived(const char* targetROIDefName, 
-                                                    const char* taskName, 
-                                                    SectionType sectionType, 
-                                                    const CTextureDetectionResultUnit *pResult);
+virtual void OnTextureDetectionResultUnitReceived(CTextureDetectionResultUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the received texture detection result unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnTextureRemovedGrayscaleImageUnitReceived
 
 Handles the receipt of a texture-removed grayscale image unit.
 
 ```cpp
-virtual void OnTextureRemovedGrayscaleImageUnitReceived(const char* targetROIDefName, 
-                                                        const char* taskName, 
-                                                        SectionType sectionType, 
-                                                        const CTextureRemovedGrayscaleImageUnit *pResult);
+virtual void OnTextureRemovedGrayscaleImageUnitReceived(CTextureRemovedGrayscaleImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the received texture-removed grayscale image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnTextureRemovedBinaryImageUnitReceived
 
 Handles the receipt of a texture-removed binary image unit.
 
 ```cpp
-virtual void OnTextureRemovedBinaryImageUnitReceived(const char* targetROIDefName, 
-                                                        const char* taskName, 
-                                                        SectionType sectionType, 
-                                                        const CTextureRemovedBinaryImageUnit *pResult);
+virtual void OnTextureRemovedBinaryImageUnitReceived(CTextureRemovedBinaryImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the received texture-removed binary image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnContoursUnitReceived
 
 Handles the receipt of a contours unit.
 
 ```cpp
-virtual void OnContoursUnitReceived(const char* targetROIDefName, 
-                                    const char* taskName, 
-                                    SectionType sectionType, 
-                                    const CContoursUnit *pResult);
+virtual void OnContoursUnitReceived(CContoursUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the contours unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnLineSegmentsUnitReceived
 
 Called when a line segments unit is received.
 
 ```cpp
-virtual void OnLineSegmentsUnitReceived(const char* targetROIDefName, 
-                                        const char* taskName, 
-                                        SectionType sectionType, 
-                                        const CLineSegmentsUnit *pResult)
+virtual void OnLineSegmentsUnitReceived(CLineSegmentsUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the line segments unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnTextZonesUnitReceived
 
 Called when a text zones unit is received.
 
 ```cpp
-virtual void OnTextZonesUnitReceived(const char* targetROIDefName, 
-                                        const char* taskName, 
-                                        SectionType sectionType, 
-                                        const CTextZonesUnit *pResult)
+virtual void OnTextZonesUnitReceived(CTextZonesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the text zones unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnTextRemovedBinaryImageUnitReceived
 
 Called when a text removed binary image unit is received.
 
 ```cpp
-virtual void OnTextRemovedBinaryImageUnitReceived(const char* targetROIDefName, 
-                                                    const char* taskName, 
-                                                    SectionType sectionType,
-                                                    const CTextRemovedBinaryImageUnit *pResult)
+virtual void OnTextRemovedBinaryImageUnitReceived(CTextRemovedBinaryImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
-`[in] sectionType` The section type of the result.
-
 `[in] pResult` A pointer to the text removed binary image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnLongLinesUnitReceived
 
 Called when a long lines unit is received.
 
 ```cpp
-virtual void OnLongLinesUnitReceived(const char* targetROIDefName, 
-                                        const char* taskName, 
-                                        const ddn::intermediate_results::CLongLinesUnit *pResult)
+virtual void OnLongLinesUnitReceived(ddn::intermediate_results::CLongLinesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the long lines unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnCornersUnitReceived
 
 Called when a corners unit is received.
 
 ```cpp
-virtual void OnCornersUnitReceived(const char* targetROIDefName, 
-                                    const char* taskName, 
-                                    const ddn::intermediate_results::CCornersUnit *pResult)
+virtual void OnCornersUnitReceived(ddn::intermediate_results::CCornersUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the corners unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnCandidateQuadEdgesUnitReceived
 
 Called when a candidate quad edges unit is received.
 
 ```cpp
-virtual void OnCandidateQuadEdgesUnitReceived(const char* targetROIDefName, 
-                                                const char* taskName, 
-                                                const ddn::intermediate_results::CCandidateQuadEdgesUnit *pResult)
+virtual void OnCandidateQuadEdgesUnitReceived(ddn::intermediate_results::CCandidateQuadEdgesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the candidate quad edges unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnCandidateBarcodeZonesUnitReceived
 
 Called when a candidate barcode zones unit is received.
 
 ```cpp
-virtual void OnCandidateBarcodeZonesUnitReceived(const char* targetROIDefName, 
-                                                    const char* taskName, 
-                                                    const dbr::intermediate_results::CCandidateBarcodeZonesUnit *pResult)
+virtual void OnCandidateBarcodeZonesUnitReceived(dbr::intermediate_results::CCandidateBarcodeZonesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the candidate barcode zones unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnScaledUpBarcodeImageUnitReceived
 
 Called when a scaled up barcode image unit is received.
 
 ```cpp
-virtual void OnScaledUpBarcodeImageUnitReceived(const char* targetROIDefName, 
-                                                    const char* taskName, 
-                                                    const dbr::intermediate_results::CScaledUpBarcodeImageUnit *pResult)
+virtual void OnScaledUpBarcodeImageUnitReceived(dbr::intermediate_results::CScaledUpBarcodeImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the scaled up barcode image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnDeformationResistedBarcodeImageUnitReceived
 
 Called when a deformation resisted barcode image unit is received.
 
 ```cpp
-virtual void OnDeformationResistedBarcodeImageUnitReceived(const char* targetROIDefName, 
-                                                            const char* taskName, 
-                                                            const dbr::intermediate_results::CDeformationResistedBarcodeImageUnit *pResult)
+virtual void OnDeformationResistedBarcodeImageUnitReceived(dbr::intermediate_results::CDeformationResistedBarcodeImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the deformation resisted barcode image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 ### OnComplementedBarcodeImageUnitReceived
 
 Called when a complemented barcode image unit is received.
 
 ```cpp
-virtual void OnComplementedBarcodeImageUnitReceived(const char* targetROIDefName, 
-                                                    const char* taskName, 
-                                                    const dbr::intermediate_results::CComplementedBarcodeImageUnit *pResult)
+virtual void OnComplementedBarcodeImageUnitReceived(dbr::intermediate_results::CComplementedBarcodeImageUnit *pResult，const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] targetROIDefName` The name of the target ROI definition.
-
-`[in] taskName` The name of the task that produced the result.
-
 `[in] pResult` A pointer to the complemented barcode image unit.
+
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
