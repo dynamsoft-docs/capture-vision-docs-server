@@ -14,6 +14,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/multiple-f
 | API Name                                                            | Description                                                                  |
 | ------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | [SetInput()](#setinput)                                             | Sets an image source to provide images for consecutive processing.         |
+| [GetInput()](#getinput)                                             | Gets the attached image source adapter object of the capture vision router.         |
 | [AddCaptureStateListener()](#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
 | [RemoveCaptureStateListener()](#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
 | [AddImageSourceStateListener()](#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
@@ -50,6 +51,32 @@ errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 CCaptureVisionRouter* router = new CCaptureVisionRouter();
 CDirectoryFetcher* fetcher = new CDirectoryFetcher();
 router->SetInput(fetcher);
+//...
+delete router;
+```
+
+## GetInput
+
+Gets the attached image source adapter object of the capture vision router. 
+
+```cpp
+CImageSourceAdapter* GetInput();
+```
+
+**Return Value**
+
+Returns the attached image source adapter object of the capture vision router.
+
+**Code Snippet**
+
+```cpp
+int errorCode = 0;
+char szErrorMsg[256];
+errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
+CCaptureVisionRouter* router = new CCaptureVisionRouter();
+CDirectoryFetcher* fetcher = new CDirectoryFetcher();
+router->SetInput(fetcher);
+CImageSourceAdapter* input = router->GetInput();
 //...
 delete router;
 ```
