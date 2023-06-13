@@ -6,7 +6,7 @@ keywords: core module, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: C++ CCoreModule Class
-permalink: /programming/cplusplus/api-reference/core/basic_structures/core-module.html
+permalink: /programming/cplusplus/api-reference/core/basic-structures/core-module.html
 ---
 
 # CCoreModule

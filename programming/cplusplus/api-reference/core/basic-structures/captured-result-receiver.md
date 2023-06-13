@@ -6,7 +6,7 @@ keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: C++ CCaptureResultReceiver Class
-permalink: /programming/cplusplus/api-reference/core/basic_structures/captured-result-receiver.html
+permalink: /programming/cplusplus/api-reference/core/basic-structures/captured-result-receiver.html
 ---
 
 # CCaptureResultReceiver

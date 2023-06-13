@@ -6,7 +6,7 @@ keywords: raw image, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ CRawImageResultItem Class
-permalink: /programming/cplusplus/api-reference/core/basic_structures/raw-image-result-item.html
+permalink: /programming/cplusplus/api-reference/core/basic-structures/raw-image-result-item.html
 ---
 
 # CRawImageResultItem
