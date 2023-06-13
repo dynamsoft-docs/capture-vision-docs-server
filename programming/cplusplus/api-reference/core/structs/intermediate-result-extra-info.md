@@ -25,8 +25,6 @@ typedef struct IntermediateResultExtraInfo
 }IntermediateResultExtraInfo;
 ```
 
----
-
 ## Attributes Summary
 
 | Attribute                                             | Type                                |

@@ -20,8 +20,6 @@ The CIntermediateResultReceiver class is responsible for receiving intermediate 
 class CIntermediateResultReceiver 
 ```
 
----
-
 ## Methods Summary
 
 | Method | Description |

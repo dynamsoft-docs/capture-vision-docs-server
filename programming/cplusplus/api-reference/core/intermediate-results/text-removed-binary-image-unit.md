@@ -20,8 +20,6 @@ The CTextRemovedBinaryImageUnit class represents an intermediate result unit tha
 class CTextRemovedBinaryImageUnit : public CIntermediateResultUnit 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

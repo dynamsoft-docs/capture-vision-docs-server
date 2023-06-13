@@ -20,8 +20,6 @@ The CGrayscaleImageUnit class represents a grayscale image unit. It is a subclas
 class CGrayscaleImageUnit : public CIntermediateResultUnit 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

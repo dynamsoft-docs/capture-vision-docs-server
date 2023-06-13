@@ -20,8 +20,6 @@ The CContour class represents a contour in 2D space. It contains an array of CPo
 class CContour 
 ```
 
----
-
 ## Attributes Summary
   
 | Attribute | Type |

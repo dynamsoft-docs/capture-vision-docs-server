@@ -20,8 +20,6 @@ The CPDFReadingParameter class represents the parameters for reading a PDF file.
 class CPDFReadingParameter 
 ```
 
----
-
 ## Attributes Summary
   
 | Attribute | Type |

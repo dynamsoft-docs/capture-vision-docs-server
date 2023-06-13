@@ -20,8 +20,6 @@ The CLineSegmentsUnit class represents a collection of line segments in 2D space
 class CLineSegmentsUnit: public CIntermediateResultUnit 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

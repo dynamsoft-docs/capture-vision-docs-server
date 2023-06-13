@@ -20,8 +20,6 @@ The `ObservedParameters` class is used to set filter conditions for the `CInterm
 class CObservedParameters 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

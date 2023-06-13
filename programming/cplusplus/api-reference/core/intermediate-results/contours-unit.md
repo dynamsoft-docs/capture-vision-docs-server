@@ -20,8 +20,6 @@ The CContoursUnit class represents a unit that contains contours as intermediate
 class CContoursUnit : public CIntermediateResultUnit
 ```
 
----
-
 ## Methods Summary
 
 | Method                    | Description |

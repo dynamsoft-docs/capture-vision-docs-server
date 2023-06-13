@@ -20,8 +20,6 @@ The CPredetectedRegionsUnit class represents a unit that contains a collection o
 class CPredetectedRegionsUnit : public CIntermediateResultUnit
 ```
 
----
-
 ## Methods Summary
 
 | Method | Description |

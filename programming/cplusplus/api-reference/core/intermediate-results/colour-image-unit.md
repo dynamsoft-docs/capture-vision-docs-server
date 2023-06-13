@@ -20,8 +20,6 @@ The CColourImageUnit class represents a unit that contains color image. It is de
 class CColourImageUnit : public CIntermediateResultUnit
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

@@ -20,8 +20,6 @@ The CVideoFrameTag class represents a video frame tag, which is a type of image 
 class CVideoFrameTag: public CImageTag 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

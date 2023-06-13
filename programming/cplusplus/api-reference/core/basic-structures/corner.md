@@ -20,8 +20,6 @@ CCorner is a structure in an image consisting of two line segments and intersect
 class CCorner 
 ```
 
----
-
 ## Attributes
   
 | Attribute | Type |

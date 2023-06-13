@@ -20,8 +20,6 @@ The CRegionObjectElement class represents an element of a region object in 2D sp
 class CRegionObjectElement 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

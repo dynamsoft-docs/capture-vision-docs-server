@@ -20,8 +20,6 @@ The CEnhancedGrayscaleImageUnit class represents an intermediate result unit tha
 class CEnhancedGrayscaleImageUnit  : public CIntermediateResultUnit
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

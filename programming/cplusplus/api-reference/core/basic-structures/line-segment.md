@@ -20,8 +20,6 @@ The CLineSegment class represents a line segment in 2D space. It contains two CP
 class CLineSegment 
 ```
 
----
-
 ## Attributes Summary
 
 | Attribute | Type |

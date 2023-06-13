@@ -20,8 +20,6 @@ The CTextZonesUnit class represents a unit that contains text zones. It is deriv
 class CTextZonesUnit : public CIntermediateResultUnit
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

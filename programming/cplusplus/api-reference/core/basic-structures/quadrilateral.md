@@ -20,8 +20,6 @@ The CQuadrilateral class represents a quadrilateral shape in 2D space. It contai
 class CQuadrilateral 
 ```
 
----
-
 ## Attributes Summary
   
 | Attribute | Type |

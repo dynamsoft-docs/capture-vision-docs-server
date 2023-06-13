@@ -20,8 +20,6 @@ The CTextureRemovedGrayscaleImageUnit class represents an intermediate result un
 class CTextureRemovedGrayscaleImageUnit : public CIntermediateResultUnit 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

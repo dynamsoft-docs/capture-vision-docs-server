@@ -20,8 +20,6 @@ The CFileImageTag class represents an image tag that is associated with a file. 
 class CFileImageTag : public CImageTag
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

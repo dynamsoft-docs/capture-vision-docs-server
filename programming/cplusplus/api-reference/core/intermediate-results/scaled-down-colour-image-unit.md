@@ -20,8 +20,6 @@ The CScaledDownColourImageUnit class represents an intermediate result unit that
 class CScaledDownColourImageUnit : public CIntermediateResultUnit
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

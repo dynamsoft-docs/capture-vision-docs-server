@@ -20,8 +20,6 @@ The CRect class represents a rectangle in 2D space. It contains four integer val
 class CRect 
 ```
 
----
-
 ## Attributes Summary
 
 | Attribute | Type |

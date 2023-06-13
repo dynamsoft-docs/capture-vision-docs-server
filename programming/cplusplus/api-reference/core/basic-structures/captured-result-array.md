@@ -20,8 +20,6 @@ The CCapturedResultArray class represents an array of captured results.
 class CCapturedResultArray 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

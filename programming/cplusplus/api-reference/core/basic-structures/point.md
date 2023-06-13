@@ -20,8 +20,6 @@ The CPoint class represents a point in 2D space. It contains an array of two int
 class CPoint 
 ```
 
----
-
 ## Attributes Summary
 
 | Attribute | Type |

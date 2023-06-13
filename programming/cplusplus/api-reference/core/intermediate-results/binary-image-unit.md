@@ -20,8 +20,6 @@ The CBinaryImageUnit class represents a binary image unit that inherits from CIn
 class CBinaryImageUnit : public CIntermediateResultUnit 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

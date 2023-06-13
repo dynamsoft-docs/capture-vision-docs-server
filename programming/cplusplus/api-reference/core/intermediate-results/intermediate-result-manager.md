@@ -20,8 +20,6 @@ The CIntermediateResultManager class manages intermediate results generated duri
 class CIntermediateResultManager 
 ```
 
----
-
 ## Methods Summary
 
 | Method | Description |

@@ -20,8 +20,6 @@ The CLicenseManager class provides a set of APIs to manage SDK licensing.
 class CLicenseManager 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

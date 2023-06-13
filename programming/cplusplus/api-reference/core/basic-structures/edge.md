@@ -20,8 +20,6 @@ CEdge is a structure composed of two Corner points in an image. A Corner represe
 class CEdge 
 ```
 
----
-
 ## Attributes
   
 | Attribute | Type |

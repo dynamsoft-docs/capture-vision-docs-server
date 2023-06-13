@@ -20,8 +20,6 @@ The CTextureDetectionResultUnit class represents an intermediate result unit for
 class CTextureDetectionResultUnit : public CIntermediateResultUnit 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

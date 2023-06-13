@@ -20,8 +20,6 @@ The CTextureRemovedBinaryImageUnit class represents an intermediate result unit 
 class CTextureRemovedBinaryImageUnit : public CIntermediateResultUnit 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

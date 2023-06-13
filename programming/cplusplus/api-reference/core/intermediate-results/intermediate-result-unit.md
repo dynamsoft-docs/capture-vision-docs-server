@@ -20,8 +20,6 @@ The CIntermediateResultUnit class represents an intermediate result unit used in
 class CIntermediateResultUnit 
 ```
 
----
-
 
 ## Methods Summary
 

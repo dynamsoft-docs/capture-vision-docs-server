@@ -20,8 +20,6 @@ The CTransformedGrayscaleImageUnit class is a subclass of CIntermediateResultUni
 class CTransformedGrayscaleImageUnit : public CIntermediateResultUnit 
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

@@ -20,8 +20,6 @@ The CPredetectedRegionElement class represents a region element that has been pr
 class CPredetectedRegionElement : public CRegionObjectElement
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |

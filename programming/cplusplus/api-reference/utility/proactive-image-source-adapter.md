@@ -20,8 +20,6 @@ The CProactiveImageSourceAdapter class is an abstract base class that extends th
 class CProactiveImageSourceAdapter: public CImageSourceAdapter
 ```
 
----
-
 ## Methods Summary
 
 | Method               | Description |
