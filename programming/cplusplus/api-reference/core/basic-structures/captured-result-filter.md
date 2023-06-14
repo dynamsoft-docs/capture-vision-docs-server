@@ -37,6 +37,8 @@ class CCaptureResultFilter
 | [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function for detected quads results.        |
 | [`OnNormalizedImagesReceived`](#onnormalizedimagesreceived)       | Callback function for normalized images results.     |
 | [`OnParsedResultsReceived`](#onparsedresultsreceived)             | Callback function for parsed results.                |
+| [`GetName`](#getname)       | Gets the name of the captured result filter.                                             |
+| [`SetName`](#setname)       | Sets the name of the captured result filter.                                             |
 
 ### CCaptureResultFilter
 
@@ -149,3 +151,27 @@ virtual void OnParsedResultsReceived(dcp::CParsedResult* pResult)
 **Parameters**
 
 `[in] pResult` The parsed result.
+
+### GetName
+
+Gets the name of the captured result filter.  
+
+```cpp
+const char* GetName() const
+```
+
+**Return value**
+
+Returns the name of the captured result filter.  
+
+### SetName
+
+Sets the name of the captured result filter.  
+
+```cpp
+void SetName(const char* name)
+```
+
+**Parameters**
+
+`[in] name` The name of the captured result filter.

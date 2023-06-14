@@ -29,6 +29,7 @@ class CIntermediateResultUnit
 | [`GetSourceImageHashId`](#getsourceimagehashid) | Gets the hash ID of the source image. |
 | [`GetSourceImageTag`](#getsourceimagetag) | Gets the image tag of the source image. |
 | [`GetLocalToSourceImageTransformMatrix`](#getlocaltosourceimagetransformmatrix) | Gets the transformation matrix from local to source image coordinates. |
+| [`SetLocalToSourceImageTransformMatrix`](#setlocaltosourceimagetransformmatrix) | Sets the transformation matrix from local to source image coordinates. |
 | [`GetType`](#gettype) | Gets the type of the intermediate result unit. |
 | [`Clone`](#clone) | Creates a copy of the intermediate result unit. |
 | [`SetHashId`](#sethashid) | Sets the hash ID of the unit. |
@@ -36,7 +37,8 @@ class CIntermediateResultUnit
 | [`SetSourceImageTag`](#setsourceimagetag) | Sets the image tag of the source image. |
 | [`Retain`](#retain) | Increases the reference count of the unit. |
 | [`Release`](#release) | Decreases the reference count of the unit. |
-| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Get the rotation transformation matrix of the original image relative to the rotated image.|
+| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Gets the rotation transformation matrix of the original image relative to the rotated image.|
+| [`SetRotationTransformMatrix`](#setrotationtransformmatrix) | Sets the rotation transformation matrix of the original image relative to the rotated image.|
 
 ### GetHashId
 
@@ -85,6 +87,18 @@ virtual void GetLocalToSourceImageTransformMatrix(double matrix[9]) const
 **Parameters**
 
 `[out] matrix` The transformation matrix.
+
+### SetLocalToSourceImageTransformMatrix
+
+Sets the transformation matrix from local to source image coordinates.
+
+```cpp
+virtual void SetLocalToSourceImageTransformMatrix(double matrix[9])
+```
+
+**Parameters**
+
+`[in] matrix` The transformation matrix.
 
 ### GetType
 
@@ -164,7 +178,7 @@ virtual void Release() = 0
 
 ### GetRotationTransformMatrix
 
-Get the rotation transformation matrix of the original image relative to the rotated image.
+Gets the rotation transformation matrix of the original image relative to the rotated image.
 
 ```cpp
 void GetRotationTransformMatrix(double matrix[9]) const;
@@ -173,3 +187,15 @@ void GetRotationTransformMatrix(double matrix[9]) const;
 **Parameters**
 
 `[out] matrix` A double array which represents the rotation transform matrix.
+
+### SetRotationTransformMatrix
+
+Sets the rotation transformation matrix of the original image relative to the rotated image.
+
+```cpp
+void SetRotationTransformMatrix(double matrix[9]);
+```
+
+**Parameters**
+
+`[in] matrix` A double array which represents the rotation transform matrix.
