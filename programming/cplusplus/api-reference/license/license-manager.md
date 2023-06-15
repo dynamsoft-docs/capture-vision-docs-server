@@ -79,17 +79,19 @@ Returns 0 if the friendly name is set successfully, a negative value indicating 
 
 ### SetMaxConcurrentInstanceCount
 
-It is used to set the maximum number of allowed instances for the given device and process.
+It is used to set the maximum number of allowed instances for the given device.
 
 ```cpp
-static void SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
+static int SetMaxConcurrentInstanceCount(int countForThisDevice)
 ```
 
 **Parameters**
 
 `[in] countForThisDevice` The maximum number of allowed instances for the device.
 
-`[in] countForThisProcess` The maximum number of allowed instances for the process. It is optional and set to 0 by default.
+**Return value**
+
+Returns error code (returns 0 if the function operates successfully). 
 
 ### GetDeviceUUID
 
