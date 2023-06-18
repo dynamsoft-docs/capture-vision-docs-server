@@ -127,7 +127,7 @@ int RemoveCaptureStateListener(CCaptureStateListener* listener);
 
 **Parameters**
 
-`[in] listener` Specifies a listening object of the type [`CCaptureStateListener`](capture-state-listener.md#ccapturestatelistener) to be removed.
+`[in] listener` Specifies a listening object of the type [`CCaptureStateListener`](./auxiliary-classes/capture-state-listener.md#ccapturestatelistener) to be removed.
 
 **Return Value**
 
@@ -164,7 +164,7 @@ int AddImageSourceStateListener(CImageSourceStateListener* listener);
 
 **Parameters**
 
-`[in] listener` Specifies a listening object of the type [`CImageSourceStateListener`](capture-state-listener.md#ccapturestatelistener) to be added.
+`[in] listener` Specifies a listening object of the type [`CImageSourceStateListener`](./auxiliary-classes/capture-state-listener.md#ccapturestatelistener) to be added.
 
 **Return Value**
 
@@ -200,7 +200,7 @@ int RemoveImageSourceStateListener(CImageSourceStateListener* listener);
 
 **Parameters**
 
-`[in] listener` Specifies a listening object of the type [`CImageSourceStateListener`](capture-state-listener.md#ccapturestatelistener) to be removed.
+`[in] listener` Specifies a listening object of the type [`CImageSourceStateListener`](./auxiliary-classes/capture-state-listener.md#ccapturestatelistener) to be removed.
 
 **Return Value**
 
@@ -237,7 +237,7 @@ int AddResultReceiver(CCapturedResultReceiver* receiver);
 
 **Parameters**
 
-`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`](capture-state-listener.md#ccapturestatelistener) to be added.
+`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`](./auxiliary-classes/capture-state-listener.md#ccapturestatelistener) to be added.
 
 **Return Value**
 
@@ -273,7 +273,7 @@ int RemoveResultReceiver(CCapturedResultReceiver* receiver);
 
 **Parameters**
 
-`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`](capture-state-listener.md#ccapturestatelistener) to be removed.
+`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`](./auxiliary-classes/capture-state-listener.md#ccapturestatelistener) to be removed.
 
 **Return Value**
 
