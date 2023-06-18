@@ -36,7 +36,7 @@ int SetInput(CImageSourceAdapter* pAdaptor);
 
 **Parameters**
 
-`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{architecture}}input.md#image-source-adapter).
+`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{site.architecture}}input.html#image-source-adapter).
 
 **Return Value**
 
@@ -91,7 +91,7 @@ int AddCaptureStateListener(CCaptureStateListener* listener);
 
 **Parameters**
 
-`[in] listener` Specifies a listening object of the type [`CCaptureStateListener`](capture-state-listener.md#ccapturestatelistener) to be added.
+`[in] listener` Specifies a listening object of the type [`CCaptureStateListener`](./auxiliary-classes/capture-state-listener.md#ccapturestatelistener) to be added.
 
 **Return Value**
 
