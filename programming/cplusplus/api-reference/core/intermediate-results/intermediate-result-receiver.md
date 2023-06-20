@@ -24,7 +24,7 @@ class CIntermediateResultReceiver
 
 | Method | Description |
 |--------|-------------|
-| [`GetObservedParameters`](#getobservedparameters) | Gets the types of intermediate result units that have been observed. |
+| [`GetObservationParameters`](#getobservationparameters) | Gets the observation parameters of the intermediate result receiver. |
 | [`OnTaskResultsReceived`](#ontaskresultsreceived) | Called when a task result has been received. |
 | [`OnPredetectedRegionsReceived`](#onpredetectedregionsreceived) | Called when predetected regions have been received. |
 | [`OnLocalizedBarcodesReceived`](#onlocalizedbarcodesreceived) | Called when localized barcodes have been received. |
@@ -54,17 +54,17 @@ class CIntermediateResultReceiver
 | [`OnDeformationResistedBarcodeImageUnitReceived`](#ondeformationresistedbarcodeimageunitreceived) | Called when deformation resisted barcode image units have been received. |
 | [`OnComplementedBarcodeImageUnitReceived`](#oncomplementedbarcodeimageunitreceived) | Called when complemented barcode image units have been received. |
 
-### GetObservedParameters
+### GetObservationParameters
 
-Gets the observed parameters of the intermediate result receiver.
+Gets the observation parameters of the intermediate result receiver.
 
 ```cpp
-CObservedParameters* GetObservedParameters()
+CObservationParameters* GetObservationParameters()
 ```
 
 **Return value**
 
-Returns the object of CObservedParameters. The default parameters are to observe all intermediate result unit types and all tasks.
+Returns the object of CObservationParameters. The default parameters are to observe all intermediate result unit types and all tasks.
 
 ### OnTaskResultsReceived
 

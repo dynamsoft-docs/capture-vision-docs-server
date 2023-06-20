@@ -1,14 +1,14 @@
 ---
 layout: default-layout
-title: class CObservedParameters - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CObservedParameters in Dynamsoft Core Module.
+title: class CObservationParameters - Dynamsoft Core Module C++ Edition API Reference
+description: This page shows the C++ edition of the class CObservationParameters in Dynamsoft Core Module.
 keywords: intermediate result, c++
 needAutoGenerateSidebar: true
 ---
 
-# CObservedParameters
+# CObservationParameters
 
-The `ObservedParameters` class is used to set filter conditions for the `CIntermediateResultReceiver`, so that only intermediate results meeting specific conditions will be called back.
+The `CObservationParameters` class is used to set filter conditions for the `CIntermediateResultReceiver`, so that only intermediate results meeting specific conditions will be called back.
 
 ## Definition
 
@@ -17,7 +17,7 @@ The `ObservedParameters` class is used to set filter conditions for the `CInterm
 *Assembly:* DynamsoftCore.dll
 
 ```cpp
-class CObservedParameters 
+class CObservationParameters 
 ```
 
 ## Methods Summary
