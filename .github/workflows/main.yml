@@ -29,7 +29,7 @@ jobs:
           cd /home/ubuntu
           [ ! -d DCVDocServer ] && mkdir -p DCVDocServer
           [ ! -d capture-vision-docs-server ] && git clone --depth 1 https://github.com/dynamsoft-docs/capture-vision-docs-server.git capture-vision-docs-server
-          [ ! -d Docs-Template-Repo-Preview-DCV2 ] && git clone --depth 1 --branch jenny-preview-branch https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-DCV2
+          [ ! -d Docs-Template-Repo-Preview-DCV2 ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-DCV2
           cd capture-vision-docs-server && git pull && cd .. && cp -rfp ./capture-vision-docs-server/* ./DCVDocServer/
           cd Docs-Template-Repo-Preview-DCV2 && git pull && cd .. && cp -rfp ./Docs-Template-Repo-Preview-DCV2/* ./DCVDocServer/
           cd DCVDocServer && bundle exec jekyll build --incremental
@@ -61,7 +61,7 @@ jobs:
           [ -d Docs-Template-Repo-Preview-DCV2 ] && rm -rf Docs-Template-Repo-Preview-DCV2
           [ ! -d DCVDocServer-preview ] && mkdir -p DCVDocServer-preview
           [ ! -d capture-vision-docs-server-preview ] && git clone --depth 1 --branch preview https://${{ secrets.GIT_USER }}:${{ secrets.GIT_PAT }}@github.com/dynamsoft-docs/capture-vision-docs-server.git capture-vision-docs-server-preview
-          [ ! -d Docs-Template-Repo-Preview-DCV2 ] && git clone --depth 1 --branch jenny-preview-branch https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-DCV2
+          [ ! -d Docs-Template-Repo-Preview-DCV2 ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-DCV2
           cp -rfp ./capture-vision-docs-server-preview/* ./DCVDocServer-preview/
           cp -rfp ./Docs-Template-Repo-Preview-DCV2/* ./DCVDocServer-preview/
           sed -i -e "1,3s/blob\/master$/blob\/preview/" \
