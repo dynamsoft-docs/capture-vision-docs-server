@@ -1,17 +1,17 @@
 ---
 layout: default-layout
-title: class CCaptureResultReceiver - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCaptureResultReceiver in Core Module.
+title: class CCapturedResultReceiver - Dynamsoft Capture Vision C++ Edition API Reference
+description: This page shows the C++ edition of the class CCapturedResultReceiver in Core Module.
 keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-breadcrumbText: C++ CCaptureResultReceiver Class
+breadcrumbText: C++ CCapturedResultReceiver Class
 permalink: /programming/cplusplus/api-reference/core/basic-structures/captured-result-receiver.html
 ---
 
-# CCaptureResultReceiver
+# CCapturedResultReceiver
 
-The `CCaptureResultReceiver` class is responsible for receiving captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
+The `CCapturedResultReceiver` class is responsible for receiving captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
 
 ## Definition
 
@@ -20,15 +20,15 @@ The `CCaptureResultReceiver` class is responsible for receiving captured results
 *Assembly:* DynamsoftCore.dll
 
 ```cpp
-class CCaptureResultReceiver 
+class CCapturedResultReceiver 
 ```
 
 ## Methods Summary
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
-| [`CCaptureResultReceiver`](#ccaptureresultreceiver)               | Constructor                                          |
-| [`~CCaptureResultReceiver`](#ccaptureresultreceiver)              | Destructor                                           |
+| [`CCapturedResultReceiver`](#ccapturedresultreceiver)               | Constructor                                          |
+| [`~CCapturedResultReceiver`](#ccapturedresultreceiver)              | Destructor                                           |
 | [`GetObservedResultItemTypes`](#getobservedresultitemtypes)       | Gets the types of observed result items.             |
 | [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
 | [`OnRawImageResultReceived`](#onrawimageresultreceived)           | Callback function for raw image results.             |
@@ -40,20 +40,20 @@ class CCaptureResultReceiver
 | [`GetName`](#getname)       | Gets the name of the captured result receiver.                                             |
 | [`SetName`](#setname)       | Sets the name of the captured result receiver.                                             |
 
-### CCaptureResultReceiver
+### CCapturedResultReceiver
 
 Constructor.
 
 ```cpp
-CCaptureResultReceiver()
+CCapturedResultReceiver()
 ```
 
-### ~CCaptureResultReceiver
+### ~CCapturedResultReceiver
 
 Destructor.
 
 ```cpp
-virtual ~CCaptureResultReceiver()
+virtual ~CCapturedResultReceiver()
 ```
 
 ### GetObservedResultItemTypes
