@@ -17,7 +17,7 @@ The `CMultiFrameResultCrossFilter` class is responsible for filtering captured r
 
 *Namespace:* dynamsoft::utility
 
-*Assembly:* DynamsoftUtility.dll
+*Assembly:* DynamsoftUtility
 
 ```cpp
 class CMultiFrameResultCrossFilter: public CCapturedResultFilter

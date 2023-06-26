@@ -14,7 +14,7 @@ The CFileImageTag class represents an image tag that is associated with a file. 
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CFileImageTag : public CImageTag

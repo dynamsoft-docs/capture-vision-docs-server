@@ -14,7 +14,7 @@ The CRect class represents a rectangle in 2D space. It contains four integer val
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CRect 

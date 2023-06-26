@@ -17,7 +17,7 @@ The `CUtilityModule` class defines general functions in the utility module.
 
 *Namespace:* dynamsoft::utility
 
-*Assembly:* DynamsoftUtility.dll
+*Assembly:* DynamsoftUtility
 
 ```cpp
 class CUtilityModule 

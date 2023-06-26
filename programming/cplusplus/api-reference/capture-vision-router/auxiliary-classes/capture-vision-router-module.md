@@ -17,7 +17,7 @@ The `CCaptureVisionRouterModule` class defines general functions in the capture 
 
 *Namespace:* dynamsoft::cvr
 
-*Assembly:* DynamsoftCaptureVisionRouter.dll
+*Assembly:* DynamsoftCaptureVisionRouter
 
 ```cpp
 class CCaptureVisionRouterModule 

@@ -14,7 +14,7 @@ The CCapturedResultItem class represents an item in a captured result. It is an 
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CCapturedResultItem 

@@ -14,7 +14,7 @@ The CBinaryImageUnit class represents a binary image unit that inherits from CIn
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CBinaryImageUnit : public CIntermediateResultUnit 

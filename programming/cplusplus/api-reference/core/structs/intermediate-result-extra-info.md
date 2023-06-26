@@ -12,7 +12,7 @@ The IntermediateResultExtraInfo structure represents the extra information for g
 
 ## Definition
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 typedef struct IntermediateResultExtraInfo

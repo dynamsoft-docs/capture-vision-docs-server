@@ -14,7 +14,7 @@ CCorner is a structure in an image consisting of two line segments and intersect
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CCorner 

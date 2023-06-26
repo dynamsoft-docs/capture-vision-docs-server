@@ -17,7 +17,7 @@ The CCaptureVisionRouter class is what a user uses to interact with image-proces
 
 *Namespace:* dynamsoft::cvr
 
-*Assembly:* DynamsoftCaptureVisionRouter.dll
+*Assembly:* DynamsoftCaptureVisionRouter
 
 ```cpp
 class CCaptureVisionRouter

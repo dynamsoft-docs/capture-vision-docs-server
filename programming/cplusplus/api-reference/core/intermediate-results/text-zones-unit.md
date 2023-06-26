@@ -14,7 +14,7 @@ The CTextZonesUnit class represents a unit that contains text zones. It is deriv
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CTextZonesUnit : public CIntermediateResultUnit

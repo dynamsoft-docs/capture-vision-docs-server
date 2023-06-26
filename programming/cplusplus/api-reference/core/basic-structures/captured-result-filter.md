@@ -17,7 +17,7 @@ The `CCaptureResultFilter` class is responsible for filtering captured results. 
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CCaptureResultFilter 

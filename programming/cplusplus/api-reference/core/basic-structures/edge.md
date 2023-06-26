@@ -14,7 +14,7 @@ CEdge is a structure composed of two Corner points in an image. A Corner represe
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CEdge 

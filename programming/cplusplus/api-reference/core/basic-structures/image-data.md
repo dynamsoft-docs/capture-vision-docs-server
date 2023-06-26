@@ -14,7 +14,7 @@ The CImageData class represents image data, which contains the image bytes, widt
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CImageData 

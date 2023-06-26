@@ -14,7 +14,7 @@ The CScaledDownColourImageUnit class represents an intermediate result unit that
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CScaledDownColourImageUnit : public CIntermediateResultUnit

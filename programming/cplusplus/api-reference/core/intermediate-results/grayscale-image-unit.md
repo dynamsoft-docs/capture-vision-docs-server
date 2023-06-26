@@ -14,7 +14,7 @@ The CGrayscaleImageUnit class represents a grayscale image unit. It is a subclas
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CGrayscaleImageUnit : public CIntermediateResultUnit 

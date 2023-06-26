@@ -14,7 +14,7 @@ The CVideoFrameTag class represents a video frame tag, which is a type of image 
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CVideoFrameTag: public CImageTag 

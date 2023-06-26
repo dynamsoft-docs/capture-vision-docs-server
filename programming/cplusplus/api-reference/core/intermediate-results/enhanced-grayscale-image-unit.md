@@ -14,7 +14,7 @@ The CEnhancedGrayscaleImageUnit class represents an intermediate result unit tha
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CEnhancedGrayscaleImageUnit  : public CIntermediateResultUnit

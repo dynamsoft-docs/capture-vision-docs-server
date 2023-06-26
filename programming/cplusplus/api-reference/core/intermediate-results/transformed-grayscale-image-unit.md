@@ -14,7 +14,7 @@ The CTransformedGrayscaleImageUnit class is a subclass of CIntermediateResultUni
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CTransformedGrayscaleImageUnit : public CIntermediateResultUnit 

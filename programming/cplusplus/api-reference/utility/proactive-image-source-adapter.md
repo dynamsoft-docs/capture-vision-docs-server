@@ -14,7 +14,7 @@ The CProactiveImageSourceAdapter class is an abstract base class that extends th
 
 *Namespace:* dynamsoft::utility
 
-*Assembly:* DynamsoftUtility.dll
+*Assembly:* DynamsoftUtility
 
 ```cpp
 class CProactiveImageSourceAdapter: public CImageSourceAdapter

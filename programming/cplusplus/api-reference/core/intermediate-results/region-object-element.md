@@ -14,7 +14,7 @@ The CRegionObjectElement class represents an element of a region object in 2D sp
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CRegionObjectElement 

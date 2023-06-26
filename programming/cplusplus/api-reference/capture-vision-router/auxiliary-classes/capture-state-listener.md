@@ -17,7 +17,7 @@ The CCaptureStateListener class is an abstract class that defines a listener for
 
 *Namespace:* dynamsoft::cvr
 
-*Assembly:* DynamsoftCaptureVisionRouter.dll
+*Assembly:* DynamsoftCaptureVisionRouter
 
 ```cpp
 class CCaptureStateListener

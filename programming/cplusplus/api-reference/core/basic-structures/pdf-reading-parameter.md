@@ -14,7 +14,7 @@ The CPDFReadingParameter class represents the parameters for reading a PDF file.
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CPDFReadingParameter 

@@ -14,7 +14,7 @@ The CContour class represents a contour in 2D space. It contains an array of CPo
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CContour 

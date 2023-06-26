@@ -14,7 +14,7 @@ The `CObservationParameters` class is used to set filter conditions for the `CIn
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CObservationParameters 

@@ -14,7 +14,7 @@ The CPredetectedRegionsUnit class represents a unit that contains a collection o
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CPredetectedRegionsUnit : public CIntermediateResultUnit

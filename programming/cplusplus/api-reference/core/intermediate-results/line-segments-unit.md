@@ -14,7 +14,7 @@ The CLineSegmentsUnit class represents a collection of line segments in 2D space
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CLineSegmentsUnit: public CIntermediateResultUnit 

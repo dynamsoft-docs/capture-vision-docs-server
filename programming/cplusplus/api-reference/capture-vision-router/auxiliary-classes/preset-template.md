@@ -17,7 +17,7 @@ The `CPresetTemplate` class defines all preset template names of Capture Vision 
 
 *Namespace:* dynamsoft::cvr
 
-*Assembly:* DynamsoftCaptureVisionRouter.dll
+*Assembly:* DynamsoftCaptureVisionRouter
 
 ```cpp
 class CPresetTemplate 

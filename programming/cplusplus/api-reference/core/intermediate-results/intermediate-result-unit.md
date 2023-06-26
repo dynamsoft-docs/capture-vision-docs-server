@@ -14,7 +14,7 @@ The CIntermediateResultUnit class represents an intermediate result unit used in
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CIntermediateResultUnit 

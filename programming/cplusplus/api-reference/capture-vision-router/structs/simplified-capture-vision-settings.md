@@ -15,7 +15,7 @@ The `SimplifiedCaptureVisionSettings` struct contains settings for capturing and
 
 ## Definition
 
-*Assembly:* DynamsoftCaptureVisionRouter.dll
+*Assembly:* DynamsoftCaptureVisionRouter
 
 ```cpp
 typedef struct tagSimplifiedCaptureVisionSettings

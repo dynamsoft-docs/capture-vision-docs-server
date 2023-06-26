@@ -14,7 +14,7 @@ The CCapturedResult class represents the result of a capture operation on an ima
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CCapturedResult 

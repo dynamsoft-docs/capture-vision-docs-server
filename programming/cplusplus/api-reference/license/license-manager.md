@@ -14,7 +14,7 @@ The CLicenseManager class provides a set of APIs to manage SDK licensing.
 
 *Namespace:* dynamsoft::license
 
-*Assembly:* DynamsoftLicense.dll
+*Assembly:* DynamsoftLicense
 
 ```cpp
 class CLicenseManager 

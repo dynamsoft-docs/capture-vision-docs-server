@@ -14,7 +14,7 @@ The CContoursUnit class represents a unit that contains contours as intermediate
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CContoursUnit : public CIntermediateResultUnit

@@ -14,7 +14,7 @@ The CTextureDetectionResultUnit class represents an intermediate result unit for
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CTextureDetectionResultUnit : public CIntermediateResultUnit 

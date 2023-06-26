@@ -17,7 +17,7 @@ The `CRawImageResultItem` class represents a captured raw image result item. It 
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CRawImageResultItem ： public CCapturedResultItem

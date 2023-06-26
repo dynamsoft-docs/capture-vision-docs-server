@@ -14,7 +14,7 @@ The CIntermediateResult class represents a container containing a collection of 
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CIntermediateResult

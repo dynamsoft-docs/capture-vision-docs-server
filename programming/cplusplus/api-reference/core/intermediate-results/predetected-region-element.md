@@ -14,7 +14,7 @@ The CPredetectedRegionElement class represents a region element that has been pr
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CPredetectedRegionElement : public CRegionObjectElement

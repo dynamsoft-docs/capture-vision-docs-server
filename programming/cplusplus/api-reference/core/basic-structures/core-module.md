@@ -17,7 +17,7 @@ The `CCoreModule` class defines general functions in the core module.
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CCoreModule 

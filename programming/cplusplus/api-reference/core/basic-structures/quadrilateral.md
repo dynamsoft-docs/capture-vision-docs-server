@@ -14,7 +14,7 @@ The CQuadrilateral class represents a quadrilateral shape in 2D space. It contai
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CQuadrilateral 

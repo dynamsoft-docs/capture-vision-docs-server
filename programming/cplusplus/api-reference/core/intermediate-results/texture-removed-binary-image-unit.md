@@ -14,7 +14,7 @@ The CTextureRemovedBinaryImageUnit class represents an intermediate result unit 
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CTextureRemovedBinaryImageUnit : public CIntermediateResultUnit 

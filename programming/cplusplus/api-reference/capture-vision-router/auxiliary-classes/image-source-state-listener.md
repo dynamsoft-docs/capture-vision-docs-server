@@ -17,7 +17,7 @@ The `CImageSourceStateListener` class is an abstract class that defines a listen
 
 *Namespace:* dynamsoft::cvr
 
-*Assembly:* DynamsoftCaptureVisionRouter.dll
+*Assembly:* DynamsoftCaptureVisionRouter
 
 ```cpp
 class CImageSourceStateListener 

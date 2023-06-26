@@ -14,7 +14,7 @@ The CIntermediateResultReceiver class is responsible for receiving intermediate 
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CIntermediateResultReceiver 

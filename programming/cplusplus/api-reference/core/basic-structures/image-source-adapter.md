@@ -14,7 +14,7 @@ The CImageSourceAdapter class provides an interface for fetching and buffering i
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CImageSourceAdapter 

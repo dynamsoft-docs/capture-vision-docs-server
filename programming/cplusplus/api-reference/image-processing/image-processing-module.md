@@ -17,7 +17,7 @@ The `CImageProcessingModule` class defines general functions in the image proces
 
 *Namespace:* dynamsoft::dip
 
-*Assembly:* DynamsoftImageProcessing.dll
+*Assembly:* DynamsoftImageProcessing
 
 ```cpp
 class CImageProcessingModule 

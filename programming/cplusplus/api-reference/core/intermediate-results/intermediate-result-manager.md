@@ -14,7 +14,7 @@ The CIntermediateResultManager class manages intermediate results generated duri
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CIntermediateResultManager 

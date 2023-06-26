@@ -14,7 +14,7 @@ The CImageTag class represents an image tag that can be attached to an image in 
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CImageTag 

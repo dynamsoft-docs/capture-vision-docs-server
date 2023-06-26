@@ -14,7 +14,7 @@ The CImageManager class is a utility class for managing and manipulating images.
 
 *Namespace:* dynamsoft::utility
 
-*Assembly:* DynamsoftUtility.dll
+*Assembly:* DynamsoftUtility
 
 ```cpp
 class CImageManager

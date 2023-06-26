@@ -14,7 +14,7 @@ The CLineSegment class represents a line segment in 2D space. It contains two CP
 
 *Namespace:* dynamsoft::basic_structures
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CLineSegment 

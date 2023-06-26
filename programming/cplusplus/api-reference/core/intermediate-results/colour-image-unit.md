@@ -14,7 +14,7 @@ The CColourImageUnit class represents a unit that contains color image. It is de
 
 *Namespace:* dynamsoft::intermediate_results
 
-*Assembly:* DynamsoftCore.dll
+*Assembly:* DynamsoftCore
 
 ```cpp
 class CColourImageUnit : public CIntermediateResultUnit

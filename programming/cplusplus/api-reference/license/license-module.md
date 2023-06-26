@@ -17,7 +17,7 @@ The `CLicenseModule` class defines general functions in the license module.
 
 *Namespace:* dynamsoft::license
 
-*Assembly:* DynamsoftLicense.dll
+*Assembly:* DynamsoftLicense
 
 ```cpp
 class CLicenseModule 
