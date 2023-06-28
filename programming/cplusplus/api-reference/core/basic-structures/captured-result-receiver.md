@@ -27,8 +27,8 @@ class CCapturedResultReceiver
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
-| [`CCapturedResultReceiver`](#ccapturedresultreceiver)               | Constructor                                          |
-| [`~CCapturedResultReceiver`](#ccapturedresultreceiver)              | Destructor                                           |
+| [`CCapturedResultReceiver`](#ccapturedresultreceiver-constructor)               | Constructor                                          |
+| [`~CCapturedResultReceiver`](#ccapturedresultreceiver-destructor)              | Destructor                                           |
 | [`GetObservedResultItemTypes`](#getobservedresultitemtypes)       | Gets the types of observed result items.             |
 | [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
 | [`OnRawImageResultReceived`](#onrawimageresultreceived)           | Callback function for raw image results.             |
@@ -40,7 +40,7 @@ class CCapturedResultReceiver
 | [`GetName`](#getname)       | Gets the name of the captured result receiver.                                             |
 | [`SetName`](#setname)       | Sets the name of the captured result receiver.                                             |
 
-### CCapturedResultReceiver
+### CCapturedResultReceiver Constructor
 
 Constructor.
 
@@ -48,7 +48,7 @@ Constructor.
 CCapturedResultReceiver()
 ```
 
-### ~CCapturedResultReceiver
+### CCapturedResultReceiver Destructor
 
 Destructor.
 

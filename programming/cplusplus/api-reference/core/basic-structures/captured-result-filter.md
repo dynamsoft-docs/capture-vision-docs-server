@@ -27,8 +27,8 @@ class CCaptureResultFilter
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
-| [`CCaptureResultFilter`](#ccaptureresultfilter)               | Constructor                                          |
-| [`~CCaptureResultFilter`](#ccaptureresultfilter)              | Destructor                                           |
+| [`CCaptureResultFilter`](#ccaptureresultfilter-constructor)               | Constructor                                          |
+| [`~CCaptureResultFilter`](#ccaptureresultfilter-destructor)              | Destructor                                           |
 | [`GetFilteredResultItemTypes`](#getfilteredresultitemtypes)       | Gets the types of observed result items.             |
 | [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
 | [`OnRawImageResultReceived`](#onrawimageresultreceived)           | Callback function for raw image results.             |
@@ -40,7 +40,7 @@ class CCaptureResultFilter
 | [`GetName`](#getname)       | Gets the name of the captured result filter.                                             |
 | [`SetName`](#setname)       | Sets the name of the captured result filter.                                             |
 
-### CCaptureResultFilter
+### CCaptureResultFilter Constructor
 
 Constructor.
 
@@ -48,7 +48,7 @@ Constructor.
 CCaptureResultFilter()
 ```
 
-### ~CCaptureResultFilter
+### CCaptureResultFilter Destructor
 
 Destructor.
 
@@ -66,7 +66,7 @@ unsigned int GetFilteredResultItemTypes()
 
 **Return value**
 
-Returns the types of filtered result items.
+Returns the type [`CapturedResultItemType`]({{site.enums}}core/captured-result-item-type.html) of filtered result items.
 
 ### OnCapturedResultReceived
 
