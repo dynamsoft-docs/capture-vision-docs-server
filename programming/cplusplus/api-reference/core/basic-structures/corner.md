@@ -47,7 +47,7 @@ CPoint intersection
 
 ### line1
 
-The first line connected to the corner.
+One of the line connected to the corner.
 
 ```cpp
 CLineSegment line1
@@ -55,7 +55,7 @@ CLineSegment line1
 
 ### line2
 
-The second line connected to the corner.
+One of the line connected to the corner.
 
 ```cpp
 CLineSegment line2
