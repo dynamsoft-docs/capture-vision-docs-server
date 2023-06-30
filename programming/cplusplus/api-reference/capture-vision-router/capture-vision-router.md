@@ -34,7 +34,7 @@ class CCaptureVisionRouter
 
 | API Name                                       | Description                                               |
 | ---------------------------------------------- | --------------------------------------------------------- |
-| [`Capture`](single-file-processing.md#capture) | Process an image or file to derive important information. |
+| [`Capture`](single-file-processing.md#capture) | Processes an image or file to derive important information. |
 
 ## Multiple-File Processing
 
