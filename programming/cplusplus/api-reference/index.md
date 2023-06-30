@@ -22,20 +22,16 @@ needAutoGenerateSidebar: true
 
 - [`CCapturedResultReceiver`]({{ site.cpp_api }}core/basic-structures/captured-result-receiver.html)
 - [`CCapturedResult`]({{ site.cpp_api }}core/basic-structures/captured-result.html)
-- [`CCapturedResultArray`]({{ site.cpp_api }}core/basic-structures/captured-result-array.html)
 - [`CCapturedResultItem`]({{ site.cpp_api }}core/basic-structures/captured-result-item.html)
 - [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html)
 - [`CDecodedBarcodesResult`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html)
-- [`CDecodedBarcodesResultArray`]({{ site.dbr_cpp_api }}decoded-barcodes-result-array.html)
 - [`CTextLineResultItem`]({{ site.dlr_cpp_api }}text-line-result-item.html)
 - [`CCharacterResult`]({{ site.dlr_cpp_api }}character-result.html)
 - [`CRecognizedTextLinesResult`]({{ site.dlr_cpp_api }}recognized-text-lines-result.html)
 - [`CDetectedQuadResultItem`]({{ site.ddn_cpp_api }}detected-quad-result-item.html)
 - [`CDetectedQuadsResult`]({{ site.ddn_cpp_api }}detected-quads-result.html)
-- [`CDetectedQuadsResultArray`]({{ site.ddn_cpp_api }}detected-quads-result-array.html)
 - [`CNormalizedImageResultItem`]({{ site.ddn_cpp_api }}normalized-image-result-item.html)
 - [`CNormalizedImagesResult`]({{ site.ddn_cpp_api }}normalized-images-result.html)
-- [`CNormalizedImagesResultArray`]({{ site.ddn_cpp_api }}normalized-images-result-array.html)
 - [`CParsedResultItem`]({{ site.dcp_cpp_api }}parsed-result-item.html)
 - [`CParsedResult`]({{ site.dcp_cpp_api }}parsed-result.html)
 - [`CRawImageResultItem`]({{ site.cpp_api }}core/basic-structures/raw-image-result-item.html)
@@ -111,7 +107,9 @@ needAutoGenerateSidebar: true
 - [`CCaptureStateListener`]({{ site.cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 - [`CImageSourceStateListener`]({{ site.cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
-## [`CLicenseManager`]({{ site.cpp_api }}license/license-manager.html)
+## License
+
+- [`CLicenseManager`]({{ site.cpp_api }}license/license-manager.html)
 
 ## Basic Structure
 

@@ -34,23 +34,24 @@ class CCaptureVisionRouter
 
 | API Name                                       | Description                                               |
 | ---------------------------------------------- | --------------------------------------------------------- |
-| [Capture()](single-file-processing.md#capture) | Process an image or file to derive important information. |
+| [`Capture`](single-file-processing.md#capture) | Process an image or file to derive important information. |
 
 ## Multiple-File Processing
 
 | API Name                                                                                       | Description                                                                  |
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [SetInput()](multiple-file-processing.md#setinput)                                             | Sets an image source to provide images for consecutive process.              |
-| [AddCaptureStateListener()](multiple-file-processing.md#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
-| [RemoveCaptureStateListener()](multiple-file-processing.md#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
-| [AddImageSourceStateListener()](multiple-file-processing.md#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
-| [RemoveImageSourceStateListener()](multiple-file-processing.md#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.        |
-| [AddResultReceiver()](multiple-file-processing.md#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
-| [RemoveResultReceiver()](multiple-file-processing.md#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
-| [AddResultFilter()](multiple-file-processing.md#addresultfilter)                           | Adds an object as the filter of captured results.                          |
-| [RemoveResultFilter()](multiple-file-processing.md#removeresultfilter)                     | Removes an object which was added as a filter of captured results.         |
-| [StartCapturing()](multiple-file-processing.md#startcapturing)                                 | Starts to process images consecutively.                                      |
-| [StopCapturing()](multiple-file-processing.md#stopcapturing)                                   | Stops the consecutive process.                                               |
+| [`SetInput`](multiple-file-processing.md#setinput)                                             | Sets an image source to provide images for consecutive process.              |
+| [`GetInput`](multiple-file-processing.md#getinput)                                             | Sets an image source to provide images for consecutive process.              |
+| [`AddCaptureStateListener`](multiple-file-processing.md#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
+| [`RemoveCaptureStateListener`](multiple-file-processing.md#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
+| [`AddImageSourceStateListener`](multiple-file-processing.md#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
+| [`RemoveImageSourceStateListener`](multiple-file-processing.md#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.        |
+| [`AddResultReceiver`](multiple-file-processing.md#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
+| [`RemoveResultReceiver`](multiple-file-processing.md#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
+| [`AddResultFilter`](multiple-file-processing.md#addresultfilter)                           | Adds an object as the filter of captured results.                          |
+| [`RemoveResultFilter`](multiple-file-processing.md#removeresultfilter)                     | Removes an object which was added as a filter of captured results.         |
+| [`StartCapturing`](multiple-file-processing.md#startcapturing)                                 | Starts to process images consecutively.                                      |
+| [`StopCapturing`](multiple-file-processing.md#stopcapturing)                                   | Stops the consecutive process.                                               |
 
 ## Settings
 
@@ -70,10 +71,10 @@ The following method returns an `CIntermediateResultManager` object which allows
 
 | API Name                                                                            | Description                                     |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------- |
-| [GetIntermediateResultManager](intermediate-result.md#getintermediateresultmanager) | Returns an `CIntermediateResultManager` object. |
+| [`GetIntermediateResultManager`](intermediate-result.md#getintermediateresultmanager) | Returns an `CIntermediateResultManager` object. |
 
 ## Auxiliary
 
 | API Name                                      | Description                                               |
 | --------------------------------------------- | --------------------------------------------------------- |
-| [FreeString](auxiliary-methods.md#freestring) | Frees the memory allocated for a string.                  |
+| [`FreeString`](auxiliary-methods.md#freestring) | Frees the memory allocated for a string.                  |
