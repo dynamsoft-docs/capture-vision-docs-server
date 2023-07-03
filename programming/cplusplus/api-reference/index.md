@@ -15,6 +15,7 @@ needAutoGenerateSidebar: true
 ## Input
 
 - [`CDirectoryFetcher`]({{ site.cpp_api }}utility/directory-fetcher.html)
+- [`CFileFetcher`]({{ site.cpp_api }}utility/file-fetcher.html)
 - [`CImageSourceAdapter`]({{ site.cpp_api }}core/basic-structures/image-source-adapter.html)
 - [`CProactiveImageSourceAdapter`]({{ site.cpp_api }}utility/proactive-image-source-adapter.html)
 
