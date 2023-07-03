@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CFileImageTag
 
-The CFileImageTag class represents an image tag that is associated with a file. It inherits from the CImageTag class and adds two attributes, a file path and a page number.
+The CFileImageTag class represents an image tag that is associated with a file. It inherits from the CImageTag class and adds additional attributes.
 
 ## Definition
 
@@ -25,7 +25,7 @@ class CFileImageTag : public CImageTag
 | Method               | Description |
 |----------------------|-------------|
 | [`GetFilePath`](#getfilepath) | Gets the file path of the image.|
-| [`GetPageNumber`](#getpagenumber) | Get the page number of the current image in the PDF file. |
+| [`GetPageNumber`](#getpagenumber) | Gets the page number of the current image in the PDF file. |
 | [`GetTotalPages`](#gettotalpages) | Gets the total page number of the PDF file. |
 | [`CFileImageTag`](#cfileimagetag-constructor) | The constructor of CContour. |
 | [`~CFileImageTag`](#cfileimagetag-destructor) | The destructor of CContour. |
