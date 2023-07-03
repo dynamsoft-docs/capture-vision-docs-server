@@ -24,11 +24,11 @@ class CTextureRemovedGrayscaleImageUnit : public CIntermediateResultUnit
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetImageData`](#getimagedata) | Gets the grayscale image data with textures removed.|
+| [`GetImageData`](#getimagedata) | Gets the texture-removed grayscale image.|
 
 ### GetImageData
 
-Gets the grayscale image data with textures removed.
+Gets the texture-removed grayscale image.
 
 ```cpp
 virtual const CImageData* GetImageData() const
@@ -36,4 +36,4 @@ virtual const CImageData* GetImageData() const
 
 **Return value**
 
-Returns a constant pointer to the grayscale image data with textures removed. You don't need to release the memory pointed to by the returned pointer.
+Returns a constant pointer to the texture-removed grayscale image. You don't need to release the memory pointed to by the returned pointer.
