@@ -46,7 +46,7 @@ int dpi
 
 ### type
 
-The tarGetstype.
+The target type.
 
 ```cpp
 TargetType type
