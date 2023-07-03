@@ -52,7 +52,7 @@ Returns an integer value that represents the success or failure of the operation
 Sets the parameters for reading PDF files.
 
 ```cpp
-int SetPDFReadingParameter(CPDFReadingParameter para)
+int SetPDFReadingParameter(const CPDFReadingParameter& para)
 ```
 
 **Parameters**
