@@ -24,8 +24,9 @@ class CFileImageTag : public CImageTag
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetFilePath`](#getfilepath) | Gets the file path of the image tag.|
-| [`GetPageNumber`](#getpagenumber) | Gets the page number of the image tag.|
+| [`GetFilePath`](#getfilepath) | Gets the file path of the image.|
+| [`GetPageNumber`](#getpagenumber) | Get the page number of the current image in the PDF file. |
+| [`GetTotalPages`](#gettotalpages) | Gets the total page number of the PDF file. |
 | [`CFileImageTag`](#cfileimagetag-constructor) | The constructor of CContour. |
 | [`~CFileImageTag`](#cfileimagetag-destructor) | The destructor of CContour. |
 
@@ -43,7 +44,7 @@ Returns the file path of the image tag.
 
 ### GetPageNumber
 
-Gets the page number of the image tag.
+Get the page number of the current image in the PDF file.
 
 ```cpp
 int GetPageNumber() const
@@ -51,7 +52,19 @@ int GetPageNumber() const
 
 **Return value**
 
-Returns the page number of the image tag.
+Returns the page number of the current image in the PDF file.
+
+### GetTotalPages
+
+Gets the total page number of the PDF file.
+
+```cpp
+int GetTotalPages() const;
+```
+
+**Return value**
+
+Returns the total page number of the PDF file.
 
 ### CFileImageTag Constructor
 
