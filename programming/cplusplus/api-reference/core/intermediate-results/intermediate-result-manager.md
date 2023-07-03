@@ -33,7 +33,7 @@ class CIntermediateResultManager
 Adds an intermediate result receiver to the manager.
 
 ```cpp
-virtual void AddResultReceiver(CIntermediateResultReceiver* receiver)
+virtual int AddResultReceiver(CIntermediateResultReceiver* receiver)
 ```
 
 **Parameters**
@@ -45,7 +45,7 @@ virtual void AddResultReceiver(CIntermediateResultReceiver* receiver)
 Removes an intermediate result receiver from the manager.
 
 ```cpp
-virtual void RemoveResultReceiver(CIntermediateResultReceiver* receiver)
+virtual int RemoveResultReceiver(CIntermediateResultReceiver* receiver)
 ```
 
 **Parameters**
