@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CTextureRemovedBinaryImageUnit
 
-The CTextureRemovedBinaryImageUnit class represents an intermediate result unit that stores binary image data with texture removed.
+The CTextureRemovedBinaryImageUnit class represents an intermediate result unit that stores texture-removed binary image data.
 
 ## Definition
 

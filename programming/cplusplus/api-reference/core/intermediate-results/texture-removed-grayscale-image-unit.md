@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CTextureRemovedGrayscaleImageUnit
 
-The CTextureRemovedGrayscaleImageUnit class represents an intermediate result unit that contains grayscale image data with textures removed.
+The CTextureRemovedGrayscaleImageUnit class represents an intermediate result unit that contains texture-removed grayscale image data.
 
 ## Definition
 

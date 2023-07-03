@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CTextRemovedBinaryImageUnit
 
-The CTextRemovedBinaryImageUnit class represents an intermediate result unit that contains a binary image with the text removed.
+The CTextRemovedBinaryImageUnit class represents an intermediate result unit that contains a text-removed binary image.
 
 ## Definition
 
