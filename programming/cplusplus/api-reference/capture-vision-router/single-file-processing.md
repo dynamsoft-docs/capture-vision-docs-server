@@ -13,7 +13,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/single-fil
 
 | API Name              | Description                                               |
 | --------------------- | --------------------------------------------------------- |
-| [Capture()](#capture) | Process an image or file to derive important information. |
+| [`Capture`](#capture) | Process an image or file to derive important information. |
 
 ## Capture
 

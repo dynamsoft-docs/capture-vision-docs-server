@@ -13,18 +13,18 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/multiple-f
 
 | API Name                                                            | Description                                                                  |
 | ------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [SetInput()](#setinput)                                             | Sets an image source to provide images for consecutive processing.         |
-| [GetInput()](#getinput)                                             | Gets the attached image source adapter object of the capture vision router.         |
-| [AddCaptureStateListener()](#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
-| [RemoveCaptureStateListener()](#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
-| [AddImageSourceStateListener()](#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
-| [RemoveImageSourceStateListener()](#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.        |
-| [AddResultReceiver()](#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
-| [RemoveResultReceiver()](#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
-| [AddResultFilter()](#addresultfilter)                               | Adds an object as the filter of captured results.                          |
-| [RemoveResultFilter()](#removeresultfilter)                         | Removes an object which was added as a filter of captured results.         |
-| [StartCapturing()](#startcapturing)                                 | Starts to process images consecutively.                                      |
-| [StopCapturing()](#stopcapturing)                                   | Stops the consecutive processing.                                          |
+| [`SetInput`](#setinput)                                             | Sets an image source to provide images for consecutive processing.         |
+| [`GetInput`](#getinput)                                             | Gets the attached image source adapter object of the capture vision router.         |
+| [`AddCaptureStateListener`](#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
+| [`RemoveCaptureStateListener`](#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
+| [`AddImageSourceStateListener`](#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
+| [`RemoveImageSourceStateListener`](#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.        |
+| [`AddResultReceiver`](#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
+| [`RemoveResultReceiver`](#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
+| [`AddResultFilter`](#addresultfilter)                               | Adds an object as the filter of captured results.                          |
+| [`RemoveResultFilter`](#removeresultfilter)                         | Removes an object which was added as a filter of captured results.         |
+| [`StartCapturing`](#startcapturing)                                 | Starts to process images consecutively.                                      |
+| [`StopCapturing`](#stopcapturing)                                   | Stops the consecutive processing.                                          |
 
 ## SetInput
 

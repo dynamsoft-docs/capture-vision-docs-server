@@ -13,7 +13,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-
 
 | API Name                                                      | Description                                               |
 | ------------------------------------------------------------- | --------------------------------------------------------- |
-| [FreeString](#freestring)                                     | Frees the memory allocated for a string.                  |
+| [`FreeString`](#freestring)                                     | Frees the memory allocated for a string.                  |
 
 ## FreeString
 

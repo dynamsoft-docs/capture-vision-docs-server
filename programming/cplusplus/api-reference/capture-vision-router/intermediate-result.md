@@ -13,7 +13,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/intermedia
 
 | API Name                                                      | Description                                               |
 | ------------------------------------------------------------- | --------------------------------------------------------- |
-| [GetIntermediateResultManager](#getintermediateresultmanager) | Returns an `CIntermediateResultManager` object.           |
+| [`GetIntermediateResultManager`](#getintermediateresultmanager) | Returns an `CIntermediateResultManager` object.           |
 
 ## GetIntermediateResultManager
 
