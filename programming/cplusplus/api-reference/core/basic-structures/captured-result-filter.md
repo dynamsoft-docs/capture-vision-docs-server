@@ -1,17 +1,17 @@
 ---
 layout: default-layout
-title: class CCaptureResultFilter - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCaptureResultFilter in Core Module.
+title: class CCapturedResultFilter - Dynamsoft Capture Vision C++ Edition API Reference
+description: This page shows the C++ edition of the class CCapturedResultFilter in Core Module.
 keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-breadcrumbText: C++ CCaptureResultFilter Class
+breadcrumbText: C++ CCapturedResultFilter Class
 permalink: /programming/cplusplus/api-reference/core/basic-structures/captured-result-filter.html
 ---
 
-# CCaptureResultFilter
+# CCapturedResultFilter
 
-The `CCaptureResultFilter` class is responsible for filtering captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
+The `CCapturedResultFilter` class is responsible for filtering captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
 
 ## Definition
 
@@ -20,15 +20,15 @@ The `CCaptureResultFilter` class is responsible for filtering captured results. 
 *Assembly:* DynamsoftCore
 
 ```cpp
-class CCaptureResultFilter 
+class CCapturedResultFilter 
 ```
 
 ## Methods Summary
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
-| [`CCaptureResultFilter`](#ccaptureresultfilter-constructor)               | Constructor                                          |
-| [`~CCaptureResultFilter`](#ccaptureresultfilter-destructor)              | Destructor                                           |
+| [`CCapturedResultFilter`](#ccapturedresultfilter-constructor)               | Constructor                                          |
+| [`~CCapturedResultFilter`](#ccapturedresultfilter-destructor)              | Destructor                                           |
 | [`GetFilteredResultItemTypes`](#getfilteredresultitemtypes)       | Gets the types of observed result items.             |
 | [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
 | [`OnRawImageResultReceived`](#onrawimageresultreceived)           | Callback function for raw image results.             |
@@ -40,20 +40,20 @@ class CCaptureResultFilter
 | [`GetName`](#getname)       | Gets the name of the captured result filter.                                             |
 | [`SetName`](#setname)       | Sets the name of the captured result filter.                                             |
 
-### CCaptureResultFilter Constructor
+### CCapturedResultFilter Constructor
 
 Constructor.
 
 ```cpp
-CCaptureResultFilter()
+CCapturedResultFilter()
 ```
 
-### CCaptureResultFilter Destructor
+### CCapturedResultFilter Destructor
 
 Destructor.
 
 ```cpp
-virtual ~CCaptureResultFilter()
+virtual ~CCapturedResultFilter()
 ```
 
 ### GetFilteredResultItemTypes
