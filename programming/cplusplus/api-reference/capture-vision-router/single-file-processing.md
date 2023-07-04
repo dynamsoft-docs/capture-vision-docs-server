@@ -6,22 +6,22 @@ keywords: capture vision, capture, image processing, api reference, C++, single-
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
 breadcrumbText: CVR C++ Single-File Processing
-permalink: /programming/cplusplus/api-reference/capture-vision-router/single-file-process.html
+permalink: /programming/cplusplus/api-reference/capture-vision-router/single-file-processing.html
 ---
 
 # Single-File Processing
 
 | API Name              | Description                                               |
 | --------------------- | --------------------------------------------------------- |
-| [capture()](#capture) | Process an image or file to derive important information. |
+| [`Capture`](#capture) | Process an image or file to derive important information. |
 
 ## Capture
 
 Process an image or file to derive important information. It can optionally use a specified template for the capture.
 
 ```cpp
-CCapturedResultArray* Capture(const char* filePath, const char* templateName="");
-CCapturedResultArray* Capture(const unsigned char *fileBytes, int fileSize, const char* templateName="");
+CCapturedResult* Capture(const char* filePath, const char* templateName="");
+CCapturedResult* Capture(const unsigned char *fileBytes, int fileSize, const char* templateName="");
 CCapturedResult* Capture(const CImageData* pImageData, const char* templateName="");
 ```
 
@@ -39,7 +39,7 @@ CCapturedResult* Capture(const CImageData* pImageData, const char* templateName=
 
 **Return Value**
 
-Returns a pointer to a `CCapturedResultArray` object containing the captured results.
+Returns a pointer to a `CCapturedResult` object containing the captured items.
 
 **Code Snippet**
 
@@ -48,6 +48,6 @@ int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 CCaptureVisionRouter* router = new CCaptureVisionRouter();
-CCapturedResultArray* results = router->Capture("path/to/file.png", "myTemplate");
+CCapturedResult* result = router->Capture("path/to/file.png", "myTemplate");
 delete router;
 ```

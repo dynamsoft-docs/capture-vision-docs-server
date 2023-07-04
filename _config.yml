@@ -5,14 +5,18 @@ firstLevelUrl: /capture-vision/docs/server
 
 useVersionTree: true
 
-introduction: /capture-vision2/docs/introduction/
-architecture: /capture-vision2/docs/architecture/
-parameter: /capture-vision2/docs/parameters/
-enums: /capture-vision2/docs/enums/
+introduction: /capture-vision/docs/core/introduction/
+architecture: /capture-vision/docs/core/architecture/
+parameter: /capture-vision/docs/core/parameters/
+enums: /capture-vision/docs/core/enums/
 
 
 cpp: /capture-vision/docs/server/programming/cplusplus/
 cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
+dbr_cpp_api: /barcode-reader/docs/server/programming/cplusplus/api-reference/
+dlr_cpp_api: /label-recognition/docs/server/programming/c-cplusplus/api-reference/
+ddn_cpp_api: /document-normalizer/docs/server/programming/cplusplus/api-reference/
+dcp_cpp_api: /code-parser/docs/server/programming/cplusplus/api-reference/
 
 dotnet: /capture-vision/docs/server/programming/dotnet/
 dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/

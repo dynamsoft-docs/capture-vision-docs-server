@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CContoursUnit class represents a unit that contains contours as intermediate results. It is derived from the CIntermediateResultUnit class.
 
-```cpp
-class dynamsoft::intermediate_results::CContoursUnit : public CIntermediateResultUnit
-```
+## Definition
 
----
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CContoursUnit : public CIntermediateResultUnit
+```
 
 ## Methods Summary
 

@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CTextZonesUnit class represents a unit that contains text zones. It is derived from CIntermediateResultUnit class and provides methods to retrieve the count and details of text zones.
 
-```cpp
-class dynamsoft::intermediate_results::CTextZonesUnit : public CIntermediateResultUnit
-```
+## Definition
 
----
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CTextZonesUnit : public CIntermediateResultUnit
+```
 
 ## Methods Summary
 

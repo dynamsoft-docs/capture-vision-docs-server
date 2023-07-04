@@ -21,7 +21,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/instantiat
 Default constructor of a `CCaptureVisionRouter` object.
 
 ```cpp
-dynamsoft::cvr::CCaptureVisionRouter::CCaptureVisionRouter()
+CCaptureVisionRouter::CCaptureVisionRouter()
 ```
 
 ## ~CCaptureVisionRouter
@@ -29,5 +29,5 @@ dynamsoft::cvr::CCaptureVisionRouter::CCaptureVisionRouter()
 Destructor of a `CCaptureVisionRouter` object.
 
 ```cpp
-dynamsoft::cvr::CCaptureVisionRouter::~CCaptureVisionRouter()
+CCaptureVisionRouter::~CCaptureVisionRouter()
 ```

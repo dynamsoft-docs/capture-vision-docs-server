@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CPredetectedRegionsUnit class represents a unit that contains a collection of pre-detected regions. It inherits from the CIntermediateResultUnit class and stores the result of image color pre-detection.
 
-```cpp
-class dynamsoft::intermediate_results::CPredetectedRegionsUnit : public CIntermediateResultUnit
-```
+## Definition
 
----
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CPredetectedRegionsUnit : public CIntermediateResultUnit
+```
 
 ## Methods Summary
 

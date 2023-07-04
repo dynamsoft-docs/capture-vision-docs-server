@@ -13,8 +13,14 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-
 
 The CCaptureStateListener class is an abstract class that defines a listener for capture state changes. 
 
+## Definition
+
+*Namespace:* dynamsoft::cvr
+
+*Assembly:* DynamsoftCaptureVisionRouter
+
 ```cpp
-class dynamsoft::cvr::CCaptureStateListener
+class CCaptureStateListener
 ```
 
 ## Methods Summary

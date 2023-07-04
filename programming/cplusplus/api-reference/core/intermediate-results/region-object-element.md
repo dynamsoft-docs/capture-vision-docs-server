@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CRegionObjectElement class represents an element of a region object in 2D space. It is an abstract class that provides the interface for region object elements.
 
-```cpp
-class dynamsoft::intermediate_results::CRegionObjectElement 
-```
+## Definition
 
----
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CRegionObjectElement 
+```
 
 ## Methods Summary
 
@@ -23,7 +27,6 @@ class dynamsoft::intermediate_results::CRegionObjectElement
 | [`GetLocation`](#getlocation) | Get the location of the region object element. |
 | [`GetReferencedElement`](#getreferencedelement) | Get a pointer to a referenced region object element. |
 | [`GetElementType`](#getelementtype) | Get the type of the region object element. |
-| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Get the rotation transform matrix of the region object element. |
 
 ### GetLocation
 
@@ -61,18 +64,4 @@ RegionObjectElementType GetElementType() const
 
 Returns a RegionObjectElementType enum value which represents the type of the region object element.
 
-### GetRotationTransformMatrix
 
-Gets the rotation transform matrix of the region object element.
-
-```cpp
-void GetRotatationTransformMatrix(double matrix[9]) const
-```
-
-**Parameters**
-
-`[out] matrix` A double array which represents the rotation transform matrix of the region object element.
-
-**Return value**
-
-This method does not return a value. The rotation transform matrix is returned in the `matrix` parameter.

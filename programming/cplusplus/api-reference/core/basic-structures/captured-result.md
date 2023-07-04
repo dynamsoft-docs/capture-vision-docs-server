@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CCapturedResult class represents the result of a capture operation on an image. Internally, CaptureResult stores an array that contains multiple items, each of which may be a barcode, text line, detected quad, normalized image, raw image, parsed item, etc.
 
-```cpp
-class dynamsoft::basic_structures::CCapturedResult 
-```
+## Definition
 
----
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CCapturedResult 
+```
 
 ## Methods Summary
 
@@ -24,6 +28,9 @@ class dynamsoft::basic_structures::CCapturedResult
 | [`GetSourceImageTag`](#getsourceimagetag) | Gets the tag of the source image.|
 | [`GetCount`](#getcount) | Gets the number of items in the captured result.|
 | [`GetItem`](#getitem) | Gets a specific item in the captured result.|
+| [`HasItem`](#hasitem) | Check if the item is present in the array.|
+| [`RemoveItem`](#removeitem) | Remove a specific item from the array in the captured result.|
+| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Get the rotation transformation matrix of the original image relative to the rotated image.|
 | [`GetErrorCode`](#geterrorcode) | Gets the error code of the capture operation.|
 | [`GetErrorString`](#geterrorstring) | Gets the error message of the capture operation.|
 
@@ -78,6 +85,50 @@ const CCapturedResultItem* GetItem(int index) const
 **Return value**
 
 Returns a pointer to the CCapturedResultItem object at the specified index.
+
+### HasItem
+
+Check if the item is present in the array.
+
+```cpp
+bool HasItem(const CCapturedResultItem* item) const
+```
+
+**Parameters**
+
+`[in] item` The specific item to check.
+
+**Return value**
+
+Returns a bool value indicating whether the item is present in the array or not.
+
+### RemoveItem
+
+Remove a specific item from the array in the captured result.
+
+```cpp
+int RemoveItem(const CCapturedResultItem* item)
+```
+
+**Parameters**
+
+`[in] item` The specific item to remove.
+
+**Return value**
+
+Return value indicating whether the deletion was successful or not.
+
+### GetRotationTransformMatrix
+
+Get the rotation transformation matrix of the original image relative to the rotated image.
+
+```cpp
+void GetRotationTransformMatrix(double matrix[9]) const;
+```
+
+**Parameters**
+
+`[out] matrix` A double array which represents the rotation transform matrix.
 
 ### GetErrorCode
 

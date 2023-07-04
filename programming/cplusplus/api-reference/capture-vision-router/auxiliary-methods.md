@@ -13,24 +13,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-
 
 | API Name                                                      | Description                                               |
 | ------------------------------------------------------------- | --------------------------------------------------------- |
-| [GetVersion](#getversion)                                     | Returns the version of the `CCaptureVisionRouter` object. |
-| [FreeString](#freestring)                                     | Frees the memory allocated for a string.                  |
-
-## GetVersion
-
-Returns the version of the `CCaptureVisionRouter` object.
-
-```cpp
-static const char* GetVersion();
-```
-
-**Parameters**
-
-None.
-
-**Return Value**
-
-Returns a const char pointer representing the version of the application.
+| [`FreeString`](#freestring)                                     | Frees the memory allocated for a string.                  |
 
 ## FreeString
 

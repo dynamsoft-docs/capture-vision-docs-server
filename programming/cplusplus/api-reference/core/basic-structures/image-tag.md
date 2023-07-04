@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CImageTag class represents an image tag that can be attached to an image in a system. It contains information about the image, such as the image ID and the image capture distance mode.
 
-```cpp
-class dynamsoft::basic_structures::CImageTag 
-```
+## Definition
 
----
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CImageTag 
+```
 
 ## Methods Summary
 

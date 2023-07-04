@@ -8,23 +8,27 @@ needAutoGenerateSidebar: true
 
 # CTextRemovedBinaryImageUnit
 
-The CTextRemovedBinaryImageUnit class represents an intermediate result unit that contains a binary image with the text removed.
+The CTextRemovedBinaryImageUnit class represents an intermediate result unit that contains a text-removed binary image.
+
+## Definition
+
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore
 
 ```cpp
-class dynamsoft::intermediate_results::CTextRemovedBinaryImageUnit : public CIntermediateResultUnit 
+class CTextRemovedBinaryImageUnit : public CIntermediateResultUnit 
 ```
-
----
 
 ## Methods Summary
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetImageData`](#getimagedata) | Gets the binary image data with the text removed. |
+| [`GetImageData`](#getimagedata) | Gets the text-removed binary image. |
 
 ### GetImageData
 
-Gets the binary image data with the text removed.
+Gets the text-removed binary image.
 
 ```cpp
 virtual const CImageData* GetImageData() const;
@@ -32,4 +36,4 @@ virtual const CImageData* GetImageData() const;
 
 **Return value**
 
-Returns a pointer to the CImageData object that contains the binary image data with the text removed. You don't need to release the memory pointed to by the returned pointer.
+Returns a pointer to the CImageData object that contains the text-removed binary image. You don't need to release the memory pointed to by the returned pointer.

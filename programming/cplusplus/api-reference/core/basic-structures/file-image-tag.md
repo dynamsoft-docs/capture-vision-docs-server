@@ -8,20 +8,25 @@ needAutoGenerateSidebar: true
 
 # CFileImageTag
 
-The CFileImageTag class represents an image tag that is associated with a file. It inherits from the CImageTag class and adds two attributes, a file path and a page number.
+The CFileImageTag class represents an image tag that is associated with a file. It inherits from the CImageTag class and adds additional attributes.
+
+## Definition
+
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore
 
 ```cpp
-class dynamsoft::basic_structures::CFileImageTag : public CImageTag
+class CFileImageTag : public CImageTag
 ```
-
----
 
 ## Methods Summary
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetFilePath`](#getfilepath) | Gets the file path of the image tag.|
-| [`GetPageNumber`](#getpagenumber) | Gets the page number of the image tag.|
+| [`GetFilePath`](#getfilepath) | Gets the file path of the image.|
+| [`GetPageNumber`](#getpagenumber) | Gets the page number of the current image in the PDF file. |
+| [`GetTotalPages`](#gettotalpages) | Gets the total page number of the PDF file. |
 | [`CFileImageTag`](#cfileimagetag-constructor) | The constructor of CContour. |
 | [`~CFileImageTag`](#cfileimagetag-destructor) | The destructor of CContour. |
 
@@ -39,7 +44,7 @@ Returns the file path of the image tag.
 
 ### GetPageNumber
 
-Gets the page number of the image tag.
+Get the page number of the current image in the PDF file.
 
 ```cpp
 int GetPageNumber() const
@@ -47,7 +52,19 @@ int GetPageNumber() const
 
 **Return value**
 
-Returns the page number of the image tag.
+Returns the page number of the current image in the PDF file.
+
+### GetTotalPages
+
+Gets the total page number of the PDF file.
+
+```cpp
+int GetTotalPages() const;
+```
+
+**Return value**
+
+Returns the total page number of the PDF file.
 
 ### CFileImageTag Constructor
 

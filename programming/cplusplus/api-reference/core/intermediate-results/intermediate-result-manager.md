@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CIntermediateResultManager class manages intermediate results generated during data capturing. It provides methods to add and remove intermediate result receivers, as well as to get raw image data using an image hash id.
 
-```cpp
-class dynamsoft::intermediate_results::CIntermediateResultManager 
-```
+## Definition
 
----
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CIntermediateResultManager 
+```
 
 ## Methods Summary
 
@@ -29,7 +33,7 @@ class dynamsoft::intermediate_results::CIntermediateResultManager
 Adds an intermediate result receiver to the manager.
 
 ```cpp
-virtual void AddResultReceiver(CIntermediateResultReceiver* receiver)
+virtual int AddResultReceiver(CIntermediateResultReceiver* receiver)
 ```
 
 **Parameters**
@@ -41,7 +45,7 @@ virtual void AddResultReceiver(CIntermediateResultReceiver* receiver)
 Removes an intermediate result receiver from the manager.
 
 ```cpp
-virtual void RemoveResultReceiver(CIntermediateResultReceiver* receiver)
+virtual int RemoveResultReceiver(CIntermediateResultReceiver* receiver)
 ```
 
 **Parameters**

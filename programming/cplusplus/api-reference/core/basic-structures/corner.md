@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 CCorner is a structure in an image consisting of two line segments and intersection point. A Corner represents a point at which the image's brightness or color sharply changes.
 
-```cpp
-class dynamsoft::basic_structures::CCorner 
-```
+## Definition
 
----
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CCorner 
+```
 
 ## Attributes
   
@@ -43,7 +47,7 @@ CPoint intersection
 
 ### line1
 
-The first line connected to the corner.
+One of the line connected to the corner.
 
 ```cpp
 CLineSegment line1
@@ -51,7 +55,7 @@ CLineSegment line1
 
 ### line2
 
-The second line connected to the corner.
+One of the line connected to the corner.
 
 ```cpp
 CLineSegment line2

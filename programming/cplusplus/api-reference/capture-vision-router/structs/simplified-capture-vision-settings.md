@@ -6,12 +6,16 @@ keywords: struct, c++, SimplifiedCaptureVisionSettings
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ SimplifiedCaptureVisionSettings Struct
-permalink: /programming/cplusplus/api-reference/capture-vision-router/struct/simplified-capture-vision-settings.html
+permalink: /programming/cplusplus/api-reference/capture-vision-router/structs/simplified-capture-vision-settings.html
 ---
 
 # SimplifiedCaptureVisionSettings
 
 The `SimplifiedCaptureVisionSettings` struct contains settings for capturing and recognizing images with the `CCaptureVisionRouter` class.
+
+## Definition
+
+*Assembly:* DynamsoftCaptureVisionRouter
 
 ```cpp
 typedef struct tagSimplifiedCaptureVisionSettings
@@ -31,14 +35,14 @@ typedef struct tagSimplifiedCaptureVisionSettings
 
 | Attribute                                             | Type                                |
 | ----------------------------------------------------- | ----------------------------------- |
-| [`capturedResultItemTypes`](#capturedResultItemTypes) | *int*                               |
+| [`capturedResultItemTypes`](#capturedresultitemtypes) | *int*                               |
 | [`roi`](#roi)                                         | *CQuadrilateral*                    |
-| [`roiMeasuredInPercentage`](#roiMeasuredInPercentage) | *int*                               |
-| [`maxParallelTasks`](#maxParallelTasks)               | *int*                               |
+| [`roiMeasuredInPercentage`](#roimeasuredinpercentage) | *int*                               |
+| [`maxParallelTasks`](#maxparalleltasks)               | *int*                               |
 | [`timeout`](#timeout)                                 | *int*                               |
-| [`barcodeSettings`](#barcodeSettings)                 | *SimplifiedBarcodeReaderSettings*   |
-| [`labelSettings`](#labelSettings)                     | *SimplifiedLabelRecognizerSettings* |
-| `reserved`                                            | *char[2048]*                        |
+| [`barcodeSettings`](#barcodesettings)                 | *SimplifiedBarcodeReaderSettings*   |
+| [`labelSettings`](#labelsettings)                     | *SimplifiedLabelRecognizerSettings* |
+| [`reserved`](#reserved)                                           | *char[2048]*                        |
 
 ### capturedResultItemTypes
 

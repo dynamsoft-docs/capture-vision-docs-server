@@ -1,34 +1,34 @@
 ---
 layout: default-layout
-title: class CCaptureResultReceiver - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCaptureResultReceiver in Dynamsoft Capture Vision Router Module.
+title: class CCapturedResultReceiver - Dynamsoft Capture Vision C++ Edition API Reference
+description: This page shows the C++ edition of the class CCapturedResultReceiver in Core Module.
 keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-breadcrumbText: CVR C++ CCaptureResultReceiver Class
-permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-classes/capture-result-receiver.html
+breadcrumbText: C++ CCapturedResultReceiver Class
+permalink: /programming/cplusplus/api-reference/core/basic-structures/captured-result-receiver.html
 ---
 
-# CCaptureResultReceiver
+# CCapturedResultReceiver
 
-The `CCaptureResultReceiver` class is responsible for receiving captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
+The `CCapturedResultReceiver` class is responsible for receiving captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
+
+## Definition
+
+*Namespace:* dynamsoft::basic_structures
+
+*Assembly:* DynamsoftCore
 
 ```cpp
-class dynamsoft::cvr::CCaptureResultReceiver 
+class CCapturedResultReceiver 
 ```
-
-## Attributes Summary
-
-| Attribute                 | Type           |
-| ------------------------- | -------------- |
-| `observedResultItemTypes` | *unsigned int* |
 
 ## Methods Summary
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
-| [`CCaptureResultReceiver`](#ccaptureresultreceiver)               | Constructor                                          |
-| [`~CCaptureResultReceiver`](#ccaptureresultreceiver)              | Destructor                                           |
+| [`CCapturedResultReceiver`](#ccapturedresultreceiver-constructor)               | Constructor                                          |
+| [`~CCapturedResultReceiver`](#ccapturedresultreceiver-destructor)              | Destructor                                           |
 | [`GetObservedResultItemTypes`](#getobservedresultitemtypes)       | Gets the types of observed result items.             |
 | [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
 | [`OnRawImageResultReceived`](#onrawimageresultreceived)           | Callback function for raw image results.             |
@@ -37,21 +37,23 @@ class dynamsoft::cvr::CCaptureResultReceiver
 | [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function for detected quads results.        |
 | [`OnNormalizedImagesReceived`](#onnormalizedimagesreceived)       | Callback function for normalized images results.     |
 | [`OnParsedResultsReceived`](#onparsedresultsreceived)             | Callback function for parsed results.                |
+| [`GetName`](#getname)       | Gets the name of the captured result receiver.                                             |
+| [`SetName`](#setname)       | Sets the name of the captured result receiver.                                             |
 
-### CCaptureResultReceiver
+### CCapturedResultReceiver Constructor
 
 Constructor.
 
 ```cpp
-CCaptureResultReceiver()
+CCapturedResultReceiver()
 ```
 
-### ~CCaptureResultReceiver
+### CCapturedResultReceiver Destructor
 
 Destructor.
 
 ```cpp
-virtual ~CCaptureResultReceiver()
+virtual ~CCapturedResultReceiver()
 ```
 
 ### GetObservedResultItemTypes
@@ -149,3 +151,27 @@ virtual void OnParsedResultsReceived(const dcp::CParsedResult* pResult)
 **Parameters**
 
 `[in] pResult` The parsed result.
+
+### GetName
+
+Gets the name of the captured result receiver.  
+
+```cpp
+const char* GetName() const
+```
+
+**Return value**
+
+Returns the name of the captured result receiver.  
+
+### SetName
+
+Sets the name of the captured result receiver.  
+
+```cpp
+void SetName(const char* name)
+```
+
+**Parameters**
+
+`[in] name` The name of the captured result receiver.

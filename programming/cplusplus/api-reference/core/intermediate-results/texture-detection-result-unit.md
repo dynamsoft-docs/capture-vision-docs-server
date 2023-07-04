@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CTextureDetectionResultUnit class represents an intermediate result unit for texture detection. It is derived from the CIntermediateResultUnit class and contains the x-direction spacing and y-direction spacing of the texture stripes.
 
-```cpp
-class dynamsoft::intermediate_results::CTextureDetectionResultUnit : public CIntermediateResultUnit 
-```
+## Definition
 
----
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CTextureDetectionResultUnit : public CIntermediateResultUnit 
+```
 
 ## Methods Summary
 

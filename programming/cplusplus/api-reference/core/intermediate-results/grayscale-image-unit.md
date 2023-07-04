@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CGrayscaleImageUnit class represents a grayscale image unit. It is a subclass of CIntermediateResultUnit. It is derived from the CIntermediateResultUnit class.
 
-```cpp
-class dynamsoft::intermediate_results::CGrayscaleImageUnit : public CIntermediateResultUnit 
-```
+## Definition
 
----
+*Namespace:* dynamsoft::intermediate_results
+
+*Assembly:* DynamsoftCore
+
+```cpp
+class CGrayscaleImageUnit : public CIntermediateResultUnit 
+```
 
 ## Methods Summary
 

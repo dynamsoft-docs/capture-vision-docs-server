@@ -10,11 +10,15 @@ needAutoGenerateSidebar: true
 
 The CLicenseManager class provides a set of APIs to manage SDK licensing.
 
-```cpp
-class dynamsoft::license::CLicenseManager 
-```
+## Definition
 
----
+*Namespace:* dynamsoft::license
+
+*Assembly:* DynamsoftLicense
+
+```cpp
+class CLicenseManager 
+```
 
 ## Methods Summary
 
@@ -25,7 +29,6 @@ class dynamsoft::license::CLicenseManager
 | [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | It is used to set the maximum number of allowed instances for the given device and process. |
 | [`GetDeviceUUID`](#getdeviceuuid) | It is used to get the unique identifier of the device. |
 | [`SetLicenseCachePath`](#setlicensecachepath) | It is used to set the directory path for the license cache. |
-| [`GetVersion`](#getversion) | It is used to get the version of the licensing library. |
 
 ### InitLicense
 
@@ -75,17 +78,19 @@ Returns 0 if the friendly name is set successfully, a negative value indicating 
 
 ### SetMaxConcurrentInstanceCount
 
-It is used to set the maximum number of allowed instances for the given device and process.
+It is used to set the maximum number of allowed instances for the given device.
 
 ```cpp
-static void SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
+static int SetMaxConcurrentInstanceCount(int countForThisDevice)
 ```
 
 **Parameters**
 
 `[in] countForThisDevice` The maximum number of allowed instances for the device.
 
-`[in] countForThisProcess` The maximum number of allowed instances for the process. It is optional and set to 0 by default.
+**Return value**
+
+Returns error code (returns 0 if the function operates successfully). 
 
 ### GetDeviceUUID
 
@@ -123,14 +128,3 @@ static int SetLicenseCachePath(const char* directoryPath)
 
 Returns 0 if the directory path is set successfully, a negative value indicating an error otherwise.
 
-### GetVersion
-
-It is used to get the version of the licensing library.
-
-```cpp
-static const char* GetVersion()
-```
-
-**Return value**
-
-Returns the version of the licensing library as a string.

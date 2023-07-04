@@ -77,7 +77,7 @@ char* OutputSettings(const char* templateName, int* pErrorCode = NULL)
 
 **Return value**
 
-Returns a string containing the exported template. The string is allocated by the SDK and must be freed by calling `FreeString`.
+Returns a string containing the exported template. The string is allocated by the SDK and must be freed by calling [`FreeString`](auxiliary-methods.md#freestring).
 
 ## OutputSettingsToFile
 
@@ -142,5 +142,9 @@ Returns an error code. Zero indicates success.
 Resets all templates to factory settings.
 
 ```cpp
-void ResetSettings()
+int ResetSettings()
 ```
+
+**Return value**
+
+Returns an error code. Zero indicates success.
