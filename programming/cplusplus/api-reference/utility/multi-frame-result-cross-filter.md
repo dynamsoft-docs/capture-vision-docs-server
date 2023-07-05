@@ -11,7 +11,7 @@ permalink: /programming/cplusplus/api-reference/utility/multi-frame-result-cross
 
 # CMultiFrameResultCrossFilter
 
-The `CMultiFrameResultCrossFilter` class is responsible for filtering captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
+The `CMultiFrameResultCrossFilter` class is responsible for filtering captured results.
 
 ## Definition
 
