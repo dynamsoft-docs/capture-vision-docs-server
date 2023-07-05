@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CImageManager
 
-The CImageManager class is a utility class for managing and manipulating images. It provides functionality for saving images to files and drawing various shapes on images.
+The `CImageManager` class is a utility class for managing and manipulating images. It provides functionality for saving images to files and drawing various shapes on images.
 
 ## Definition
 
@@ -39,7 +39,7 @@ int SaveToFile(const CImageData *pImageData, const char *path, bool overwrite = 
 
 `[in] pImageData` A pointer to the image data to be saved.
 
-`[in] path` The path to the file to save the image.
+`[in] path` The targeting file path with the file name and extension name.
 
 `[in] overwrite` A flag indicating whether to overwrite the file if it already exists. Defaults to true.
 
