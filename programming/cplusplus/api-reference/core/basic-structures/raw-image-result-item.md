@@ -20,7 +20,7 @@ The `CRawImageResultItem` class represents a captured raw image result item. It 
 *Assembly:* DynamsoftCore
 
 ```cpp
-class CRawImageResultItem ： public CCapturedResultItem
+class CRawImageResultItem: public CCapturedResultItem
 ```
 
 ## Methods Summary
