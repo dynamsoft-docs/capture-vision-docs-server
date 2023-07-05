@@ -13,6 +13,8 @@ permalink: /programming/cplusplus/api-reference/core/basic-structures/captured-r
 
 The `CCapturedResultFilter` class is responsible for filtering captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
 
+>Note: Currently, user defined CCapturedResultFilter is not supported.
+
 ## Definition
 
 *Namespace:* dynamsoft::basic_structures
