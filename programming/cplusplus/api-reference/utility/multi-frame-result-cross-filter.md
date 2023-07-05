@@ -44,7 +44,7 @@ void EnableResultVerification(int resultItemTypes, bool enable);
 
 **Parameters**
 
-`[in] resultItemTypes` The or value of the captured result item types.
+`[in] resultItemTypes` The or value of the captured result item types.  
 `[in] enable` Set whether to enable result verification.
 
 ### IsResultVerificationEnabled
@@ -77,7 +77,7 @@ void EnableDuplicateFilter(int resultItemTypes, bool enable);
 
 **Parameters**
 
-`[in] resultItemTypes` The or value of the captured result item types.
+`[in] resultItemTypes` The or value of the captured result item types.  
 `[in] enable` Set whether to enable result duplicate filter.
 
 ### IsDuplicateFilterEnabled
@@ -110,7 +110,7 @@ void SetDuplicateForgetTime(int resultItemTypes, int time);
 
 **Parameters**
 
-`[in] resultItemTypes` The or value of the captured result item types.
+`[in] resultItemTypes` The or value of the captured result item types.  
 `[in] time` The duplicate forget time measured in milliseconds.
 
 ### GetDuplicateForgetTime

@@ -393,7 +393,7 @@ router->StartCapturing("myTemplate", true, szErrorMsg, 256);
 delete router;
 ```
 
-## StopCapturing()
+## StopCapturing
 
 Stops the multiple-file processing.
 
@@ -403,7 +403,7 @@ void StopCapturing(bool waitForRemainingTasks = true, bool waitForThreadExit = f
 
 **Parameters**
 
-`[in] waitForRemainingTasks` Indicates whether to wait for the remaining tasks to complete before returning. The default value is true.
+`[in] waitForRemainingTasks` Indicates whether to wait for the remaining tasks to complete before returning. The default value is true.  
 `[in] waitForThreadExit` Indicates whether to wait for the capture process to complete before returning. The default value is false.
 
 **Return Value**
