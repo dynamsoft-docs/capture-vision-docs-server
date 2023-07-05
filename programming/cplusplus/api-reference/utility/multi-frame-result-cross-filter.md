@@ -11,7 +11,7 @@ permalink: /programming/cplusplus/api-reference/utility/multi-frame-result-cross
 
 # CMultiFrameResultCrossFilter
 
-The `CMultiFrameResultCrossFilter` class is responsible for filtering captured results. As a default implementation of `CCapturedResultFilter`, it provides result verification and duplicate results filtering features.
+The `CMultiFrameResultCrossFilter` class is responsible for filtering captured results. As a default implementation of `CCapturedResultFilter`, it provides results verification and duplicate results filtering features.
 
 ## Definition
 
