@@ -27,8 +27,8 @@ class CFileImageTag : public CImageTag
 | [`GetFilePath`](#getfilepath) | Gets the file path of the image.|
 | [`GetPageNumber`](#getpagenumber) | Gets the page number of the current image in the PDF file. |
 | [`GetTotalPages`](#gettotalpages) | Gets the total page number of the PDF file. |
-| [`CFileImageTag`](#cfileimagetag-constructor) | The constructor of CContour. |
-| [`~CFileImageTag`](#cfileimagetag-destructor) | The destructor of CContour. |
+| [`CFileImageTag`](#cfileimagetag-constructor) | The constructor of the CFileImageTag class. |
+| [`~CFileImageTag`](#cfileimagetag-destructor) | The destructor of the CFileImageTag class. |
 
 ### GetFilePath
 
