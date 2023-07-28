@@ -41,15 +41,15 @@ class CCaptureVisionRouter
 | API Name                                                                                       | Description                                                                  |
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | [`SetInput`](multiple-file-processing.md#setinput)                                             | Sets an image source to provide images for consecutive process.              |
-| [`GetInput`](multiple-file-processing.md#getinput)                                             | Sets an image source to provide images for consecutive process.              |
+| [`GetInput`](multiple-file-processing.md#getinput)                                             | Gets the attached image source adapter object of the capture vision router.  |
 | [`AddCaptureStateListener`](multiple-file-processing.md#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
 | [`RemoveCaptureStateListener`](multiple-file-processing.md#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
 | [`AddImageSourceStateListener`](multiple-file-processing.md#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
 | [`RemoveImageSourceStateListener`](multiple-file-processing.md#removeimagesourcestatelistener) | Removes an object which listens to state changes of the image source.        |
 | [`AddResultReceiver`](multiple-file-processing.md#addresultreceiver)                           | Adds an object as the receiver of captured results.                          |
 | [`RemoveResultReceiver`](multiple-file-processing.md#removeresultreceiver)                     | Removes an object which was added as a receiver of captured results.         |
-| [`AddResultFilter`](multiple-file-processing.md#addresultfilter)                           | Adds an object as the filter of captured results.                          |
-| [`RemoveResultFilter`](multiple-file-processing.md#removeresultfilter)                     | Removes an object which was added as a filter of captured results.         |
+| [`AddResultFilter`](multiple-file-processing.md#addresultfilter)                               | Adds an object as the filter of captured results.                            |
+| [`RemoveResultFilter`](multiple-file-processing.md#removeresultfilter)                         | Removes an object which was added as a filter of captured results.           |
 | [`StartCapturing`](multiple-file-processing.md#startcapturing)                                 | Starts to process images consecutively.                                      |
 | [`StopCapturing`](multiple-file-processing.md#stopcapturing)                                   | Stops the consecutive process.                                               |
 
