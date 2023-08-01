@@ -41,7 +41,7 @@ class CCaptureVisionRouter
 | API Name                                                                                       | Description                                                                  |
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | [`SetInput`](multiple-file-processing.md#setinput)                                             | Sets an image source to provide images for consecutive process.              |
-| [`GetInput`](multiple-file-processing.md#getinput)                                             | Sets an image source to provide images for consecutive process.              |
+| [`GetInput`](multiple-file-processing.md#getinput)                                             | Gets the attached image source adapter object of the capture vision router.              |
 | [`AddCaptureStateListener`](multiple-file-processing.md#addcapturestatelistener)               | Adds an object that listens to the state changes of the capture process.     |
 | [`RemoveCaptureStateListener`](multiple-file-processing.md#removecapturestatelistener)         | Removes an object which listens to the state changes of the capture process. |
 | [`AddImageSourceStateListener`](multiple-file-processing.md#addimagesourcestatelistener)       | Adds an object that listens to state changes of the image source.            |
