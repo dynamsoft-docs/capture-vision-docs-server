@@ -50,7 +50,7 @@ In this guide, you will learn step by step on how to build a barcode reader, lab
 
 ## Installation
 
-If you haven't downloaded the SDK yet, <a href="https://www.dynamsoft.com/capture-vision/downloads/?utm_source=docs" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
+If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-2.0.0.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
 
 > For this tutorial, we unpack it to a pseudo directory `[INSTALLATION FOLDER]`, change it to your unpacking path for the following content.
 
