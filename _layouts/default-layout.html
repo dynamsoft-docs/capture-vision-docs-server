@@ -89,27 +89,47 @@
 
     <!-- download -->
     <script type="text/javascript">
-        function getCookie(name) {
-            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
-            return (arr = document.cookie.match(reg)) ? unescape(arr[2]) : null;
-        }
-
         $(document).ready(function(){
-            var download = getUrlParam('download');
-            if (download == 'true' && (getCookie('DynamsoftEmail') || getCookie('SourceServer') == '1')) {
-                var curHref = window.location.href.toLowerCase()
-                $('.editionName').html('React-Native');
-                $('.downloadlink').attr('href', 'https://download.dynamsoft.com/dcv/dcv-rn-1.0.0.zip?ver=latest');
-                $('.dcvThanksDownloading').show();
-                $('.downloadlink')[0].click();
-            }
-
-            $('#txtSearch').keydown(function(e) { 
+            $('#txtSearch').keydown(function(e) {
                 if (e.keyCode == 13) {
-                    window.location.href = '/capture-vision/docs/search.html?q=' + $('#txtSearch').val();
+                    let lang = getCurrentUrlLang(document.URL, true)
+                    var searchUrl = getSearchUrl()
+                    if (!lang || lang == '') {
+                        window.location.href = searchUrl + '?q=' + $('#txtSearch').val();
+                    } else if (lang == 'android' || lang == 'objectivec-swift') {
+                        window.location.href = searchUrl + '?refinement=mobile_native_app&q=' + $('#txtSearch').val();
+                    } else if (lang == 'javascript') {
+                        window.location.href = searchUrl + '?refinement=javascript_web&q=' + $('#txtSearch').val();
+                    } else if (lang == 'cplusplus' || lang == 'c') {
+                        window.location.href = searchUrl + '?refinement=c/c++&q=' + $('#txtSearch').val();
+                    } else if (lang == 'java') {
+                        window.location.href = searchUrl + '?refinement=java&q=' + $('#txtSearch').val();
+                    } else if (lang == 'dotnet') {
+                        window.location.href = searchUrl + '?refinement=.net&q=' + $('#txtSearch').val();
+                    } else {
+                        window.location.href = searchUrl + '?q=' + $('#txtSearch').val();
+                    }
                 }
             })
         })
+
+        function getSearchUrl() {
+            var searchUrl = "";
+            var product = getUrlVars(document.URL)["product"]
+            var repoType = getUrlVars(document.URL)["repoType"]
+            if (product) {
+                product = getDoumentName(product)
+                searchUrl += ("/" + product + "/docs")
+                repoType = repoType && repoType == "js" ? "web" : repoType;
+                if(repoType) {
+                    searchUrl += ("/" + repoType)
+                }
+                searchUrl += '/search.html'
+            } else {
+                searchUrl = '/capture-vision/docs/server/search.html'
+            }
+            return searchUrl
+        }
     </script>
 
     
