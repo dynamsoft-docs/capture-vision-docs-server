@@ -4,6 +4,7 @@ title: class CCapturedResult - Dynamsoft Core Module C++ Edition API Reference
 description: This page shows the C++ edition of the class CCapturedResult in Dynamsoft Core Module.
 keywords: captured result, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/core/basic-structures/captured-result-v2.0.0.html
 ---
 
 # CCapturedResult
@@ -24,9 +25,9 @@ class CCapturedResult
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetOriginalImageHashId`](#getoriginalimagehashid) | Gets the hash ID of the original image.|
-| [`GetOriginalImageTag`](#getoriginalimagetag) | Gets the tag of the original image.|
-| [`GetItemsCount`](#getitemscount) | Gets the number of items in the captured result.|
+| [`GetSourceImageHashId`](#getsourceimagehashid) | Gets the hash ID of the source image.|
+| [`GetSourceImageTag`](#getsourceimagetag) | Gets the tag of the source image.|
+| [`GetCount`](#getcount) | Gets the number of items in the captured result.|
 | [`GetItem`](#getitem) | Gets a specific item in the captured result.|
 | [`HasItem`](#hasitem) | Check if the item is present in the array.|
 | [`RemoveItem`](#removeitem) | Remove a specific item from the array in the captured result.|
@@ -34,36 +35,36 @@ class CCapturedResult
 | [`GetErrorCode`](#geterrorcode) | Gets the error code of the capture operation.|
 | [`GetErrorString`](#geterrorstring) | Gets the error message of the capture operation.|
 
-### GetOriginalImageHashId
+### GetSourceImageHashId
 
-Gets the hash ID of the original image.
+Gets the hash ID of the source image.
 
 ```cpp
-const char* GetOriginalImageHashId() const
+const char* GetSourceImageHashId() const
 ```
 
 **Return value**
 
-Returns the hash ID of the original image as a null-terminated string. You are not required to release the memory pointed to by the returned pointer.
+Returns the hash ID of the source image as a null-terminated string. You are not required to release the memory pointed to by the returned pointer.
 
-### GetOriginalImageTag
+### GetSourceImageTag
 
-Gets the tag of the original image.
+Gets the tag of the source image.
 
 ```cpp
-const CImageTag* GetOriginalImageTag() const
+const CImageTag* GetSourceImageTag() const
 ```
 
 **Return value**
 
-Returns a pointer to the CImageTag object containing the tag of the original image. You are not required to release the memory pointed to by the returned pointer.
+Returns a pointer to the CImageTag object containing the tag of the source image. You are not required to release the memory pointed to by the returned pointer.
 
-### GetItemsCount
+### GetCount
 
 Gets the number of items in the captured result.
 
 ```cpp
-int GetItemsCount() const
+int GetCount() const
 ```
 
 **Return value**

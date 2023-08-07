@@ -20,35 +20,59 @@ The CLineSegment class represents a line segment in 2D space. It contains two CP
 class CLineSegment 
 ```
 
-## Attributes Summary
+## Methods Summary
 
-| Attribute | Type |
-|---------- | ---- |
-| [`startPoint`](#startPoint) | *CPoint* |
-| [`endPoint`](#endPoint) | *CPoint* |
+| Method                          | Description                                      |
+| ------------------------------- | ------------------------------------------------ |
+| [`GetStartPoint`](#getstartpoint) | Gets the start point of the line segment. |
+| [`GetEndPoint`](#getendpoint) | Gets the end point of the line segment. |
+| [`SetStartPoint`](#setstartpoint) | Sets the start point of the line segment. |
+| [`SetEndPoint`](#setendpoint) | Sets the end point of the line segment. |
 
-### startPoint
+### GetStartPoint
 
-The start point of the line segment.
-
-```cpp
-CPoint startPoint
-```
-
-### endPoint
-
-The end point of the line segment.
+Gets the start point of the line segment.
 
 ```cpp
-CPoint endPoint
+const CPoint&  GetStartPoint() const
 ```
 
-Here's an example of how to use the CLineSegment class:
+**Return Value**
+
+Returns the start point of the line segment.
+
+### GetEndPoint
+
+Gets the end point of the line segment.
 
 ```cpp
-CLineSegment line;
-line.startPoint.coordinate[0] = 0;
-line.startPoint.coordinate[1] = 0;
-line.endPoint.coordinate[0] = 100;
-line.endPoint.coordinate[1] = 100;
+const CPoint&  GetEndPoint() const
 ```
+
+**Return Value**
+
+Returns the end point of the line segment.
+
+### SetStartPoint
+
+Sets the start point of the line segment.
+
+```cpp
+void SetStartPoint(const CPoint& pt)
+```
+
+**Parameters**
+
+`[in] pt`: The start point of the line segment.
+
+### SetEndPoint
+
+Sets the end point of the line segment.
+
+```cpp
+void SetEndPoint(const CPoint& pt)
+```
+
+**Parameters**
+
+`[in] pt`: The end point of the line segment.

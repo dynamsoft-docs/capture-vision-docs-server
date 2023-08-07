@@ -4,6 +4,7 @@ title: class CIntermediateResultUnit - Dynamsoft Core Module C++ Edition API Ref
 description: This page shows the C++ edition of the class CIntermediateResultUnit in Dynamsoft Core Module.
 keywords: intermediate result, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/core/intermediate-results/intermediate-result-unit-v2.0.0.html
 ---
 
 # CIntermediateResultUnit
@@ -26,17 +27,19 @@ class CIntermediateResultUnit
 | Method               | Description |
 |----------------------|-------------|
 | [`GetHashId`](#gethashid) | Gets the hash ID of the unit.|
-| [`GetOriginalImageHashId`](#getoriginalimagehashid) | Gets the hash ID of the original image. |
-| [`GetOriginalImageTag`](#getoriginalimagetag) | Gets the image tag of the original image. |
+| [`GetSourceImageHashId`](#getsourceimagehashid) | Gets the hash ID of the source image. |
+| [`GetSourceImageTag`](#getsourceimagetag) | Gets the image tag of the source image. |
+| [`GetLocalToSourceImageTransformMatrix`](#getlocaltosourceimagetransformmatrix) | Gets the transformation matrix from local to source image coordinates. |
+| [`SetLocalToSourceImageTransformMatrix`](#setlocaltosourceimagetransformmatrix) | Sets the transformation matrix from local to source image coordinates. |
 | [`GetType`](#gettype) | Gets the type of the intermediate result unit. |
 | [`Clone`](#clone) | Creates a copy of the intermediate result unit. |
 | [`SetHashId`](#sethashid) | Sets the hash ID of the unit. |
-| [`SetOriginalImageHashId`](#setoriginalimagehashid) | Sets the hash ID of the original image. |
-| [`SetOriginalImageTag`](#setoriginalimagetag) | Sets the image tag of the original image. |
+| [`SetSourceImageHashId`](#setsourceimagehashid) | Sets the hash ID of the source image. |
+| [`SetSourceImageTag`](#setsourceimagetag) | Sets the image tag of the source image. |
 | [`Retain`](#retain) | Increases the reference count of the unit. |
 | [`Release`](#release) | Decreases the reference count of the unit. |
-| [`GetTransformMatrix`](#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}/core/transform-matrix-type.html). |
-| [`SetTransformMatrix`](#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.enums}}/core/transform-matrix-type.html). |
+| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Gets the rotation transformation matrix of the original image relative to the rotated image.|
+| [`SetRotationTransformMatrix`](#setrotationtransformmatrix) | Sets the rotation transformation matrix of the original image relative to the rotated image.|
 
 ### GetHashId
 
@@ -50,29 +53,53 @@ const char* GetHashId() const
 
 Returns the hash ID of the unit. 
 
-### GetOriginalImageHashId
+### GetSourceImageHashId
 
-Gets the hash ID of the original image.
+Gets the hash ID of the source image.
 
 ```cpp
-const char* GetOriginalImageHashId() const
+const char* GetSourceImageHashId() const
 ```
 
 **Return value**
 
-Returns the hash ID of the original image.
+Returns the hash ID of the source image.
 
-### GetOriginalImageTag
+### GetSourceImageTag
 
-Gets the image tag of the original image.
+Gets the image tag of the source image.
 
 ```cpp
-const CImageTag* GetOriginalImageTag() const
+const CImageTag* GetSourceImageTag() const
 ```
 
 **Return value**
 
-Returns the image tag of the original image.
+Returns the image tag of the source image.
+
+### GetLocalToSourceImageTransformMatrix
+
+Gets the transformation matrix from local to source image coordinates.
+
+```cpp
+virtual void GetLocalToSourceImageTransformMatrix(double matrix[9]) const
+```
+
+**Parameters**
+
+`[out] matrix` The transformation matrix.
+
+### SetLocalToSourceImageTransformMatrix
+
+Sets the transformation matrix from local to source image coordinates.
+
+```cpp
+virtual void SetLocalToSourceImageTransformMatrix(double matrix[9])
+```
+
+**Parameters**
+
+`[in] matrix` The transformation matrix.
 
 ### GetType
 
@@ -110,24 +137,24 @@ void SetHashId(const char* _hashId)
 
 `[in] _hashId` The hash ID to set.
 
-### SetOriginalImageHashId
+### SetSourceImageHashId
 
-Sets the hash ID of the original image.
+Sets the hash ID of the source image.
 
 ```cpp
-void SetOriginalImageHashId(const char* _originalImageHashId)
+void SetSourceImageHashId(const char* _sourceImageHashId)
 ```
 
 **Parameters**
 
-`[in] _originalImageHashId` The hash ID to set.
+`[in] _sourceImageHashId` The hash ID to set.
 
-### SetOriginalImageTag
+### SetSourceImageTag
 
-Sets the image tag of the original image.
+Sets the image tag of the source image.
 
 ```cpp
-void SetOriginalImageTag(const CImageTag* _tag)
+void SetSourceImageTag(const CImageTag* _tag)
 ```
 
 **Parameters**
@@ -150,44 +177,26 @@ Decreases the reference count of the intermediate result unit.
 virtual void Release() = 0
 ```
 
-### GetTransformMatrix
+### GetRotationTransformMatrix
 
-Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}/core/transform-matrix-type.html).
+Gets the rotation transformation matrix of the original image relative to the rotated image.
 
 ```cpp
-void GetTransformMatrix(TransformMatrixType matrixType, double matrix[9]) const;
+void GetRotationTransformMatrix(double matrix[9]) const;
 ```
 
 **Parameters**
-
-`[in] matrixType`: The transform matrix type.
 
 `[out] matrix` A double array which represents the rotation transform matrix.
 
-The corresponding transformation matrices are as follows:
+### SetRotationTransformMatrix
 
-- local image to original image
-- original image to local image
-- rotated image to original image
-- original image to rotated image
-
-### SetTransformMatrix
-
-Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}/core/transform-matrix-type.html).
+Sets the rotation transformation matrix of the original image relative to the rotated image.
 
 ```cpp
-void SetTransformMatrix(TransformMatrixType matrixType, double matrix[9]);
+void SetRotationTransformMatrix(double matrix[9]);
 ```
 
 **Parameters**
 
-`[in] matrixType`: The transform matrix type.
-
 `[in] matrix` A double array which represents the rotation transform matrix.
-
-The corresponding transformation matrices are as follows:
-
-- local image to original image
-- original image to local image
-- rotated image to original image
-- original image to rotated image
