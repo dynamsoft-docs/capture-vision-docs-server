@@ -24,7 +24,7 @@ class CVector4;
 
 | Method               | Description |
 |----------------------|-------------|
-| [`Set`](#set) | Sets the coordinates of a point. |
+| [`Set`](#set) | Sets the components value of a four-dimensional vector. |
 | [`operator[]`](#operator) | Gets the component value at the specified index in the CVector4. |
 
 ### Set
