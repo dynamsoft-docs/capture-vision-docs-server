@@ -173,7 +173,7 @@ The corresponding transformation matrices are as follows:
 
 ### SetTransformMatrix
 
-Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}/core/transform-matrix-type.html).
+Sets the transformation matrix via [`TransformMatrixType`]({{site.enums}}/core/transform-matrix-type.html).
 
 ```cpp
 void SetTransformMatrix(TransformMatrixType matrixType, double matrix[9]);
