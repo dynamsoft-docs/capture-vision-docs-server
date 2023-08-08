@@ -6,7 +6,7 @@ keywords: multiple frame result cross filter, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: C++ CMultiFrameResultCrossFilter Class
-permalink: /programming/cplusplus/api-reference/utility/multi-frame-result-cross-filter.html
+permalink: /programming/cplusplus/api-reference/utility/multi-frame-result-cross-filter-v2.0.0.html
 ---
 
 # CMultiFrameResultCrossFilter
@@ -27,19 +27,19 @@ class CMultiFrameResultCrossFilter: public CCapturedResultFilter
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
-| [`EnableResultCrossVerification`](#enableresultcrossverification)               | Enable result cross verification feature to improve the accuracy of video streaming recognition results.                                          |
-| [`IsResultCrossVerificationEnabled`](#isresultcrossverificationenabled)              | Determines whether the result cross verification feature is enabled for the specific captured result item type.                                           |
-| [`EnableResultDeduplication`](#enableresultdeduplication)       | Enable result deduplication feature to filter out the duplicate results in the period of `duplicateForgetTime` for video streaming recognition.              |
-| [`IsResultDeduplicationEnabled`](#isresultdeduplicationenabled)           | Determines whether the result deduplication feature is enabled for the specific result item type.          |
+| [`EnableResultVerification`](#enableresultverification)               | Enable result verification feature to improve the accuracy of video streaming recognition results.                                          |
+| [`IsResultVerificationEnabled`](#isresultverificationenabled)              | Determines whether the result verification feature is enabled for the specific captured result item type.                                           |
+| [`EnableDuplicateFilter`](#enableduplicatefilter)       | Enable duplicate filter feature to filter out the duplicate results in the period of `duplicateForgetTime` for video streaming recognition.              |
+| [`IsDuplicateFilterEnabled`](#isduplicatefilterenabled)           | Determines whether the duplicate filter feature is enabled for the specific result item type.          |
 | [`SetDuplicateForgetTime`](#setduplicateforgettime)           | Sets the duplicate forget time for the specific captured result item types.             |
 | [`GetDuplicateForgetTime`](#getduplicateforgettime)         | Gets the duplicate forget time for a specific captured result item type.     |
 
-### EnableResultCrossVerification
+### EnableResultVerification
 
-Enable result cross verification feature to improve the accuracy of video streaming recognition results.
+Enable result verification feature to improve the accuracy of video streaming recognition results.
 
 ```cpp
-void EnableResultCrossVerification(int resultItemTypes, bool enable);
+void EnableResultVerification(int resultItemTypes, bool enable);
 ```
 
 **Parameters**
@@ -47,12 +47,12 @@ void EnableResultCrossVerification(int resultItemTypes, bool enable);
 `[in] resultItemTypes` The or value of the captured result item types.  
 `[in] enable` Set whether to enable result verification.
 
-### IsResultCrossVerificationEnabled
+### IsResultVerificationEnabled
 
-Determines whether the result cross verification feature is enabled for the specific captured result item type.
+Determines whether the result verification feature is enabled for the specific captured result item type.
 
 ```cpp
-bool IsResultCrossVerificationEnabled(CapturedResultItemType type);
+bool IsResultVerificationEnabled(CapturedResultItemType type);
 ```
 
 **Parameters**
@@ -63,29 +63,29 @@ bool IsResultCrossVerificationEnabled(CapturedResultItemType type);
 
 Returns a bool value indicating whether result verification is enabled for the specific captured result item type.
 
-### EnableResultDeduplication
+### EnableDuplicateFilter
 
-Enable result deduplication feature to filter out the duplicate results in the period of `duplicateForgetTime` for video streaming recognition.  The default value of `duplicateForgetTime` is 3000ms.
+Enable duplicate filter feature to filter out the duplicate results in the period of `duplicateForgetTime` for video streaming recognition.  The default value of `duplicateForgetTime` is 3000ms.
 
 - CRIT_BARCODE: When the text and format are identical, it is considered as the same barcode.
 - CRIT_TEXT_LINE: When the text is exactly the same, it is considered as the same text line.
 - CRIT_DETECTED_QUAD: When the quadrilateral is approximately the same, it is considered as the same quadrilateral.
 
 ```cpp
-void EnableResultDeduplication(int resultItemTypes, bool enable);
+void EnableDuplicateFilter(int resultItemTypes, bool enable);
 ```
 
 **Parameters**
 
 `[in] resultItemTypes` The or value of the captured result item types.  
-`[in] enable` Set whether to enable result result deduplication.
+`[in] enable` Set whether to enable result duplicate filter.
 
-### IsResultDeduplicationEnabled
+### IsDuplicateFilterEnabled
 
-Determines whether the result deduplication feature is enabled for the specific result item type.
+Determines whether the duplicate filter feature is enabled for the specific result item type.
 
 ```cpp
-bool IsResultDeduplicationEnabled(CapturedResultItemType type);
+bool IsDuplicateFilterEnabled(CapturedResultItemType type);
 ```
 
 **Parameters**
@@ -94,7 +94,7 @@ bool IsResultDeduplicationEnabled(CapturedResultItemType type);
 
 **Return value**
 
-Returns a bool value indicating whether result deduplication is enabled for the specific result item type.
+Returns a bool value indicating whether duplicate filter is enabled for the specific result item type.
 
 ### SetDuplicateForgetTime
 
