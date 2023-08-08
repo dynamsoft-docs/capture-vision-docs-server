@@ -4,6 +4,7 @@ title: class CPDFReadingParameter - Dynamsoft Core Module C++ Edition API Refere
 description: This page shows the C++ edition of the class CPDFReadingParameter in Dynamsoft Core Module.
 keywords: pdf reading parameter, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/core/basic-structures/pdf-reading-parameter-v2.0.0.html
 ---
 
 # CPDFReadingParameter
@@ -26,7 +27,7 @@ class CPDFReadingParameter
 |---------- | ---- |
 | [`mode`](#mode) | *PDFReadingMode* |
 | [`dpi`](#dpi) | *int* |
-| [`rasterDataSource`](#rasterdatasource) | *RasterDataSource* |
+| [`type`](#type) | *TargetType* |
 
 ### mode
 
@@ -44,10 +45,10 @@ The DPI (dots per inch) value.
 int dpi
 ```
 
-### rasterDataSource
+### type
 
-The raster data source type.
+The target type.
 
 ```cpp
-RasterDataSource rasterDataSource
+TargetType type
 ```

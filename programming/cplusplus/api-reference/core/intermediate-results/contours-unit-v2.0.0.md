@@ -4,6 +4,7 @@ title: class CContoursUnit - Dynamsoft Core Module C++ Edition API Reference
 description: This page shows the C++ edition of the class CContoursUnit in Dynamsoft Core Module.
 keywords: contours, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/core/intermediate-results/contours-unit-v2.0.0.html
 ---
 
 # CContoursUnit
@@ -24,24 +25,37 @@ class CContoursUnit : public CIntermediateResultUnit
 
 | Method                    | Description |
 |---------------------------|---------------------------------------------|
-| [`GetContours`](#getcontours) | Gets the contour at the specified index.  |
+| [`GetCount`](#getcount)   | Gets the number of contours in the unit.    |
+| [`GetContour`](#getcontour) | Gets the contour at the specified index.  |
 
-### GetContours
+### GetCount
+
+Gets the number of contours in the unit.
+
+```cpp
+virtual int GetCount() const;
+```
+
+**Return value**
+
+Returns the number of contours in the unit.
+
+### GetContour
 
 Gets the contour at the specified index.
 
 ```cpp
-virtual int GetContours(int* count, const CContour** contours, const CVector4** hierarchies) const;
+virtual int GetContour(int index, CContour* contour) const;
 ```
 
 **Parameters**
 
-`[out] count` The count of contours in the unit.
+`[in] index` The index of the contour to get.
 
-`[out] contours` The contours of the unit.
-
-`[out] hierarchies` The hierarchies of the contours in the unit.
+`[in, out] contour` A pointer to a CContour object that will be filled with the contour data.
 
 **Return value**
 
 Returns 0 if successful, or an error code if the contour could not be retrieved.
+
+Note: The caller of this method is responsible for allocating memory for the `contour` pointer.

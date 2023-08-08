@@ -4,11 +4,12 @@ title: class CIntermediateResultManager - Dynamsoft Core Module C++ Edition API 
 description: This page shows the C++ edition of the class CIntermediateResultManager in Dynamsoft Core Module.
 keywords: intermediate result manager, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/core/intermediate-results/intermediate-result-manager-v2.0.0.html
 ---
 
 # CIntermediateResultManager
 
-The CIntermediateResultManager class manages intermediate results generated during data capturing. It provides methods to add and remove intermediate result receivers, as well as to get original image data using an image hash id.
+The CIntermediateResultManager class manages intermediate results generated during data capturing. It provides methods to add and remove intermediate result receivers, as well as to get raw image data using an image hash id.
 
 ## Definition
 
@@ -26,7 +27,7 @@ class CIntermediateResultManager
 |--------|-------------|
 | [`AddResultReceiver`](#addresultreceiver) | Adds an intermediate result receiver.|
 | [`RemoveResultReceiver`](#removeresultreceiver) | Removes an intermediate result receiver. |
-| [`GetOriginalImage`](#getoriginalimage) | Gets the original image data using an image hash id. |
+| [`GetRawImage`](#getrawimage) | Gets the raw image data using an image hash id. |
 
 ### AddResultReceiver
 
@@ -52,12 +53,12 @@ virtual int RemoveResultReceiver(CIntermediateResultReceiver* receiver)
 
 `[in] receiver` The intermediate result receiver to remove.
 
-### GetOriginalImage
+### GetRawImage
 
-Gets the original image data using an image hash id.
+Gets the raw image data using an image hash id.
 
 ```cpp
-virtual CImageData* GetOriginalImage(const char* imageHashId)
+virtual CImageData* GetRawImage(const char* imageHashId)
 ```
 
 **Parameters**
@@ -66,4 +67,4 @@ virtual CImageData* GetOriginalImage(const char* imageHashId)
 
 **Return value**
 
-Returns a pointer to the CImageData object containing the original image data. You don't need to release the memory pointed to by the returned pointer.
+Returns a pointer to the CImageData object containing the raw image data. You don't need to release the memory pointed to by the returned pointer.

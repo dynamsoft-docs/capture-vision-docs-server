@@ -11,7 +11,7 @@ permalink: /programming/cplusplus/api-reference/core/basic-structures/captured-r
 
 # CCapturedResultReceiver
 
-The `CCapturedResultReceiver` class is responsible for receiving captured results. It contains several callback functions for different types of results, including original image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
+The `CCapturedResultReceiver` class is responsible for receiving captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
 
 ## Definition
 
@@ -31,7 +31,7 @@ class CCapturedResultReceiver
 | [`~CCapturedResultReceiver`](#ccapturedresultreceiver-destructor)              | Destructor                                           |
 | [`GetObservedResultItemTypes`](#getobservedresultitemtypes)       | Gets the types of observed result items.             |
 | [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
-| [`OnOriginalImageResultReceived`](#onoriginalimageresultreceived)           | Callback function for original image results.             |
+| [`OnRawImageResultReceived`](#onrawimageresultreceived)           | Callback function for raw image results.             |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived)         | Callback function for decoded barcodes results.      |
 | [`OnRecognizedTextLinesReceived`](#onrecognizedtextlinesreceived) | Callback function for recognized text lines results. |
 | [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function for detected quads results.        |
@@ -80,17 +80,17 @@ virtual void OnCapturedResultReceived(const CCapturedResult* pResult)
 
 `[in] pResult` The captured result.
 
-### OnOriginalImageResultReceived
+### OnRawImageResultReceived
 
-Callback function for original image results. It will be called once for each original image result.
+Callback function for raw image results. It will be called once for each raw image result.
 
 ```cpp
-virtual void OnOriginalImageResultReceived(const COriginalImageResultItem* pResult)
+virtual void OnRawImageResultReceived(const CRawImageResultItem* pResult)
 ```
 
 **Parameters**
 
-`[in] pResult` The original image result.
+`[in] pResult` The raw image result.
 
 ### OnDecodedBarcodesReceived
 
