@@ -35,7 +35,7 @@ class CIntermediateResultUnit
 | [`SetOriginalImageTag`](#setoriginalimagetag) | Sets the image tag of the original image. |
 | [`Retain`](#retain) | Increases the reference count of the unit. |
 | [`Release`](#release) | Decreases the reference count of the unit. |
-| [`GetTransformMatrix`](#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}/core/transform-matrix-type.html). |
+| [`GetTransformMatrix`](#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}/core/transform-matrix-type.html?src=cpp&&lang=cpp). |
 | [`SetTransformMatrix`](#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.enums}}/core/transform-matrix-type.html). |
 
 ### GetHashId
