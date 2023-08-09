@@ -36,7 +36,7 @@ class CIntermediateResultUnit
 | [`Retain`](#retain) | Increases the reference count of the unit. |
 | [`Release`](#release) | Decreases the reference count of the unit. |
 | [`GetTransformMatrix`](#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
-| [`SetTransformMatrix`](#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html). |
+| [`SetTransformMatrix`](#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
 
 ### GetHashId
 
@@ -152,7 +152,7 @@ virtual void Release() = 0
 
 ### GetTransformMatrix
 
-Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html).
+Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp).
 
 ```cpp
 void GetTransformMatrix(TransformMatrixType matrixType, double matrix[9]) const;
@@ -173,7 +173,7 @@ The corresponding transformation matrices are as follows:
 
 ### SetTransformMatrix
 
-Sets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html).
+Sets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp).
 
 ```cpp
 void SetTransformMatrix(TransformMatrixType matrixType, double matrix[9]);
