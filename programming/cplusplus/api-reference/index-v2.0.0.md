@@ -35,7 +35,7 @@ needAutoGenerateSidebar: true
 - [`CNormalizedImagesResult`]({{ site.ddn_cpp_api }}normalized-images-result.html)
 - [`CParsedResultItem`]({{ site.dcp_cpp_api }}parsed-result-item.html)
 - [`CParsedResult`]({{ site.dcp_cpp_api }}parsed-result.html)
-- [`COriginalImageResultItem`]({{ site.cpp_api }}core/basic-structures/original-image-result-item.html)
+- [`CRawImageResultItem`]({{ site.cpp_api }}core/basic-structures/raw-image-result-item.html)
 
 ## Final Results Filters
 
