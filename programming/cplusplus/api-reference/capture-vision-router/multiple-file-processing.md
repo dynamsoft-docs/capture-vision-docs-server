@@ -42,6 +42,10 @@ int SetInput(CImageSourceAdapter* pAdaptor);
 
 Returns an error code. Zero indicates success.
 
+| Error Code | Value | Description |
+| :--------- | :---- | :---------- |
+| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
+
 **Code Snippet**
 
 ```cpp
@@ -380,6 +384,12 @@ int StartCapturing(const char* templateName = "", bool waitForThreadExit = false
 **Return Value**
 
 The function returns an integer value representing the success or failure of the capturing process. A value of 0 indicates success, while a non-zero value indicates failure. If an error message buffer is provided, any error messages generated during the capturing process will be stored in the buffer.
+
+| Error Code | Value | Description |
+| :--------- | :---- | :---------- |
+| EC_TEMPLATE_NAME_INVALID | -10036 | The target template name is invalid. |
+| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
+| EC_NO_IMAGE_SOURCE | -10063 | Can not start capturing before you set the input. |
 
 **Code Snippet**
 

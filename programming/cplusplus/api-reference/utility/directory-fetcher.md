@@ -47,6 +47,10 @@ int SetDirectory(const char *path, const char *filter, bool recursive)
 
 Returns an integer value that represents the success or failure of the operation.
 
+| Error Code | Value | Description |
+| :--------- | :---- | :---------- |
+| EC_READ_DIRECTORY_FAILED | -10064 | Failed to read the directory. |
+
 ### SetPDFReadingParameter
 
 Sets the parameters for reading PDF files.
@@ -62,3 +66,7 @@ int SetPDFReadingParameter(const CPDFReadingParameter& para)
 **Return value**
 
 Returns an integer value that represents the success or failure of the operation.
+
+| Error Code | Value | Description |
+| :--------- | :---- | :---------- |
+| EC_PARAMETER_VALUE_INVALID | -10038 | There exists invalid parameter value in your JSON data. |

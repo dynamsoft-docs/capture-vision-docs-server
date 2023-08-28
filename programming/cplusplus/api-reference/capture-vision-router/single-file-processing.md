@@ -41,6 +41,15 @@ CCapturedResult* Capture(const CImageData* pImageData, const char* templateName=
 
 Returns a pointer to a `CCapturedResult` object containing the captured items.
 
+| Error Code | Value | Description |
+| :--------- | :---- | :---------- |
+| EC_NULL_POINTER | -10002 | The ImageData object is null. |
+| EC_FILE_NOT_FOUND | -10005 | The file is not found. |
+| EC_FILE_TYPE_NOT_SUPPORTED | -10006 | The file type is not supported. |
+| EC_TEMPLATE_NAME_INVALID | -10036 | The target template name is invalid. |
+| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
+| EC_MULTI_PAGES_NOT_SUPPORTED | -10066 | The api does not support multi-page files. Please use FileFetcher instead. |
+
 **Code Snippet**
 
 ```cpp
