@@ -52,6 +52,7 @@
   }
   #searchResult .gsc-search-button-v2:focus, #searchResult .gsc-search-button-v2:active { border: 1px solid rgb(254, 142, 20);}
   #searchResult .gsc-search-button-v2 svg {
+    
     width: 16px;
     height: 16px;
   }
@@ -109,9 +110,9 @@
   }
 </style>
 <body>
-    <div class="headWrapper">
-        {%- include page_header.html -%}
-    </div>
+  {% assign url = 'https://www.dynamsoft.com/shared/head/' %}
+  {% remote_include {{ url }} %}
+
     {%- include dcvNav.html -%}
     <div class="sideBarIcon"><i class="fa fa-list" style="margin-right: 5px;"></i> Table of contents</div>
     <div class="container" id="searchContent">
