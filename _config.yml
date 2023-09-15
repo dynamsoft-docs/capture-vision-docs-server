@@ -41,6 +41,11 @@ dnt_icon: /capture-vision/docs/server/assets/img-icon/icon-dnt.svg
 
 plugins:
   - jemoji
+  - jekyll-webp
+  - jekyll-relative-links
+  - jekyll-redirect-from
+  - jekyll-readme-index
+  - jekyll-seo-tag
 
 edition: desktop
 
