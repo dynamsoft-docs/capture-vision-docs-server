@@ -71,7 +71,7 @@ Returns the object of CObservationParameters. The default parameters are to obse
 Called when a task result has been received.
 
 ```cpp
-virtual void OnTaskResultsReceived(const CIntermediateResult *pResult, const IntermediateResultExtraInfo* info)
+virtual void OnTaskResultsReceived(CIntermediateResult *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**

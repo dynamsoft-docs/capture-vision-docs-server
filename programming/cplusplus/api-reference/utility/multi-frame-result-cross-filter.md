@@ -6,7 +6,6 @@ keywords: multiple frame result cross filter, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: C++ CMultiFrameResultCrossFilter Class
-permalink: /programming/cplusplus/api-reference/utility/multi-frame-result-cross-filter.html
 ---
 
 # CMultiFrameResultCrossFilter
@@ -111,7 +110,7 @@ void SetDuplicateForgetTime(int resultItemTypes, int time);
 **Parameters**
 
 `[in] resultItemTypes` The or value of the captured result item types.  
-`[in] time` The duplicate forget time measured in milliseconds.
+`[in] time` The duplicate forget time measured in milliseconds. The value rang is [1, 180000].
 
 ### GetDuplicateForgetTime
 

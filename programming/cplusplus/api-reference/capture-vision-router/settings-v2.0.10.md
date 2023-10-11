@@ -6,7 +6,6 @@ keywords: capture vision, router, settings, api reference, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
 breadcrumbText: CVR C++ Settings
-permalink: /programming/cplusplus/api-reference/capture-vision-router/settings.html
 ---
 
 # Settings
@@ -109,10 +108,6 @@ Returns a string containing the exported template. The string is allocated by th
 | EC_TEMPLATE_NAME_INVALID | -10036 | The target template name is invalid. |
 | EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
 
-**Remarks**
-
-It is supported to export all loaded templates by specifying the `templateName` as '*'.
-
 ## OutputSettingsToFile
 
 Exports a specific template to a file.
@@ -135,10 +130,6 @@ Returns an error code. Zero indicates success.
 | :--------- | :---- | :---------- |
 | EC_FILE_SAVE_FAILED | -10058 | The file path is unavailable or the file can't be created for any other reasons. |
 | EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
-
-**Remarks**
-
-It is supported to export all loaded templates by specifying the `templateName` as '*'.
 
 ## GetSimplifiedSettings
 

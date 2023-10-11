@@ -6,7 +6,6 @@ keywords: preset template, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ CPresetTemplate Class
-permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-classes/preset-template.html
 ---
 
 # CPresetTemplate
@@ -25,11 +24,19 @@ class CPresetTemplate
 
 ## Attributes Summary
 
-| Attribute                                             | Type                                | Description|
-| ----------------------------------------------------- | ----------------------------------- |------------|
-| [`PT_DEFAULT`](#pt_default)                           | *const char\**                      | Template name: "default". It supports barcode decoding, label recognizing and document normalizing. |
-| [`PT_READ_BARCODES`](#pt_read_barcodes)               | *const char\**                      | Template name: "read-barcodes". It only supports barcode decoding. |
-| [`PT_RECOGNIZE_TEXT_LINES`](#pt_recognize_text_lines) | *const char\**                      | Template name: "recognize-textLines". It only supports label recognition. |
-| [`PT_DETECT_DOCUMENT_BOUNDARIES`](#pt_detect_document_boundaries)| *const char\**           | Template name: "detect-document-boundaries". It only supports detecting document boundaries. |
-| [`PT_DETECT_AND_NORMALIZE_DOCUMENT`](#pt_detect_and_normalize_document)| *const char\**     | Template name: "detect-and-normalize-document". It supports detecting document boundaries and normalizing documents. |
-| [`PT_NORMALIZE_DOCUMENT`](#pt_normalize_document)                 | *const char\**          | Template name: "normalize-document". It only supports normalizing documents. |
+| Attribute | Type | Description |
+| --------- | ---- |------------ |
+| `PT_DEFAULT` | *const char\** | Template name: "Default". It supports barcode decoding, label recognizing and document normalizing. |
+| `PT_READ_BARCODES` | *const char\** | Template name: "ReadBarcodes_Default". It only supports barcode decoding. |
+| `PT_RECOGNIZE_TEXT_LINES` | *const char\** | Template name: "RecognizeTextLines_Default". It only supports label recognition. |
+| `PT_DETECT_DOCUMENT_BOUNDARIES` | *const char\** | Template name: "DetectDocumentBoundaries_Default". It only supports detecting document boundaries. |
+| `PT_DETECT_AND_NORMALIZE_DOCUMENT` | *const char\** | Template name: "DetectAndNormalizeDocument_Default". It supports detecting document boundaries and normalizing documents. |
+| `PT_NORMALIZE_DOCUMENT` | *const char\** | Template name: "NormalizeDocument_Default". It only supports normalizing documents. |
+| `PT_READ_BARCODES_SPEED_FIRST` | *const char\** | Template name: "ReadBarcodes_SpeedFirst". Represents a barcode reading mode where speed is prioritized. |
+| `PT_READ_BARCODES_READ_RATE_FIRST` | *const char\** | Template name: "ReadBarcodes_ReadRateFirst". Represents a barcode reading mode where barcode read rate is prioritized. |
+| `PT_READ_SINGLE_BARCODE` | *const char\** | Template name: "ReadSingleBarcode". Represents a barcode reading mode for single barcode code detection. |
+| `PT_RECOGNIZE_NUMBERS` | *const char\** | Template name: "RecognizeNumbers". Represents a text recognition mode focused on recognizing numbers. |
+| `PT_RECOGNIZE_LETTERS` | *const char\** | Template name: "RecognizeLetters". Represents a text recognition mode focused on recognizing alphabetic characters (letters). |
+| `PT_RECOGNIZE_NUMBERS_AND_LETTERS` | *const char\** | Template name: "RecognizeNumbersAndLetters". Represents a text recognition mode that combines numbers and alphabetic characters (letters) recognition. |
+| `PT_RECOGNIZE_NUMBERS_AND_UPPERCASE_LETTERS` | *const char\** | Template name: "RecognizeNumbersAndUppercaseLetters". Represents a text recognition mode that combines numbers and uppercase letters recognition. |
+| `PT_RECOGNIZE_UPPERCASE_LETTERS` | *const char\** | Template name: "RecognizeUppercaseLetters". Represents a text recognition mode focused on recognizing uppercase letters. |
