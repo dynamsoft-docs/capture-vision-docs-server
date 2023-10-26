@@ -26,8 +26,7 @@ typedef struct tagSimplifiedCaptureVisionSettings
     int timeout;
     SimplifiedBarcodeReaderSettings barcodeSettings;
     SimplifiedLabelRecognizerSettings labelSettings;
-    int minImageCaptureInterval;
-    char reserved[2044];
+    char reserved[2048];
 } SimplifiedCaptureVisionSettings;
 ```
 
@@ -42,8 +41,7 @@ typedef struct tagSimplifiedCaptureVisionSettings
 | [`timeout`](#timeout)                                 | *int*                               |
 | [`barcodeSettings`](#barcodesettings)                 | *SimplifiedBarcodeReaderSettings*   |
 | [`labelSettings`](#labelsettings)                     | *SimplifiedLabelRecognizerSettings* |
-| [`minImageCaptureInterval`](#minimagecaptureinterval) | *int*                               |
-| [`reserved`](#reserved)                               | *char[2044]*                        |
+| [`reserved`](#reserved)                                           | *char[2048]*                        |
 
 ### capturedResultItemTypes
 
@@ -111,23 +109,10 @@ Specifies the settings for label recognition.
 SimplifiedLabelRecognizerSettings labelSettings
 ```
 
-### minImageCaptureInterval
-
-Specifies the minimum time interval (in milliseconds) allowed between consecutive image captures.
-
-```cpp
-int minImageCaptureInterval
-```
-
-**Remarks**
-
-This property represents the minimum time interval (in milliseconds) that must elapse before the next image capture operation can be initiated.
-Setting a larger value for this property will introduce a delay between image captures, while setting a smaller value allows for more frequent captures. It can be used to reduce the computational frequency, which can effectively lower energy consumption. Please note that the actual time interval between captures may be longer than the specified minimum interval due to various factors, such as image processing time and hardware limitations.
-
 ### reserved
 
 Reserved for future use.
 
 ```cpp
-char reserved[2044]
+char reserved[2048]
 ```

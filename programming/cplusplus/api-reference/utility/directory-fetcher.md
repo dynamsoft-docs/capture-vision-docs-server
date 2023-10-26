@@ -26,6 +26,7 @@ class CDirectoryFetcher : public CProactiveImageSourceAdapter
 |--------|-------------|
 | [`SetDirectory`](#setdirectory) | Sets the directory path and filter for the file search. |
 | [`SetPDFReadingParameter`](#setpdfreadingparameter) | Sets the parameters for reading PDF files. |
+| [`SetPages`](#setpages) | Sets the 0-based page indexes of a file (.tiff or .pdf) for barcode searching. |
 
 ### SetDirectory
 
@@ -70,3 +71,21 @@ Returns an integer value that represents the success or failure of the operation
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |
 | EC_PARAMETER_VALUE_INVALID | -10038 | There exists invalid parameter value in your JSON data. |
+
+### SetPages
+
+Sets the 0-based page indexes of a file (.tiff or .pdf) for barcode searching. By default, there is no restriction on the number of pages that can be decoded in a single file.
+
+```cpp
+int SetPages(const int pages[], int pagesCount)
+```
+
+**Parameters**
+
+`[in] pages` An integer array containing the page information to be set.
+
+`[in] pagesCount` The number of elements in the array.
+
+**Return value**
+
+Returns an integer value that represents the success or failure of the operation.

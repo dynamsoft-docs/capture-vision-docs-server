@@ -27,11 +27,11 @@ class CCapturedResultReceiver
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
-| [`CCapturedResultReceiver`](#ccapturedresultreceiver-constructor) | Constructor                                          |
-| [`~CCapturedResultReceiver`](#ccapturedresultreceiver-destructor) | Destructor                                           |
+| [`CCapturedResultReceiver`](#ccapturedresultreceiver-constructor)               | Constructor                                          |
+| [`~CCapturedResultReceiver`](#ccapturedresultreceiver-destructor)              | Destructor                                           |
 | [`GetObservedResultItemTypes`](#getobservedresultitemtypes)       | Gets the types of observed result items.             |
 | [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
-| [`OnOriginalImageResultReceived`](#onoriginalimageresultreceived) | Callback function for original image results.        |
+| [`OnOriginalImageResultReceived`](#onoriginalimageresultreceived)           | Callback function for original image results.             |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived)         | Callback function for decoded barcodes results.      |
 | [`OnRecognizedTextLinesReceived`](#onrecognizedtextlinesreceived) | Callback function for recognized text lines results. |
 | [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function for detected quads results.        |
@@ -73,7 +73,7 @@ Returns the types of observed result items.
 Callback function for all captured results. It will be called once for each captured result.
 
 ```cpp
-virtual void OnCapturedResultReceived(CCapturedResult* pResult)
+virtual void OnCapturedResultReceived(const CCapturedResult* pResult)
 ```
 
 **Parameters**
@@ -85,7 +85,7 @@ virtual void OnCapturedResultReceived(CCapturedResult* pResult)
 Callback function for original image results. It will be called once for each original image result.
 
 ```cpp
-virtual void OnOriginalImageResultReceived(COriginalImageResultItem* pResult)
+virtual void OnOriginalImageResultReceived(const COriginalImageResultItem* pResult)
 ```
 
 **Parameters**
@@ -97,7 +97,7 @@ virtual void OnOriginalImageResultReceived(COriginalImageResultItem* pResult)
 Callback function for decoded barcodes results. It will be called once for each decoded barcodes result.
 
 ```cpp
-virtual void OnDecodedBarcodesReceived(dbr::CDecodedBarcodesResult* pResult)
+virtual void OnDecodedBarcodesReceived(const dbr::CDecodedBarcodesResult* pResult)
 ```
 
 **Parameters**
@@ -109,7 +109,7 @@ virtual void OnDecodedBarcodesReceived(dbr::CDecodedBarcodesResult* pResult)
 Callback function for recognized text lines results. It will be called once for each recognized text lines result.
 
 ```cpp
-virtual void OnRecognizedTextLinesReceived(dlr::CRecognizedTextLinesResult* pResult)
+virtual void OnRecognizedTextLinesReceived(const dlr::CRecognizedTextLinesResult* pResult)
 ```
 
 **Parameters**
@@ -121,7 +121,7 @@ virtual void OnRecognizedTextLinesReceived(dlr::CRecognizedTextLinesResult* pRes
 Callback function for detected quads results. It will be called once for each detected quads result.
 
 ```cpp
-virtual void OnDetectedQuadsReceived(ddn::CDetectedQuadsResult* pResult)
+virtual void OnDetectedQuadsReceived(const ddn::CDetectedQuadsResult* pResult)
 ```
 
 **Parameters**
@@ -133,7 +133,7 @@ virtual void OnDetectedQuadsReceived(ddn::CDetectedQuadsResult* pResult)
 Callback function for normalized images results. It will be called once for each normalized images result.
 
 ```cpp
-virtual void OnNormalizedImagesReceived(ddn::CNormalizedImagesResult* pResult)
+virtual void OnNormalizedImagesReceived(const ddn::CNormalizedImagesResult* pResult)
 ```
 
 **Parameters**
@@ -145,7 +145,7 @@ virtual void OnNormalizedImagesReceived(ddn::CNormalizedImagesResult* pResult)
 Callback function for parsed results. It will be called once for each parsed result.
 
 ```cpp
-virtual void OnParsedResultsReceived(dcp::CParsedResult* pResult)
+virtual void OnParsedResultsReceived(const dcp::CParsedResult* pResult)
 ```
 
 **Parameters**

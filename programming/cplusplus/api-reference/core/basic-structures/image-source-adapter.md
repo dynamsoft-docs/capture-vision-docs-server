@@ -40,8 +40,8 @@ class CImageSourceAdapter
 | [`ClearBuffer`](#clearbuffer) | Clears the image buffer. |
 | [`SetColourChannelUsageType`](#setcolourchannelusagetype) | Sets the usage type of a color channel in an image. |
 | [`GetColourChannelUsageType`](#getcolourchannelusagetype) | Gets the usage type of a color channel in an image. |
+| [`SetErrorListener`](#seterrorlistener) | Sets the error listener for the image source. |
 
----
 
 ### AddImageToBuffer
 
@@ -234,3 +234,15 @@ ColourChannelUsageType GetColourChannelUsageType() const;
 **Return value**
 
 Returns the usage type of a color channel in images.
+
+### SetErrorListener
+
+Gets the usage type of a color channel in images. This function allows you to set an error listener object that will receive notifications when errors occur during image source operations. If an error occurs, the error infomation will be passed to the listener's OnErrorReceived method.
+
+```cpp
+void SetErrorListener(CImageSourceErrorListener* listener);
+```
+
+**Parameters**
+
+`[in] listener` A pointer to an instance of [`CImageSourceErrorListener`]({{ site.dcv_cpp_api }}core/basic-structures/image-source-error-listener.html) or its derived class, which will handle error notifications.

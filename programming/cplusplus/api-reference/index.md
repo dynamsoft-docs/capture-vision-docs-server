@@ -10,20 +10,20 @@ needAutoGenerateSidebar: true
 
 ## Primary Class
 
-- [`CCaptureVisionRouter`]({{ site.cpp_api }}capture-vision-router/capture-vision-router.html)
+- [`CCaptureVisionRouter`]({{ site.dcv_cpp_api }}capture-vision-router/capture-vision-router.html)
 
 ## Input
 
-- [`CDirectoryFetcher`]({{ site.cpp_api }}utility/directory-fetcher.html)
-- [`CFileFetcher`]({{ site.cpp_api }}utility/file-fetcher.html)
-- [`CImageSourceAdapter`]({{ site.cpp_api }}core/basic-structures/image-source-adapter.html)
-- [`CProactiveImageSourceAdapter`]({{ site.cpp_api }}utility/proactive-image-source-adapter.html)
+- [`CDirectoryFetcher`]({{ site.dcv_cpp_api }}utility/directory-fetcher.html)
+- [`CFileFetcher`]({{ site.dcv_cpp_api }}utility/file-fetcher.html)
+- [`CImageSourceAdapter`]({{ site.dcv_cpp_api }}core/basic-structures/image-source-adapter.html)
+- [`CProactiveImageSourceAdapter`]({{ site.dcv_cpp_api }}utility/proactive-image-source-adapter.html)
 
 ## Final Results
 
-- [`CCapturedResultReceiver`]({{ site.cpp_api }}core/basic-structures/captured-result-receiver.html)
-- [`CCapturedResult`]({{ site.cpp_api }}core/basic-structures/captured-result.html)
-- [`CCapturedResultItem`]({{ site.cpp_api }}core/basic-structures/captured-result-item.html)
+- [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html)
+- [`CCapturedResult`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
+- [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
 - [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html)
 - [`CDecodedBarcodesResult`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html)
 - [`CTextLineResultItem`]({{ site.dlr_cpp_api }}text-line-result-item.html)
@@ -35,30 +35,30 @@ needAutoGenerateSidebar: true
 - [`CNormalizedImagesResult`]({{ site.ddn_cpp_api }}normalized-images-result.html)
 - [`CParsedResultItem`]({{ site.dcp_cpp_api }}parsed-result-item.html)
 - [`CParsedResult`]({{ site.dcp_cpp_api }}parsed-result.html)
-- [`COriginalImageResultItem`]({{ site.cpp_api }}core/basic-structures/original-image-result-item.html)
+- [`COriginalImageResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/original-image-result-item.html)
 
 ## Final Results Filters
 
-- [`CCapturedResultFilter`]({{ site.cpp_api }}core/basic-structures/captured-result-filter.html)
-- [`CMultiFrameResultCrossFilter`]({{ site.cpp_api }}utility/multi-frame-result-cross-filter.html)
+- [`CCapturedResultFilter`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-filter.html)
+- [`CMultiFrameResultCrossFilter`]({{ site.dcv_cpp_api }}utility/multi-frame-result-cross-filter.html)
 
 ## Intermediate Results
 
-- [`CIntermediateResultManager`]({{ site.cpp_api }}core/intermediate-results/intermediate-result-manager.html)
-- [`CIntermediateResultReceiver`]({{ site.cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
-- [`CObservationParameters`]({{ site.cpp_api }}core/intermediate-results/observed-parameters.html)
-- [`IntermediateResultExtraInfo`]({{ site.cpp_api }}core/structs/intermediate-result-extra-info.html)
-- [`CIntermediateResult`]({{ site.cpp_api }}core/intermediate-results/intermediate-result.html)
-- [`CIntermediateResultUnit`]({{ site.cpp_api }}core/intermediate-results/intermediate-result-unit.html)
-- [`CPredetectedRegionsUnit`]({{ site.cpp_api }}core/intermediate-results/predetected-regions-unit.html)
+- [`CIntermediateResultManager`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-manager.html)
+- [`CIntermediateResultReceiver`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
+- [`CObservationParameters`]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html)
+- [`IntermediateResultExtraInfo`]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+- [`CIntermediateResult`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result.html)
+- [`CIntermediateResultUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html)
+- [`CPredetectedRegionsUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/predetected-regions-unit.html)
 - [`CLocalizedBarcodesUnit`]({{ site.dbr_cpp_api }}localized-barcodes-unit.html)
 - [`CDecodedBarcodesUnit`]({{ site.dbr_cpp_api }}decoded-barcodes-unit.html)
 - [`CLocalizedTextLinesUnit`]({{ site.dlr_cpp_api }}localized-text-lines-unit.html)
 - [`CRecognizedTextLinesUnit`]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html)
 - [`CDetectedQuadsUnit`]({{ site.ddn_cpp_api }}detected-quads-unit.html)
 - [`CNormalizedImagesUnit`]({{ site.ddn_cpp_api }}normalized-image-unit.html)
-- [`CRegionObjectElement`]({{ site.cpp_api }}core/intermediate-results/region-object-element.html)
-- [`CPredetectedRegionElement`]({{ site.cpp_api }}core/intermediate-results/predetected-region-element.html)
+- [`CRegionObjectElement`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html)
+- [`CPredetectedRegionElement`]({{ site.dcv_cpp_api }}core/intermediate-results/predetected-region-element.html)
 - [`CLocalizedBarcodesElement`]({{ site.dbr_cpp_api }}localized-barcode-element.html)
 - [`CDecodedBarcodeElement`]({{ site.dbr_cpp_api }}decoded-barcode-element.html)
 - [`CLocalizedTextLineElement`]({{ site.dlr_cpp_api }}localized-text-line-element.html)
@@ -66,19 +66,19 @@ needAutoGenerateSidebar: true
 - [`CDetectedQuadElement`]({{ site.ddn_cpp_api }}detected-quad-element.html)
 - [`CNormalizedImageElement`]({{ site.ddn_cpp_api }}normalized-image-element.html)
 - [`CExtendedBarcodeResult`]({{ site.dbr_cpp_api }}extended-barcode-result.html)
-- [`CBinaryImageUnit`]({{ site.cpp_api }}core/intermediate-results/binary-image-unit.html)
-- [`CColourImageUnit`]({{ site.cpp_api }}core/intermediate-results/colour-image-unit.html)
-- [`CContoursUnit`]({{ site.cpp_api }}core/intermediate-results/contours-unit.html)
-- [`CEnhancedGrayscaleImageUnit`]({{ site.cpp_api }}core/intermediate-results/enhanced-grayscale-image-unit.html)
-- [`CGrayscaleImageUnit`]({{ site.cpp_api }}core/intermediate-results/grayscale-image-unit.html)
-- [`CLineSegmentsUnit`]({{ site.cpp_api }}core/intermediate-results/line-segments-unit.html)
-- [`CScaledDownColourImageUnit`]({{ site.cpp_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
-- [`CTextRemovedBinaryImageUnit`]({{ site.cpp_api }}core/intermediate-results/text-removed-binary-image-unit.html)
-- [`CTextZonesUnit`]({{ site.cpp_api }}core/intermediate-results/text-zones-unit.html)
-- [`CTextureDetectionResultUnit`]({{ site.cpp_api }}core/intermediate-results/texture-detection-result-unit.html)
-- [`CTextureRemovedBinaryImageUnit`]({{ site.cpp_api }}core/intermediate-results/texture-removed-binary-image-unit.html)
-- [`CTextureRemovedGrayscaleImageUnit`]({{ site.cpp_api }}core/intermediate-results/texture-removed-grayscale-image-unit.html)
-- [`CTransformedGrayscaleImageUnit`]({{ site.cpp_api }}core/intermediate-results/transformed-grayscale-image-unit.html)
+- [`CBinaryImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/binary-image-unit.html)
+- [`CColourImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/colour-image-unit.html)
+- [`CContoursUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/contours-unit.html)
+- [`CEnhancedGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/enhanced-grayscale-image-unit.html)
+- [`CGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/grayscale-image-unit.html)
+- [`CLineSegmentsUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/line-segments-unit.html)
+- [`CScaledDownColourImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
+- [`CTextRemovedBinaryImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/text-removed-binary-image-unit.html)
+- [`CTextZonesUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/text-zones-unit.html)
+- [`CTextureDetectionResultUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/texture-detection-result-unit.html)
+- [`CTextureRemovedBinaryImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/texture-removed-binary-image-unit.html)
+- [`CTextureRemovedGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/texture-removed-grayscale-image-unit.html)
+- [`CTransformedGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/transformed-grayscale-image-unit.html)
 - [`CScaledUpBarcodeImageUnit`]({{ site.dbr_cpp_api }}scaled-up-barcode-image-unit.html)
 - [`CCandidateBarcodeZonesUnit`]({{ site.dbr_cpp_api }}candidate-barcode-zones-unit.html)
 - [`CComplementedBarcodeImageUnit`]({{ site.dbr_cpp_api }}complemented-barcode-image-unit.html)
@@ -98,45 +98,45 @@ needAutoGenerateSidebar: true
 
 ## Settings
 
-- [`SimplifiedCaptureVisionSettings`]({{ site.cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
+- [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
 - [`SimplifiedBarcodeReaderSettings`]({{ site.dbr_cpp_api }}simplified-barcode-reader-settings.html)
 - [`SimplifiedLabelRecognizerSettings`]({{ site.dlr_cpp_api }}simplified-label-recognizer-settings.html)
-- [`CPresetTemplate`]({{ site.cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html)
+- [`CPresetTemplate`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html)
 
 ## State Listener
 
-- [`CCaptureStateListener`]({{ site.cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
-- [`CImageSourceStateListener`]({{ site.cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+- [`CCaptureStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+- [`CImageSourceStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
 ## License
 
-- [`CLicenseManager`]({{ site.cpp_api }}license/license-manager.html)
+- [`CLicenseManager`]({{ site.dcv_cpp_api }}license/license-manager.html)
 
 ## Basic Structure
 
-- [`CContour`]({{ site.cpp_api }}core/basic-structures/contour.html)
-- [`CCorner`]({{ site.cpp_api }}core/basic-structures/corner.html)
-- [`CEdge`]({{ site.cpp_api }}core/basic-structures/edge.html)
-- [`CFileImageTag`]({{ site.cpp_api }}core/basic-structures/file-image-tag.html)
-- [`CImageData`]({{ site.cpp_api }}core/basic-structures/image-data.html)
-- [`CImageTag`]({{ site.cpp_api }}core/basic-structures/image-tag.html)
-- [`CLineSegment`]({{ site.cpp_api }}core/basic-structures/line-segment.html)
-- [`CPDFReadingParameter`]({{ site.cpp_api }}core/basic-structures/pdf-reading-parameter.html)
-- [`CPoint`]({{ site.cpp_api }}core/basic-structures/point.html)
-- [`CQuadrilateral`]({{ site.cpp_api }}core/basic-structures/quadrilateral.html)
-- [`CRect`]({{ site.cpp_api }}core/basic-structures/rect.html)
-- [`CVideoFrameTag`]({{ site.cpp_api }}core/basic-structures/video-frame-tag.html)
+- [`CContour`]({{ site.dcv_cpp_api }}core/basic-structures/contour.html)
+- [`CCorner`]({{ site.dcv_cpp_api }}core/basic-structures/corner.html)
+- [`CEdge`]({{ site.dcv_cpp_api }}core/basic-structures/edge.html)
+- [`CFileImageTag`]({{ site.dcv_cpp_api }}core/basic-structures/file-image-tag.html)
+- [`CImageData`]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+- [`CImageTag`]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
+- [`CLineSegment`]({{ site.dcv_cpp_api }}core/basic-structures/line-segment.html)
+- [`CPDFReadingParameter`]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html)
+- [`CPoint`]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+- [`CQuadrilateral`]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+- [`CRect`]({{ site.dcv_cpp_api }}core/basic-structures/rect.html)
+- [`CVideoFrameTag`]({{ site.dcv_cpp_api }}core/basic-structures/video-frame-tag.html)
 
 ## Modules
 
-- [`CCaptureVisionRouterModule`]({{ site.cpp_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
+- [`CCaptureVisionRouterModule`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
 - [`CBarcodeReaderModule`]({{ site.dbr_cpp_api }}barcode-reader-module.html)
 - [`CLabelRecognizerModule`]({{ site.dlr_cpp_api }}label-recognizer-module.html)
 - [`CDocumentNormalizerModule`]({{ site.ddn_cpp_api }}document-normalizer-module.html)
-- [`CCoreModule`]({{ site.cpp_api }}core/basic-structures/core-module.html)
-- [`CLicenseModule`]({{ site.cpp_api }}license/license-module.html)
-- [`CUtilityModule`]({{ site.cpp_api }}utility/utility-module.html)
-- [`CImageProcessingModule`]({{ site.cpp_api }}image-processing/image-processing-module.html)
+- [`CCoreModule`]({{ site.dcv_cpp_api }}core/basic-structures/core-module.html)
+- [`CLicenseModule`]({{ site.dcv_cpp_api }}license/license-module.html)
+- [`CUtilityModule`]({{ site.dcv_cpp_api }}utility/utility-module.html)
+- [`CImageProcessingModule`]({{ site.dcv_cpp_api }}image-processing/image-processing-module.html)
 
 ## Enumerations
 
