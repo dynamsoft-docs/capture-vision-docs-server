@@ -53,7 +53,7 @@ In this guide, you will learn step by step on how to build a barcode reader, lab
 
 ## Installation
 
-If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-2.0.20.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
+If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-2.0.0.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
 
 > For this tutorial, we unpack it to a pseudo directory `[INSTALLATION FOLDER]`, change it to your unpacking path for the following content.
 
@@ -81,8 +81,8 @@ Let's start by creating a console application which demonstrates the minimum cod
     CC=gcc
     CCFLAGS=-c -std=c++11
 
-    DLRMODEL_PATH=[INSTALLATION FOLDER]/Distributables/CharacterModel
-    DS_LIB_PATH=[INSTALLATION FOLDER]/Distributables/Lib/Linux/x64
+    DLRMODEL_PATH=../../../CharacterModel
+    DS_LIB_PATH=../../../Lib/Linux/x64
     LDFLAGS=-L $(DS_LIB_PATH) -Wl,-rpath=$(DS_LIB_PATH) -Wl,-rpath=./
     DS_LIB=-lDynamsoftCaptureVisionRouter -lDynamsoftCore -lDynamsoftLicense -lDynamsoftUtility
 
@@ -107,7 +107,7 @@ Let's start by creating a console application which demonstrates the minimum cod
         rm -f $(OBJECT) $(TARGET) -r $(DS_LIB_PATH)/CharacterModel
     ```
 
-    >Note: The variable `DLRMODEL_PATH` and `DS_LIB_PATH` should be set to the correct directory where the library files are located. 
+    >Note: The `DS_LIB_PATH` variable should be set to the correct directory where the DLR library files are located. The files and character models directory can be found in `[INSTALLATION FOLDER]/Lib/Linux/x64`.
 
 ### Include the Library
 
@@ -129,15 +129,15 @@ Let's start by creating a console application which demonstrates the minimum cod
     // The following code only applies to Windows.
     #if defined(_WIN64) || defined(_WIN32)
         #ifdef _WIN64
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCorex64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftLicensex64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftUtilityx64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCorex64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftLicensex64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftUtilityx64.lib")
         #else
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCorex86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftLicensex86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftUtilityx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCorex86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftLicensex86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftUtilityx86.lib")
         #endif
     #endif
     ```
@@ -174,6 +174,10 @@ Let's start by creating a console application which demonstrates the minimum cod
     CCapturedResult* result = router->Capture(imageFile.c_str(), CPresetTemplate::PT_DEFAULT);
     ```
 
+    > Note:
+    >
+    > Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpacking path.
+
 2. Output the captured results
 
     ```cpp
@@ -187,7 +191,7 @@ Let's start by creating a console application which demonstrates the minimum cod
     /*
     * There can be multiple types of result items per image.
     */
-    int count = result->GetItemsCount();
+    int count = result->GetCount();
     cout << "Captured " << count << " items" << endl;
     for (int i = 0; i < count; i++) {
         const CCapturedResultItem* item = result->GetItem(i);
@@ -222,10 +226,6 @@ Let's start by creating a console application which demonstrates the minimum cod
     }
     ```
 
-> Note:
-> 
-> Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpacking path.
-
 ### Release the Allocated Memory
 
 ```cpp
@@ -239,10 +239,10 @@ delete result, result = NULL;
 
 1. Build the application through Visual Studio.
 
-2. Copy the related DLL files to the same folder as the EXE file. The DLL files can be found in `[INSTALLATION FOLDER]\Distributables\Lib\Windows\[platforms]`
+2. Copy the related DLL files to the same folder as the EXE file. The DLL files can be found in `[INSTALLATION FOLDER]\Lib\Windows\[platforms]`
     >Note: Select the corresponding folder (x86 or x64) based on your project's platform setting.
 
-3. Copy the `[INSTALLATION FOLDER]\Distributables\CharacterModel` directory to the same folder as the EXE file.
+3. Copy the `[INSTALLATION FOLDER]\Resources\LabelRecognizer\CharacterModel` directory to the same folder as the EXE file.
 
 4. Run the program `CaptureFromAnImage.exe`.
 
@@ -321,9 +321,9 @@ The class `CDirectoryFetcher` is capable of converting a local directory to an i
     class MyResultReceiver : public CCapturedResultReceiver
     {
     public:
-        virtual void OnCapturedResultReceived(CCapturedResult* pResult)
+        virtual void OnCapturedResultReceived(const CCapturedResult* pResult)
         {
-            const CFileImageTag *tag = dynamic_cast<const CFileImageTag*>(pResult->GetOriginalImageTag());
+            const CFileImageTag *tag = dynamic_cast<const CFileImageTag*>(pResult->GetSourceImageTag());
 
             cout << "File: " << tag->GetFilePath() << endl;
             cout << "Page: " << tag->GetPageNumber() << endl;
@@ -334,7 +334,7 @@ The class `CDirectoryFetcher` is capable of converting a local directory to an i
             }
             else
             {
-                int lCount = pResult->GetItemsCount();
+                int lCount = pResult->GetCount();
                 cout << "Captured " << lCount << " items" << endl;
                 for (int i = 0; i < lCount; i++) {
                     const CCapturedResultItem* item = pResult->GetItem(i);
