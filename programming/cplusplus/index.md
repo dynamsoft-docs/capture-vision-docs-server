@@ -10,21 +10,24 @@ needAutoGenerateSidebar: true
 
 ## Getting Started with DCV C++ Edition
 
-The best way to start with the Dynamsoft Capture Vision C++ Edition, is following the [User Guide](user-guide/index.md) to build your first barcode reading application. Please note that the system requirements is as below:
+The best way to start with the Dynamsoft Capture Vision C++ Edition, is following the [User Guide](user-guide/index.md) to build your first capture vision application. Please note that the system requirements is as below:
 
 ### System Requirements
 
-* Operating System:
-  * Windows 7, 8, 10, 11
-  * Windows Server 2003, 2008, 2008 R2, 2012, 2016, 2019, 2022
-  * Linux x64: Ubuntu 14.04.4+ LTS, Debian 8+, etc
-* Developing Tool:
-  * Visual Studio 2008 or above
-  * G++ 5.4+
+- Windows:
+  - Supported Versions: Windows 7 and higher, or Windows Server 2003 and higher
+  - Architecture: x64 and x86
+  - Development Environment: Visual Studio 2012 or higher.
+
+- Linux:
+  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 6+
+  - Architectures: x64 (arm 32-bit and arm 64-bit coming soon)
+  - Minimum GLIBC Version: GLIBC_2.18 or higher
+  - Compiler: G++ 5.4 or higher
 
 ### License Subscription
 
-To develop and run your application with Dynamsoft Barcode Reader SDK, you need an active license key:
+To develop and run your application with Dynamsoft Capture Vision SDK, you need an active license key:
 
 * <a href = "https://www.dynamsoft.com/customer/license/trialLicense?utm_source=doc&product=DCV&package=desktop" target = "_blank">Request a 30-day free trial license
 

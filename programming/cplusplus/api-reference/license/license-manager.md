@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: class CLicenseManger - Dynamsoft License Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CLicenseManger in Dynamsoft License Module.
+title: class CLicenseManager - Dynamsoft License Module C++ Edition API Reference
+description: This page shows the C++ edition of the class CLicenseManager in Dynamsoft License Module.
 keywords: license manager, c++
 needAutoGenerateSidebar: true
 ---
