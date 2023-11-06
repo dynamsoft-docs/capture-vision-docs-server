@@ -27,6 +27,10 @@ class CTextZonesUnit : public CIntermediateResultUnit
 | [`GetCount`](#getcount) | Gets the number of text zones.|
 | [`GetTextZone`](#gettextzone) | Gets the quadrilateral shape of the text zone at the specified index.|
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetCount
 
 Gets the number of text zones in the unit.

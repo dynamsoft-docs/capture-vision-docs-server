@@ -30,6 +30,10 @@ class CFileImageTag : public CImageTag
 | [`CFileImageTag`](#cfileimagetag-constructor) | The constructor of the CFileImageTag class. |
 | [`~CFileImageTag`](#cfileimagetag-destructor) | The destructor of the CFileImageTag class. |
 
+### Inherited Methods
+
+{%- include inherited-methods/image-tag.md -%}
+
 ### GetFilePath
 
 Gets the file path of the image tag.

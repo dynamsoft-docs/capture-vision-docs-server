@@ -26,6 +26,10 @@ class CContoursUnit : public CIntermediateResultUnit
 |---------------------------|---------------------------------------------|
 | [`GetContours`](#getcontours) | Gets the contours.  |
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetContours
 
 Gets the contours.

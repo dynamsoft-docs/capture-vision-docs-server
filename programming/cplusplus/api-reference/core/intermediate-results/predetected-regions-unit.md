@@ -27,6 +27,10 @@ class CPredetectedRegionsUnit : public CIntermediateResultUnit
 | [`GetCount`](#getcount) | Gets the number of pre-detected regions in the collection. |
 | [`GetPredectedRegion`](#getpredectedregion) | Gets a pointer to a specific pre-detected region in the collection. |
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetCount
 
 Gets the number of pre-detected regions in the collection.

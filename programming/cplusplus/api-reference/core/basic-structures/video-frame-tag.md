@@ -32,6 +32,10 @@ class CVideoFrameTag: public CImageTag
 | [`CVideoFrameTag`](#cvideoframetag-constructor) | The constructor of the CVideoFrameTag class. |
 | [`~CVideoFrameTag`](#cvideoframetag-destructor) | The destructor of the CVideoFrameTag class. |
 
+### Inherited Methods
+
+{%- include inherited-methods/image-tag.md -%}
+
 ### GetVideoFrameQuality
 
 Gets the quality of the video frame.

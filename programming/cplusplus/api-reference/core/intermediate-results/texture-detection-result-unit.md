@@ -27,6 +27,10 @@ class CTextureDetectionResultUnit : public CIntermediateResultUnit
 | [`GetXSpacing`](#getxspacing) | Gets x-direction spacing of the texture stripes. |
 | [`GetYSpacing`](#getyspacing) | Gets y-direction spacing of the texture stripes. |
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetXSpacing
 
 Gets x-direction spacing of the texture stripes.

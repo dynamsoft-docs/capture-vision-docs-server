@@ -26,6 +26,10 @@ class CBinaryImageUnit : public CIntermediateResultUnit
 |----------------------|-------------|
 | [`GetImageData`](#getimagedata) | Gets a pointer to the binary image data. |
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetImageData
 
 Gets a pointer to the binary image data.

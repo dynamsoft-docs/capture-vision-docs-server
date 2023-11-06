@@ -90,12 +90,8 @@ virtual void StopFetching();
 Returns a buffered image.
 
 ```cpp
-virtual CImageData* GetImage(bool removeFromBuffer = true);
+virtual CImageData* GetImage();
 ```
-
-**Parameters**
-
-`[in] removeFromBuffer` Whether the image should be removed from the buffer after it is returned.
 
 **Return value**
 

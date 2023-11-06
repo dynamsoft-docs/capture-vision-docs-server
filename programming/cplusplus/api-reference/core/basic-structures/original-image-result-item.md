@@ -29,6 +29,10 @@ class COriginalImageResultItem: public CCapturedResultItem
 | ------------------------------- | ------------------------------------------------ |
 | [`GetImageData`](#getimagedata) | Gets the image data for the COriginalImageResultItem. |
 
+### Inherited Methods
+
+{%- include inherited-methods/captured-result-item.md -%}
+
 ### GetImageData
 
 Gets the image data for the COriginalImageResultItem.

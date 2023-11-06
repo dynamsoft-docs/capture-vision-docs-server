@@ -26,6 +26,10 @@ class CTextureRemovedGrayscaleImageUnit : public CIntermediateResultUnit
 |----------------------|-------------|
 | [`GetImageData`](#getimagedata) | Gets the texture-removed grayscale image.|
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetImageData
 
 Gets the texture-removed grayscale image.
