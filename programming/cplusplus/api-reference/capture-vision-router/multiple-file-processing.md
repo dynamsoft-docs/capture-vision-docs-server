@@ -188,7 +188,7 @@ int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
 CCaptureVisionRouter* router = new CCaptureVisionRouter();
-CImageSourceStateListener* listener = new CImageSourceStateListener();
+CImageSourceStateListener* listener = new CMyImageSourceStateListener();
 router->AddImageSourceStateListener(listener);
 //...
 delete router;

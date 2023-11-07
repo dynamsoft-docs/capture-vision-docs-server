@@ -42,7 +42,7 @@ int SetFile(const CImageData* imageData);
 
 `[in] path` The file path.
 
-`[in] pFileBytes`  The file bytes..
+`[in] pFileBytes`  The file bytes.
 
 `[in] fileSize` The file bytes length.
 
