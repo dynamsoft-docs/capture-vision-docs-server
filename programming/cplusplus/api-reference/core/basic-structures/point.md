@@ -97,8 +97,8 @@ Returns a new CPoint object with the transformed coordinates.
 
 ```cpp
 CPoint originalPoint;
-originalPoint.coordinate[0] = 10;
-originalPoint.coordinate[1] = 20;
+originalPoint[0] = 10;
+originalPoint[1] = 20;
 
 double transformationMatrix[9] = {1, 0, 0, 0, 2, 0, 0, 0, 1};
 

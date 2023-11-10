@@ -26,6 +26,10 @@ class CTransformedGrayscaleImageUnit : public CIntermediateResultUnit
 |----------------------|-------------|
 | [`GetImageData`](#getimagedata) | Gets the image data of the transformed grayscale image.|
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetImageData
 
 Gets the image data of the transformed grayscale image. It may be the original grayscale image or the inverted image of the original grayscale image.

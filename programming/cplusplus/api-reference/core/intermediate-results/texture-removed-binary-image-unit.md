@@ -26,6 +26,10 @@ class CTextureRemovedBinaryImageUnit : public CIntermediateResultUnit
 |----------------------|-------------|
 | [`GetImageData`](#getimagedata) | Gets the image data of the texture-removed binary image. |
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetImageData
 
 Gets the image data of the texture-removed binary image.

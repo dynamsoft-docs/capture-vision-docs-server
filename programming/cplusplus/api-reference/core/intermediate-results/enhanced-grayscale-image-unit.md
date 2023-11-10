@@ -26,6 +26,10 @@ class CEnhancedGrayscaleImageUnit  : public CIntermediateResultUnit
 |----------------------|-------------|
 | [`GetImageData`](#getimagedata) | Gets the enhanced grayscale image data.|
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetImageData
 
 Gets the enhanced grayscale image data.

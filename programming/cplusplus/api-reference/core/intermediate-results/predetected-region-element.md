@@ -26,6 +26,10 @@ class CPredetectedRegionElement : public CRegionObjectElement
 |----------------------|-------------|
 | [`GetModeName`](#getmodename) | Gets the name of the detection mode used to detect this region element. |
 
+### Inherited Methods
+
+{%- include inherited-methods/region-object-element.md -%}
+
 ### GetModeName
 
 Gets the name of the detection mode used to detect this region element.

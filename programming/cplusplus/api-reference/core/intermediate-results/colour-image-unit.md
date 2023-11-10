@@ -26,6 +26,10 @@ class CColourImageUnit : public CIntermediateResultUnit
 |----------------------|-------------|
 | [`GetImageData`](#getimagedata) | Gets the image data of the color image unit. |
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetImageData
 
 Gets the image data of the color image unit.

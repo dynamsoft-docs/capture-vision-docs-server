@@ -27,6 +27,10 @@ class CLineSegmentsUnit: public CIntermediateResultUnit
 | [`GetCount`](#getcount) | Gets the number of line segments in the collection.|
 | [`GetLineSegment`](#getlinesegment) | Gets the specified line segment from the collection. |
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetCount
 
 Gets the number of line segments in the collection.

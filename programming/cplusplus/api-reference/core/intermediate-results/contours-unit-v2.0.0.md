@@ -28,6 +28,10 @@ class CContoursUnit : public CIntermediateResultUnit
 | [`GetCount`](#getcount)   | Gets the number of contours in the unit.    |
 | [`GetContour`](#getcontour) | Gets the contour at the specified index.  |
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetCount
 
 Gets the number of contours in the unit.
