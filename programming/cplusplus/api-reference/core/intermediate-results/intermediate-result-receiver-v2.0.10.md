@@ -169,12 +169,12 @@ virtual void OnDetectedQuadsReceived(ddn::intermediate_results::CDetectedQuadsUn
 Called when normalized images have been received.
 
 ```cpp
-virtual void OnNormalizedImagesReceived(ddn::intermediate_results::CNormalizedImageUnit *pResult, const IntermediateResultExtraInfo* info)
+virtual void OnNormalizedImagesReceived(ddn::intermediate_results::CNormalizedImagesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] pResult` A pointer to the CNormalizedImageUnit object that contains the result.
+`[in] pResult` A pointer to the CNormalizedImagesUnit object that contains the result.
 
 `[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 

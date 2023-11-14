@@ -70,7 +70,7 @@ Returns the types of observed result items.
 
 ### OnCapturedResultReceived
 
-Callback function for all captured results. It will be called once for each captured result.
+Callback function triggered after processing each image and returns all captured results.
 
 ```cpp
 virtual void OnCapturedResultReceived(CCapturedResult* pResult)
@@ -82,7 +82,7 @@ virtual void OnCapturedResultReceived(CCapturedResult* pResult)
 
 ### OnOriginalImageResultReceived
 
-Callback function for original image results. It will be called once for each original image result.
+Callback function triggered after processing each image and returns original image result.
 
 ```cpp
 virtual void OnOriginalImageResultReceived(COriginalImageResultItem* pResult)
@@ -94,7 +94,7 @@ virtual void OnOriginalImageResultReceived(COriginalImageResultItem* pResult)
 
 ### OnDecodedBarcodesReceived
 
-Callback function for decoded barcodes results. It will be called once for each decoded barcodes result.
+Callback function for decoded barcodes results.
 
 ```cpp
 virtual void OnDecodedBarcodesReceived(dbr::CDecodedBarcodesResult* pResult)
