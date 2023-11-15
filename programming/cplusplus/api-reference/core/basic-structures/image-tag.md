@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CImageTag
 
-The CImageTag class represents an image tag that can be attached to an image in a system. It contains information about the image, such as the image ID and the image capture distance mode.
+The `CImageTag` class represents an image tag that can be attached to an image in a system. It contains information about the image, such as the image ID and the image capture distance mode.
 
 ## Definition
 
@@ -43,6 +43,10 @@ virtual ImageTagType GetType() const
 
 Returns the type of the image tag.
 
+**See Also**
+
+[ImageTagType]({{ site.enums }}core/image-tag-type.html?src=cpp&&lang=cpp)
+
 ### Clone
 
 Creates a copy of the image tag.
@@ -54,6 +58,10 @@ virtual CImageTag* Clone() const
 **Return value**
 
 Returns a pointer to a copy of the image tag.
+
+**See Also**
+
+[ImageTagType]({{ site.enums }}core/image-tag-type.html?src=cpp&&lang=cpp)
 
 ### GetImageId
 
@@ -91,6 +99,10 @@ ImageCaptureDistanceMode GetImageCaptureDistanceMode() const
 
 Returns the capture distance mode of the image.
 
+**See Also**
+
+[ImageCaptureDistanceMode]({{ site.enums }}core/image-capture-distance-mode.html?src=cpp&&lang=cpp)
+
 ### SetImageCaptureDistanceMode
 
 Sets the capture distance mode of the image.
@@ -102,3 +114,7 @@ void SetImageCaptureDistanceMode(ImageCaptureDistanceMode mode)
 **Parameters**
 
 `[in] mode` The capture distance mode of the image.
+
+**See Also**
+
+[ImageCaptureDistanceMode]({{ site.enums }}core/image-capture-distance-mode.html?src=cpp&&lang=cpp)

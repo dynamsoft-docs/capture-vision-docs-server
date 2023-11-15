@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CIntermediateResultUnit
 
-The CIntermediateResultUnit class represents an intermediate result unit used in image processing. It is an abstract base class with multiple subclasses, each representing a different type of unit such as pre-detected regions, localized barcodes, decoded barcodes, localized text lines, binary image, gray image, etc.
+The `CIntermediateResultUnit` class represents an intermediate result unit used in image processing. It is an abstract base class with multiple subclasses, each representing a different type of unit such as pre-detected regions, localized barcodes, decoded barcodes, localized text lines, binary image, gray image, etc.
 
 ## Definition
 
@@ -74,6 +74,10 @@ const CImageTag* GetOriginalImageTag() const
 
 Returns the image tag of the original image.
 
+**See Also**
+
+[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
+
 ### GetType
 
 Gets the type of the intermediate result unit.
@@ -86,6 +90,10 @@ virtual IntermediateResultUnitType GetType() const = 0
 
 Returns the type of the intermediate result unit.
 
+**See Also**
+
+[IntermediateResultUnitType]({{ site.enums }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
+
 ### Clone
 
 Creates a copy of the intermediate result unit.
@@ -97,6 +105,10 @@ virtual CIntermediateResultUnit* Clone() const = 0
 **Return value**
 
 Returns a copy of the intermediate result unit.
+
+**See Also**
+
+[CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html)
 
 ### SetHashId
 
@@ -134,6 +146,10 @@ void SetOriginalImageTag(const CImageTag* _tag)
 
 `[in] _tag` The image tag to set.
 
+**See Also**
+
+[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
+
 ### Retain
 
 Increases the reference count of the intermediate result unit.
@@ -152,7 +168,7 @@ virtual void Release() = 0
 
 ### GetTransformMatrix
 
-Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp).
+Gets the transformation matrix via `TransformMatrixType`.
 
 ```cpp
 void GetTransformMatrix(TransformMatrixType matrixType, double matrix[9]) const;
@@ -171,9 +187,13 @@ The corresponding transformation matrices are as follows:
 - rotated image to original image
 - original image to rotated image
 
+**See Also**
+
+[TransformMatrixType]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp)
+
 ### SetTransformMatrix
 
-Sets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp).
+Sets the transformation matrix via `TransformMatrixType`.
 
 ```cpp
 void SetTransformMatrix(TransformMatrixType matrixType, double matrix[9]);
@@ -191,3 +211,8 @@ The corresponding transformation matrices are as follows:
 - original image to local image
 - rotated image to original image
 - original image to rotated image
+- 
+**See Also**
+
+[TransformMatrixType]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp)
+

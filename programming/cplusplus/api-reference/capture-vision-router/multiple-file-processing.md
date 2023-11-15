@@ -59,6 +59,14 @@ router->SetInput(fetcher);
 delete router;
 ```
 
+**See Also**
+
+[CImageSourceAdapter]({{ site.dcv_cpp_api }}core/basic-structures/image-source-adapter.html)
+
+[CDirectoryFetcher]({{ site.dcv_cpp_api }}utility/directory-fetcher.html)
+
+[CFileFetcher]({{ site.dcv_cpp_api }}utility/file-fetcher.html)
+
 ## GetInput
 
 Gets the attached image source adapter object of the capture vision router. 
@@ -84,6 +92,14 @@ CImageSourceAdapter* input = router->GetInput();
 //...
 delete router;
 ```
+
+**See Also**
+
+[CImageSourceAdapter]({{ site.dcv_cpp_api }}core/basic-structures/image-source-adapter.html)
+
+[CDirectoryFetcher]({{ site.dcv_cpp_api }}utility/directory-fetcher.html)
+
+[CFileFetcher]({{ site.dcv_cpp_api }}utility/file-fetcher.html)
 
 ## AddCaptureStateListener
 
@@ -120,6 +136,10 @@ router->AddCaptureStateListener(listener);
 //...
 delete router;
 ```
+
+**See Also**
+
+[CCaptureStateListener]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 
 ## RemoveCaptureStateListener
 
@@ -158,6 +178,10 @@ router->RemoveCaptureStateListener(listener);
 delete router;
 ```
 
+**See Also**
+
+[CCaptureStateListener]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+
 ## AddImageSourceStateListener
 
 Adds an object that listens to state changes of the image source.
@@ -193,6 +217,10 @@ router->AddImageSourceStateListener(listener);
 //...
 delete router;
 ```
+
+**See Also**
+
+[CImageSourceStateListener]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
 ## RemoveImageSourceStateListener
 
@@ -231,6 +259,10 @@ router->RemoveImageSourceStateListener(listener);
 delete router;
 ```
 
+**See Also**
+
+[CImageSourceStateListener]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+
 ## AddResultReceiver
 
 Adds an object as the receiver of captured results.
@@ -266,6 +298,10 @@ router->AddResultReceiver(receiver);
 //...
 delete router;
 ```
+
+**See Also**
+
+[CCapturedResultReceiver]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html)
 
 ## RemoveResultReceiver
 
@@ -304,6 +340,10 @@ router->RemoveResultReceiver(receiver);
 delete router;
 ```
 
+**See Also**
+
+[CCapturedResultReceiver]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html)
+
 ## AddResultFilter
 
 Adds an object as the filter of captured results.
@@ -332,6 +372,10 @@ router->AddResultFilter(filter);
 //...
 delete router;
 ```
+
+**See Also**
+
+[CCapturedResultFilter]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-filter.html)
 
 ## RemoveResultFilter
 
@@ -362,6 +406,10 @@ router->AddResultFilter(filter);
 router->RemoveResultFilter(filter);
 delete router;
 ```
+
+**See Also**
+
+[CCapturedResultFilter]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-filter.html)
 
 ## StartCapturing
 

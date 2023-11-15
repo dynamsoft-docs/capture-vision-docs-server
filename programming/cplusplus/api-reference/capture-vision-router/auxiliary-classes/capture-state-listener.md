@@ -11,7 +11,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-
 
 # CCaptureStateListener
 
-The CCaptureStateListener class is an abstract class that defines a listener for capture state changes. 
+The `CCaptureStateListener` class is an abstract class that defines a listener for capture state changes. 
 
 ## Definition
 
@@ -44,3 +44,7 @@ virtual void OnCaptureStateChanged(CaptureState state) = 0;
 **Return value**
 
 This method does not return a value. It is a pure virtual method and must be implemented by a derived class.
+
+**See Also**
+
+[CaptureState]({{ site.enums }}capture-vision-router/capture-state.html?src=cpp&&lang=cpp)

@@ -56,7 +56,11 @@ const CImageTag* GetOriginalImageTag() const
 
 **Return value**
 
-Returns a pointer to the CImageTag object containing the tag of the original image. You are not required to release the memory pointed to by the returned pointer.
+Returns a pointer to the `CImageTag` object containing the tag of the original image. You are not required to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
 
 ### GetItemsCount
 
@@ -84,7 +88,11 @@ const CCapturedResultItem* GetItem(int index) const
 
 **Return value**
 
-Returns a pointer to the CCapturedResultItem object at the specified index.
+Returns a pointer to the `CCapturedResultItem` object at the specified index.
+
+**See Also**
+
+[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
 
 ### HasItem
 
@@ -102,6 +110,10 @@ bool HasItem(const CCapturedResultItem* item) const
 
 Returns a bool value indicating whether the item is present in the array or not.
 
+**See Also**
+
+[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+
 ### RemoveItem
 
 Remove a specific item from the array in the captured result.
@@ -117,6 +129,10 @@ int RemoveItem(const CCapturedResultItem* item)
 **Return value**
 
 Return value indicating whether the deletion was successful or not.
+
+**See Also**
+
+[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
 
 ### GetRotationTransformMatrix
 
@@ -141,6 +157,10 @@ int GetErrorCode() const
 **Return value**
 
 Returns the error code of the capture operation.
+
+**See Also**
+
+[ErrorCode]({{ site.enums }}core/error-code.html?src=cpp&&lang=cpp)
 
 ### GetErrorString
 

@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CIntermediateResult
 
-The CIntermediateResult class represents a container containing a collection of CIntermediateResultUnit objects.
+The `CIntermediateResult` class represents a container containing a collection of `CIntermediateResultUnit` objects.
 
 ## Definition
 
@@ -24,12 +24,12 @@ class CIntermediateResult
 
 | Method | Description |
 |--------|-------------|
-| [`GetCount`](#getcount) | Gets the number of CIntermediateResultUnit objects in the collection. |
-| [`GetIntermediateResultUnit`](#getintermediateresultunit) | Gets a pointer to a specific CIntermediateResultUnit object in the collection. |
+| [`GetCount`](#getcount) | Gets the number of `CIntermediateResultUnit` objects in the collection. |
+| [`GetIntermediateResultUnit`](#getintermediateresultunit) | Gets a pointer to a specific `CIntermediateResultUnit` object in the collection. |
 
 ### GetCount
 
-Gets the number of CIntermediateResultUnit objects in the collection.
+Gets the number of `CIntermediateResultUnit` objects in the collection.
 
 ```cpp
 virtual int GetCount() const
@@ -37,11 +37,11 @@ virtual int GetCount() const
 
 **Return value**
 
-Returns the number of CIntermediateResultUnit objects in the collection.
+Returns the number of `CIntermediateResultUnit` objects in the collection.
 
 ### GetIntermediateResultUnit
 
-Gets a pointer to a specific CIntermediateResultUnit object in the collection.
+Gets a pointer to a specific `CIntermediateResultUnit` object in the collection.
 
 ```cpp
 virtual const CIntermediateResultUnit* GetIntermediateResultUnit(int index) const
@@ -49,8 +49,12 @@ virtual const CIntermediateResultUnit* GetIntermediateResultUnit(int index) cons
 
 **Parameters**
 
-`[in] index` The index of the CIntermediateResultUnit object to retrieve.
+`[in] index` The index of the `CIntermediateResultUnit` object to retrieve.
 
 **Return value**
 
-Returns a const pointer to the specified CIntermediateResultUnit object in the collection. You don't need to release the memory pointed to by the returned pointer.
+Returns a const pointer to the specified `CIntermediateResultUnit` object in the collection. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html)

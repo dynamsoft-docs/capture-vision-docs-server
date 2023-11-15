@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CEdge
 
-CEdge is a structure composed of two Corner points in an image. A Corner represents a point at which the image's brightness or color sharply changes. Therefore, a CEdge is a line segment connecting two such points that have been identified as Corners.
+The class `CEdge` is a structure composed of two Corner points in an image. A Corner represents a point at which the image's brightness or color sharply changes. Therefore, a CEdge is a line segment connecting two such points that have been identified as Corners.
 
 ## Definition
 
@@ -35,6 +35,10 @@ The start corner point of the edge.
 CCorner startCorner
 ```
 
+**See Also**
+
+[CCorner]({{ site.dcv_cpp_api }}core/basic-structures/corner.html)
+
 ### endCorner
 
 The end corner point of the edge.
@@ -42,3 +46,7 @@ The end corner point of the edge.
 ```cpp
 CCorner endCorner
 ```
+
+**See Also**
+
+[CCorner]({{ site.dcv_cpp_api }}core/basic-structures/corner.html)

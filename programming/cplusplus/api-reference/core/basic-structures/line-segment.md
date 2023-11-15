@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CLineSegment
 
-The CLineSegment class represents a line segment in 2D space. It contains two CPoint objects, which represent the start point and end point of the line segment.
+The `CLineSegment` class represents a line segment in 2D space. It contains two CPoint objects, which represent the start point and end point of the line segment.
 
 ## Definition
 
@@ -41,6 +41,10 @@ const CPoint&  GetStartPoint() const
 
 Returns the start point of the line segment.
 
+**See Also**
+
+[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+
 ### GetEndPoint
 
 Gets the end point of the line segment.
@@ -52,6 +56,10 @@ const CPoint&  GetEndPoint() const
 **Return Value**
 
 Returns the end point of the line segment.
+
+**See Also**
+
+[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
 
 ### SetStartPoint
 
@@ -65,6 +73,10 @@ void SetStartPoint(const CPoint& pt)
 
 `[in] pt`: The start point of the line segment.
 
+**See Also**
+
+[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+
 ### SetEndPoint
 
 Sets the end point of the line segment.
@@ -76,3 +88,8 @@ void SetEndPoint(const CPoint& pt)
 **Parameters**
 
 `[in] pt`: The end point of the line segment.
+
+**See Also**
+
+[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+

@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CProactiveImageSourceAdapter
 
-The CProactiveImageSourceAdapter class is an abstract base class that extends the CImageSourceAdapter class. It provides an interface for proactively fetching images in a separate thread.
+The `CProactiveImageSourceAdapter` class is an abstract base class that extends the `CImageSourceAdapter` class. It provides an interface for proactively fetching images in a separate thread.
 
 ## Definition
 
@@ -38,7 +38,11 @@ virtual CImageData* FetchImage() = 0;
 
 **Return value**
 
-Returns a pointer to the CImageData object representing the fetched image.
+Returns a pointer to the `CImageData` object representing the fetched image.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
 
 ### SetImageFetchInterval
 

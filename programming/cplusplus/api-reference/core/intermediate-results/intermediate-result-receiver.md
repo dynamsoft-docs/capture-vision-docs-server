@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CIntermediateResultReceiver
 
-The CIntermediateResultReceiver class is responsible for receiving intermediate results of different types. It provides virtual functions for each type of result, which are called when the corresponding result is received.
+The `CIntermediateResultReceiver` class is responsible for receiving intermediate results of different types. It provides virtual functions for each type of result, which are called when the corresponding result is received.
 
 ## Definition
 
@@ -54,6 +54,7 @@ class CIntermediateResultReceiver
 | [`OnDeformationResistedBarcodeImageUnitReceived`](#ondeformationresistedbarcodeimageunitreceived) | Called when deformation resisted barcode image units have been received. |
 | [`OnComplementedBarcodeImageUnitReceived`](#oncomplementedbarcodeimageunitreceived) | Called when complemented barcode image units have been received. |
 
+
 ### GetObservationParameters
 
 Gets the observation parameters of the intermediate result receiver.
@@ -64,7 +65,11 @@ CObservationParameters* GetObservationParameters()
 
 **Return value**
 
-Returns the object of CObservationParameters. The default parameters are to observe all intermediate result unit types and all tasks.
+Returns the object of `CObservationParameters`. The default parameters are to observe all intermediate result unit types and all tasks.
+
+**See Also**
+
+[CObservationParameters]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html)
 
 ### OnTaskResultsReceived
 
@@ -76,9 +81,15 @@ virtual void OnTaskResultsReceived(CIntermediateResult *pResult, const Intermedi
 
 **Parameters**
 
-`[in] pResult` A pointer to the CIntermediateResult object that contains several result units.
+`[in] pResult` A pointer to the `CIntermediateResult` object that contains several result units.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CIntermediateResult]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnPredetectedRegionsReceived
 
@@ -90,9 +101,15 @@ virtual void OnPredetectedRegionsReceived(CPredetectedRegionsUnit *pResult, cons
 
 **Parameters**
 
-`[in] pResult` A pointer to the CPredetectedRegionsUnit object that contains the result.
+`[in] pResult` A pointer to the `CPredetectedRegionsUnit` object that contains the result.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CPredetectedRegionsUnit]({{ site.dcv_cpp_api }}core/intermediate-results/predetected-regions-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnLocalizedBarcodesReceived
 
@@ -104,9 +121,15 @@ virtual void OnLocalizedBarcodesReceived(dbr::intermediate_results::CLocalizedBa
 
 **Parameters**
 
-`[in] pResult` A pointer to the CLocalizedBarcodesUnit object that contains the result.
+`[in] pResult` A pointer to the `CLocalizedBarcodesUnit` object that contains the result.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CLocalizedBarcodesUnit]({{ site.dbr_cpp_api }}localized-barcodes-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnDecodedBarcodesReceived
 
@@ -118,9 +141,15 @@ virtual void OnDecodedBarcodesReceived(dbr::intermediate_results::CDecodedBarcod
 
 **Parameters**
 
-`[in] pResult` A pointer to the CDecodedBarcodesUnit object that contains the result.
+`[in] pResult` A pointer to the `CDecodedBarcodesUnit` object that contains the result.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CDecodedBarcodesUnit]({{ site.dbr_cpp_api }}decoded-barcodes-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnLocalizedTextLinesReceived
 
@@ -132,9 +161,15 @@ virtual void OnLocalizedTextLinesReceived(dlr::intermediate_results::CLocalizedT
 
 **Parameters**
 
-`[in] pResult` A pointer to the CLocalizedTextLinesUnit object that contains the result.
+`[in] pResult` A pointer to the `CLocalizedTextLinesUnit` object that contains the result.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CLocalizedTextLinesUnit]({{ site.dlr_cpp_api }}localized-text-lines-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnRecognizedTextLinesReceived
 
@@ -146,9 +181,15 @@ virtual void OnRecognizedTextLinesReceived(dlr::intermediate_results::CRecognize
 
 **Parameters**
 
-`[in] pResult` A pointer to the CRecognizedTextLinesUnit object that contains the result.
+`[in] pResult` A pointer to the `CRecognizedTextLinesUnit` object that contains the result.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CRecognizedTextLinesUnit]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnDetectedQuadsReceived
 
@@ -160,9 +201,15 @@ virtual void OnDetectedQuadsReceived(ddn::intermediate_results::CDetectedQuadsUn
 
 **Parameters**
 
-`[in] pResult` A pointer to the CDetectedQuadsUnit object that contains the result.
+`[in] pResult` A pointer to the `CDetectedQuadsUnit` object that contains the result.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CDetectedQuadsUnit]({{ site.ddn_cpp_api }}detected-quads-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnNormalizedImagesReceived
 
@@ -174,9 +221,15 @@ virtual void OnNormalizedImagesReceived(ddn::intermediate_results::CNormalizedIm
 
 **Parameters**
 
-`[in] pResult` A pointer to the CNormalizedImagesUnit object that contains the result.
+`[in] pResult` A pointer to the `CNormalizedImagesUnit` object that contains the result.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CNormalizedImagesUnit]({{ site.ddn_cpp_api }}normalized-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnColourImageUnitReceived
 
@@ -190,7 +243,13 @@ virtual void OnColourImageUnitReceived(CColourImageUnit *pResult, const Intermed
 
 `[in] pResult` A pointer to the received colour image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CColourImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/colour-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnScaledDownColourImageUnitReceived
 
@@ -204,7 +263,13 @@ virtual void OnScaledDownColourImageUnitReceived(CScaledDownColourImageUnit *pRe
 
 `[in] pResult` A pointer to the received scaled-down colour image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CScaledDownColourImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnGrayscaleImageUnitReceived
 
@@ -218,7 +283,13 @@ virtual void OnGrayscaleImageUnitReceived(CGrayscaleImageUnit *pResult, const In
 
 `[in] pResult` A pointer to the received grayscale image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CGrayscaleImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/grayscale-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTransformedGrayscaleImageUnitReceived
 
@@ -232,7 +303,13 @@ virtual void OnTransformedGrayscaleImageUnitReceived(CTransformedGrayscaleImageU
 
 `[in] pResult` A pointer to the received transformed grayscale image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CTransformedGrayscaleImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/transformed-grayscale-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnEnhancedGrayscaleImageUnitReceived
 
@@ -246,7 +323,13 @@ virtual void OnEnhancedGrayscaleImageUnitReceived(CEnhancedGrayscaleImageUnit *p
 
 `[in] pResult` A pointer to the received enhanced grayscale image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CEnhancedGrayscaleImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/enhanced-grayscale-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnBinaryImageUnitReceived
 
@@ -260,7 +343,13 @@ virtual void OnBinaryImageUnitReceived(CBinaryImageUnit *pResult, const Intermed
 
 `[in] pResult` A pointer to the received binary image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CBinaryImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/binary-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextureDetectionResultUnitReceived
 
@@ -274,7 +363,13 @@ virtual void OnTextureDetectionResultUnitReceived(CTextureDetectionResultUnit *p
 
 `[in] pResult` A pointer to the received texture detection result unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CTextureDetectionResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/texture-detection-result-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextureRemovedGrayscaleImageUnitReceived
 
@@ -288,7 +383,13 @@ virtual void OnTextureRemovedGrayscaleImageUnitReceived(CTextureRemovedGrayscale
 
 `[in] pResult` A pointer to the received texture-removed grayscale image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CTextureRemovedGrayscaleImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/texture-removed-grayscale-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextureRemovedBinaryImageUnitReceived
 
@@ -302,7 +403,13 @@ virtual void OnTextureRemovedBinaryImageUnitReceived(CTextureRemovedBinaryImageU
 
 `[in] pResult` A pointer to the received texture-removed binary image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CTextureRemovedBinaryImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/texture-removed-binary-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnContoursUnitReceived
 
@@ -316,7 +423,13 @@ virtual void OnContoursUnitReceived(CContoursUnit *pResult, const IntermediateRe
 
 `[in] pResult` A pointer to the contours unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CContoursUnit]({{ site.dcv_cpp_api }}core/intermediate-results/contours-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnLineSegmentsUnitReceived
 
@@ -330,7 +443,13 @@ virtual void OnLineSegmentsUnitReceived(CLineSegmentsUnit *pResult, const Interm
 
 `[in] pResult` A pointer to the line segments unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CLineSegmentsUnit]({{ site.dcv_cpp_api }}core/intermediate-results/line-segments-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextZonesUnitReceived
 
@@ -344,7 +463,13 @@ virtual void OnTextZonesUnitReceived(CTextZonesUnit *pResult, const Intermediate
 
 `[in] pResult` A pointer to the text zones unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CTextZonesUnit]({{ site.dcv_cpp_api }}core/intermediate-results/text-zones-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextRemovedBinaryImageUnitReceived
 
@@ -358,7 +483,13 @@ virtual void OnTextRemovedBinaryImageUnitReceived(CTextRemovedBinaryImageUnit *p
 
 `[in] pResult` A pointer to the text removed binary image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CTextRemovedBinaryImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/text-removed-binary-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnLongLinesUnitReceived
 
@@ -372,7 +503,13 @@ virtual void OnLongLinesUnitReceived(ddn::intermediate_results::CLongLinesUnit *
 
 `[in] pResult` A pointer to the long lines unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CLongLinesUnit]({{ site.ddn_cpp_api }}long-lines-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnCornersUnitReceived
 
@@ -386,7 +523,13 @@ virtual void OnCornersUnitReceived(ddn::intermediate_results::CCornersUnit *pRes
 
 `[in] pResult` A pointer to the corners unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CCornersUnit]({{ site.ddn_cpp_api }}corners-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnCandidateQuadEdgesUnitReceived
 
@@ -400,7 +543,13 @@ virtual void OnCandidateQuadEdgesUnitReceived(ddn::intermediate_results::CCandid
 
 `[in] pResult` A pointer to the candidate quad edges unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CCandidateQuadEdgesUnit]({{ site.ddn_cpp_api }}candidate-quad-edges-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnCandidateBarcodeZonesUnitReceived
 
@@ -414,7 +563,13 @@ virtual void OnCandidateBarcodeZonesUnitReceived(dbr::intermediate_results::CCan
 
 `[in] pResult` A pointer to the candidate barcode zones unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CCandidateBarcodeZonesUnit]({{ site.dbr_cpp_api }}candidate-barcode-zones-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnScaledUpBarcodeImageUnitReceived
 
@@ -428,7 +583,13 @@ virtual void OnScaledUpBarcodeImageUnitReceived(dbr::intermediate_results::CScal
 
 `[in] pResult` A pointer to the scaled up barcode image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CScaledUpBarcodeImageUnit]({{ site.dbr_cpp_api }}scaled-up-barcode-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnDeformationResistedBarcodeImageUnitReceived
 
@@ -442,7 +603,13 @@ virtual void OnDeformationResistedBarcodeImageUnitReceived(dbr::intermediate_res
 
 `[in] pResult` A pointer to the deformation resisted barcode image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CDeformationResistedBarcodeImageUnit]({{ site.dbr_cpp_api }}deformation-resisted-barcode-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnComplementedBarcodeImageUnitReceived
 
@@ -456,4 +623,11 @@ virtual void OnComplementedBarcodeImageUnitReceived(dbr::intermediate_results::C
 
 `[in] pResult` A pointer to the complemented barcode image unit.
 
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
+`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+
+**See Also**
+
+[CComplementedBarcodeImageUnit]({{ site.dbr_cpp_api }}complemented-barcode-image-unit.html)
+
+[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+

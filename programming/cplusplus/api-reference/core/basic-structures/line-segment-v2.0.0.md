@@ -9,7 +9,7 @@ permalink: /programming/cplusplus/api-reference/core/basic-structures/line-segme
 
 # CLineSegment
 
-The CLineSegment class represents a line segment in 2D space. It contains two CPoint objects, which represent the start point and end point of the line segment.
+The `CLineSegment` class represents a line segment in 2D space. It contains two CPoint objects, which represent the start point and end point of the line segment.
 
 ## Definition
 

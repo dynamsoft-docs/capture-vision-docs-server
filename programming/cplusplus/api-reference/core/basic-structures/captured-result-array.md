@@ -53,4 +53,8 @@ virtual const CCapturedResult* GetResult(int index) const
 
 **Return value**
 
-Returns a pointer to the CCapturedResult object at the given index. You are not required to release the memory pointed to by the returned pointer.
+Returns a pointer to the `CCapturedResult` object at the given index. You are not required to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CCapturedResult]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)

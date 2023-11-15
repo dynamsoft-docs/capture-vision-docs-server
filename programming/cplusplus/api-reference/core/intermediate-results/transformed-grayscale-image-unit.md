@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CTransformedGrayscaleImageUnit
 
-The CTransformedGrayscaleImageUnit class is a subclass of CIntermediateResultUnit that represents a transformed grayscale image. It may be the original grayscale image or the inverted image of the original grayscale image.
+The `CTransformedGrayscaleImageUnit` class is a subclass of `CIntermediateResultUnit` that represents a transformed grayscale image. It may be the original grayscale image or the inverted image of the original grayscale image.
 
 ## Definition
 
@@ -40,4 +40,8 @@ virtual const CImageData* GetImageData() const
 
 **Return value**
 
-Returns a const pointer to a CImageData object that represents the image data of the transformed grayscale image. You don't need to release the memory pointed to by the returned pointer.
+Returns a const pointer to a `CImageData` object that represents the image data of the transformed grayscale image. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

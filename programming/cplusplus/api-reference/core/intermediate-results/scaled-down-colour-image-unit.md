@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CScaledDownColourImageUnit
 
-The CScaledDownColourImageUnit class represents an intermediate result unit that contains scaled down color image. It is derived from the CIntermediateResultUnit class.
+The `CScaledDownColourImageUnit` class represents an intermediate result unit that contains scaled down color image. It is derived from the `CIntermediateResultUnit` class.
 
 ## Definition
 
@@ -40,4 +40,8 @@ virtual const CImageData* GetImageData() const
 
 **Return value**
 
-Returns a pointer to the CImageData object that contains the image data of the unit. You are not required to release the memory pointed to by the returned pointer.
+Returns a pointer to the `CImageData` object that contains the image data of the unit. You are not required to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CPredetectedRegionElement
 
-The CPredetectedRegionElement class represents a region element that has been pre-detected in an image. It is a subclass of the CRegionObjectElement.
+The `CPredetectedRegionElement` class represents a region element that has been pre-detected in an image. It is a subclass of the `CRegionObjectElement`.
 
 ## Definition
 

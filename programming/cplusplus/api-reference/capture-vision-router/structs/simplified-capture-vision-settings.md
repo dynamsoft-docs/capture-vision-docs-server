@@ -55,9 +55,11 @@ int capturedResultItemTypes
 
 **Values**
 
-The value should be a bitwise OR combination of one or more of the following constants:
-- `DCV_CAPTURED_ITEM_TYPE_BARCODE`
-- `DCV_CAPTURED_ITEM_TYPE_LABEL`
+The value should be a bitwise OR combination of one or more of enumeration `CapturedResultItemType`:
+
+**See Also**
+
+[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### roi
 
@@ -66,6 +68,10 @@ Specifies the region of interest (ROI) where the image capture and recognition w
 ```cpp
 CQuadrilateral roi
 ```
+
+**See Also**
+
+[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### roiMeasuredInPercentage
 
@@ -76,6 +82,7 @@ int roiMeasuredInPercentage
 ```
 
 **Values**
+
 - `0` if the ROI is measured in pixels.
 - `1` if the ROI is measured as a percentage of the image size.
 
@@ -103,6 +110,10 @@ Specifies the settings for barcode recognition.
 SimplifiedBarcodeReaderSettings barcodeSettings
 ```
 
+**See Also**
+
+[SimplifiedBarcodeReaderSettings]({{ site.dbr_cpp_api }}simplified-barcode-reader-settings.html)
+
 ### labelSettings
 
 Specifies the settings for label recognition.
@@ -110,6 +121,10 @@ Specifies the settings for label recognition.
 ```cpp
 SimplifiedLabelRecognizerSettings labelSettings
 ```
+
+**See Also**
+
+[SimplifiedLabelRecognizerSettings]({{ site.dlr_cpp_api }}simplified-label-recognizer-settings.html)
 
 ### minImageCaptureInterval
 

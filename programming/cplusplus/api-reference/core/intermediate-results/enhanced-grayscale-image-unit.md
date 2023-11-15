@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CEnhancedGrayscaleImageUnit
 
-The CEnhancedGrayscaleImageUnit class represents an intermediate result unit that contains an enhanced grayscale image data. Gray enhancement methods include gray equalization, gray smoothing, gray sharpening and smoothing.
+The `CEnhancedGrayscaleImageUnit` class represents an intermediate result unit that contains an enhanced grayscale image data. Gray enhancement methods include gray equalization, gray smoothing, gray sharpening and smoothing.
 
 ## Definition
 
@@ -40,4 +40,8 @@ virtual const CImageData* GetImageData() const
 
 **Return value**
 
-Returns a const pointer to the CImageData object that contains the enhanced grayscale image data. You don't need to release the memory pointed to by the returned pointer.
+Returns a const pointer to the `CImageData` object that contains the enhanced grayscale image data. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # IntermediateResultExtraInfo
 
-The IntermediateResultExtraInfo structure represents the extra information for generating an intermediate result unit.
+The `IntermediateResultExtraInfo` structure represents the extra information for generating an intermediate result unit.
 
 ## Definition
 
@@ -66,6 +66,10 @@ Specifies the SectionType that generates the intermediate result.
 ```cpp
 SectionType sectionType
 ```
+
+**See Also**
+
+[SectionType]({{ site.enums }}core/section-type.html?src=cpp&&lang=cpp)
 
 ### reserved
 

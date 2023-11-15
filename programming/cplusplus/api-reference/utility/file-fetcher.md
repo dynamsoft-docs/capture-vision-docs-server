@@ -58,6 +58,10 @@ Returns an integer value that represents the success or failure of the operation
 | EC_FILE_NOT_FOUND | -10005 | The file is not found. |
 | EC_FILE_TYPE_NOT_SUPPORTED | -10006 | The file type is not supported. |
 
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
 ### SetPDFReadingParameter
 
 Sets the parameters for reading PDF files.
@@ -77,6 +81,10 @@ Returns an integer value that represents the success or failure of the operation
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |
 | EC_PARAMETER_VALUE_INVALID | -10038 | There exists invalid parameter value in your JSON data. |
+
+**See Also**
+
+[CPDFReadingParameter]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html)
 
 ### SetPages
 

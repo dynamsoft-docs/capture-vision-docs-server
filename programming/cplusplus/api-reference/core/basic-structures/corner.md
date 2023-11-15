@@ -37,6 +37,10 @@ The type of the corner.
 CornerType type
 ```
 
+**See Also**
+
+[CornerType]({{ site.enums }}core/corner-type.html?src=cpp&&lang=cpp)
+
 ### intersection
 
 The intersection point of the corner.
@@ -44,6 +48,10 @@ The intersection point of the corner.
 ```cpp
 CPoint intersection
 ```
+
+**See Also**
+
+[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
 
 ### line1
 
@@ -53,6 +61,10 @@ One of the line connected to the corner.
 CLineSegment line1
 ```
 
+**See Also**
+
+[CLineSegment]({{ site.dcv_cpp_api }}core/basic-structures/line-segment.html)
+
 ### line2
 
 One of the line connected to the corner.
@@ -60,3 +72,7 @@ One of the line connected to the corner.
 ```cpp
 CLineSegment line2
 ```
+
+**See Also**
+
+[CLineSegment]({{ site.dcv_cpp_api }}core/basic-structures/line-segment.html)

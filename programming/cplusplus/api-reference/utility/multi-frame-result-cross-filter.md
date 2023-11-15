@@ -46,6 +46,10 @@ void EnableResultCrossVerification(int resultItemTypes, bool enable);
 `[in] resultItemTypes` The or value of the captured result item types.  
 `[in] enable` Set whether to enable result verification.
 
+**See Also**
+
+[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+
 ### IsResultCrossVerificationEnabled
 
 Determines whether the result cross verification feature is enabled for the specific captured result item type.
@@ -61,6 +65,10 @@ bool IsResultCrossVerificationEnabled(CapturedResultItemType type);
 **Return value**
 
 Returns a bool value indicating whether result verification is enabled for the specific captured result item type.
+
+**See Also**
+
+[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### EnableResultDeduplication
 
@@ -79,6 +87,10 @@ void EnableResultDeduplication(int resultItemTypes, bool enable);
 `[in] resultItemTypes` The or value of the captured result item types.  
 `[in] enable` Set whether to enable result result deduplication.
 
+**See Also**
+
+[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+
 ### IsResultDeduplicationEnabled
 
 Determines whether the result deduplication feature is enabled for the specific result item type.
@@ -94,6 +106,10 @@ bool IsResultDeduplicationEnabled(CapturedResultItemType type);
 **Return value**
 
 Returns a bool value indicating whether result deduplication is enabled for the specific result item type.
+
+**See Also**
+
+[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### SetDuplicateForgetTime
 
@@ -112,6 +128,10 @@ void SetDuplicateForgetTime(int resultItemTypes, int time);
 `[in] resultItemTypes` The or value of the captured result item types.  
 `[in] time` The duplicate forget time measured in milliseconds. The value rang is [1, 180000].
 
+**See Also**
+
+[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+
 ### GetDuplicateForgetTime
 
 Gets the duplicate forget time for a specific captured result item type.
@@ -127,3 +147,8 @@ int GetDuplicateForgetTime(CapturedResultItemType type);
 **Return value**
 
 Returns the duplicate forget time for the specific captured result item type.
+
+**See Also**
+
+[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+

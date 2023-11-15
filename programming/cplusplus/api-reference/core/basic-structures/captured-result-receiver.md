@@ -30,13 +30,13 @@ class CCapturedResultReceiver
 | [`CCapturedResultReceiver`](#ccapturedresultreceiver-constructor) | Constructor                                          |
 | [`~CCapturedResultReceiver`](#ccapturedresultreceiver-destructor) | Destructor                                           |
 | [`GetObservedResultItemTypes`](#getobservedresultitemtypes)       | Gets the types of observed result items.             |
-| [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
-| [`OnOriginalImageResultReceived`](#onoriginalimageresultreceived) | Callback function for original image results.        |
-| [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived)         | Callback function for decoded barcodes results.      |
-| [`OnRecognizedTextLinesReceived`](#onrecognizedtextlinesreceived) | Callback function for recognized text lines results. |
-| [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function for detected quads results.        |
-| [`OnNormalizedImagesReceived`](#onnormalizedimagesreceived)       | Callback function for normalized images results.     |
-| [`OnParsedResultsReceived`](#onparsedresultsreceived)             | Callback function for parsed results.                |
+| [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function triggered after processing each image and returns all captured results.          |
+| [`OnOriginalImageResultReceived`](#onoriginalimageresultreceived) | Callback function triggered when start processing each image and returns the original image result.        |
+| [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived)         | Callback function triggered after processing each image and returns all decoded barcodes results.      |
+| [`OnRecognizedTextLinesReceived`](#onrecognizedtextlinesreceived) | Callback function triggered after processing each image and returns all recognized text lines results. |
+| [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function triggered after processing each image and returns all detected quads results.        |
+| [`OnNormalizedImagesReceived`](#onnormalizedimagesreceived)       | Callback function triggered after processing each image and returns all normalized images results.     |
+| [`OnParsedResultsReceived`](#onparsedresultsreceived)             | Callback function triggered after processing each image and returns all parsed results.                |
 | [`GetName`](#getname)       | Gets the name of the captured result receiver.                                             |
 | [`SetName`](#setname)       | Sets the name of the captured result receiver.                                             |
 
@@ -80,9 +80,13 @@ virtual void OnCapturedResultReceived(CCapturedResult* pResult)
 
 `[in] pResult` The captured result.
 
+**See Also**
+
+[CCapturedResult]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
+
 ### OnOriginalImageResultReceived
 
-Callback function triggered after processing each image and returns original image result.
+Callback function triggered when start processing each image and returns the original image result. For the callback to be triggered, it is essential that the parameter `OutputOriginalImage` is set to value `1`.
 
 ```cpp
 virtual void OnOriginalImageResultReceived(COriginalImageResultItem* pResult)
@@ -92,9 +96,13 @@ virtual void OnOriginalImageResultReceived(COriginalImageResultItem* pResult)
 
 `[in] pResult` The original image result.
 
+**See Also**
+
+[COriginalImageResultItem]({{ site.dcv_cpp_api }}core/basic-structures/original-image-result-item.html)
+
 ### OnDecodedBarcodesReceived
 
-Callback function for decoded barcodes results.
+Callback function triggered after processing each image and returns all decoded barcodes. For the callback to be triggered, it is essential that the `BarcodeReaderTask` is properly configured.
 
 ```cpp
 virtual void OnDecodedBarcodesReceived(dbr::CDecodedBarcodesResult* pResult)
@@ -104,9 +112,13 @@ virtual void OnDecodedBarcodesReceived(dbr::CDecodedBarcodesResult* pResult)
 
 `[in] pResult` The decoded barcodes result.
 
+**See Also**
+
+[CDecodedBarcodesResult]({{ site.dbr_cpp_api }}decoded-barcodes-result.html)
+
 ### OnRecognizedTextLinesReceived
 
-Callback function for recognized text lines results. It will be called once for each recognized text lines result.
+Callback function triggered after processing each image and returns all recognized text lines. For the callback to be triggered, it is essential that the `LabelRecognizerTask` is properly configured.
 
 ```cpp
 virtual void OnRecognizedTextLinesReceived(dlr::CRecognizedTextLinesResult* pResult)
@@ -116,9 +128,13 @@ virtual void OnRecognizedTextLinesReceived(dlr::CRecognizedTextLinesResult* pRes
 
 `[in] pResult` The recognized text lines result.
 
+**See Also**
+
+[CRecognizedTextLinesResult]({{ site.dlr_cpp_api }}recognized-text-lines-result.html)
+
 ### OnDetectedQuadsReceived
 
-Callback function for detected quads results. It will be called once for each detected quads result.
+Callback function triggered after processing each image and returns all detected quads. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
 
 ```cpp
 virtual void OnDetectedQuadsReceived(ddn::CDetectedQuadsResult* pResult)
@@ -128,9 +144,13 @@ virtual void OnDetectedQuadsReceived(ddn::CDetectedQuadsResult* pResult)
 
 `[in] pResult` The detected quads result.
 
+**See Also**
+
+[CDetectedQuadsResult]({{ site.ddn_cpp_api }}detected-quads-result.html)
+
 ### OnNormalizedImagesReceived
 
-Callback function for normalized images results. It will be called once for each normalized images result.
+Callback function triggered after processing each image and returns all normalized images. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
 
 ```cpp
 virtual void OnNormalizedImagesReceived(ddn::CNormalizedImagesResult* pResult)
@@ -140,9 +160,13 @@ virtual void OnNormalizedImagesReceived(ddn::CNormalizedImagesResult* pResult)
 
 `[in] pResult` The normalized images result.
 
+**See Also**
+
+[CNormalizedImagesResult]({{ site.ddn_cpp_api }}normalized-images-result.html)
+
 ### OnParsedResultsReceived
 
-Callback function for parsed results. It will be called once for each parsed result.
+Callback function triggered after processing each image and returns all parsed results. For the callback to be triggered, it is essential that the `CodeParserTask` is properly configured.
 
 ```cpp
 virtual void OnParsedResultsReceived(dcp::CParsedResult* pResult)
@@ -151,6 +175,10 @@ virtual void OnParsedResultsReceived(dcp::CParsedResult* pResult)
 **Parameters**
 
 `[in] pResult` The parsed result.
+
+**See Also**
+
+[CParsedResult]({{ site.dcp_cpp_api }}parsed-result.html)
 
 ### GetName
 

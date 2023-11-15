@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CIntermediateResultReceiver
 
-The CIntermediateResultReceiver class is responsible for receiving intermediate results of different types. It provides virtual functions for each type of result, which are called when the corresponding result is received.
+The `CIntermediateResultReceiver` class is responsible for receiving intermediate results of different types. It provides virtual functions for each type of result, which are called when the corresponding result is received.
 
 ## Definition
 
@@ -76,7 +76,7 @@ virtual void OnTaskResultsReceived(const CIntermediateResult *pResult, const Int
 
 **Parameters**
 
-`[in] pResult` A pointer to the CIntermediateResult object that contains several result units.
+`[in] pResult` A pointer to the `CIntermediateResult` object that contains several result units.
 
 `[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
@@ -90,7 +90,7 @@ virtual void OnPredetectedRegionsReceived(CPredetectedRegionsUnit *pResult, cons
 
 **Parameters**
 
-`[in] pResult` A pointer to the CPredetectedRegionsUnit object that contains the result.
+`[in] pResult` A pointer to the `CPredetectedRegionsUnit` object that contains the result.
 
 `[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
@@ -104,7 +104,7 @@ virtual void OnLocalizedBarcodesReceived(dbr::intermediate_results::CLocalizedBa
 
 **Parameters**
 
-`[in] pResult` A pointer to the CLocalizedBarcodesUnit object that contains the result.
+`[in] pResult` A pointer to the `CLocalizedBarcodesUnit` object that contains the result.
 
 `[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
@@ -118,7 +118,7 @@ virtual void OnDecodedBarcodesReceived(dbr::intermediate_results::CDecodedBarcod
 
 **Parameters**
 
-`[in] pResult` A pointer to the CDecodedBarcodesUnit object that contains the result.
+`[in] pResult` A pointer to the `CDecodedBarcodesUnit` object that contains the result.
 
 `[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
@@ -132,7 +132,7 @@ virtual void OnLocalizedTextLinesReceived(dlr::intermediate_results::CLocalizedT
 
 **Parameters**
 
-`[in] pResult` A pointer to the CLocalizedTextLinesUnit object that contains the result.
+`[in] pResult` A pointer to the `CLocalizedTextLinesUnit` object that contains the result.
 
 `[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
@@ -146,7 +146,7 @@ virtual void OnRecognizedTextLinesReceived(dlr::intermediate_results::CRecognize
 
 **Parameters**
 
-`[in] pResult` A pointer to the CRecognizedTextLinesUnit object that contains the result.
+`[in] pResult` A pointer to the `CRecognizedTextLinesUnit` object that contains the result.
 
 `[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
@@ -160,7 +160,7 @@ virtual void OnDetectedQuadsReceived(ddn::intermediate_results::CDetectedQuadsUn
 
 **Parameters**
 
-`[in] pResult` A pointer to the CDetectedQuadsUnit object that contains the result.
+`[in] pResult` A pointer to the `CDetectedQuadsUnit` object that contains the result.
 
 `[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
@@ -174,7 +174,7 @@ virtual void OnNormalizedImagesReceived(ddn::intermediate_results::CNormalizedIm
 
 **Parameters**
 
-`[in] pResult` A pointer to the CNormalizedImagesUnit object that contains the result.
+`[in] pResult` A pointer to the `CNormalizedImagesUnit` object that contains the result.
 
 `[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 

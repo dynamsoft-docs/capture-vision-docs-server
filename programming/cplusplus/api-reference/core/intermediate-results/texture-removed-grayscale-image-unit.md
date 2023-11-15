@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CTextureRemovedGrayscaleImageUnit
 
-The CTextureRemovedGrayscaleImageUnit class represents an intermediate result unit that contains texture-removed grayscale image data.
+The `CTextureRemovedGrayscaleImageUnit` class represents an intermediate result unit that contains texture-removed grayscale image data.
 
 ## Definition
 
@@ -41,3 +41,7 @@ virtual const CImageData* GetImageData() const
 **Return value**
 
 Returns a constant pointer to the texture-removed grayscale image. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

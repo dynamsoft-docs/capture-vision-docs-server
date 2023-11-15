@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CPDFReadingParameter
 
-The CPDFReadingParameter class represents the parameters for reading a PDF file. It contains the mode of PDF reading, the DPI (dots per inch) value, and the tarGetstype.
+The `CPDFReadingParameter` class represents the parameters for reading a PDF file. It contains the mode of PDF reading, the DPI (dots per inch) value, and the tarGetstype.
 
 ## Definition
 
@@ -36,6 +36,10 @@ The mode of PDF reading.
 PDFReadingMode mode
 ```
 
+**See Also**
+
+[PDFReadingMode]({{ site.enums }}core/pdf-reading-mode.html?src=cpp&&lang=cpp)
+
 ### dpi
 
 The DPI (dots per inch) value.
@@ -51,3 +55,8 @@ The raster data source type.
 ```cpp
 RasterDataSource rasterDataSource
 ```
+
+**See Also**
+
+[RasterDataSource]({{ site.enums }}core/raster-data-source.html?src=cpp&&lang=cpp)
+

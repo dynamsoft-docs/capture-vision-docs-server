@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CTextZonesUnit
 
-The CTextZonesUnit class represents a unit that contains text zones. It is derived from CIntermediateResultUnit class and provides methods to retrieve the count and details of text zones.
+The `CTextZonesUnit` class represents a unit that contains text zones. It is derived from `CIntermediateResultUnit` class and provides methods to retrieve the count and details of text zones.
 
 ## Definition
 
@@ -62,3 +62,7 @@ virtual int GetTextZone(int index, CQuadrilateral* quad) const
 Returns 0 if the operation succeeds, or a nonzero error code if the operation fails.
 
 Note: The caller of this method is responsible for allocating memory for the `quad` pointer.
+
+**See Also**
+
+[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)

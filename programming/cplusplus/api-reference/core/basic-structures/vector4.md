@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CVector4
 
-The CVector4 class represents a four-dimensional vector.
+The `CVector4` class represents a four-dimensional vector.
 
 ## Definition
 
@@ -25,7 +25,7 @@ class CVector4;
 | Method               | Description |
 |----------------------|-------------|
 | [`Set`](#set) | Sets the components value of a four-dimensional vector. |
-| [`operator[]`](#operator) | Gets the component value at the specified index in the CVector4. |
+| [`operator[]`](#operator) | Gets the component value at the specified index in the `CVector4`. |
 
 ### Set
 
@@ -47,7 +47,7 @@ void Set(int v1, int v2, int v3, int v4)
 
 ### operator[]
 
-Gets the component value at the specified index in the CVector4.
+Gets the component value at the specified index in the `CVector4`.
 
 ```cpp
 int& operator[](int i)
@@ -55,8 +55,8 @@ int& operator[](int i)
 
 **Parameters**
 
-`[in] i` An integer index used to access the component value of the CVector4.
+`[in] i` An integer index used to access the component value of the `CVector4`.
 
 **Return Value**
 
-A reference to the component value at the specified index in the CVector4.
+A reference to the component value at the specified index in the `CVector4`.

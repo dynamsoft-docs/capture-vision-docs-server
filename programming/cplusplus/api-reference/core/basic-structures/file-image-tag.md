@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CFileImageTag
 
-The CFileImageTag class represents an image tag that is associated with a file. It inherits from the CImageTag class and adds additional attributes.
+The `CFileImageTag` class represents an image tag that is associated with a file. It inherits from the `CImageTag` class and adds additional attributes.
 
 ## Definition
 
@@ -72,7 +72,7 @@ Returns the total page number of the PDF file.
 
 ### CFileImageTag Constructor
 
-The constructor of the CFileImageTag class.
+The constructor of the `CFileImageTag` class.
 
 ```cpp
 CFileImageTag(const char* _filePath, int _pageNumber)
@@ -86,7 +86,7 @@ CFileImageTag(const char* _filePath, int _pageNumber)
 
 ### CFileImageTag Destructor
 
-The destructor of the CFileImageTag class. It frees the memory allocated for the file path.
+The destructor of the `CFileImageTag` class. It frees the memory allocated for the file path.
 
 ```cpp
 virtual ~CFileImageTag()

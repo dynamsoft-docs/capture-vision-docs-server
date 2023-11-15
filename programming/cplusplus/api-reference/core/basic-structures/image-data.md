@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CImageData
 
-The CImageData class represents image data, which contains the image bytes, width, height, stride, pixel format, orientation and a tag.
+The `CImageData` class represents image data, which contains the image bytes, width, height, stride, pixel format, orientation and a tag.
 
 ## Definition
 
@@ -151,6 +151,10 @@ ImagePixelFormat GetImagePixelFormat() const
 
 Returns the pixel format of the image.
 
+**See Also**
+
+[ImagePixelFormat]({{ site.enums }}core/image-pixel-format.html?src=cpp&&lang=cpp)
+
 ### GetOrientation
 
 Gets the orientation of the image.
@@ -175,6 +179,10 @@ const CImageTag* GetImageTag() const
 
 Returns a pointer to the tag of the image.
 
+**See Also**
+
+[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
+
 ### SetImageTag
 
 Sets the tag of the image.
@@ -186,3 +194,7 @@ void SetImageTag(const CImageTag* _tag)
 **Parameters**
 
 `_tag` The tag of the image.
+
+**See Also**
+
+[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)

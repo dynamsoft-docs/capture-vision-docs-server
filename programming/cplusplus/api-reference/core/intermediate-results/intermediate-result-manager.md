@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CIntermediateResultManager
 
-The CIntermediateResultManager class manages intermediate results generated during data capturing. It provides methods to add and remove intermediate result receivers, as well as to get original image data using an image hash id.
+The `CIntermediateResultManager` class manages intermediate results generated during data capturing. It provides methods to add and remove intermediate result receivers, as well as to get original image data using an image hash id.
 
 ## Definition
 
@@ -40,6 +40,10 @@ virtual int AddResultReceiver(CIntermediateResultReceiver* receiver)
 
 `[in] receiver` The intermediate result receiver to add.
 
+**See Also**
+
+[CIntermediateResultReceiver]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
+
 ### RemoveResultReceiver
 
 Removes an intermediate result receiver from the manager.
@@ -51,6 +55,10 @@ virtual int RemoveResultReceiver(CIntermediateResultReceiver* receiver)
 **Parameters**
 
 `[in] receiver` The intermediate result receiver to remove.
+
+**See Also**
+
+[CIntermediateResultReceiver]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
 
 ### GetOriginalImage
 
@@ -66,4 +74,8 @@ virtual CImageData* GetOriginalImage(const char* imageHashId)
 
 **Return value**
 
-Returns a pointer to the CImageData object containing the original image data. You don't need to release the memory pointed to by the returned pointer.
+Returns a pointer to the `CImageData` object containing the original image data. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

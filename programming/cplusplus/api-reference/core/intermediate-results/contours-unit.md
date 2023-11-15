@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CContoursUnit
 
-The CContoursUnit class represents a unit that contains contours as intermediate results. It is derived from the CIntermediateResultUnit class.
+The `CContoursUnit` class represents a unit that contains contours as intermediate results. It is derived from the `CIntermediateResultUnit` class.
 
 ## Definition
 
