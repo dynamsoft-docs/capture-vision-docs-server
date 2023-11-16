@@ -49,6 +49,10 @@ The point array of the contour. The memory will be released by CContour.
 CPoint* points
 ```
 
+**See Also**
+
+[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+
 ### ~CContour Destructor
 
 The destructor of CContour. It releases the memory of the point array.
