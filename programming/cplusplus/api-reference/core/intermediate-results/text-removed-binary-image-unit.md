@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CTextRemovedBinaryImageUnit
 
-The CTextRemovedBinaryImageUnit class represents an intermediate result unit that contains a text-removed binary image.
+The `CTextRemovedBinaryImageUnit` class represents an intermediate result unit that contains a text-removed binary image.
 
 ## Definition
 
@@ -40,4 +40,8 @@ virtual const CImageData* GetImageData() const;
 
 **Return value**
 
-Returns a pointer to the CImageData object that contains the text-removed binary image. You don't need to release the memory pointed to by the returned pointer.
+Returns a pointer to the `CImageData` object that contains the text-removed binary image. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

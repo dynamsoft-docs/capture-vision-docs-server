@@ -44,3 +44,7 @@ virtual void OnImageSourceStateReceived(ImageSourceState state) = 0;
 **Return value**
 
 This method does not return a value. It is a pure virtual function that must be implemented by any class that derives from CImageSourceStateListener.
+
+**See Also**
+
+[ImageSourceState]({{ site.enums }}core/image-source-state.html?src=cpp&&lang=cpp)

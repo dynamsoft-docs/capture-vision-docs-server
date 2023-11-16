@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CQuadrilateral
 
-The CQuadrilateral class represents a quadrilateral shape in 2D space. It contains an array of four CPoint objects, which represent the vertices of the quadrilateral.
+The `CQuadrilateral` class represents a quadrilateral shape in 2D space. It contains an array of four CPoint objects, which represent the vertices of the quadrilateral.
 
 ## Definition
 
@@ -41,6 +41,10 @@ The point array of the quadrilateral.
 CPoint points[4]
 ```
 
+**See Also**
+
+[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+
 ### Contains
 
 Determines whether a point is inside the quadrilateral.
@@ -56,6 +60,10 @@ bool Contains(const CPoint* point) const
 **Return value**
 
 Returns true if the point inside the quadrilateral, false otherwise. 
+
+**See Also**
+
+[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
 
 ### GetArea
 

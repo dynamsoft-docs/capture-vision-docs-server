@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CLineSegmentsUnit
 
-The CLineSegmentsUnit class represents a collection of line segments in 2D space. It is a derived class of CIntermediateResultUnit.
+The `CLineSegmentsUnit` class represents a collection of line segments in 2D space. It is a derived class of `CIntermediateResultUnit`.
 
 ## Definition
 
@@ -57,4 +57,8 @@ virtual const CLineSegment* GetLineSegement(int index) const
 
 **Return value**
 
-Returns the CLineSegment object at the specified index or NULL if the index is out of range.
+Returns the `CLineSegment` object at the specified index or NULL if the index is out of range.
+
+**See Also**
+
+[CLineSegment]({{ site.dcv_cpp_api }}core/basic-structures/line-segment.html)

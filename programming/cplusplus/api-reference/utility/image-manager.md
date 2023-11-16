@@ -55,6 +55,10 @@ Returns an integer indicating the success of the operation. 0 indicates success,
 | EC_CREATE_FILE_FAILED | -10068 | The file path does not exist but cannot be created, or the file cannot be created for any other reason. |
 | EC_IMGAE_DATA_INVALID | -10069 | The input ImageData object contains invalid parameter(s). |
 
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
 ### DrawOnImage
 
 Draws various shapes on an image.
@@ -98,3 +102,17 @@ CImageData *DrawOnImage(const CImageData *pImageData, CEdge edges[], int edgesCo
 **Return value**
 
 Returns a pointer to the modified image data.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
+[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+
+[CLineSegment]({{ site.dcv_cpp_api }}core/basic-structures/line-segment.html)
+
+[CContour]({{ site.dcv_cpp_api }}core/basic-structures/contour.html)
+
+[CCorner]({{ site.dcv_cpp_api }}core/basic-structures/corner.html)
+
+[CEdge]({{ site.dcv_cpp_api }}core/basic-structures/edge.html)

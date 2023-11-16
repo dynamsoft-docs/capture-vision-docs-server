@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CPoint
 
-The CPoint class represents a point in 2D space. It contains an array of two integers, which represent the coordinates of the point.
+The `CPoint` class represents a point in 2D space. It contains an array of two integers, which represent the coordinates of the point.
 
 ## Definition
 
@@ -25,7 +25,7 @@ typedef DMPoint_<int> CPoint;
 | Method               | Description |
 |----------------------|-------------|
 | [`Set`](#set) | Sets the coordinates of a point. |
-| [`operator[]`](#operator) | Gets the element at the specified index in the CPoint. |
+| [`operator[]`](#operator) | Gets the element at the specified index in the `CPoint`. |
 | [`DistanceTo`](#distanceto) | Calculates the distance between the current point and the specified target point. |
 | [`TransformCoordinates`](#transformcoordinates) | Transforms the coordinates of a point using a given transformation matrix. |
 
@@ -45,7 +45,7 @@ void Set(int x, int y)
 
 ### operator[]
 
-Gets the element at the specified index in the CPoint.
+Gets the element at the specified index in the `CPoint`.
 
 ```cpp
 int& operator[](int i)
@@ -53,11 +53,11 @@ int& operator[](int i)
 
 **Parameters**
 
-`[in] i` An integer index used to access the element of the CPoint.
+`[in] i` An integer index used to access the element of the `CPoint`.
 
 **Return Value**
 
-A reference to the element at the specified index in the CPoint.
+A reference to the element at the specified index in the `CPoint`.
 
 ### DistanceTo
 
@@ -91,14 +91,13 @@ static CPoint TransformCoordinates(CPoint originalPoint, double transformationMa
 
 **Return value**
 
-Returns a new CPoint object with the transformed coordinates.
+Returns a new `CPoint` object with the transformed coordinates.
 
 **Code Snippet**
 
 ```cpp
 CPoint originalPoint;
-originalPoint[0] = 10;
-originalPoint[1] = 20;
+originalPoint.Set(10, 20);
 
 double transformationMatrix[9] = {1, 0, 0, 0, 2, 0, 0, 0, 1};
 

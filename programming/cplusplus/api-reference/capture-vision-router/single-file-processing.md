@@ -60,3 +60,7 @@ CCaptureVisionRouter* router = new CCaptureVisionRouter();
 CCapturedResult* result = router->Capture("path/to/file.png", "myTemplate");
 delete router;
 ```
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

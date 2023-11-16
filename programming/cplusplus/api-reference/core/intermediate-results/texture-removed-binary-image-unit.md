@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CTextureRemovedBinaryImageUnit
 
-The CTextureRemovedBinaryImageUnit class represents an intermediate result unit that stores texture-removed binary image data.
+The `CTextureRemovedBinaryImageUnit` class represents an intermediate result unit that stores texture-removed binary image data.
 
 ## Definition
 
@@ -40,4 +40,8 @@ virtual const CImageData* GetImageData() const
 
 **Return value**
 
-Returns a const pointer to CImageData object that represents the texture-removed binary image. You don't need to release the memory pointed to by the returned pointer.
+Returns a const pointer to `CImageData` object that represents the texture-removed binary image. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

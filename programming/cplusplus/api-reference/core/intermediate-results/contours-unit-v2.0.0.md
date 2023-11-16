@@ -9,7 +9,7 @@ permalink: /programming/cplusplus/api-reference/core/intermediate-results/contou
 
 # CContoursUnit
 
-The CContoursUnit class represents a unit that contains contours as intermediate results. It is derived from the CIntermediateResultUnit class.
+The `CContoursUnit` class represents a unit that contains contours as intermediate results. It is derived from the `CIntermediateResultUnit` class.
 
 ## Definition
 

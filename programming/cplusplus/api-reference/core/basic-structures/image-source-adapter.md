@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CImageSourceAdapter
 
-The CImageSourceAdapter class provides an interface for fetching and buffering images. It is an abstract class that needs to be implemented by a concrete class to provide actual functionality.
+The `CImageSourceAdapter` class provides an interface for fetching and buffering images. It is an abstract class that needs to be implemented by a concrete class to provide actual functionality.
 
 ## Definition
 
@@ -57,6 +57,10 @@ void AddImageToBuffer(const CImageData* img, bool bClone = true);
 
 `[in] bClone` Whether the image should be cloned before being added to the buffer.
 
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
 ### HasNextImageToFetch
 
 Determines whether there are more images left to fetch.
@@ -97,6 +101,10 @@ virtual CImageData* GetImage();
 
 Returns a pointer to the image if it exists in the buffer, NULL otherwise.
 
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
 ### SetMaxImageCount
 
 Sets how many images are allowed to be buffered.
@@ -133,6 +141,10 @@ void SetBufferOverflowProtectionMode(BufferOverflowProtectionMode mode);
 
 `[in] mode` The buffer overflow protection mode to set.
 
+**See Also**
+
+[BufferOverflowProtectionMode]({{ site.enums }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
+
 ### GetBufferOverflowProtectionMode
 
 Returns the current buffer overflow protection mode.
@@ -144,6 +156,10 @@ BufferOverflowProtectionMode GetBufferOverflowProtectionMode() const;
 **Return value**
 
 Returns the current buffer overflow protection mode.
+
+**See Also**
+
+[BufferOverflowProtectionMode]({{ site.enums }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
 
 ### HasImage
 
@@ -173,7 +189,7 @@ bool SetNextImageToReturn(int imageId, bool keepInBuffer = true);
 
 `[in] imageId` The ID of the next image to return.
 
-`[in] keepInBuffer` Whether the image should be kept in the buffer after it is returned.
+`[in] keepInBuffer` Whether the image should be retained in the buffer, even if the buffer is full and the image needs to be updated based on the `BufferOverflowProtectionMode` parameter.
 
 **Return value**
 
@@ -219,6 +235,10 @@ Sets the usage type of a color channel in images.
 void SetColourChannelUsageType(ColourChannelUsageType type);
 ```
 
+**See Also**
+
+[ColourChannelUsageType]({{ site.enums}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
+
 ### GetColourChannelUsageType
 
 Gets the usage type of a color channel in images.
@@ -231,6 +251,10 @@ ColourChannelUsageType GetColourChannelUsageType() const;
 
 Returns the usage type of a color channel in images.
 
+**See Also**
+
+[ColourChannelUsageType]({{ site.enums}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
+
 ### SetErrorListener
 
 Gets the usage type of a color channel in images. This function allows you to set an error listener object that will receive notifications when errors occur during image source operations. If an error occurs, the error infomation will be passed to the listener's OnErrorReceived method.
@@ -241,4 +265,8 @@ void SetErrorListener(CImageSourceErrorListener* listener);
 
 **Parameters**
 
-`[in] listener` A pointer to an instance of [`CImageSourceErrorListener`]({{ site.dcv_cpp_api }}core/basic-structures/image-source-error-listener.html) or its derived class, which will handle error notifications.
+`[in] listener` A pointer to an instance of `CImageSourceErrorListener` or its derived class, which will handle error notifications.
+
+**See Also**
+
+[CImageSourceErrorListener]{{ site.dcv_cpp_api }}core/basic-structures/image-source-error-listener.html)

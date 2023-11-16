@@ -160,6 +160,7 @@ needAutoGenerateSidebar: true
 - [`MappingStatus`]({{ site.enums }}code-parser/mapping-status.html?src=cpp&&lang=cpp)
 - [`PDFReadingMode`]({{ site.enums }}core/pdf-reading-mode.html?src=cpp&&lang=cpp)
 - [`QRCodeErrorCorrectionLevel`]({{ site.enums }}barcode-reader/qr-code-error-correction-level.html?src=cpp&&lang=cpp)
+- [`RasterDataSource`]({{ site.enums }}core/raster-data-source.html?src=cpp&&lang=cpp)
 - [`RegionObjectElementType`]({{ site.enums }}core/region-object-element-type.html?src=cpp&&lang=cpp)
 - [`SectionType`]({{ site.enums }}core/section-type.html?src=cpp&&lang=cpp)
 - [`TargetType`]({{ site.enums }}core/target-type.html?src=cpp&&lang=cpp)

@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CDirectoryFetcher
 
-The CDirectoryFetcher class is a utility class that retrieves a list of files from a specified directory based on certain criteria. It inherits from the CProactiveImageSourceAdapter class.
+The `CDirectoryFetcher` class is a utility class that retrieves a list of files from a specified directory based on certain criteria. It inherits from the `CProactiveImageSourceAdapter` class.
 
 ## Definition
 

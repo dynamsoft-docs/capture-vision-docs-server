@@ -57,7 +57,7 @@ const CImageTag* GetSourceImageTag() const
 
 **Return value**
 
-Returns a pointer to the CImageTag object containing the tag of the source image. You are not required to release the memory pointed to by the returned pointer.
+Returns a pointer to the `CImageTag` object containing the tag of the source image. You are not required to release the memory pointed to by the returned pointer.
 
 ### GetCount
 
@@ -85,7 +85,7 @@ const CCapturedResultItem* GetItem(int index) const
 
 **Return value**
 
-Returns a pointer to the CCapturedResultItem object at the specified index.
+Returns a pointer to the `CCapturedResultItem` object at the specified index.
 
 ### HasItem
 

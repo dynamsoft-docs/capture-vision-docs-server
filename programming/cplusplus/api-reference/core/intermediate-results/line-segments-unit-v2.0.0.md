@@ -9,7 +9,7 @@ permalink: /programming/cplusplus/api-reference/core/intermediate-results/line-s
 
 # CLineSegmentsUnit
 
-The CLineSegmentsUnit class represents a collection of line segments in 2D space. It is a derived class of CIntermediateResultUnit.
+The `CLineSegmentsUnit` class represents a collection of line segments in 2D space. It is a derived class of `CIntermediateResultUnit`.
 
 ## Definition
 
@@ -56,7 +56,7 @@ virtual int GetLineSegement(int index, CLineSegment* line) const
 
 `[in] index` The index of the line segment to retrieve.
 
-`[in, out] line` The CLineSegment object to store the retrieved line segment.
+`[in, out] line` the `CLineSegment` object to store the retrieved line segment.
 
 **Return value**
 

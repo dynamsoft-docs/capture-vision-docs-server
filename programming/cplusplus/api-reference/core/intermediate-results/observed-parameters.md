@@ -43,6 +43,10 @@ void SetObservedResultUnitTypes(unsigned long long types)
 
 `[in] types` The observed types of intermediate result units.
 
+**See Also**
+
+[IntermediateResultUnitType]({{ site.enums }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
+
 ### GetObservedResultUnitTypes
 
 Gets the types of intermediate result units that have been observed.
@@ -55,6 +59,10 @@ unsigned long long GetObservedResultUnitTypes() const
 
 The observed types of intermediate result units.
 
+**See Also**
+
+[IntermediateResultUnitType]({{ site.enums }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
+
 ### IsResultUnitTypeObserved
 
 Determines whether the specified result unit type was observed.
@@ -66,6 +74,10 @@ bool IsResultUnitTypeObserved(IntermediateResultUnitType type) const
 **Return value**
 
 Returns a boolean value indicating whether the specified result unit type was observed.
+
+**See Also**
+
+[IntermediateResultUnitType]({{ site.enums }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
 
 ### AddObservedTask
 

@@ -9,7 +9,7 @@ permalink: /programming/cplusplus/api-reference/core/intermediate-results/interm
 
 # CIntermediateResultManager
 
-The CIntermediateResultManager class manages intermediate results generated during data capturing. It provides methods to add and remove intermediate result receivers, as well as to get raw image data using an image hash id.
+The `CIntermediateResultManager` class manages intermediate results generated during data capturing. It provides methods to add and remove intermediate result receivers, as well as to get raw image data using an image hash id.
 
 ## Definition
 
@@ -67,4 +67,4 @@ virtual CImageData* GetRawImage(const char* imageHashId)
 
 **Return value**
 
-Returns a pointer to the CImageData object containing the raw image data. You don't need to release the memory pointed to by the returned pointer.
+Returns a pointer to the `CImageData` object containing the raw image data. You don't need to release the memory pointed to by the returned pointer.

@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CLicenseManager
 
-The CLicenseManager class provides a set of APIs to manage SDK licensing.
+The `CLicenseManager` class provides a set of APIs to manage SDK licensing.
 
 ## Definition
 
@@ -103,6 +103,9 @@ static int GetDeviceUUID(int uuidGenerationMethod, char uuidBuffer[] , const int
 **Parameters**
 
 `[in] uuidGenerationMethod` The method to generate the UUID.
+
+- 1: Generates UUID with random values.
+- 2: Generates UUID based on hardware info.
 
 `[in, out] uuidBuffer` The buffer to store the UUID.
 

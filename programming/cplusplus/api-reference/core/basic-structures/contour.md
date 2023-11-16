@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CContour
 
-The CContour class represents a contour in 2D space. It contains an array of CPoint objects, which represent the vertices of the contour.
+The `CContour` class represents a contour in 2D space. It contains an array of CPoint objects, which represent the vertices of the contour.
 
 ## Definition
 

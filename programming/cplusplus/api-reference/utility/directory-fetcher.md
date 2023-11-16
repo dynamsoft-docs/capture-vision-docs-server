@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CDirectoryFetcher
 
-The CDirectoryFetcher class is a utility class that retrieves a list of files from a specified directory based on certain criteria. It inherits from the CProactiveImageSourceAdapter class.
+The `CDirectoryFetcher` class is a utility class that retrieves a list of files from a specified directory based on certain criteria. It inherits from the `CProactiveImageSourceAdapter` class.
 
 ## Definition
 
@@ -71,6 +71,10 @@ Returns an integer value that represents the success or failure of the operation
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |
 | EC_PARAMETER_VALUE_INVALID | -10038 | There exists invalid parameter value in your JSON data. |
+
+**See Also**
+
+[CPDFReadingParameter]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html)
 
 ### SetPages
 

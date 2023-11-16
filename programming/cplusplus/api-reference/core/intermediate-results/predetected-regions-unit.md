@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CPredetectedRegionsUnit
 
-The CPredetectedRegionsUnit class represents a unit that contains a collection of pre-detected regions. It inherits from the CIntermediateResultUnit class and stores the result of image color pre-detection.
+The `CPredetectedRegionsUnit` class represents a unit that contains a collection of pre-detected regions. It inherits from the `CIntermediateResultUnit` class and stores the result of image color pre-detection.
 
 ## Definition
 
@@ -58,3 +58,7 @@ virtual const CPredetectedRegionElement* GetPredectedRegion(int index) const
 **Return value**
 
 Returns a const pointer to the specified pre-detected region in the collection. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CPredetectedRegionElement]({{ site.dcv_cpp_api }}core/intermediate-results/predetected-region-element.html)

@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CBinaryImageUnit
 
-The CBinaryImageUnit class represents a unit that contains a binary image. It inherits from the CIntermediateResultUnit class and stores binary image data.
+The `CBinaryImageUnit` class represents a unit that contains a binary image. It inherits from the `CIntermediateResultUnit` class and stores binary image data.
 
 ## Definition
 
@@ -40,4 +40,8 @@ virtual const CImageData* GetImageData() const
 
 **Return value**
 
-Returns a pointer to the CBinaryImageData object containing the binary image data. You don't need to release the memory pointed to by the returned pointer.
+Returns a pointer to the `CBinaryImageData` object containing the binary image data. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

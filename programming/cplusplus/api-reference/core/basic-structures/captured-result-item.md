@@ -48,6 +48,10 @@ virtual CapturedResultItemType GetType() const
 
 Returns the type of the captured result item.
 
+**See Also**
+
+[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+
 ### GetReferencedItem
 
 Gets a pointer to the referenced item in the captured result item.
@@ -59,3 +63,7 @@ virtual const CCapturedResultItem* GetReferencedItem() const
 **Return value**
 
 Returns a pointer to the referenced item in the captured result item. You are not required to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)

@@ -41,3 +41,6 @@ virtual void OnErrorReceived(int errorCode, const char* errorMessage)
 
 `[in] errorMessage` A C-style string containing the error message providing additional information about the error.
 
+**See Also**
+
+[ErrorCode]({{ site.enums }}core/error-code.html?src=cpp&&lang=cpp)

@@ -43,4 +43,8 @@ virtual const CImageData* GetImageData() const = 0;
 
 **Return value**
 
-Returns a const pointer to the CImageData object that contains the image data for the COriginalImageResultItem.
+Returns a const pointer to the `CImageData` object that contains the image data for the COriginalImageResultItem.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

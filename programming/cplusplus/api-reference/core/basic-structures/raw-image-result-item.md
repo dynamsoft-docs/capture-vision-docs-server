@@ -39,4 +39,4 @@ virtual const CImageData* GetImageData() const = 0;
 
 **Return value**
 
-Returns a const pointer to the CImageData object that contains the image data for the CRawImageResultItem.
+Returns a const pointer to the `CImageData` object that contains the image data for the CRawImageResultItem.
