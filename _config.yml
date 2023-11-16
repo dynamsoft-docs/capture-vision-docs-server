@@ -14,7 +14,7 @@ enums: /capture-vision/docs/core/enums/
 dcv_cpp: /capture-vision/docs/server/programming/cplusplus/
 dcv_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
 dbr_cpp_api: /barcode-reader/docs/server/programming/cplusplus/api-reference/
-dlr_cpp_api: /label-recognition/docs/server/programming/c-cplusplus/api-reference/
+dlr_cpp_api: /label-recognition/docs/server/programming/cplusplus/api-reference/
 ddn_cpp_api: /document-normalizer/docs/server/programming/cplusplus/api-reference/
 dcp_cpp_api: /code-parser/docs/server/programming/cplusplus/api-reference/
 
