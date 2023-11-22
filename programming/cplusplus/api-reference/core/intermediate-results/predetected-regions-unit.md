@@ -25,7 +25,7 @@ class CPredetectedRegionsUnit : public CIntermediateResultUnit
 | Method | Description |
 |--------|-------------|
 | [`GetCount`](#getcount) | Gets the number of pre-detected regions in the collection. |
-| [`GetPredectedRegion`](#getpredectedregion) | Gets a pointer to a specific pre-detected region in the collection. |
+| [`GetPredetectedRegion`](#getpredetectedregion) | Gets a pointer to a specific pre-detected region in the collection. |
 
 ### Inherited Methods
 
@@ -43,12 +43,12 @@ virtual int GetCount() const
 
 Returns the number of pre-detected regions in the collection.
 
-### GetPredectedRegion
+### GetPredetectedRegion
 
 Gets a pointer to a specific pre-detected region in the collection.
 
 ```cpp
-virtual const CPredetectedRegionElement* GetPredectedRegion(int index) const
+virtual const CPredetectedRegionElement* GetPredetectedRegion(int index) const
 ```
 
 **Parameters**
