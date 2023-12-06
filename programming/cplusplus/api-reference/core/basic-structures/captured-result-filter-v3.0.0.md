@@ -1,17 +1,18 @@
 ---
 layout: default-layout
-title: class CCapturedResultReceiver - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCapturedResultReceiver in Core Module.
+title: class CCapturedResultFilter - Dynamsoft Capture Vision C++ Edition API Reference
+description: This page shows the C++ edition of the class CCapturedResultFilter in Core Module.
 keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-breadcrumbText: C++ CCapturedResultReceiver Class
-permalink: /programming/cplusplus/api-reference/core/basic-structures/captured-result-receiver.html
+breadcrumbText: C++ CCapturedResultFilter Class
 ---
 
-# CCapturedResultReceiver
+# CCapturedResultFilter
 
-The `CCapturedResultReceiver` class is responsible for receiving captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
+The `CCapturedResultFilter` class is responsible for filtering captured results. It contains several callback functions for different types of results, including raw image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
+
+>Note: Currently, user defined CCapturedResultFilter is not supported.
 
 ## Definition
 
@@ -20,16 +21,16 @@ The `CCapturedResultReceiver` class is responsible for receiving captured result
 *Assembly:* DynamsoftCore
 
 ```cpp
-class CCapturedResultReceiver 
+class CCapturedResultFilter 
 ```
 
 ## Methods Summary
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
-| [`CCapturedResultReceiver`](#ccapturedresultreceiver-constructor)               | Constructor                                          |
-| [`~CCapturedResultReceiver`](#ccapturedresultreceiver-destructor)              | Destructor                                           |
-| [`GetObservedResultItemTypes`](#getobservedresultitemtypes)       | Gets the types of observed result items.             |
+| [`CCapturedResultFilter`](#ccapturedresultfilter-constructor)               | Constructor                                          |
+| [`~CCapturedResultFilter`](#ccapturedresultfilter-destructor)              | Destructor                                           |
+| [`GetFilteredResultItemTypes`](#getfilteredresultitemtypes)       | Gets the types of observed result items.             |
 | [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
 | [`OnRawImageResultReceived`](#onrawimageresultreceived)           | Callback function for raw image results.             |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived)         | Callback function for decoded barcodes results.      |
@@ -37,43 +38,43 @@ class CCapturedResultReceiver
 | [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function for detected quads results.        |
 | [`OnNormalizedImagesReceived`](#onnormalizedimagesreceived)       | Callback function for normalized images results.     |
 | [`OnParsedResultsReceived`](#onparsedresultsreceived)             | Callback function for parsed results.                |
-| [`GetName`](#getname)       | Gets the name of the captured result receiver.                                             |
-| [`SetName`](#setname)       | Sets the name of the captured result receiver.                                             |
+| [`GetName`](#getname)       | Gets the name of the captured result filter.                                             |
+| [`SetName`](#setname)       | Sets the name of the captured result filter.                                             |
 
-### CCapturedResultReceiver Constructor
+### CCapturedResultFilter Constructor
 
 Constructor.
 
 ```cpp
-CCapturedResultReceiver()
+CCapturedResultFilter()
 ```
 
-### CCapturedResultReceiver Destructor
+### CCapturedResultFilter Destructor
 
 Destructor.
 
 ```cpp
-virtual ~CCapturedResultReceiver()
+virtual ~CCapturedResultFilter()
 ```
 
-### GetObservedResultItemTypes
+### GetFilteredResultItemTypes
 
-Gets the types of observed result items.
+Gets the types of filtered result items.
 
 ```cpp
-unsigned int GetObservedResultItemTypes()
+unsigned int GetFilteredResultItemTypes()
 ```
 
 **Return value**
 
-Returns the types of observed result items.
+Returns the type [`CapturedResultItemType`]({{site.enums}}core/captured-result-item-type.html?src=cpp&&lang=cpp) of filtered result items.
 
 ### OnCapturedResultReceived
 
 Callback function for all captured results. It will be called once for each captured result.
 
 ```cpp
-virtual void OnCapturedResultReceived(const CCapturedResult* pResult)
+virtual void OnCapturedResultReceived(CCapturedResult* pResult)
 ```
 
 **Parameters**
@@ -85,7 +86,7 @@ virtual void OnCapturedResultReceived(const CCapturedResult* pResult)
 Callback function for raw image results. It will be called once for each raw image result.
 
 ```cpp
-virtual void OnRawImageResultReceived(const CRawImageResultItem* pResult)
+virtual void OnRawImageResultReceived(CRawImageResultItem* pResult)
 ```
 
 **Parameters**
@@ -97,7 +98,7 @@ virtual void OnRawImageResultReceived(const CRawImageResultItem* pResult)
 Callback function for decoded barcodes results. It will be called once for each decoded barcodes result.
 
 ```cpp
-virtual void OnDecodedBarcodesReceived(const dbr::CDecodedBarcodesResult* pResult)
+virtual void OnDecodedBarcodesReceived(dbr::CDecodedBarcodesResult* pResult)
 ```
 
 **Parameters**
@@ -109,7 +110,7 @@ virtual void OnDecodedBarcodesReceived(const dbr::CDecodedBarcodesResult* pResul
 Callback function for recognized text lines results. It will be called once for each recognized text lines result.
 
 ```cpp
-virtual void OnRecognizedTextLinesReceived(const dlr::CRecognizedTextLinesResult* pResult)
+virtual void OnRecognizedTextLinesReceived(dlr::CRecognizedTextLinesResult* pResult)
 ```
 
 **Parameters**
@@ -121,7 +122,7 @@ virtual void OnRecognizedTextLinesReceived(const dlr::CRecognizedTextLinesResult
 Callback function for detected quads results. It will be called once for each detected quads result.
 
 ```cpp
-virtual void OnDetectedQuadsReceived(const ddn::CDetectedQuadsResult* pResult)
+virtual void OnDetectedQuadsReceived(ddn::CDetectedQuadsResult* pResult)
 ```
 
 **Parameters**
@@ -133,7 +134,7 @@ virtual void OnDetectedQuadsReceived(const ddn::CDetectedQuadsResult* pResult)
 Callback function for normalized images results. It will be called once for each normalized images result.
 
 ```cpp
-virtual void OnNormalizedImagesReceived(const ddn::CNormalizedImagesResult* pResult)
+virtual void OnNormalizedImagesReceived(ddn::CNormalizedImagesResult* pResult)
 ```
 
 **Parameters**
@@ -145,7 +146,7 @@ virtual void OnNormalizedImagesReceived(const ddn::CNormalizedImagesResult* pRes
 Callback function for parsed results. It will be called once for each parsed result.
 
 ```cpp
-virtual void OnParsedResultsReceived(const dcp::CParsedResult* pResult)
+virtual void OnParsedResultsReceived(dcp::CParsedResult* pResult)
 ```
 
 **Parameters**
@@ -154,7 +155,7 @@ virtual void OnParsedResultsReceived(const dcp::CParsedResult* pResult)
 
 ### GetName
 
-Gets the name of the captured result receiver.  
+Gets the name of the captured result filter.  
 
 ```cpp
 const char* GetName() const
@@ -162,11 +163,11 @@ const char* GetName() const
 
 **Return value**
 
-Returns the name of the captured result receiver.  
+Returns the name of the captured result filter.  
 
 ### SetName
 
-Sets the name of the captured result receiver.  
+Sets the name of the captured result filter.  
 
 ```cpp
 void SetName(const char* name)
@@ -174,4 +175,4 @@ void SetName(const char* name)
 
 **Parameters**
 
-`[in] name` The name of the captured result receiver.
+`[in] name` The name of the captured result filter.
