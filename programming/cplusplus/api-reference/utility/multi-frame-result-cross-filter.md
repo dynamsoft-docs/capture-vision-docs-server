@@ -48,7 +48,7 @@ void EnableResultCrossVerification(int resultItemTypes, bool enable);
 
 **See Also**
 
-[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### IsResultCrossVerificationEnabled
 
@@ -68,7 +68,7 @@ Returns a bool value indicating whether result verification is enabled for the s
 
 **See Also**
 
-[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### EnableResultDeduplication
 
@@ -89,7 +89,7 @@ void EnableResultDeduplication(int resultItemTypes, bool enable);
 
 **See Also**
 
-[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### IsResultDeduplicationEnabled
 
@@ -109,7 +109,7 @@ Returns a bool value indicating whether result deduplication is enabled for the 
 
 **See Also**
 
-[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### SetDuplicateForgetTime
 
@@ -130,7 +130,7 @@ void SetDuplicateForgetTime(int resultItemTypes, int time);
 
 **See Also**
 
-[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### GetDuplicateForgetTime
 
@@ -150,5 +150,5 @@ Returns the duplicate forget time for the specific captured result item type.
 
 **See Also**
 
-[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 

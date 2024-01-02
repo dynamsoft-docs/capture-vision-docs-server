@@ -8,8 +8,7 @@ useVersionTree: true
 introduction: /capture-vision/docs/core/introduction/
 architecture: /capture-vision/docs/core/architecture/
 parameter: /capture-vision/docs/core/parameters/
-enums: /capture-vision/docs/core/enums/
-
+dcv_enumerations: /capture-vision/docs/core/enums/
 
 dcv_cpp: /capture-vision/docs/server/programming/cplusplus/
 dcv_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/

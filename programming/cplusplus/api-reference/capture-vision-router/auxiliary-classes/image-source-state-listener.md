@@ -47,4 +47,4 @@ This method does not return a value. It is a pure virtual function that must be 
 
 **See Also**
 
-[ImageSourceState]({{ site.enums }}core/image-source-state.html?src=cpp&&lang=cpp)
+[ImageSourceState]({{ site.dcv_enumerations }}core/image-source-state.html?src=cpp&&lang=cpp)

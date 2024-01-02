@@ -38,7 +38,7 @@ PDFReadingMode mode
 
 **See Also**
 
-[PDFReadingMode]({{ site.enums }}core/pdf-reading-mode.html?src=cpp&&lang=cpp)
+[PDFReadingMode]({{ site.dcv_enumerations }}core/pdf-reading-mode.html?src=cpp&&lang=cpp)
 
 ### dpi
 
@@ -58,5 +58,5 @@ RasterDataSource rasterDataSource
 
 **See Also**
 
-[RasterDataSource]({{ site.enums }}core/raster-data-source.html?src=cpp&&lang=cpp)
+[RasterDataSource]({{ site.dcv_enumerations }}core/raster-data-source.html?src=cpp&&lang=cpp)
 

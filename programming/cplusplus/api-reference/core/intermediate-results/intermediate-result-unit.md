@@ -35,8 +35,8 @@ class CIntermediateResultUnit
 | [`SetOriginalImageTag`](#setoriginalimagetag) | Sets the image tag of the original image. |
 | [`Retain`](#retain) | Increases the reference count of the unit. |
 | [`Release`](#release) | Decreases the reference count of the unit. |
-| [`GetTransformMatrix`](#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
-| [`SetTransformMatrix`](#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
+| [`GetTransformMatrix`](#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.dcv_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
+| [`SetTransformMatrix`](#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.dcv_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
 
 ### GetHashId
 
@@ -92,7 +92,7 @@ Returns the type of the intermediate result unit.
 
 **See Also**
 
-[IntermediateResultUnitType]({{ site.enums }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
+[IntermediateResultUnitType]({{ site.dcv_enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
 
 ### Clone
 
@@ -189,7 +189,7 @@ The corresponding transformation matrices are as follows:
 
 **See Also**
 
-[TransformMatrixType]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp)
+[TransformMatrixType]({{site.dcv_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp)
 
 ### SetTransformMatrix
 
@@ -214,5 +214,5 @@ The corresponding transformation matrices are as follows:
 - 
 **See Also**
 
-[TransformMatrixType]({{site.enums}}core/transform-matrix-type.html?src=cpp&&lang=cpp)
+[TransformMatrixType]({{site.dcv_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp)
 
