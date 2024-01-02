@@ -160,7 +160,7 @@ Returns the error code of the capture operation.
 
 **See Also**
 
-[ErrorCode]({{ site.enums }}core/error-code.html?src=cpp&&lang=cpp)
+[ErrorCode]({{ site.dcv_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
 
 ### GetErrorString
 

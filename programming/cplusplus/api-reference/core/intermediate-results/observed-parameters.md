@@ -45,7 +45,7 @@ void SetObservedResultUnitTypes(unsigned long long types)
 
 **See Also**
 
-[IntermediateResultUnitType]({{ site.enums }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
+[IntermediateResultUnitType]({{ site.dcv_enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
 
 ### GetObservedResultUnitTypes
 
@@ -61,7 +61,7 @@ The observed types of intermediate result units.
 
 **See Also**
 
-[IntermediateResultUnitType]({{ site.enums }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
+[IntermediateResultUnitType]({{ site.dcv_enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
 
 ### IsResultUnitTypeObserved
 
@@ -77,7 +77,7 @@ Returns a boolean value indicating whether the specified result unit type was ob
 
 **See Also**
 
-[IntermediateResultUnitType]({{ site.enums }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
+[IntermediateResultUnitType]({{ site.dcv_enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
 
 ### AddObservedTask
 

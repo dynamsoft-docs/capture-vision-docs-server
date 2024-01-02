@@ -59,7 +59,7 @@ The value should be a bitwise OR combination of one or more of enumeration `Capt
 
 **See Also**
 
-[CapturedResultItemType]({{ site.enums }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### roi
 

@@ -39,7 +39,7 @@ CornerType type
 
 **See Also**
 
-[CornerType]({{ site.enums }}core/corner-type.html?src=cpp&&lang=cpp)
+[CornerType]({{ site.dcv_enumerations }}core/corner-type.html?src=cpp&&lang=cpp)
 
 ### intersection
 

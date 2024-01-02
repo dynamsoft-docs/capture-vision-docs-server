@@ -143,7 +143,7 @@ void SetBufferOverflowProtectionMode(BufferOverflowProtectionMode mode);
 
 **See Also**
 
-[BufferOverflowProtectionMode]({{ site.enums }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
+[BufferOverflowProtectionMode]({{ site.dcv_enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
 
 ### GetBufferOverflowProtectionMode
 
@@ -159,7 +159,7 @@ Returns the current buffer overflow protection mode.
 
 **See Also**
 
-[BufferOverflowProtectionMode]({{ site.enums }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
+[BufferOverflowProtectionMode]({{ site.dcv_enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
 
 ### HasImage
 
@@ -237,7 +237,7 @@ void SetColourChannelUsageType(ColourChannelUsageType type);
 
 **See Also**
 
-[ColourChannelUsageType]({{ site.enums}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
+[ColourChannelUsageType]({{ site.dcv_enumerations}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
 
 ### GetColourChannelUsageType
 
@@ -253,7 +253,7 @@ Returns the usage type of a color channel in images.
 
 **See Also**
 
-[ColourChannelUsageType]({{ site.enums}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
+[ColourChannelUsageType]({{ site.dcv_enumerations}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
 
 ### SetErrorListener
 

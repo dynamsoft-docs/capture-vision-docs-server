@@ -74,6 +74,6 @@ Returns a `RegionObjectElementType` enum value which represents the type of the 
 
 **See Also**
 
-[RegionObjectElementType]({{ site.enums }}core/region-object-element-type.html?src=cpp&&lang=cpp)
+[RegionObjectElementType]({{ site.dcv_enumerations }}core/region-object-element-type.html?src=cpp&&lang=cpp)
 
 
