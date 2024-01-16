@@ -28,6 +28,19 @@ class CImageProcessingModule
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |
 | [GetVersion](#getversion)                                     | Returns the version of the image processing module. |
+| [CreatePredetectedRegionElement](#createpredetectedregionelement) | Create a Predetected Region Element object |
+
+## CreatePredetectedRegionElement
+
+Create a Predetected Region Element object
+
+```cpp
+static CPredetectedRegionElement* CreatePredetectedRegionElement();
+```
+
+**Return Value**
+
+Returns an instance of CPredetectedRegionElement.
 
 ## GetVersion
 
@@ -36,10 +49,6 @@ Returns the version of the image processing module.
 ```cpp
 static const char* GetVersion();
 ```
-
-**Parameters**
-
-None.
 
 **Return Value**
 

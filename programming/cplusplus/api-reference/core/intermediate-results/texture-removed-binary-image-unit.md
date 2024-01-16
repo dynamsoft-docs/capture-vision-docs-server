@@ -24,7 +24,8 @@ class CTextureRemovedBinaryImageUnit : public CIntermediateResultUnit
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetImageData`](#getimagedata) | Gets the image data of the texture-removed binary image. |
+| [`GetImageData`](#getimagedata) | Gets the texture-removed binary image. |
+| [`SetImageData`](#setimagedata) | Sets the texture-removed binary image. |
 
 ### Inherited Methods
 
@@ -32,7 +33,7 @@ class CTextureRemovedBinaryImageUnit : public CIntermediateResultUnit
 
 ### GetImageData
 
-Gets the image data of the texture-removed binary image.
+Gets the texture-removed binary image.
 
 ```cpp
 virtual const CImageData* GetImageData() const
@@ -41,6 +42,26 @@ virtual const CImageData* GetImageData() const
 **Return value**
 
 Returns a const pointer to `CImageData` object that represents the texture-removed binary image. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
+### SetImageData
+
+Sets the texture-removed binary image.
+
+**Parameters**
+
+imgData The image data to set.
+
+**Return value**
+
+Returns 0 if succeeds, nonzero otherwise.
+
+```cpp
+virtual int SetImageData(const CImageData* imgData) = 0;
+```
 
 **See Also**
 

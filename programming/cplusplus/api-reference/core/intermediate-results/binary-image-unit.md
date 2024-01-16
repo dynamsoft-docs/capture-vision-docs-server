@@ -24,7 +24,8 @@ class CBinaryImageUnit : public CIntermediateResultUnit
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetImageData`](#getimagedata) | Gets a pointer to the binary image data. |
+| [`GetImageData`](#getimagedata) | Gets the binary image data. |
+| [`SetImageData`](#setimagedata) | Sets the binary image data. |
 
 ### Inherited Methods
 
@@ -32,7 +33,7 @@ class CBinaryImageUnit : public CIntermediateResultUnit
 
 ### GetImageData
 
-Gets a pointer to the binary image data.
+Gets the binary image data.
 
 ```cpp
 virtual const CImageData* GetImageData() const
@@ -41,6 +42,26 @@ virtual const CImageData* GetImageData() const
 **Return value**
 
 Returns a pointer to the `CBinaryImageData` object containing the binary image data. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
+### SetImageData
+
+Sets the binary image data.
+
+**Parameters**
+
+imgData The image data to set.
+
+**Return value**
+
+Returns 0 if succeeds, nonzero otherwise.
+
+```cpp
+virtual int SetImageData(const CImageData* imgData) = 0;
+```
 
 **See Also**
 

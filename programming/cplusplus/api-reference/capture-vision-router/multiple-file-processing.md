@@ -25,6 +25,8 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/multiple-f
 | [`RemoveResultFilter`](#removeresultfilter)                         | Removes an object which was added as a filter of captured results.         |
 | [`StartCapturing`](#startcapturing)                                 | Starts to process images consecutively.                                      |
 | [`StopCapturing`](#stopcapturing)                                   | Stops the consecutive processing.                                          |
+| [`PauseCapturing`](#pausecapturing)                                 | Pauses the capture process. The current thread will be blocked until the capture process is resumed. |
+| [`ResumeCapturing`](#resumecapturing)                               | Resumes the capture process. The current thread will be unblocked after the capture process is resumed. |
 
 ## SetInput
 
@@ -464,10 +466,6 @@ void StopCapturing(bool waitForRemainingTasks = true, bool waitForThreadExit = f
 `[in] waitForRemainingTasks` Indicates whether to wait for the remaining tasks to complete before returning. The default value is true.  
 `[in] waitForThreadExit` Indicates whether to wait for the capture process to complete before returning. The default value is false.
 
-**Return Value**
-
-None.
-
 **Code Snippet**
 
 ```cpp
@@ -480,4 +478,20 @@ router->StartCapturing("myTemplate", true, szErrorMsg2, 256);
 //...
 router->StopCapturing(true);
 delete router;
+```
+
+## PauseCapturing
+
+Pauses the capture process. The current thread will be blocked until the capture process is resumed.
+
+```cpp
+void PauseCapturing();
+```
+
+## ResumeCapturing
+
+Resumes the capture process. The current thread will be unblocked after the capture process is resumed.
+
+```cpp
+void ResumeCapturing();
 ```

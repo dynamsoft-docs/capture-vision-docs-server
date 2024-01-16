@@ -33,6 +33,9 @@ class CCapturedResult
 | [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Get the rotation transformation matrix of the original image relative to the rotated image.|
 | [`GetErrorCode`](#geterrorcode) | Gets the error code of the capture operation.|
 | [`GetErrorString`](#geterrorstring) | Gets the error message of the capture operation.|
+| [`operator[]`](#operator) | Gets a pointer to the [`CCapturedResultItem`](captured-result-item.md) object at the specified index. |
+| [`Retain`](#retain) | Increases the reference count of the `CCapturedResult` object.|
+| [`Release`](#release) | Decreases the reference count of the `CCapturedResult` object.|
 
 ### GetOriginalImageHashId
 
@@ -88,7 +91,7 @@ const CCapturedResultItem* GetItem(int index) const
 
 **Return value**
 
-Returns a pointer to the `CCapturedResultItem` object at the specified index.
+Returns a pointer to the [`CCapturedResultItem`](captured-result-item.md) object at the specified index.
 
 **See Also**
 
@@ -173,3 +176,39 @@ const char* GetErrorString() const
 **Return value**
 
 Returns the error message of the capture operation as a null-terminated string. You are not required to release the memory pointed to by the returned pointer.
+
+## operator[]
+
+Gets a pointer to the [`CCapturedResultItem`](captured-result-item.md) object at the specified index.
+
+```cpp
+virtual const CCapturedResultItem* operator[](int index) const = 0;
+```
+
+**Parameters**
+
+`[in] index` The index of the item to retrieve.
+
+**Return value**
+
+Returns a pointer to the CCapturedResultItem object at the specified index.
+
+## Retain
+
+Increases the reference count of the `CCapturedResult` object.
+
+```cpp
+virtual CCapturedResultItem* Retain() = 0;
+```
+
+**Return value**
+
+Return an object of `CCapturedResult`.
+
+## Release
+
+Decreases the reference count of the `CCapturedResult` object.
+
+```cpp
+virtual void Release() = 0;
+```

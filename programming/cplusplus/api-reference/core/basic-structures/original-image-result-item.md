@@ -27,7 +27,7 @@ class COriginalImageResultItem: public CCapturedResultItem
 
 | Method                          | Description                                      |
 | ------------------------------- | ------------------------------------------------ |
-| [`GetImageData`](#getimagedata) | Gets the image data for the COriginalImageResultItem. |
+| [`GetImageData`](#getimagedata) | Gets the image data for the `COriginalImageResultItem`. |
 
 ### Inherited Methods
 
@@ -35,7 +35,7 @@ class COriginalImageResultItem: public CCapturedResultItem
 
 ### GetImageData
 
-Gets the image data for the COriginalImageResultItem.
+Gets the image data for the `COriginalImageResultItem`.
 
 ```cpp
 virtual const CImageData* GetImageData() const = 0;
@@ -43,7 +43,7 @@ virtual const CImageData* GetImageData() const = 0;
 
 **Return value**
 
-Returns a const pointer to the `CImageData` object that contains the image data for the COriginalImageResultItem.
+Returns a const pointer to the `CImageData` object that contains the image data for the `COriginalImageResultItem`.
 
 **See Also**
 

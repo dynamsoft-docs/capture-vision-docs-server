@@ -25,8 +25,8 @@ class CFileImageTag : public CImageTag
 | Method               | Description |
 |----------------------|-------------|
 | [`GetFilePath`](#getfilepath) | Gets the file path of the image.|
-| [`GetPageNumber`](#getpagenumber) | Gets the page number of the current image in the PDF file. |
-| [`GetTotalPages`](#gettotalpages) | Gets the total page number of the PDF file. |
+| [`GetPageNumber`](#getpagenumber) | Gets the page number of the current image in the Multi-Page image file. |
+| [`GetTotalPages`](#gettotalpages) | Gets the total page number of the Multi-Page image file. |
 | [`CFileImageTag`](#cfileimagetag-constructor) | The constructor of the CFileImageTag class. |
 | [`~CFileImageTag`](#cfileimagetag-destructor) | The destructor of the CFileImageTag class. |
 
@@ -48,7 +48,7 @@ Returns the file path of the image tag.
 
 ### GetPageNumber
 
-Get the page number of the current image in the PDF file.
+Get the page number of the current image in the Multi-Page image file.
 
 ```cpp
 int GetPageNumber() const
@@ -56,11 +56,11 @@ int GetPageNumber() const
 
 **Return value**
 
-Returns the page number of the current image in the PDF file.
+Returns the page number of the current image in the Multi-Page image file.
 
 ### GetTotalPages
 
-Gets the total page number of the PDF file.
+Gets the total page number of the Multi-Page image file.
 
 ```cpp
 int GetTotalPages() const;
@@ -68,21 +68,23 @@ int GetTotalPages() const;
 
 **Return value**
 
-Returns the total page number of the PDF file.
+Returns the total page number of the Multi-Page image file.
 
 ### CFileImageTag Constructor
 
 The constructor of the `CFileImageTag` class.
 
 ```cpp
-CFileImageTag(const char* _filePath, int _pageNumber)
+CFileImageTag(const char* _filePath, int _pageNumber, int _totalPages)
 ```
 
 **Parameters**
 
 `[in] _filePath` The file path of the image tag.
 
-`[in] _pageNumber` The page number of the image tag.
+`[in] _pageNumber` The page number of the current image in the Multi-Page image file.
+
+`[in] _totalPages` The total page number of the Multi-Page image file.
 
 ### CFileImageTag Destructor
 

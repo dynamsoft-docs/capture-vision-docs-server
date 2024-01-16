@@ -25,7 +25,11 @@ class CTextZonesUnit : public CIntermediateResultUnit
 | Method               | Description |
 |----------------------|-------------|
 | [`GetCount`](#getcount) | Gets the number of text zones.|
-| [`GetTextZone`](#gettextzone) | Gets the quadrilateral shape of the text zone at the specified index.|
+| [`GetTextZone`](#gettextzone) | Gets the quadrilateral shape of the text zone at the specified index. |
+| [`RemoveAllTextZones`](#removealltextzones) | Removes all text zones from the unit. |
+| [`RemoveTextZone`](#removetextzone) | Removes the text zone at the specified index. |
+| [`AddTextZone`](#addtextzone) | Adds a text zone to the unit. |
+| [`SetTextZone`](#settextzone) | Sets the text zone at the specified index. |
 
 ### Inherited Methods
 
@@ -48,21 +52,77 @@ Returns the number of text zones in the unit.
 Gets the quadrilateral shape of the text zone at the specified index.
 
 ```cpp
-virtual int GetTextZone(int index, CQuadrilateral* quad) const
+virtual int GetTextZone(int index, CTextZone* textZone) const = 0;
 ```
 
 **Parameters**
 
 `[in] index` The index of the text zone.
 
-`[in, out] quad` A pointer to a CQuadrilateral object to receive the quadrilateral shape of the text zone.
+`[in, out] textZone` A pointer to a CTextZone object to receive  the text zone.
 
-**Return value**
+**Return Value**
 
 Returns 0 if the operation succeeds, or a nonzero error code if the operation fails.
 
-Note: The caller of this method is responsible for allocating memory for the `quad` pointer.
+### RemoveAllTextZones
 
-**See Also**
+Removes all text zones from the unit.
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+```cpp
+virtual void RemoveAllTextZones() = 0;
+```
+
+### RemoveTextZone
+
+Removes the text zone at the specified index.
+
+```cpp
+virtual int RemoveTextZone(int index) = 0;
+```
+
+**Parameters**
+
+index The index of the text zone to remove.
+
+**Return Value**
+
+Returns 0 if the operation succeeds, or a nonzero error code if the operation fails.
+
+### AddTextZone
+
+Adds a text zone to the unit.
+
+```cpp
+virtual int AddTextZone(const CTextZone& textZone, const double matrixToOriginalImage[9] =  IDENTITY_MATRIX) = 0;
+```
+
+**Parameters**
+
+`[in] textZone` The text zone to add.
+
+`[in] matrixToOriginalImage` The matrix to original image.
+
+**Return Value**
+
+Returns 0 if the operation succeeds, or a nonzero error code if the operation fails.
+
+### SetTextZone
+
+Sets the text zone at the specified index.
+
+```cpp
+virtual int SetTextZone(int index, const CTextZone& textZone, const double matrixToOriginalImage[9] =  IDENTITY_MATRIX) = 0;
+```
+
+**Parameters**
+
+`[in] index` The index of the text zone to set.
+
+`[in] textZone` The text zone to set.
+
+`[in] matrixToOriginalImage` The matrix to original image.
+
+**Return Value**
+
+Returns 0 if the operation succeeds, or a nonzero error code if the operation fails.

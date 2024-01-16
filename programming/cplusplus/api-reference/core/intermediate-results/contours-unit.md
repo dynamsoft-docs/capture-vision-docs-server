@@ -25,6 +25,7 @@ class CContoursUnit : public CIntermediateResultUnit
 | Method                    | Description |
 |---------------------------|---------------------------------------------|
 | [`GetContours`](#getcontours) | Gets the contours.  |
+| [`SetContours`](#setcontours) | Sets the contours.  |
 
 ### Inherited Methods
 
@@ -55,3 +56,25 @@ Returns 0 if successful, or an error code if the contour could not be retrieved.
 [CContour]({{ site.dcv_cpp_api }}core/basic-structures/contour.html)
 
 [CVector4]({{ site.dcv_cpp_api }}core/basic-structures/vector4.html)
+
+### SetContours
+
+Sets the contours and hierarchies in the unit.
+
+```cpp
+virtual int SetContours(int count, const CContour* contours, const CVector4* hierarchies, const double matrixToOriginalImage[9] =  IDENTITY_MATRIX) = 0;
+```
+
+**Parameters**
+
+`[in] count` The number of contours in the unit.
+
+`[in] contours` The contours in the unit.
+
+`[in] hierarchies` The hierarchies in the unit.
+
+`[in] matrixToOriginalImage` The matrix to original image.
+
+**Return Value**
+
+Returns 0 if the operation succeeds, or a nonzero error code if the operation fails.

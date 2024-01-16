@@ -24,7 +24,8 @@ class CGrayscaleImageUnit : public CIntermediateResultUnit
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetImageData`](#getimagedata) | Gets the image data of the grayscale image.|
+| [`GetImageData`](#getimagedata) | Gets the grayscale image. |
+| [`SetImageData`](#setimagedata) | Sets the grayscale image. |
 
 ### Inherited Methods
 
@@ -32,7 +33,7 @@ class CGrayscaleImageUnit : public CIntermediateResultUnit
 
 ### GetImageData
 
-Gets the image data of the grayscale image.
+Gets the grayscale image.
 
 ```cpp
 virtual const CImageData* GetImageData() const
@@ -45,3 +46,19 @@ Returns a pointer to the `CImageData` object that contains the grayscale image. 
 **See Also**
 
 [CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
+### SetImageData
+
+Sets the grayscale image.
+
+**Parameters**
+
+imgData The image data to set.
+
+**Return value**
+
+Returns 0 if succeeds, nonzero otherwise.
+
+```cpp
+virtual int SetImageData(const CImageData* imgData) = 0;
+```

@@ -26,6 +26,8 @@ class CTextureDetectionResultUnit : public CIntermediateResultUnit
 |----------------------|-------------|
 | [`GetXSpacing`](#getxspacing) | Gets x-direction spacing of the texture stripes. |
 | [`GetYSpacing`](#getyspacing) | Gets y-direction spacing of the texture stripes. |
+| [`SetXSpacing`](#setxspacing) | Sets x-direction spacing of the texture stripes. |
+| [`SetYSpacing`](#setyspacing) | Sets y-direction spacing of the texture stripes. |
 
 ### Inherited Methods
 
@@ -54,3 +56,27 @@ virtual int GetYSpacing()
 **Return value**
 
 Returns the y-direction spacing of the texture stripes.
+
+### SetXSpacing
+
+Sets the x-direction spacing of the texture stripes.
+
+```cpp
+virtual void SetXSpacing(int xSpacing) = 0;
+```
+
+**Parameters**
+
+`[in] xSpacing` The x-direction spacing of the texture stripes.
+
+### SetYSpacing
+
+Sets the y-direction spacing of the texture stripes.
+
+```cpp
+virtual void SetYSpacing(int ySpacing) = 0;
+```
+
+**Parameters**
+
+`[in] ySpacing` The y-direction spacing of the texture stripes.

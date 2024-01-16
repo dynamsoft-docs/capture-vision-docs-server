@@ -25,6 +25,7 @@ class CTextRemovedBinaryImageUnit : public CIntermediateResultUnit
 | Method               | Description |
 |----------------------|-------------|
 | [`GetImageData`](#getimagedata) | Gets the text-removed binary image. |
+| [`SetImageData`](#setimagedata) | Sets the text-removed binary image. |
 
 ### Inherited Methods
 
@@ -41,6 +42,26 @@ virtual const CImageData* GetImageData() const;
 **Return value**
 
 Returns a pointer to the `CImageData` object that contains the text-removed binary image. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
+### SetImageData
+
+Sets the text-removed binary image.
+
+**Parameters**
+
+`imgData` The image data to set.
+
+**Return value**
+
+Returns 0 if succeeds, nonzero otherwise.
+
+```cpp
+virtual int SetImageData(const CImageData* imgData) = 0;
+```
 
 **See Also**
 

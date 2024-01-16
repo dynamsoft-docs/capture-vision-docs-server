@@ -37,6 +37,7 @@ class CIntermediateResultUnit
 | [`Release`](#release) | Decreases the reference count of the unit. |
 | [`GetTransformMatrix`](#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.dcv_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
 | [`SetTransformMatrix`](#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.dcv_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
+| [`Replace`](#replace) | Replaces the `CIntermediateResultUnit` object to the specified `CIntermediateResultUnit` object. |
 
 ### GetHashId
 
@@ -155,8 +156,12 @@ void SetOriginalImageTag(const CImageTag* _tag)
 Increases the reference count of the intermediate result unit.
 
 ```cpp
-virtual void Retain() = 0
+virtual CIntermediateResultUnit* Retain() = 0
 ```
+
+**Return value**
+
+Returns an object of the `CIntermediateResultUnit` class.
 
 ### Release
 
@@ -211,8 +216,23 @@ The corresponding transformation matrices are as follows:
 - original image to local image
 - rotated image to original image
 - original image to rotated image
-- 
+
 **See Also**
 
 [TransformMatrixType]({{site.dcv_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp)
 
+### Replace
+
+Replaces the specified `CIntermediateResultUnit` object with the current `CIntermediateResultUnit` object.
+
+```cpp
+virtual int Replace(CIntermediateResultUnit* unit) = 0;
+```
+
+**Parameters**
+
+`unit` The `CIntermediateResultUnit` object to be replaced.
+
+**Return value**
+
+Returns 0 if succeeds, nonzero otherwise.
