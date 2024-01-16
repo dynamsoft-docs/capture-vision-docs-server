@@ -24,9 +24,13 @@ class CCapturedResultItem
 
 | Method                         | Description|
 |--------------------------------|------------|
-| [`~CCapturedResultItem`](#ccapturedresultitem-destructor) | This is the class destructor.                                                                                                |
-| [`GetType`](#gettype)              | Gets the type of the captured result item.                                                                                                       |
-| [`GetReferencedItem`](#getreferenceditem)    | Gets a pointer to the referenced item in the captured result.                                                                                      |
+| [`~CCapturedResultItem`](#ccapturedresultitem-destructor) | This is the class destructor. |
+| [`GetType`](#gettype)              | Gets the type of the captured result item. |
+| [`GetReferencedItem`](#getreferenceditem)    | Gets a pointer to the referenced item in the captured result. |
+| [`GetTargetROIDefName`](#gettargetroidefname) | Gets the name of the target ROI definition. |
+| [`GetTaskName`](#gettaskname) | Gets the name of the task. |
+| [`Retain`](#retain) | Increases the reference count of the `CCapturedResultItem` object. |
+| [`Release`](#release) | Decreases the reference count of the `CCapturedResultItem` object. |
 
 ### CCapturedResultItem Destructor
 
@@ -67,3 +71,51 @@ Returns a pointer to the referenced item in the captured result item. You are no
 **See Also**
 
 [CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+
+## GetTargetROIDefName
+
+Gets the name of the target ROI definition.
+
+```cpp
+virtual const char* GetTargetROIDefName() const = 0;
+```
+
+**Return value**
+
+Returns the name of the target ROI definition.
+
+## GetTaskName
+
+Gets the name of the task.
+
+```cpp
+virtual const char* GetTaskName() const = 0;
+```
+
+**Return value**
+
+Returns the name of the task.
+
+## Retain
+
+Increases the reference count of the `CCapturedResultItem` object.
+
+```cpp
+virtual CCapturedResultItem* Retain() = 0;
+```
+
+**Return value**
+
+Returns an object of `CCapturedResultItem`.
+
+**See Also**
+
+[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+
+## Release
+
+Decreases the reference count of the `CCapturedResultItem` object.
+
+```cpp
+virtual void Release() = 0;
+```

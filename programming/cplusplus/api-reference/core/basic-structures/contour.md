@@ -20,38 +20,14 @@ The `CContour` class represents a contour in 2D space. It contains an array of C
 class CContour 
 ```
 
-## Attributes Summary
-  
-| Attribute | Type |
-|---------- | ---- |
-| [`pointsCount`](#pointscount) | *int* |
-| [`points`](#points)| *CPoint\** |
-
 ## Methods Summary
 
 | Method               | Description |
 |----------------------|-------------|
+| [`SetPoints`](#setpoints) | Sets the point array and the points free function pointer. |
+| [`GetPointsCount`](#getpointscount) | Gets the number of points in the point array. |
+| [`GetPoints`](#getpoints) | Gets the point array. |
 | [`~CContour`](#ccontour-destructor) | The destructor of CContour. |
-
-### pointsCount
-
-The number of points in the contour.
-
-```cpp
-int pointsCount
-```
-
-### points
-
-The point array of the contour. The memory will be released by CContour.
-
-```cpp
-CPoint* points
-```
-
-**See Also**
-
-[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
 
 ### ~CContour Destructor
 
@@ -60,3 +36,43 @@ The destructor of CContour. It releases the memory of the point array.
 ```cpp
 ~CContour()
 ```
+
+### SetPoints
+
+Sets the point array and the points free function pointer.
+
+```cpp
+void SetPoints(int pointsCount, const CPoint* points, FreePointsFunc freePointsFunc);
+```
+
+**Parameters**
+
+`[in] pointsCount`: The number of points in the point array.
+
+`[in] points`: The point array.
+
+`[in] freePointsFunc`: The freePointsFunc function pointer.
+
+### GetPointsCount
+
+Gets the number of points in the point array.
+
+```cpp
+int GetPointsCount() const;
+```
+
+**Return Value**
+
+The number of points in the point array.
+
+### GetPoints
+
+Gets the point array.
+
+```cpp
+const CPoint* GetPoints() const;
+```
+
+**Return Value**
+
+Return the point array.

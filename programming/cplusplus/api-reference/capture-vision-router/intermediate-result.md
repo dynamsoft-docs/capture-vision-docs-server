@@ -17,7 +17,7 @@ permalink: /programming/cplusplus/api-reference/capture-vision-router/intermedia
 
 ## GetIntermediateResultManager
 
-Returns an [`CIntermediateResultManager`](../core/intermediate-results/intermediate-result-manager.md) object.
+Returns an [`CIntermediateResultManager`](auxiliary-classes/intermediate-result-manager.md) object.
 
 ```cpp
 CIntermediateResultManager* GetIntermediateResultManager();
@@ -29,4 +29,4 @@ None.
 
 **Return Value**
 
-Returns a pointer to the [`CIntermediateResultManager`](../core/intermediate-results/intermediate-result-manager.md) object.
+Returns a pointer to the [`CIntermediateResultManager`](auxiliary-classes/intermediate-result-manager.md) object.

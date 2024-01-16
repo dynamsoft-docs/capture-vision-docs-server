@@ -27,6 +27,10 @@ class CRegionObjectElement
 | [`GetLocation`](#getlocation) | Get the location of the region object element. |
 | [`GetReferencedElement`](#getreferencedelement) | Get a pointer to a referenced region object element. |
 | [`GetElementType`](#getelementtype) | Get the type of the region object element. |
+| [`SetLocation`](#setlocation) | Set the location of the region object element. |
+| [`Clone`](#clone) | Clone the region object element. |
+| [`Retain`](#retain) | Increases the reference count of the `CRegionObjectElement` object. |
+| [`Release`](#release) | Decreases the reference count of the `CRegionObjectElement` object. |
 
 ### GetLocation
 
@@ -76,4 +80,50 @@ Returns a `RegionObjectElementType` enum value which represents the type of the 
 
 [RegionObjectElementType]({{ site.dcv_enumerations }}core/region-object-element-type.html?src=cpp&&lang=cpp)
 
+### SetLocation
 
+Set the location of the region object element.
+
+```cpp
+virtual int SetLocation(const CQuadrilateral& location) = 0;
+```
+
+**Parameters**
+
+`location` The location of the region object element.
+
+**Return value**
+
+Returns 0 if success, otherwise an error code.
+
+### Clone
+
+Clone the region object element.
+
+```cpp
+virtual CRegionObjectElement* Clone() const = 0;
+```
+
+**Return value**
+
+Returns a pointer to a copy of the region object element.
+
+### Retain
+
+Increases the reference count of the `CRegionObjectElement` object.
+
+```cpp
+virtual CRegionObjectElement* Retain() = 0;
+```
+
+**Return value**
+
+An object of `CRegionObjectElement`.
+
+### Release
+
+Decreases the reference count of the `CRegionObjectElement` object.
+
+```cpp
+virtual void Release() = 0;
+```

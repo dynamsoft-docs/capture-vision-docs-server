@@ -27,7 +27,8 @@ typedef struct tagSimplifiedCaptureVisionSettings
     SimplifiedBarcodeReaderSettings barcodeSettings;
     SimplifiedLabelRecognizerSettings labelSettings;
     int minImageCaptureInterval;
-    char reserved[2044];
+    SimplifiedDocumentNormalizerSettings documentSettings;
+    char reserved[1440];
 } SimplifiedCaptureVisionSettings;
 ```
 
@@ -42,8 +43,9 @@ typedef struct tagSimplifiedCaptureVisionSettings
 | [`timeout`](#timeout)                                 | *int*                               |
 | [`barcodeSettings`](#barcodesettings)                 | *SimplifiedBarcodeReaderSettings*   |
 | [`labelSettings`](#labelsettings)                     | *SimplifiedLabelRecognizerSettings* |
+| [`documentSettings`](#documentsettings)               | *SimplifiedDocumentNormalizerSettings* |
 | [`minImageCaptureInterval`](#minimagecaptureinterval) | *int*                               |
-| [`reserved`](#reserved)                               | *char[2044]*                        |
+| [`reserved`](#reserved)                               | *char[1440]*                        |
 
 ### capturedResultItemTypes
 
@@ -126,6 +128,18 @@ SimplifiedLabelRecognizerSettings labelSettings
 
 [SimplifiedLabelRecognizerSettings]({{ site.dlr_cpp_api }}simplified-label-recognizer-settings.html)
 
+### documentSettings
+
+Specifies the settings for document normalization.
+
+```cpp
+SimplifiedDocumentNormalizerSettings documentSettings
+```
+
+**See Also**
+
+[SimplifiedDocumentNormalizerSettings]({{ site.ddn_cpp_api }}simplified-document-normalizer-settings.html)
+
 ### minImageCaptureInterval
 
 Specifies the minimum time interval (in milliseconds) allowed between consecutive image captures.
@@ -144,5 +158,5 @@ Setting a larger value for this property will introduce a delay between image ca
 Reserved for future use.
 
 ```cpp
-char reserved[2044]
+char reserved[1440]
 ```

@@ -24,7 +24,8 @@ class CTextureRemovedGrayscaleImageUnit : public CIntermediateResultUnit
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetImageData`](#getimagedata) | Gets the texture-removed grayscale image.|
+| [`GetImageData`](#getimagedata) | Gets the texture-removed grayscale image. |
+| [`SetImageData`](#setimagedata) | Sets the texture-removed grayscale image. |
 
 ### Inherited Methods
 
@@ -41,6 +42,26 @@ virtual const CImageData* GetImageData() const
 **Return value**
 
 Returns a constant pointer to the texture-removed grayscale image. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
+### SetImageData
+
+Sets the texture-removed grayscale image.
+
+**Parameters**
+
+imgData The image data to set.
+
+**Return value**
+
+Returns 0 if succeeds, nonzero otherwise.
+
+```cpp
+virtual int SetImageData(const CImageData* imgData) = 0;
+```
 
 **See Also**
 

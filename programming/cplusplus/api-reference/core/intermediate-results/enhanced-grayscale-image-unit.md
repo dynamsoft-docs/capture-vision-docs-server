@@ -24,7 +24,8 @@ class CEnhancedGrayscaleImageUnit  : public CIntermediateResultUnit
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetImageData`](#getimagedata) | Gets the enhanced grayscale image data.|
+| [`GetImageData`](#getimagedata) | Gets the enhanced grayscale image data. |
+| [`SetImageData`](#setimagedata) | Sets the enhanced grayscale image data. |
 
 ### Inherited Methods
 
@@ -41,6 +42,26 @@ virtual const CImageData* GetImageData() const
 **Return value**
 
 Returns a const pointer to the `CImageData` object that contains the enhanced grayscale image data. You don't need to release the memory pointed to by the returned pointer.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
+### SetImageData
+
+Sets the enhanced grayscale image data.
+
+**Parameters**
+
+imgData The image data to set.
+
+**Return value**
+
+Returns 0 if succeeds, nonzero otherwise.
+
+```cpp
+virtual int SetImageData(const CImageData* imgData) = 0;
+```
 
 **See Also**
 

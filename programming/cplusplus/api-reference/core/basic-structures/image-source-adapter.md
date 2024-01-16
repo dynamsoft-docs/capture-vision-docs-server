@@ -269,4 +269,4 @@ void SetErrorListener(CImageSourceErrorListener* listener);
 
 **See Also**
 
-[CImageSourceErrorListener]{{ site.dcv_cpp_api }}core/basic-structures/image-source-error-listener.html)
+[CImageSourceErrorListener]({{ site.dcv_cpp_api }}core/basic-structures/image-source-error-listener.html)

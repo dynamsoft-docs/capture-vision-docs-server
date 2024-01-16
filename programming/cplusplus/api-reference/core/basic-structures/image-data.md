@@ -26,6 +26,7 @@ class CImageData
 |----------------------|-------------|
 | [`CImageData()`](#cimagedata-constructor) | Constructs an empty image data object. |
 | [`CImageData(int _bytesLength, const unsigned char* _bytes, int _width, int _height, int _stride, ImagePixelFormat _format, int _orientation=0, const CImageTag* _tag = NULL)`](#cimagedata-constructor2) | Constructs an image data object with the specified parameters. |
+| [`CImageData(unsigned long long _bytesLength, const unsigned char* _bytes, FreeBytesFunc _freeBytesFunc, int _width, int _height, int _stride, ImagePixelFormat _format, int _orientation=0, const CImageTag* _tag = NULL)`](#cimagedata-constructor3) | Constructs an image data object with the specified parameters. |
 | [`~CImageData()`](#cimagedata-destructor) | Destructs the image data object and frees the allocated memory. |
 | [`GetBytes`](#getbytes) | Gets the image byte array. |
 | [`GetBytesLength`](#getbyteslength) | Gets the length of the image byte array. |
@@ -71,6 +72,34 @@ CImageData(int _bytesLength, const unsigned char* _bytes, int _width, int _heigh
 
 `_tag` The tag of the image.
 
+### CImageData Constructor3
+
+Constructs an image data object with the specified parameters.
+
+```cpp
+CImageData(unsigned long long _bytesLength, const unsigned char* _bytes, FreeBytesFunc _freeBytesFunc, int _width, int _height, int _stride, ImagePixelFormat _format, int _orientation=0, const CImageTag* _tag = NULL);
+```
+
+**Parameters**
+
+`_bytesLength` The length of the image byte array.
+
+`_bytes` The image byte array.
+
+`_freeBytesFunc` The function to free the image byte array.
+
+`_width` The width of the image.
+
+`_height` The height of the image.
+
+`_stride` The stride of the image.
+
+`_format` The pixel format of the image.
+
+`_orientation` The orientation of the image.
+
+`_tag` The tag of the image.
+
 ### ~CImageData Destructor
 
 Destructs the image data object and frees the allocated memory.
@@ -96,7 +125,7 @@ Returns a pointer to the image byte array.
 Gets the length of the image byte array.
 
 ```cpp
-int GetBytesLength() const
+unsigned long long GetBytesLength() const
 ```
 
 **Return value**

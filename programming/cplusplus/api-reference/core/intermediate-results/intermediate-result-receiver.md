@@ -4,6 +4,7 @@ title: class CIntermediateResultReceiver - Dynamsoft Core Module C++ Edition API
 description: This page shows the C++ edition of the class CIntermediateResultReceiver in Dynamsoft Core Module.
 keywords: intermediate result receiver, c++
 needAutoGenerateSidebar: true
+ignore: true
 ---
 
 # CIntermediateResultReceiver
