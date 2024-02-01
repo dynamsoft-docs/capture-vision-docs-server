@@ -38,6 +38,28 @@ noTitleIndex: true
   - `CRecognizedTextLinesResult`
 - Change the compiler option of the runtime library of Windows DLLs from MD to MT.
 
+## 3.0.30 (02/01/2024)
+
+### New
+
+- Added internal logic to obtain resources based on the specified template.
+
+## 3.0.20 (10/26/2023)
+
+### New
+
+- Added the support of the following preset templates:
+  - PT_RECOGNIZE_NUMBERS
+  - PT_RECOGNIZE_LETTERS
+  - PT_RECOGNIZE_NUMBERS_AND_LETTERS
+  - PT_RECOGNIZE_NUMBERS_AND_UPPERCASE_LETTERS
+  - PT_RECOGNIZE_UPPERCASE_LETTERS
+- Added a new parameter scaleDownThreshold to the struct SimplifiedLabelRecognizerSettings.
+
+### Fixed
+
+- Small fixes and tweaks.
+
 ## 3.0.10 (08/08/2024)
 
 - Renamed the method `GetSourceImageHashId` of `CRecognizedTextLinesResult` class to `GetOriginalImageHashId`.

@@ -82,6 +82,12 @@ noTitleIndex: true
 
 - Fixed a crash bug that might happen when triggering the `SetNextImageToReturn` method of the `ImageSourceAdapter` class.
 
+## 3.0.30 (02/01/2024)
+
+### New
+
+- Added a new virtual function to obtain resources based on the specified template.
+
 ## 3.0.20 (10/26/2023)
 
 ### New

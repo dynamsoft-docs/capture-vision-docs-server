@@ -9,6 +9,18 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftCodeParserDedicator Module
 
+## 1.2.0 (01/16/2024)
+
+### Fixed
+
+- Small fixes and tweaks.
+
+## 1.0.10 (12/07/2023)
+
+### Fixed
+
+- Small fixes and tweaks.
+
 ## 1.0.0 (07/04/2023)
 
 The first version of `DynamsoftCodeParserDedicator (DCPD)` CPP edition that integrate with `DynamsoftCaptureVision (DCV)` architecture.
