@@ -19,6 +19,12 @@ noTitleIndex: true
 
 - Change the compiler option of the runtime library of Windows DLLs from MD to MT.
 
+## 3.0.40 (02/01/2024)
+
+### Fixed
+
+- Small fixes and tweaks.
+
 ## 3.0.30 (12/07/2023)
 
 ### Fixed

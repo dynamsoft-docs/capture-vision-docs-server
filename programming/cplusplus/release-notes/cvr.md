@@ -61,6 +61,12 @@ noTitleIndex: true
   - The `capturedResultItemTypes` should include at least one of the `CRIT_BARCODE`, `CRIT_TEXT_LINE`, `CRIT_DETECTED_QUAD`, `CRIT_NORMALIZED_IMAGE`. Otherwise, the method `UpdateSettings` will return the error code `EC_PARAMETER_VALUE_INVALID` with the message "The captured result item types should contain at least one task result type".
 - Change the compiler option of the runtime library of Windows DLLs from MD to MT.
 
+## 2.0.30 (02/01/2024)
+
+### New
+
+- Added internal APIs to obtain resources based on the specified template.
+
 ## 2.0.20 (10/26/2023)
 
 ### New

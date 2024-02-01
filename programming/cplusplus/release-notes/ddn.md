@@ -47,7 +47,7 @@ noTitleIndex: true
   - `CDetectedQuadsResult`
 - Change the compiler option of the runtime library of Windows DLLs from MD to MT.
 
-## 2.0.20 (12/12/2023)
+## 2.0.20 (10/26/2023)
 
 ### Changed
 

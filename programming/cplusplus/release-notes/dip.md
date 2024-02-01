@@ -21,6 +21,12 @@ noTitleIndex: true
 - The `DeepNeuralNetwork` module is separated from the `DynamsoftImageProcessing` module.
 - Change the compiler option of the runtime library of Windows DLLs from MD to MT.
 
+## 2.0.30 (02/01/2024)
+
+### New
+
+- Added internal changes to read code parser task settings parameters.
+
 ## 2.0.20 (10/26/2023)
 
 ### Fixed
