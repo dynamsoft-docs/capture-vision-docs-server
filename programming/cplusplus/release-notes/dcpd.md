@@ -9,6 +9,12 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftCodeParserDedicator Module
 
+## 1.2.10 (02/29/2024)
+
+### Improved
+
+- Security update for `DynamsoftCodeParserDedicator` library.
+
 ## 1.2.0 (01/16/2024)
 
 ### Fixed

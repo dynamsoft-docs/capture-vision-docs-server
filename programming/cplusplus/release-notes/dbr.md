@@ -9,6 +9,17 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftBarcodeReader Module
 
+## 10.2.10 (02/29/2024)
+
+### Improved
+
+- Security update for `DynamsoftBarcodeReader` library.
+
+### Fixed
+
+- Fixed a misreading bug of the PDF417 barcodes on the South Carolina driver's license.
+- Internal changes to prevent crash bugs in barcode decoding.
+
 ## 10.2.0 (01/16/2024)
 
 ### New

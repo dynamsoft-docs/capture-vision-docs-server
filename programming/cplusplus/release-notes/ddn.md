@@ -9,6 +9,12 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftDocumentNormalizer Module
 
+## 2.2.10 (02/29/2024)
+
+### Improved
+
+- Security update for `DynamsoftDocumentNormalizer` library.
+
 ## 2.2.0 (01/16/2024)
 
 ### New
@@ -32,6 +38,10 @@ noTitleIndex: true
   - `CreateDetectedQuadElement`
 - Added a new enumeration `ImageColourMode` to specify the colour mode of the normalized image.
 - Add C interfaces and implementations, which are only used to encapsulate upper-level languages such as c# and python, etc.
+
+### Fixed
+
+- Fixed a bug where the internal table boundaries were recognized as the document boundaries.
 
 ### Break Changes
 

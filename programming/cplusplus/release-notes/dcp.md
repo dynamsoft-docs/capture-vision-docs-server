@@ -9,6 +9,12 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftCodeParser Module
 
+## 2.2.10 (02/29/2024)
+
+### Improved
+
+- Security update for `DynamsoftCodeParser` library.
+
 ## 2.2.0 (01/16/2024)
 
 ### New

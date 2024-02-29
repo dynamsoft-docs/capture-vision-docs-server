@@ -81,7 +81,7 @@ virtual void OnCapturedResultReceived(CCapturedResult* pResult)
 
 **See Also**
 
-[CCapturedResult]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)
+[CCapturedResult]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
 
 ### OnOriginalImageResultReceived
 
