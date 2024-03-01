@@ -9,7 +9,7 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftUtility Module
 
-## 1.2.10 (02/29/2024)
+## 1.2.10 (03/01/2024)
 
 ### Improved
 

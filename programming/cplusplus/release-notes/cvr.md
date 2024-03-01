@@ -9,7 +9,7 @@ noTitleIndex: true
 
 # Release Notes - CaptureVisionRouter Module
 
-## 2.2.10 (02/29/2024)
+## 2.2.10 (03/01/2024)
 
 ### New
 

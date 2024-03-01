@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CCapturedResultReceiver - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCapturedResultReceiver in Core Module.
+description: The class CCapturedResultReceiver of CaptureVisionRouter module C++ edition is responsible for receiving captured results.
 keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

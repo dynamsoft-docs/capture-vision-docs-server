@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CCapturedResultFilter - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCapturedResultFilter in Core Module.
+description: The class CCapturedResultFilter of CaptureVisionRouter Module C++ edition defines how to filter the captured results.
 keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
