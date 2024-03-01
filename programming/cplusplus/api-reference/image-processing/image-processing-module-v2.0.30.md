@@ -6,7 +6,7 @@ keywords: image processing module, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: C++ CImageProcessingModule Class
-permalink: /programming/cplusplus/api-reference/image-processing/image-processing-module-v2.0.20.html
+permalink: /programming/cplusplus/api-reference/image-processing/image-processing-module-v2.0.30.html
 ---
 
 # CImageProcessingModule

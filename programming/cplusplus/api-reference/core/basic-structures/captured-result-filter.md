@@ -33,7 +33,6 @@ class CCapturedResultFilter
 | [`CCapturedResultFilter`](#ccapturedresultfilter-constructor)               | Constructor                                          |
 | [`~CCapturedResultFilter`](#ccapturedresultfilter-destructor)              | Destructor                                           |
 | [`GetFilteredResultItemTypes`](#getfilteredresultitemtypes)       | Gets the types of observed result items.             |
-| [`OnCapturedResultReceived`](#oncapturedresultreceived)           | Callback function for all captured results.          |
 | [`OnOriginalImageResultReceived`](#onoriginalimageresultreceived)           | Callback function for original image results.             |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived)         | Callback function for decoded barcodes results.      |
 | [`OnRecognizedTextLinesReceived`](#onrecognizedtextlinesreceived) | Callback function for recognized text lines results. |
@@ -70,18 +69,6 @@ unsigned int GetFilteredResultItemTypes()
 **Return value**
 
 Returns the type [`CapturedResultItemType`]({{site.dcv_enumerations}}core/captured-result-item-type.html?src=cpp&&lang=cpp) of filtered result items.
-
-### OnCapturedResultReceived
-
-Callback function for all captured results. It will be called once for each captured result.
-
-```cpp
-virtual void OnCapturedResultReceived(CCapturedResult* pResult)
-```
-
-**Parameters**
-
-`[in] pResult` The captured result.
 
 ### OnOriginalImageResultReceived
 

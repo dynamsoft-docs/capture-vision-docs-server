@@ -9,11 +9,28 @@ noTitleIndex: true
 
 # Release Notes - Core Module
 
+## 3.2.1 (03/01/2024)
+
+### Improved
+
+- Security update for `DynamsoftCore` library.
+
+### New
+
+- Added new error codes:
+  - `EC_RESULT_TYPE_MISMATCH_IRREPLACEABLE`
+  - `EC_LICENSE_CACHE_USED`
+- Added a virtual destructor to the interface [`CImageSourceErrorListener`]({{ site.dcv_cpp_api }}core/basic-structures/image-source-error-listener.html) to prevent memory leaks.
+
+### Fixed
+
+- Fixed a crash bug of the Replace method of the [`IntermediateResultUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) class. The method will return the error code `EC_RESULT_TYPE_MISMATCH_IRREPLACEABLE` when the result type is mismatched.
+
 ## 3.2.0 (01/16/2024)
 
 ### New
 
-- Added the following methods to the `CObservationParameters` class to specify the `input only` result unit.
+- Added the following methods to the [`CObservationParameters`]({{ site.dcv_cpp_api }}core/intermediate-results/observation-parameters.html) class to specify the `input only` result unit.
   - `SetResultUnitTypesOnlyForInput`
   - `GetResultUnitTypesOnlyForInput`
   - `IsResultUnitTypeOnlyForInput`

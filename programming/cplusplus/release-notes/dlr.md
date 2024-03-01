@@ -9,6 +9,17 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftLabelRecognizer Module
 
+## 3.2.10 (03/01/2024)
+
+### Improved
+
+- Security update for `DynamsoftLabelRecognizer` library.
+- Supported the filter configuration of the characters that are not recognized by the Deep Neural Network via the `Filter.txt` file.
+
+### Fixed
+
+- Fixed a bug where multiple results were output from the same text area.
+
 ## 3.2.0 (01/16/2024)
 
 ### New

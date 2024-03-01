@@ -5,7 +5,7 @@ description: This is the user guide page of Dynamsoft Capture Vision for C++ Lan
 keywords: c++, user guide
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-permalink: /programming/cplusplus/user-guide/index.html
+permalink: /programming/cplusplus/user-guide/index-v2.0.0.html
 ---
 
 # User Guide - C++
@@ -17,26 +17,26 @@ In this guide, you will learn step by step on how to build a barcode reader, lab
 <span style="font-size:20px">Table of Contents</span>
 
 - [User Guide - C++](#user-guide---c)
-  - [Requirements](#requirements)
-  - [Installation](#installation)
-  - [Build Your First Application](#build-your-first-application)
-    - [Create A New Project](#create-a-new-project)
-      - [For Windows](#for-windows)
-      - [For Linux](#for-linux)
-    - [Include the Library](#include-the-library)
-    - [Initialize a Capture Vision Router Instance](#initialize-a-capture-vision-router-instance)
-    - [Capture and Output Captured Results](#capture-and-output-captured-results)
-    - [Release the Allocated Memory](#release-the-allocated-memory)
-    - [Build and Run the Project](#build-and-run-the-project)
-      - [On windows](#on-windows)
-      - [On Linux](#on-linux)
-  - [Process Multiple Images](#process-multiple-images)
-    - [Preparation Steps](#preparation-steps)
-    - [Add an Image Source as the Input](#add-an-image-source-as-the-input)
-    - [Add Captured Result Receiver](#add-captured-result-receiver)
-    - [Start Capturing](#start-capturing)
-    - [Release Allocated Memory](#release-allocated-memory)
-    - [Build and Run the Project Again](#build-and-run-the-project-again)
+	- [Requirements](#requirements)
+	- [Installation](#installation)
+	- [Build Your First Application](#build-your-first-application)
+		- [Create A New Project](#create-a-new-project)
+			- [For Windows](#for-windows)
+			- [For Linux](#for-linux)
+		- [Include the Library](#include-the-library)
+		- [Initialize a Capture Vision Router Instance](#initialize-a-capture-vision-router-instance)
+		- [Capture and Output Captured Results](#capture-and-output-captured-results)
+		- [Release the Allocated Memory](#release-the-allocated-memory)
+		- [Build and Run the Project](#build-and-run-the-project)
+			- [On windows](#on-windows)
+			- [On Linux](#on-linux)
+	- [Process Multiple Images](#process-multiple-images)
+		- [Preparation Steps](#preparation-steps)
+		- [Add an Image Source as the Input](#add-an-image-source-as-the-input)
+		- [Add Captured Result Receiver](#add-captured-result-receiver)
+		- [Start Capturing](#start-capturing)
+		- [Release Allocated Memory](#release-allocated-memory)
+		- [Build and Run the Project Again](#build-and-run-the-project-again)
 
 ## Requirements
 

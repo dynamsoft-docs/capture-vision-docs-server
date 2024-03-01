@@ -9,6 +9,33 @@ noTitleIndex: true
 
 # Release Notes - CaptureVisionRouter Module
 
+## 2.2.10 (03/01/2024)
+
+### New
+
+- Added new functions to get different types of captured results.
+- Added a new function [`GetDecodedBarcodesResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getdecodedbarcodesresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_BARCODE`.
+- Added a new function [`GetRecognizedTextLinesResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getrecognizedtextlinesresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_TEXT_LINE`.
+- Added a new function [`GetDetectedQuadsResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getdetectedquadsresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_DETECTED_QUAD`.
+- Added a new function [`GetNormalizedImagesResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getnormalizedimagesresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_NORMALIZED_IMAGE`.
+- Added a new function [`GetParsedResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getparsedresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_PARSED_RESULT`.
+- Added new virtual destructors to the following interfaces to prevent memory leaks.
+  - [`CCaptureStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+  - [`CImageSourceStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+
+### Improved
+
+- Security update for `DynamsoftCaptureVisionRouter` library.
+- Supported multiple instances of the class [`CCaptureVisionRouter`]({{ site.dcv_cpp_api }}capture-vision-router/capture-vision-router.html).
+
+### Changed
+
+- Changed the internal logic of the function [`SetResultUnitTypesOnlyForInput`]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html#setresultunittypesonlyforinput) of `ObservationParameters`. The function only takes effect when the callback of the specified result unit is implemented.
+
+### Fixed
+
+- Fixed a bug where error messages are not output when parsing the parameter templates.
+
 ## 2.2.0 (01/16/2024)
 
 ### New
@@ -45,7 +72,7 @@ noTitleIndex: true
   - `CapturedResultReceiver`
   - `CapturedResultFilter`
   - `CIntermediateResultManager`
-- Added a new class back method `OnShortLinesUnitReceived` to the `CIntermediateResultReceiver` class. The `CIntermediateResultReceiver` inherited the `CAbstractIntermediateResultReceiver`.
+- Added a new call back method `OnShortLinesUnitReceived` to the `CIntermediateResultReceiver` class. The `CIntermediateResultReceiver` inherited the `CAbstractIntermediateResultReceiver`.
 - Added methods `PauseCapturing` and `ResumeCapturing`. Two new `CapturedState` members, `CS_PAUSED` and `CS_RESUMED`, are added as well.
 - Added a new property `documentSettings` to struct `SimplifiedCaptureVisionSettings`. The corresponding struct `SimplifiedDocumentNormalizerSettings` is added to the `DynamsoftDocumentNormalizer` module to store the documentSettings.
 - Add C interfaces and implementations, which are only used to encapsulate upper-level languages such as c# and python, etc.

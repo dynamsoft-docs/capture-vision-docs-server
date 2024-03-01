@@ -9,6 +9,25 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftLicense Module
 
+## 3.2.10 (03/01/2024)
+
+### Improved
+
+- Security update for `DynamsoftLicense` library.
+- Improved the usage count logic of the concurrent license mode.
+- Improved the experience of local cache usage when failing to connect the license server. The renewal of the local cache is optimized as well.
+
+### Fixed
+
+- Fixed a bug where the capture might be blocked due to the network latency.
+- Fixed a bug where the `DetectAndNormalizeDocument` task might be approved without a valid license.
+- Fixed the bugs of usage count.
+  - Count twice for a single PDF417 barcode when a code parser task is implemented on the result.
+  - The barcode decoding result might not be uploaded timely.
+  - The usage count of text line recognition might be double counted when the intermediate results are output.
+  - The document boundary detection result might be miscounted.
+  - Patchcode might be counted even if there is no Patchcode license item.
+
 ## 3.2.0 (01/16/2024)
 
 ### New
