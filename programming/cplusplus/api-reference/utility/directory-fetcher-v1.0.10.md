@@ -39,7 +39,7 @@ int SetDirectory(const char *path, const char *filter, bool recursive)
 
 `[in] path` The path of the directory to search.
 
-`[in] filter` A string that specifies file extensions. For example: "*.BMP;*.JPG;*.GIF", or "*.*", etc.
+`[in] filter` A string that specifies file extensions. For example: "\*.BMP;\*.JPG;\*.GIF", or "\*.\*", etc.
 
 `[in] recursive` Specifies whether to load files recursively.
 
