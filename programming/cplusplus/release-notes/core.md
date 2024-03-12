@@ -73,7 +73,7 @@ noTitleIndex: true
   - `EC_TEXT_LINE_GROUP_LAYOUT_CONFLICT`
   - `EC_TEXT_LINE_GROUP_REGEX_CONFLICT`
 - Added the following methods to the `CCapturedResult` class.
-  - A new override constructor.
+  - `operator[]`.
   - `Retain`
   - `Release`
 - Added a new class `CAbstractIntermediateResultReceiver`. It is the super class of the `CIntermediateResultReceiver`.
