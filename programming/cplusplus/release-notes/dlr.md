@@ -31,7 +31,7 @@ noTitleIndex: true
   - `SetText`
 - Added a new constructor to the `CTextLineResultItem` class to replace the previous one.
 - Added the following methods to the `CrecognizedTextLinesResult` class.
-  - A new constructor
+  - `operator[]`
   - `Retain`
   - `Release`
 - Added the following methods to the `CLabelRecognizerModule` class to create the corresponding elements.

@@ -22,6 +22,7 @@ noTitleIndex: true
 - Added new virtual destructors to the following interfaces to prevent memory leaks.
   - [`CCaptureStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
   - [`CImageSourceStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+- Added a new class [`CCapturedResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html) which is migrated from the `DynamsoftCore` library.
 
 ### Improved
 

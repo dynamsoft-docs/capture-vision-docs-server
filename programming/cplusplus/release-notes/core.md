@@ -9,7 +9,7 @@ noTitleIndex: true
 
 # Release Notes - Core Module
 
-## 3.2.1 (03/01/2024)
+## 3.2.10 (03/01/2024)
 
 ### Improved
 
@@ -25,6 +25,10 @@ noTitleIndex: true
 ### Fixed
 
 - Fixed a crash bug of the Replace method of the [`IntermediateResultUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) class. The method will return the error code `EC_RESULT_TYPE_MISMATCH_IRREPLACEABLE` when the result type is mismatched.
+
+### Changed
+
+- Moved class [`CCapturedResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html) to the `DynamsoftCaptureVisionRouter` library.
 
 ## 3.2.0 (01/16/2024)
 
