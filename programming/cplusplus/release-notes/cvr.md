@@ -130,6 +130,6 @@ noTitleIndex: true
 
 - Improved the implementation of the `StopCapturing` method to prevent deadlock when invoked in the management thread.
 
-## 2.0.0 (08/10/2023)
+## 2.0.0 (07/04/2023)
 
 The first version of DynamsoftCaptureVisionRouter CPP edition.
