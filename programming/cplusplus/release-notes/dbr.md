@@ -31,7 +31,7 @@ noTitleIndex: true
 - Added a new method SetLocation to `CComplementedBarcodeImageUnit` class.
 - Added new methods to the `CDecodedBarcodesUnit` class to set or remove the decoded barcode elements.
 - Added the following methods to the `CDecodedBarcodesResult` class:
-  - A new override constructor.
+  - `operator[]`
   - `Retain`
   - `Release`.
 - Added the following methods to the `CBarcodeReaderModule` class to create the corresponding elements.

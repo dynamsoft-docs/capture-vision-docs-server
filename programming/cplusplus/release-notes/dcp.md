@@ -20,7 +20,7 @@ noTitleIndex: true
 ### New
 
 - Added the following methods to the `CParsedResult` class:
-  - A new `constructor`
+  - `operator[]`
   - `Retain`
   - `Release`
 - Add C interfaces and implementations, which are only used to encapsulate upper-level languages such as c# and python, etc.

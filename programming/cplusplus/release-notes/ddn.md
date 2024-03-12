@@ -25,11 +25,11 @@ noTitleIndex: true
 - Added new methods to the `CDetectedQuadsUnit` class to add, set or remove the detected quad elements of the unit.
 - Added new methods to the `CNormalizedImagesUnit` class to set or remove the normalized image element of the unit.
 - Added the following methods to the `CNormalizedImagesResult` class.
-  - A new constructor
+  - `operator[]`
   - `Retain`
   - `Release`
 - Added the following methods to the `CDetectedQuadsResult` class.
-  - A new constructor
+  - `operator[]`
   - `Retain`
   - `Release`
 - Added `SimplifiedDocumentNormalizerSettings` struct to configure basic settings of document processing.
