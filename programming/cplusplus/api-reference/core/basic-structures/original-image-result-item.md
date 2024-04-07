@@ -6,7 +6,6 @@ keywords: original image, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ COriginalImageResultItem Class
-permalink: /programming/cplusplus/api-reference/core/basic-structures/original-image-result-item.html
 ---
 
 # COriginalImageResultItem

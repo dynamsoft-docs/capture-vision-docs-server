@@ -6,7 +6,6 @@ keywords: capture vision, router, settings, api reference, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
 breadcrumbText: CVR C++ Settings
-permalink: /programming/cplusplus/api-reference/capture-vision-router/settings.html
 ---
 
 # Settings

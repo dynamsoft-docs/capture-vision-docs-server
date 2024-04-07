@@ -9,6 +9,12 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftLicense Module
 
+## 3.2.20 (04/07/2024)
+
+### Fixed
+
+- Small fixes and tweaks.
+
 ## 3.2.10 (03/01/2024)
 
 ### Improved

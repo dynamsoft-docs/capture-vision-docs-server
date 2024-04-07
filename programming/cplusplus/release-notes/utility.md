@@ -9,6 +9,12 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftUtility Module
 
+## 1.2.20 (04/07/2024)
+
+### New
+
+- Added internal logics to output errors when failing to load PDF library.
+
 ## 1.2.10 (03/01/2024)
 
 ### Improved

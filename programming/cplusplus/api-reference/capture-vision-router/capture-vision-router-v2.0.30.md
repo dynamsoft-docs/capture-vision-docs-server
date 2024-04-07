@@ -51,8 +51,6 @@ class CCaptureVisionRouter
 | [`RemoveResultFilter`](multiple-file-processing.md#removeresultfilter)                         | Removes an object which was added as a filter of captured results.           |
 | [`StartCapturing`](multiple-file-processing.md#startcapturing)                                 | Starts to process images consecutively.                                      |
 | [`StopCapturing`](multiple-file-processing.md#stopcapturing)                                   | Stops the consecutive process.                                               |
-| [`PauseCapturing`](multiple-file-processing.md#pausecapturing)                                 | Pauses the capture process. The current thread will be blocked until the capture process is resumed. |
-| [`ResumeCapturing`](multiple-file-processing.md#resumecapturing)                               | Resumes the capture process. The current thread will be unblocked after the capture process is resumed. |
 
 ## Settings
 
@@ -73,12 +71,6 @@ The following method returns an `CIntermediateResultManager` object which allows
 | API Name                                                                            | Description                                     |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------- |
 | [`GetIntermediateResultManager`](intermediate-result.md#getintermediateresultmanager) | Returns an `CIntermediateResultManager` object. |
-
-## Buffered Items
-
-| API Name                                                     | Description                                                                                  |
-| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| [`GetBufferedItemsManager`](buffered-items.md#getbuffereditemsmanager)                               | Gets the manager instance of buffered items. |
 
 ## Auxiliary
 

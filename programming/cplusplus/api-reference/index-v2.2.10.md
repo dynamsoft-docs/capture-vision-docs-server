@@ -17,7 +17,6 @@ needAutoGenerateSidebar: false
 - [`Multiple-File Processing`]({{ site.dcv_cpp_api }}capture-vision-router/multiple-file-processing.html)
 - [`Settings`]({{ site.dcv_cpp_api }}capture-vision-router/settings.html)
 - [`Intermediate Result`]({{ site.dcv_cpp_api }}capture-vision-router/intermediate-result.html)
-- [`Buffered Items`]({{ site.dcv_cpp_api }}capture-vision-router/buffered-items.html)
 - [`Auxiliary Methods`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-methods.html)
 
 ### Classes
@@ -31,7 +30,6 @@ needAutoGenerateSidebar: false
 - [`CIntermediateResultManager`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-manager.html)
 - [`CIntermediateResultReceiver`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html)
 - [`CPresetTemplate`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html)
-- [`CBufferedItemsManager`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/buffered-items-manager.html)
 
 ### Structs
 
@@ -88,9 +86,6 @@ needAutoGenerateSidebar: false
 - [`CRecognizedTextLinesResult`]({{ site.dlr_cpp_api }}recognized-text-lines-result.html)
 - [`CRecognizedTextLinesUnit`]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html)
 - [`CTextLineResultItem`]({{ site.dlr_cpp_api }}text-line-result-item.html)
-- [`CBufferedCharacterItemSet`]({{ site.dlr_cpp_api }}buffered-character-item-set.html)
-- [`CBufferedCharacterItem`]({{ site.dlr_cpp_api }}buffered-character-item.html)
-- [`CCharacterCluster`]({{ site.dlr_cpp_api }}character-cluster.html)
 
 ### Structs
 

@@ -6,7 +6,6 @@ keywords: capture vision, router, instance, api reference, C++, Constructor, Des
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
 breadcrumbText: CVR C++ Constructor and Destructor
-permalink: /programming/cplusplus/api-reference/capture-vision-router/instantiate.html
 ---
 
 # Constructor and Destructor

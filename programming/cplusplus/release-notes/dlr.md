@@ -9,6 +9,27 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftLabelRecognizer Module
 
+## 3.2.20 (04/07/2024)
+
+### Improved
+
+- Improved the speed of TextLineGroup detection by optimizing internal logic.
+
+### New
+
+- Added new [`LabelRecognizerTaskSettings`]({{ site.dcv_parameters_reference }}label-recognizer-task-settings/index.html) parameters.
+  - Added [`ConfusableCharactersPath`]({{ site.dcv_parameters_reference }}label-recognizer-task-settings/confusable-characters-path.html) to define the path of the resource files that store the confusable characters' information.
+  - Added [`ClusterSamplesCountThreshold`]({{ site.dcv_parameters_reference }}label-recognizer-task-settings/cluster-samples-count-threshold.html) to specify the lowest required sample count for clustering.
+- Added new [`TextLineSpecification`]({{ site.dcv_parameters_reference }}text-line-specification/index.html) parameters.
+  - Added [`ConfusableCharactersCorrection`]({{ site.dcv_parameters_reference }}text-line-specification/confusable-characters-correction.html) to define which confusable characters you are going to distinguish. You can also specify the font type of the characters.
+  - Added [`ExpectedGroupCount`]({{ site.dcv_parameters_reference }}text-line-specification/expected-groups-count.html) to define the count of TextLineGroups that might exist on the image.
+- Added new classes for the character buffer feature:
+  - [`CBufferedCharacterItemSet`]({{ site.dlr_cpp_api }}buffered-character-item-set.html): The class that stores a collection of buffered character items and cluster information.
+  - [`CBufferedCharacterItem`]({{ site.dlr_cpp_api }}buffered-character-item.html): The class that stores a basic item of the buffered characters with its image and features information.
+  - [`CCharacterCluster`]({{ site.dlr_cpp_api }}character-cluster.html): The class that stores a character cluster generated from the collected buffered character items.
+- Added method [`GetSpecificationName`]({{ site.dlr_cpp_api }}text-line-result-item.html) to the `CTextLineResultItem` class to get the name of the `TextLineSpecification`object that generated this `CTextLineResultItem`.
+- Added method [`GetSpecificationName`]({{ site.dlr_cpp_api }}recognized-text-line-element.html) to the `CRecognizedTextLineElement` class to get the name of the `TextLineSpecification`object that generated this `CRecognizedTextLineElement`.
+
 ## 3.2.10 (03/01/2024)
 
 ### Improved

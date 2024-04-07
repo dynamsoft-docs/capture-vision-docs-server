@@ -6,7 +6,6 @@ keywords: capture state listener, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ CCaptureStateListener Class
-permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-classes/capture-state-listener.html
 ---
 
 # CCaptureStateListener
