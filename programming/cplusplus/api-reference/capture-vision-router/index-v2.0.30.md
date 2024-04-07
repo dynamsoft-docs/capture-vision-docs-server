@@ -25,11 +25,6 @@ The following are the auxiliary classes:
 
 * [CCaptureStateListener](auxiliary-classes/capture-state-listener.md)
 * [CImageSourceStateListener](auxiliary-classes/image-source-state-listener.md)
-* [CCapturedResultReceiver](auxiliary-classes/captured-result-receiver.md)
-* [CIntermediateResultReceiver](auxiliary-classes/intermediate-result-receiver.md)
-* [CIntermediateResultManager](auxiliary-classes/intermediate-result-manager.md)
-* [CCapturedResult](auxiliary-classes/captured-result.md)
-* [CBufferedItemsManager](auxiliary-classes/buffered-items-manager.md)
 
 ## Structs
 

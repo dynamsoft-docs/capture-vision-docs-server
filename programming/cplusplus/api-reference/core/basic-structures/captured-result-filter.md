@@ -6,7 +6,6 @@ keywords: captured result receiver, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: C++ CCapturedResultFilter Class
-permalink: /programming/cplusplus/api-reference/core/basic-structures/captured-result-filter.html
 ignore: true
 ---
 

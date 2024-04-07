@@ -6,7 +6,6 @@ keywords: capture vision, auxiliary, instance, api reference, C++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
 breadcrumbText: CVR C++ Auxiliary Methods
-permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-methods.html
 ---
 
 # Auxiliary Methods - Capture Vision Router C++ API Reference

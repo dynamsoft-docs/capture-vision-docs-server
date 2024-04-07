@@ -6,7 +6,6 @@ keywords: license module, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: C++ CLicenseModule Class
-permalink: /programming/cplusplus/api-reference/license/license-module.html
 ---
 
 # CLicenseModule

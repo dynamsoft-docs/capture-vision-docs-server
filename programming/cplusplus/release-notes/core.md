@@ -9,6 +9,12 @@ noTitleIndex: true
 
 # Release Notes - Core Module
 
+## 3.2.20 (04/07/2024)
+
+### New
+
+- Added a new error code [`EC_PDF_LIBRARY_LOAD_FAILED`]({{ site.dcv_enumerations }}core/error-code.html?lang=cpp).
+
 ## 3.2.10 (03/01/2024)
 
 ### Improved

@@ -74,12 +74,6 @@ The following method returns an `CIntermediateResultManager` object which allows
 | ----------------------------------------------------------------------------------- | ----------------------------------------------- |
 | [`GetIntermediateResultManager`](intermediate-result.md#getintermediateresultmanager) | Returns an `CIntermediateResultManager` object. |
 
-## Buffered Items
-
-| API Name                                                     | Description                                                                                  |
-| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| [`GetBufferedItemsManager`](buffered-items.md#getbuffereditemsmanager)                               | Gets the manager instance of buffered items. |
-
 ## Auxiliary
 
 | API Name                                      | Description                                               |

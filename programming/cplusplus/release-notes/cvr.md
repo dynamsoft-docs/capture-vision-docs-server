@@ -9,6 +9,13 @@ noTitleIndex: true
 
 # Release Notes - CaptureVisionRouter Module
 
+## 2.2.20 (04/07/2024)
+
+### New
+
+- Added a new class [`CBufferedItemsManager`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/buffered-items-manager.html) to manage the buffered character items.
+- Added a new method [`GetBufferedItemsManger`]({{ site.dcv_cpp_api }}capture-vision-router/buffered-items.html#getbuffereditemsmanager) to get an object of `CBufferedItemsManager`.
+
 ## 2.2.10 (03/01/2024)
 
 ### New
@@ -130,6 +137,6 @@ noTitleIndex: true
 
 - Improved the implementation of the `StopCapturing` method to prevent deadlock when invoked in the management thread.
 
-## 2.0.0 (08/10/2023)
+## 2.0.0 (07/04/2023)
 
 The first version of DynamsoftCaptureVisionRouter CPP edition.

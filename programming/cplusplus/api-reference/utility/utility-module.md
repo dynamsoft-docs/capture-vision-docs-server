@@ -6,7 +6,6 @@ keywords: utility module, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: C++ CUtilityModule Class
-permalink: /programming/cplusplus/api-reference/utility/utility-module.html
 ---
 
 # CUtilityModule

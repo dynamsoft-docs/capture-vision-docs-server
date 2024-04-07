@@ -6,7 +6,6 @@ keywords: capture vision router module, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ CCaptureVisionRouterModule Class
-permalink: /programming/cplusplus/api-reference/capture-vision-router/auxiliary-classes/capture-vision-router-module.html
 ---
 
 # CCaptureVisionRouterModule

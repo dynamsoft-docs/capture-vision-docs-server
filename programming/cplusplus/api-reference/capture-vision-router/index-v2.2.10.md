@@ -29,7 +29,6 @@ The following are the auxiliary classes:
 * [CIntermediateResultReceiver](auxiliary-classes/intermediate-result-receiver.md)
 * [CIntermediateResultManager](auxiliary-classes/intermediate-result-manager.md)
 * [CCapturedResult](auxiliary-classes/captured-result.md)
-* [CBufferedItemsManager](auxiliary-classes/buffered-items-manager.md)
 
 ## Structs
 

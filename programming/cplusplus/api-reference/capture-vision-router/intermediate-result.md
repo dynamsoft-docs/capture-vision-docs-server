@@ -6,7 +6,6 @@ keywords: capture vision, intermediate result, instance, api reference, C++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
 breadcrumbText: CVR C++ Intermediate Result
-permalink: /programming/cplusplus/api-reference/capture-vision-router/intermediate-result.html
 ---
 
 # Intermediate Result
