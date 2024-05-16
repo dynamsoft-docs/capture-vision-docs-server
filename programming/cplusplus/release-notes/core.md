@@ -9,6 +9,13 @@ noTitleIndex: true
 
 # Release Notes - Core Module
 
+## 3.2.30 (05/13/2024)
+
+- Small fixes and tweaks.
+
+<!-- 
+- Updated C function for .Net Edition -->
+
 ## 3.2.20 (04/07/2024)
 
 ### New

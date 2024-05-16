@@ -5,9 +5,8 @@ firstLevelUrl: /capture-vision/docs/server
 
 useVersionTree: true
 
-introduction: /capture-vision/docs/core/introduction/
-architecture: /capture-vision/docs/core/architecture/
-parameter: /capture-vision/docs/core/parameters/
+dcv_introduction: /capture-vision/docs/core/introduction/
+dcv_architecture: /capture-vision/docs/core/architecture/
 dcv_enumerations: /capture-vision/docs/core/enums/
 
 dcv_cpp: /capture-vision/docs/server/programming/cplusplus/
@@ -17,16 +16,19 @@ dlr_cpp_api: /label-recognition/docs/server/programming/cplusplus/api-reference/
 ddn_cpp_api: /document-normalizer/docs/server/programming/cplusplus/api-reference/
 dcp_cpp_api: /code-parser/docs/server/programming/cplusplus/api-reference/
 
-dotnet: /capture-vision/docs/server/programming/dotnet/
-dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
+dcv_dotnet: /capture-vision/docs/server/programming/dotnet/
+dcv_dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
+dbr_dotnet_api: /barcode-reader/docs/server/programming/dotnet/api-reference/
+dlr_dotnet_api: /label-recognition/docs/server/programming/dotnet/api-reference/
+ddn_dotnet_api: /document-normalizer/docs/server/programming/dotnet/api-reference/
+dcp_dotnet_api: /code-parser/docs/server/programming/dotnet/api-reference/
 
-java: /capture-vision/docs/server/programming/java/
-java_api: /capture-vision/docs/server/programming/java/api-reference/
+dcv_java: /capture-vision/docs/server/programming/java/
+dcv_java_api: /capture-vision/docs/server/programming/java/api-reference/
 
-python: /capture-vision/docs/server/programming/python/
-python_api: /capture-vision/docs/server/programming/python/api-reference/
+dcv_python: /capture-vision/docs/server/programming/python/
+dcv_python_api: /capture-vision/docs/server/programming/python/api-reference/
 
-parameters_reference: /capture-vision/docs/core/parameters/reference/
 
 baseurl: "/capture-vision/docs/server"
 

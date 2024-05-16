@@ -9,6 +9,13 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftLabelRecognizer Module
 
+## 3.2.30 (05/13/2024)
+
+### Fixed
+
+- Fixed a bug where users would not receive proper error messages when attempting to configure `SimplifiedLabelRecognizerSettings` with an incorrect `CharacterModel`.
+- Fixed a bug where the characters might not be correctly excluded when they are configured in the filter file.
+
 ## 3.2.20 (04/07/2024)
 
 ### Improved

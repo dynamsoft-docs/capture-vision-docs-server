@@ -35,7 +35,7 @@ int SetInput(CImageSourceAdapter* pAdaptor);
 
 **Parameters**
 
-`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{site.architecture}}input.html#image-source-adapter).
+`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{site.dcv_architecture}}input.html#image-source-adapter).
 
 **Return Value**
 

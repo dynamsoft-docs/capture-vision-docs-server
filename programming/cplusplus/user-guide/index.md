@@ -12,7 +12,7 @@ permalink: /programming/cplusplus/user-guide/index.html
 
 In this guide, you will learn step by step on how to build a barcode reader, label recognizer and document normalizer application with Dynamsoft Capture Vision SDK using C++ language.
 
-> Read more on [Dynamsoft Capture Vision Features]({{site.introduction}})
+> Read more on [Dynamsoft Capture Vision Features]({{site.dcv_introduction}})
 
 <span style="font-size:20px">Table of Contents</span>
 
