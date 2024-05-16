@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CPDFReadingParameter
 
-The `CPDFReadingParameter` class represents the parameters for reading a PDF file. It contains the mode of PDF reading, the DPI (dots per inch) value, and the tarGetstype.
+The `CPDFReadingParameter` class represents the parameters for reading a PDF file. It contains the mode of PDF reading, the DPI (dots per inch) value, and the raster data source type.
 
 ## Definition
 

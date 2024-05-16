@@ -109,7 +109,7 @@ Returns the original height of the video frame.
 The constructor of the `CVideoFrameTag` class.
 
 ```cpp
-CVideoFrameTag(VideoFrameQuality quality, bool isCropped, const CRect* cropRegion, int originalWidth, int originalHidth)
+CVideoFrameTag(VideoFrameQuality quality, bool isCropped, const CRect* cropRegion, int originalWidth, int originalHeight)
 ```
 
 **Parameters**

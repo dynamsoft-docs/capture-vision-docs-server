@@ -9,6 +9,12 @@ noTitleIndex: true
 
 # Release Notes - CaptureVisionRouter Module
 
+## 2.2.30 (05/13/2024)
+
+### Fixed
+
+- Fixed a bug where the DynamsoftNeuralNetwork module failed to load due to a path error.
+
 ## 2.2.20 (04/07/2024)
 
 ### New

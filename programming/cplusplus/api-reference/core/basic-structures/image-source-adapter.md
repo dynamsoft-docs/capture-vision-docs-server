@@ -235,6 +235,10 @@ Sets the usage type of a color channel in images.
 void SetColourChannelUsageType(ColourChannelUsageType type);
 ```
 
+**Parameters**
+
+`[in] type` The usage type of a color channel in images to set.
+
 **See Also**
 
 [ColourChannelUsageType]({{ site.dcv_enumerations}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
@@ -257,7 +261,7 @@ Returns the usage type of a color channel in images.
 
 ### SetErrorListener
 
-Gets the usage type of a color channel in images. This function allows you to set an error listener object that will receive notifications when errors occur during image source operations. If an error occurs, the error infomation will be passed to the listener's OnErrorReceived method.
+This function allows you to set an error listener object that will receive notifications when errors occur during image source operations. If an error occurs, the error infomation will be passed to the listener's `OnErrorReceived` method.
 
 ```cpp
 void SetErrorListener(CImageSourceErrorListener* listener);

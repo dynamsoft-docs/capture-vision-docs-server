@@ -9,6 +9,10 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftImageProcessing Module
 
+## 2.2.30 (05/13/2024)
+
+- Fixed a bug where users would not receive proper error messages when attempting to configure `SimplifiedLabelRecognizerSettings` with an incorrect `CharacterModel`.
+
 ## 2.2.20 (04/07/2024)
 
 ### New
