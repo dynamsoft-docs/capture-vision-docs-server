@@ -29,7 +29,7 @@ The best way to start with the Dynamsoft Capture Vision C++ Edition, is followin
 
 To develop and run your application with Dynamsoft Capture Vision SDK, you need an active license key:
 
-* <a href = "https://www.dynamsoft.com/customer/license/trialLicense?utm_source=doc&product=DCV&package=desktop" target = "_blank">Request a 30-day free trial license
+* <a href = "https://www.dynamsoft.com/customer/license/trialLicense?utm_source=docs&product=DCV&package=c_cpp" target = "_blank">Request a 30-day free trial license
 
 ### Contact Us
 
