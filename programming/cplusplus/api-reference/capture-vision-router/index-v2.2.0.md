@@ -15,7 +15,7 @@ The "Capture Vision Router" module is defined in the namespace `dynamsoft::cvr` 
 
 ## Main Class - `CCaptureVisionRouter`
 
-The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{architecture}}output.md#final-results) or [Intermediate Results]({{architecture}}output.md#intermediate-results).
+The CCaptureVisionRouter class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.dcv_architecture}}output.md#final-results) or [Intermediate Results]({{site.dcv_architecture}}output.md#intermediate-results).
 
 Read more about the class [`CCaptureVisionRouter`](capture-vision-router.md).
 
@@ -37,5 +37,5 @@ At present, there is only one struct in the "Capture Vision Router" module:
 
 ## Enums
 
-* [EnumImageSourceState]({{enums}}core/image-source-state.md?lang=cpp)
-* [EnumCaptureState]({{enums}}core/capture-state.md?lang=cpp)
+* [ImageSourceState]({{site.dcv_enumerations}}capture-vision-router/image-source-state.md?lang=cpp)
+* [CaptureState]({{site.dcv_enumerations}}capture-vision-router/capture-state.md?lang=cpp)
