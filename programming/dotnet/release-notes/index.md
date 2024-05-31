@@ -29,10 +29,6 @@ noTitleIndex: true
 
 - [3.2.30 (05/30/2024)](core.md#3230-05302024)
 
-## DynamsoftImageProcessing Module
-
-- [2.2.30 (05/30/2024)](dip.md#2230-05302024)
-
 ## DynamsoftLicense Module
 
 - [3.2.20 (05/30/2024)](license.md#3220-05302024)
@@ -40,6 +36,10 @@ noTitleIndex: true
 ## DynamsoftUtility Module
 
 - [1.2.20 (05/30/2024)](utility.md#1220-05302024)
+
+## DynamsoftImageProcessing Module
+
+- [2.2.30 (05/30/2024)](dip.md#2230-05302024)
 
 ## DynamsoftCodeParser Module
 
