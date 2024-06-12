@@ -11,18 +11,22 @@ noTitleIndex: true
 
 ## DynamsoftCaptureVisionRouter Module
 
+- [2.2.31 (06/12/2024)](cvr.md#2231-06122024)
 - [2.2.30 (05/30/2024)](cvr.md#2230-05302024)
 
 ## DynamsoftBarcodeReader Module
 
+- [10.2.11 (06/12/2024)](dbr.md#10211-06122024)
 - [10.2.10 (05/30/2024)](dbr.md#10210-05302024)
 
 ## DynamsoftLabelRecognizer Module
 
+- [3.2.31 (06/12/2024)](dlr.md#3231-06122024)
 - [3.2.30 (05/30/2024)](dlr.md#3230-05302024)
   
 ## DynamsoftDocumentNormalizer Module
 
+- [2.2.11 (06/12/2024)](ddn.md#2211-06122024)
 - [2.2.10 (05/30/2024)](ddn.md#2210-05302024)
 
 ## DynamsoftCore Module
