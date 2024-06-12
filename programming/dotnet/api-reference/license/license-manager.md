@@ -143,8 +143,13 @@ LicenseManager.SetLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
 LicenseManager.GetDeviceUUID(1, out deviceUUID);
 LicenseManager.SetDeviceFriendlyName("FRIENDLY-NAME");
 errorCode = LicenseManager.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-if (errorCode != (int)EnumErrorCode.EC_OK)
+if (errorCode != (int)EnumErrorCode.EC_OK && errorCode != (int)EnumErrorCode.EC_LICENSE_CACHE_USED)
+{
     Console.WriteLine("License initialization error: " + errorMsg);
-CaptureVisionRouter cvr = new CaptureVisionRouter();
-// add code for further process
+}
+else
+{
+    CaptureVisionRouter cvr = new CaptureVisionRouter();
+    // add code for further process
+}
 ```
