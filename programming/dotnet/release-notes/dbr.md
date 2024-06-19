@@ -9,6 +9,10 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftBarcodeReader Module
 
+## 10.2.12 (06/19/2024)
+
+- Fixed a bug that caused 32-bit applications to crash on startup under .NET Framework.
+
 ## 10.2.11 (06/12/2024)
 
 - Fixed a bug where calling the method `GetSimplifiedSettings` would throw a `System.IO.FileNotFoundException` with the message "Could not load file or assembly ...".
