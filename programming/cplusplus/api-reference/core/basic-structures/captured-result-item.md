@@ -73,7 +73,7 @@ Returns a pointer to the referenced item in the captured result item. You are no
 
 [CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
 
-## GetTargetROIDefName
+### GetTargetROIDefName
 
 Gets the name of the target ROI definition.
 
@@ -85,7 +85,7 @@ virtual const char* GetTargetROIDefName() const = 0;
 
 Returns the name of the target ROI definition.
 
-## GetTaskName
+### GetTaskName
 
 Gets the name of the task.
 
@@ -97,7 +97,7 @@ virtual const char* GetTaskName() const = 0;
 
 Returns the name of the task.
 
-## Retain
+### Retain
 
 Increases the reference count of the `CCapturedResultItem` object.
 
@@ -113,7 +113,7 @@ Returns the object of `CCapturedResultItem` with its reference count incremented
 
 Don't forget to invoke the `Release` method when you no longer need the object.
 
-## Release
+### Release
 
 Decreases the reference count of the `CCapturedResultItem` object.
 
