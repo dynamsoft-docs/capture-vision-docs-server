@@ -17,7 +17,7 @@ noTitleIndex: true
 
 ### Changed
 
-- Changed the maximum length of the `DeviceFriendlyName` to 255. If the length exceeds 255, it will be truncated.
+- Changed the maximum length of the `name` parameter to 255 for the [`SetDeviceFriendlyName`]({{ site.dcv_cpp_api }}license/license-manager.html#setdevicefriendlyname) method. If the length exceeds 255, it will be truncated.
 
 ## 3.2.20 (04/07/2024)
 

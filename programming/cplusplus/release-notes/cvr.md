@@ -17,6 +17,10 @@ noTitleIndex: true
 - Added a new callback function [`OnRawTextLinesReceived`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html#onrawtextlinesreceived) to the class [`CIntermediateResultReceiver`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html).
 - Added a new function [`AddItem`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#additem) to the class [`CCapturedResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html).
 
+### Changed
+
+- Changed the default value of the `waitForThreadExit` parameter to `true` for the [`StopCapturing`]({{ site.dcv_cpp_api }}capture-vision-router/multiple-file-processing.html#stopcapturing) method.
+
 <!-- - Updated the internal logic of the `StopCapturing` function. -->
 
 ## 2.2.30 (05/13/2024)
