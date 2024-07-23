@@ -25,7 +25,7 @@ public abstract class CapturedResultItem
 | Method                         | Description|
 |--------------------------------|------------|
 | [`GetCapturedResultItemType`](#getcapturedresultitemtype)              | Gets the type of the captured result item. |
-| [`GetReferencedItem`](#getreferenceditem)    | Gets a pointer to the referenced item in the captured result. |
+| [`GetReferenceItem`](#getreferenceitem)    | Gets a pointer to the referenced item in the captured result. |
 | [`GetTargetROIDefName`](#gettargetroidefname) | Gets the name of the target ROI definition. |
 | [`GetTaskName`](#gettaskname) | Gets the name of the task. |
 
@@ -45,12 +45,12 @@ Returns the type of the captured result item.
 
 [EnumCapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
-### GetReferencedItem
+### GetReferenceItem
 
 Gets the referenced item in the captured result item.
 
 ```csharp
-abstract CapturedResultItem GetReferencedItem()
+abstract CapturedResultItem GetReferenceItem()
 ```
 
 **Return Value**

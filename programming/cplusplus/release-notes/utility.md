@@ -9,6 +9,13 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftUtility Module
 
+## 1.2.30 (07/23/2024)
+
+### Fixed
+
+- Fixed a bug where `CaptureVisionRouter.StartCapturing` would erroneously halt the fetching process when its status was running, leading to an unnecessary stop and restart of the fetching operation.
+- Fixed a bug where `CDirectoryFetcher` would prematurely read an image before verifying if the buffer was full, resulting in potential loss of the image that did not make it into the buffer upon calling `StopFetching`.
+
 ## 1.2.20 (04/07/2024)
 
 ### New

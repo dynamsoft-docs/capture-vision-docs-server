@@ -147,10 +147,17 @@ Let's start by creating a console application which demonstrates the minimum cod
 1. Initialize the license key
 
     ```cpp
+    int errorcode = 0;
     char error[512];
-    
-    CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", error, 512);
-    cout << "License initialization: " << error << endl;
+    errorcode = CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", error, 512);
+    if (errorcode != ErrorCode::EC_OK && errorcode != ErrorCode::EC_LICENSE_CACHE_USED)
+    {
+        cout << "License initialization failed: ErrorCode: " << errorcode << ", ErrorString: " << error << endl;
+    }
+    else
+    {
+        // other codes...
+    }
     ```
 
     >Note:

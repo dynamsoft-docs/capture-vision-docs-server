@@ -268,13 +268,13 @@ The function returns an integer value representing the success or failure of the
 Stops the multiple-file processing.
 
 ```cpp
-void StopCapturing(bool waitForRemainingTasks = true, bool waitForThreadExit = true);
+void StopCapturing(bool waitForRemainingTasks = true, bool waitForThreadExit = false);
 ```
 
 **Parameters**
 
 `[in] waitForRemainingTasks` Indicates whether to wait for the remaining tasks to complete before returning. The default value is true.  
-`[in] waitForThreadExit` Indicates whether to wait for the capture process to complete before returning. The default value is true.
+`[in] waitForThreadExit` Indicates whether to wait for the capture process to complete before returning. The default value is false.
 
 ## PauseCapturing
 

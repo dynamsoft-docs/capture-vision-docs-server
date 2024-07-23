@@ -9,6 +9,24 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftBarcodeReader Module
 
+## 10.4.10 (07/23/2024)
+
+### Improved
+
+- Improved the read rate and speed of the following barcode format:
+  - EAN-13
+  - DotCode
+
+### New
+
+- Added support for decoding add-on codes (also known as Extension Codes) for UPC-A, UPC-E, EAN-8 and EAN-13 codes.
+- Added new properties to the [`CQRCodeDetails`]({{ site.dbr_cpp_api }}qr-code-details.html) class
+  - [`dataMaskPattern`]({{ site.dbr_cpp_api }}qr-code-details.html#dataMaskPattern)
+  - [`codewords`]({{ site.dbr_cpp_api }}qr-code-details.html#codewords)
+  - [`codewordsCount`]({{ site.dbr_cpp_api }}qr-code-details.html#codewordsCount)
+- Added a new function [`AddItem`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html#additem) to the class [`CDecodedBarcodesResult`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html).
+- Added a new function [`SetLocation`]({{ site.dbr_cpp_api }}barcode-result-item.html#setlocation) to the class [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html).
+
 ## 10.2.10 (03/01/2024)
 
 ### Improved

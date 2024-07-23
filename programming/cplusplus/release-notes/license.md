@@ -9,6 +9,16 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftLicense Module
 
+## 3.2.30 (07/23/2024)
+
+### New
+
+- Added a new charge way, `TimeSliceCount`.
+
+### Changed
+
+- Changed the maximum length of the `DeviceFriendlyName` to 255. If the length exceeds 255, it will be truncated.
+
 ## 3.2.20 (04/07/2024)
 
 ### Fixed

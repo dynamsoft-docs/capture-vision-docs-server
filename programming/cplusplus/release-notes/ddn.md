@@ -9,6 +9,13 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftDocumentNormalizer Module
 
+## 2.4.10 (07/23/2024)
+
+### New
+
+- Added a new parameter [`MinDocumentAreaRatio`]({{ site.dcv_parameters_reference }}document-normalizer-task-settings/quadrilateral-detection-modes.html) to define the minimum targeting document area. The parameter is available via both the parameter template and the [`SimplifiedDocumentNormalizerSettings`]({{ site.ddn_cpp_api }}simplified-document-normalizer-settings.html).
+- Added a new parameter [`ExpectedDocumentsCount`]({{ site.dcv_parameters_reference }}document-normalizer-task-settings/expected-documents-count.html) to define the expected document count for detection. The parameter is available via both the parameter template and the [`SimplifiedDocumentNormalizerSettings`]({{ site.ddn_cpp_api }}simplified-document-normalizer-settings.html).
+
 ## 2.2.10 (03/01/2024)
 
 ### Improved

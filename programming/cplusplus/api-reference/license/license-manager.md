@@ -56,8 +56,14 @@ Returns 0 if the license is initialized successfully, a negative value indicatin
 int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
-if (errorCode != EC_OK)
-    cout << szErrorMsg << endl;
+if (errorCode != ErrorCode::EC_OK && errorCode != ErrorCode::EC_LICENSE_CACHE_USED)
+{
+    cout << "License initialization failed: ErrorCode: " << errorCode << ", ErrorString: " << szErrorMsg << endl;
+}
+else
+{
+    // other codes...
+}
 ```
 
 ### SetDeviceFriendlyName
@@ -70,7 +76,7 @@ static int SetDeviceFriendlyName(const char* name)
 
 **Parameters**
 
-`[in] name` The friendly name of the device.
+`[in] name` The friendly name of the device. If the length exceeds 255, it will be truncated.
 
 **Return value**
 

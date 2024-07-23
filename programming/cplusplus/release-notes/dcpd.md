@@ -9,6 +9,18 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftCodeParserDedicator Module
 
+## 1.2.30 (07/23/2024)
+
+### Fixed
+
+- Fixed a bug where the South African Driver's license might be parsed incorrectly.
+
+## 1.2.20 (04/07/2024)
+
+### Fixed
+
+- Small fixes and tweaks.
+
 ## 1.2.10 (03/01/2024)
 
 ### Improved

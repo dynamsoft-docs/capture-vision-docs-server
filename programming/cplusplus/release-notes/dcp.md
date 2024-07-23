@@ -9,6 +9,12 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftCodeParser Module
 
+## 2.4.10 (07/23/2024)
+
+### New
+
+- Added a new function [`AddItem`]({{ site.dcp_cpp_api }}parsed-result.html#additem) to the class [`CParsedResult`]({{ site.dcp_cpp_api }}parsed-result.html).
+
 ## 2.2.10 (03/01/2024)
 
 ### Improved

@@ -9,7 +9,16 @@ noTitleIndex: true
 
 # Release Notes - Core Module
 
+## 3.2.40 (07/23/2024)
+
+### New
+
+- Added a new enumeration member `IRUT_RAW_TEXT_LINES` to the [`IntermediateResultUnitType`]({{ site.dcv_enumerations }}core/intermediate-result-unit-type.html?lang=cpp).
+- Added a new function [`Clone`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html#clone) to the class [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html).
+
 ## 3.2.30 (05/13/2024)
+
+### Fixed
 
 - Small fixes and tweaks.
 

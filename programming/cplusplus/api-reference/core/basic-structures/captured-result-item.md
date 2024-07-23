@@ -26,11 +26,12 @@ class CCapturedResultItem
 |--------------------------------|------------|
 | [`~CCapturedResultItem`](#ccapturedresultitem-destructor) | This is the class destructor. |
 | [`GetType`](#gettype)              | Gets the type of the captured result item. |
-| [`GetReferencedItem`](#getreferenceditem)    | Gets a pointer to the referenced item in the captured result. |
+| [`GetReferenceItem`](#getreferenceitem)    | Gets a pointer to the referenced item in the captured result. |
 | [`GetTargetROIDefName`](#gettargetroidefname) | Gets the name of the target ROI definition. |
 | [`GetTaskName`](#gettaskname) | Gets the name of the task. |
 | [`Retain`](#retain) | Increases the reference count of the `CCapturedResultItem` object. |
 | [`Release`](#release) | Decreases the reference count of the `CCapturedResultItem` object. |
+| [`Clone`](#clone) | Clone the captured result item. |
 
 ### CCapturedResultItem Destructor
 
@@ -56,12 +57,12 @@ Returns the type of the captured result item.
 
 [CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
-### GetReferencedItem
+### GetReferenceItem
 
 Gets a pointer to the referenced item in the captured result item.
 
 ```cpp
-virtual const CCapturedResultItem* GetReferencedItem() const
+virtual const CCapturedResultItem* GetReferenceItem() const
 ```
 
 **Return value**
@@ -106,11 +107,11 @@ virtual CCapturedResultItem* Retain() = 0;
 
 **Return value**
 
-Returns an object of `CCapturedResultItem`.
+Returns the object of `CCapturedResultItem` with its reference count incremented.
 
-**See Also**
+**Remarks**
 
-[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+Don't forget to invoke the `Release` method when you no longer need the object.
 
 ## Release
 
@@ -119,3 +120,19 @@ Decreases the reference count of the `CCapturedResultItem` object.
 ```cpp
 virtual void Release() = 0;
 ```
+
+### Clone
+
+Clones the captured result item.
+
+```cpp
+virtual CCapturedResultItem* Clone() const = 0;
+```
+
+**Return value**
+
+Returns a pointer to a copy of the captured result item.
+
+**Remarks**
+
+Don't forget to invoke the `Release` method when you no longer need the object.

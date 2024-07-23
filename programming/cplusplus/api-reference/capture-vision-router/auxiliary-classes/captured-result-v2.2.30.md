@@ -41,8 +41,6 @@ class CCapturedResult
 | [`GetDetectedQuadsResult`](#getdetectedquadsresult) | Gets the detected quads items from the `CCapturedResult`.|
 | [`GetNormalizedImagesResult`](#getnormalizedimagesresult) | Gets the normalized images items from the `CCapturedResult`.|
 | [`GetParsedResult`](#getparsedresult) | Gets the parsed result items from the `CCapturedResult`.|
-| [`AddItem`](#additem) | Add a specific item to the array in the `CCapturedResult`.|
-
 
 ### GetOriginalImageHashId
 
@@ -299,19 +297,3 @@ Returns a pointer to the CParsedResult object containing the parsed result items
 **Remarks**
 
 Do not forget to release the memory pointed to by the returned pointer.
-
-### AddItem
-
-Add a specific item to the array in the captured result.
-
-```cpp
-int AddItem(const CCapturedResultItem* item)
-```
-
-**Parameters**
-
-`[in] item` The specific item to add.
-
-**Return value**
-
-Returns value indicating whether the addition was successful or not.

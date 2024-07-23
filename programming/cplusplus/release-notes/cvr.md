@@ -9,6 +9,16 @@ noTitleIndex: true
 
 # Release Notes - CaptureVisionRouter Module
 
+## 2.4.10 (07/23/2024)
+
+### New
+
+<!-- - Added internal logic for usage count. -->
+- Added a new callback function [`OnRawTextLinesReceived`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html#onrawtextlinesreceived) to the class [`CIntermediateResultReceiver`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html).
+- Added a new function [`AddItem`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#additem) to the class [`CCapturedResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html).
+
+<!-- - Updated the internal logic of the `StopCapturing` function. -->
+
 ## 2.2.30 (05/13/2024)
 
 ### Fixed
