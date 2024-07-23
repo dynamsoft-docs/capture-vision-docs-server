@@ -9,6 +9,30 @@ noTitleIndex: true
 
 # Release Notes - DynamsoftLabelRecognizer Module
 
+## 3.4.10 (07/23/2024)
+
+<!-- Added internal logic for usage count. -->
+### New
+
+- Added a new parameter CharSet to the [`CharacterModel`]({{ site.dcv_parameters }}character-model/) object to include or exclude characters for recognition.
+- Added a new algorithm stage `IRUT_RAW_TEXT_LINES`. Corresponding APIs are added to obtain the intermediate result of this stage.
+  - Class [`CRawTextLinesUnit`]({{ site.dlr_cpp_api }}raw-text-lines-unit.html)
+  - Class [`CRawTextLine`]({{ site.dlr_cpp_api }}raw-text-line.html)
+  - Enumeration [`RawTextLineStatus`]({{ site.dlr_cpp_api }}raw-text-line-status.html)
+- Added the following intermediate result altering functions to the class [`CRecognizedTextLinesUnit`]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html).
+  - Added function [`RemoveRecognizedTextLine`]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html#removerecognizedtextLine)
+  - Added function [`AddRecognizedTextLine`]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html#addrecognizedtextline)
+  - Added function [`SetRecognizedTextLine(index,element,matrixToOriginalImage)`]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html#setrecognizedtextlineindexelementmatrixtooriginalimage)
+- Added a new function [`CreateRawTextLine`]({{ site.dlr_cpp_api }}raw-text-lines-unit.html#createRawTextLine) to the class [`CLabelRecognizerModule`]({{ site.dlr_cpp_api }}label-recognizer-module.html).
+- Added a new function [`GetRawText`]({{ site.dlr_cpp_api }}text-line-result-item.html#getrawtext) to the class [`CRecognizedTextLineELement`]({{ site.dlr_cpp_api }}recognized-text-line-element.html).
+- Added a new function [`GetRawText`]({{ site.dlr_cpp_api }}text-line-result-item.html#getrawtext) to the class [`CTextLineResultItem`]({{ site.dlr_cpp_api }}text-line-result-item.html).
+- Added a new function [`AddItem`]({{ site.dlr_cpp_api }}recognized-text-lines-result.html#additem) to the class [`CRecognizedTextLinesResult`]({{ site.dlr_cpp_api }}recognized-text-lines-result.html).
+- Added a new function [`SetLocation`]({{ site.dlr_cpp_api }}text-line-result-item.html#setlocation) to the class [`CTextLineResultItem`]({{ site.dlr_cpp_api }}text-line-result-item.html).
+
+### Deprecated
+
+- Deprecated function [`SetRecognizedTextLine(element,matrixToOriginalImage)`]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html#setrecognizedtextlineelementmatrixtooriginalimage) of the class [`CRecognizedTextLinesUnit`]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html).
+
 ## 3.2.30 (05/13/2024)
 
 ### Fixed

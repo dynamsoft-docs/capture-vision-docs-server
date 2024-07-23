@@ -55,9 +55,17 @@ Returns a pointer to a `CCapturedResult` object containing the captured items.
 int errorCode = 0;
 char szErrorMsg[256];
 errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
-CCaptureVisionRouter* router = new CCaptureVisionRouter();
-CCapturedResult* result = router->Capture("path/to/file.png", "myTemplate");
-delete router;
+if (errorCode != ErrorCode::EC_OK && errorCode != ErrorCode::EC_LICENSE_CACHE_USED)
+{
+    cout << "License initialization failed: ErrorCode: " << errorCode << ", ErrorString: " << szErrorMsg << endl;
+}
+else
+{
+    CCaptureVisionRouter* router = new CCaptureVisionRouter();
+    CCapturedResult* result = router->Capture("path/to/file.png", "myTemplate");
+    // other codes...
+    delete router;
+}
 ```
 
 **See Also**

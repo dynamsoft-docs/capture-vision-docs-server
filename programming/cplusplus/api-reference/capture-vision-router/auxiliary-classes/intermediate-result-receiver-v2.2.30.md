@@ -54,7 +54,6 @@ class CIntermediateResultReceiver
 | [`OnDeformationResistedBarcodeImageUnitReceived`](#ondeformationresistedbarcodeimageunitreceived) | Called when deformation resisted barcode image units have been received. |
 | [`OnComplementedBarcodeImageUnitReceived`](#oncomplementedbarcodeimageunitreceived) | Called when complemented barcode image units have been received. |
 | [`OnShortLinesUnitReceived`](#onshortlinesunitreceived) | Called when short line units have been received. |
-| [`OnRawTextLinesReceived`](#onrawtextlinesreceived) | Called when raw text lines have been received. |
 
 ### GetObservationParameters
 
@@ -649,25 +648,5 @@ virtual void OnShortLinesUnitReceived(CShortLinesUnit *pResult, const Intermedia
 **See Also**
 
 [CShortLinesUnit]({{ site.dcv_cpp_api }}core/intermediate-results/short-lines-unit.html)
-
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
-
-### OnRawTextLinesReceived
-
-Called when raw text lines have been received.
-
-```cpp
-virtual void OnRawTextLinesReceived(CRawTextLinesUnit *pResult, const IntermediateResultExtraInfo* info)
-```
-
-**Parameters**
-
-`[in] pResult` A pointer to the CRawTextLinesUnit object that contains the result.
-
-`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
-
-**See Also**
-
-[CRawTextLinesUnit]({{ site.dlr_cpp_api }}raw-text-lines-unit.html)
 
 [IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)

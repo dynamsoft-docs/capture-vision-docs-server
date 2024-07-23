@@ -18,9 +18,9 @@ needGenerateH3Content: false
 Process an image or file to derive important information. It can optionally use a specified template for the capture.
 
 ```csharp
-CapturedResult* Capture(string filePath, string templateName="");
-CapturedResult* Capture(byte[] fileBytes, string templateName="");
-CapturedResult* Capture(ImageData imageData, string templateName="");
+CapturedResult Capture(string filePath, string templateName="");
+CapturedResult Capture(byte[] fileBytes, string templateName="");
+CapturedResult Capture(ImageData imageData, string templateName="");
 ```
 
 **Parameters**
