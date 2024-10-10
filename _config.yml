@@ -1,45 +1,45 @@
 repositoryUrl: https://github.com/dynamsoft-docs/capture-vision-docs-server/blob/main
 repository: dynamsoft-docs/capture-vision-docs-server
-docFullPath: https://www.dynamsoft.com/capture-vision/docs/server/
-firstLevelUrl: /capture-vision/docs/server
+docFullPath: https://www.dynamsoft.com/capture-vision/docs-archive/server/
+firstLevelUrl: /capture-vision/docs-archive/server
 
 useVersionTree: true
 
-dcv_introduction: /capture-vision/docs/core/introduction/
-dcv_architecture: /capture-vision/docs/core/architecture/
-dcv_enumerations: /capture-vision/docs/core/enums/
-dcv_parameters: /capture-vision/docs/core/parameters/reference/
+dcv_introduction: /capture-vision/docs-archive/core/introduction/
+dcv_architecture: /capture-vision/docs-archive/core/architecture/
+dcv_enumerations: /capture-vision/docs-archive/core/enums/
+dcv_parameters: /capture-vision/docs-archive/core/parameters/reference/
 
-dcv_cpp: /capture-vision/docs/server/programming/cplusplus/
-dcv_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
-dbr_cpp_api: /barcode-reader/docs/server/programming/cplusplus/api-reference/
-dlr_cpp_api: /label-recognition/docs/server/programming/cplusplus/api-reference/
-ddn_cpp_api: /document-normalizer/docs/server/programming/cplusplus/api-reference/
-dcp_cpp_api: /code-parser/docs/server/programming/cplusplus/api-reference/
+dcv_cpp: /capture-vision/docs-archive/server/programming/cplusplus/
+dcv_cpp_api: /capture-vision/docs-archive/server/programming/cplusplus/api-reference/
+dbr_cpp_api: /barcode-reader/docs-archive/server/programming/cplusplus/api-reference/
+dlr_cpp_api: /label-recognition/docs-archive/server/programming/cplusplus/api-reference/
+ddn_cpp_api: /document-normalizer/docs-archive/server/programming/cplusplus/api-reference/
+dcp_cpp_api: /code-parser/docs-archive/server/programming/cplusplus/api-reference/
 
-dcv_dotnet: /capture-vision/docs/server/programming/dotnet/
-dcv_dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
-dbr_dotnet_api: /barcode-reader/docs/server/programming/dotnet/api-reference/
-dlr_dotnet_api: /label-recognition/docs/server/programming/dotnet/api-reference/
-ddn_dotnet_api: /document-normalizer/docs/server/programming/dotnet/api-reference/
-dcp_dotnet_api: /code-parser/docs/server/programming/dotnet/api-reference/
+dcv_dotnet: /capture-vision/docs-archive/server/programming/dotnet/
+dcv_dotnet_api: /capture-vision/docs-archive/server/programming/dotnet/api-reference/
+dbr_dotnet_api: /barcode-reader/docs-archive/server/programming/dotnet/api-reference/
+dlr_dotnet_api: /label-recognition/docs-archive/server/programming/dotnet/api-reference/
+ddn_dotnet_api: /document-normalizer/docs-archive/server/programming/dotnet/api-reference/
+dcp_dotnet_api: /code-parser/docs-archive/server/programming/dotnet/api-reference/
 
-dcv_java: /capture-vision/docs/server/programming/java/
-dcv_java_api: /capture-vision/docs/server/programming/java/api-reference/
+dcv_java: /capture-vision/docs-archive/server/programming/java/
+dcv_java_api: /capture-vision/docs-archive/server/programming/java/api-reference/
 
-dcv_python: /capture-vision/docs/server/programming/python/
-dcv_python_api: /capture-vision/docs/server/programming/python/api-reference/
+dcv_python: /capture-vision/docs-archive/server/programming/python/
+dcv_python_api: /capture-vision/docs-archive/server/programming/python/api-reference/
 
 
-baseurl: "/capture-vision/docs/server"
+baseurl: "/capture-vision/docs-archive/server"
 
-assets: /capture-vision/docs/server/assets/
-edit_icon: /capture-vision/docs/server/assets/img-icon/edit-icon.png
-smile_icon: /capture-vision/docs/server/assets/img-icon/icon-smile.png
-sad_icon: /capture-vision/docs/server/assets/img-icon/icon-sad.png
-dbr_icon: /capture-vision/docs/server/assets/img-icon/icon-dbr.svg
-dwt_icon: /capture-vision/docs/server/assets/img-icon/icon-dwt.svg
-dnt_icon: /capture-vision/docs/server/assets/img-icon/icon-dnt.svg
+assets: /capture-vision/docs-archive/server/assets/
+edit_icon: /capture-vision/docs-archive/server/assets/img-icon/edit-icon.png
+smile_icon: /capture-vision/docs-archive/server/assets/img-icon/icon-smile.png
+sad_icon: /capture-vision/docs-archive/server/assets/img-icon/icon-sad.png
+dbr_icon: /capture-vision/docs-archive/server/assets/img-icon/icon-dbr.svg
+dwt_icon: /capture-vision/docs-archive/server/assets/img-icon/icon-dwt.svg
+dnt_icon: /capture-vision/docs-archive/server/assets/img-icon/icon-dnt.svg
 
 plugins:
   - jemoji
