@@ -16,7 +16,7 @@ The `ProactiveImageSourceAdapter` class is an abstract class that extends the `I
 
 *Assembly:* Dynamsoft.Utility.dll
 
-*Inheritance:* [ImageSourceAdapter]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-adapter.html) -> ProactiveImageSourceAdapter
+*Inheritance:* [ImageSourceAdapter]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-adapter.html) -> ProactiveImageSourceAdapter
 
 ```csharp
 public class ProactiveImageSourceAdapter : ImageSourceAdapter
@@ -48,7 +48,7 @@ Returns an `ImageData` object representing the fetched image.
 
 **See Also**
 
-[ImageData]({{ site.dcv_dotnet_api }}core/basic-classes/image-data.html)
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 ### SetImageFetchInterval
 

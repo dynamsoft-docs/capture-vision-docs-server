@@ -182,7 +182,7 @@ Returns the pixel format of the image.
 
 **See Also**
 
-[ImagePixelFormat]({{ site.dcv_enumerations }}core/image-pixel-format.html?src=cpp&&lang=cpp)
+[ImagePixelFormat]({{ site.dcvb_enumerations }}core/image-pixel-format.html?src=cpp&&lang=cpp)
 
 ### GetOrientation
 
@@ -210,7 +210,7 @@ Returns a pointer to the tag of the image.
 
 **See Also**
 
-[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
+[CImageTag]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html)
 
 ### SetImageTag
 
@@ -226,4 +226,4 @@ void SetImageTag(const CImageTag* _tag)
 
 **See Also**
 
-[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
+[CImageTag]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html)

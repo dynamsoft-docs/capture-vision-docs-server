@@ -57,7 +57,7 @@ Returns an integer indicating the success of the operation. 0 indicates success,
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### DrawOnImage
 
@@ -105,14 +105,14 @@ Returns a pointer to the modified image data.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 
-[CLineSegment]({{ site.dcv_cpp_api }}core/basic-structures/line-segment.html)
+[CLineSegment]({{ site.dcvb_cpp_api }}core/basic-structures/line-segment.html)
 
-[CContour]({{ site.dcv_cpp_api }}core/basic-structures/contour.html)
+[CContour]({{ site.dcvb_cpp_api }}core/basic-structures/contour.html)
 
-[CCorner]({{ site.dcv_cpp_api }}core/basic-structures/corner.html)
+[CCorner]({{ site.dcvb_cpp_api }}core/basic-structures/corner.html)
 
-[CEdge]({{ site.dcv_cpp_api }}core/basic-structures/edge.html)
+[CEdge]({{ site.dcvb_cpp_api }}core/basic-structures/edge.html)

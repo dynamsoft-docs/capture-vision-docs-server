@@ -55,7 +55,7 @@ Returns the type of the captured result item.
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### GetReferenceItem
 
@@ -71,7 +71,7 @@ Returns a pointer to the referenced item in the captured result item. You are no
 
 **See Also**
 
-[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+[CCapturedResultItem]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html)
 
 ### GetTargetROIDefName
 

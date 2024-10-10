@@ -59,7 +59,7 @@ void AddImageToBuffer(const CImageData* img, bool bClone = true);
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### HasNextImageToFetch
 
@@ -103,7 +103,7 @@ Returns a pointer to the image if it exists in the buffer, NULL otherwise.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### SetMaxImageCount
 
@@ -143,7 +143,7 @@ void SetBufferOverflowProtectionMode(BufferOverflowProtectionMode mode);
 
 **See Also**
 
-[BufferOverflowProtectionMode]({{ site.dcv_enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
+[BufferOverflowProtectionMode]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
 
 ### GetBufferOverflowProtectionMode
 
@@ -159,7 +159,7 @@ Returns the current buffer overflow protection mode.
 
 **See Also**
 
-[BufferOverflowProtectionMode]({{ site.dcv_enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
+[BufferOverflowProtectionMode]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
 
 ### HasImage
 
@@ -241,7 +241,7 @@ void SetColourChannelUsageType(ColourChannelUsageType type);
 
 **See Also**
 
-[ColourChannelUsageType]({{ site.dcv_enumerations}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
+[ColourChannelUsageType]({{ site.dcvb_enumerations}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
 
 ### GetColourChannelUsageType
 
@@ -257,7 +257,7 @@ Returns the usage type of a color channel in images.
 
 **See Also**
 
-[ColourChannelUsageType]({{ site.dcv_enumerations}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
+[ColourChannelUsageType]({{ site.dcvb_enumerations}}core/colour-channel-usage-type.html?src=cpp&&lang=cpp)
 
 ### SetErrorListener
 
@@ -273,4 +273,4 @@ void SetErrorListener(CImageSourceErrorListener* listener);
 
 **See Also**
 
-[CImageSourceErrorListener]({{ site.dcv_cpp_api }}core/basic-structures/image-source-error-listener.html)
+[CImageSourceErrorListener]({{ site.dcvb_cpp_api }}core/basic-structures/image-source-error-listener.html)

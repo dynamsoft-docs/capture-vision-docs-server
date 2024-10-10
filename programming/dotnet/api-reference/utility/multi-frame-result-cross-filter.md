@@ -17,7 +17,7 @@ The `MultiFrameResultCrossFilter` class is responsible for filtering captured re
 
 *Assembly:* Dynamsoft.Utility.dll
 
-*Inheritance:* [CapturedResultFilter]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) -> MultiFrameResultCrossFilter
+*Inheritance:* [CapturedResultFilter]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) -> MultiFrameResultCrossFilter
 
 ```csharp
 public class MultiFrameResultCrossFilter : CapturedResultFilter
@@ -34,6 +34,10 @@ public class MultiFrameResultCrossFilter : CapturedResultFilter
 | [`IsResultDeduplicationEnabled`](#isresultdeduplicationenabled) | Determines whether the result deduplication feature is enabled for the specific result item type. |
 | [`SetDuplicateForgetTime`](#setduplicateforgettime) | Sets the duplicate forget time for the specific captured result item types. |
 | [`GetDuplicateForgetTime`](#getduplicateforgettime) | Gets the duplicate forget time for a specific captured result item type. |
+| [`SetMaxOverlappingFrames`](#setmaxoverlappingframes) | Sets the max referencing frames count for the to-the-latest overlapping feature. |
+| [`GetMaxOverlappingFrames`](#getmaxoverlappingframes) | Gets the max referencing frames count for the to-the-latest overlapping feature. |
+| [`EnableLatestOverlapping`](#enablelatestoverlapping) | Enables the to-the-latest overlapping feature. The output captured result will become a combination of the recent results if the latest frame is proved to be similar with the previous. |
+| [`IsLatestOverlappingEnabled`](#islatestoverlappingenabled) | Determines whether the to-the-latest overlapping feature is enabled for the specific result item type. |
 | [`Dispose`](#dispose) | Releases all resources used by current object. |
 
 ### MultiFrameResultCrossFilter
@@ -59,14 +63,14 @@ void EnableResultCrossVerification(int resultItemTypes, bool enabled)
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### IsResultCrossVerificationEnabled
 
 Determines whether the result cross verification feature is enabled for the specific captured result item type.
 
 ```csharp
-bool IsResultCrossVerificationEnabled(CapturedResultItemType type)
+bool IsResultCrossVerificationEnabled(EnumCapturedResultItemType type)
 ```
 
 **Parameters**
@@ -79,7 +83,7 @@ Returns a bool value indicating whether result verification is enabled for the s
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### EnableResultDeduplication
 
@@ -100,14 +104,14 @@ void EnableResultDeduplication(int resultItemTypes, bool enabled)
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### IsResultDeduplicationEnabled
 
 Determines whether the result deduplication feature is enabled for the specific result item type.
 
 ```csharp
-bool IsResultDeduplicationEnabled(CapturedResultItemType type)
+bool IsResultDeduplicationEnabled(EnumCapturedResultItemType type)
 ```
 
 **Parameters**
@@ -120,7 +124,7 @@ Returns a bool value indicating whether result deduplication is enabled for the 
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### SetDuplicateForgetTime
 
@@ -141,14 +145,14 @@ void SetDuplicateForgetTime(int resultItemTypes, int time)
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### GetDuplicateForgetTime
 
 Gets the duplicate forget time for a specific captured result item type.
 
 ```csharp
-int GetDuplicateForgetTime(CapturedResultItemType type)
+int GetDuplicateForgetTime(EnumCapturedResultItemType type)
 ```
 
 **Parameters**
@@ -161,7 +165,83 @@ Returns the duplicate forget time for the specific captured result item type.
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+
+### SetMaxOverlappingFrames
+
+Sets the max referencing frames count for the to-the-latest overlapping feature.
+
+```csharp
+void SetMaxOverlappingFrames(int resultItemTypes, int maxOverlappingFrames);
+```
+
+**Parameters**
+
+`[in] resultItemTypes` The or value of the captured result item types.
+
+`[in] maxOverlappingFrames` The max referencing frames count for the to-the-latest overlapping feature.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+
+### GetMaxOverlappingFrames
+
+Gets the max referencing frames count for the to-the-latest overlapping feature.
+
+```csharp
+int GetMaxOverlappingFrames(EnumCapturedResultItemType resultItemType)
+```
+
+**Parameters**
+
+`[in] resultItemType` Specifies a specific result item type, which can be defined using `EnumCapturedResultItemType`.
+
+**Return value**
+
+Returns the max referencing frames count for the to-the-latest overlapping feature.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+
+
+### EnableLatestOverlapping
+
+Enables the to-the-latest overlapping feature. The output captured result will become a combination of the recent results if the latest frame is proved to be similar with the previous.
+
+```csharp
+void EnableLatestOverlapping(int resultItemTypes, bool enabled);
+```
+
+**Parameters**
+
+`[in] resultItemTypes` The or value of the captured result item types.  
+`[in] enabled` Sets whether to enable the to-the-latest overlapping feature.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+
+### IsLatestOverlappingEnabled
+
+Determines whether the to-the-latest overlapping feature is enabled for the specific result item type.
+
+```csharp
+bool IsLatestOverlappingEnabled(EnumCapturedResultItemType type)
+```
+
+**Parameters**
+
+`[in] type` The specific captured result item type.
+
+**Return value**
+
+Returns a bool value indicating whether the to-the-latest overlapping feature is enabled for the specific result item type.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### Dispose
 

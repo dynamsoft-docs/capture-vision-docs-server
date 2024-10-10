@@ -43,7 +43,7 @@ CPoint points[4]
 
 **See Also**
 
-[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+[CPoint]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
 
 ### Contains
 
@@ -63,7 +63,7 @@ Returns true if the point inside the quadrilateral, false otherwise.
 
 **See Also**
 
-[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+[CPoint]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
 
 ### GetArea
 

@@ -42,7 +42,7 @@ Returns a pointer to the `CImageData` object representing the fetched image.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### SetImageFetchInterval
 

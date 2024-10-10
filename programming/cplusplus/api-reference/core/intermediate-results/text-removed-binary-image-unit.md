@@ -45,7 +45,7 @@ Returns a pointer to the `CImageData` object that contains the text-removed bina
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### SetImageData
 
@@ -65,4 +65,4 @@ virtual int SetImageData(const CImageData* imgData) = 0;
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)

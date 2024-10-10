@@ -51,7 +51,7 @@ virtual void OnOriginalImageResultReceived(OriginalImageResultItem pResult)
 
 **See Also**
 
-[OriginalImageResultItem]({{ site.dcv_dotnet_api }}core/basic-classes/original-image-result-item.html)
+[OriginalImageResultItem]({{ site.dcvb_dotnet_api }}core/basic-classes/original-image-result-item.html)
 
 ### OnDecodedBarcodesReceived
 

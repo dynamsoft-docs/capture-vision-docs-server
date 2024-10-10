@@ -43,7 +43,7 @@ Returns the type of the captured result item.
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### GetReferenceItem
 
@@ -59,7 +59,7 @@ Returns a referenced item in the captured result item.
 
 **See Also**
 
-[CapturedResultItem]({{ site.dcv_dotnet_api }}core/basic-classes/captured-result-item.html)
+[CapturedResultItem]({{ site.dcvb_dotnet_api }}core/basic-classes/captured-result-item.html)
 
 ### GetTargetROIDefName
 

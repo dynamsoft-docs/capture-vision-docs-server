@@ -36,7 +36,7 @@ Point[] points;
 
 **See Also**
 
-[Point]({{ site.dcv_dotnet_api }}core/basic-classes/point.html)
+[Point]({{ site.dcvb_dotnet_api }}core/basic-classes/point.html)
 
 ## Methods
 
@@ -72,4 +72,4 @@ Returns the point at the specified index.
 
 **See Also**
 
-[Point]({{ site.dcv_dotnet_api }}core/basic-classes/point.html)
+[Point]({{ site.dcvb_dotnet_api }}core/basic-classes/point.html)

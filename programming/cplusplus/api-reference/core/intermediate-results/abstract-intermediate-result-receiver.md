@@ -43,7 +43,7 @@ Returns the object of `CObservationParameters`. The default parameters are to ob
 
 **See Also**
 
-[CObservationParameters]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html)
+[CObservationParameters]({{ site.dcvb_cpp_api }}core/intermediate-results/observed-parameters.html)
 
 ### OnTaskResultsReceived
 
@@ -61,9 +61,9 @@ virtual void OnTaskResultsReceived(CIntermediateResult *pResult, const Intermedi
 
 **See Also**
 
-[CIntermediateResult]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result.html)
+[CIntermediateResult]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnUnitResultReceived
 
@@ -81,6 +81,6 @@ virtual void OnUnitResultReceived(CIntermediateResultUnit *pUnit, const Intermed
 
 **See Also**
 
-[CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html)
+[CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)

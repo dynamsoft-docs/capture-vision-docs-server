@@ -69,7 +69,7 @@ SectionType sectionType
 
 **See Also**
 
-[SectionType]({{ site.dcv_enumerations }}core/section-type.html?src=cpp&&lang=cpp)
+[SectionType]({{ site.dcvb_enumerations }}core/section-type.html?src=cpp&&lang=cpp)
 
 ### reserved
 

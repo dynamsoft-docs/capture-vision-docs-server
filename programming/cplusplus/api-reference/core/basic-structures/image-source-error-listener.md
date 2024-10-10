@@ -43,4 +43,4 @@ virtual void OnErrorReceived(int errorCode, const char* errorMessage)
 
 **See Also**
 
-[ErrorCode]({{ site.dcv_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
+[ErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?src=cpp&&lang=cpp)

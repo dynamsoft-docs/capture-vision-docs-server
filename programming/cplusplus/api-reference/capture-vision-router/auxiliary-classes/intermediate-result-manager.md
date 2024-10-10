@@ -42,7 +42,7 @@ virtual int AddResultReceiver(CIntermediateResultReceiver* receiver)
 
 **See Also**
 
-[CIntermediateResultReceiver]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
+[CIntermediateResultReceiver]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
 
 ### RemoveResultReceiver
 
@@ -58,7 +58,7 @@ virtual int RemoveResultReceiver(CIntermediateResultReceiver* receiver)
 
 **See Also**
 
-[CIntermediateResultReceiver]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
+[CIntermediateResultReceiver]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
 
 ### GetOriginalImage
 
@@ -78,4 +78,4 @@ Returns a pointer to the `CImageData` object containing the original image data.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)

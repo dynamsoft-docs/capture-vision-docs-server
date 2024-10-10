@@ -66,7 +66,7 @@ Returns a const pointer to the specified pre-detected region in the collection. 
 
 **See Also**
 
-[CPredetectedRegionElement]({{ site.dcv_cpp_api }}core/intermediate-results/predetected-region-element.html)
+[CPredetectedRegionElement]({{ site.dcvb_cpp_api }}core/intermediate-results/predetected-region-element.html)
 
 ### operator[]
 

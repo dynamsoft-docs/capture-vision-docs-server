@@ -41,4 +41,4 @@ void OnImageSourceStateReceived(EnumImageSourceState state)
 
 **See Also**
 
-[EnumImageSourceState]({{ site.dcv_enumerations }}capture-vision-router/image-source-state.html?lang=dotnet)
+[EnumImageSourceState]({{ site.dcvb_enumerations }}capture-vision-router/image-source-state.html?lang=dotnet)

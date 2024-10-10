@@ -33,7 +33,7 @@ class CCapturedResult
 | [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Get the rotation transformation matrix of the original image relative to the rotated image.|
 | [`GetErrorCode`](#geterrorcode) | Gets the error code of the capture operation.|
 | [`GetErrorString`](#geterrorstring) | Gets the error message of the capture operation.|
-| [`operator[]`](#operator) | Gets a pointer to the [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html) object at the specified index. |
+| [`operator[]`](#operator) | Gets a pointer to the [`CCapturedResultItem`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html) object at the specified index. |
 | [`Retain`](#retain) | Increases the reference count of the `CCapturedResult` object.|
 | [`Release`](#release) | Decreases the reference count of the `CCapturedResult` object.|
 | [`GetDecodedBarcodesResult`](#getdecodedbarcodesresult) | Gets the decoded barcode items from the `CCapturedResult`.|
@@ -70,7 +70,7 @@ Returns a pointer to the `CImageTag` object containing the tag of the original i
 
 **See Also**
 
-[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
+[CImageTag]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html)
 
 ### GetItemsCount
 
@@ -98,11 +98,11 @@ const CCapturedResultItem* GetItem(int index) const
 
 **Return value**
 
-Returns a pointer to the [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html) object at the specified index.
+Returns a pointer to the [`CCapturedResultItem`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html) object at the specified index.
 
 **See Also**
 
-[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+[CCapturedResultItem]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html)
 
 ### HasItem
 
@@ -122,7 +122,7 @@ Returns a bool value indicating whether the item is present in the array or not.
 
 **See Also**
 
-[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+[CCapturedResultItem]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html)
 
 ### RemoveItem
 
@@ -142,7 +142,7 @@ Return value indicating whether the deletion was successful or not.
 
 **See Also**
 
-[CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+[CCapturedResultItem]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html)
 
 ### GetRotationTransformMatrix
 
@@ -170,7 +170,7 @@ Returns the error code of the capture operation.
 
 **See Also**
 
-[ErrorCode]({{ site.dcv_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
+[ErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
 
 ### GetErrorString
 
@@ -186,7 +186,7 @@ Returns the error message of the capture operation as a null-terminated string. 
 
 ### operator[]
 
-Gets a pointer to the [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html) object at the specified index.
+Gets a pointer to the [`CCapturedResultItem`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html) object at the specified index.
 
 ```cpp
 virtual const CCapturedResultItem* operator[](int index) const = 0;

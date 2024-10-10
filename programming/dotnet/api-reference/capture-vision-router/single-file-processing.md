@@ -48,4 +48,4 @@ Returns a `CapturedResult` object containing the captured items.
 
 **See Also**
 
-[ImageData]({{ site.dcv_dotnet_api }}core/basic-classes/image-data.html)
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)

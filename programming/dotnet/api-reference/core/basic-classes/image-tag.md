@@ -45,7 +45,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[EnumImageTagType]({{ site.dcv_enumerations }}core/image-tag-type.html?lang=dotnet)
+[EnumImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=dotnet)
 
 ### Clone
 
@@ -97,7 +97,7 @@ Returns the capture distance mode of the image.
 
 **See Also**
 
-[EnumImageCaptureDistanceMode]({{ site.dcv_enumerations }}core/image-capture-distance-mode.html?lang=dotnet)
+[EnumImageCaptureDistanceMode]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?lang=dotnet)
 
 ### SetImageCaptureDistanceMode
 
@@ -113,4 +113,4 @@ void SetImageCaptureDistanceMode(EnumImageCaptureDistanceMode mode)
 
 **See Also**
 
-[EnumImageCaptureDistanceMode]({{ site.dcv_enumerations }}core/image-capture-distance-mode.html?lang=dotnet)
+[EnumImageCaptureDistanceMode]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?lang=dotnet)

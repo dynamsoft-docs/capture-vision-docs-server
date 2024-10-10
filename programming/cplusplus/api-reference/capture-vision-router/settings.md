@@ -165,7 +165,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[SimplifiedCaptureVisionSettings]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
+[SimplifiedCaptureVisionSettings]({{ site.dcvb_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
 
 ## UpdateSettings
 
@@ -197,7 +197,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[SimplifiedCaptureVisionSettings]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
+[SimplifiedCaptureVisionSettings]({{ site.dcvb_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
 
 ## ResetSettings
 

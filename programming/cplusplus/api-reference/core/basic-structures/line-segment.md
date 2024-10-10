@@ -43,7 +43,7 @@ Returns the start point of the line segment.
 
 **See Also**
 
-[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+[CPoint]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
 
 ### GetEndPoint
 
@@ -59,7 +59,7 @@ Returns the end point of the line segment.
 
 **See Also**
 
-[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+[CPoint]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
 
 ### SetStartPoint
 
@@ -75,7 +75,7 @@ void SetStartPoint(const CPoint& pt)
 
 **See Also**
 
-[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+[CPoint]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
 
 ### SetEndPoint
 
@@ -91,5 +91,5 @@ void SetEndPoint(const CPoint& pt)
 
 **See Also**
 
-[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+[CPoint]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
 

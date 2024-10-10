@@ -16,7 +16,7 @@ The `FileFetcher` class is a utility class that partitions a multi-page image fi
 
 *Assembly:* Dynamsoft.Utility.dll
 
-*Inheritance:* [ImageSourceAdapter]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-adapter.html) -> FileFetcher
+*Inheritance:* [ImageSourceAdapter]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-adapter.html) -> FileFetcher
 
 ```csharp
 public class FileFetcher : ImageSourceAdapter
@@ -72,7 +72,7 @@ Returns an integer value that represents the success or failure of the operation
 
 **See Also**
 
-[ImageData]({{ site.dcv_dotnet_api }}core/basic-classes/image-data.html)
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 ### SetPDFReadingParameter
 
@@ -96,7 +96,7 @@ Returns an integer value that represents the success or failure of the operation
 
 **See Also**
 
-[PDFReadingParameter]({{ site.dcv_dotnet_api }}core/basic-classes/pdf-reading-parameter.html)
+[PDFReadingParameter]({{ site.dcvb_dotnet_api }}core/basic-classes/pdf-reading-parameter.html)
 
 ### SetPages
 

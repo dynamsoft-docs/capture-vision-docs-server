@@ -45,7 +45,7 @@ Returns a pointer to the `CImageData` object that contains the grayscale image. 
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### SetImageData
 

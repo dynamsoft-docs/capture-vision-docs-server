@@ -61,7 +61,7 @@ The value should be a bitwise OR combination of one or more of enumeration `Capt
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### roi
 
@@ -73,7 +73,7 @@ CQuadrilateral roi
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### roiMeasuredInPercentage
 

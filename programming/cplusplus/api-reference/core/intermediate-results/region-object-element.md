@@ -46,7 +46,7 @@ Returns a `CQuadrilateral` object which represents the location of the region ob
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### GetReferencedElement
 
@@ -62,7 +62,7 @@ Returns a const pointer to a referenced `CRegionObjectElement` object.
 
 **See Also**
 
-[CRegionObjectElement]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html)
+[CRegionObjectElement]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html)
 
 ### GetElementType
 
@@ -78,7 +78,7 @@ Returns a `RegionObjectElementType` enum value which represents the type of the 
 
 **See Also**
 
-[RegionObjectElementType]({{ site.dcv_enumerations }}core/region-object-element-type.html?src=cpp&&lang=cpp)
+[RegionObjectElementType]({{ site.dcvb_enumerations }}core/region-object-element-type.html?src=cpp&&lang=cpp)
 
 ### SetLocation
 

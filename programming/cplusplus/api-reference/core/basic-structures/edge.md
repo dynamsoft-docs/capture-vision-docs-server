@@ -37,7 +37,7 @@ CCorner startCorner
 
 **See Also**
 
-[CCorner]({{ site.dcv_cpp_api }}core/basic-structures/corner.html)
+[CCorner]({{ site.dcvb_cpp_api }}core/basic-structures/corner.html)
 
 ### endCorner
 
@@ -49,4 +49,4 @@ CCorner endCorner
 
 **See Also**
 
-[CCorner]({{ site.dcv_cpp_api }}core/basic-structures/corner.html)
+[CCorner]({{ site.dcvb_cpp_api }}core/basic-structures/corner.html)

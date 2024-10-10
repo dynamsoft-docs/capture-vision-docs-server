@@ -45,7 +45,7 @@ Returns a constant pointer to the texture-removed grayscale image. You don't nee
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### SetImageData
 
@@ -65,4 +65,4 @@ virtual int SetImageData(const CImageData* imgData) = 0;
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)

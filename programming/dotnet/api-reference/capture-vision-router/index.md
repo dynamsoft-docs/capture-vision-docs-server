@@ -14,7 +14,7 @@ The `DynamsoftCaptureVisionRouter` module is defined in the namespace `Dynamsoft
 
 ## Main Class - `CaptureVisionRouter`
 
-The `CaptureVisionRouter` class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.dcv_architecture}}output.md#final-results).
+The `CaptureVisionRouter` class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.dcvb_architecture}}output.md#final-results).
 
 Read more about the class [`CaptureVisionRouter`](capture-vision-router.md).
 
@@ -33,5 +33,5 @@ The following are the auxiliary classes:
 
 ## Enums
 
-* [EnumImageSourceState]({{ site.dcv_enumerations }}capture-vision-router/image-source-state.md?lang=dotnet)
-* [EnumCaptureState]({{ site.dcv_enumerations }}capture-vision-router/capture-state.md?lang=dotnet)
+* [EnumImageSourceState]({{ site.dcvb_enumerations }}capture-vision-router/image-source-state.md?lang=dotnet)
+* [EnumCaptureState]({{ site.dcvb_enumerations }}capture-vision-router/capture-state.md?lang=dotnet)

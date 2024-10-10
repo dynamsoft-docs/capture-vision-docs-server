@@ -16,7 +16,7 @@ The `DirectoryFetcher` class is a utility class that retrieves a list of files f
 
 *Assembly:* Dynamsoft.Utility.dll
 
-*Inheritance:* [ProactiveImageSourceAdapter]({{ site.dcv_dotnet_api }}utility/proactive-image-source-adapter.html) -> DirectoryFetcher
+*Inheritance:* [ProactiveImageSourceAdapter]({{ site.dcvb_dotnet_api }}utility/proactive-image-source-adapter.html) -> DirectoryFetcher
 
 ```csharp
 public class DirectoryFetcher : ProactiveImageSourceAdapter
@@ -88,7 +88,7 @@ Returns an integer value that represents the success or failure of the operation
 
 **See Also**
 
-[PDFReadingParameter]({{ site.dcv_dotnet_api }}core/basic-classes/pdf-reading-parameter.html)
+[PDFReadingParameter]({{ site.dcvb_dotnet_api }}core/basic-classes/pdf-reading-parameter.html)
 
 ### SetPages
 

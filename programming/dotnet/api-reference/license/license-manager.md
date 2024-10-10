@@ -50,7 +50,7 @@ Returns 0 if the license is initialized successfully, a negative value indicatin
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcv_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
 
 ### SetDeviceFriendlyName
 
@@ -70,7 +70,7 @@ Returns 0 if the friendly name is set successfully, a negative value indicating 
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcv_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
 
 ### SetMaxConcurrentInstanceCount
 
@@ -90,7 +90,7 @@ Returns error code (returns 0 if the function operates successfully).
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcv_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
 
 ### GetDeviceUUID
 
@@ -131,7 +131,7 @@ Returns 0 if the directory path is set successfully, a negative value indicating
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcv_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
 
 ## Code Snippet
 
