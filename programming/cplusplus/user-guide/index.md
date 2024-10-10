@@ -14,6 +14,6 @@ The best way to begin with Dynamsoft Capture Vision C++ Edition is to follow the
 
 - [User Guide for Barcode Reader]({{ site.dbr_cpp }}user-guide.html)
 
-- [User Guide for Passport MRZ Scanner]({{ site.dcvb_cpp }}user-guide/mrz-scanner.html)
+- [User Guide for MRZ Scanner]({{ site.dcvb_cpp }}user-guide/mrz-scanner.html)
 
 - [User Guide for Document Scanner]({{ site.dcvb_cpp }}user-guide/document-scanner.html)

@@ -11,6 +11,6 @@ The best way to begin with Dynamsoft Capture Vision .NET Edition is to follow th
 
 - [User Guide for Barcode Reader]({{ site.dbr_dotnet }}user-guide.html)
 
-- [User Guide for Passport MRZ Scanner]({{ site.dcvb_dotnet }}user-guide/mrz-scanner.html)
+- [User Guide for MRZ Scanner]({{ site.dcvb_dotnet }}user-guide/mrz-scanner.html)
 
 - [User Guide for Document Scanner]({{ site.dcvb_dotnet }}user-guide/document-scanner.html)
