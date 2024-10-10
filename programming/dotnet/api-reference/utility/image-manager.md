@@ -56,5 +56,5 @@ Returns an integer indicating the success of the operation. 0 indicates success,
 
 **See Also**
 
-[ImageData]({{ site.dcv_dotnet_api }}core/basic-classes/image-data.html)
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 

@@ -43,4 +43,4 @@ void OnErrorReceived(int errorCode, string errorMessage)
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcv_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)

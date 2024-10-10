@@ -50,7 +50,7 @@ Returns the quality of the video frame.
 
 **See Also**
 
-[VideoFrameQuality]({{ site.dcv_enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp)
+[VideoFrameQuality]({{ site.dcvb_enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp)
 
 ### IsCropped
 
@@ -78,7 +78,7 @@ Returns a pointer to a `CRect` object that represents the crop region of the vid
 
 **See Also**
 
-[CRect]({{ site.dcv_cpp_api }}core/basic-structures/rect.html)
+[CRect]({{ site.dcvb_cpp_api }}core/basic-structures/rect.html)
 
 ### GetOriginalWidth
 
@@ -126,7 +126,7 @@ CVideoFrameTag(VideoFrameQuality quality, bool isCropped, const CRect* cropRegio
 
 **See Also**
 
-[VideoFrameQuality]({{ site.dcv_enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp)
+[VideoFrameQuality]({{ site.dcvb_enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp)
 
 ### CVideoFrameTag Destructor
 

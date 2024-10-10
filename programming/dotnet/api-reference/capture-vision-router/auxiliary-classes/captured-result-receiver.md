@@ -49,7 +49,7 @@ virtual void OnCapturedResultReceived(CapturedResult pResult)
 
 **See Also**
 
-[CapturedResult]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result.html)
+[CapturedResult]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result.html)
 
 ### OnOriginalImageResultReceived
 
@@ -65,7 +65,7 @@ virtual void OnOriginalImageResultReceived(OriginalImageResultItem pResult)
 
 **See Also**
 
-[OriginalImageResultItem]({{ site.dcv_dotnet_api }}core/basic-classes/original-image-result-item.html)
+[OriginalImageResultItem]({{ site.dcvb_dotnet_api }}core/basic-classes/original-image-result-item.html)
 
 ### OnDecodedBarcodesReceived
 

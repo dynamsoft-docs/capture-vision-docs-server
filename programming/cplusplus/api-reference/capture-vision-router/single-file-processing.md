@@ -70,5 +70,5 @@ else
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
-[CCapturedResult]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
+[CCapturedResult]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)

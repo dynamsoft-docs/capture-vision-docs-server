@@ -66,7 +66,7 @@ unsigned int GetFilteredResultItemTypes()
 
 **Return value**
 
-Returns the type [`CapturedResultItemType`]({{site.dcv_enumerations}}core/captured-result-item-type.html?src=cpp&&lang=cpp) of filtered result items.
+Returns the type [`CapturedResultItemType`]({{site.dcvb_enumerations}}core/captured-result-item-type.html?src=cpp&&lang=cpp) of filtered result items.
 
 ### OnOriginalImageResultReceived
 

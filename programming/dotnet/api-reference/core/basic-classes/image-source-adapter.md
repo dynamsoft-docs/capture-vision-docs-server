@@ -58,7 +58,7 @@ void AddImageToBuffer(ImageData img)
 
 **See Also**
 
-[ImageData]({{ site.dcv_dotnet_api }}core/basic-classes/image-data.html)
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 ### HasNextImageToFetch
 
@@ -102,7 +102,7 @@ Returns an image if it exists in the buffer, null otherwise.
 
 **See Also**
 
-[ImageData]({{ site.dcv_dotnet_api }}core/basic-classes/image-data.html)
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 ### SetMaxImageCount
 
@@ -142,7 +142,7 @@ void SetBufferOverflowProtectionMode(EnumBufferOverflowProtectionMode mode)
 
 **See Also**
 
-[EnumBufferOverflowProtectionMode]({{ site.dcv_enumerations }}core/buffer-overflow-protection-mode.html?lang=dotnet)
+[EnumBufferOverflowProtectionMode]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?lang=dotnet)
 
 ### GetBufferOverflowProtectionMode
 
@@ -158,7 +158,7 @@ Returns the current buffer overflow protection mode.
 
 **See Also**
 
-[EnumBufferOverflowProtectionMode]({{ site.dcv_enumerations }}core/buffer-overflow-protection-mode.html?lang=dotnet)
+[EnumBufferOverflowProtectionMode]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?lang=dotnet)
 
 ### HasImage
 
@@ -240,7 +240,7 @@ void SetColourChannelUsageType(EnumColourChannelUsageType type)
 
 **See Also**
 
-[EnumColourChannelUsageType]({{ site.dcv_enumerations}}core/colour-channel-usage-type.html?lang=dotnet)
+[EnumColourChannelUsageType]({{ site.dcvb_enumerations}}core/colour-channel-usage-type.html?lang=dotnet)
 
 ### GetColourChannelUsageType
 
@@ -256,7 +256,7 @@ Returns the usage type of a color channel in images.
 
 **See Also**
 
-[EnumColourChannelUsageType]({{ site.dcv_enumerations}}core/colour-channel-usage-type.html?lang=dotnet)
+[EnumColourChannelUsageType]({{ site.dcvb_enumerations}}core/colour-channel-usage-type.html?lang=dotnet)
 
 ### SetErrorListener
 
@@ -272,7 +272,7 @@ void SetErrorListener(IImageSourceErrorListener listener)
 
 **See Also**
 
-[IImageSourceErrorListener]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-error-listener.html)
+[IImageSourceErrorListener]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-error-listener.html)
 
 
 ### Dispose

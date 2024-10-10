@@ -46,4 +46,4 @@ Returns a const pointer to the `CImageData` object that contains the image data 
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)

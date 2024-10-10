@@ -49,7 +49,7 @@ The value should be a bitwise OR combination of one or more of enumeration `Capt
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### roi
 
@@ -61,7 +61,7 @@ Quadrilateral roi;
 
 **See Also**
 
-[Quadrilateral]({{ site.dcv_dotnet_api }}core/basic-classes/quadrilateral.html)
+[Quadrilateral]({{ site.dcvb_dotnet_api }}core/basic-classes/quadrilateral.html)
 
 ### roiMeasuredInPercentage
 

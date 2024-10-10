@@ -57,4 +57,4 @@ Returns a const pointer to the specified `CIntermediateResultUnit` object in the
 
 **See Also**
 
-[CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html)
+[CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html)

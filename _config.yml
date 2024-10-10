@@ -5,30 +5,48 @@ firstLevelUrl: /capture-vision/docs/server
 
 useVersionTree: true
 
-dcv_introduction: /capture-vision/docs/core/introduction/
-dcv_architecture: /capture-vision/docs/core/architecture/
-dcv_enumerations: /capture-vision/docs/core/enums/
-dcv_parameters: /capture-vision/docs/core/parameters/reference/
+dcvb_introduction: /capture-vision/docs/core/introduction/
+dcvb_architecture: /capture-vision/docs/core/architecture/
+dcvb_enumerations: /capture-vision/docs/core/enums/
+dcvb_parameters: /capture-vision/docs/core/parameters/
+dcvb_parameters_reference: /capture-vision/docs/core/parameters/reference/
+dcp_code_types: /code-parser/docs/core/code-types/
 
-dcv_cpp: /capture-vision/docs/server/programming/cplusplus/
-dcv_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
+dcvb_cpp: /capture-vision/docs/server/programming/cplusplus/
+dbr_cpp: /barcode-reader/docs/server/programming/cplusplus/
+dlr_cpp: /label-recognition/docs/server/programming/cplusplus/
+ddn_cpp: /document-normalizer/docs/server/programming/cplusplus/
+dcp_cpp: /code-parser/docs/server/programming/cplusplus/
+dcvb_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
 dbr_cpp_api: /barcode-reader/docs/server/programming/cplusplus/api-reference/
 dlr_cpp_api: /label-recognition/docs/server/programming/cplusplus/api-reference/
 ddn_cpp_api: /document-normalizer/docs/server/programming/cplusplus/api-reference/
 dcp_cpp_api: /code-parser/docs/server/programming/cplusplus/api-reference/
 
-dcv_dotnet: /capture-vision/docs/server/programming/dotnet/
-dcv_dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
+dcvb_dotnet: /capture-vision/docs/server/programming/dotnet/
+dbr_dotnet: /barcode-reader/docs/server/programming/dotnet/
+dlr_dotnet: /label-recognition/docs/server/programming/dotnet/
+ddn_dotnet: /document-normalizer/docs/server/programming/dotnet/
+dcp_dotnet: /code-parser/docs/server/programming/dotnet/
+dcvb_dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
 dbr_dotnet_api: /barcode-reader/docs/server/programming/dotnet/api-reference/
 dlr_dotnet_api: /label-recognition/docs/server/programming/dotnet/api-reference/
 ddn_dotnet_api: /document-normalizer/docs/server/programming/dotnet/api-reference/
 dcp_dotnet_api: /code-parser/docs/server/programming/dotnet/api-reference/
 
-dcv_java: /capture-vision/docs/server/programming/java/
-dcv_java_api: /capture-vision/docs/server/programming/java/api-reference/
+dcvb_java: /capture-vision/docs/server/programming/java/
+dcvb_java_api: /capture-vision/docs/server/programming/java/api-reference/
 
-dcv_python: /capture-vision/docs/server/programming/python/
-dcv_python_api: /capture-vision/docs/server/programming/python/api-reference/
+dcvb_python: /capture-vision/docs/server/programming/python/
+dbr_python: /barcode-reader/docs/server/programming/python/
+dlr_python: /label-recognition/docs/server/programming/python/
+ddn_python: /document-normalizer/docs/server/programming/python/
+dcp_python: /code-parser/docs/server/programming/python/
+dcvb_python_api: /capture-vision/docs/server/programming/python/api-reference/
+dbr_python_api: /barcode-reader/docs/server/programming/python/api-reference/
+dlr_python_api: /label-recognition/docs/server/programming/python/api-reference/
+ddn_python_api: /document-normalizer/docs/server/programming/python/api-reference/
+dcp_python_api: /code-parser/docs/server/programming/python/api-reference/
 
 
 baseurl: "/capture-vision/docs/server"
@@ -58,40 +76,33 @@ defaults:
       category: "original-repo"
       edition: "algorithm"
   - scope:
-      path: "programming/javascript"
-    values:
-      category: "js-repo"
-      edition: "js"
-  - scope:
-      path: "programming/android"
-    values:
-      category: "mobile-repo"
-      edition: "mobile"
-  - scope:
-      path: "programming/objectivec-swift"
-    values:
-      category: "mobile-repo"
-      edition: "mobile"
-  - scope:
       path: "programming/cplusplus"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Capture Vision C++ Edition" 
+      docHomePage: "/capture-vision/docs/server/programming/cplusplus/"
   - scope:
       path: "programming/dotnet"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Capture Vision DotNet Edition" 
+      docHomePage: "/capture-vision/docs/server/programming/dotnet/"
   - scope:
       path: "programming/python"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Capture Vision Python Edition" 
+      docHomePage: "/capture-vision/docs/server/programming/python/"
   - scope:
       path: "programming/java"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Capture Vision Java Edition" 
+      docHomePage: "/capture-vision/docs/server/programming/java/"
   - scope:
       path: ""
     values:
@@ -101,3 +112,5 @@ defaults:
       needGenerateH3Content: true
 
 url: "https://www.dynamsoft.com" # sitemap root
+
+isDCV: true

@@ -47,7 +47,7 @@ Returns the quality of the video frame.
 
 **See Also**
 
-[EnumVideoFrameQuality]({{ site.dcv_enumerations }}core/video-frame-quality.html?lang=dotnet)
+[EnumVideoFrameQuality]({{ site.dcvb_enumerations }}core/video-frame-quality.html?lang=dotnet)
 
 ### IsCropped
 
@@ -75,7 +75,7 @@ Returns a `Rect` object that represents the crop region of the video frame. It m
 
 **See Also**
 
-[Rect]({{ site.dcv_dotnet_api }}core/basic-classes/rect.html)
+[Rect]({{ site.dcvb_dotnet_api }}core/basic-classes/rect.html)
 
 ### GetOriginalWidth
 
@@ -123,7 +123,7 @@ VideoFrameTag(EnumVideoFrameQuality quality, bool isCropped, Rect cropRegion, in
 
 **See Also**
 
-[EnumVideoFrameQuality]({{ site.dcv_enumerations }}core/video-frame-quality.html?lang=dotnet)
+[EnumVideoFrameQuality]({{ site.dcvb_enumerations }}core/video-frame-quality.html?lang=dotnet)
 
 ### GetImageTagType
 
@@ -139,7 +139,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[EnumImageTagType]({{ site.dcv_enumerations }}core/image-tag-type.html?lang=dotnet)
+[EnumImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=dotnet)
 
 ### Clone
 

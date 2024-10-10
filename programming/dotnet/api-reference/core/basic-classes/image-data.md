@@ -63,7 +63,7 @@ ImageData(byte[] bytes, int width, int height, int stride, EnumImagePixelFormat 
 
 **See Also**
 
-[EnumImagePixelFormat]({{ site.dcv_enumerations }}core/image-pixel-format.html?lang=dotnet)
+[EnumImagePixelFormat]({{ site.dcvb_enumerations }}core/image-pixel-format.html?lang=dotnet)
 
 ### GetBytes
 
@@ -127,7 +127,7 @@ Returns the pixel format of the image.
 
 **See Also**
 
-[EnumImagePixelFormat]({{ site.dcv_enumerations }}core/image-pixel-format.html?lang=dotnet)
+[EnumImagePixelFormat]({{ site.dcvb_enumerations }}core/image-pixel-format.html?lang=dotnet)
 
 ### GetOrientation
 
@@ -155,7 +155,7 @@ Returns a tag of the image.
 
 **See Also**
 
-[ImageTag]({{ site.dcv_dotnet_api }}core/basic-classes/image-tag.html)
+[ImageTag]({{ site.dcvb_dotnet_api }}core/basic-classes/image-tag.html)
 
 ### SetImageTag
 
@@ -171,7 +171,7 @@ void SetImageTag(ImageTag tag)
 
 **See Also**
 
-[ImageTag]({{ site.dcv_dotnet_api }}core/basic-classes/image-tag.html)
+[ImageTag]({{ site.dcvb_dotnet_api }}core/basic-classes/image-tag.html)
 
 ### Dispose
 

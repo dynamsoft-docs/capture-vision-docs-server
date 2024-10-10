@@ -46,4 +46,4 @@ This method does not return a value. It is a pure virtual method and must be imp
 
 **See Also**
 
-[CaptureState]({{ site.dcv_enumerations }}capture-vision-router/capture-state.html?src=cpp&&lang=cpp)
+[CaptureState]({{ site.dcvb_enumerations }}capture-vision-router/capture-state.html?src=cpp&&lang=cpp)

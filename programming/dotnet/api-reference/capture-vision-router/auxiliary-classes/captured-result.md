@@ -62,7 +62,7 @@ Returns an `ImageTag` object containing the tag of the original image.
 
 **See Also**
 
-[ImageTag]({{ site.dcv_dotnet_api }}core/basic-classes/image-tag.html)
+[ImageTag]({{ site.dcvb_dotnet_api }}core/basic-classes/image-tag.html)
 
 ### GetItems
 
@@ -78,7 +78,7 @@ Returns a `CapturedResultItem` array with all items in the captured result.
 
 **See Also**
 
-[CapturedResultItem]({{ site.dcv_dotnet_api }}core/basic-classes/captured-result-item.html)
+[CapturedResultItem]({{ site.dcvb_dotnet_api }}core/basic-classes/captured-result-item.html)
 
 ### GetRotationTransformMatrix
 
@@ -106,7 +106,7 @@ Returns the error code of the capture operation.
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcv_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
 
 ### GetErrorString
 

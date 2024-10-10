@@ -97,7 +97,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[EnumImageTagType]({{ site.dcv_enumerations }}core/image-tag-type.html?lang=dotnet)
+[EnumImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=dotnet)
 
 ### Clone
 

@@ -37,7 +37,7 @@ int SetInput(CImageSourceAdapter* pAdaptor);
 
 **Parameters**
 
-`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{site.dcv_architecture}}input.html#image-source-adapter).
+`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{site.dcvb_architecture}}input.html#image-source-adapter).
 
 **Return Value**
 
@@ -49,11 +49,11 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CImageSourceAdapter]({{ site.dcv_cpp_api }}core/basic-structures/image-source-adapter.html)
+[CImageSourceAdapter]({{ site.dcvb_cpp_api }}core/basic-structures/image-source-adapter.html)
 
-[CDirectoryFetcher]({{ site.dcv_cpp_api }}utility/directory-fetcher.html)
+[CDirectoryFetcher]({{ site.dcvb_cpp_api }}utility/directory-fetcher.html)
 
-[CFileFetcher]({{ site.dcv_cpp_api }}utility/file-fetcher.html)
+[CFileFetcher]({{ site.dcvb_cpp_api }}utility/file-fetcher.html)
 
 ## GetInput
 
@@ -69,11 +69,11 @@ Returns the attached image source adapter object of the capture vision router.
 
 **See Also**
 
-[CImageSourceAdapter]({{ site.dcv_cpp_api }}core/basic-structures/image-source-adapter.html)
+[CImageSourceAdapter]({{ site.dcvb_cpp_api }}core/basic-structures/image-source-adapter.html)
 
-[CDirectoryFetcher]({{ site.dcv_cpp_api }}utility/directory-fetcher.html)
+[CDirectoryFetcher]({{ site.dcvb_cpp_api }}utility/directory-fetcher.html)
 
-[CFileFetcher]({{ site.dcv_cpp_api }}utility/file-fetcher.html)
+[CFileFetcher]({{ site.dcvb_cpp_api }}utility/file-fetcher.html)
 
 ## AddCaptureStateListener
 
@@ -93,7 +93,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CCaptureStateListener]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+[CCaptureStateListener]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 
 ## RemoveCaptureStateListener
 
@@ -113,7 +113,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CCaptureStateListener]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+[CCaptureStateListener]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 
 ## AddImageSourceStateListener
 
@@ -133,7 +133,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CImageSourceStateListener]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+[CImageSourceStateListener]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
 ## RemoveImageSourceStateListener
 
@@ -153,7 +153,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CImageSourceStateListener]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+[CImageSourceStateListener]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
 ## AddResultReceiver
 
@@ -173,7 +173,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CCapturedResultReceiver]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
+[CCapturedResultReceiver]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
 
 ## RemoveResultReceiver
 
@@ -185,7 +185,7 @@ int RemoveResultReceiver(CCapturedResultReceiver* receiver);
 
 **Parameters**
 
-`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html) to be removed.
+`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html) to be removed.
 
 **Return Value**
 
@@ -193,7 +193,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CCapturedResultReceiver]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
+[CCapturedResultReceiver]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
 
 ## AddResultFilter
 
@@ -205,7 +205,7 @@ int AddResultFilter(CCapturedResultFilter* filter);
 
 **Parameters**
 
-`[in] filter` Specifies a filter object of the type [`CCapturedResultFilter`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) to be added.
+`[in] filter` Specifies a filter object of the type [`CCapturedResultFilter`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) to be added.
 
 **Return Value**
 
@@ -213,7 +213,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CCapturedResultFilter]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
+[CCapturedResultFilter]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 
 ## RemoveResultFilter
 
@@ -225,7 +225,7 @@ int RemoveResultFilter(CCapturedResultFilter* filter);
 
 **Parameters**
 
-`[in] filter` Specifies a filter object of the type [`CCapturedResultFilter`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) to be removed.
+`[in] filter` Specifies a filter object of the type [`CCapturedResultFilter`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) to be removed.
 
 **Return Value**
 
@@ -233,7 +233,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CCapturedResultFilter]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
+[CCapturedResultFilter]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 
 ## StartCapturing
 

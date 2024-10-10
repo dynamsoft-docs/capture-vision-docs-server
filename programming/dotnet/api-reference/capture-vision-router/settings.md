@@ -160,7 +160,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[SimplifiedCaptureVisionSettings]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
+[SimplifiedCaptureVisionSettings]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
 
 ## UpdateSettings
 
@@ -190,7 +190,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[SimplifiedCaptureVisionSettings]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
+[SimplifiedCaptureVisionSettings]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
 
 ## ResetSettings
 

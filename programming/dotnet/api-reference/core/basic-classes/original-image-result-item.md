@@ -43,7 +43,7 @@ Returns the `ImageData` object that contains the image data for the `OriginalIma
 
 **See Also**
 
-[ImageData]({{ site.dcv_dotnet_api }}core/basic-classes/image-data.html)
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 ### GetCapturedResultItemType
 
@@ -59,7 +59,7 @@ Returns the type of the captured result item.
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### GetReferenceItem
 
@@ -75,4 +75,4 @@ Returns the referenced item in the captured result item.
 
 **See Also**
 
-[CapturedResultItem]({{ site.dcv_dotnet_api }}core/basic-classes/captured-result-item.html)
+[CapturedResultItem]({{ site.dcvb_dotnet_api }}core/basic-classes/captured-result-item.html)

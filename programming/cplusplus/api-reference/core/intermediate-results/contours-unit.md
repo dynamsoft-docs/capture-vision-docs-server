@@ -53,9 +53,9 @@ Returns 0 if successful, or an error code if the contour could not be retrieved.
 
 **See Also**
 
-[CContour]({{ site.dcv_cpp_api }}core/basic-structures/contour.html)
+[CContour]({{ site.dcvb_cpp_api }}core/basic-structures/contour.html)
 
-[CVector4]({{ site.dcv_cpp_api }}core/basic-structures/vector4.html)
+[CVector4]({{ site.dcvb_cpp_api }}core/basic-structures/vector4.html)
 
 ### SetContours
 

@@ -45,7 +45,7 @@ Returns a const pointer to a `CImageData` object that represents the image data 
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### SetImageData
 
@@ -65,4 +65,4 @@ virtual int SetImageData(const CImageData* imgData) = 0;
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)

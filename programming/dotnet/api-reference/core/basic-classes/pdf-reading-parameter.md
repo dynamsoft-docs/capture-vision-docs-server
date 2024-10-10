@@ -38,7 +38,7 @@ EnumPDFReadingMode mode;
 
 **See Also**
 
-[EnumPDFReadingMode]({{ site.dcv_enumerations }}core/pdf-reading-mode.html?lang=dotnet)
+[EnumPDFReadingMode]({{ site.dcvb_enumerations }}core/pdf-reading-mode.html?lang=dotnet)
 
 ### dpi
 
@@ -58,7 +58,7 @@ EnumRasterDataSource rasterDataSource;
 
 **See Also**
 
-[EnumRasterDataSource]({{ site.dcv_enumerations }}core/raster-data-source.html?lang=dotnet)
+[EnumRasterDataSource]({{ site.dcvb_enumerations }}core/raster-data-source.html?lang=dotnet)
 
 
 ## Methods

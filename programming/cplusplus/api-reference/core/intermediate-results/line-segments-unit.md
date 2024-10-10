@@ -66,7 +66,7 @@ Returns the `CLineSegment` object at the specified index or NULL if the index is
 
 **See Also**
 
-[CLineSegment]({{ site.dcv_cpp_api }}core/basic-structures/line-segment.html)
+[CLineSegment]({{ site.dcvb_cpp_api }}core/basic-structures/line-segment.html)
 
 ### operator[]
 

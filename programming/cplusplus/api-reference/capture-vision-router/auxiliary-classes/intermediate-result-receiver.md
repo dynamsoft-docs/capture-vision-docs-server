@@ -70,7 +70,7 @@ Returns the object of `CObservationParameters`. The default parameters are to ob
 
 **See Also**
 
-[CObservationParameters]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html)
+[CObservationParameters]({{ site.dcvb_cpp_api }}core/intermediate-results/observed-parameters.html)
 
 ### OnTaskResultsReceived
 
@@ -88,9 +88,9 @@ virtual void OnTaskResultsReceived(CIntermediateResult *pResult, const Intermedi
 
 **See Also**
 
-[CIntermediateResult]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result.html)
+[CIntermediateResult]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnPredetectedRegionsReceived
 
@@ -108,9 +108,9 @@ virtual void OnPredetectedRegionsReceived(CPredetectedRegionsUnit *pResult, cons
 
 **See Also**
 
-[CPredetectedRegionsUnit]({{ site.dcv_cpp_api }}core/intermediate-results/predetected-regions-unit.html)
+[CPredetectedRegionsUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/predetected-regions-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnLocalizedBarcodesReceived
 
@@ -130,7 +130,7 @@ virtual void OnLocalizedBarcodesReceived(dbr::intermediate_results::CLocalizedBa
 
 [CLocalizedBarcodesUnit]({{ site.dbr_cpp_api }}localized-barcodes-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnDecodedBarcodesReceived
 
@@ -150,7 +150,7 @@ virtual void OnDecodedBarcodesReceived(dbr::intermediate_results::CDecodedBarcod
 
 [CDecodedBarcodesUnit]({{ site.dbr_cpp_api }}decoded-barcodes-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnLocalizedTextLinesReceived
 
@@ -170,7 +170,7 @@ virtual void OnLocalizedTextLinesReceived(dlr::intermediate_results::CLocalizedT
 
 [CLocalizedTextLinesUnit]({{ site.dlr_cpp_api }}localized-text-lines-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnRecognizedTextLinesReceived
 
@@ -190,7 +190,7 @@ virtual void OnRecognizedTextLinesReceived(dlr::intermediate_results::CRecognize
 
 [CRecognizedTextLinesUnit]({{ site.dlr_cpp_api }}recognized-text-lines-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnDetectedQuadsReceived
 
@@ -210,7 +210,7 @@ virtual void OnDetectedQuadsReceived(ddn::intermediate_results::CDetectedQuadsUn
 
 [CDetectedQuadsUnit]({{ site.ddn_cpp_api }}detected-quads-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnNormalizedImagesReceived
 
@@ -230,7 +230,7 @@ virtual void OnNormalizedImagesReceived(ddn::intermediate_results::CNormalizedIm
 
 [CNormalizedImagesUnit]({{ site.ddn_cpp_api }}normalized-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnColourImageUnitReceived
 
@@ -248,9 +248,9 @@ virtual void OnColourImageUnitReceived(CColourImageUnit *pResult, const Intermed
 
 **See Also**
 
-[CColourImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/colour-image-unit.html)
+[CColourImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/colour-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnScaledDownColourImageUnitReceived
 
@@ -268,9 +268,9 @@ virtual void OnScaledDownColourImageUnitReceived(CScaledDownColourImageUnit *pRe
 
 **See Also**
 
-[CScaledDownColourImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
+[CScaledDownColourImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnGrayscaleImageUnitReceived
 
@@ -288,9 +288,9 @@ virtual void OnGrayscaleImageUnitReceived(CGrayscaleImageUnit *pResult, const In
 
 **See Also**
 
-[CGrayscaleImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/grayscale-image-unit.html)
+[CGrayscaleImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/grayscale-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTransformedGrayscaleImageUnitReceived
 
@@ -308,9 +308,9 @@ virtual void OnTransformedGrayscaleImageUnitReceived(CTransformedGrayscaleImageU
 
 **See Also**
 
-[CTransformedGrayscaleImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/transformed-grayscale-image-unit.html)
+[CTransformedGrayscaleImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/transformed-grayscale-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnEnhancedGrayscaleImageUnitReceived
 
@@ -328,9 +328,9 @@ virtual void OnEnhancedGrayscaleImageUnitReceived(CEnhancedGrayscaleImageUnit *p
 
 **See Also**
 
-[CEnhancedGrayscaleImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/enhanced-grayscale-image-unit.html)
+[CEnhancedGrayscaleImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/enhanced-grayscale-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnBinaryImageUnitReceived
 
@@ -348,9 +348,9 @@ virtual void OnBinaryImageUnitReceived(CBinaryImageUnit *pResult, const Intermed
 
 **See Also**
 
-[CBinaryImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/binary-image-unit.html)
+[CBinaryImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/binary-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextureDetectionResultUnitReceived
 
@@ -368,9 +368,9 @@ virtual void OnTextureDetectionResultUnitReceived(CTextureDetectionResultUnit *p
 
 **See Also**
 
-[CTextureDetectionResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/texture-detection-result-unit.html)
+[CTextureDetectionResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/texture-detection-result-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextureRemovedGrayscaleImageUnitReceived
 
@@ -388,9 +388,9 @@ virtual void OnTextureRemovedGrayscaleImageUnitReceived(CTextureRemovedGrayscale
 
 **See Also**
 
-[CTextureRemovedGrayscaleImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/texture-removed-grayscale-image-unit.html)
+[CTextureRemovedGrayscaleImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/texture-removed-grayscale-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextureRemovedBinaryImageUnitReceived
 
@@ -408,9 +408,9 @@ virtual void OnTextureRemovedBinaryImageUnitReceived(CTextureRemovedBinaryImageU
 
 **See Also**
 
-[CTextureRemovedBinaryImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/texture-removed-binary-image-unit.html)
+[CTextureRemovedBinaryImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/texture-removed-binary-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnContoursUnitReceived
 
@@ -428,9 +428,9 @@ virtual void OnContoursUnitReceived(CContoursUnit *pResult, const IntermediateRe
 
 **See Also**
 
-[CContoursUnit]({{ site.dcv_cpp_api }}core/intermediate-results/contours-unit.html)
+[CContoursUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/contours-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnLineSegmentsUnitReceived
 
@@ -448,9 +448,9 @@ virtual void OnLineSegmentsUnitReceived(CLineSegmentsUnit *pResult, const Interm
 
 **See Also**
 
-[CLineSegmentsUnit]({{ site.dcv_cpp_api }}core/intermediate-results/line-segments-unit.html)
+[CLineSegmentsUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/line-segments-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextZonesUnitReceived
 
@@ -468,9 +468,9 @@ virtual void OnTextZonesUnitReceived(CTextZonesUnit *pResult, const Intermediate
 
 **See Also**
 
-[CTextZonesUnit]({{ site.dcv_cpp_api }}core/intermediate-results/text-zones-unit.html)
+[CTextZonesUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/text-zones-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnTextRemovedBinaryImageUnitReceived
 
@@ -488,9 +488,9 @@ virtual void OnTextRemovedBinaryImageUnitReceived(CTextRemovedBinaryImageUnit *p
 
 **See Also**
 
-[CTextRemovedBinaryImageUnit]({{ site.dcv_cpp_api }}core/intermediate-results/text-removed-binary-image-unit.html)
+[CTextRemovedBinaryImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/text-removed-binary-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnLongLinesUnitReceived
 
@@ -510,7 +510,7 @@ virtual void OnLongLinesUnitReceived(ddn::intermediate_results::CLongLinesUnit *
 
 [CLongLinesUnit]({{ site.ddn_cpp_api }}long-lines-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnCornersUnitReceived
 
@@ -530,7 +530,7 @@ virtual void OnCornersUnitReceived(ddn::intermediate_results::CCornersUnit *pRes
 
 [CCornersUnit]({{ site.ddn_cpp_api }}corners-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnCandidateQuadEdgesUnitReceived
 
@@ -550,7 +550,7 @@ virtual void OnCandidateQuadEdgesUnitReceived(ddn::intermediate_results::CCandid
 
 [CCandidateQuadEdgesUnit]({{ site.ddn_cpp_api }}candidate-quad-edges-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnCandidateBarcodeZonesUnitReceived
 
@@ -570,7 +570,7 @@ virtual void OnCandidateBarcodeZonesUnitReceived(dbr::intermediate_results::CCan
 
 [CCandidateBarcodeZonesUnit]({{ site.dbr_cpp_api }}candidate-barcode-zones-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnScaledUpBarcodeImageUnitReceived
 
@@ -590,7 +590,7 @@ virtual void OnScaledUpBarcodeImageUnitReceived(dbr::intermediate_results::CScal
 
 [CScaledUpBarcodeImageUnit]({{ site.dbr_cpp_api }}scaled-up-barcode-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnDeformationResistedBarcodeImageUnitReceived
 
@@ -610,7 +610,7 @@ virtual void OnDeformationResistedBarcodeImageUnitReceived(dbr::intermediate_res
 
 [CDeformationResistedBarcodeImageUnit]({{ site.dbr_cpp_api }}deformation-resisted-barcode-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnComplementedBarcodeImageUnitReceived
 
@@ -630,7 +630,7 @@ virtual void OnComplementedBarcodeImageUnitReceived(dbr::intermediate_results::C
 
 [CComplementedBarcodeImageUnit]({{ site.dbr_cpp_api }}complemented-barcode-image-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ## OnShortLinesUnitReceived
 
@@ -648,9 +648,9 @@ virtual void OnShortLinesUnitReceived(CShortLinesUnit *pResult, const Intermedia
 
 **See Also**
 
-[CShortLinesUnit]({{ site.dcv_cpp_api }}core/intermediate-results/short-lines-unit.html)
+[CShortLinesUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/short-lines-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
 ### OnRawTextLinesReceived
 
@@ -670,4 +670,4 @@ virtual void OnRawTextLinesReceived(CRawTextLinesUnit *pResult, const Intermedia
 
 [CRawTextLinesUnit]({{ site.dlr_cpp_api }}raw-text-lines-unit.html)
 
-[IntermediateResultExtraInfo]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
+[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)

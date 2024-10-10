@@ -41,4 +41,4 @@ void OnCaptureStateChanged(EnumCaptureState state)
 
 **See Also**
 
-[EnumCaptureState]({{ site.dcv_enumerations }}capture-vision-router/capture-state.html?lang=dotnet)
+[EnumCaptureState]({{ site.dcvb_enumerations }}capture-vision-router/capture-state.html?lang=dotnet)

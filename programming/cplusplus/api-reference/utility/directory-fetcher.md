@@ -74,7 +74,7 @@ Returns an integer value that represents the success or failure of the operation
 
 **See Also**
 
-[CPDFReadingParameter]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html)
+[CPDFReadingParameter]({{ site.dcvb_cpp_api }}core/basic-structures/pdf-reading-parameter.html)
 
 ### SetPages
 

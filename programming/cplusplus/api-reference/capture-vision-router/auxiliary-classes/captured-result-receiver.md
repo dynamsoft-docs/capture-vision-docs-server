@@ -81,7 +81,7 @@ virtual void OnCapturedResultReceived(CCapturedResult* pResult)
 
 **See Also**
 
-[CCapturedResult]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)
+[CCapturedResult]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)
 
 ### OnOriginalImageResultReceived
 
@@ -97,7 +97,7 @@ virtual void OnOriginalImageResultReceived(COriginalImageResultItem* pResult)
 
 **See Also**
 
-[COriginalImageResultItem]({{ site.dcv_cpp_api }}core/basic-structures/original-image-result-item.html)
+[COriginalImageResultItem]({{ site.dcvb_cpp_api }}core/basic-structures/original-image-result-item.html)
 
 ### OnDecodedBarcodesReceived
 

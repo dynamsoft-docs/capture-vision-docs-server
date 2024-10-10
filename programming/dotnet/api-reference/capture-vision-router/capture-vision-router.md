@@ -9,7 +9,7 @@ needGenerateH3Content: true
 
 # CaptureVisionRouter
 
-The `CaptureVisionRouter` class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.dcv_architecture}}output.html#final-results?lang=dotnet).
+The `CaptureVisionRouter` class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.dcvb_architecture}}output.html#final-results?lang=dotnet).
 
 ## Definition
 

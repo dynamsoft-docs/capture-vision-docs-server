@@ -9,6 +9,7 @@ noTitleIndex: true
 
 # Release Notes - Dynamsoft Capture Vision CPP
 
+<<<<<<< HEAD
 ## DynamsoftCaptureVisionRouter
 
 - [2.4.10 (07/23/2024)](cvr.md#2410-07232024)
@@ -114,3 +115,6 @@ noTitleIndex: true
 - [1.2.0 (01/16/2024)](dcpd.md#120-01162024)
 - [1.0.10 (12/07/2023)](dcpd.md#1010-12072023)
 - [1.0.0 (07/04/2023)](dcpd.md#100-07042023)
+=======
+- [2.4.2000 (10/10/2024)](cpp-2.md#242000-10102024)
+>>>>>>> python

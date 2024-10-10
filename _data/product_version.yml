@@ -2,13 +2,4 @@ useGroupedVersion: true
 
 version_info_list_desktop:
   - value: latest version
-  - value: 2.x
-    child:    
-      - 2.2.30
-      - 2.2.20
-      - 2.2.10
-      - 2.2.0
-      - 2.0.30
-      - 2.0.20
-      - 2.0.10
-      - 2.0.0
+

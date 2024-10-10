@@ -39,7 +39,7 @@ CornerType type
 
 **See Also**
 
-[CornerType]({{ site.dcv_enumerations }}core/corner-type.html?src=cpp&&lang=cpp)
+[CornerType]({{ site.dcvb_enumerations }}core/corner-type.html?src=cpp&&lang=cpp)
 
 ### intersection
 
@@ -51,7 +51,7 @@ CPoint intersection
 
 **See Also**
 
-[CPoint]({{ site.dcv_cpp_api }}core/basic-structures/point.html)
+[CPoint]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
 
 ### line1
 
@@ -63,7 +63,7 @@ CLineSegment line1
 
 **See Also**
 
-[CLineSegment]({{ site.dcv_cpp_api }}core/basic-structures/line-segment.html)
+[CLineSegment]({{ site.dcvb_cpp_api }}core/basic-structures/line-segment.html)
 
 ### line2
 
@@ -75,4 +75,4 @@ CLineSegment line2
 
 **See Also**
 
-[CLineSegment]({{ site.dcv_cpp_api }}core/basic-structures/line-segment.html)
+[CLineSegment]({{ site.dcvb_cpp_api }}core/basic-structures/line-segment.html)

@@ -36,7 +36,7 @@ int SetInput(ImageSourceAdapter pAdaptor)
 
 **Parameters**
 
-`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{site.dcv_architecture}}input.html#image-source-adapter).
+`[in] pAdaptor` Specifies an object which has implemented the [Image Source Adapter Interface]({{site.dcvb_architecture}}input.html#image-source-adapter).
 
 **Return Value**
 
@@ -48,11 +48,11 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[ImageSourceAdapter]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-adapter.html)
+[ImageSourceAdapter]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-adapter.html)
 
-[DirectoryFetcher]({{ site.dcv_dotnet_api }}utility/directory-fetcher.html)
+[DirectoryFetcher]({{ site.dcvb_dotnet_api }}utility/directory-fetcher.html)
 
-[FileFetcher]({{ site.dcv_dotnet_api }}utility/file-fetcher.html)
+[FileFetcher]({{ site.dcvb_dotnet_api }}utility/file-fetcher.html)
 
 ## GetInput
 
@@ -68,11 +68,11 @@ Returns the attached image source adapter object of the capture vision router.
 
 **See Also**
 
-[ImageSourceAdapter]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-adapter.html)
+[ImageSourceAdapter]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-adapter.html)
 
-[DirectoryFetcher]({{ site.dcv_dotnet_api }}utility/directory-fetcher.html)
+[DirectoryFetcher]({{ site.dcvb_dotnet_api }}utility/directory-fetcher.html)
 
-[FileFetcher]({{ site.dcv_dotnet_api }}utility/file-fetcher.html)
+[FileFetcher]({{ site.dcvb_dotnet_api }}utility/file-fetcher.html)
 
 ## AddCaptureStateListener
 
@@ -84,7 +84,7 @@ int AddCaptureStateListener(ICaptureStateListener listener)
 
 **Parameters**
 
-`[in] listener` Specifies a listening object of the type [`ICaptureStateListener`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html) to be added.
+`[in] listener` Specifies a listening object of the type [`ICaptureStateListener`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html) to be added.
 
 **Return Value**
 
@@ -92,7 +92,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[ICaptureStateListener]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+[ICaptureStateListener]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 
 ## RemoveCaptureStateListener
 
@@ -104,7 +104,7 @@ int RemoveCaptureStateListener(ICaptureStateListener listener)
 
 **Parameters**
 
-`[in] listener` Specifies a listening object of the type [`ICaptureStateListener`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html) to be removed.
+`[in] listener` Specifies a listening object of the type [`ICaptureStateListener`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html) to be removed.
 
 **Return Value**
 
@@ -112,7 +112,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[ICaptureStateListener]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+[ICaptureStateListener]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 
 ## AddImageSourceStateListener
 
@@ -124,7 +124,7 @@ int AddImageSourceStateListener(IImageSourceStateListener listener)
 
 **Parameters**
 
-`[in] listener` Specifies a listening object of the type [`IImageSourceStateListener`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html) to be added.
+`[in] listener` Specifies a listening object of the type [`IImageSourceStateListener`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html) to be added.
 
 **Return Value**
 
@@ -132,7 +132,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[IImageSourceStateListener]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+[IImageSourceStateListener]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
 ## RemoveImageSourceStateListener
 
@@ -144,7 +144,7 @@ int RemoveImageSourceStateListener(IImageSourceStateListener listener)
 
 **Parameters**
 
-`[in] listener` Specifies a listening object of the type [`IImageSourceStateListener`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html) to be removed.
+`[in] listener` Specifies a listening object of the type [`IImageSourceStateListener`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html) to be removed.
 
 **Return Value**
 
@@ -152,7 +152,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[IImageSourceStateListener]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+[IImageSourceStateListener]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
 ## AddResultReceiver
 
@@ -164,7 +164,7 @@ int AddResultReceiver(CapturedResultReceiver receiver)
 
 **Parameters**
 
-`[in] receiver` Specifies a receiver object of the type [`CapturedResultReceiver`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html) to be added.
+`[in] receiver` Specifies a receiver object of the type [`CapturedResultReceiver`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html) to be added.
 
 **Return Value**
 
@@ -172,7 +172,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CapturedResultReceiver]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
+[CapturedResultReceiver]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
 
 ## RemoveResultReceiver
 
@@ -184,7 +184,7 @@ int RemoveResultReceiver(CapturedResultReceiver receiver)
 
 **Parameters**
 
-`[in] receiver` Specifies a receiver object of the type [`CapturedResultReceiver`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html) to be removed.
+`[in] receiver` Specifies a receiver object of the type [`CapturedResultReceiver`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html) to be removed.
 
 **Return Value**
 
@@ -192,7 +192,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CapturedResultReceiver]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
+[CapturedResultReceiver]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
 
 ## AddResultFilter
 
@@ -204,7 +204,7 @@ int AddResultFilter(CapturedResultFilter filter)
 
 **Parameters**
 
-`[in] filter` Specifies a filter object of the type [`CapturedResultFilter`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) to be added.
+`[in] filter` Specifies a filter object of the type [`CapturedResultFilter`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) to be added.
 
 **Return Value**
 
@@ -212,7 +212,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CapturedResultFilter]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
+[CapturedResultFilter]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 
 ## RemoveResultFilter
 
@@ -224,7 +224,7 @@ int RemoveResultFilter(CapturedResultFilter filter)
 
 **Parameters**
 
-`[in] filter` Specifies a filter object of the type [`CapturedResultFilter`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) to be removed.
+`[in] filter` Specifies a filter object of the type [`CapturedResultFilter`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) to be removed.
 
 **Return Value**
 
@@ -232,7 +232,7 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CapturedResultFilter]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
+[CapturedResultFilter]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 
 ## StartCapturing
 
