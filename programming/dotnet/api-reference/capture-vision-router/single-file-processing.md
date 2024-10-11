@@ -27,11 +27,17 @@ CapturedResult Capture(ImageData imageData, string templateName="");
 
 `[in] filePath` Specifies the path of the file to process.
 
-`[in] templateName` Specifies the template to use for capturing. Default value is an empty string which means the factory default template.
+`[in] templateName` Specifies a `CaptureVisionTemplate` to use for capturing.
 
 `[in] fileBytes` Specifies the image file bytes in memory to be processed.
 
 `[in] imageData` Specifies the image data to process.
+
+**Remarks**
+
+- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [InitSettings]({{ site.dcvb_dotnet_api }}capture-vision-router/settings.html#initsettings) / [InitSettingsFromFile]({{ site.dcvb_dotnet_api }}capture-vision-router/settings.html#initsettingsfromfile).
+- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `InitSettings` / `InitSettingsFromFile` and pass his own settings.
+- If parameter `templateName` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
 
 **Return Value**
 
