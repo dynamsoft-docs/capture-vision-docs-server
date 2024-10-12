@@ -11,6 +11,7 @@ dcvb_enumerations: /capture-vision/docs/core/enums/
 dcvb_parameters: /capture-vision/docs/core/parameters/
 dcvb_parameters_reference: /capture-vision/docs/core/parameters/reference/
 dcp_code_types: /code-parser/docs/core/code-types/
+license_activation: /capture-vision/docs/core/license/
 
 dcvb_cpp: /capture-vision/docs/server/programming/cplusplus/
 dbr_cpp: /barcode-reader/docs/server/programming/cplusplus/
