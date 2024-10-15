@@ -151,7 +151,7 @@ Open the `MRZScanner.cpp` file and add the following code inside the `Main` meth
     ```
 
     >Note:
-    > The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dcv&package=c_cpp" target="_blank">Customer Portal</a>.
+    > The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=mrz&package=c_cpp" target="_blank">Customer Portal</a>.
 
 ### Create a CaptureVisionRouter Instance
 
