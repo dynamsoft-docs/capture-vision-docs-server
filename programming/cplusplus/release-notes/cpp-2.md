@@ -13,7 +13,7 @@ needGenerateH3Content: false
 ### Highlights
 
 - Added to-the-latest overlapping feature.
-- Added ARM64 and MacOS components back to the SDK.
+- Added ARM64 and macOS components back to the SDK.
 - Improved the error handling logic of methods `Capture`, `StartCapturing` and `InitLicense` to clearly report a licensing issue.
 
 ### Changelogs

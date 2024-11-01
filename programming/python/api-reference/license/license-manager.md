@@ -70,6 +70,10 @@ Returns a tuple containing following elements:
 - `error_code` <*int*>: The error code indicating the status of the operation.
 - `error_message` <*str*>: A descriptive message explaining the error.
 
+**Remarks**
+
+This function must be called before function `init_license` to ensure correct functionality.
+
 **See Also**
 
 [EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
@@ -92,6 +96,10 @@ def set_max_concurrent_instance_count(count_for_this_device: int) -> Tuple[int, 
 Returns a tuple containing following elements:
 - `error_code` <*int*>: The error code indicating the status of the operation.
 - `error_message` <*str*>: A descriptive message explaining the error.
+
+**Remarks**
+
+This function must be called before function `init_license` to ensure correct functionality.
 
 **See Also**
 
@@ -120,6 +128,10 @@ Returns a tuple containing following elements:
 - `error_message` <*str*>: A descriptive message explaining the error.
 - `uuid` <*str*>: The unique identifier of the device.
 
+**Remarks**
+
+This function must be called before function `init_license` to ensure correct functionality.
+
 ### set_license_cache_path
 
 Sets the directory path for the license cache.
@@ -138,6 +150,10 @@ def set_license_cache_path(directory_path: str) -> Tuple[int, str]:
 Returns a tuple containing following elements:
 - `error_code` <*int*>: The error code indicating the status of the operation.
 - `error_message` <*str*>: A descriptive message explaining the error.
+
+**Remarks**
+
+This function must be called before function `init_license` to ensure correct functionality.
 
 **See Also**
 

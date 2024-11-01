@@ -45,7 +45,7 @@ The best way to begin with Dynamsoft Capture Vision C++ Edition is to follow the
   - Minimum GLIBC Version: GLIBC_2.18 or higher
   - Compiler: G++ 5.4 or higher
 
-- MacOS (not included in the trial package, contact us to get the SDK)
+- macOS (not included in the trial package, contact us to get the SDK)
   - Supported Versions: 10.15+
   - Architecture: x64 and ARM 64-bit
 
