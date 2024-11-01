@@ -50,22 +50,6 @@ static int InitLicense(const char* pLicense, char errorMsgBuffer[] = NULL, const
 
 Returns 0 if the license is initialized successfully, a negative value indicating an error otherwise.
 
-**Code Snippet**
-
-```cpp
-int errorCode = 0;
-char szErrorMsg[256];
-errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
-if (errorCode != ErrorCode::EC_OK && errorCode != ErrorCode::EC_LICENSE_CACHE_USED)
-{
-    cout << "License initialization failed: ErrorCode: " << errorCode << ", ErrorString: " << szErrorMsg << endl;
-}
-else
-{
-    // other codes...
-}
-```
-
 ### SetDeviceFriendlyName
 
 It is used to set the friendly name of the device.
@@ -82,6 +66,10 @@ static int SetDeviceFriendlyName(const char* name)
 
 Returns 0 if the friendly name is set successfully, a negative value indicating an error otherwise.
 
+**Remarks**
+
+This function must be called before function `InitLicense` to ensure correct functionality.
+
 ### SetMaxConcurrentInstanceCount
 
 It is used to set the maximum number of allowed instances for the given device.
@@ -97,6 +85,10 @@ static int SetMaxConcurrentInstanceCount(int countForThisDevice)
 **Return value**
 
 Returns error code (returns 0 if the function operates successfully). 
+
+**Remarks**
+
+This function must be called before function `InitLicense` to ensure correct functionality.
 
 ### GetDeviceUUID
 
@@ -121,6 +113,10 @@ static int GetDeviceUUID(int uuidGenerationMethod, char uuidBuffer[] , const int
 
 Returns 0 if the UUID is generated successfully, a negative value indicating an error otherwise.
 
+**Remarks**
+
+This function must be called before function `InitLicense` to ensure correct functionality.
+
 ### SetLicenseCachePath
 
 It is used to set the directory path for the license cache.
@@ -137,3 +133,26 @@ static int SetLicenseCachePath(const char* directoryPath)
 
 Returns 0 if the directory path is set successfully, a negative value indicating an error otherwise.
 
+**Remarks**
+
+This function must be called before function `InitLicense` to ensure correct functionality.
+
+## Code Snippet
+
+```cpp
+int errorCode = 0;
+char szErrorMsg[256];
+char szUUID[256];
+CLicenseManager::SetLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
+CLicenseManager::GetDeviceUUID(1, szUUID, 256);
+CLicenseManager::SetDeviceFriendlyName("FRIENDLY-NAME");
+errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
+if (errorCode != ErrorCode::EC_OK && errorCode != ErrorCode::EC_LICENSE_CACHE_USED)
+{
+    cout << "License initialization failed: ErrorCode: " << errorCode << ", ErrorString: " << szErrorMsg << endl;
+}
+else
+{
+    // other codes...
+}
+```

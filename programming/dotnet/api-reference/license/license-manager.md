@@ -68,6 +68,10 @@ static int SetDeviceFriendlyName(string name)
 
 Returns 0 if the friendly name is set successfully, a negative value indicating an error otherwise.
 
+**Remarks**
+
+This function must be called before function `InitLicense` to ensure correct functionality.
+
 **See Also**
 
 [EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
@@ -87,6 +91,10 @@ static int SetMaxConcurrentInstanceCount(int countForThisDevice)
 **Return Value**
 
 Returns error code (returns 0 if the function operates successfully). 
+
+**Remarks**
+
+This function must be called before function `InitLicense` to ensure correct functionality.
 
 **See Also**
 
@@ -113,6 +121,10 @@ static int GetDeviceUUID(int uuidGenerationMethod, out string uuidBuffer)
 
 Returns 0 if the UUID is generated successfully, a negative value indicating an error otherwise.
 
+**Remarks**
+
+This function must be called before function `InitLicense` to ensure correct functionality.
+
 ### SetLicenseCachePath
 
 Sets the directory path for the license cache.
@@ -128,6 +140,10 @@ static int SetLicenseCachePath(string directoryPath)
 **Return Value**
 
 Returns 0 if the directory path is set successfully, a negative value indicating an error otherwise.
+
+**Remarks**
+
+This function must be called before function `InitLicense` to ensure correct functionality.
 
 **See Also**
 
