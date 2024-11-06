@@ -34,7 +34,7 @@ public class ImageData
 | [`GetOrientation`](#getorientation) | Gets the orientation of the image. |
 | [`GetImageTag`](#getimagetag) | Gets the tag of the image. |
 | [`SetImageTag`](#setimagetag) | Sets the tag of the image. |
-| [`Dispose`](dispose) | Releases all resources used by current object. |
+| [`Dispose`](#dispose) | Releases all resources used by current object. |
 
 
 ### ImageData Constructor
