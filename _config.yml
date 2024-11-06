@@ -12,14 +12,14 @@ dcv_parameters: /capture-vision/docs-archive/core/parameters/reference/
 
 dcv_cpp: /capture-vision/docs-archive/server/programming/cplusplus/
 dcv_cpp_api: /capture-vision/docs-archive/server/programming/cplusplus/api-reference/
-dbr_cpp_api: /barcode-reader/docs-archive/server/programming/cplusplus/api-reference/
+dbr_cpp_api: /barcode-reader/docs/server/programming/cplusplus/api-reference/
 dlr_cpp_api: /label-recognition/docs-archive/server/programming/cplusplus/api-reference/
 ddn_cpp_api: /document-normalizer/docs-archive/server/programming/cplusplus/api-reference/
 dcp_cpp_api: /code-parser/docs-archive/server/programming/cplusplus/api-reference/
 
 dcv_dotnet: /capture-vision/docs-archive/server/programming/dotnet/
 dcv_dotnet_api: /capture-vision/docs-archive/server/programming/dotnet/api-reference/
-dbr_dotnet_api: /barcode-reader/docs-archive/server/programming/dotnet/api-reference/
+dbr_dotnet_api: /barcode-reader/docs/server/programming/dotnet/api-reference/
 dlr_dotnet_api: /label-recognition/docs-archive/server/programming/dotnet/api-reference/
 ddn_dotnet_api: /document-normalizer/docs-archive/server/programming/dotnet/api-reference/
 dcp_dotnet_api: /code-parser/docs-archive/server/programming/dotnet/api-reference/
