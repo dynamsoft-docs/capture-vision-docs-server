@@ -28,7 +28,6 @@ def capture(self, *args) -> CapturedResult:
 - `file_path` <*str*>, `template_name` <*str*, optional>: Specifies the path of the file to process and a `CaptureVisionTemplate` to use for capturing.
 - `file_bytes` <*bytes*>, `template_name` <*str*, optional>: Specifies the image file bytes in memory to process and a `CaptureVisionTemplate` to use for capturing.
 - `image_data` <*ImageData*>, `template_name` <*str*, optional>: Specifies the image data to process and a `CaptureVisionTemplate` to use for capturing.
-- `image` <*numpy.ndarray*>, `image_pixel_format` <*EnumImagePixelFormat*, optional>, `template_name` <*str*, optional>: Specifies the image, formated in `numpy.ndarray`, and the image pixel format used in the image byte array to process and a `CaptureVisionTemplate` to use for capturing.
 
 **Remarks**
 
