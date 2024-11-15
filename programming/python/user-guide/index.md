@@ -9,7 +9,7 @@ keywords: user guide index, python
 
 The best way to begin with Dynamsoft Capture Vision Python Edition is to follow the guides for specific use cases.
 
-- [User Guide for Barcode Reader]({{ site.dbr_python }}user-guide.html)
+- [User Guide for Barcode Reader]({{ site.dbr_python }}user-guide.html){:target="_blank"}
 
 - [User Guide for MRZ Scanner]({{ site.dcvb_python }}user-guide/mrz-scanner.html)
 

@@ -9,7 +9,7 @@ keywords: user guide index, .NET
 
 The best way to begin with Dynamsoft Capture Vision .NET Edition is to follow the guides for specific use cases.
 
-- [User Guide for Barcode Reader]({{ site.dbr_dotnet }}user-guide.html)
+- [User Guide for Barcode Reader]({{ site.dbr_dotnet }}user-guide.html){:target="_blank"}
 
 - [User Guide for MRZ Scanner]({{ site.dcvb_dotnet }}user-guide/mrz-scanner.html)
 

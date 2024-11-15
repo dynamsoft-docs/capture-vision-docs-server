@@ -12,7 +12,7 @@ permalink: /programming/cplusplus/user-guide/index.html
 
 The best way to begin with Dynamsoft Capture Vision C++ Edition is to follow the guides for specific use cases.
 
-- [User Guide for Barcode Reader]({{ site.dbr_cpp }}user-guide.html)
+- [User Guide for Barcode Reader]({{ site.dbr_cpp }}user-guide.html){:target="_blank"}
 
 - [User Guide for MRZ Scanner]({{ site.dcvb_cpp }}user-guide/mrz-scanner.html)
 

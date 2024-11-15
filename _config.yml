@@ -49,6 +49,11 @@ dlr_python_api: /label-recognition/docs/server/programming/python/api-reference/
 ddn_python_api: /document-normalizer/docs/server/programming/python/api-reference/
 dcp_python_api: /code-parser/docs/server/programming/python/api-reference/
 
+dcvb_js: /capture-vision/docs/web/programming/javascript/
+dcvb_android: /capture-vision/docs/mobile/programming/android/
+dcvb_ios: /capture-vision/docs/mobile/programming/ios/
+dcvb_maui: /capture-vision/docs/mobile/programming/maui/
+
 
 baseurl: "/capture-vision/docs/server"
 
