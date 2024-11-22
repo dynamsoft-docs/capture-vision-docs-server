@@ -10,6 +10,8 @@ needAutoGenerateSidebar: true
 
 The `ImageSourceAdapter` class provides an class for fetching and buffering images. It is an abstract class that needs to be implemented by a concrete class to provide actual functionality.
 
+>Note: Subclasses inheriting from this class must ensure that the parent class constructor (`super().__init__()`) is properly called to guarantee correct initialization.
+
 ## Definition
 
 *Module:* dynamsoft_core

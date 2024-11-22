@@ -11,6 +11,8 @@ needGenerateH3Content: true
 
 Defines a listener for image source state changes.
 
+>Note: Subclasses inheriting from this class must ensure that the parent class constructor (`super().__init__()`) is properly called to guarantee correct initialization.
+
 ## Definition
 
 *Module:* dynamsoft_capture_vision_router
