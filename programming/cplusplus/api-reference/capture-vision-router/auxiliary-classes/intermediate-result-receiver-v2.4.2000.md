@@ -55,7 +55,6 @@ class CIntermediateResultReceiver
 | [`OnComplementedBarcodeImageUnitReceived`](#oncomplementedbarcodeimageunitreceived) | Called when complemented barcode image units have been received. |
 | [`OnShortLinesUnitReceived`](#onshortlinesunitreceived) | Called when short line units have been received. |
 | [`OnRawTextLinesReceived`](#onrawtextlinesreceived) | Called when raw text lines have been received. |
-| [`OnLogicLinesReceived`](#onlogiclinesreceived) | Called when logic lines have been received. |
 
 ### GetObservationParameters
 
@@ -663,32 +662,12 @@ virtual void OnRawTextLinesReceived(CRawTextLinesUnit *pResult, const Intermedia
 
 **Parameters**
 
-`[in] pResult` A pointer to the `CRawTextLinesUnit` object that contains the result.
+`[in] pResult` A pointer to the CRawTextLinesUnit object that contains the result.
 
-`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
+`[in] info` A pointer to the IntermediateResultExtraInfo object that contains the extra info of intermediate result.
 
 **See Also**
 
 [CRawTextLinesUnit]({{ site.dlr_cpp_api }}raw-text-lines-unit.html)
-
-[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
-
-### OnLogicLinesReceived
-
-Called when logic lines have been received.
-
-```cpp
-virtual void OnLogicLinesReceived(CLogicLinesUnit *pResult, const IntermediateResultExtraInfo* info)
-```
-
-**Parameters**
-
-`[in] pResult` A pointer to the `CLogicLinesUnit` object that contains the result.
-
-`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
-
-**See Also**
-
-[CLogicLinesUnit]({{ site.ddn_cpp_api }}logic-lines-unit.html)
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)

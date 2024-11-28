@@ -1,5 +1,12 @@
 <li lang="{{include.lang}}" class="category">UNDERSTANDING DCV</li>
-<li lang="{{include.lang}}"><a href="{{ site.dcvb_introduction }}index.html" class="otherLinkColour">Overview of DCV</a></li>
+<li lang="{{include.lang}}"><a href="{{ site.dcvb_introduction }}index.html" class="otherLinkColour">Overview of DCV</a>
+    <ul>
+        <li><a href="{{ site.dbr_introduction }}" class="otherLinkColour">Dynamsoft Barcode Reader Introduction</a></li>
+        <li><a href="{{ site.dlr_introduction }}" class="otherLinkColour">Dynamsoft Label Recognizer Introduction</a></li>
+        <li><a href="{{ site.ddn_introduction }}" class="otherLinkColour">Dynamsoft Document Normalizer Introduction</a></li>
+        <li><a href="{{ site.dcp_introduction }}" class="otherLinkColour">Dynamsoft Code Parser Introduction</a></li>
+    </ul>
+</li>
 {%- include liquid_searchVersionTreeFile.html ver=include.ver curPath=include.curPath lang=include.lang targetRelativePath="sidelist-architecture.html" -%}
 {%- include liquid_searchVersionTreeFile.html ver=include.ver curPath=include.curPath lang=include.lang targetRelativePath="sidelist-parameters-organization.html" -%}
 {%- include liquid_searchVersionTreeFile.html ver=include.ver curPath=include.curPath lang=include.lang targetRelativePath="sidelist-parameter-reference.html" -%}

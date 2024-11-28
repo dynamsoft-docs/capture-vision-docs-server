@@ -10,17 +10,15 @@ breadcrumbText: CVR C++ Settings
 
 # Settings
 
-| API Name                                                   | Description                                                                                  |
-| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [`InitSettings`](#initsettings)                            | Loads and initializes a template from a string.                                              |
-| [`InitSettingsFromFile`](#initsettingsfromfile)            | Loads and initializes a template from a file.                                                |
-| [`OutputSettings`](#outputsettings)                        | Exports a specific `CaptureVisionTemplate` to a string.                                      |
-| [`OutputSettingsToFile`](#outputsettingstofile)            | Exports a specific `CaptureVisionTemplate` to a file.                                        |
-| [`GetSimplifiedSettings`](#getsimplifiedsettings)          | Retrieves a `SimplifiedCaptureVisionSettings` object for a specific `CaptureVisionTemplate`. |
-| [`UpdateSettings`](#updatesettings)                        | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.             |
-| [`ResetSettings`](#resetsettings)                          | Resets all templates to factory settings.                                                    |
-| [`GetParameterTemplateCount`](#getparametertemplatecount)  | Retrieves the total number of available parameter templates.                                 |
-| [`GetParameterTemplateName`](#getparametertemplatename)    | Retrieves the name of a specific parameter template by its index.                            |
+| API Name                                          | Description                                                                                  |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [`InitSettings`](#initsettings)                   | Loads and initializes a template from a string.                                              |
+| [`InitSettingsFromFile`](#initsettingsfromfile)   | Loads and initializes a template from a file.                                                |
+| [`OutputSettings`](#outputsettings)               | Exports a specific `CaptureVisionTemplate` to a string.                                      |
+| [`OutputSettingsToFile`](#outputsettingstofile)   | Exports a specific `CaptureVisionTemplate` to a file.                                        |
+| [`GetSimplifiedSettings`](#getsimplifiedsettings) | Retrieves a `SimplifiedCaptureVisionSettings` object for a specific `CaptureVisionTemplate`. |
+| [`UpdateSettings`](#updatesettings)               | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.             |
+| [`ResetSettings`](#resetsettings)                 | Resets all templates to factory settings.                                                    |
 
 ## InitSettings
 
@@ -216,35 +214,3 @@ Returns an error code. Zero indicates success.
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |
 | EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
-
-## GetParameterTemplateCount
-
-Retrieves the total number of available parameter templates.
-
-```cpp
-int GetParameterTemplateCount()
-```
-
-**Return value**
-
-Returns an integer representing the count of parameter templates.
-
-## GetParameterTemplateName
-
-Retrieves the name of a specific parameter template by its index.
-
-```cpp
-int GetParameterTemplateName(const int index, char nameBuffer[], int nameBufferLen)
-```
-
-**Parameters**
-
-`[in] index` The index of the parameter template in the array.
-
-`[in, out] nameBuffer` A pointer to a pre-allocated buffer provided by the caller. The name of the parameter template will be copied into this buffer.
-
-`[in] nameBufferLen` The length of the allocated buffer.
-
-**Return value**
-
-Returns an error code. Zero indicates success.
