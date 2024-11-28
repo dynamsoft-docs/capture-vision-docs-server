@@ -13,6 +13,12 @@ dcvb_parameters_reference: /capture-vision/docs/core/parameters/reference/
 dcp_code_types: /code-parser/docs/core/code-types/
 dcvb_license_activation: /capture-vision/docs/core/license/
 
+dbr_introduction: /barcode-reader/docs/core/introduction/
+dlr_introduction: /label-recognition/docs/core/introduction/
+ddn_introduction: /document-normalizer/docs/core/introduction/
+dcp_introduction: /code-parser/docs/core/introduction/
+
+
 dcvb_cpp: /capture-vision/docs/server/programming/cplusplus/
 dbr_cpp: /barcode-reader/docs/server/programming/cplusplus/
 dlr_cpp: /label-recognition/docs/server/programming/cplusplus/

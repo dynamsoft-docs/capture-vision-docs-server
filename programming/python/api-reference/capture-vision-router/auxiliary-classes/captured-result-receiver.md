@@ -11,12 +11,14 @@ needGenerateH3Content: true
 
 The `CapturedResultReceiver` class is responsible for receiving captured results. It contains several callback functions for different types of results, including original image, decoded barcodes, recognized text lines, detected quads, normalized images, and parsed results.
 
+>Note: Subclasses inheriting from this class must ensure that the parent class constructor (`super().__init__()`) is properly called to guarantee correct initialization.
+
 ## Definition
 
 *Module:* dynamsoft_capture_vision_router
 
 ```python
-class CapturedResultReceiver(ABC)
+class CapturedResultReceiver(object)
 ```
 
 ## Methods
