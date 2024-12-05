@@ -13,10 +13,10 @@ The `SimplifiedCaptureVisionSettings` class contains settings for capturing and 
 
 ## Definition
 
-*Package:* dynamsoft_capture_vision_router
+*Module:* dynamsoft_capture_vision_router
 
 ```python
-class SimplifiedCaptureVisionSettings(object)
+class SimplifiedCaptureVisionSettings
 ```
 
 ## Properties

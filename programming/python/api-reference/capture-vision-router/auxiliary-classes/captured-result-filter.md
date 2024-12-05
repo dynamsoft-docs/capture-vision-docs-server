@@ -18,7 +18,7 @@ The `CapturedResultFilter` class is responsible for filtering captured results. 
 *Module:* dynamsoft_capture_vision_router
 
 ```python
-class CapturedResultFilter(object) 
+class CapturedResultFilter 
 ```
 
 ## Methods

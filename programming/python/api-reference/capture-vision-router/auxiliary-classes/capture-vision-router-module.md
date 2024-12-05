@@ -13,10 +13,10 @@ The `CaptureVisionRouterModule` class defines general functions in the capture v
 
 ## Definition
 
-*Package:* dynamsoft_capture_vision_router
+*Module:* dynamsoft_capture_vision_router
 
 ```python
-class CaptureVisionRouterModule(object)
+class CaptureVisionRouterModule
 ```
 
 ## Methods

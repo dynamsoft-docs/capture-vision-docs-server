@@ -16,7 +16,7 @@ The `CoreModule` class defines general functions in the core module.
 *Module:* dynamsoft_core
 
 ```python
-class CoreModule(object) 
+class CoreModule 
 ```
 
 ## Methods

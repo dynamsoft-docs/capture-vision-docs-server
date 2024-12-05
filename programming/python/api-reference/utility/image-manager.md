@@ -15,7 +15,7 @@ The `ImageManager` class is a utility class for managing and manipulating images
 *Module:* dynamsoft_utility
 
 ```python
-class ImageManager(object)
+class ImageManager
 ```
 
 ## Methods

@@ -16,7 +16,7 @@ Defines a listener for image source state changes.
 *Module:* dynamsoft_capture_vision_router
 
 ```python
-class BufferedItemsManager(object)
+class BufferedItemsManager
 ```
 
 ## Methods

@@ -59,7 +59,7 @@ Returns the file path of the image tag.
 
 ### get_page_number
 
-Get the page number of the current image in the Multi-Page image file.
+Gets the page number of the current image in the Multi-Page image file.
 
 ```python
 def get_page_number(self) -> int:

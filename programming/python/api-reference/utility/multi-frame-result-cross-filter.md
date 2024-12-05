@@ -169,9 +169,9 @@ def set_max_overlapping_frames(self, result_item_types: int, max_overlapping_fra
 
 **Parameters**
 
-`[in] result_item_types` The or value of the captured result item types.
+`result_item_types` The or value of the captured result item types.
 
-`[in] max_overlapping_frames` The max referencing frames count for the to-the-latest overlapping feature.
+`max_overlapping_frames` The max referencing frames count for the to-the-latest overlapping feature.
 
 **See Also**
 
@@ -187,7 +187,7 @@ def get_max_overlapping_frames(self, type: int) -> int:
 
 **Parameters**
 
-`[in] type` Specifies a specific result item type, which can be defined using `EnumCapturedResultItemType`.
+`type` Specifies a specific result item type, which can be defined using `EnumCapturedResultItemType`.
 
 **Return value**
 
@@ -208,8 +208,8 @@ def enable_latest_overlapping(self, result_item_types: int, enabled: bool) -> No
 
 **Parameters**
 
-`[in] result_item_types` The or value of the captured result item types.  
-`[in] enabled` Sets whether to enable the to-the-latest overlapping feature.
+`result_item_types` The or value of the captured result item types.  
+`enabled` Sets whether to enable the to-the-latest overlapping feature.
 
 **See Also**
 
@@ -225,7 +225,7 @@ def is_latest_overlapping_enabled(self, type: int) -> bool:
 
 **Parameters**
 
-`[in] type` The specific captured result item type.
+`type` The specific captured result item type.
 
 **Return value**
 

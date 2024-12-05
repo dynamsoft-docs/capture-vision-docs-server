@@ -15,7 +15,7 @@ The `CapturedResult` class represents the result of a capture operation on an im
 *Module:* dynamsoft_capture_vision_router
 
 ```python
-class CapturedResult(object) 
+class CapturedResult 
 ```
 
 ## Methods
