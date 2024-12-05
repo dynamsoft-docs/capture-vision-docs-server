@@ -13,10 +13,10 @@ The `CaptureVisionRouter` class is what a user uses to interact with image-proce
 
 ## Definition
 
-*Package:* dynamsoft_capture_vision_router
+*Module:* dynamsoft_capture_vision_router
 
 ```python
-class CaptureVisionRouter(object)
+class CaptureVisionRouter
 ```
 
 ## Constructor Methods
@@ -68,3 +68,10 @@ class CaptureVisionRouter(object)
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
 | [`get_buffered_items_manager`](buffered-items.md#get_buffered_items_manager)                   | Gets a `BufferedItemsManager` object.  |
 
+## Intermediate Result
+
+The following method returns an `IntermediateResultManager` object which allows the application to tap into the algorithmic process.
+
+| API Name                                                                            | Description                                     |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------- |
+| [`get_intermediate_result_manager`](intermediate-result.md#get_intermediate_result_manager) | Returns an `IntermediateResultManager` object. |

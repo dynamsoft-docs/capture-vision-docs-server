@@ -15,7 +15,7 @@ The `Rect` class represents a rectangle in 2D space. It contains four integer va
 *Module:* dynamsoft_core
 
 ```python
-class Rect(object)
+class Rect
 ```
 
 ## Properties

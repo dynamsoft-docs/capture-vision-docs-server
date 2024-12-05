@@ -15,7 +15,7 @@ The `CapturedResultItem` class represents an item in a captured result. It is an
 *Module:* dynamsoft_core
 
 ```python
-class CapturedResultItem(object)
+class CapturedResultItem
 ```
 
 ## Methods
@@ -23,7 +23,7 @@ class CapturedResultItem(object)
 | Method                         | Description|
 |--------------------------------|------------|
 | [`get_type`](#get_type)              | Gets the type of the captured result item. |
-| [`get_reference_item`](#get_reference_item)    | Gets a pointer to the referenced item in the captured result. |
+| [`get_reference_item`](#get_reference_item)    | Gets the referenced item in the captured result. |
 | [`get_target_roi_def_name`](#get_target_roi_def_name) | Gets the name of the target ROI definition. |
 | [`get_task_name`](#get_task_name) | Gets the name of the task. |
 

@@ -9,5 +9,6 @@ noTitleIndex: true
 
 # Module Release Notes - Dynamsoft Capture Vision Python Edition
 
+- [2.5.2100 (12/05/2024)](python-2.md#252100-12052024)
 - [2.4.2100 (11/07/2024)](python-2.md#242100-11072024)
 - [2.4.2000 (10/10/2024)](python-2.md#242000-10102024)

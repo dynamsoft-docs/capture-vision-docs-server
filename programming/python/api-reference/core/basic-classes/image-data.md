@@ -15,7 +15,7 @@ The `ImageData` class represents image data, which contains the image bytes, wid
 *Module:* dynamsoft_core
 
 ```python
-class ImageData(object)
+class ImageData
 ```
 
 ## Methods

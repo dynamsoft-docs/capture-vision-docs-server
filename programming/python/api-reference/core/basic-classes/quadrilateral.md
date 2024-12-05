@@ -15,7 +15,7 @@ The `Quadrilateral` class represents a quadrilateral shape in 2D space. It conta
 *Module:* dynamsoft_core
 
 ```python
-class Quadrilateral(object) 
+class Quadrilateral 
 ```
 
 ## Properties

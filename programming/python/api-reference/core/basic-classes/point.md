@@ -15,7 +15,7 @@ The `Point` class represents a point in 2D space. It contains an array of two in
 *Module:* dynamsoft_core
 
 ```python
-class Point(object)
+class Point
 ```
 
 ## Properties 
