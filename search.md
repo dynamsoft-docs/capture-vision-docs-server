@@ -1,7 +1,7 @@
 ---
-layout: search-page
-title: Dynamsoft Capture Vision SDK Documentation Search
-keywords: Dynamsoft Capture Vision SDK Documentation Search
-breadcrumbText: HomePage
-cx: b5ca9ca31b6a640a2
+layout: search-layout
+title: Dynamsoft Capture Vision Documentation Search
+keywords: Dynamsoft Capture Vision Documentation Search
+h1: Dynamsoft Capture Vision Documentation Search
+indexName: Crawler-DCV-Docs-New
 ---

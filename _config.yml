@@ -2,6 +2,8 @@ repositoryUrl: https://github.com/dynamsoft-docs/capture-vision-docs-server/blob
 repository: dynamsoft-docs/capture-vision-docs-server
 docFullPath: https://www.dynamsoft.com/capture-vision/docs/server/
 firstLevelUrl: /capture-vision/docs/server
+searchIndexName: Crawler-DCV-Docs-New
+searchNeedFilter: true
 
 useVersionTree: true
 

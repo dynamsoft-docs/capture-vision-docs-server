@@ -23,7 +23,7 @@ class Contour
 | Method               | Description |
 |----------------------|-------------|
 | [`__init__`](#__init__) | Initializes a new instance of the `Contour` class. |
-| [`set_points`](#set_points) | Sets the point array and the points free function pointer. |
+| [`set_points`](#set_points) | Sets the point array. |
 | [`get_points`](#get_points) | Gets the point array. |
 
 ### \_\_init\_\_
@@ -36,7 +36,7 @@ def __init__(self):
 
 ### set_points
 
-Sets the point array and the points free function pointer.
+Sets the point array and the points.
 
 ```python
 def set_points(self, points: List[Point]) -> None:
