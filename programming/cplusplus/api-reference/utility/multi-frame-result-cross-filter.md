@@ -3,9 +3,6 @@ layout: default-layout
 title: class CMultiFrameResultCrossFilter - Dynamsoft Capture Vision C++ Edition API Reference
 description: This page shows the C++ edition of the class CMultiFrameResultCrossFilter in Utility Module.
 keywords: multiple frame result cross filter, c++
-needAutoGenerateSidebar: true
-needGenerateH3Content: true
-breadcrumbText: C++ CMultiFrameResultCrossFilter Class
 ---
 
 # CMultiFrameResultCrossFilter
@@ -52,7 +49,7 @@ void EnableResultCrossVerification(int resultItemTypes, bool enabled);
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### IsResultCrossVerificationEnabled
 
@@ -72,7 +69,7 @@ Returns a bool value indicating whether result verification is enabled for the s
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### EnableResultDeduplication
 
@@ -93,7 +90,7 @@ void EnableResultDeduplication(int resultItemTypes, bool enabled);
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### IsResultDeduplicationEnabled
 
@@ -113,7 +110,7 @@ Returns a bool value indicating whether result deduplication is enabled for the 
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### SetDuplicateForgetTime
 
@@ -134,7 +131,7 @@ void SetDuplicateForgetTime(int resultItemTypes, int time);
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### GetDuplicateForgetTime
 
@@ -154,7 +151,7 @@ Returns the duplicate forget time for the specific captured result item type.
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### SetMaxOverlappingFrames
 
@@ -172,7 +169,7 @@ void SetMaxOverlappingFrames(int resultItemTypes, int maxOverlappingFrames);
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### GetMaxOverlappingFrames
 
@@ -192,7 +189,7 @@ Returns the max referencing frames count for the to-the-latest overlapping featu
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
 
 
 ### EnableLatestOverlapping
@@ -210,7 +207,7 @@ void EnableLatestOverlapping(int resultItemTypes, bool enabled);
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### IsLatestOverlappingEnabled
 
@@ -230,4 +227,4 @@ Returns a bool value indicating whether the to-the-latest overlapping feature is
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)

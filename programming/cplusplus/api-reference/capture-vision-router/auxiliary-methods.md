@@ -13,13 +13,14 @@ breadcrumbText: CVR C++ Auxiliary Methods
 | API Name                                                      | Description                                               |
 | ------------------------------------------------------------- | --------------------------------------------------------- |
 | [`FreeString`](#freestring)                                     | Frees the memory allocated for a string.                  |
+| [`AppendModelBuffer`](#appendmodelbuffer)                       | Appends a model to the model buffer. |
 
 ## FreeString
 
-Frees the memory allocated for a string.
+Frees the memory allocated for a string. The function is *deprecated*, use [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes) instead.
 
 ```cpp
-static void FreeString (char* content);
+static void FreeString(char* content);
 ```
 
 **Parameters**
@@ -29,3 +30,25 @@ static void FreeString (char* content);
 **Return Value**
 
 This function does not return a value. It simply frees the memory allocated for the input string.
+
+## AppendModelBuffer
+
+Appends a model to the model buffer.
+
+```cpp
+static int AppendModelBuffer(const char* modelName, const unsigned char* modelBytes, int modelBytesLength, int maxModelInstances);
+```
+
+**Parameters**
+
+`[in] modelName` The name of the model.
+
+`[in] modelBytes` The bytes of the model.
+
+`[in] modelBytesLength` The length of the model bytes.
+
+`[in] maxModelInstances` The max instances created for the model.
+
+**Return Value**
+
+Returns 0 if succeeds, nonzero otherwise.

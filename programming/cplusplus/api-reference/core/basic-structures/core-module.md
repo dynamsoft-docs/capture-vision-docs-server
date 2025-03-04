@@ -27,6 +27,8 @@ class CCoreModule
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |
 | [GetVersion](#getversion)                                     | Returns the version of the core module. |
+| [AllocateBytes](#allocatebytes)                                     | Allocates a block of memory. |
+| [FreeBytes](#freebytes)                                     | Frees a block of memory. |
 
 ## GetVersion
 
@@ -43,3 +45,32 @@ None.
 **Return Value**
 
 Returns a const char pointer representing the version of the core module.
+
+## AllocateBytes
+
+Allocates a block of memory.
+
+```cpp
+static void* AllocateBytes(size_t length);
+```
+
+**Parameters**
+
+`[in] length` The number of bytes to allocate.
+
+**Return Value**
+
+Returns a pointer to the allocated memory.
+
+## FreeBytes
+
+Frees a block of memory.
+
+```cpp
+static void FreeBytes(void* ptr);
+```
+
+**Parameters**
+
+`[in] ptr` A pointer to the memory to free.
+

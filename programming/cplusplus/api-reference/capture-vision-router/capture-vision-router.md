@@ -34,6 +34,7 @@ class CCaptureVisionRouter
 | API Name                                       | Description                                               |
 | ---------------------------------------------- | --------------------------------------------------------- |
 | [`Capture`](single-file-processing.md#capture) | Processes an image or file to derive important information. |
+| [`CaptureMultiPages`](single-file-processing.md#capturemultipages) | Processes an image or file containing multiple pages to derive important information. |
 
 ## Multiple-File Processing
 
@@ -84,4 +85,5 @@ The following method returns an `CIntermediateResultManager` object which allows
 
 | API Name                                      | Description                                               |
 | --------------------------------------------- | --------------------------------------------------------- |
-| [`FreeString`](auxiliary-methods.md#freestring) | Frees the memory allocated for a string.                  |
+| [`FreeString`](auxiliary-methods.md#freestring) | Frees the memory allocated for a string. The function is *deprecated*, use [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes) instead.                 |
+| [`AppendModelBuffer`](auxiliary-methods.md#appendmodelbuffer) | Appends a model to the model buffer. |

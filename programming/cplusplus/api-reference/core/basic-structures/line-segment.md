@@ -28,6 +28,8 @@ class CLineSegment
 | [`GetEndPoint`](#getendpoint) | Gets the end point of the line segment. |
 | [`SetStartPoint`](#setstartpoint) | Sets the start point of the line segment. |
 | [`SetEndPoint`](#setendpoint) | Sets the end point of the line segment. |
+| [`GetId`](#getid) | Gets the id of the line segment. |
+| [`SetId`](#setid) | Sets the id of the line segment. |
 
 ### GetStartPoint
 
@@ -93,3 +95,26 @@ void SetEndPoint(const CPoint& pt)
 
 [CPoint]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
 
+### GetId
+
+Gets the id of the line segment.
+
+```cpp
+int GetId() const;
+```
+
+**Return Value**
+
+Returns the id of the line segment.
+
+### SetId
+
+Sets the id of the line segment.
+
+```cpp
+void SetId(int lineId);
+```
+
+**Parameters**
+
+`[in] lineId`: The id of the line segment.

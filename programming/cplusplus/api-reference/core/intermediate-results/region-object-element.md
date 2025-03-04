@@ -27,7 +27,7 @@ class CRegionObjectElement
 | [`GetLocation`](#getlocation) | Get the location of the region object element. |
 | [`GetReferencedElement`](#getreferencedelement) | Get a pointer to a referenced region object element. |
 | [`GetElementType`](#getelementtype) | Get the type of the region object element. |
-| [`SetLocation`](#setlocation) | Set the location of the region object element. |
+| [`GetImageData`](#getimagedata) | Get the imageData of the region object element. |
 | [`Clone`](#clone) | Clone the region object element. |
 | [`Retain`](#retain) | Increases the reference count of the `CRegionObjectElement` object. |
 | [`Release`](#release) | Decreases the reference count of the `CRegionObjectElement` object. |
@@ -78,23 +78,19 @@ Returns a `RegionObjectElementType` enum value which represents the type of the 
 
 **See Also**
 
-[RegionObjectElementType]({{ site.dcvb_enumerations }}core/region-object-element-type.html?src=cpp&&lang=cpp)
+[RegionObjectElementType]({{ site.dcvb_cpp_api }}core/enum-region-object-element-type.html?src=cpp&&lang=cpp)
 
-### SetLocation
+### GetImageData
 
-Set the location of the region object element.
+Get the imageData of the region object element.
 
 ```cpp
-virtual int SetLocation(const CQuadrilateral& location) = 0;
+const CImageData* GetImageData() const;
 ```
-
-**Parameters**
-
-`location` The location of the region object element.
 
 **Return value**
 
-Returns 0 if success, otherwise an error code.
+Returns a const pointer to a referenced `CImageData` object.
 
 ### Clone
 

@@ -25,6 +25,7 @@ class CQuadrilateral
 | Attribute | Type |
 |---------- | ---- |
 | [`points`](#points) | *CPoint* |
+| [`id`](#id) | *int* |
 
 ## Methods Summary
 
@@ -32,6 +33,7 @@ class CQuadrilateral
 |----------------------|-------------|
 | [`Contains`](#contains) | Determines whether a point is inside the quadrilateral.|
 | [`GetArea`](#getarea) | Gets the area of the quadrilateral. |
+| [`GetBoundingRect`](#getboundingrect) | Gets the bounding rectangle of the quadrilateral. |
 
 ### points
 
@@ -44,6 +46,14 @@ CPoint points[4]
 **See Also**
 
 [CPoint]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
+
+### id
+
+The id of the quadrilateral.
+
+```cpp
+int id
+```
 
 ### Contains
 
@@ -76,3 +86,15 @@ int GetArea() const
 **Return value**
 
 Returns the area of the quadrilateral.
+
+### GetBoundingRect
+
+Gets the bounding rectangle of the quadrilateral.
+
+```cpp
+CRect GetBoundingRect() const;
+```
+
+**Return value**
+
+Returns the bounding rectangle of the quadrilateral, in type of `CRect`.

@@ -170,7 +170,7 @@ Returns the error code of the capture operation.
 
 **See Also**
 
-[ErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
+[ErrorCode]({{ site.dcvb_cpp_api }}core/enum-error-code.html?src=cpp&&lang=cpp)
 
 ### GetErrorString
 
@@ -205,7 +205,7 @@ Returns a pointer to the CCapturedResultItem object at the specified index.
 Increases the reference count of the `CCapturedResult` object.
 
 ```cpp
-virtual CCapturedResultItem* Retain() = 0;
+virtual CCapturedResult* Retain() = 0;
 ```
 
 **Return value**

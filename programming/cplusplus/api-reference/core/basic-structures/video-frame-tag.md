@@ -50,7 +50,7 @@ Returns the quality of the video frame.
 
 **See Also**
 
-[VideoFrameQuality]({{ site.dcvb_enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp)
+[VideoFrameQuality]({{ site.dcvb_cpp_api }}core/enum-video-frame-quality.html?src=cpp&&lang=cpp)
 
 ### IsCropped
 
@@ -126,7 +126,7 @@ CVideoFrameTag(VideoFrameQuality quality, bool isCropped, const CRect* cropRegio
 
 **See Also**
 
-[VideoFrameQuality]({{ site.dcvb_enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp)
+[VideoFrameQuality]({{ site.dcvb_cpp_api }}core/enum-video-frame-quality.html?src=cpp&&lang=cpp)
 
 ### CVideoFrameTag Destructor
 

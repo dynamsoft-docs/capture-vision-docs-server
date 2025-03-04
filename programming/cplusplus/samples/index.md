@@ -19,4 +19,5 @@ needAutoGenerateSidebar: false
 | <a href="https://github.com/Dynamsoft/capture-vision-cpp-samples/tree/main/Samples/DocumentScanner" target="_blank">DocumentScanner</a> | Detect and normalize a document from an image and save the result as a new image. |
 
 ## Official Online Demo
+
 This <a href="https://demo.dynamsoft.com/barcode-reader/" target="_blank">Online Demo</a> is an online barcode scanner for all barcode types. All supported parameters are opened for customization to see how Dynamsoft Barcode Reader works in different usage scenarios. 
