@@ -144,4 +144,4 @@ Returns an integer indicating the success of the operation. 0 indicates success,
 
 [CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
-[ImageFileFormat]({{ site.dcvb_cpp_api }}core/enums/image-file-format.html)
+[ImageFileFormat]({{ site.dcvb_cpp_api }}core/enum-image-file-format.html)
