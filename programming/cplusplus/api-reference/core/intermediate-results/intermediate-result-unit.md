@@ -35,9 +35,11 @@ class CIntermediateResultUnit
 | [`SetOriginalImageTag`](#setoriginalimagetag) | Sets the image tag of the original image. |
 | [`Retain`](#retain) | Increases the reference count of the unit. |
 | [`Release`](#release) | Decreases the reference count of the unit. |
-| [`GetTransformMatrix`](#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.dcvb_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
-| [`SetTransformMatrix`](#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.dcvb_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
+| [`GetTransformMatrix`](#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.dcvb_cpp_api}}core/enum-transform-matrix-type.html?src=cpp&&lang=cpp). |
+| [`SetTransformMatrix`](#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.dcvb_cpp_api}}core/enum-transform-matrix-type.html?src=cpp&&lang=cpp). |
 | [`Replace`](#replace) | Replaces the `CIntermediateResultUnit` object to the specified `CIntermediateResultUnit` object. |
+| [`GetUsageCount`](#getusagecount)|Gets the usage count of the intermediate result.|
+| [`SetUsageCount`](#setusagecount)|Sets the usage count of the intermediate result.|
 
 ### GetHashId
 
@@ -93,7 +95,7 @@ Returns the type of the intermediate result unit.
 
 **See Also**
 
-[IntermediateResultUnitType]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
+[IntermediateResultUnitType]({{ site.dcvb_cpp_api }}core/enum-intermediate-result-unit-type.html?src=cpp&&lang=cpp)
 
 ### Clone
 
@@ -194,7 +196,7 @@ The corresponding transformation matrices are as follows:
 
 **See Also**
 
-[TransformMatrixType]({{site.dcvb_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp)
+[TransformMatrixType]({{site.dcvb_cpp_api}}core/enum-transform-matrix-type.html?src=cpp&&lang=cpp)
 
 ### SetTransformMatrix
 
@@ -219,7 +221,7 @@ The corresponding transformation matrices are as follows:
 
 **See Also**
 
-[TransformMatrixType]({{site.dcvb_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp)
+[TransformMatrixType]({{site.dcvb_cpp_api}}core/enum-transform-matrix-type.html?src=cpp&&lang=cpp)
 
 ### Replace
 
@@ -236,3 +238,27 @@ virtual int Replace(CIntermediateResultUnit* unit) = 0;
 **Return value**
 
 Returns 0 if succeeds, nonzero otherwise.
+
+### GetUsageCount
+
+Gets the usage count of the intermediate result.
+
+```cpp
+int GetUsageCount() const;
+```
+
+**Return value**
+
+Returns the usage count of the intermediate result.
+
+### SetUsageCount
+
+Sets the usage count of the intermediate result.
+
+```cpp
+void SetUsageCount(int usageCount)
+```
+
+**Parameters**
+
+`[in] _usageCount` The usage count of the intermediate result.

@@ -33,8 +33,7 @@ class CCapturedResultReceiver
 | [`OnOriginalImageResultReceived`](#onoriginalimageresultreceived) | Callback function triggered when start processing each image and returns the original image result.        |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived)         | Callback function triggered after processing each image and returns all decoded barcodes results.      |
 | [`OnRecognizedTextLinesReceived`](#onrecognizedtextlinesreceived) | Callback function triggered after processing each image and returns all recognized text lines results. |
-| [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function triggered after processing each image and returns all detected quads results.        |
-| [`OnNormalizedImagesReceived`](#onnormalizedimagesreceived)       | Callback function triggered after processing each image and returns all normalized images results.     |
+| [`OnProcessedDocumentResultReceived`](#onprocesseddocumentresultreceived)       | Callback function triggered after processing each image and returns all  processed document results.  |
 | [`OnParsedResultsReceived`](#onparsedresultsreceived)             | Callback function triggered after processing each image and returns all parsed results.                |
 | [`GetName`](#getname)       | Gets the name of the captured result receiver.                                             |
 | [`SetName`](#setname)       | Sets the name of the captured result receiver.                                             |
@@ -131,37 +130,21 @@ virtual void OnRecognizedTextLinesReceived(dlr::CRecognizedTextLinesResult* pRes
 
 [CRecognizedTextLinesResult]({{ site.dlr_cpp_api }}recognized-text-lines-result.html)
 
-### OnDetectedQuadsReceived
+### OnProcessedDocumentResultReceived
 
-Callback function triggered after processing each image and returns all detected quads. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
+Callback function triggered after processing each image and returns all processed document results. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
 
 ```cpp
-virtual void OnDetectedQuadsReceived(ddn::CDetectedQuadsResult* pResult)
+virtual void OnProcessedDocumentResultReceived(ddn::CProcessedDocumentResult* pResult)
 ```
 
 **Parameters**
 
-`[in] pResult` The detected quads result.
+`[in] pResult` The processed document results.
 
 **See Also**
 
-[CDetectedQuadsResult]({{ site.ddn_cpp_api }}detected-quads-result.html)
-
-### OnNormalizedImagesReceived
-
-Callback function triggered after processing each image and returns all normalized images. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
-
-```cpp
-virtual void OnNormalizedImagesReceived(ddn::CNormalizedImagesResult* pResult)
-```
-
-**Parameters**
-
-`[in] pResult` The normalized images result.
-
-**See Also**
-
-[CNormalizedImagesResult]({{ site.ddn_cpp_api }}normalized-images-result.html)
+[CProcessedDocumentResult]({{ site.ddn_cpp_api }}processed-document-result.html)
 
 ### OnParsedResultsReceived
 

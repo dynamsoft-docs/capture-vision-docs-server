@@ -60,10 +60,10 @@ In this section, we'll walk through the key steps needed to build an application
     CC=gcc
     CCFLAGS=-c -std=c++11
 
-    DS_LIB_PATH=[INSTALLATION FOLDER]/Distributables/Lib/Linux/x64
+    DS_LIB_PATH=[INSTALLATION FOLDER]/Dist/Lib/Linux/x64
     LDFLAGS=-L $(DS_LIB_PATH) -Wl,-rpath=$(DS_LIB_PATH) -Wl,-rpath=./
     DS_LIB=-lDynamsoftCaptureVisionRouter -lDynamsoftCore -lDynamsoftLicense -lDynamsoftUtility
-    DS_JSON_PATH=[INSTALLATION FOLDER]/Distributables/Templates
+    DS_JSON_PATH=[INSTALLATION FOLDER]/Dist/Templates
 
     STDLIB=-lstdc++
 
@@ -107,15 +107,15 @@ In this section, we'll walk through the key steps needed to build an application
     // The following code only applies to Windows.
     #if defined(_WIN64) || defined(_WIN32)
         #ifdef _WIN64
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCorex64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftLicensex64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftUtilityx64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftCorex64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftLicensex64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftUtilityx64.lib")
         #else
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCorex86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftLicensex86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftUtilityx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftCorex86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftLicensex86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftUtilityx86.lib")
         #endif
     #endif
     ```
@@ -165,25 +165,28 @@ In this section, we'll walk through the key steps needed to build an application
     if (result->GetErrorCode() != 0) {
         cout << "Error: " << result->GetErrorCode() << "," << result->GetErrorString() << endl;
     }
-    CNormalizedImagesResult *normalizedResult = result->GetNormalizedImagesResult();
-    if (normalizedResult == nullptr || normalizedResult->GetItemsCount() == 0)
+    CProcessedDocumentResult *processedDocumentResult = result->GetProcessedDocumentResult();
+    if (processedDocumentResult == nullptr || processedDocumentResult->GetDeskewedImageResultItemsCount() == 0)
     {
         cout << "No document found." << endl;
     }
     else
     {
-        int count = normalizedResult->GetItemsCount();
-        cout << "Normalized " << count << " documents" << endl;
+        int count = processedDocumentResult->GetDeskewedImageResultItemsCount();
+        cout << "Deskewed " << count << " documents" << endl;
         for (int i = 0; i < count; i++)
         {
-            const CNormalizedImageResultItem *normalizedImage = normalizedResult->GetItem(i);
-            string outPath = "normalizedResult_";
+            const CDeskewedImageResultItem *deskewedImage = processedDocumentResult->GetDeskewedImageResultItem(i);
+            string outPath = "deskewedResult_";
             outPath += to_string(i) + ".png";
-            CImageManager manager;
-            errorcode = manager.SaveToFile(normalizedImage->GetImageData(), outPath.c_str());
-            if (errorcode == 0)
+
+            CImageIO imageIO;
+
+            // 5.Save deskewed image to file.
+            errorCode = imageIO.SaveToFile(deskewedImage->GetImageData(), outPath.c_str());
+            if (errorCode == 0)
             {
-                cout << "Document " << i << " saved to file: " << outPath << endl;
+                cout << "Document " << i << " file: " << outPath << endl;
             }
         }
     }
@@ -192,8 +195,8 @@ In this section, we'll walk through the key steps needed to build an application
 ### Release the Allocated Memory
 
 ```cpp
-if (normalizedResult)
-	normalizedResult->Release();
+if (processedDocumentResult)
+	processedDocumentResult->Release();
 if (result)
 	result->Release();
 delete router, router = NULL;   
@@ -205,7 +208,7 @@ delete router, router = NULL;
 
 1. Build the application through Visual Studio.
 
-2. Copy the following items from `[INSTALLATION FOLDER]\Distributables` to the same folder as the EXE file. 
+2. Copy the following items from `[INSTALLATION FOLDER]\Dist` to the same folder as the EXE file. 
    
    - All the DLL files from `.\Lib\Windows\[PLATFORMS]`
    - Folder `Templates`

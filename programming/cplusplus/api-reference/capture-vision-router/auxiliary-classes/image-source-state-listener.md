@@ -46,4 +46,4 @@ This method does not return a value. It is a pure virtual function that must be 
 
 **See Also**
 
-[ImageSourceState]({{ site.dcvb_enumerations }}capture-vision-router/image-source-state.html?src=cpp&&lang=cpp)
+[ImageSourceState]({{ site.dcvb_cpp_api }}capture-vision-router/enum-image-source-state.html?src=cpp&&lang=cpp)

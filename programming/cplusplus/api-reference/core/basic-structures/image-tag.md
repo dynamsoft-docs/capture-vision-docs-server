@@ -45,7 +45,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[ImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?src=cpp&&lang=cpp)
+[ImageTagType]({{ site.dcvb_cpp_api }}core/enum-image-tag-type.html?src=cpp&&lang=cpp)
 
 ### Clone
 
@@ -61,7 +61,7 @@ Returns a pointer to a copy of the image tag.
 
 **See Also**
 
-[ImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?src=cpp&&lang=cpp)
+[ImageTagType]({{ site.dcvb_cpp_api }}core/enum-image-tag-type.html?src=cpp&&lang=cpp)
 
 ### GetImageId
 
@@ -101,7 +101,7 @@ Returns the capture distance mode of the image.
 
 **See Also**
 
-[ImageCaptureDistanceMode]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?src=cpp&&lang=cpp)
+[ImageCaptureDistanceMode]({{ site.dcvb_cpp_api }}core/enum-image-capture-distance-mode.html?src=cpp&&lang=cpp)
 
 ### SetImageCaptureDistanceMode
 
@@ -117,4 +117,4 @@ void SetImageCaptureDistanceMode(ImageCaptureDistanceMode mode)
 
 **See Also**
 
-[ImageCaptureDistanceMode]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?src=cpp&&lang=cpp)
+[ImageCaptureDistanceMode]({{ site.dcvb_cpp_api }}core/enum-image-capture-distance-mode.html?src=cpp&&lang=cpp)

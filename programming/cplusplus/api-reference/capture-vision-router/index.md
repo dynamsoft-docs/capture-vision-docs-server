@@ -39,5 +39,5 @@ At present, there is only one struct in the "Capture Vision Router" module:
 
 ## Enums
 
-* [ImageSourceState]({{site.dcvb_enumerations}}capture-vision-router/image-source-state.md?lang=cpp)
-* [CaptureState]({{site.dcvb_enumerations}}capture-vision-router/capture-state.md?lang=cpp)
+* [ImageSourceState]({{site.dcvb_cpp_api}}capture-vision-router/image-source-state.md?lang=cpp)
+* [CaptureState]({{site.dcvb_cpp_api}}capture-vision-router/capture-state.md?lang=cpp)

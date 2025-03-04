@@ -182,7 +182,7 @@ Returns the pixel format of the image.
 
 **See Also**
 
-[ImagePixelFormat]({{ site.dcvb_enumerations }}core/image-pixel-format.html?src=cpp&&lang=cpp)
+[ImagePixelFormat]({{ site.dcvb_cpp_api }}core/enum-image-pixel-format.html?src=cpp&&lang=cpp)
 
 ### GetOrientation
 

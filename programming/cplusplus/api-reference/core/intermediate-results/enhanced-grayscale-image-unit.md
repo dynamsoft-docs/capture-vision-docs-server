@@ -53,7 +53,7 @@ Sets the enhanced grayscale image data.
 
 **Parameters**
 
-imgData The image data to set.
+The image data to set.
 
 **Return value**
 

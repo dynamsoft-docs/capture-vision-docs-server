@@ -13,6 +13,6 @@ The following methods are inherited from class [`CIntermediateResultUnit`]({{ si
 | [`SetOriginalImageTag`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#setoriginalimagetag) | Sets the image tag of the original image. |
 | [`Retain`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#retain) | Increases the reference count of the unit. |
 | [`Release`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#release) | Decreases the reference count of the unit. |
-| [`GetTransformMatrix`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.dcvb_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
-| [`SetTransformMatrix`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.dcvb_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
+| [`GetTransformMatrix`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.dcvb_cpp}}core/enum-transform-matrix-type.html?src=cpp&&lang=cpp). |
+| [`SetTransformMatrix`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.dcvb_cpp}}core/enum-transform-matrix-type.html?src=cpp&&lang=cpp). |
 

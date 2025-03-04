@@ -67,13 +67,14 @@ In this section, we’ll walk through the key steps needed to build an applicati
     CC=gcc
     CCFLAGS=-c -std=c++11
 
-    DS_LIB_PATH=[INSTALLATION FOLDER]/Distributables/Lib/Linux/x64
+    DLRMODEL_PATH=../../Dist/Models
+    DCPRES_PATH=../../Dist/ParserResources
+    CONFUSABLE_CHARS_PATH=../../Dist/ConfusableChars.data
+    OVERLAPPING_CHARS_PATH=../../Dist/OverlappingChars.data
+    DS_JSON_PATH=../../Dist/Templates
+    DS_LIB_PATH=../../Dist/Lib/Linux/x64
     LDFLAGS=-L $(DS_LIB_PATH) -Wl,-rpath=$(DS_LIB_PATH) -Wl,-rpath=./
-    DS_LIB=-lDynamsoftCaptureVisionRouter -lDynamsoftCore -lDynamsoftLicense -lDynamsoftUtility
-    DS_JSON_PATH=[INSTALLATION FOLDER]/Distributables/Templates
-    DLRMODEL_PATH=[INSTALLATION FOLDER]/Distributables/CharacterModel
-    CONFUSABLE_CHARS_PATH=[INSTALLATION FOLDER]/Distributables/ConfusableChars.data
-    DCPRES_PATH=[INSTALLATION FOLDER]/Distributables/ParserResources
+    DS_LIB=-lDynamsoftCaptureVisionRouter -lDynamsoftCore -lDynamsoftUtility -lDynamsoftLicense
 
     STDLIB=-lstdc++
 
@@ -84,10 +85,11 @@ In this section, we’ll walk through the key steps needed to build an applicati
     # build rule for target.
     $(TARGET): $(OBJECT)
         $(CC) -o $(TARGET) $(OBJECT) $(STDLIB) $(DS_LIB) $(LDFLAGS)
-        cp -r $(DS_JSON_PATH) $(DS_LIB_PATH)
         cp -r $(DLRMODEL_PATH) $(DS_LIB_PATH)
-        cp  $(CONFUSABLE_CHARS_PATH) $(DS_LIB_PATH)
-        cp  $(DCPRES_PATH) $(DS_LIB_PATH)
+        cp -r $(DCPRES_PATH) $(DS_LIB_PATH)
+        cp $(CONFUSABLE_CHARS_PATH) $(DS_LIB_PATH)
+        cp $(OVERLAPPING_CHARS_PATH) $(DS_LIB_PATH)
+        cp -r $(DS_JSON_PATH) $(DS_LIB_PATH)
 
     # target to build an object file
     $(OBJECT): $(SOURCE)
@@ -96,7 +98,7 @@ In this section, we’ll walk through the key steps needed to build an applicati
     # the clean target
     .PHONY : clean
     clean: 
-        rm -f $(OBJECT) $(TARGET) $(DS_LIB_PATH)/ConfusableChars.data -r $(DS_LIB_PATH)/Templates -r $(DS_LIB_PATH)/CharacterModel -r $(DS_LIB_PATH)/ParserResources
+        rm -f $(OBJECT) $(TARGET) $(DS_LIB_PATH)/ConfusableChars.data $(DS_LIB_PATH)/OverlappingChars.data -r $(DS_LIB_PATH)/Models $(DS_LIB_PATH)/ParserResources $(DS_LIB_PATH)/Templates
     ```
 
 ### Include the Library
@@ -119,15 +121,15 @@ Add headers and libs in `MRZScanner.cpp`.
     // The following code only applies to Windows.
     #if defined(_WIN64) || defined(_WIN32)
         #ifdef _WIN64
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCorex64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftLicensex64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftUtilityx64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftCorex64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftLicensex64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftUtilityx64.lib")
         #else
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCorex86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftLicensex86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftUtilityx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftCorex86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftLicensex86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftUtilityx86.lib")
         #endif
     #endif
     ```
@@ -219,11 +221,15 @@ delete router, router = NULL;
 
 1. Build the application through Visual Studio.
 
-2. Copy the following items from `[INSTALLATION FOLDER]\Distributables` to the same folder as the EXE file. 
+2. Copy the following items from `[INSTALLATION FOLDER]\Dist` to the same folder as the EXE file. 
    
    - All the DLL files from `.\Lib\Windows\[PLATFORMS]`
    - File `ConfusableChars.data`
-   - Folders `CharacterModel`, `ParserResources` and `Templates`
+   - File `OverlappingChars.data`
+   - File `Models\MRZTextLineRecognition.data` (including folder `Models`)
+   - File `Models\MRZCharRecognition.data` (including folder `Models`)
+   - File `Templates\MRZScanner.json` (including folder `Templates`)
+   - Folders `ParserResources`
 
 3. Run the program `MRZScanner.exe`.
 

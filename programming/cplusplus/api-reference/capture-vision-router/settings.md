@@ -92,23 +92,24 @@ Returns an error code. Zero indicates success.
 Exports a specific template to a string.
 
 ```cpp
-char* OutputSettings(const char* templateName, int* pErrorCode = NULL)
+char* OutputSettings(const char* templateName, bool includeDefaultValues = false, int* pErrorCode = NULL)
 ```
 
 **Parameters**
 
 `[in] templateName` The name of the template to export.
 
+`[in] includeDefaultValues` Specifies whether to include default values in the exported template.
+
 `[out] pErrorCode` An error code.
 
 **Return value**
 
-Returns a string containing the exported template. The string is allocated by the SDK and must be freed by calling [`FreeString`](auxiliary-methods.md#freestring).
+Returns a string containing the exported template. The string is allocated by the SDK and must be freed by calling [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes).
 
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |
 | EC_TEMPLATE_NAME_INVALID | -10036 | The target template name is invalid. |
-| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
 
 **Remarks**
 
@@ -119,7 +120,7 @@ It is supported to export all loaded templates by specifying the `templateName` 
 Exports a specific template to a file.
 
 ```cpp
-int OutputSettingsToFile(const char* templateName, const char* filePath)
+int OutputSettingsToFile(const char* templateName, const char* filePath, bool includeDefaultValues = false)
 ```
 
 **Parameters**
@@ -128,6 +129,8 @@ int OutputSettingsToFile(const char* templateName, const char* filePath)
 
 `[in] filePath` The path to the output file.
 
+`[in] includeDefaultValues` Specifies whether to include default values in the exported template.
+
 **Return value**
 
 Returns an error code. Zero indicates success.
@@ -135,7 +138,6 @@ Returns an error code. Zero indicates success.
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |
 | EC_FILE_SAVE_FAILED | -10058 | The file path is unavailable or the file can't be created for any other reasons. |
-| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
 
 **Remarks**
 
@@ -195,7 +197,6 @@ Returns an error code. Zero indicates success.
 | :--------- | :---- | :---------- |
 | EC_TEMPLATE_NAME_INVALID | -10036 | The target template name is invalid. |
 | EC_PARAMETER_VALUE_INVALID | -10038 | There exists invalid parameter value in your `SimplifiedCaptureVisionSettings`. |
-| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
 
 **See Also**
 
