@@ -42,7 +42,7 @@ virtual int AddResultReceiver(CIntermediateResultReceiver* receiver)
 
 **See Also**
 
-[CIntermediateResultReceiver]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
+[CIntermediateResultReceiver]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html)
 
 ### RemoveResultReceiver
 
@@ -58,7 +58,7 @@ virtual int RemoveResultReceiver(CIntermediateResultReceiver* receiver)
 
 **See Also**
 
-[CIntermediateResultReceiver]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
+[CIntermediateResultReceiver]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html)
 
 ### GetOriginalImage
 
