@@ -25,6 +25,7 @@ class RegionObjectElement
 | [`get_location`](#get_location) | Gets the location of the region object element. |
 | [`get_referenced_element`](#get_referenced_element) | Gets a referenced region object element. |
 | [`get_element_type`](#get_element_type) | Gets the type of the region object element. |
+| [`get_image_data`](#get_image_data) | Get the imageData of the region object element. |
 | [`set_location`](#set_location) | Sets the location of the region object element. |
 | [`clone`](#clone) | Clones the region object element. |
 
@@ -74,7 +75,23 @@ Returns a `EnumRegionObjectElementType` enum value which represents the type of 
 
 **See Also**
 
-[EnumRegionObjectElementType]({{ site.dcvb_enumerations }}core/region-object-element-type.html?lang=python)
+[EnumRegionObjectElementType]({{ site.dcvb_python_api }}core/enum-region-object-element-type.html?lang=python)
+
+### get_image_data
+
+Get the imageData of the region object element.
+
+```python
+def get_image_data(self) -> ImageData:
+```
+
+**Return value**
+
+Returns an `ImageData` object that contains the image data of current object.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_python_api }}core/basic-classes/image-data.html)
 
 ### set_location
 

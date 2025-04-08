@@ -95,7 +95,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[EnumImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=python)
+[EnumImageTagType]({{ site.dcvb_python_api }}core/enum-image-tag-type.html?lang=python)
 
 ### clone
 

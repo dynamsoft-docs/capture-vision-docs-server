@@ -49,7 +49,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
 
 ### set_device_friendly_name
 
@@ -76,7 +76,7 @@ This function must be called before function `init_license` to ensure correct fu
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
 
 ### set_max_concurrent_instance_count
 
@@ -103,7 +103,7 @@ This function must be called before function `init_license` to ensure correct fu
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
 
 ### get_device_uuid
 
@@ -157,7 +157,7 @@ This function must be called before function `init_license` to ensure correct fu
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
 
 ## Code Snippet
 

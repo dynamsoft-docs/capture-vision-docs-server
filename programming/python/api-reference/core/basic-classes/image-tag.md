@@ -53,7 +53,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[EnumImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=python)
+[EnumImageTagType]({{ site.dcvb_python_api }}core/enum-image-tag-type.html?lang=python)
 
 ### clone
 
@@ -106,7 +106,7 @@ Returns the capture distance mode of the image.
 
 **See Also**
 
-[EnumImageCaptureDistanceMode]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?lang=python)
+[EnumImageCaptureDistanceMode]({{ site.dcvb_python_api }}core/enum-image-capture-distance-mode.html?lang=python)
 
 ### set_image_capture_distance_mode
 
@@ -122,4 +122,4 @@ def set_image_capture_distance_mode(self, mode: int) -> None:
 
 **See Also**
 
-[EnumImageCaptureDistanceMode]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?lang=python)
+[EnumImageCaptureDistanceMode]({{ site.dcvb_python_api }}core/enum-image-capture-distance-mode.html?lang=python)

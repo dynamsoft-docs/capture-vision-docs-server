@@ -3,7 +3,6 @@ layout: default-layout
 title: Quadrilateral Class - Dynamsoft Core Module Python Edition API Reference
 description: Definition of Quadrilateral class in Dynamsoft Core Module Python Edition.
 keywords: quadrilateral, python
-needAutoGenerateSidebar: true
 ---
 
 # Quadrilateral
@@ -23,6 +22,7 @@ class Quadrilateral
 | Property  | Type | Description |
 |---------- | ---- |-------------|
 | `points` | *List\[[Point]({{ site.dcvb_python_api }}core/basic-classes/point.html)\]* | A Point list of length 4 that define the quadrilateral. |
+| [`id`](#id) | *int* | The ID of the quadrilateral. |
 
 ## Methods
 
@@ -31,6 +31,7 @@ class Quadrilateral
 | [`__init__`](#__init__) | Initializes a new instance of the `Quadrilateral` class with default values. |
 | [`contains`](#this) | Determines whether a point is inside the quadrilateral |
 | [`get_area`](#this) | Gets the area of the quadrilateral. |
+| [`get_bounding_rect`](#get_bounding_rect) | Gets the bounding rectangle of the quadrilateral. |
 
 
 ### \_\_init\_\_
@@ -72,4 +73,16 @@ def get_area(self) -> int:
 **Return Value**
 
 RReturns the area of the quadrilateral.
+
+### get_bounding_rect
+
+Gets the bounding rectangle of the quadrilateral.
+
+```python
+def get_bounding_rect(self) -> Rect:
+```
+
+**Return Value**
+
+Returns bounding rectangle of the quadrilateral, in type of [`Rect`]({{ site.dcvb_python_api }}core/basic-classes/rect.html).
 

@@ -112,10 +112,10 @@ needAutoGenerateSidebar: false
 - [`CDetectedQuadsUnit`]({{ site.ddn_cpp_api }}detected-quads-unit.html)
 - [`CDeskewedImageElement`]({{ site.ddn_cpp_api }}deskewed-image-element.html)
 - [`CDeskewedImageResultItem`]({{ site.ddn_cpp_api }}deskewed-image-result-item.html)
-- [`CDeskewedImagesUnit`]({{ site.ddn_cpp_api }}deskewed-image-unit.html)
+- [`CDeskewedImageUnit`]({{ site.ddn_cpp_api }}deskewed-image-unit.html)
 - [`CEnhancedImageElement`]({{ site.ddn_cpp_api }}enhanced-image-element.html)
 - [`CEnhancedImageResultItem`]({{ site.ddn_cpp_api }}enhanced-image-result-item.html)
-- [`CEnhancedImagesUnit`]({{ site.ddn_cpp_api }}enhanced-image-unit.html)
+- [`CEnhancedImageUnit`]({{ site.ddn_cpp_api }}enhanced-image-unit.html)
 - [`CDocumentNormalizerModule`]({{ site.ddn_cpp_api }}document-normalizer-module.html)
 - [`CLogicLinesUnit`]({{ site.ddn_cpp_api }}logic-lines-unit.html)
 - [`CLongLinesUnit`]({{ site.ddn_cpp_api }}long-lines-unit.html)
@@ -133,6 +133,7 @@ needAutoGenerateSidebar: false
 
 ### Classes
 
+- [`CCodeParserModule`]({{ site.dcp_cpp_api }}code-parser-module.html)
 - [`CParsedResultItem`]({{ site.dcp_cpp_api }}parsed-result-item.html)
 - [`CParsedResult`]({{ site.dcp_cpp_api }}parsed-result.html)
 

@@ -42,4 +42,4 @@ def on_image_source_state_received(self, state: int) -> None:
 
 **See Also**
 
-[EnumImageSourceState]({{ site.dcvb_enumerations }}capture-vision-router/image-source-state.html?lang=python)
+[EnumImageSourceState]({{ site.dcvb_python_api }}capture-vision-router/enum-image-source-state.html?lang=python)
