@@ -41,7 +41,7 @@ Returns the type of the captured result item.
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html?lang=python)
+[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
 
 ### get_reference_item
 

@@ -39,7 +39,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 ## init_settings_from_file
 
@@ -61,7 +61,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 ## output_settings
 
@@ -86,7 +86,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 **Remarks**
 
@@ -116,7 +116,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 **Remarks**
 
@@ -143,7 +143,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [SimplifiedCaptureVisionSettings]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
 
@@ -169,7 +169,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [SimplifiedCaptureVisionSettings]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
 
@@ -189,5 +189,5 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 

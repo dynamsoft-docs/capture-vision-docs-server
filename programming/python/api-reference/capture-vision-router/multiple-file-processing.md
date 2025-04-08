@@ -46,7 +46,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [ImageSourceAdapter]({{ site.dcvb_python_api }}core/basic-classes/image-source-adapter.html)
 
@@ -94,7 +94,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [CaptureStateListener]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 
@@ -118,7 +118,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [CaptureStateListener]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 
@@ -142,7 +142,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [ImageSourceStateListener]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
@@ -166,7 +166,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [ImageSourceStateListener]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
@@ -190,7 +190,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [CapturedResultReceiver]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
 
@@ -214,7 +214,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [CapturedResultReceiver]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
 
@@ -238,7 +238,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [CapturedResultFilter]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 
@@ -262,7 +262,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [CapturedResultFilter]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 
@@ -294,7 +294,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 ## stop_capturing
 

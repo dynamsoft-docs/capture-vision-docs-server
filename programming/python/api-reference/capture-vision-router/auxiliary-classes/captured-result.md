@@ -104,7 +104,7 @@ Returns the error code of the capture operation.
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 ### get_error_string
 

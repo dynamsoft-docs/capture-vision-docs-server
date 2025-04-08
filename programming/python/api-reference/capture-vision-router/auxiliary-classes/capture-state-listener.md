@@ -42,4 +42,4 @@ def on_capture_state_changed(self, state: int) -> None:
 
 **See Also**
 
-[EnumCaptureState]({{ site.dcvb_python_api }}capture-vision-router/enum-capture-state.html?lang=python)
+[EnumCaptureState]({{ site.dcvb_python_api }}capture-vision-router/enum-capture-state.html)

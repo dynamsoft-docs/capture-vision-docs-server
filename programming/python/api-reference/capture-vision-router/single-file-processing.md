@@ -45,7 +45,7 @@ Returns a `CapturedResult` object containing the captured items.
 
 [ImageData]({{ site.dcvb_python_api }}core/basic-classes/image-data.html)
 
-[EnumImagePixelFormat]({{ site.dcvb_python_api }}core/enum-image-pixel-format.html?lang=python)
+[EnumImagePixelFormat]({{ site.dcvb_python_api }}core/enum-image-pixel-format.html)
 
 [CapturedResult]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/captured-result.html)
 

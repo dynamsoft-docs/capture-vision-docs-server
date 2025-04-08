@@ -54,7 +54,7 @@ def __init__(self, quality: int, is_cropped: bool, crop_region: "Rect", original
 
 **See Also**
 
-[EnumVideoFrameQuality]({{ site.dcvb_python_api }}core/enum-video-frame-quality.html?lang=python)
+[EnumVideoFrameQuality]({{ site.dcvb_python_api }}core/enum-video-frame-quality.html)
 
 ### get_video_frame_quality
 
@@ -70,7 +70,7 @@ Returns the quality of the video frame.
 
 **See Also**
 
-[EnumVideoFrameQuality]({{ site.dcvb_python_api }}core/enum-video-frame-quality.html?lang=python)
+[EnumVideoFrameQuality]({{ site.dcvb_python_api }}core/enum-video-frame-quality.html)
 
 ### is_cropped
 
@@ -138,7 +138,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[EnumImageTagType]({{ site.dcvb_python_api }}core/enum-image-tag-type.html?lang=python)
+[EnumImageTagType]({{ site.dcvb_python_api }}core/enum-image-tag-type.html)
 
 ### clone
 

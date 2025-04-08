@@ -75,7 +75,7 @@ Returns a `EnumRegionObjectElementType` enum value which represents the type of 
 
 **See Also**
 
-[EnumRegionObjectElementType]({{ site.dcvb_python_api }}core/enum-region-object-element-type.html?lang=python)
+[EnumRegionObjectElementType]({{ site.dcvb_python_api }}core/enum-region-object-element-type.html)
 
 ### get_image_data
 
