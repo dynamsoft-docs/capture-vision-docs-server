@@ -3,8 +3,6 @@ layout: default-layout
 title: CapturedResultReceiver Class - Dynamsoft Capture Vision Module Python Edition API Reference
 description: Definition of CapturedResultReceiver class in Dynamsoft Capture Vision Module Python Edition.
 keywords: captured result receiver, python
-needAutoGenerateSidebar: true
-needGenerateH3Content: true
 ---
 
 # CapturedResultReceiver
@@ -25,13 +23,12 @@ class CapturedResultReceiver
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
-| [`on_captured_result_received`](#on_captured_result_received)           | Callback function triggered after processing each image and returns all captured results.          |
-| [`on_original_image_result_received`](#on_original_image_result_received) | Callback function triggered when start processing each image and returns the original image result.        |
-| [`on_decoded_barcodes_received`](#on_decoded_barcodes_received)         | Callback function triggered after processing each image and returns all decoded barcodes results.      |
+| [`on_captured_result_received`](#on_captured_result_received) | Callback function triggered after processing each image and returns all captured results. |
+| [`on_original_image_result_received`](#on_original_image_result_received) | Callback function triggered when start processing each image and returns the original image result. |
+| [`on_decoded_barcodes_received`](#on_decoded_barcodes_received) | Callback function triggered after processing each image and returns all decoded barcodes results. |
 | [`on_recognized_text_lines_received`](#on_recognized_text_lines_received) | Callback function triggered after processing each image and returns all recognized text lines results. |
-| [`on_detected_quads_received`](#on_detected_quads_received)             | Callback function triggered after processing each image and returns all detected quads results.        |
-| [`on_normalized_images_received`](#on_normalized_images_received)       | Callback function triggered after processing each image and returns all normalized images results.     |
-| [`on_parsed_results_received`](#on_parsed_results_received)             | Callback function triggered after processing each image and returns all parsed results.                |
+| [`on_processed_document_result_received`](#on_processed_document_result_received) | Callback function triggered after processing each image and returns all processed document results.        |
+| [`on_parsed_results_received`](#on_parsed_results_received) | Callback function triggered after processing each image and returns all parsed results.                |
 | [`get_name`](#get_name)       | Gets the name of the captured result receiver.                                             |
 | [`set_name`](#set_name)       | Sets the name of the captured result receiver.                                             |
 
@@ -99,37 +96,21 @@ def on_recognized_text_lines_received(self, result: "RecognizedTextLinesResult")
 
 [RecognizedTextLinesResult]({{ site.dlr_python_api }}recognized-text-lines-result.html)
 
-### on_detected_quads_received
+### on_processed_document_result_received
 
-Callback function triggered after processing each image and returns all detected quads. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
+Callback function triggered after processing each image and returns all processed document results. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
 
 ```python
-def on_detected_quads_received(self, result: "DetectedQuadsResult") -> None:
+def on_processed_document_result_received(self, result: "ProcessedDocumentResult") -> None:
 ```
 
 **Parameters**
 
-`result` The detected quads result.
+`result` The processed document results.
 
 **See Also**
 
-[DetectedQuadsResult]({{ site.ddn_python_api }}detected-quads-result.html)
-
-### on_normalized_images_received
-
-Callback function triggered after processing each image and returns all normalized images. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
-
-```python
-def on_normalized_images_received(self, result: "NormalizedImagesResult") -> None:
-```
-
-**Parameters**
-
-`result` The normalized images result.
-
-**See Also**
-
-[NormalizedImagesResult]({{ site.ddn_python_api }}normalized-images-result.html)
+[ProcessedDocumentResult]({{ site.ddn_python_api }}processed-document-result.html)
 
 ### on_parsed_results_received
 

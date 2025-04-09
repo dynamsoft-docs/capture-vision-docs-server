@@ -22,7 +22,7 @@ class Corner
   
 | Attribute | Type | Description |
 |---------- | ---- | ----------- |
-| [`type`](#type) | *int* | The type of the corner. This is one of the values of the [EnumCornerType]({{ site.dcvb_enumerations }}core/corner-type.html?lang=python) enumeration. |
+| [`type`](#type) | *int* | The type of the corner. This is one of the values of the [EnumCornerType]({{ site.dcvb_python_api }}core/enum-corner-type.html) enumeration. |
 | [`intersection`](#intersection) | *[Point]({{ site.dcvb_python_api }}core/basic-classes/point.html)* | The intersection point of the corner. |
 | [`line1`](#line1) | *[LineSegment]({{ site.dcvb_python_api }}core/basic-classes/line-segment.html)* | One of the line connected to the corner. |
 | [`line2`](#line2) | *[LineSegment]({{ site.dcvb_python_api }}core/basic-classes/line-segment.html)* | One of the line connected to the corner. |

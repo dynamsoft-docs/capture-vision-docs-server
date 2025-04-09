@@ -46,7 +46,7 @@ def set_observed_result_unit_types(self, types: int) -> None:
 
 **See Also**
 
-[EnumIntermediateResultUnitType]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?lang=python)
+[EnumIntermediateResultUnitType]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html)
 
 ### get_observed_result_unit_types
 
@@ -62,7 +62,7 @@ The observed types of intermediate result units. This is a bitwise OR combinatio
 
 **See Also**
 
-[EnumIntermediateResultUnitType]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?lang=python)
+[EnumIntermediateResultUnitType]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html)
 
 ### is_result_unit_type_observed
 
@@ -82,7 +82,7 @@ Returns a boolean value indicating whether the specified result unit type was ob
 
 **See Also**
 
-[EnumIntermediateResultUnitType]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?lang=python)
+[EnumIntermediateResultUnitType]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html)
 
 ### add_observed_task
 
@@ -138,7 +138,7 @@ def set_result_unit_types_only_for_input(self, types: int) -> None:
 
 **See Also**
 
-[EnumIntermediateResultUnitType]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?lang=python)
+[EnumIntermediateResultUnitType]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html)
 
 ### get_result_unit_types_only_for_input
 
@@ -154,7 +154,7 @@ Returns the types of intermediate result units. This is a bitwise OR combination
 
 **See Also**
 
-[EnumIntermediateResultUnitType]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?lang=python)
+[EnumIntermediateResultUnitType]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html)
 
 ### is_result_unit_type_only_for_input
 
@@ -174,4 +174,4 @@ Returns a boolean value indicating whether the specified type of intermediate re
 
 **See Also**
 
-[EnumIntermediateResultUnitType]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?lang=python)
+[EnumIntermediateResultUnitType]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html)

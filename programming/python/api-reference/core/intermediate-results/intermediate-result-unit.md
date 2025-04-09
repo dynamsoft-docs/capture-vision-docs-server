@@ -3,7 +3,6 @@ layout: default-layout
 title: class IntermediateResultUnit - Dynamsoft Core Module Python Edition API Reference
 description: This page shows the python edition of the class IntermediateResultUnit in Dynamsoft Core Module.
 keywords: intermediate result, python
-needAutoGenerateSidebar: true
 ---
 
 # IntermediateResultUnit
@@ -25,14 +24,15 @@ class IntermediateResultUnit
 | [`get_hash_id`](#get_hash_id) | Gets the hash ID of the unit.|
 | [`get_original_image_hash_id`](#get_original_image_hash_id) | Gets the hash ID of the original image. |
 | [`get_original_image_tag`](#get_original_image_tag) | Gets the image tag of the original image. |
-| [`get_transform_matrix`](#get_transform_matrix) | Gets the transformation matrix based on [`EnumTransformMatrixType`]({{site.dcvb_enumerations}}core/transform-matrix-type.html?lang=python). |
+| [`get_transform_matrix`](#get_transform_matrix) | Gets the transformation matrix based on [`EnumTransformMatrixType`]({{ site.dcvb_python_api }}core/enum-transform-matrix-type.html). |
 | [`get_type`](#get_type) | Gets the type of the intermediate result unit. |
+| [`get_usage_count`](#get_usage_count) | Gets the usage count of the intermediate result. |
 | [`clone`](#clone) | Creates a copy of the intermediate result unit. |
 | [`replace`](#replace) | Replaces the `IntermediateResultUnit` object to the specified `IntermediateResultUnit` object. |
 | [`set_hash_id`](#set_hash_id) | Sets the hash ID of the unit. |
 | [`set_original_image_hash_id`](#set_original_image_hash_id) | Sets the hash ID of the original image. |
 | [`set_original_image_tag`](#set_original_image_tag) | Sets the image tag of the original image. |
-| [`set_transform_matrix`](#set_transform_matrix) | Sets the transformation matrix based on [`EnumTransformMatrixType`]({{site.dcvb_enumerations}}core/transform-matrix-type.html?lang=python). |
+| [`set_transform_matrix`](#set_transform_matrix) | Sets the transformation matrix based on [`EnumTransformMatrixType`]({{ site.dcvb_python_api }}core/enum-transform-matrix-type.html). |
 
 ### get_hash_id
 
@@ -84,7 +84,7 @@ def get_transform_matrix(self, matrix_type: int) -> List[float]:
 
 **Parameters**
 
-`matrix_type`: The transform matrix type. This is one of the values of the [EnumTransformMatrixType]({{site.dcvb_enumerations}}core/transform-matrix-type.html?lang=python) enumeration.
+`matrix_type`: The transform matrix type. This is one of the values of the [EnumTransformMatrixType]({{ site.dcvb_python_api }}core/enum-transform-matrix-type.html) enumeration.
 
 **Return value**
 
@@ -92,7 +92,7 @@ A float array which represents the rotation transform matrix.
 
 **See Also**
 
-[EnumTransformMatrixType]({{site.dcvb_enumerations}}core/transform-matrix-type.html?lang=python)
+[EnumTransformMatrixType]({{ site.dcvb_python_api }}core/enum-transform-matrix-type.html)
 
 ### get_type
 
@@ -108,7 +108,19 @@ Returns the type of the intermediate result unit.
 
 **See Also**
 
-[EnumIntermediateResultUnitType]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?lang=python)
+[EnumIntermediateResultUnitType]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html)
+
+### get_usage_count
+
+Gets the usage count of the intermediate result.
+
+```python
+def get_usage_count(self) -> int:
+```
+
+**Return value**
+
+Returns the usage count of the intermediate result.
 
 ### clone
 
@@ -192,11 +204,11 @@ def set_transform_matrix(self, matrix_type: int, matrix: List[float]) -> None:
 
 **Parameters**
 
-`matrix_type`: The transform matrix type. This is one of the values of the [EnumTransformMatrixType]({{site.dcvb_enumerations}}core/transform-matrix-type.html?lang=python) enumeration.
+`matrix_type`: The transform matrix type. This is one of the values of the [EnumTransformMatrixType]({{ site.dcvb_python_api }}core/enum-transform-matrix-type.html) enumeration.
 
 `matrix` A float array which represents the rotation transform matrix.
 
 **See Also**
 
-[EnumTransformMatrixType]({{site.dcvb_enumerations}}core/transform-matrix-type.html?lang=python)
+[EnumTransformMatrixType]({{ site.dcvb_python_api }}core/enum-transform-matrix-type.html)
 

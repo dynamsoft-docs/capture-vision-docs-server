@@ -26,7 +26,7 @@ class IntermediateResultExtraInfo
 | [`target_roi_def_name`](#target_roi_def_name)         | *str*   | Specifies the name of the `TargetROIDef` object that generates the intermediate result. |
 | [`task_name`](#task_name)                             | *str*   | Specifies the name of the task that generates the intermediate result. |
 | [`is_section_level_result`](#is_section_level_result) | *bool*  | Specifies whether the intermediate result is section-level result. |
-| [`section_type`](#section_type)                       | *int*   | Specifies the section_type that generates the intermediate result. This is one of the values of the [EnumSectionType]({{ site.dcvb_enumerations }}core/section-type.html?lang=python) enumeration. |
+| [`section_type`](#section_type)                       | *int*   | Specifies the section_type that generates the intermediate result. This is one of the values of the [EnumSectionType]({{ site.dcvb_python_api }}core/enum-section-type.html) enumeration. |
 
 ## Methods
 

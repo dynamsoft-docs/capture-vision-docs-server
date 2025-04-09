@@ -39,7 +39,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 ## init_settings_from_file
 
@@ -61,19 +61,21 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 ## output_settings
 
 Exports a specific template to a string.
 
 ```python
-def output_settings(self, template_name: str) -> Tuple[int, str, str]:
+def output_settings(self, template_name: str, include_default_values: bool = False) -> Tuple[int, str, str]:
 ```
 
 **Parameters**
 
 `template_name` The name of the template to be exported.
+
+`include_default_values` Specifies whether to include default values in the exported template.
 
 **Return Value**
 
@@ -84,7 +86,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 **Remarks**
 
@@ -95,7 +97,7 @@ It is supported to export all loaded templates by specifying the `template_name`
 Exports a specific template to a file.
 
 ```python
-def output_settings_to_file(self, template_name: str, file_path: str) -> Tuple[int, str]:
+def output_settings_to_file(self, template_name: str, file_path: str, include_default_values: bool = False) -> Tuple[int, str]:
 ```
 
 **Parameters**
@@ -103,6 +105,8 @@ def output_settings_to_file(self, template_name: str, file_path: str) -> Tuple[i
 `template_name` The name of the template to be exported.
 
 `file_path` The path to the output file.
+
+`include_default_values` Specifies whether to include default values in the exported template.
 
 **Return Value**
 
@@ -112,7 +116,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 **Remarks**
 
@@ -139,7 +143,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [SimplifiedCaptureVisionSettings]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
 
@@ -165,7 +169,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
 [SimplifiedCaptureVisionSettings]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
 
@@ -185,5 +189,5 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
 
