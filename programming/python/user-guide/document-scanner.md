@@ -68,7 +68,7 @@ else:
 ### Create a CaptureVisionRouter Instance
 
 ```python
-cvr = CaptureVisionRouter()
+cvr_instance = CaptureVisionRouter()
 ```
 
 ### Detect and Save the Normalized Document
@@ -76,7 +76,7 @@ cvr = CaptureVisionRouter()
 1. Apply detection and normalization for an image file.
 
 ```python
-result = cvr.capture("[PATH-TO-THE-IMAGE-FILE]", EnumPresetTemplate.PT_DETECT_AND_NORMALIZE_DOCUMENT.value)
+result = cvr_instance.capture("[PATH-TO-THE-IMAGE-FILE]", EnumPresetTemplate.PT_DETECT_AND_NORMALIZE_DOCUMENT.value)
 ```
 
 > Please change the `[PATH-TO-THE-IMAGE-FILE]` to a real image file path.

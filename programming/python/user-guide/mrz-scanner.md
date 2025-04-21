@@ -74,13 +74,13 @@ else:
 ### Create a CaptureVisionRouter Instance
 
 ```python
-cvr = CaptureVisionRouter()
+cvr_instance = CaptureVisionRouter()
 ```
 
 ### Invoke the Capturing
 
 ```python
-result = cvr.capture("[PATH-TO-THE-IMAGE-FILE]", "ReadPassportAndId")
+result = cvr_instance.capture("[PATH-TO-THE-IMAGE-FILE]", "ReadPassportAndId")
 ```
 
 > Please change the `[PATH-TO-THE-IMAGE-FILE]` to a real image file path.

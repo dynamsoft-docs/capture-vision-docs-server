@@ -76,7 +76,7 @@ if (errorCode != (int)EnumErrorCode.EC_OK && errorCode != (int)EnumErrorCode.EC_
 ### Create a CaptureVisionRouter Instance
 
 ```csharp
-using (CaptureVisionRouter cvr = new CaptureVisionRouter())
+using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
 {
     //code for invoking the capturing
 }
@@ -85,10 +85,10 @@ using (CaptureVisionRouter cvr = new CaptureVisionRouter())
 ### Invoke the Capturing
 
 ```csharp
-using (CaptureVisionRouter cvr = new CaptureVisionRouter())
+using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
 {
     string imageFile = "[PATH-TO-THE-IMAGE-FILE]";
-    using (CapturedResult? result = cvr.Capture(imageFile, "ReadPassportAndId"))
+    using (CapturedResult? result = cvRouter.Capture(imageFile, "ReadPassportAndId"))
     {
         //code for filtering and getting MRZ details
     }

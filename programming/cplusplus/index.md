@@ -49,6 +49,12 @@ The best way to begin with Dynamsoft Capture Vision C++ Edition is to follow the
   - Supported Versions: 10.15+
   - Architecture: x64 and ARM 64-bit
 
+- For Embedded Devices:
+For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4GB RAM). Minimum recommended specs:
+  - Quad-core ARM Cortex-A72 processor (or equivalent)
+  - 4 GB RAM
+  - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
+
 ## API Reference
 
 For an overview of the APIs, see the [API Reference]({{ site.dcvb_cpp_api }}).

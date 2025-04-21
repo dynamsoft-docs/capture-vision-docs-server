@@ -253,6 +253,7 @@ int StartCapturing(string templateName, bool waitForThreadExit, out string error
 **Remarks**
 
 - There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [InitSettings]({{ site.dcvb_dotnet_api }}capture-vision-router/settings.html#initsettings) / [InitSettingsFromFile]({{ site.dcvb_dotnet_api }}capture-vision-router/settings.html#initsettingsfromfile).
+- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
 - Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `InitSettings` / `InitSettingsFromFile` and pass his own settings.
 - If parameter `templateName` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
 
