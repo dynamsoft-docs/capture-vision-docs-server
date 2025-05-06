@@ -73,7 +73,7 @@ else:
     # codes from following steps
 ```
 
-> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=mrz&package=python" target="_blank">Customer Portal</a>.
+> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. Please replace it with your own 30-day trial license.
 
 ### Create a CaptureVisionRouter Instance
 
