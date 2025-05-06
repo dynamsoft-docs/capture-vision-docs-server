@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Release Notes v2.x - Dynamsoft Capture Vision Bundle Python Edition
-description: This is the release notes page of Dynamsoft Capture Vision Bundle Python Edition v2.x.
+title: Release Notes v3.x - Dynamsoft Capture Vision Bundle Python Edition
+description: This is the release notes page of Dynamsoft Capture Vision Bundle Python Edition v3.x.
 keywords: release notes, python
 needGenerateH3Content: false
 ---
