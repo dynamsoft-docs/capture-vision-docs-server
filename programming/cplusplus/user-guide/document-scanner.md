@@ -19,7 +19,8 @@ In this guide, you will learn step by step on how to build a document scanner so
       - [For Windows](#for-windows)
       - [For Linux](#for-linux)
     - [Include the Library](#include-the-library)
-    - [Initialize a Capture Vision Router Instance](#initialize-a-capture-vision-router-instance)
+    - [Initialize the License Key](#initialize-the-license-key)
+    - [Create a CaptureVisionRouter Instance](#create-a-capturevisionrouter-instance)
     - [Detect and Save the Normalized Document](#detect-and-save-the-normalized-document)
     - [Release the Allocated Memory](#release-the-allocated-memory)
     - [Build and Run the Project](#build-and-run-the-project)
@@ -34,12 +35,14 @@ To find out whether your environment is supported, please read the [System Requi
 
 If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-3.0.1000.250304.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
 
+> [!IMPORTANT]
 > For this tutorial, we unpack it to a pseudo directory `[INSTALLATION FOLDER]`, change it to your unpacking path for the following content.
 
 ## Build Your Own Application
 
 In this section, we'll walk through the key steps needed to build an application that capture a document from an image file.
 
+> [!TIP]
 >You can download the complete source code from [here](https://github.com/Dynamsoft/capture-vision-cpp-samples/tree/main/Samples/DocumentScanner).
 
 ### Create A New Project
@@ -86,7 +89,8 @@ In this section, we'll walk through the key steps needed to build an application
         rm -f $(OBJECT) $(TARGET) -r $(DS_LIB_PATH)/Templates
     ```
 
-    >Note: The variable `DS_LIB_PATH` should be set to the correct directory where the library files are located. 
+    > [!IMPORTANT]
+    > The variable `DS_LIB_PATH` should be set to the correct directory where the library files are located. 
 
 ### Include the Library
 
@@ -120,32 +124,36 @@ In this section, we'll walk through the key steps needed to build an application
     #endif
     ```
 
-### Initialize a Capture Vision Router Instance
+### Initialize the License Key
 
-1. Initialize the license key
+If this is your first time using the library, you will need to obtain a trial license key. We recommend getting your own 30-day trial license through the following modal:
 
-    ```cpp
-    int errorcode = 0;
-    char error[512];
-    errorcode = CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", error, 512);
-    if (errorcode != ErrorCode::EC_OK && errorcode != ErrorCode::EC_LICENSE_CACHE_USED)
-    {
-        cout << "License initialization failed: ErrorCode: " << errorcode << ", ErrorString: " << error << endl;
-    }
-    else
-    {
-        // codes from following steps...
-    }
-    ```
+{% include trialLicense.html %}
 
-    >Note:
-    > The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dcv&package=c_cpp" target="_blank">Customer Portal</a>.
+Open the `DocumentScanner.cpp` file and add the following code inside the `Main` method to initialize the license for using the SDK in the application:
 
-2. Create an instance of Dynamsoft Capture Vision Router
+```cpp
+int errorcode = 0;
+char error[512];
+errorcode = CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", error, 512);
+if (errorcode != ErrorCode::EC_OK && errorcode != ErrorCode::EC_LICENSE_CACHE_USED)
+{
+    cout << "License initialization failed: ErrorCode: " << errorcode << ", ErrorString: " << error << endl;
+}
+else
+{
+    // codes from following steps...
+}
+```
 
-    ```cpp
-    CCaptureVisionRouter* router = new CCaptureVisionRouter();
-    ```
+> [!NOTE]
+> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. Please replace it with your own 30-day trial license.
+
+### Create a CaptureVisionRouter Instance
+
+```cpp
+CCaptureVisionRouter* router = new CCaptureVisionRouter();
+```
 
 ### Detect and Save the Normalized Document
 
@@ -156,6 +164,7 @@ In this section, we'll walk through the key steps needed to build an application
     CCapturedResult* result = router->Capture(imageFile.c_str(), CPresetTemplate::PT_DETECT_AND_NORMALIZE_DOCUMENT);
     ```
 
+    > [!IMPORTANT]
     > Please change the `[PATH-TO-THE-IMAGE-FILE]` to a real image file path.
 
 2. Save the normalized result as an image file
@@ -230,6 +239,5 @@ delete router, router = NULL;
     ```
 
 
-> Note:
-> 
+> [!IMPORTANT]
 > Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpacking path.

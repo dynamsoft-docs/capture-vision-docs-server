@@ -59,6 +59,10 @@ from dynamsoft_capture_vision_bundle import *
 
 ### Initialize the License Key
 
+If this is your first time using the library, you will need to obtain a trial license key. We recommend getting your own 30-day trial license through the following modal:
+
+{% include trialLicense.html %}
+
 Add the following code inside the `__main__` method to initialize the license for using the SDK in the application:
 
 ```python

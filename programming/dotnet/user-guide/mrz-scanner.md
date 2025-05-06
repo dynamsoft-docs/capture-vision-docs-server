@@ -61,6 +61,10 @@ using Dynamsoft.DCP;
 
 ### Initialize the License Key
 
+If this is your first time using the library, you will need to obtain a trial license key. We recommend getting your own 30-day trial license through the following modal:
+
+{% include trialLicense.html %}
+
 Open the `Program.cs` file and add the following code inside the `Main` method to initialize the license for using the SDK in the application:
 
 ```csharp
