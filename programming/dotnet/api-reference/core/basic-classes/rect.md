@@ -14,7 +14,6 @@ The `Rect` class represents a rectangle in 2D space. It contains four integer va
 
 *Namespace:* Dynamsoft.Core
 
-*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public class Rect 
@@ -28,13 +27,14 @@ public class Rect
 | [`left`](#left) | *int* |
 | [`right`](#right) | *int* |
 | [`bottom`](#bottom) | *int* |
+| [`id`](#id) | *int* |
 
 ### top
 
 The top edge of the rectangle.
 
 ```csharp
-int top;
+int top
 ```
 
 ### left
@@ -42,7 +42,7 @@ int top;
 The left edge of the rectangle.
 
 ```csharp
-int left;
+int left
 ```
 
 ### right
@@ -50,7 +50,7 @@ int left;
 The right edge of the rectangle.
 
 ```csharp
-int right;
+int right
 ```
 
 ### bottom
@@ -58,5 +58,13 @@ int right;
 The bottom edge of the rectangle.
 
 ```csharp
-int bottom;
+int bottom
+```
+
+### id
+
+The id of the rectangle.
+
+```csharp
+int id
 ```

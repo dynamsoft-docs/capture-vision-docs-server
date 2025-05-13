@@ -14,7 +14,6 @@ The `Point` class represents a point in 2D space. It contains an array of two in
 
 *Namespace:* Dynamsoft.Core
 
-*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public class Point

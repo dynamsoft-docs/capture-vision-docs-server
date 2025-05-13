@@ -14,7 +14,6 @@ The `FileFetcher` class is a utility class that partitions a multi-page image fi
 
 *Namespace:* Dynamsoft.Utility
 
-*Assembly:* Dynamsoft.Utility.dll
 
 *Inheritance:* [ImageSourceAdapter]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-adapter.html) -> FileFetcher
 
@@ -31,7 +30,6 @@ public class FileFetcher : ImageSourceAdapter
 | [`SetPDFReadingParameter`](#setpdfreadingparameter) | Sets the parameters for reading PDF files. |
 | [`SetPages`](#setpages) | Sets the 0-based page indexes of a file (.tiff or .pdf) for barcode searching. |
 | [`HasNextImageToFetch`](#hasnextimagetofetch) | Determines whether there are more images left to fetch. |
-| [`Dispose`](#dispose) | Releases all resources used by current object. |
 
 ### FileFetcher
 
@@ -39,6 +37,7 @@ Default constructor and destructor of a `FileFetcher` object.
 
 ```csharp
 FileFetcher()
+FileFetcher(PDFReadingParameter pdfReadingParameter)
 ~FileFetcher()
 ```
 
@@ -48,7 +47,7 @@ Sets the file using a file path, file bytes or an `ImageData` object.
 
 ```csharp
 int SetFile(string path);
-int SetFile(byte[] pFileBytes);
+int SetFile(byte[] bytes);
 int SetFile(ImageData imageData);
 ```
 
@@ -56,7 +55,7 @@ int SetFile(ImageData imageData);
 
 `[in] path` The file path.
 
-`[in] pFileBytes`  The file bytes.
+`[in] bytes`  The file bytes.
 
 `[in] imageData` The image data object.
 
@@ -125,11 +124,3 @@ override bool HasNextImageToFetch()
 **Return Value**
 
 Returns true if there are more images left to fetch, false otherwise.
-
-### Dispose
-
-Releases all resources used by current object.
-
-```csharp
-override void Dispose()
-```

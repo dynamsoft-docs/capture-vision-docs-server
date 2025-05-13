@@ -38,8 +38,7 @@ class CCapturedResult
 | [`Release`](#release) | Decreases the reference count of the `CCapturedResult` object.|
 | [`GetDecodedBarcodesResult`](#getdecodedbarcodesresult) | Gets the decoded barcode items from the `CCapturedResult`.|
 | [`GetRecognizedTextLinesResult`](#getrecognizedtextlinesresult) | Gets the recognized text line items from the `CCapturedResult`.|
-| [`GetDetectedQuadsResult`](#getdetectedquadsresult) | Gets the detected quads items from the `CCapturedResult`.|
-| [`GetNormalizedImagesResult`](#getnormalizedimagesresult) | Gets the normalized images items from the `CCapturedResult`.|
+| [`GetProcessedDocumentResult`](#getprocesseddocumentresult) | Gets the processed document items from the `CCapturedResult`.|
 | [`GetParsedResult`](#getparsedresult) | Gets the parsed result items from the `CCapturedResult`.|
 | [`AddItem`](#additem) | Add a specific item to the array in the `CCapturedResult`.|
 
@@ -252,17 +251,17 @@ Returns a pointer to the CRecognizedTextLinesResult object containing the recogn
 
 Do not forget to release the memory pointed to by the returned pointer.
 
-### GetDetectedQuadsResult
+### GetProcessedDocumentResult
 
-Gets the detected quads items from the `CCapturedResult`.
+Gets the processed document items from the `CCapturedResult`.
 
 ```cpp
-ddn::CDetectedQuadsResult* GetDetectedQuadsResult() const
+ddn::CProcessedDocumentResult* GetProcessedDocumentResult() const
 ```
 
 **Return value**
 
-Returns a pointer to the CDetectedQuadsResult object containing the detected quads items.
+Returns a pointer to the CProcessedDocumentResult object containing the processed document items.
 
 **Remarks**
 

@@ -4,6 +4,7 @@ title: ImageManager Class - Dynamsoft Utility Module .NET Edition API Reference
 description: Definition of ImageManager class in Dynamsoft Utility Module .NET Edition.
 keywords: image manager, drawing on image, .NET
 needAutoGenerateSidebar: true
+ignore: true
 ---
 
 # ImageManager
@@ -14,7 +15,6 @@ The `ImageManager` class is a utility class for managing and manipulating images
 
 *Namespace:* Dynamsoft.Utility
 
-*Assembly:* Dynamsoft.Utility.dll
 
 ```csharp
 public class ImageManager

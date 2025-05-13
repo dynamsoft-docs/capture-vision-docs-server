@@ -15,7 +15,6 @@ The `OriginalImageResultItem` class represents a captured original image result 
 
 *Namespace:* Dynamsoft.Core
 
-*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public class OriginalImageResultItem : CapturedResultItem
@@ -59,7 +58,7 @@ Returns the type of the captured result item.
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_dotnet_api }}core/enum-captured-result-item-type.html)
 
 ### GetReferenceItem
 

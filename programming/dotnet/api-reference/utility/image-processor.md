@@ -1,0 +1,208 @@
+---
+layout: default-layout
+title: class ImageProcessor - Dynamsoft Utility Module .NET Edition API Reference
+description: This page shows the .NET Edition of the class ImageProcessor in Dynamsoft Utility Module.
+keywords: image processor, .NET
+needAutoGenerateSidebar: true
+---
+
+# ImageProcessor
+
+The `ImageProcessor` class is a utility class for applying advanced processing on images.
+
+## Definition
+
+*Namespace:* Dynamsoft.Utility
+
+
+```csharp
+class ImageProcessor : IDisposable
+```
+
+## Methods
+
+| Method               | Description |
+|----------------------|-------------|
+| [`AdjustBrightness`](#adjustbrightness) | Adjusts the brightness of the image. |
+| [`AdjustContrast`](#adjustcontrast) | Adjusts the contrast of the image. |
+| [`ConvertToBinaryGlobal`](#converttobinaryglobal) | Converts the grayscale image to binary image using a global threshold. |
+| [`ConvertToBinaryLocal`](#converttobinarylocal) | Converts the grayscale image to binary image using local (adaptive) binarization. |
+| [`ConvertToGray`](#converttogray) | Converts colour image to grayscale. |
+| [`CropImage`](#cropimage) | Crops an image. |
+| [`FilterImage`](#filterimage) | Applies a specified image filter to an input image and returns the filtered result. |
+
+### AdjustBrightness
+
+Adjusts the brightness of the image.
+
+```csharp
+ImageData AdjustBrightness(ImageData imageData, int brightness)
+```
+
+**Parameters**
+
+`[in] imageData` The image data to be processed.
+
+`[in] brightness` Brightness adjustment value (positive values increase brightness, negative values decrease brightness). The value range is [-100, 100]
+
+**Return value**
+
+Returns an `ImageData` object representing the processed image.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+### AdjustContrast
+
+Adjusts the contrast of the image.
+
+```csharp
+ImageData AdjustContrast(ImageData imageData, int contrast)
+```
+
+**Parameters**
+
+`[in] imageData` The image data to be processed.
+
+`[in] contrast` Contrast adjustment value (positive values enhance, negative values reduce contrast). The value range is [-100, 100]
+
+**Return value**
+
+Returns an `ImageData` object representing the processed image.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+### ConvertToBinaryGlobal
+
+Converts the grayscale image to binary image using a global threshold.
+
+```csharp
+ImageData ConvertToBinaryGlobal(ImageData imageData, int threshold = -1, bool invert = false)
+```
+
+**Parameters**
+
+`[in] imageData` The image data to be processed.
+
+`[in] threshold` Global threshold for binarization(default is -1, automatic calculate the threshold).
+
+`[in] invert` If true, invert the binary image (black becomes white and white becomes black).
+
+**Return value**
+
+Returns an `ImageData` object representing the processed image.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+### ConvertToBinaryLocal
+
+Converts the grayscale image to binary image using local (adaptive) binarization.
+
+```csharp
+ImageData ConvertToBinaryLocal(ImageData imageData, int blockSize = 0, int compensation = 0, bool invert = false)
+```
+
+**Parameters**
+
+`[in] imageData` The image data to be processed.
+
+`[in] blockSize` Size of the block for local binarization(default is 0).
+
+`[in] compensation` Adjustment value to modify the threshold (default is 0).
+
+`[in] invert` If true, invert the binary image (black becomes white and white becomes black).
+
+**Return value**
+
+Returns an `ImageData` object representing the processed image.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+### ConvertToGray
+
+Converts colour image to grayscale.
+
+```csharp
+ImageData ConvertToGray(ImageData imageData, float R = 0.3f, float G = 0.59f, float B = 0.11f)
+```
+
+**Parameters**
+
+`[in] imageData` The image data to be processed.
+
+`[in] R` Weight for red channel.
+
+`[in] G` Weight for green channel.
+
+`[in] B` Weight for blue channel.
+
+**Return value**
+
+Returns an `ImageData` object representing the processed image.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+### CropImage
+
+Crops an image.
+
+```csharp
+ImageData CropImage(ImageData imageData, Rect rect, out int errorCode);
+ImageData CropImage(ImageData imageData, Quadrilateral quad, out int errorCode);
+```
+
+**Parameters**
+
+`[in] imageData` The image data to be cropped.
+
+`[in] rect` The rectangle to be cropped.
+
+`[in] quad` The quadrilateral to be cropped.
+
+`[out] errorCode` The error code.
+
+**Return value**
+
+Returns an `ImageData` object representing the cropped image.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+[Rect]({{ site.dcvb_dotnet_api }}core/basic-classes/rect.html)
+
+[Quadrilateral]({{ site.dcvb_dotnet_api }}core/basic-classes/quadrilateral.html)
+
+### FilterImage
+
+Applies a specified image filter to an input image and returns the filtered result.
+
+```csharp
+ImageData FilterImage(ImageData imageData, EnumFilterType filterType)
+```
+
+**Parameters**
+
+`[in] imageData` The image data to be processed.
+
+`[in] filterType` Specifies the type of filter to apply to the input image.
+
+**Return value**
+
+Returns an `ImageData` object representing the processed image.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+[EnumFilterType]({{ site.dcvb_dotnet_api }}utility/enum-filter-type.html)
+

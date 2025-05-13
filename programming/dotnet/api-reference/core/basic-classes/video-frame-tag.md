@@ -14,7 +14,6 @@ The `VideoFrameTag` class represents a video frame tag, which is a type of image
 
 *Namespace:* Dynamsoft.Core
 
-*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public class VideoFrameTag : ImageTag 
@@ -47,7 +46,7 @@ Returns the quality of the video frame.
 
 **See Also**
 
-[EnumVideoFrameQuality]({{ site.dcvb_enumerations }}core/video-frame-quality.html?lang=dotnet)
+[EnumVideoFrameQuality]({{ site.dcvb_dotnet_api }}core/enum-video-frame-quality.html)
 
 ### IsCropped
 
@@ -123,7 +122,7 @@ VideoFrameTag(EnumVideoFrameQuality quality, bool isCropped, Rect cropRegion, in
 
 **See Also**
 
-[EnumVideoFrameQuality]({{ site.dcvb_enumerations }}core/video-frame-quality.html?lang=dotnet)
+[EnumVideoFrameQuality]({{ site.dcvb_dotnet_api }}core/enum-video-frame-quality.html)
 
 ### GetImageTagType
 
@@ -139,7 +138,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[EnumImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=dotnet)
+[EnumImageTagType]({{ site.dcvb_dotnet_api }}core/enum-image-tag-type.html)
 
 ### Clone
 

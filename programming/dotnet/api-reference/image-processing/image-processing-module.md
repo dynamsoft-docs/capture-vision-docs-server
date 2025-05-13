@@ -15,10 +15,9 @@ The `ImageProcessingModule` class defines general functions in the image process
 
 *Namespace:* Dynamsoft.DIP
 
-*Assembly:* Dynamsoft.ImageProcessing.dll
 
 ```csharp
-public class ImageProcessingModule 
+public static class ImageProcessingModule 
 ```
 
 ## Methods

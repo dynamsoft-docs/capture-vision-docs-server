@@ -109,7 +109,7 @@ CCapturedResultArray* CaptureMultiPages(const unsigned char *fileBytes, int file
 
 **Return Value**
 
-Returns a pointer to a `CCapturedResult` object containing the captured items.
+Returns a pointer to a `CCapturedResultArray` object containing the captured items.
 
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |

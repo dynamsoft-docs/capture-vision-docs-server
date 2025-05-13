@@ -112,20 +112,20 @@ else:
 
 ### Build and Run the Project
 
-1. Save the ``mrz_scanner.py` file.
+1. Save the `mrz_scanner.py` file.
 2. Start terminal or command prompt and change to the target directory where `mrz_scanner.py` located in.
 3. Run the command
 
-```
-python mrz_scanner.py
-```
+    ```
+    python mrz_scanner.py
+    ```
 
 4. You will see the output message in the console like
 
-```
-Detected 1 MRZ Result(s).
-Result 1
-DocumentType: XXX
-DocumentID: XXX
-```
+    ```
+    Detected 1 MRZ Result(s).
+    Result 1
+    DocumentType: XXX
+    DocumentID: XXX
+    ```
 

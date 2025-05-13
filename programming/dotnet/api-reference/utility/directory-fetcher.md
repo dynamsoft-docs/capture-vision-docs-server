@@ -14,7 +14,6 @@ The `DirectoryFetcher` class is a utility class that retrieves a list of files f
 
 *Namespace:* Dynamsoft.Utility
 
-*Assembly:* Dynamsoft.Utility.dll
 
 *Inheritance:* [ProactiveImageSourceAdapter]({{ site.dcvb_dotnet_api }}utility/proactive-image-source-adapter.html) -> DirectoryFetcher
 
@@ -31,7 +30,6 @@ public class DirectoryFetcher : ProactiveImageSourceAdapter
 | [`SetPDFReadingParameter`](#setpdfreadingparameter) | Sets the parameters for reading PDF files. |
 | [`SetPages`](#setpages) | Sets the 0-based page indexes of a file (.tiff or .pdf) for barcode searching. |
 | [`HasNextImageToFetch`](#hasnextimagetofetch) | Determines whether there are more images left to fetch. |
-| [`Dispose`](#dispose) | Releases all resources used by current object. |
 
 ### DirectoryFetcher
 
@@ -117,11 +115,3 @@ override bool HasNextImageToFetch()
 **Return Value**
 
 Returns true if there are more images left to fetch, false otherwise.
-
-### Dispose
-
-Releases all resources used by current object.
-
-```csharp
-override void Dispose()
-```

@@ -15,10 +15,9 @@ The `LicenseModule` class defines general functions in the license module.
 
 *Namespace:* Dynamsoft.License
 
-*Assembly:* Dynamsoft.License.dll
 
 ```csharp
-public class LicenseModule 
+public static class LicenseModule 
 ```
 
 ## Methods

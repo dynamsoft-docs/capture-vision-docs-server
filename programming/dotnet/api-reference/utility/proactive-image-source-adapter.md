@@ -14,7 +14,6 @@ The `ProactiveImageSourceAdapter` class is an abstract class that extends the `I
 
 *Namespace:* Dynamsoft.Utility
 
-*Assembly:* Dynamsoft.Utility.dll
 
 *Inheritance:* [ImageSourceAdapter]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-adapter.html) -> ProactiveImageSourceAdapter
 
@@ -32,7 +31,6 @@ public class ProactiveImageSourceAdapter : ImageSourceAdapter
 | [`HasNextImageToFetch`](#hasnextimagetofetch) | Determines whether there are more images left to fetch. |
 | [`StartFetching`](#startfetching) | Starts fetching images. |
 | [`StopFetching`](#stopfetching) | Stops fetching images. |
-| [`Dispose`](#dispose) | Releases all resources used by current object. |
 
 ### FetchImage
 
@@ -102,10 +100,3 @@ Stops fetching images.
 override void StopFetching()
 ```
 
-### Dispose
-
-Releases all resources used by current object.
-
-```csharp
-override void Dispose()
-```

@@ -14,7 +14,6 @@ The `ImageSourceAdapter` class provides an interface for fetching and buffering 
 
 *Namespace:* Dynamsoft.Core
 
-*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public abstract class ImageSourceAdapter 
@@ -142,7 +141,7 @@ void SetBufferOverflowProtectionMode(EnumBufferOverflowProtectionMode mode)
 
 **See Also**
 
-[EnumBufferOverflowProtectionMode]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?lang=dotnet)
+[EnumBufferOverflowProtectionMode]({{ site.dcvb_dotnet_api }}core/enum-buffer-overflow-protection-mode.html)
 
 ### GetBufferOverflowProtectionMode
 
@@ -158,7 +157,7 @@ Returns the current buffer overflow protection mode.
 
 **See Also**
 
-[EnumBufferOverflowProtectionMode]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?lang=dotnet)
+[EnumBufferOverflowProtectionMode]({{ site.dcvb_dotnet_api }}core/enum-buffer-overflow-protection-mode.html)
 
 ### HasImage
 
@@ -240,7 +239,7 @@ void SetColourChannelUsageType(EnumColourChannelUsageType type)
 
 **See Also**
 
-[EnumColourChannelUsageType]({{ site.dcvb_enumerations}}core/colour-channel-usage-type.html?lang=dotnet)
+[EnumColourChannelUsageType]({{ site.dcvb_dotnet_api }}core/enum-colour-channel-usage-type.html)
 
 ### GetColourChannelUsageType
 
@@ -256,7 +255,7 @@ Returns the usage type of a color channel in images.
 
 **See Also**
 
-[EnumColourChannelUsageType]({{ site.dcvb_enumerations}}core/colour-channel-usage-type.html?lang=dotnet)
+[EnumColourChannelUsageType]({{ site.dcvb_dotnet_api }}core/enum-colour-channel-usage-type.html)
 
 ### SetErrorListener
 
