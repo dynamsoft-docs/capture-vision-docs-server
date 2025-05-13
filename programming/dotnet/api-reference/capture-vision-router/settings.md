@@ -18,6 +18,8 @@ needGenerateH3Content: false
 | [`GetSimplifiedSettings`](#getsimplifiedsettings) | Retrieves a `SimplifiedCaptureVisionSettings` object for a specific `CaptureVisionTemplate`. |
 | [`UpdateSettings`](#updatesettings)               | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.             |
 | [`ResetSettings`](#resetsettings)                 | Resets all templates to factory settings.                                                    |
+| [`GetParameterTemplateCount`](#getparametertemplatecount)  | Retrieves the total number of available parameter templates.                                 |
+| [`GetParameterTemplateName`](#getparametertemplatename)    | Retrieves the name of a specific parameter template by its index.                            |
 
 ## InitSettings
 
@@ -225,3 +227,33 @@ Returns an error code. Zero indicates success.
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |
 | EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
+
+## GetParameterTemplateCount
+
+Retrieves the total number of available parameter templates.
+
+```csharp
+int GetParameterTemplateCount()
+```
+
+**Return value**
+
+Returns an integer representing the count of parameter templates.
+
+## GetParameterTemplateName
+
+Retrieves the name of a specific parameter template by its index.
+
+```csharp
+public int GetParameterTemplateName(int index, out string nameBuffer)
+```
+
+**Parameters**
+
+`[in] index` The index of the parameter template in the array.
+
+`[in, out] nameBuffer` A pre-allocated buffer provided by the caller. The name of the parameter template will be copied into this buffer.
+
+**Return value**
+
+Returns an error code. Zero indicates success.

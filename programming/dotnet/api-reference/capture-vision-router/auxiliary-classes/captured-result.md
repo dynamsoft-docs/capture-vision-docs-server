@@ -14,10 +14,9 @@ The `CapturedResult` class represents the result of a capture operation on an im
 
 *Namespace:* Dynamsoft.CVR
 
-*Assembly:* Dynamsoft.CaptureVisionRouter.dll
 
 ```csharp
-public abstract class CapturedResult 
+public class CapturedResult : CapturedResultBase, IEnumerable<CapturedResultItem> 
 ```
 
 ## Methods
@@ -32,8 +31,7 @@ public abstract class CapturedResult
 | [`GetErrorString`](#geterrorstring) | Gets the error message of the capture operation.|
 | [`GetDecodedBarcodesResult`](#getdecodedbarcodesresult) | Gets the decoded barcode items from the `CapturedResult`.|
 | [`GetRecognizedTextLinesResult`](#getrecognizedtextlinesresult) | Gets the recognized text line items from the `CapturedResult`.|
-| [`GetDetectedQuadsResult`](#getdetectedquadsresult) | Gets the detected quads items from the `CapturedResult`.|
-| [`GetNormalizedImagesResult`](#getnormalizedimagesresult) | Gets the normalized images items from the `CapturedResult`.|
+| [`GetProcessedDocumentResult`](#getprocesseddocumentresult) | Gets the processed document items from the `CapturedResult`.|
 | [`GetParsedResult`](#getparsedresult) | Gets the parsed result items from the `CapturedResult`.|
 
 ### GetOriginalImageHashId
@@ -106,7 +104,7 @@ Returns the error code of the capture operation.
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_dotnet_api }}core/enum-error-code.html)
 
 ### GetErrorString
 
@@ -152,37 +150,21 @@ Returns a `RecognizedTextLinesResult` object containing the recognized text line
 
 [RecognizedTextLinesResult]({{ site.dlr_dotnet_api }}recognized-text-lines-result.html)
 
-### GetDetectedQuadsResult
+### GetProcessedDocumentResult
 
-Gets the detected quads items from the `CapturedResult`.
+Gets the processed document items from the `CapturedResult`.
 
 ```csharp
-abstract DetectedQuadsResult GetDetectedQuadsResult()
+public ProcessedDocumentResult GetProcessedDocumentResult()
 ```
 
 **Return Value**
 
-Returns a `DetectedQuadsResult` object containing the detected quads items.
+Returns a `ProcessedDocumentResult` object containing the processed document items.
 
 **See Also**
 
-[DetectedQuadsResult]({{ site.ddn_dotnet_api }}detected-quads-result.html)
-
-### GetNormalizedImagesResult
-
-Gets the normalized images items from the `CapturedResult`.
-
-```csharp
-abstract NormalizedImagesResult GetNormalizedImagesResult()
-```
-
-**Return Value**
-
-Returns a `NormalizedImagesResult` object containing the normalized images items.
-
-**See Also**
-
-[NormalizedImagesResult]({{ site.ddn_dotnet_api }}normalized-images-result.html)
+[ProcessedDocumentResult]({{ site.ddn_dotnet_api }}processed-document-result.html)
 
 ### GetParsedResult
 

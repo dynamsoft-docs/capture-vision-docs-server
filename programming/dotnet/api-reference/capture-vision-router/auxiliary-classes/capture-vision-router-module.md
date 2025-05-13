@@ -15,7 +15,6 @@ The `CaptureVisionRouterModule` class defines general functions in the capture v
 
 *Namespace:* Dynamsoft.CVR
 
-*Assembly:* Dynamsoft.CaptureVisionRouter.dll
 
 ```csharp
 public class CaptureVisionRouterModule 

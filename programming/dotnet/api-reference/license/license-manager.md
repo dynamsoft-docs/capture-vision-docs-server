@@ -14,10 +14,9 @@ The `LicenseManager` class provides a set of APIs to manage SDK licensing.
 
 *Namespace:* Dynamsoft.License
 
-*Assembly:* Dynamsoft.License.dll
 
 ```csharp
-public class LicenseManager 
+public static class LicenseManager 
 ```
 
 ## Methods
@@ -35,12 +34,12 @@ public class LicenseManager
 Initializes the license using a license key.
 
 ```csharp
-static int InitLicense(string pLicense, out string errorMsg)
+static int InitLicense(string license, out string errorMsg)
 ```
 
 **Parameters**
 
-`[in] pLicense` The license key as a string.
+`[in] license` The license key as a string.
 
 `[out] errorMsg` The detailed error message.
 
@@ -50,7 +49,7 @@ Returns 0 if the license is initialized successfully, a negative value indicatin
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_dotnet_api }}core/enum-error-code.html)
 
 ### SetDeviceFriendlyName
 
@@ -74,7 +73,7 @@ This function must be called before function `InitLicense` to ensure correct fun
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_dotnet_api }}core/enum-error-code.html)
 
 ### SetMaxConcurrentInstanceCount
 
@@ -98,14 +97,14 @@ This function must be called before function `InitLicense` to ensure correct fun
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_dotnet_api }}core/enum-error-code.html)
 
 ### GetDeviceUUID
 
 Gets the unique identifier of the device.
 
 ```csharp
-static int GetDeviceUUID(int uuidGenerationMethod, out string uuidBuffer)
+static int GetDeviceUUID(int uuidGenerationMethod, out string uuid)
 ```
 
 **Parameters**
@@ -115,7 +114,7 @@ static int GetDeviceUUID(int uuidGenerationMethod, out string uuidBuffer)
 - 1: Generates UUID with random values.
 - 2: Generates UUID based on hardware info.
 
-`[out] uuidBuffer` The unique identifier of the device.
+`[out] uuid` The unique identifier of the device.
 
 **Return Value**
 
@@ -147,7 +146,7 @@ This function must be called before function `InitLicense` to ensure correct fun
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_dotnet_api }}core/enum-error-code.html)
 
 ## Code Snippet
 

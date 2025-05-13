@@ -15,7 +15,6 @@ The `IImageSourceErrorListener` interface defines a listener for receiving error
 
 *Namespace:* Dynamsoft.Core
 
-*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public interface IImageSourceErrorListener 
@@ -39,8 +38,8 @@ void OnErrorReceived(int errorCode, string errorMessage)
 
 `[in] errorCode` The integer error code indicating the type of error.
 
-`[in] errorMessage` A C-style string containing the error message providing additional information about the error.
+`[in] errorMessage` A string containing the error message providing additional information about the error.
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_dotnet_api }}core/enum-error-code.html)

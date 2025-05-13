@@ -14,7 +14,6 @@ The `FileImageTag` class represents an image tag that is associated with a file.
 
 *Namespace:* Dynamsoft.Core
 
-*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public class FileImageTag : ImageTag
@@ -24,12 +23,28 @@ public class FileImageTag : ImageTag
 
 | Method               | Description |
 |----------------------|-------------|
+| [`FileImageTag`](#FileImageTag-constructor) | The constructor of the FileImageTag class. |
 | [`GetFilePath`](#getfilepath) | Gets the file path of the image.|
 | [`GetPageNumber`](#getpagenumber) | Gets the page number of the current image in the Multi-Page image file. |
 | [`GetTotalPages`](#gettotalpages) | Gets the total page number of the Multi-Page image file. |
-| [`FileImageTag`](#FileImageTag-constructor) | The constructor of the FileImageTag class. |
 | [`GetImageTagType`](#getimagetagtype) | Gets the type of the image tag. |
 | [`Clone`](#clone) | Creates a copy of the image tag. |
+
+### FileImageTag Constructor
+
+The constructor of the `FileImageTag` class.
+
+```csharp
+FileImageTag(string filePath, int pageNumber, int totalPages)
+```
+
+**Parameters**
+
+`[in] filePath` The file path of the image tag.
+
+`[in] pageNumber` The page number of the current image in the Multi-Page image file.
+
+`[in] totalPages` The total page number of the Multi-Page image file.
 
 ### GetFilePath
 
@@ -67,22 +82,6 @@ int GetTotalPages()
 
 Returns the total page number of the Multi-Page image file.
 
-### FileImageTag Constructor
-
-The constructor of the `FileImageTag` class.
-
-```csharp
-FileImageTag(string filePath, int pageNumber, int totalPages)
-```
-
-**Parameters**
-
-`[in] filePath` The file path of the image tag.
-
-`[in] pageNumber` The page number of the current image in the Multi-Page image file.
-
-`[in] totalPages` The total page number of the Multi-Page image file.
-
 ### GetImageTagType
 
 Gets the type of the image tag.
@@ -97,7 +96,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[EnumImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=dotnet)
+[EnumImageTagType]({{ site.dcvb_dotnet_api }}core/enum-image-tag-type.html)
 
 ### Clone
 

@@ -15,7 +15,7 @@ The `IntermediateResultReceiver` class is responsible for receiving intermediate
 *Module:* dynamsoft_capture_vision_router
 
 ```python
-class IntermediateResultReceiver(AbstractIntermediateResultReceiver) 
+class IntermediateResultReceiver: 
 ```
 
 ## Methods Summary

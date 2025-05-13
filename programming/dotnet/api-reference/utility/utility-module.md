@@ -15,10 +15,9 @@ The `UtilityModule` class defines general functions in the utility module.
 
 *Namespace:* Dynamsoft.Utility
 
-*Assembly:* Dynamsoft.Utility.dll
 
 ```csharp
-public class UtilityModule 
+public static class UtilityModule 
 ```
 
 ## Methods
