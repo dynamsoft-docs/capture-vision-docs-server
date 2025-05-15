@@ -17,7 +17,7 @@ needGenerateH3Content: false
 
 ### Fixed
 
-- Resolved a performance issue where processing certain specific images could cause unusually high CPU and memory usage.
+- Resolved a performance issue that could cause unusually high CPU and memory usage in some cases.
 
 ### Changed
 
