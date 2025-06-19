@@ -206,7 +206,7 @@ class EnumErrorCode(IntEnum):
     #[Label Recognizer] No license found.
     EC_LABEL_RECOGNIZER_LICENSE_NOT_FOUND = -40103
     #-50000~-59999: DDN error code
-    #The quardrilateral is invalid
+    #The quadrilateral is invalid
     EC_QUADRILATERAL_INVALID = -50057
     #[Document Normalizer] No license found.
     EC_DOCUMENT_NORMALIZER_LICENSE_NOT_FOUND = -50058
