@@ -177,7 +177,7 @@ public enum EnumErrorCode
     /** -50000~-59999: DDN error code. */
     /**No content has been detected. */
     EC_CONTENT_NOT_FOUND = -50056,
-    /*The quardrilateral is invalid. */
+    /*The quadrilateral is invalid. */
     EC_QUADRILATERAL_INVALID = -50057,
     /*[Document Normalizer] No license found.*/
     EC_DOCUMENT_NORMALIZER_LICENSE_NOT_FOUND = -50058,
