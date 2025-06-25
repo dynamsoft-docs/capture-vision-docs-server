@@ -635,7 +635,7 @@ virtual void OnComplementedBarcodeImageUnitReceived(dbr::intermediate_results::C
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
-## OnShortLinesUnitReceived
+### OnShortLinesUnitReceived
 
 Called when short lines units have been received.
 

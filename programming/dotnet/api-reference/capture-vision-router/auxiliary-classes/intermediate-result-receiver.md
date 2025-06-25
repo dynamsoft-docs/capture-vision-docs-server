@@ -634,7 +634,7 @@ virtual void OnComplementedBarcodeImageUnitReceived(ComplementedBarcodeImageUnit
 
 [IntermediateResultExtraInfo]({{ site.dcvb_dotnet_api }}core/intermediate-results/intermediate-result-extra-info.html)
 
-## OnShortLinesUnitReceived
+### OnShortLinesUnitReceived
 
 Called when short lines units have been received.
 
