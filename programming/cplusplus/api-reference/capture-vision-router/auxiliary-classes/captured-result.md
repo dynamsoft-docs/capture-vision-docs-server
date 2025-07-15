@@ -267,22 +267,6 @@ Returns a pointer to the CProcessedDocumentResult object containing the processe
 
 Do not forget to release the memory pointed to by the returned pointer.
 
-### GetNormalizedImagesResult
-
-Gets the normalized images items from the `CCapturedResult`.
-
-```cpp
-ddn::CNormalizedImagesResult* GetNormalizedImagesResult() const
-```
-
-**Return value**
-
-Returns a pointer to the CNormalizedImagesResult object containing the normalized images items.
-
-**Remarks**
-
-Do not forget to release the memory pointed to by the returned pointer.
-
 ### GetParsedResult
 
 Gets the parsed result items from the `CCapturedResult`.

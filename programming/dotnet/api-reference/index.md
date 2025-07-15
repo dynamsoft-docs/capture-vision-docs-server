@@ -126,6 +126,7 @@ needAutoGenerateSidebar: false
 
 ### Classes
 
+- [`CodeType`]({{ site.dcp_dotnet_api }}code-type.html)
 - [`CodeParserModule`]({{ site.dcp_dotnet_api }}code-parser-module.html)
 - [`ParsedResultItem`]({{ site.dcp_dotnet_api }}parsed-result-item.html)
 - [`ParsedResult`]({{ site.dcp_dotnet_api }}parsed-result.html)

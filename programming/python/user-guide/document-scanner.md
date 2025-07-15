@@ -30,7 +30,7 @@ To find out whether your environment is supported, please read the [System Requi
 Start terminal or command prompt to run the following command:
 
 ```
-pip install dynamsoft_capture_vision_bundle
+pip install dynamsoft-capture-vision-bundle
 ```
 
 ## Build Your Own Application

@@ -29,6 +29,7 @@ class ImageProcessor : IDisposable
 | [`ConvertToBinaryLocal`](#converttobinarylocal) | Converts the grayscale image to binary image using local (adaptive) binarization. |
 | [`ConvertToGray`](#converttogray) | Converts colour image to grayscale. |
 | [`CropImage`](#cropimage) | Crops an image. |
+| [`CropAndDeskewImage`](#cropanddeskewimage) | Crops and deskews a region from the input image based on the specified quadrilateral. |
 | [`FilterImage`](#filterimage) | Applies a specified image filter to an input image and returns the filtered result. |
 
 ### AdjustBrightness
@@ -157,6 +158,8 @@ Crops an image.
 
 ```csharp
 ImageData CropImage(ImageData imageData, Rect rect, out int errorCode);
+
+//Announced as deprecated. Use CropAndDeskewImage instead.
 ImageData CropImage(ImageData imageData, Quadrilateral quad, out int errorCode);
 ```
 
@@ -179,6 +182,44 @@ Returns an `ImageData` object representing the cropped image.
 [ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 [Rect]({{ site.dcvb_dotnet_api }}core/basic-classes/rect.html)
+
+[Quadrilateral]({{ site.dcvb_dotnet_api }}core/basic-classes/quadrilateral.html)
+
+### CropAndDeskewImage
+
+Crops and deskews a region from the input image based on the specified quadrilateral.
+
+```cpp
+ImageData CropAndDeskewImage(ImageData imageData, Quadrilateral quad, int dstWidth = 0, int dstHeight = 0, int padding = 0)
+ImageData CropAndDeskewImage(ImageData imageData, Quadrilateral quad, int dstWidth, int dstHeight, int padding, out int errorCode)
+```
+
+**Parameters**
+
+`[in] imageData` The source image to be cropped and deskewed.
+
+`[in] quad` A quadrilateral defining the region of interest to extract.
+
+`[in] dstWidth` (Optional) The width of the output image. If set to 0, the width and height will be automatically calculated.
+
+`[in] dstHeight` (Optional) The height of the output image. If set to 0, the width and height will be automatically calculated.
+
+`[in] padding` (Optional) Extra padding (in pixels) applied to expand the boundaries of the extracted region. Default is 0.
+
+`[out] errorCode` The error code.
+
+**Return value**
+
+Returns an `ImageData` object representing the cropped image.
+
+**Remarks**
+
+The function will automatically calculate the perspective transform matrix and use it to crop the image.  
+If the specified quadrilateral exceeds the image boundaries, white will be used to fill the exceeding area.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 [Quadrilateral]({{ site.dcvb_dotnet_api }}core/basic-classes/quadrilateral.html)
 

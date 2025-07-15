@@ -28,6 +28,7 @@ class ImageProcessor:
 | [`convert_to_binary_local`](#convert_to_binary_local) | Converts the grayscale image to binary image using local (adaptive) binarization. |
 | [`convert_to_gray`](#convert_to_gray) | Converts colour image to grayscale. |
 | [`crop_image`](#crop_image) | Crops an image. |
+| [`crop_and_deskew_image`](#crop_and_deskew_image) | Crops and deskews a region from the input image based on the specified quadrilateral. |
 | [`filter_image`](#filter_image) | Applies a specified image filter to an input image and returns the filtered result. |
 
 ### adjust_brightness
@@ -162,17 +163,60 @@ def crop_image(self, image_data:ImageData, crop_form: Union[Rect,Quadrilateral])
 
 `image_data` The image data to be cropped.
 
-`crop_form` The cropping form
+`crop_form` The cropping form.
 
 **Return value**
 
-Returns an `ImageData` object representing the cropped image.
+Returns a tuple containing following elements:
+- `error_code` <*int*>: The error code indicating the status of the operation.
+- `image_data` <*ImageData*>: An `ImageData` object representing the processed image.
 
 **See Also**
 
 [ImageData]({{ site.dcvb_python_api }}core/basic-classes/image-data.html)
 
 [Rect]({{ site.dcvb_python_api }}core/basic-classes/rect.html)
+
+[Quadrilateral]({{ site.dcvb_python_api }}core/basic-classes/quadrilateral.html)
+
+**Remarks**
+
+`crop_image` with `Quadrilateral` is announced as deprecated since version 3.0.4000. Use `crop_and_deskew_image` instead.
+
+### crop_and_deskew_image
+
+Crops and deskews a region from the input image based on the specified quadrilateral.
+
+```cpp
+def crop_and_deskew_image(self, image_data: ImageData, crop_form: Quadrilateral, destination_width: int = 0, destination_height: int = 0, padding: int = 0) -> Tuple[int, ImageData]:
+```
+
+**Parameters**
+
+`[in] image_data` The source image to be cropped and deskewed.
+
+`[in] crop_form` A quadrilateral defining the region of interest to extract.
+
+`[in] destination_width` (Optional) The width of the output image. If set to 0, the width and height will be automatically calculated.
+
+`[in] destination_height` (Optional) The height of the output image. If set to 0, the width and height will be automatically calculated.
+
+`[in] padding` (Optional) Extra padding (in pixels) applied to expand the boundaries of the extracted region. Default is 0.
+
+**Return value**
+
+Returns a tuple containing following elements:
+- `error_code` <*int*>: The error code indicating the status of the operation.
+- `image_data` <*ImageData*>: An `ImageData` object representing the processed image.
+
+**Remarks**
+
+The function will automatically calculate the perspective transform matrix and use it to crop the image.  
+If the specified quadrilateral exceeds the image boundaries, white will be used to fill the exceeding area.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_python_api }}core/basic-classes/image-data.html)
 
 [Quadrilateral]({{ site.dcvb_python_api }}core/basic-classes/quadrilateral.html)
 

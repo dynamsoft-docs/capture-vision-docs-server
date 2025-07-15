@@ -132,6 +132,16 @@ class EnumErrorCode(IntEnum):
     EC_RESULT_TYPE_MISMATCH_IRREPLACEABLE = -10074
     #The license is initialized successfully but detected invalid content in your key.
     EC_LICENSE_WARNING = -10076
+    #One or more unsupported JSON keys were encountered and ignored from the template.
+    EC_UNSUPPORTED_JSON_KEY_WARNING = -10077
+    #Model file is not found
+    EC_MODEL_FILE_NOT_FOUND = -10078
+    #[PDF] No license found.
+    EC_PDF_LICENSE_NOT_FOUND = -10079
+    #The rectangle is invalid.
+    EC_RECT_INVALID = -10080
+    #The template version is incompatible. Please use a compatible template.
+    EC_TEMPLATE_VERSION_INCOMPATIBLE = -10081
     # -20000~-29999: DLS license error code. 
     #No license.
     EC_NO_LICENSE = -20000
@@ -157,6 +167,10 @@ class EnumErrorCode(IntEnum):
     EC_LICENSE_VERSION_NOT_MATCH = -20011
     #Online license validation failed due to network issues. Using cached license information for validation
     EC_LICENSE_CACHE_USED = -20012
+    #License authentication failed: quota exceeded.
+    EC_LICENSE_AUTH_QUOTA_EXCEEDED = -20013
+    #License restriction: the number of results has exceeded the allowed limit.
+    EC_LICENSE_RESULTS_LIMIT_EXCEEDED = -20014
     #Failed to reach License Server.
     EC_FAILED_TO_REACH_DLS = -20200
     #-30000~-39999: DBR error code
