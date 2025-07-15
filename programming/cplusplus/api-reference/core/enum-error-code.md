@@ -3,10 +3,6 @@ layout: default-layout
 title: ErrorCode - Dynamsoft Core Enumerations
 description: The enumeration ErrorCode of Dynamsoft Core describes all error codes.
 keywords: Error code
-needGenerateH3Content: true
-needAutoGenerateSidebar: true
-noTitleIndex: true
-breadcrumbText: ErrorCode
 codeAutoHeight: true
 ---
 
@@ -138,6 +134,8 @@ typedef enum ErrorCode
     EC_PDF_LICENSE_NOT_FOUND = -10079,
     /**The rectangle is invalid.*/
     EC_RECT_INVALID = -10080,
+    /*The template version is incompatible. Please use a compatible template.*/
+    EC_TEMPLATE_VERSION_INCOMPATIBLE = -10081,
     /** -20000~-29999: DLS license error code. */
     /** No license. */
     EC_NO_LICENSE = -20000,
@@ -157,6 +155,10 @@ typedef enum ErrorCode
     EC_TRIAL_LICENSE = -20010,
     /**Online license validation failed due to network issues. Using cached license information for validation*/
     EC_LICENSE_CACHE_USED = -20012,
+    /*License authentication failed: quota exceeded.*/
+    EC_LICENSE_AUTH_QUOTA_EXCEEDED = -20013,
+    /**License restriction: the number of results has exceeded the allowed limit.*/
+    EC_LICENSE_RESULTS_LIMIT_EXCEEDED = -20014,
     /** Failed to reach License Server. */
     EC_FAILED_TO_REACH_DLS = -20200,
     /** -30000~-39999: DBR error code. */

@@ -23,10 +23,38 @@ class ImageIO : IDisposable
 
 | Method               | Description |
 |----------------------|-------------|
+| [`ReadFromBase64String`](#readfrombase64string) | Reads an image from a base64 encoded string. |
 | [`ReadFromFile`](#readfromfile) | Reads an image from a file. |
 | [`ReadFromMemory`](#readfrommemory) | Reads an image from a file in memory. |
+| [`SaveToBase64String`](#savetobase64string) | Saves an image to a base64 encoded string. |
 | [`SaveToFile`](#savetofile) | Saves an image to a file. |
 | [`SaveToMemory`](#savetomemory) | Saves an image to a file in memory. |
+
+### ReadFromBase64String
+
+Reads an image from a base64 encoded string.
+
+```csharp
+ImageData ReadFromBase64String(string base64String, out int errorCode)
+```
+
+**Parameters**
+
+`[in] base64String` A base64 encoded string that represents an image.
+
+`[out] errorCode` The error code.
+
+**Return value**
+
+Returns an `ImageData` object representing the image if succeeds, null otherwise.
+
+**Remarks**
+
+If the file format is gif, pdf or tiff, we read the first page of the image file.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 ### ReadFromFile
 
@@ -44,11 +72,11 @@ ImageData ReadFromFile(string filePath, out int errorCode)
 
 **Return value**
 
-Returns an `ImageData` object representing the image if succeeds, nullptr otherwise.
+Returns an `ImageData` object representing the image if succeeds, null otherwise.
 
 **Remarks**
 
-If the file format is gif, pdf or tiff, we read the first page of the image file. The caller is responsible for freeing the memory allocated for the image.
+If the file format is gif, pdf or tiff, we read the first page of the image file.
 
 **See Also**
 
@@ -70,15 +98,46 @@ ImageData ReadFromMemory(byte[] imageFileBytes, out int errorCode)
 
 **Return value**
 
-Returns an `ImageData` object representing the image if succeeds, nullptr otherwise.
+Returns an `ImageData` object representing the image if succeeds, null otherwise.
 
 **Remarks**
 
-If the file format is gif, pdf or tiff, we read the first page of the image file. The caller is responsible for freeing the memory allocated for the image.
+If the file format is gif, pdf or tiff, we read the first page of the image file.
 
 **See Also**
 
 [ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+### SaveToBase64String
+
+Saves an image to a base64 encoded string.
+
+```csharp
+int SaveToBase64String(ImageData imageData, EnumImageFileFormat imageFormat, out string base64String)
+```
+
+**Parameters**
+
+`[in] imageData` The image data to be saved.
+
+`[in] imageFormat` The image file format to be saved.
+
+`[in] base64String` A base64 encoded string that represents an image.
+
+**Return value**
+
+Returns an integer indicating the success of the operation. 0 indicates success, while a non-zero value indicates an error occurred.
+
+| Error Code | Value | Description |
+| :--------- | :---- | :---------- |
+| EC_NULL_POINTER | -10002 | The ImageData object is null. |
+| EC_IMGAE_DATA_INVALID | -10069 | The input ImageData object contains invalid parameter(s). |
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+[ImageFileFormat]({{ site.dcvb_dotnet_api }}core/enum-image-file-format.html)
 
 ### SaveToFile
 

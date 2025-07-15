@@ -24,10 +24,38 @@ class CImageIO
 
 | Method               | Description |
 |----------------------|-------------|
+| [`ReadFromBase64String`](#readfrombase64string) | Reads an image from a base64 encoded string. |
 | [`ReadFromFile`](#readfromfile) | Reads an image from a file. |
 | [`ReadFromMemory`](#readfrommemory) | Reads an image from a file in memory. |
+| [`SaveToBase64String`](#savetobase64string) | Saves an image to a base64 encoded string. |
 | [`SaveToFile`](#savetofile) | Saves an image to a file. |
 | [`SaveToMemory`](#savetomemory) | Saves an image to a file in memory. |
+
+### ReadFromBase64String
+
+Reads an image from a base64 encoded string.
+
+```cpp
+CImageData* ReadFromBase64String(const char* base64String, int* errorCode = NULL);
+```
+
+**Parameters**
+
+`[in] base64String` A base64 encoded string that represents an image.
+
+`[out] errorCode` The error code.
+
+**Return value**
+
+Returns a pointer to a `CImageData` object representing the image if succeeds, nullptr otherwise.
+
+**Remarks**
+
+If the file format is gif, pdf or tiff, we read the first page of the image file. The caller is responsible for freeing the memory allocated for the image.
+
+**See Also**
+
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### ReadFromFile
 
@@ -69,6 +97,9 @@ CImageData* ReadFromMemory(const unsigned char* imageFileBytes, int imageFileByt
 
 `[in] imageFileBytesLength` The length of the image file in bytes.
 
+`[out] pErrorCode` The The error code.
+
+
 **Return value**
 
 Returns a pointer to a `CImageData` object representing the image if succeeds, nullptr otherwise.
@@ -80,6 +111,38 @@ If the file format is gif, pdf or tiff, we read the first page of the image file
 **See Also**
 
 [CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
+
+### SaveToBase64String
+
+Saves an image to a base64 encoded string.
+
+```cpp
+int SaveToBase64String(const CImageData* imageData, ImageFileFormat imageFormat, char** base64String);
+```
+
+**Parameters**
+
+`[in] imageData` A pointer to the image data to be saved.
+
+`[in] imageFormat` The image file format to be saved.
+
+`[in] base64String` A base64 encoded string that represents an image. The string is allocated by the SDK and must be freed by calling CCoreModule::FreeBytes.
+
+**Return value**
+
+Returns an integer indicating the success of the operation. 0 indicates success, while a non-zero value indicates an error occurred.
+
+| Error Code | Value | Description |
+| :--------- | :---- | :---------- |
+| EC_NULL_POINTER | -10002 | The ImageData object is null. |
+| EC_IMGAE_DATA_INVALID | -10069 | The input ImageData object contains invalid parameter(s). |
+
+**See Also**
+
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
+
+[ImageFileFormat]({{ site.dcvb_cpp_api }}core/enum-image-file-format.html)
+
 
 ### SaveToFile
 

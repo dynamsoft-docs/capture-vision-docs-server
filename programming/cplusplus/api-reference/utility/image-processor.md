@@ -30,6 +30,7 @@ class CImageProcessor
 | [`ConvertToBinaryLocal`](#converttobinarylocal) | Converts the grayscale image to binary image using local (adaptive) binarization. |
 | [`ConvertToGray`](#converttogray) | Converts colour image to grayscale. |
 | [`CropImage`](#cropimage) | Crops an image. |
+| [`CropAndDeskewImage`](#cropanddeskewimage) | Crops and deskews a region from the input image based on the specified quadrilateral. |
 | [`FilterImage`](#filterimage) | Applies a specified image filter to an input image and returns the filtered result. |
 
 ### AdjustBrightness
@@ -158,6 +159,8 @@ Crops an image.
 
 ```cpp
 CImageData* CropImage(const CImageData* pImageData, const CRect& rect, int* pErrorCode = NULL)
+
+//Announced as deprecated. Use CropAndDeskewImage instead.
 CImageData* CropImage(const CImageData* pImageData, const CQuadrilateral& quad, int* pErrorCode = NULL)
 ```
 
@@ -167,7 +170,7 @@ CImageData* CropImage(const CImageData* pImageData, const CQuadrilateral& quad, 
 
 `[in] rect` The rectangle to be cropped.
 
-`[in] quads` The quadrilateral to be cropped.
+`[in] quad` The quadrilateral to be cropped.
 
 `[out] pErrorCode` The error code.
 
@@ -180,6 +183,44 @@ Returns a pointer to a `CImageData` object representing the cropped image.
 [CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 [CRect]({{ site.dcvb_cpp_api }}core/basic-structures/rect.html)
+
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
+
+### CropAndDeskewImage
+
+Crops and deskews a region from the input image based on the specified quadrilateral.
+
+```cpp
+CImageData* CropAndDeskewImage(const CImageData* imageData, const CQuadrilateral& quad, int dstWidth = 0, int dstHeight = 0, int padding = 0, int* errorCode = NULL);
+```
+
+**Parameters**
+
+`[in] imageData` A pointer to the source image to be cropped and deskewed.
+
+`[in] quad` A quadrilateral defining the region of interest to extract.
+
+`[in] dstWidth` (Optional) The width of the output image. If set to 0, the width and height will be automatically calculated.
+
+`[in] dstHeight` (Optional) The height of the output image. If set to 0, the width and height will be automatically calculated.
+
+`[in] padding` (Optional) Extra padding (in pixels) applied to expand the boundaries of the extracted region. Default is 0.
+
+`[out] errorCode` The error code.
+
+**Return value**
+
+Returns a pointer to a `CImageData` object representing the cropped image.
+
+**Remarks**
+
+The caller is responsible for freeing the memory allocated for the cropped image.  
+The function will automatically calculate the perspective transform matrix and use it to crop the image.  
+If the specified quadrilateral exceeds the image boundaries, white will be used to fill the exceeding area.
+
+**See Also**
+
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 [CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 

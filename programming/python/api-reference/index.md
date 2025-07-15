@@ -131,6 +131,7 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
+- [`EnumCodeType`]({{ site.dcp_python_api }}enum-code-type.html)
 - [`EnumMappingStatus`]({{ site.dcp_python_api }}enum-mapping-status.html)
 - [`EnumValiadtionStatus`]({{ site.dcp_python_api }}enum-validation-status.html)
 

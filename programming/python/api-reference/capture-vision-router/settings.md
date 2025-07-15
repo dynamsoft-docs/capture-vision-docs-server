@@ -18,6 +18,8 @@ needGenerateH3Content: false
 | [`get_simplified_settings`](#get_simplified_settings) | Retrieves a `SimplifiedCaptureVisionSettings` object for a specific `CaptureVisionTemplate`. |
 | [`update_settings`](#update_settings)               | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.             |
 | [`reset_settings`](#reset_settings)                 | Resets all templates to factory settings.                                                    |
+| [`get_parameter_template_count`](#get_parameter_template_count)  | Gets the total number of available parameter templates.                                 |
+| [`get_parameter_template_name`](#get_parameter_template_name)    | Gets the name of a specific parameter template by its index.                            |
 
 ## init_settings
 
@@ -212,4 +214,34 @@ Returns a tuple containing following elements:
 **See Also**
 
 [EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
+
+## get_parameter_template_count
+
+Gets the total number of available parameter templates.
+
+```python
+def get_parameter_template_count(self) -> int:
+```
+
+**Return value**
+
+Returns an integer representing the count of parameter templates.
+
+## get_parameter_template_name
+
+Gets the name of a specific parameter template by its index.
+
+```python
+def get_parameter_template_name(self, index: int) -> Tuple[int, str]:
+```
+
+**Parameters**
+
+`index` The index of the parameter template to get.
+
+**Return value**
+
+Returns a tuple containing following elements:
+- `error_code` <*int*>: The error code indicating the status of the operation.
+- `template_name` <*str*>: The name of the parameter template.
 

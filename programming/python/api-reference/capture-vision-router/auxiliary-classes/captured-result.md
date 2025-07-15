@@ -30,8 +30,7 @@ class CapturedResult
 | [`get_error_string`](#get_error_string) | Gets the error message of the capture operation.|
 | [`get_decoded_barcodes_result`](#get_decoded_barcodes_result) | Gets the decoded barcode items from the `CapturedResult`.|
 | [`get_recognized_text_lines_result`](#get_recognized_text_lines_result) | Gets the recognized text line items from the `CapturedResult`.|
-| [`get_detected_quads_result`](#get_detected_quads_result) | Gets the detected quads items from the `CapturedResult`.|
-| [`get_normalized_images_result`](#get_normalized_images_result) | Gets the normalized images items from the `CapturedResult`.|
+| [`get_processed_document_result`](#get_processed_document_result) | Gets the processed document items from the `CapturedResult`.|
 | [`get_parsed_result`](#get_parsed_result) | Gets the parsed result items from the `CapturedResult`.|
 
 ### get_original_image_hash_id
@@ -150,37 +149,21 @@ Returns a `RecognizedTextLinesResult` object containing the recognized text line
 
 [RecognizedTextLinesResult]({{ site.dlr_python_api }}recognized-text-lines-result.html)
 
-### get_detected_quads_result
+### get_processed_document_result
 
-Gets the detected quads items from the `CapturedResult`.
+Gets the processed document items from the `CapturedResult`.
 
 ```python
-def get_detected_quads_result(self) -> "DetectedQuadsResult":
+def get_processed_document_result(self) -> "ProcessedDocumentResult":
 ```
 
 **Return Value**
 
-Returns a `DetectedQuadsResult` object containing the detected quads items.
+Returns a `ProcessedDocumentResult` object containing the processed document items.
 
 **See Also**
 
-[DetectedQuadsResult]({{ site.ddn_python_api }}detected-quads-result.html)
-
-### get_normalized_images_result
-
-Gets the normalized images items from the `CapturedResult`.
-
-```python
-def get_normalized_images_result(self) -> "NormalizedImagesResult":
-```
-
-**Return Value**
-
-Returns a `NormalizedImagesResult` object containing the normalized images items.
-
-**See Also**
-
-[NormalizedImagesResult]({{ site.ddn_python_api }}normalized-images-result.html)
+[ProcessedDocumentResult]({{ site.ddn_python_api }}processed-document-result.html)
 
 ### get_parsed_result
 

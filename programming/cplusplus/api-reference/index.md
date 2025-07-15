@@ -133,6 +133,7 @@ needAutoGenerateSidebar: false
 
 ### Classes
 
+- [`CCodeType`]({{ site.dcp_cpp_api }}code-type.html)
 - [`CCodeParserModule`]({{ site.dcp_cpp_api }}code-parser-module.html)
 - [`CParsedResultItem`]({{ site.dcp_cpp_api }}parsed-result-item.html)
 - [`CParsedResult`]({{ site.dcp_cpp_api }}parsed-result.html)
