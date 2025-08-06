@@ -45,6 +45,14 @@ dcp_dotnet_api: /code-parser/docs/server/programming/dotnet/api-reference/
 
 dcvb_java: /capture-vision/docs/server/programming/java/
 dcvb_java_api: /capture-vision/docs/server/programming/java/api-reference/
+dbr_java: /barcode-reader/docs/server/programming/java/
+dlr_java: /label-recognition/docs/server/programming/java/
+ddn_java: /document-normalizer/docs/server/programming/java/
+dcp_java: /code-parser/docs/server/programming/java/
+dbr_java_api: /barcode-reader/docs/server/programming/java/api-reference/
+dlr_java_api: /label-recognition/docs/server/programming/java/api-reference/
+ddn_java_api: /document-normalizer/docs/server/programming/java/api-reference/
+dcp_java_api: /code-parser/docs/server/programming/java/api-reference/
 
 dcvb_python: /capture-vision/docs/server/programming/python/
 dbr_python: /barcode-reader/docs/server/programming/python/
