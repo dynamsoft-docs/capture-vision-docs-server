@@ -1,0 +1,100 @@
+---
+layout: default-layout
+title: SimplifiedCaptureVisionSettings Class - Dynamsoft Capture Vision Module Java Edition API Reference
+description: Definition of SimplifiedCaptureVisionSettings class in Dynamsoft Capture Vision Module Java Edition.
+keywords: class, java, SimplifiedCaptureVisionSettings
+---
+
+# SimplifiedCaptureVisionSettings
+
+The `SimplifiedCaptureVisionSettings` class contains settings for capturing and recognizing images with the `CaptureVisionRouter` class.
+
+## Definition
+
+*Package:* com.dynamsoft.cvr
+
+```java
+public class SimplifiedCaptureVisionSettings
+```
+
+## Properties
+
+| Attribute                                             | Type                                |
+| ----------------------------------------------------- | ----------------------------------- |
+| [`outputOriginalImage`](#outputoriginalimage) | *int*                               |
+| [`roi`](#roi)                                         | *Quadrilateral*                    |
+| [`roiMeasuredInPercentage`](#roimeasuredinpercentage) | *int*                               |
+| [`maxParallelTasks`](#maxparalleltasks)               | *int*                               |
+| [`timeout`](#timeout)                                 | *int*                               |
+| [`barcodeSettings`](#barcodesettings)                 | *SimplifiedBarcodeReaderSettings*   |
+| [`labelSettings`](#labelsettings)                     | *SimplifiedLabelRecognizerSettings* |
+| [`documentSettings`](#documentsettings)               | *SimplifiedDocumentNormalizerSettings* |
+| [`minImageCaptureInterval`](#minimagecaptureinterval) | *int*                               |
+
+### outputOriginalImage
+
+Specifies whether to output the original image. 
+
+**Values**
+
+- 0: Do not output the original image.
+- 1: Output the original image.
+
+### roi
+
+Specifies the region of interest (ROI) where the image capture and recognition will take place. 
+
+**See Also**
+
+[Quadrilateral]({{ site.dcvb_java_api }}core/basic-classes/quadrilateral.html)
+
+### roiMeasuredInPercentage
+
+Specifies whether the ROI is measured in pixels or as a percentage of the image size.
+
+**Values**
+
+- `0` the ROI is measured in pixels.
+- `1` the ROI is measured as a percentage of the image size.
+
+### maxParallelTasks
+
+Specifies the maximum number of parallel tasks that can be used for image capture and recognition.
+
+### timeout
+
+Specifies the maximum time (in milliseconds) allowed for image capture and recognition.
+
+### barcodeSettings
+
+Specifies the settings for barcode recognition.
+
+**See Also**
+
+[SimplifiedBarcodeReaderSettings]({{ site.dbr_java_api }}simplified-barcode-reader-settings.html)
+
+### labelSettings
+
+Specifies the settings for label recognition.
+
+**See Also**
+
+[SimplifiedLabelRecognizerSettings]({{ site.dlr_java_api }}simplified-label-recognizer-settings.html)
+
+### documentSettings
+
+Specifies the settings for document normalization.
+
+**See Also**
+
+[SimplifiedDocumentNormalizerSettings]({{ site.ddn_java_api }}simplified-document-normalizer-settings.html)
+
+### minImageCaptureInterval
+
+Specifies the minimum time interval (in milliseconds) allowed between consecutive image captures.
+
+**Remarks**
+
+This property represents the minimum time interval (in milliseconds) that must elapse before the next image capture operation can be initiated.
+Setting a larger value for this property will introduce a delay between image captures, while setting a smaller value allows for more frequent captures. It can be used to reduce the computational frequency, which can effectively lower energy consumption. Please note that the actual time interval between captures may be longer than the specified minimum interval due to various factors, such as image processing time and hardware limitations.
+
