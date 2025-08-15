@@ -1,5 +1,20 @@
 [
     {
+        "version": "3.0.6100",
+        "matchVersion": {
+            "java": "11.0.6100"
+        }
+    },
+    {
+        "version": "3.0.6000",
+        "matchVersion": {
+            "cpp": "11.0.6000",
+            "dotnet": "11.0.6000",
+            "python": "11.0.6000",
+            "java": "11.0.6000"
+        }
+    },
+    {
         "version": "3.0.4100",
         "matchVersion": {
             "python": "11.0.4000"

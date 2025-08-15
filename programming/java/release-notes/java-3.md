@@ -8,6 +8,12 @@ needGenerateH3Content: false
 
 # Release Notes for Java Edition - 3.x
 
+## 3.0.6100 (08/19/2025)
+
+### Fixed
+
+- Fixed an issue where using a callback function could cause the program to crash.
+
 ## 3.0.6000 (08/06/2025)
 
 ### [Highlights](https://www.dynamsoft.com/release-highlights/?product=dcv3.0)
