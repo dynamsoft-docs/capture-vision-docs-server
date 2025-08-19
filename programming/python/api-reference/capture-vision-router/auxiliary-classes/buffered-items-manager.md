@@ -9,7 +9,7 @@ needGenerateH3Content: true
 
 # BufferedItemsManager
 
-Defines a listener for image source state changes.
+BufferedItemsManager class is used to manage the buffered items. It provides methods to get and set the maximum number of buffer items and to get buffer items.
 
 ## Definition
 
