@@ -40,7 +40,7 @@ public void setInput(ImageSourceAdapter pAdapter) throws CaptureVisionException
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -84,7 +84,7 @@ public void addCaptureStateListener(CaptureStateListener listener) throws Captur
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -104,7 +104,7 @@ public void removeCaptureStateListener(CaptureStateListener listener) throws Cap
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -124,7 +124,7 @@ public void addImageSourceStateListener(ImageSourceStateListener listener) throw
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -144,7 +144,7 @@ public void removeImageSourceStateListener(ImageSourceStateListener listener) th
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -164,7 +164,7 @@ public void addResultReceiver(CapturedResultReceiver receiver) throws CaptureVis
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -184,7 +184,7 @@ public void removeResultReceiver(CapturedResultReceiver receiver) throws Capture
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -204,7 +204,7 @@ public void addResultFilter(CapturedResultFilter filter) throws CaptureVisionExc
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -254,11 +254,11 @@ Returns a `CaptureVisionError` object that contains error information.
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
-[CaptureVisionError]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-error.html)
+[CaptureVisionError]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-error.html)
 
 ## stopCapturing
 

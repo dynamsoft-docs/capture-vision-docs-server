@@ -39,11 +39,11 @@ Returns a `CaptureVisionError` object that contains error information.
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
-[CaptureVisionError]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-error.html)
+[CaptureVisionError]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-error.html)
 
 ## initSettingsFromFile
 
@@ -63,11 +63,11 @@ Returns a `CaptureVisionError` object that contains error information.
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
-[CaptureVisionError]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-error.html)
+[CaptureVisionError]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-error.html)
 
 ## outputSettings
 
@@ -98,7 +98,7 @@ Returns a string containing the exported template.
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 ## outputSettingsToFile
 
@@ -127,7 +127,7 @@ public void outputSettingsToFile(String templateName, String filePath, boolean i
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 ## getSimplifiedSettings
 
@@ -154,7 +154,7 @@ Returns a `SimplifiedCaptureVisionSettings` object containing all settings.
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -183,7 +183,7 @@ public void updateSettings(String templateName, SimplifiedCaptureVisionSettings 
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -199,7 +199,7 @@ public void resetSettings() throws CaptureVisionException
 
 **Exceptions**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 ## getParameterTemplateCount
 

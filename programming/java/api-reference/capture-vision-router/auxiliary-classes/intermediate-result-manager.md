@@ -44,7 +44,7 @@ Returns void.
 
 **Exception**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 
@@ -68,7 +68,7 @@ Returns void.
 
 **Exception**
 
-[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-exception.html)
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
 
 **See Also**
 

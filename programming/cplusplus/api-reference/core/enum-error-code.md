@@ -153,6 +153,8 @@ typedef enum ErrorCode
     EC_INSTANCE_COUNT_OVER_LIMIT = -20008,
     /** Trial License */
     EC_TRIAL_LICENSE = -20010,
+    /** The license is not valid for current version */
+    EC_LICENSE_VERSION_NOT_MATCH = -20011,
     /**Online license validation failed due to network issues. Using cached license information for validation*/
     EC_LICENSE_CACHE_USED = -20012,
     /*License authentication failed: quota exceeded.*/
