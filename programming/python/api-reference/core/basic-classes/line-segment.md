@@ -3,6 +3,7 @@ layout: default-layout
 title: class LineSegment - Dynamsoft Core Module Python Edition API Reference
 description: This page shows the python edition of the class LineSegment in Dynamsoft Core Module.
 keywords: line segment, python
+needAutoGenerateSidebar: true
 ---
 
 # LineSegment
@@ -23,7 +24,6 @@ class LineSegment
 |---------- | ---- | ----------- |
 | [`start_point`](#start_point) | *[Point]({{ site.dcvb_python_api }}core/basic-classes/point.html)* | The start point of the line segment. |
 | [`end_point`](#end_point) | *[Point]({{ site.dcvb_python_api }}core/basic-classes/point.html)* | The end point of the line segment. |
-| [`id`](#id) | *int* | The ID of the line segment. |
 
 ## Methods
 

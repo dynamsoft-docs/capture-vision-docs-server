@@ -44,4 +44,4 @@ def on_error_received(self, error_code: int, error_message: str) -> None:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)

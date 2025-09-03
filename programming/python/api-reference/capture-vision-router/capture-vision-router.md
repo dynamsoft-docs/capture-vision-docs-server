@@ -3,6 +3,8 @@ layout: default-layout
 title: CaptureVisionRouter Class- Dynamsoft Capture Vision Router Module Python Edition API Reference
 description: This page is about the CaptureVisionRouter Class of Dynamsoft Capture Vision Router Module Python Edition.
 keywords: capture vision router, router, python, api reference
+needAutoGenerateSidebar: true
+needGenerateH3Content: true
 ---
 
 # CaptureVisionRouter
@@ -28,7 +30,6 @@ class CaptureVisionRouter
 | Method                                         | Description                                               |
 | ---------------------------------------------- | --------------------------------------------------------- |
 | [`capture`](single-file-processing.md#capture) | Processes an image or file to derive important information. |
-| [`capture_multi_pages`](single-file-processing.md#capture_multi_pages) | Processes an image or file containing multiple pages to derive important information. |
 
 ## Multiple-File Processing Methods
 

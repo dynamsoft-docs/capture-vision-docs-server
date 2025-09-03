@@ -19,8 +19,7 @@ In this guide, you will learn step by step on how to build a document scanner so
       - [For Windows](#for-windows)
       - [For Linux](#for-linux)
     - [Include the Library](#include-the-library)
-    - [Initialize the License Key](#initialize-the-license-key)
-    - [Create a CaptureVisionRouter Instance](#create-a-capturevisionrouter-instance)
+    - [Initialize a Capture Vision Router Instance](#initialize-a-capture-vision-router-instance)
     - [Detect and Save the Normalized Document](#detect-and-save-the-normalized-document)
     - [Release the Allocated Memory](#release-the-allocated-memory)
     - [Build and Run the Project](#build-and-run-the-project)
@@ -33,16 +32,14 @@ To find out whether your environment is supported, please read the [System Requi
 
 ## Installation
 
-If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-3.0.4000.250715.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
+If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-2.6.1000.241126.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
 
-> [!IMPORTANT]
 > For this tutorial, we unpack it to a pseudo directory `[INSTALLATION FOLDER]`, change it to your unpacking path for the following content.
 
 ## Build Your Own Application
 
 In this section, we'll walk through the key steps needed to build an application that capture a document from an image file.
 
-> [!TIP]
 >You can download the complete source code from [here](https://github.com/Dynamsoft/capture-vision-cpp-samples/tree/main/Samples/DocumentScanner).
 
 ### Create A New Project
@@ -63,10 +60,10 @@ In this section, we'll walk through the key steps needed to build an application
     CC=gcc
     CCFLAGS=-c -std=c++11
 
-    DS_LIB_PATH=[INSTALLATION FOLDER]/Dist/Lib/Linux/x64
+    DS_LIB_PATH=[INSTALLATION FOLDER]/Distributables/Lib/Linux/x64
     LDFLAGS=-L $(DS_LIB_PATH) -Wl,-rpath=$(DS_LIB_PATH) -Wl,-rpath=./
     DS_LIB=-lDynamsoftCaptureVisionRouter -lDynamsoftCore -lDynamsoftLicense -lDynamsoftUtility
-    DS_JSON_PATH=[INSTALLATION FOLDER]/Dist/Templates
+    DS_JSON_PATH=[INSTALLATION FOLDER]/Distributables/Templates
 
     STDLIB=-lstdc++
 
@@ -89,8 +86,7 @@ In this section, we'll walk through the key steps needed to build an application
         rm -f $(OBJECT) $(TARGET) -r $(DS_LIB_PATH)/Templates
     ```
 
-    > [!IMPORTANT]
-    > The variable `DS_LIB_PATH` should be set to the correct directory where the library files are located. 
+    >Note: The variable `DS_LIB_PATH` should be set to the correct directory where the library files are located. 
 
 ### Include the Library
 
@@ -111,49 +107,45 @@ In this section, we'll walk through the key steps needed to build an application
     // The following code only applies to Windows.
     #if defined(_WIN64) || defined(_WIN32)
         #ifdef _WIN64
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftCorex64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftLicensex64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x64/DynamsoftUtilityx64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCorex64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftLicensex64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftUtilityx64.lib")
         #else
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftCorex86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftLicensex86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Dist/Lib/Windows/x86/DynamsoftUtilityx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCorex86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftLicensex86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftUtilityx86.lib")
         #endif
     #endif
     ```
 
-### Initialize the License Key
+### Initialize a Capture Vision Router Instance
 
-If this is your first time using the library, you will need to obtain a trial license key. We recommend getting your own 30-day trial license through the following modal:
+1. Initialize the license key
 
-{% include trialLicense.html %}
+    ```cpp
+    int errorcode = 0;
+    char error[512];
+    errorcode = CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", error, 512);
+    if (errorcode != ErrorCode::EC_OK && errorcode != ErrorCode::EC_LICENSE_CACHE_USED)
+    {
+        cout << "License initialization failed: ErrorCode: " << errorcode << ", ErrorString: " << error << endl;
+    }
+    else
+    {
+        // codes from following steps...
+    }
+    ```
 
-Open the `DocumentScanner.cpp` file and add the following code inside the `Main` method to initialize the license for using the SDK in the application:
+    >Note:
+    > The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dcv&package=c_cpp" target="_blank">Customer Portal</a>.
 
-```cpp
-int errorcode = 0;
-char error[512];
-errorcode = CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", error, 512);
-if (errorcode != ErrorCode::EC_OK && errorcode != ErrorCode::EC_LICENSE_CACHE_USED)
-{
-    cout << "License initialization failed: ErrorCode: " << errorcode << ", ErrorString: " << error << endl;
-}
-else
-{
-    // codes from following steps...
-}
-```
+2. Create an instance of Dynamsoft Capture Vision Router
 
-> [!NOTE]
-> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. Please replace it with your own 30-day trial license.
-
-### Create a CaptureVisionRouter Instance
-
-```cpp
-CCaptureVisionRouter* router = new CCaptureVisionRouter();
-```
+    ```cpp
+    CCaptureVisionRouter* router = new CCaptureVisionRouter();
+    ```
 
 ### Detect and Save the Normalized Document
 
@@ -164,7 +156,6 @@ CCaptureVisionRouter* router = new CCaptureVisionRouter();
     CCapturedResult* result = router->Capture(imageFile.c_str(), CPresetTemplate::PT_DETECT_AND_NORMALIZE_DOCUMENT);
     ```
 
-    > [!IMPORTANT]
     > Please change the `[PATH-TO-THE-IMAGE-FILE]` to a real image file path.
 
 2. Save the normalized result as an image file
@@ -174,28 +165,25 @@ CCaptureVisionRouter* router = new CCaptureVisionRouter();
     if (result->GetErrorCode() != 0) {
         cout << "Error: " << result->GetErrorCode() << "," << result->GetErrorString() << endl;
     }
-    CProcessedDocumentResult *processedDocumentResult = result->GetProcessedDocumentResult();
-    if (processedDocumentResult == nullptr || processedDocumentResult->GetDeskewedImageResultItemsCount() == 0)
+    CNormalizedImagesResult *normalizedResult = result->GetNormalizedImagesResult();
+    if (normalizedResult == nullptr || normalizedResult->GetItemsCount() == 0)
     {
         cout << "No document found." << endl;
     }
     else
     {
-        int count = processedDocumentResult->GetDeskewedImageResultItemsCount();
-        cout << "Deskewed " << count << " documents" << endl;
+        int count = normalizedResult->GetItemsCount();
+        cout << "Normalized " << count << " documents" << endl;
         for (int i = 0; i < count; i++)
         {
-            const CDeskewedImageResultItem *deskewedImage = processedDocumentResult->GetDeskewedImageResultItem(i);
-            string outPath = "deskewedResult_";
+            const CNormalizedImageResultItem *normalizedImage = normalizedResult->GetItem(i);
+            string outPath = "normalizedResult_";
             outPath += to_string(i) + ".png";
-
-            CImageIO imageIO;
-
-            // 5.Save deskewed image to file.
-            errorCode = imageIO.SaveToFile(deskewedImage->GetImageData(), outPath.c_str());
-            if (errorCode == 0)
+            CImageManager manager;
+            errorcode = manager.SaveToFile(normalizedImage->GetImageData(), outPath.c_str());
+            if (errorcode == 0)
             {
-                cout << "Document " << i << " file: " << outPath << endl;
+                cout << "Document " << i << " saved to file: " << outPath << endl;
             }
         }
     }
@@ -204,8 +192,8 @@ CCaptureVisionRouter* router = new CCaptureVisionRouter();
 ### Release the Allocated Memory
 
 ```cpp
-if (processedDocumentResult)
-	processedDocumentResult->Release();
+if (normalizedResult)
+	normalizedResult->Release();
 if (result)
 	result->Release();
 delete router, router = NULL;   
@@ -217,7 +205,7 @@ delete router, router = NULL;
 
 1. Build the application through Visual Studio.
 
-2. Copy the following items from `[INSTALLATION FOLDER]\Dist` to the same folder as the EXE file. 
+2. Copy the following items from `[INSTALLATION FOLDER]\Distributables` to the same folder as the EXE file. 
    
    - All the DLL files from `.\Lib\Windows\[PLATFORMS]`
    - Folder `Templates`
@@ -239,5 +227,6 @@ delete router, router = NULL;
     ```
 
 
-> [!IMPORTANT]
+> Note:
+> 
 > Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpacking path.

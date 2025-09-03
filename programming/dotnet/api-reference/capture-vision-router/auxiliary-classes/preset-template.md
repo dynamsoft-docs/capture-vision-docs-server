@@ -15,6 +15,7 @@ The `PresetTemplate` class defines all preset template names of Capture Vision S
 
 *Namespace:* Dynamsoft.CVR
 
+*Assembly:* Dynamsoft.CaptureVisionRouter.dll
 
 ```csharp
 public class PresetTemplate 

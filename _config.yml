@@ -1,85 +1,75 @@
-repositoryUrl: https://github.com/dynamsoft-docs/capture-vision-docs-server/blob/main
+repositoryUrl: https://github.com/dynamsoft-docs/capture-vision-docs-server/blob/v2
 repository: dynamsoft-docs/capture-vision-docs-server
-docFullPath: https://www.dynamsoft.com/capture-vision/docs/server/
-firstLevelUrl: /capture-vision/docs/server
+docFullPath: https://www.dynamsoft.com/capture-vision/docs/v2/server/
+firstLevelUrl: /capture-vision/docs/v2/server
 searchIndexName: Crawler-DCV-Docs-New
 searchNeedFilter: true
 
 useVersionTree: true
+useJSVersionV3: true
 
-dcvb_introduction: /capture-vision/docs/core/introduction/
-dcvb_architecture: /capture-vision/docs/core/architecture/
-dcvb_enumerations: /capture-vision/docs/core/enums/
-dcvb_parameters: /capture-vision/docs/core/parameters/
-dcvb_parameters_reference: /capture-vision/docs/core/parameters/reference/
-dcp_code_types: /code-parser/docs/core/code-types/
-dcvb_license_activation: /capture-vision/docs/core/license/
+dcvb_introduction: /capture-vision/docs/v2/core/introduction/
+dcvb_architecture: /capture-vision/docs/v2/core/architecture/
+dcvb_enumerations: /capture-vision/docs/v2/core/enums/
+dcvb_parameters: /capture-vision/docs/v2/core/parameters/
+dcvb_parameters_reference: /capture-vision/docs/v2/core/parameters/reference/
+dcp_code_types: /code-parser/docs/v2/core/code-types/
+dcvb_license_activation: /capture-vision/docs/v2/core/license/
 
-dbr_introduction: /barcode-reader/docs/core/introduction/
-dlr_introduction: /label-recognition/docs/core/introduction/
-ddn_introduction: /document-normalizer/docs/core/introduction/
-dcp_introduction: /code-parser/docs/core/introduction/
-
-
-dcvb_cpp: /capture-vision/docs/server/programming/cplusplus/
-dbr_cpp: /barcode-reader/docs/server/programming/cplusplus/
-dlr_cpp: /label-recognition/docs/server/programming/cplusplus/
-ddn_cpp: /document-normalizer/docs/server/programming/cplusplus/
-dcp_cpp: /code-parser/docs/server/programming/cplusplus/
-dcvb_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
-dbr_cpp_api: /barcode-reader/docs/server/programming/cplusplus/api-reference/
-dlr_cpp_api: /label-recognition/docs/server/programming/cplusplus/api-reference/
-ddn_cpp_api: /document-normalizer/docs/server/programming/cplusplus/api-reference/
-dcp_cpp_api: /code-parser/docs/server/programming/cplusplus/api-reference/
-
-dcvb_dotnet: /capture-vision/docs/server/programming/dotnet/
-dbr_dotnet: /barcode-reader/docs/server/programming/dotnet/
-dlr_dotnet: /label-recognition/docs/server/programming/dotnet/
-ddn_dotnet: /document-normalizer/docs/server/programming/dotnet/
-dcp_dotnet: /code-parser/docs/server/programming/dotnet/
-dcvb_dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
-dbr_dotnet_api: /barcode-reader/docs/server/programming/dotnet/api-reference/
-dlr_dotnet_api: /label-recognition/docs/server/programming/dotnet/api-reference/
-ddn_dotnet_api: /document-normalizer/docs/server/programming/dotnet/api-reference/
-dcp_dotnet_api: /code-parser/docs/server/programming/dotnet/api-reference/
-
-dcvb_java: /capture-vision/docs/server/programming/java/
-dcvb_java_api: /capture-vision/docs/server/programming/java/api-reference/
-dbr_java: /barcode-reader/docs/server/programming/java/
-dlr_java: /label-recognition/docs/server/programming/java/
-ddn_java: /document-normalizer/docs/server/programming/java/
-dcp_java: /code-parser/docs/server/programming/java/
-dbr_java_api: /barcode-reader/docs/server/programming/java/api-reference/
-dlr_java_api: /label-recognition/docs/server/programming/java/api-reference/
-ddn_java_api: /document-normalizer/docs/server/programming/java/api-reference/
-dcp_java_api: /code-parser/docs/server/programming/java/api-reference/
-
-dcvb_python: /capture-vision/docs/server/programming/python/
-dbr_python: /barcode-reader/docs/server/programming/python/
-dlr_python: /label-recognition/docs/server/programming/python/
-ddn_python: /document-normalizer/docs/server/programming/python/
-dcp_python: /code-parser/docs/server/programming/python/
-dcvb_python_api: /capture-vision/docs/server/programming/python/api-reference/
-dbr_python_api: /barcode-reader/docs/server/programming/python/api-reference/
-dlr_python_api: /label-recognition/docs/server/programming/python/api-reference/
-ddn_python_api: /document-normalizer/docs/server/programming/python/api-reference/
-dcp_python_api: /code-parser/docs/server/programming/python/api-reference/
-
-dcvb_js: /capture-vision/docs/web/programming/javascript/
-dcvb_android: /capture-vision/docs/mobile/programming/android/
-dcvb_ios: /capture-vision/docs/mobile/programming/ios/
-dcvb_maui: /capture-vision/docs/mobile/programming/maui/
+dbr_introduction: /barcode-reader/docs/v10/core/introduction/
+dlr_introduction: /label-recognition/docs/v2/core/introduction/
+ddn_introduction: /document-normalizer/docs/v2/core/introduction/
+dcp_introduction: /code-parser/docs/v2/core/introduction/
 
 
-baseurl: "/capture-vision/docs/server"
+dcvb_cpp: /capture-vision/docs/v2/server/programming/cplusplus/
+dbr_cpp: /barcode-reader/docs/v10/server/programming/cplusplus/
+dlr_cpp: /label-recognition/docs/v2/server/programming/cplusplus/
+ddn_cpp: /document-normalizer/docs/v2/server/programming/cplusplus/
+dcp_cpp: /code-parser/docs/v2/server/programming/cplusplus/
+dcvb_cpp_api: /capture-vision/docs/v2/server/programming/cplusplus/api-reference/
+dbr_cpp_api: /barcode-reader/docs/v10/server/programming/cplusplus/api-reference/
+dlr_cpp_api: /label-recognition/docs/v2/server/programming/cplusplus/api-reference/
+ddn_cpp_api: /document-normalizer/docs/v2/server/programming/cplusplus/api-reference/
+dcp_cpp_api: /code-parser/docs/v2/server/programming/cplusplus/api-reference/
 
-assets: /capture-vision/docs/server/assets/
-edit_icon: /capture-vision/docs/server/assets/img-icon/edit-icon.png
-smile_icon: /capture-vision/docs/server/assets/img-icon/icon-smile.png
-sad_icon: /capture-vision/docs/server/assets/img-icon/icon-sad.png
-dbr_icon: /capture-vision/docs/server/assets/img-icon/icon-dbr.svg
-dwt_icon: /capture-vision/docs/server/assets/img-icon/icon-dwt.svg
-dnt_icon: /capture-vision/docs/server/assets/img-icon/icon-dnt.svg
+dcvb_dotnet: /capture-vision/docs/v2/server/programming/dotnet/
+dbr_dotnet: /barcode-reader/docs/v10/server/programming/dotnet/
+dlr_dotnet: /label-recognition/docs/v2/server/programming/dotnet/
+ddn_dotnet: /document-normalizer/docs/v2/server/programming/dotnet/
+dcp_dotnet: /code-parser/docs/v2/server/programming/dotnet/
+dcvb_dotnet_api: /capture-vision/docs/v2/server/programming/dotnet/api-reference/
+dbr_dotnet_api: /barcode-reader/docs/v10/server/programming/dotnet/api-reference/
+dlr_dotnet_api: /label-recognition/docs/v2/server/programming/dotnet/api-reference/
+ddn_dotnet_api: /document-normalizer/docs/v2/server/programming/dotnet/api-reference/
+dcp_dotnet_api: /code-parser/docs/v2/server/programming/dotnet/api-reference/
+
+dcvb_python: /capture-vision/docs/v2/server/programming/python/
+dbr_python: /barcode-reader/docs/v10/server/programming/python/
+dlr_python: /label-recognition/docs/v2/server/programming/python/
+ddn_python: /document-normalizer/docs/v2/server/programming/python/
+dcp_python: /code-parser/docs/v2/server/programming/python/
+dcvb_python_api: /capture-vision/docs/v2/server/programming/python/api-reference/
+dbr_python_api: /barcode-reader/docs/v10/server/programming/python/api-reference/
+dlr_python_api: /label-recognition/docs/v2/server/programming/python/api-reference/
+ddn_python_api: /document-normalizer/docs/v2/server/programming/python/api-reference/
+dcp_python_api: /code-parser/docs/v2/server/programming/python/api-reference/
+
+dcvb_js: /capture-vision/docs/v2/web/programming/javascript/
+dcvb_android: /capture-vision/docs/v2/mobile/programming/android/
+dcvb_ios: /capture-vision/docs/v2/mobile/programming/ios/
+dcvb_maui: /capture-vision/docs/v2/mobile/programming/maui/
+
+
+baseurl: "/capture-vision/docs/v2/server"
+
+assets: /capture-vision/docs/v2/server/assets/
+edit_icon: /capture-vision/docs/v2/server/assets/img-icon/edit-icon.png
+smile_icon: /capture-vision/docs/v2/server/assets/img-icon/icon-smile.png
+sad_icon: /capture-vision/docs/v2/server/assets/img-icon/icon-sad.png
+dbr_icon: /capture-vision/docs/v2/server/assets/img-icon/icon-dbr.svg
+dwt_icon: /capture-vision/docs/v2/server/assets/img-icon/icon-dwt.svg
+dnt_icon: /capture-vision/docs/v2/server/assets/img-icon/icon-dnt.svg
 
 plugins:
   - jemoji
@@ -103,28 +93,28 @@ defaults:
       category: "original-repo"
       edition: "desktop"
       docRootName: "Capture Vision C++ Edition" 
-      docHomePage: "/capture-vision/docs/server/programming/cplusplus/"
+      docHomePage: "/capture-vision/docs/v2/server/programming/cplusplus/"
   - scope:
       path: "programming/dotnet"
     values:
       category: "original-repo"
       edition: "desktop"
       docRootName: "Capture Vision DotNet Edition" 
-      docHomePage: "/capture-vision/docs/server/programming/dotnet/"
+      docHomePage: "/capture-vision/docs/v2/server/programming/dotnet/"
   - scope:
       path: "programming/python"
     values:
       category: "original-repo"
       edition: "desktop"
       docRootName: "Capture Vision Python Edition" 
-      docHomePage: "/capture-vision/docs/server/programming/python/"
+      docHomePage: "/capture-vision/docs/v2/server/programming/python/"
   - scope:
       path: "programming/java"
     values:
       category: "original-repo"
       edition: "desktop"
       docRootName: "Capture Vision Java Edition" 
-      docHomePage: "/capture-vision/docs/server/programming/java/"
+      docHomePage: "/capture-vision/docs/v2/server/programming/java/"
   - scope:
       path: ""
     values:

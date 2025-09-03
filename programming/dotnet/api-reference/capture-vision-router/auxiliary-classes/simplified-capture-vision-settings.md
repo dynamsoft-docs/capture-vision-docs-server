@@ -15,6 +15,7 @@ The `SimplifiedCaptureVisionSettings` class contains settings for capturing and 
 
 *Namespace:* Dynamsoft.CVR
 
+*Assembly:* Dynamsoft.CaptureVisionRouter.dll
 
 ```csharp
 public class SimplifiedCaptureVisionSettings
@@ -24,7 +25,7 @@ public class SimplifiedCaptureVisionSettings
 
 | Attribute                                             | Type                                |
 | ----------------------------------------------------- | ----------------------------------- |
-| [`outputOriginalImage`](#outputOriginalImage) | *int*                               |
+| [`capturedResultItemTypes`](#capturedresultitemtypes) | *int*                               |
 | [`roi`](#roi)                                         | *Quadrilateral*                    |
 | [`roiMeasuredInPercentage`](#roimeasuredinpercentage) | *int*                               |
 | [`maxParallelTasks`](#maxparalleltasks)               | *int*                               |
@@ -34,19 +35,21 @@ public class SimplifiedCaptureVisionSettings
 | [`documentSettings`](#documentsettings)               | *SimplifiedDocumentNormalizerSettings* |
 | [`minImageCaptureInterval`](#minimagecaptureinterval) | *int*                               |
 
-### outputOriginalImage
+### capturedResultItemTypes
 
-Specifies whether to output the original image. 
+Specifies the type(s) of captured result item(s) that will be captured. 
 
 ```csharp
-int outputOriginalImage;
+int capturedResultItemTypes;
 ```
 
 **Values**
 
-- 0: Do not output the original image.
-- 1: Output the original image.
+The value should be a bitwise OR combination of one or more of enumeration `CapturedResultItemType`:
 
+**See Also**
+
+[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### roi
 

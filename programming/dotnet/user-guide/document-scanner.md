@@ -70,7 +70,7 @@ if (errorCode != (int)EnumErrorCode.EC_OK && errorCode != (int)EnumErrorCode.EC_
 ### Create a CaptureVisionRouter Instance
 
 ```csharp
-using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
+using (CaptureVisionRouter cvr = new CaptureVisionRouter())
 {
     //code for invoking the capturing
 }
@@ -81,10 +81,10 @@ using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
 1. Apply detection and normalization for an image file.
 
 ```csharp
-using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
+using (CaptureVisionRouter cvr = new CaptureVisionRouter())
 {
     string imageFile = "[PATH-TO-THE-IMAGE-FILE]";
-    using (CapturedResult? result = cvRouter.Capture(imageFile, PresetTemplate.PT_DETECT_AND_NORMALIZE_DOCUMENT))
+    using (CapturedResult? result = cvr.Capture(imageFile, PresetTemplate.PT_DETECT_AND_NORMALIZE_DOCUMENT))
     {
         //code for saving the normalized result as an image file
     }

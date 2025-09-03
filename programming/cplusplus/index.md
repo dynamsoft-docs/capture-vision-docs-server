@@ -35,12 +35,12 @@ The best way to begin with Dynamsoft Capture Vision C++ Edition is to follow the
 ## System Requirements
 
 - Windows:
-  - Supported Versions: Windows 8 and higher, or Windows Server 2012 and higher
+  - Supported Versions: Windows 7 and higher, or Windows Server 2003 and higher
   - Architecture: x64 and x86
   - Development Environment: Visual Studio 2012 or higher.
 
 - Linux:
-  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 7+
+  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 6+
   - Architectures: x64 and ARM 64-bit
   - Minimum GLIBC Version: GLIBC_2.18 or higher
   - Compiler: G++ 5.4 or higher
@@ -48,12 +48,6 @@ The best way to begin with Dynamsoft Capture Vision C++ Edition is to follow the
 - macOS (not included in the trial package, contact us to get the SDK)
   - Supported Versions: 10.15+
   - Architecture: x64 and ARM 64-bit
-
-- For Embedded Devices:
-For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4GB RAM). Minimum recommended specs:
-  - Quad-core ARM Cortex-A72 processor (or equivalent)
-  - 4 GB RAM
-  - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
 
 ## API Reference
 

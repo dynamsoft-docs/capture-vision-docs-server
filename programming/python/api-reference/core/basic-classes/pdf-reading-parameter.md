@@ -22,9 +22,9 @@ class PDFReadingParameter
   
 | Property  | Type | Description |
 |---------- | ---- |-------------|
-| [`mode`](#mode) | *int* | The mode used for PDF reading. This is one of the values of the [EnumPDFReadingMode]({{ site.dcvb_python_api }}core/enum-pdf-reading-mode.html) enumeration. |
+| [`mode`](#mode) | *int* | The mode used for PDF reading. This is one of the values of the [EnumPDFReadingMode]({{ site.dcvb_enumerations }}core/pdf-reading-mode.html?lang=python) enumeration. |
 | [`dpi`](#dpi) | *int* | The DPI (dots per inch) value. |
-| [`raster_data_source`](#raster_data_source) | *int* | The raster data source type. This is one of the values of the [EnumRasterDataSource]({{ site.dcvb_python_api }}core/enum-raster-data-source.html) enumeration. |
+| [`raster_data_source`](#raster_data_source) | *int* | The raster data source type. This is one of the values of the [EnumRasterDataSource]({{ site.dcvb_enumerations }}core/raster-data-source.html?lang=python) enumeration. |
 
 ## Methods
   

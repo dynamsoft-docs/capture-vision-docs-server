@@ -14,6 +14,7 @@ The `ImageTag` class represents an image tag that can be attached to an image in
 
 *Namespace:* Dynamsoft.Core
 
+*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public abstract class ImageTag 
@@ -44,7 +45,7 @@ Returns the type of the image tag.
 
 **See Also**
 
-[EnumImageTagType]({{ site.dcvb_dotnet_api }}core/enum-image-tag-type.html)
+[EnumImageTagType]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=dotnet)
 
 ### Clone
 
@@ -96,7 +97,7 @@ Returns the capture distance mode of the image.
 
 **See Also**
 
-[EnumImageCaptureDistanceMode]({{ site.dcvb_dotnet_api }}core/enum-image-capture-distance-mode.html)
+[EnumImageCaptureDistanceMode]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?lang=dotnet)
 
 ### SetImageCaptureDistanceMode
 
@@ -112,4 +113,4 @@ void SetImageCaptureDistanceMode(EnumImageCaptureDistanceMode mode)
 
 **See Also**
 
-[EnumImageCaptureDistanceMode]({{ site.dcvb_dotnet_api }}core/enum-image-capture-distance-mode.html)
+[EnumImageCaptureDistanceMode]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?lang=dotnet)

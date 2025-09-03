@@ -34,7 +34,8 @@ class CCapturedResultFilter
 | [`OnOriginalImageResultReceived`](#onoriginalimageresultreceived)           | Callback function for original image results.             |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived)         | Callback function for decoded barcodes results.      |
 | [`OnRecognizedTextLinesReceived`](#onrecognizedtextlinesreceived) | Callback function for recognized text lines results. |
-| [`OnProcessedDocumentResultReceived`](#onprocesseddocumentresultreceived)       | Callback function triggered after processing each image and returns all  processed document results.     |
+| [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function for detected quads results.        |
+| [`OnNormalizedImagesReceived`](#onnormalizedimagesreceived)       | Callback function for normalized images results.     |
 | [`OnParsedResultsReceived`](#onparsedresultsreceived)             | Callback function for parsed results.                |
 | [`GetName`](#getname)       | Gets the name of the captured result filter.                                             |
 | [`SetName`](#setname)       | Sets the name of the captured result filter.                                             |
@@ -65,7 +66,7 @@ unsigned int GetFilteredResultItemTypes()
 
 **Return value**
 
-Returns the type [`CapturedResultItemType`]({{site.dcvb_cpp_api}}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp) of filtered result items.
+Returns the type [`CapturedResultItemType`]({{site.dcvb_enumerations}}core/captured-result-item-type.html?src=cpp&&lang=cpp) of filtered result items.
 
 ### OnOriginalImageResultReceived
 
@@ -103,21 +104,29 @@ virtual void OnRecognizedTextLinesReceived(dlr::CRecognizedTextLinesResult* pRes
 
 `[in] pResult` The recognized text lines result.
 
-### OnProcessedDocumentResultReceived
+### OnDetectedQuadsReceived
 
-Callback function triggered after processing each image and returns all processed document results. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
+Callback function for detected quads results. It will be called once for each detected quads result.
 
 ```cpp
-virtual void OnProcessedDocumentResultReceived(ddn::CProcessedDocumentResult* pResult)
+virtual void OnDetectedQuadsReceived(ddn::CDetectedQuadsResult* pResult)
 ```
 
 **Parameters**
 
-`[in] pResult` The processed document results.
+`[in] pResult` The detected quads result.
 
-**See Also**
+### OnNormalizedImagesReceived
 
-[CProcessedDocumentResult]({{ site.ddn_cpp_api }}processed-document-result.html)
+Callback function for normalized images results. It will be called once for each normalized images result.
+
+```cpp
+virtual void OnNormalizedImagesReceived(ddn::CNormalizedImagesResult* pResult)
+```
+
+**Parameters**
+
+`[in] pResult` The normalized images result.
 
 ### OnParsedResultsReceived
 

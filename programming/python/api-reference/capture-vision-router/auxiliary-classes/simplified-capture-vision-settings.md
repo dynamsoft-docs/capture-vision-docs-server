@@ -3,6 +3,8 @@ layout: default-layout
 title: SimplifiedCaptureVisionSettings Class - Dynamsoft Capture Vision Module Python Edition API Reference
 description: Definition of SimplifiedCaptureVisionSettings class in Dynamsoft Capture Vision Module Python Edition.
 keywords: class, python, SimplifiedCaptureVisionSettings
+needAutoGenerateSidebar: true
+needGenerateH3Content: true
 ---
 
 # SimplifiedCaptureVisionSettings
@@ -21,7 +23,7 @@ class SimplifiedCaptureVisionSettings
 
 | Attribute                                             | Type                                |
 | ----------------------------------------------------- | ----------------------------------- |
-| [`output_original_image`](#output_original_image) | *int*                               |
+| [`captured_result_item_types`](#captured_result_item_types) | *int*                               |
 | [`roi`](#roi)                                         | *Quadrilateral*                    |
 | [`roi_measured_in_percentage`](#roi_measured_in_percentage) | *int*                               |
 | [`max_parallel_tasks`](#max_parallel_tasks)               | *int*                               |
@@ -31,14 +33,17 @@ class SimplifiedCaptureVisionSettings
 | [`document_settings`](#document_settings)               | *SimplifiedDocumentNormalizerSettings* |
 | [`min_image_capture_interval`](#min_image_capture_interval) | *int*                               |
 
-### output_original_image
+### captured_result_item_types
 
-Specifies whether to output the original image. 
+Specifies the type(s) of captured result item(s) that will be captured. 
 
 **Values**
 
-- 0: Do not output the original image.
-- 1: Output the original image.
+It is a bitwise OR combination of one or more values from the `EnumCapturedResultItemType` enumeration.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 ### roi
 

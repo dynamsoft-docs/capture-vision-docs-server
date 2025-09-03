@@ -14,6 +14,7 @@ The `PDFReadingParameter` class represents the parameters for reading a PDF file
 
 *Namespace:* Dynamsoft.Core
 
+*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public class PDFReadingParameter 
@@ -37,7 +38,7 @@ EnumPDFReadingMode mode;
 
 **See Also**
 
-[EnumPDFReadingMode]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html)
+[EnumPDFReadingMode]({{ site.dcvb_enumerations }}core/pdf-reading-mode.html?lang=dotnet)
 
 ### dpi
 
@@ -57,7 +58,7 @@ EnumRasterDataSource rasterDataSource;
 
 **See Also**
 
-[EnumRasterDataSource]({{ site.dcvb_dotnet_api }}core/enum-raster-data-source.html)
+[EnumRasterDataSource]({{ site.dcvb_enumerations }}core/raster-data-source.html?lang=dotnet)
 
 
 ## Methods

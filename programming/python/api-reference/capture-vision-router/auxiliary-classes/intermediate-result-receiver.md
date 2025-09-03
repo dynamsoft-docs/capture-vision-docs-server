@@ -15,7 +15,7 @@ The `IntermediateResultReceiver` class is responsible for receiving intermediate
 *Module:* dynamsoft_capture_vision_router
 
 ```python
-class IntermediateResultReceiver: 
+class IntermediateResultReceiver(AbstractIntermediateResultReceiver) 
 ```
 
 ## Methods Summary
@@ -31,10 +31,9 @@ class IntermediateResultReceiver:
 | [`on_localized_text_lines_received`](#on_localized_text_lines_received) | Called when localized text lines have been received. |
 | [`on_recognized_text_lines_received`](#on_recognized_text_lines_received) | Called when recognized text lines have been received. |
 | [`on_detected_quads_received`](#on_detected_quads_received) | Called when detected quadrilaterals have been received. |
-| [`on_deskewed_image_received`](#on_deskewed_image_received) | Called when deskewed images have been received. |
-| [`on_enhanced_image_received`](#on_enhanced_image_received) | Called when enhanced images have been received. |
+| [`on_normalized_images_received`](#on_normalized_images_received) | Called when normalized images have been received. |
 | [`on_colour_image_unit_received`](#on_colour_image_unit_received) | Called when colour image units have been received. |
-| [`on_scaled_colour_image_unit_received`](#on_scaled_colour_image_unit_received) | Called when scaled colour image units have been received. |
+| [`on_scaled_down_colour_image_unit_received`](#on_scaled_down_colour_image_unit_received) | Called when scaled down colour image units have been received. |
 | [`on_grayscale_image_unit_received`](#on_grayscale_image_unit_received) | Called when grayscale image units have been received. |
 | [`on_transformed_grayscale_image_unit_received`](#on_transformed_grayscale_image_unit_received) | Called when transformed grayscale image units have been received. |
 | [`on_enhanced_grayscale_image_unit_received`](#on_enhanced_grayscale_image_unit_received) | Called when enhanced grayscale image units have been received. |
@@ -50,13 +49,11 @@ class IntermediateResultReceiver:
 | [`on_corners_unit_received`](#on_corners_unit_received) | Called when corner units have been received. |
 | [`on_candidate_quad_edges_unit_received`](#on_candidate_quad_edges_unit_received) | Called when candidate quadrilateral edge units have been received. |
 | [`on_candidate_barcode_zones_unit_received`](#on_candidate_barcode_zones_unit_received) | Called when candidate barcode zone units have been received. |
-| [`on_scaled_barcode_image_unit_received`](#on_scaled_barcode_image_unit_received) | Called when scaled barcode image units have been received. |
+| [`on_scaled_up_barcode_image_unit_received`](#on_scaled_up_barcode_image_unit_received) | Called when scaled up barcode image units have been received. |
 | [`on_deformation_resisted_barcode_image_unit_received`](#on_deformation_resisted_barcode_image_unit_received) | Called when deformation resisted barcode image units have been received. |
 | [`on_complemented_barcode_image_unit_received`](#on_complemented_barcode_image_unit_received) | Called when complemented barcode image units have been received. |
 | [`on_short_lines_unit_received`](#on_short_lines_unit_received) | Called when short line units have been received. |
-| [`on_raw_text_lines_unit_received`](#on_raw_text_lines_unit_received) | Called when raw text lines have been received. |
-| [`on_logic_lines_unit_received`](#on_logic_lines_unit_received) | Called when logic lines have been received. |
-| [`on_target_roi_results_received`](#on_target_roi_results_received) | Called when all tasks for the target ROI are completed and the results are deduplicated. |
+| [`on_raw_text_lines_received`](#on_raw_text_lines_received) | Called when raw text lines have been received. |
 
 ### \_\_init\_\_
 
@@ -222,43 +219,23 @@ def on_detected_quads_received(self, result: "DetectedQuadsUnit", info: Intermed
 
 [IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
 
-### on_deskewed_image_received
+### on_normalized_images_received
 
-Called when deskewed images have been received.
+Called when normalized images have been received.
 
 ```python
-def on_deskewed_image_received(self, result: "DeskewedImageUnit", info: IntermediateResultExtraInfo) -> None:
+def on_normalized_images_received(self, result: "NormalizedImagesUnit", info: IntermediateResultExtraInfo) -> None:
 ```
 
 **Parameters**
 
-`result` A `DeskewedImageUnit` object that contains the result.
+`result` A `NormalizedImagesUnit` object that contains the result.
 
 `info` An `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
 
 **See Also**
 
-[DeskewedImageUnit]({{ site.ddn_python_api }}deskewed-image-unit.html)
-
-[IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
-
-### on_enhanced_image_received
-
-Called when enhanced images have been received.
-
-```python
-def on_enhanced_image_received(self, result: "EnhancedImageUnit", info: IntermediateResultExtraInfo) -> None:
-```
-
-**Parameters**
-
-`result` A `EnhancedImageUnit` object that contains the result.
-
-`info` An `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
-
-**See Also**
-
-[EnhancedImageUnit]({{ site.ddn_python_api }}enhanced-image-unit.html)
+[NormalizedImagesUnit]({{ site.ddn_python_api }}normalized-image-unit.html)
 
 [IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
 
@@ -282,23 +259,23 @@ def on_colour_image_unit_received(self, result: ColourImageUnit, info: Intermedi
 
 [IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
 
-### on_scaled_colour_image_unit_received
+### on_scaled_down_colour_image_unit_received
 
-Called when scaled colour image units have been received.
+Called when scaled-down colour image units have been received.
 
 ```python
-def on_scaled_colour_image_unit_received(self, result: ScaledColourImageUnit, info: IntermediateResultExtraInfo) -> None:
+def on_scaled_down_colour_image_unit_received(self, result: ScaledDownColourImageUnit, info: IntermediateResultExtraInfo) -> None:
 ```
 
 **Parameters**
 
-`result` A `ScaledColourImageUnit` object that contains the result.
+`result` A `ScaledDownColourImageUnit` object that contains the result.
 
 `info` An `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
 
 **See Also**
 
-[ScaledColourImageUnit]({{ site.dcvb_python_api }}core/intermediate-results/scaled-colour-image-unit.html)
+[ScaledDownColourImageUnit]({{ site.dcvb_python_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
 
 [IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
 
@@ -602,23 +579,23 @@ def on_candidate_barcode_zones_unit_received(self, result: "CandidateBarcodeZone
 
 [IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
 
-### on_scaled_barcode_image_unit_received
+### on_scaled_up_barcode_image_unit_received
 
-Called when a scaled barcode image unit is received.
+Called when a scaled up barcode image unit is received.
 
 ```python
-def on_scaled_barcode_image_unit_received(self, result: "ScaledBarcodeImageUnit", info: IntermediateResultExtraInfo) -> None:
+def on_scaled_up_barcode_image_unit_received(self, result: "ScaledUpBarcodeImageUnit", info: IntermediateResultExtraInfo) -> None:
 ```
 
 **Parameters**
 
-`result` A `ScaledBarcodeImageUnit` object that contains the result.
+`result` A `ScaledUpBarcodeImageUnit` object that contains the result.
 
 `info` An `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
 
 **See Also**
 
-[ScaledBarcodeImageUnit]({{ site.dbr_python_api }}scaled-barcode-image-unit.html)
+[ScaledUpBarcodeImageUnit]({{ site.dbr_python_api }}scaled-up-barcode-image-unit.html)
 
 [IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
 
@@ -682,12 +659,12 @@ def on_short_lines_unit_received(self, result: ShortLinesUnit, info: Intermediat
 
 [IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
 
-### on_raw_text_lines_unit_received
+### on_raw_text_lines_received
 
 Called when raw text lines have been received.
 
 ```python
-def on_raw_text_lines_unit_received(self, result: "RawTextLinesUnit", info: IntermediateResultExtraInfo) -> None:
+def on_raw_text_lines_received(self, result: "RawTextLinesUnit", info: IntermediateResultExtraInfo) -> None:
 ```
 
 **Parameters**
@@ -699,46 +676,6 @@ def on_raw_text_lines_unit_received(self, result: "RawTextLinesUnit", info: Inte
 **See Also**
 
 [RawTextLinesUnit]({{ site.dlr_python_api }}raw-text-lines-unit.html)
-
-[IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
-
-### on_logic_lines_unit_received
-
-Called when logic lines have been received.
-
-```python
-def on_logic_lines_unit_received(self, result: "LogicLinesUnit", info: IntermediateResultExtraInfo) -> None:
-```
-
-**Parameters**
-
-`result` A `LogicLinesUnit` object that contains the result.
-
-`info` An `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
-
-**See Also**
-
-[LogicLinesUnit]({{ site.ddn_python_api }}logic-lines-unit.html)
-
-[IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
-
-### on_target_roi_results_received
-
-Called when raw text lines have been received.
-
-```python
-def on_target_roi_results_received(self, result: IntermediateResult, info: IntermediateResultExtraInfo) -> None:
-```
-
-**Parameters**
-
-`result` A `IntermediateResult` object that contains the result.
-
-`info` An `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
-
-**See Also**
-
-[IntermediateResult]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result.html)
 
 [IntermediateResultExtraInfo]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-extra-info.html)
 

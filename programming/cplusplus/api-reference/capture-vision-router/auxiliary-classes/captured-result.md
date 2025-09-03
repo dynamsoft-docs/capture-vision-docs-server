@@ -38,7 +38,8 @@ class CCapturedResult
 | [`Release`](#release) | Decreases the reference count of the `CCapturedResult` object.|
 | [`GetDecodedBarcodesResult`](#getdecodedbarcodesresult) | Gets the decoded barcode items from the `CCapturedResult`.|
 | [`GetRecognizedTextLinesResult`](#getrecognizedtextlinesresult) | Gets the recognized text line items from the `CCapturedResult`.|
-| [`GetProcessedDocumentResult`](#getprocesseddocumentresult) | Gets the processed document items from the `CCapturedResult`.|
+| [`GetDetectedQuadsResult`](#getdetectedquadsresult) | Gets the detected quads items from the `CCapturedResult`.|
+| [`GetNormalizedImagesResult`](#getnormalizedimagesresult) | Gets the normalized images items from the `CCapturedResult`.|
 | [`GetParsedResult`](#getparsedresult) | Gets the parsed result items from the `CCapturedResult`.|
 | [`AddItem`](#additem) | Add a specific item to the array in the `CCapturedResult`.|
 
@@ -169,7 +170,7 @@ Returns the error code of the capture operation.
 
 **See Also**
 
-[ErrorCode]({{ site.dcvb_cpp_api }}core/enum-error-code.html?src=cpp&&lang=cpp)
+[ErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
 
 ### GetErrorString
 
@@ -204,7 +205,7 @@ Returns a pointer to the CCapturedResultItem object at the specified index.
 Increases the reference count of the `CCapturedResult` object.
 
 ```cpp
-virtual CCapturedResult* Retain() = 0;
+virtual CCapturedResultItem* Retain() = 0;
 ```
 
 **Return value**
@@ -251,17 +252,33 @@ Returns a pointer to the CRecognizedTextLinesResult object containing the recogn
 
 Do not forget to release the memory pointed to by the returned pointer.
 
-### GetProcessedDocumentResult
+### GetDetectedQuadsResult
 
-Gets the processed document items from the `CCapturedResult`.
+Gets the detected quads items from the `CCapturedResult`.
 
 ```cpp
-ddn::CProcessedDocumentResult* GetProcessedDocumentResult() const
+ddn::CDetectedQuadsResult* GetDetectedQuadsResult() const
 ```
 
 **Return value**
 
-Returns a pointer to the CProcessedDocumentResult object containing the processed document items.
+Returns a pointer to the CDetectedQuadsResult object containing the detected quads items.
+
+**Remarks**
+
+Do not forget to release the memory pointed to by the returned pointer.
+
+### GetNormalizedImagesResult
+
+Gets the normalized images items from the `CCapturedResult`.
+
+```cpp
+ddn::CNormalizedImagesResult* GetNormalizedImagesResult() const
+```
+
+**Return value**
+
+Returns a pointer to the CNormalizedImagesResult object containing the normalized images items.
 
 **Remarks**
 

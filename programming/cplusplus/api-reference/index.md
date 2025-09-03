@@ -39,8 +39,8 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`CaptureState`]({{ site.dcvb_cpp_api }}capture-vision-router/enum-capture-state.html?lang=cpp)
-- [`ImageSourceState`]({{ site.dcvb_cpp_api }}capture-vision-router/enum-image-source-state.html?lang=cpp)
+- [`CaptureState`]({{ site.dcvb_enumerations }}capture-vision-router/capture-state.html?lang=cpp)
+- [`ImageSourceState`]({{ site.dcvb_enumerations }}capture-vision-router/image-source-state.html?lang=cpp)
 
 ## DynamsoftBarcodeReader
 
@@ -65,7 +65,7 @@ needAutoGenerateSidebar: false
 - [`COneDCodeDetails`]({{ site.dbr_cpp_api }}oned-code-details.html)
 - [`CPDF417Details`]({{ site.dbr_cpp_api }}pdf417-details.html)
 - [`CQRCodeDetails`]({{ site.dbr_cpp_api }}qr-code-details.html)
-- [`CScaledBarcodeImageUnit`]({{ site.dbr_cpp_api }}scaled-barcode-image-unit.html)
+- [`CScaledUpBarcodeImageUnit`]({{ site.dbr_cpp_api }}scaled-up-barcode-image-unit.html)
 
 ### Structs
 
@@ -73,11 +73,11 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`BarcodeFormat`]({{ site.dbr_cpp_api }}enum-barcode-format.html?lang=cpp)
-- [`DeblurMode`]({{ site.dbr_cpp_api }}enum-deblur-mode.html?lang=cpp)
-- [`ExtendedBarcodeResultType`]({{ site.dbr_cpp_api }}enum-extended-barcode-result-type.html?lang=cpp)
-- [`LocalizationMode`]({{ site.dbr_cpp_api }}enum-localization-mode.html?lang=cpp)
-- [`QRCodeErrorCorrectionLevel`]({{ site.dbr_cpp_api }}enum-qr-code-error-correction-level.html?lang=cpp)
+- [`BarcodeFormat`]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=cpp)
+- [`DeblurMode`]({{ site.dcvb_enumerations }}barcode-reader/deblur-mode.html?lang=cpp)
+- [`ExtendedBarcodeResultType`]({{ site.dcvb_enumerations }}barcode-reader/extended-barcode-result-type.html?lang=cpp)
+- [`LocalizationMode`]({{ site.dcvb_enumerations }}barcode-reader/localization-mode.html?lang=cpp)
+- [`QRCodeErrorCorrectionLevel`]({{ site.dcvb_enumerations }}barcode-reader/qr-code-error-correction-level.html?lang=cpp)
 
 ## DynamsoftLabelRecognizer
 
@@ -109,17 +109,15 @@ needAutoGenerateSidebar: false
 - [`CCornersUnit`]({{ site.ddn_cpp_api }}corners-unit.html)
 - [`CDetectedQuadElement`]({{ site.ddn_cpp_api }}detected-quad-element.html)
 - [`CDetectedQuadResultItem`]({{ site.ddn_cpp_api }}detected-quad-result-item.html)
+- [`CDetectedQuadsResult`]({{ site.ddn_cpp_api }}detected-quads-result.html)
 - [`CDetectedQuadsUnit`]({{ site.ddn_cpp_api }}detected-quads-unit.html)
-- [`CDeskewedImageElement`]({{ site.ddn_cpp_api }}deskewed-image-element.html)
-- [`CDeskewedImageResultItem`]({{ site.ddn_cpp_api }}deskewed-image-result-item.html)
-- [`CDeskewedImageUnit`]({{ site.ddn_cpp_api }}deskewed-image-unit.html)
-- [`CEnhancedImageElement`]({{ site.ddn_cpp_api }}enhanced-image-element.html)
-- [`CEnhancedImageResultItem`]({{ site.ddn_cpp_api }}enhanced-image-result-item.html)
-- [`CEnhancedImageUnit`]({{ site.ddn_cpp_api }}enhanced-image-unit.html)
 - [`CDocumentNormalizerModule`]({{ site.ddn_cpp_api }}document-normalizer-module.html)
 - [`CLogicLinesUnit`]({{ site.ddn_cpp_api }}logic-lines-unit.html)
 - [`CLongLinesUnit`]({{ site.ddn_cpp_api }}long-lines-unit.html)
-- [`CProcessedDocumentResult`]({{ site.ddn_cpp_api }}processed-document-result.html)
+- [`CNormalizedImageElement`]({{ site.ddn_cpp_api }}normalized-image-element.html)
+- [`CNormalizedImageResultItem`]({{ site.ddn_cpp_api }}normalized-image-result-item.html)
+- [`CNormalizedImagesResult`]({{ site.ddn_cpp_api }}normalized-images-result.html)
+- [`CNormalizedImagesUnit`]({{ site.ddn_cpp_api }}normalized-image-unit.html)
 
 ### Structs
 
@@ -127,21 +125,19 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`ImageColourMode`]({{ site.ddn_cpp_api }}enum-image-colour-mode.html?lang=cpp)
+- [`ImageColourMode`]({{ site.dcvb_enumerations }}document-normalizer/image-colour-mode.html?lang=cpp)
 
 ## DynamsoftCodeParser
 
 ### Classes
 
-- [`CCodeType`]({{ site.dcp_cpp_api }}code-type.html)
-- [`CCodeParserModule`]({{ site.dcp_cpp_api }}code-parser-module.html)
 - [`CParsedResultItem`]({{ site.dcp_cpp_api }}parsed-result-item.html)
 - [`CParsedResult`]({{ site.dcp_cpp_api }}parsed-result.html)
 
 ### Enums
 
-- [`MappingStatus`]({{ site.dcp_cpp_api }}enum-mapping-status.html?lang=cpp)
-- [`ValiadtionStatus`]({{ site.dcp_cpp_api }}enum-validation-status.html?lang=cpp)
+- [`MappingStatus`]({{ site.dcvb_enumerations }}code-parser/mapping-status.html?lang=cpp)
+- [`ValiadtionStatus`]({{ site.dcvb_enumerations }}code-parser/validation-status.html?lang=cpp)
 
 ## DynamsoftCore
 
@@ -149,7 +145,6 @@ needAutoGenerateSidebar: false
 
 - [`CAbstractIntermediateResultReceiver`]({{ site.dcvb_cpp_api }}core/intermediate-results/abstract-intermediate-result-receiver.html)
 - [`CBinaryImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/binary-image-unit.html)
-- [`CCapturedResultBase`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html)
 - [`CCapturedResultItem`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html)
 - [`CColourImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/colour-image-unit.html)
 - [`CContoursUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/contours-unit.html)
@@ -177,7 +172,7 @@ needAutoGenerateSidebar: false
 - [`CQuadrilateral`]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 - [`CRect`]({{ site.dcvb_cpp_api }}core/basic-structures/rect.html)
 - [`CRegionObjectElement`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html)
-- [`CScaledColourImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/scaled-colour-image-unit.html)
+- [`CScaledDownColourImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
 - [`CShortLinesUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/short-lines-unit.html)
 - [`CTextRemovedBinaryImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/text-removed-binary-image-unit.html)
 - [`CTextZone`]({{ site.dcvb_cpp_api }}core/intermediate-results/text-zone.html)
@@ -195,42 +190,33 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`BufferOverflowProtectionMode`]({{ site.dcvb_cpp_api }}core/enum-buffer-overflow-protection-mode.html?lang=cpp)
-- [`CapturedResultItemType`]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?lang=cpp)
-- [`ColourChannelUsageType`]({{ site.dcvb_cpp_api }}core/enum-colour-channel-usage-type.html?lang=cpp)
-- [`CornerType`]({{ site.dcvb_cpp_api }}core/enum-corner-type.html?lang=cpp)
-- [`CrossVerificationStatus`]({{ site.dcvb_cpp_api }}core/enum-cross-verification-status.html?lang=cpp)
-- [`ErrorCode`]({{ site.dcvb_cpp_api }}core/enum-error-code.html?lang=cpp)
-- [`GrayscaleEnhancementMode`]({{ site.dcvb_cpp_api }}core/enum-grayscale-enhancement-mode.html?lang=cpp)
-- [`GrayscaleTransformationMode`]({{ site.dcvb_cpp_api }}core/enum-grayscale-transformation-mode.html?lang=cpp)
-- [`ImageCaptureDistanceMode`]({{ site.dcvb_cpp_api }}core/enum-image-capture-distance-mode.html?lang=cpp)
-- [`ImageFileFormat`]({{ site.dcvb_cpp_api }}core/enum-image-file-format.html?lang=cpp)
-- [`ImagePixelFormat`]({{ site.dcvb_cpp_api }}core/enum-image-pixel-format.html?lang=cpp)
-- [`ImageTagType`]({{ site.dcvb_cpp_api }}core/enum-image-tag-type.html?lang=cpp)
-- [`IntermediateResultUnitType`]({{ site.dcvb_cpp_api }}core/enum-intermediate-result-unit-type.html?lang=cpp)
-- [`PDFReadingMode`]({{ site.dcvb_cpp_api }}core/enum-pdf-reading-mode.html?lang=cpp)
-- [`RasterDataSource`]({{ site.dcvb_cpp_api }}core/enum-raster-data-source.html?lang=cpp)
-- [`RegionObjectElementType`]({{ site.dcvb_cpp_api }}core/enum-region-object-element-type.html?lang=cpp)
-- [`SectionType`]({{ site.dcvb_cpp_api }}core/enum-section-type.html?lang=cpp)
-- [`TransformMatrixType`]({{ site.dcvb_cpp_api }}core/enum-transform-matrix-type.html?lang=cpp)
-- [`VideoFrameQuality`]({{ site.dcvb_cpp_api }}core/enum-video-frame-quality.html?lang=cpp)
+- [`BufferOverflowProtectionMode`]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?lang=cpp)
+- [`CapturedResultItemType`]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=cpp)
+- [`ColourChannelUsageType`]({{ site.dcvb_enumerations }}core/colour-channel-usage-type.html?lang=cpp)
+- [`CornerType`]({{ site.dcvb_enumerations }}core/corner-type.html?lang=cpp)
+- [`CrossVerificationStatus`]({{ site.dcvb_enumerations }}core/cross-verification-status.html?lang=cpp)
+- [`ErrorCode`]({{ site.dcvb_enumerations }}core/error-code.html?lang=cpp)
+- [`GrayscaleEnhancementMode`]({{ site.dcvb_enumerations }}core/grayscale-enhancement-mode.html?lang=cpp)
+- [`GrayscaleTransformationMode`]({{ site.dcvb_enumerations }}core/grayscale-transformation-mode.html?lang=cpp)
+- [`ImageCaptureDistanceMode`]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?lang=cpp)
+- [`ImagePixelFormat`]({{ site.dcvb_enumerations }}core/image-pixel-format.html?lang=cpp)
+- [`ImageTagType`]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=cpp)
+- [`IntermediateResultUnitType`]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?lang=cpp)
+- [`PDFReadingMode`]({{ site.dcvb_enumerations }}core/pdf-reading-mode.html?lang=cpp)
+- [`RasterDataSource`]({{ site.dcvb_enumerations }}core/raster-data-source.html?lang=cpp)
+- [`RegionObjectElementType`]({{ site.dcvb_enumerations }}core/region-object-element-type.html?lang=cpp)
+- [`SectionType`]({{ site.dcvb_enumerations }}core/section-type.html?lang=cpp)
+- [`TransformMatrixType`]({{ site.dcvb_enumerations }}core/transform-matrix-type.html?lang=cpp)
+- [`VideoFrameQuality`]({{ site.dcvb_enumerations }}core/video-frame-quality.html?lang=cpp)
 
 ## DynamsoftUtility
 
-### Classes
-
 - [`CDirectoryFetcher`]({{ site.dcvb_cpp_api }}utility/directory-fetcher.html)
 - [`CFileFetcher`]({{ site.dcvb_cpp_api }}utility/file-fetcher.html)
-- [`CImageDrawer`]({{ site.dcvb_cpp_api }}utility/image-drawer.html)
-- [`CImageIO`]({{ site.dcvb_cpp_api }}utility/image-io.html)
-- [`CImageProcessor`]({{ site.dcvb_cpp_api }}utility/image-processor.html)
+- [`CImageManager`]({{ site.dcvb_cpp_api }}utility/image-manager.html)
 - [`CMultiFrameResultCrossFilter`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html)
 - [`CProactiveImageSourceAdapter`]({{ site.dcvb_cpp_api }}utility/proactive-image-source-adapter.html)
 - [`CUtilityModule`]({{ site.dcvb_cpp_api }}utility/utility-module.html)
-
-### Enums
-
-- [`FilterType`]({{ site.dcvb_cpp_api }}utility/enum-filter-type.html)
 
 ## DynamsoftLicense
 

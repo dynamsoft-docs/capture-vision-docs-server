@@ -15,6 +15,7 @@ Defines a listener for image source state changes.
 
 *Namespace:* Dynamsoft.CVR
 
+*Assembly:* Dynamsoft.CaptureVisionRouter.dll
 
 ```csharp
 public interface IImageSourceStateListener 
@@ -40,4 +41,4 @@ void OnImageSourceStateReceived(EnumImageSourceState state)
 
 **See Also**
 
-[EnumImageSourceState]({{ site.dcvb_dotnet_api }}capture-vision-router/enum-image-source-state.html)
+[EnumImageSourceState]({{ site.dcvb_enumerations }}capture-vision-router/image-source-state.html?lang=dotnet)

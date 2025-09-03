@@ -9,15 +9,16 @@ needGenerateH3Content: true
 
 # CaptureVisionRouter
 
-The `CaptureVisionRouter` class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.dcvb_architecture}}output.html#final-results?lang=dotnet) or [Intermediate Results]({{site.dcvb_architecture}}output.html#intermediate-results?lang=dotnet).
+The `CaptureVisionRouter` class is what a user uses to interact with image-processing and semantic-processing products in their applications. It accepts an image source and returns processing results which may contain [Final results]({{site.dcvb_architecture}}output.html#final-results?lang=dotnet).
 
 ## Definition
 
 *Namespace:* Dynamsoft.CVR
 
+*Assembly:* Dynamsoft.CaptureVisionRouter.dll
 
 ```csharp
-public class CaptureVisionRouter : IDisposable
+public class CaptureVisionRouter
 ```
 
 ## Constructor and Destructor Methods
@@ -33,7 +34,6 @@ public class CaptureVisionRouter : IDisposable
 | Method                                         | Description                                               |
 | ---------------------------------------------- | --------------------------------------------------------- |
 | [`Capture`](single-file-processing.md#capture) | Processes an image or file to derive important information. |
-| [`CaptureMultiPages`](single-file-processing.md#capturemultipages) | Processes an image or file containing multiple pages to derive important information. |
 
 ## Multiple-File Processing Methods
 
@@ -65,13 +65,3 @@ public class CaptureVisionRouter : IDisposable
 | [`GetSimplifiedSettings`](settings.md#getsimplifiedsettings) | Retrieves a `SimplifiedCaptureVisionSettings` object for a specific `CaptureVisionTemplate`. |
 | [`UpdateSettings`](settings.md#updatesettings)               | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.             |
 | [`ResetSettings`](settings.md#resetsettings)                 | Resets all templates to factory settings.                                                    |
-| [`GetParameterTemplateCount`](settings.md#getparametertemplatecount)  | Retrieves the total number of available parameter templates.                                 |
-| [`GetParameterTemplateName`](settings.md#getparametertemplatename)    | Retrieves the name of a specific parameter template by its index.                            |
-
-## Auxiliary Methods
-
-| Method                                      | Description                                               |
-| --------------------------------------------- | --------------------------------------------------------- |
-| [`AppendModelBuffer`](auxiliary-methods.md#appendmodelbuffer) | Appends a model to the model buffer. |
-| [`GetBufferedItemsManager`](auxiliary-methods.md#getbuffereditemsmanager)                               | Gets the manager instance of buffered items. |
-| [`GetIntermediateResultManager`](auxiliary-methods.md#getintermediateresultmanager) | Returns an `IntermediateResultManager` object. |

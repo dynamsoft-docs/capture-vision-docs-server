@@ -36,7 +36,7 @@ To find out whether your environment is supported, please read the [System Requi
 Start terminal or command prompt to run the following command:
 
 ```
-pip install dynamsoft-capture-vision-bundle
+pip install dynamsoft_capture_vision_bundle
 ```
 
 ## Build Your Own Application
@@ -59,10 +59,6 @@ from dynamsoft_capture_vision_bundle import *
 
 ### Initialize the License Key
 
-If this is your first time using the library, you will need to obtain a trial license key. We recommend getting your own 30-day trial license through the following modal:
-
-{% include trialLicense.html %}
-
 Add the following code inside the `__main__` method to initialize the license for using the SDK in the application:
 
 ```python
@@ -73,18 +69,18 @@ else:
     # codes from following steps
 ```
 
-> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. Please replace it with your own 30-day trial license.
+> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=mrz&package=python" target="_blank">Customer Portal</a>.
 
 ### Create a CaptureVisionRouter Instance
 
 ```python
-cvr_instance = CaptureVisionRouter()
+cvr = CaptureVisionRouter()
 ```
 
 ### Invoke the Capturing
 
 ```python
-result = cvr_instance.capture("[PATH-TO-THE-IMAGE-FILE]", "ReadPassportAndId")
+result = cvr.capture("[PATH-TO-THE-IMAGE-FILE]", "ReadPassportAndId")
 ```
 
 > Please change the `[PATH-TO-THE-IMAGE-FILE]` to a real image file path.
@@ -112,20 +108,20 @@ else:
 
 ### Build and Run the Project
 
-1. Save the `mrz_scanner.py` file.
+1. Save the ``mrz_scanner.py` file.
 2. Start terminal or command prompt and change to the target directory where `mrz_scanner.py` located in.
 3. Run the command
 
-    ```
-    python mrz_scanner.py
-    ```
+```
+python mrz_scanner.py
+```
 
 4. You will see the output message in the console like
 
-    ```
-    Detected 1 MRZ Result(s).
-    Result 1
-    DocumentType: XXX
-    DocumentID: XXX
-    ```
+```
+Detected 1 MRZ Result(s).
+Result 1
+DocumentType: XXX
+DocumentID: XXX
+```
 

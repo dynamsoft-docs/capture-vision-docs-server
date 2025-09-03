@@ -15,6 +15,7 @@ Defines a listener for capture state changes.
 
 *Namespace:* Dynamsoft.CVR
 
+*Assembly:* Dynamsoft.CaptureVisionRouter.dll
 
 ```csharp
 public interface ICaptureStateListener
@@ -40,4 +41,4 @@ void OnCaptureStateChanged(EnumCaptureState state)
 
 **See Also**
 
-[EnumCaptureState]({{ site.dcvb_dotnet_api }}capture-vision-router/enum-capture-state.html)
+[EnumCaptureState]({{ site.dcvb_enumerations }}capture-vision-router/capture-state.html?lang=dotnet)

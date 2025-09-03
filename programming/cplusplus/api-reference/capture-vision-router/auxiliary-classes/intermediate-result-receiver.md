@@ -32,9 +32,9 @@ class CIntermediateResultReceiver
 | [`OnLocalizedTextLinesReceived`](#onlocalizedtextlinesreceived) | Called when localized text lines have been received. |
 | [`OnRecognizedTextLinesReceived`](#onrecognizedtextlinesreceived) | Called when recognized text lines have been received. |
 | [`OnDetectedQuadsReceived`](#ondetectedquadsreceived) | Called when detected quadrilaterals have been received. |
-| [`OnDeskewedImageReceived`](#ondeskewedimagereceived) | Called when deskewed images have been received. |
+| [`OnNormalizedImagesReceived`](#onnormalizedimagesreceived) | Called when normalized images have been received. |
 | [`OnColourImageUnitReceived`](#oncolourimageunitreceived) | Called when colour image units have been received. |
-| [`OnScaledColourImageUnitReceived`](#onscaledcolourimageunitreceived) | Called when scaled colour image units have been received. |
+| [`OnScaledDownColourImageUnitReceived`](#onscaleddowncolourimageunitreceived) | Called when scaled down colour image units have been received. |
 | [`OnGrayscaleImageUnitReceived`](#ongrayscaleimageunitreceived) | Called when grayscale image units have been received. |
 | [`OnTransformedGrayscaleImageUnitReceived`](#ontransformedgrayscaleimageunitreceived) | Called when transformed grayscale image units have been received. |
 | [`OnEnhancedGrayscaleImageUnitReceived`](#onenhancedgrayscaleimageunitreceived) | Called when enhanced grayscale image units have been received. |
@@ -50,14 +50,12 @@ class CIntermediateResultReceiver
 | [`OnCornersUnitReceived`](#oncornersunitreceived) | Called when corner units have been received. |
 | [`OnCandidateQuadEdgesUnitReceived`](#oncandidatequadedgesunitreceived) | Called when candidate quadrilateral edge units have been received. |
 | [`OnCandidateBarcodeZonesUnitReceived`](#oncandidatebarcodezonesunitreceived) | Called when candidate barcode zone units have been received. |
-| [`OnScaledBarcodeImageUnitReceived`](#onscaledbarcodeimageunitreceived) | Called when scaled barcode image units have been received. |
+| [`OnScaledUpBarcodeImageUnitReceived`](#onscaledupbarcodeimageunitreceived) | Called when scaled up barcode image units have been received. |
 | [`OnDeformationResistedBarcodeImageUnitReceived`](#ondeformationresistedbarcodeimageunitreceived) | Called when deformation resisted barcode image units have been received. |
 | [`OnComplementedBarcodeImageUnitReceived`](#oncomplementedbarcodeimageunitreceived) | Called when complemented barcode image units have been received. |
 | [`OnShortLinesUnitReceived`](#onshortlinesunitreceived) | Called when short line units have been received. |
-| [`OnRawTextLinesUnitReceived`](#onrawtextlinesunitreceived) | Called when raw text lines have been received. |
-| [`OnLogicLinesUnitReceived`](#onlogiclinesunitreceived) | Called when logic lines have been received. |
-| [`OnEnhancedImageReceived`](#onenhancedimagereceived) | Called when enhanced images have been received. |
-| [`OnTargetROIResultsReceived`](#ontargetroiresultsreceived) | Called when all tasks for the target ROI are completed and the results are deduplicated. |
+| [`OnRawTextLinesReceived`](#onrawtextlinesreceived) | Called when raw text lines have been received. |
+| [`OnLogicLinesReceived`](#onlogiclinesreceived) | Called when logic lines have been received. |
 
 ### GetObservationParameters
 
@@ -215,23 +213,23 @@ virtual void OnDetectedQuadsReceived(ddn::intermediate_results::CDetectedQuadsUn
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
-### OnDeskewedImageReceived
+### OnNormalizedImagesReceived
 
-Called when deskewed images have been received.
+Called when normalized images have been received.
 
 ```cpp
-virtual void OnDeskewedImageReceived(ddn::intermediate_results::CDeskewedImageUnit *pResult, const IntermediateResultExtraInfo* info)
+virtual void OnNormalizedImagesReceived(ddn::intermediate_results::CNormalizedImagesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] pResult` A pointer to the `CDeskewedImageUnit` object that contains the result.
+`[in] pResult` A pointer to the `CNormalizedImagesUnit` object that contains the result.
 
 `[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
 
 **See Also**
 
-[CDeskewedImageUnit]({{ site.ddn_cpp_api }}deskewed-image-unit.html)
+[CNormalizedImagesUnit]({{ site.ddn_cpp_api }}normalized-image-unit.html)
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
@@ -255,23 +253,23 @@ virtual void OnColourImageUnitReceived(CColourImageUnit *pResult, const Intermed
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
-### OnScaledColourImageUnitReceived
+### OnScaledDownColourImageUnitReceived
 
-Handles the receipt of a scaled colour image unit.
+Handles the receipt of a scaled-down colour image unit.
 
 ```cpp
-virtual void OnScaledColourImageUnitReceived(CScaledColourImageUnit *pResult, const IntermediateResultExtraInfo* info)
+virtual void OnScaledDownColourImageUnitReceived(CScaledDownColourImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] pResult` A pointer to the received scaled colour image unit.
+`[in] pResult` A pointer to the received scaled-down colour image unit.
 
 `[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
 
 **See Also**
 
-[CScaledColourImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/scaled-colour-image-unit.html)
+[CScaledDownColourImageUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
@@ -575,23 +573,23 @@ virtual void OnCandidateBarcodeZonesUnitReceived(dbr::intermediate_results::CCan
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
-### OnScaledBarcodeImageUnitReceived
+### OnScaledUpBarcodeImageUnitReceived
 
-Called when a scaled barcode image unit is received.
+Called when a scaled up barcode image unit is received.
 
 ```cpp
-virtual void OnScaledBarcodeImageUnitReceived(dbr::intermediate_results::CScaledBarcodeImageUnit *pResult, const IntermediateResultExtraInfo* info)
+virtual void OnScaledUpBarcodeImageUnitReceived(dbr::intermediate_results::CScaledUpBarcodeImageUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
 
-`[in] pResult` A pointer to the scaled barcode image unit.
+`[in] pResult` A pointer to the scaled up barcode image unit.
 
 `[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
 
 **See Also**
 
-[CScaledBarcodeImageUnit]({{ site.dbr_cpp_api }}scaled-barcode-image-unit.html)
+[CScaledUpBarcodeImageUnit]({{ site.dbr_cpp_api }}scaled-up-barcode-image-unit.html)
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
@@ -635,7 +633,7 @@ virtual void OnComplementedBarcodeImageUnitReceived(dbr::intermediate_results::C
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
-### OnShortLinesUnitReceived
+## OnShortLinesUnitReceived
 
 Called when short lines units have been received.
 
@@ -655,12 +653,12 @@ virtual void OnShortLinesUnitReceived(CShortLinesUnit *pResult, const Intermedia
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
-### OnRawTextLinesUnitReceived
+### OnRawTextLinesReceived
 
 Called when raw text lines have been received.
 
 ```cpp
-virtual void OnRawTextLinesUnitReceived(dlr::intermediate_results::CRawTextLinesUnit *pResult, const IntermediateResultExtraInfo* info)
+virtual void OnRawTextLinesReceived(CRawTextLinesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
@@ -675,12 +673,12 @@ virtual void OnRawTextLinesUnitReceived(dlr::intermediate_results::CRawTextLines
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
 
-### OnLogicLinesUnitReceived
+### OnLogicLinesReceived
 
 Called when logic lines have been received.
 
 ```cpp
-virtual void OnLogicLinesUnitReceived(ddn::intermediate_results::CLogicLinesUnit *pResult, const IntermediateResultExtraInfo* info)
+virtual void OnLogicLinesReceived(CLogicLinesUnit *pResult, const IntermediateResultExtraInfo* info)
 ```
 
 **Parameters**
@@ -692,45 +690,5 @@ virtual void OnLogicLinesUnitReceived(ddn::intermediate_results::CLogicLinesUnit
 **See Also**
 
 [CLogicLinesUnit]({{ site.ddn_cpp_api }}logic-lines-unit.html)
-
-[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
-
-### OnEnhancedImageReceived
-
-Called when an enhanced image unit is received.
-
-```cpp
-virtual void OnEnhancedImageReceived(ddn::intermediate_results::CEnhancedImageUnit *pResult, const IntermediateResultExtraInfo* info)
-```
-
-**Parameters**
-
-`[in] pResult` A pointer to the enhanced image unit.
-
-`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
-
-**See Also**
-
-[CEnhancedImageUnit]({{ site.ddn_cpp_api }}enhanced-image-unit.html)
-
-[IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
-
-### OnTargetROIResultsReceived
-
-Called when all tasks for the target ROI are completed and the results are deduplicated.
-
-```cpp
-virtual void OnTargetROIResultsReceived(CIntermediateResult *pResult, const IntermediateResultExtraInfo* info)
-```
-
-**Parameters**
-
-`[in] pResult` A pointer to the `CIntermediateResult` object that contains the result.
-
-`[in] info` A pointer to the `IntermediateResultExtraInfo` object that contains the extra info of intermediate result.
-
-**See Also**
-
-[CIntermediateResult]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result.html)
 
 [IntermediateResultExtraInfo]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)

@@ -55,7 +55,7 @@ Returns the type of the captured result item.
 
 **See Also**
 
-[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
+[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### GetReferenceItem
 

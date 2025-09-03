@@ -15,6 +15,7 @@ The `CapturedResultReceiver` class is responsible for receiving captured results
 
 *Namespace:* Dynamsoft.CVR
 
+*Assembly:* Dynamsoft.CaptureVisionRouter.dll
 
 ```csharp
 public class CapturedResultReceiver 
@@ -28,7 +29,8 @@ public class CapturedResultReceiver
 | [`OnOriginalImageResultReceived`](#onoriginalimageresultreceived) | Callback function triggered when start processing each image and returns the original image result.        |
 | [`OnDecodedBarcodesReceived`](#ondecodedbarcodesreceived)         | Callback function triggered after processing each image and returns all decoded barcodes results.      |
 | [`OnRecognizedTextLinesReceived`](#onrecognizedtextlinesreceived) | Callback function triggered after processing each image and returns all recognized text lines results. |
-| [`OnProcessedDocumentResultReceived`](#onprocesseddocumentresultreceived)       | Callback function triggered after processing each image and returns all processed document results.  |
+| [`OnDetectedQuadsReceived`](#ondetectedquadsreceived)             | Callback function triggered after processing each image and returns all detected quads results.        |
+| [`OnNormalizedImagesReceived`](#onnormalizedimagesreceived)       | Callback function triggered after processing each image and returns all normalized images results.     |
 | [`OnParsedResultsReceived`](#onparsedresultsreceived)             | Callback function triggered after processing each image and returns all parsed results.                |
 | [`GetName`](#getname)       | Gets the name of the captured result receiver.                                             |
 | [`SetName`](#setname)       | Sets the name of the captured result receiver.                                             |
@@ -38,12 +40,12 @@ public class CapturedResultReceiver
 Callback function triggered after processing each image and returns all captured results.
 
 ```csharp
-virtual void OnCapturedResultReceived(CapturedResult result)
+virtual void OnCapturedResultReceived(CapturedResult pResult)
 ```
 
 **Parameters**
 
-`[in] result` The captured result.
+`[in] pResult` The captured result.
 
 **See Also**
 
@@ -54,12 +56,12 @@ virtual void OnCapturedResultReceived(CapturedResult result)
 Callback function triggered when start processing each image and returns the original image result. For the callback to be triggered, it is essential that the parameter `OutputOriginalImage` is set to value `1`.
 
 ```csharp
-virtual void OnOriginalImageResultReceived(OriginalImageResultItem result)
+virtual void OnOriginalImageResultReceived(OriginalImageResultItem pResult)
 ```
 
 **Parameters**
 
-`[in] result` The original image result.
+`[in] pResult` The original image result.
 
 **See Also**
 
@@ -70,12 +72,12 @@ virtual void OnOriginalImageResultReceived(OriginalImageResultItem result)
 Callback function triggered after processing each image and returns all decoded barcodes. For the callback to be triggered, it is essential that the `BarcodeReaderTask` is properly configured.
 
 ```csharp
-virtual void OnDecodedBarcodesReceived(DecodedBarcodesResult result)
+virtual void OnDecodedBarcodesReceived(DecodedBarcodesResult pResult)
 ```
 
 **Parameters**
 
-`[in] result` The decoded barcodes result.
+`[in] pResult` The decoded barcodes result.
 
 **See Also**
 
@@ -86,44 +88,60 @@ virtual void OnDecodedBarcodesReceived(DecodedBarcodesResult result)
 Callback function triggered after processing each image and returns all recognized text lines. For the callback to be triggered, it is essential that the `LabelRecognizerTask` is properly configured.
 
 ```csharp
-virtual void OnRecognizedTextLinesReceived(RecognizedTextLinesResult result)
+virtual void OnRecognizedTextLinesReceived(RecognizedTextLinesResult pResult)
 ```
 
 **Parameters**
 
-`[in] result` The recognized text lines result.
+`[in] pResult` The recognized text lines result.
 
 **See Also**
 
 [RecognizedTextLinesResult]({{ site.dlr_dotnet_api }}recognized-text-lines-result.html)
 
-### OnProcessedDocumentResultReceived
+### OnDetectedQuadsReceived
 
-Callback function triggered after processing each image and returns all processed document results. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
+Callback function triggered after processing each image and returns all detected quads. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
 
 ```csharp
-public virtual void OnProcessedDocumentResultReceived(ProcessedDocumentResult result)
+virtual void OnDetectedQuadsReceived(DetectedQuadsResult pResult)
 ```
 
 **Parameters**
 
-`[in] result` The processed document results.
+`[in] pResult` The detected quads result.
 
 **See Also**
 
-[ProcessedDocumentResult]({{ site.ddn_dotnet_api }}processed-document-result.html)
+[DetectedQuadsResult]({{ site.ddn_dotnet_api }}detected-quads-result.html)
+
+### OnNormalizedImagesReceived
+
+Callback function triggered after processing each image and returns all normalized images. For the callback to be triggered, it is essential that the `DocumentNormalizerTask` is properly configured.
+
+```csharp
+virtual void OnNormalizedImagesReceived(NormalizedImagesResult pResult)
+```
+
+**Parameters**
+
+`[in] pResult` The normalized images result.
+
+**See Also**
+
+[NormalizedImagesResult]({{ site.ddn_dotnet_api }}normalized-images-result.html)
 
 ### OnParsedResultsReceived
 
 Callback function triggered after processing each image and returns all parsed results. For the callback to be triggered, it is essential that the `CodeParserTask` is properly configured.
 
 ```csharp
-virtual void OnParsedResultsReceived(ParsedResult result)
+virtual void OnParsedResultsReceived(ParsedResult pResult)
 ```
 
 **Parameters**
 
-`[in] result` The parsed result.
+`[in] pResult` The parsed result.
 
 **See Also**
 

@@ -34,7 +34,6 @@ class CCaptureVisionRouter
 | API Name                                       | Description                                               |
 | ---------------------------------------------- | --------------------------------------------------------- |
 | [`Capture`](single-file-processing.md#capture) | Processes an image or file to derive important information. |
-| [`CaptureMultiPages`](single-file-processing.md#capturemultipages) | Processes an image or file containing multiple pages to derive important information. |
 
 ## Multiple-File Processing
 
@@ -66,8 +65,6 @@ class CCaptureVisionRouter
 | [`GetSimplifiedSettings`](settings.md#getsimplifiedsettings) | Retrieves a `SimplifiedCaptureVisionSettings` object for a specific `CaptureVisionTemplate`. |
 | [`UpdateSettings`](settings.md#updatesettings)               | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.             |
 | [`ResetSettings`](settings.md#resetsettings)                 | Resets all templates to factory settings.                                                    |
-| [`GetParameterTemplateCount`](settings.md#getparametertemplatecount)  | Retrieves the total number of available parameter templates.                                 |
-| [`GetParameterTemplateName`](settings.md#getparametertemplatename)    | Retrieves the name of a specific parameter template by its index.                            |
 
 ## Intermediate Result
 
@@ -87,5 +84,4 @@ The following method returns an `CIntermediateResultManager` object which allows
 
 | API Name                                      | Description                                               |
 | --------------------------------------------- | --------------------------------------------------------- |
-| [`FreeString`](auxiliary-methods.md#freestring) | Frees the memory allocated for a string. The function is *deprecated*, use [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes) instead.                 |
-| [`AppendModelBuffer`](auxiliary-methods.md#appendmodelbuffer) | Appends a model to the model buffer. |
+| [`FreeString`](auxiliary-methods.md#freestring) | Frees the memory allocated for a string.                  |

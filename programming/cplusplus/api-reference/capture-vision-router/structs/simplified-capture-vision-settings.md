@@ -19,7 +19,7 @@ The `SimplifiedCaptureVisionSettings` struct contains settings for capturing and
 ```cpp
 typedef struct tagSimplifiedCaptureVisionSettings
 {
-    int outputOriginalImage;
+    int capturedResultItemTypes;
     CQuadrilateral roi;
     int roiMeasuredInPercentage;
     int maxParallelTasks;
@@ -36,7 +36,7 @@ typedef struct tagSimplifiedCaptureVisionSettings
 
 | Attribute                                             | Type                                |
 | ----------------------------------------------------- | ----------------------------------- |
-| [`outputOriginalImage`](#outputoriginalimage) | *int*                               |
+| [`capturedResultItemTypes`](#capturedresultitemtypes) | *int*                               |
 | [`roi`](#roi)                                         | *CQuadrilateral*                    |
 | [`roiMeasuredInPercentage`](#roimeasuredinpercentage) | *int*                               |
 | [`maxParallelTasks`](#maxparalleltasks)               | *int*                               |
@@ -47,18 +47,21 @@ typedef struct tagSimplifiedCaptureVisionSettings
 | [`minImageCaptureInterval`](#minimagecaptureinterval) | *int*                               |
 | [`reserved`](#reserved)                               | *char[1440]*                        |
 
-### outputOriginalImage
+### capturedResultItemTypes
 
-Specifies whether to output the original image.
+Specifies the type(s) of CapturedItem(s) that will be captured. 
 
 ```cpp
-int outputOriginalImage
+int capturedResultItemTypes
 ```
 
 **Values**
 
-- 0: Do not output the original image.
-- 1: Output the original image.
+The value should be a bitwise OR combination of one or more of enumeration `CapturedResultItemType`:
+
+**See Also**
+
+[CapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
 
 ### roi
 

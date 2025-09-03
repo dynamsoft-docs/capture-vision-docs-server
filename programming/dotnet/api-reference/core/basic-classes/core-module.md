@@ -15,6 +15,7 @@ The `CoreModule` class defines general functions in the core module.
 
 *Namespace:* Dynamsoft.Core
 
+*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
 public class CoreModule 

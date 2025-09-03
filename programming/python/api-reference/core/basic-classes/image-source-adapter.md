@@ -142,7 +142,7 @@ def set_buffer_overflow_protection_mode(self, mode: int) -> None:
 
 **See Also**
 
-[EnumBufferOverflowProtectionMode]({{ site.dcvb_python_api }}core/enum-buffer-overflow-protection-mode.html)
+[EnumBufferOverflowProtectionMode]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?lang=python)
 
 ### get_buffer_overflow_protection_mode
 
@@ -158,7 +158,7 @@ Returns the current buffer overflow protection mode.
 
 **See Also**
 
-[EnumBufferOverflowProtectionMode]({{ site.dcvb_python_api }}core/enum-buffer-overflow-protection-mode.html)
+[EnumBufferOverflowProtectionMode]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?lang=python)
 
 ### has_image
 
@@ -240,7 +240,7 @@ def set_colour_channel_usage_type(self, type: int) -> None:
 
 **See Also**
 
-[EnumColourChannelUsageType]({{ site.dcvb_python_api }}core/enum-colour-channel-usage-type.html)
+[EnumColourChannelUsageType]({{ site.dcvb_enumerations }}core/colour-channel-usage-type.html?lang=python)
 
 ### get_colour_channel_usage_type
 
@@ -256,7 +256,7 @@ Returns the usage type of a color channel in images.
 
 **See Also**
 
-[EnumColourChannelUsageType]({{ site.dcvb_python_api }}core/enum-colour-channel-usage-type.html)
+[EnumColourChannelUsageType]({{ site.dcvb_enumerations }}core/colour-channel-usage-type.html?lang=python)
 
 ### set_error_listener
 

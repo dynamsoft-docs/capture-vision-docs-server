@@ -13,7 +13,6 @@ breadcrumbText: CVR C++ Single-File Processing
 | API Name              | Description                                               |
 | --------------------- | --------------------------------------------------------- |
 | [`Capture`](#capture) | Process an image or file to derive important information. |
-| [`CaptureMultiPages`](#capturemultipages) | Processes an image or file containing multiple pages to derive important information. |
 
 ## Capture
 
@@ -40,7 +39,6 @@ CCapturedResult* Capture(const CImageData* pImageData, const char* templateName=
 **Remarks**
 
 - There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [InitSettings]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettings) / [InitSettingsFromFile]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
 - Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `InitSettings` / `InitSettingsFromFile` and pass his own settings.
 - If parameter `templateName` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
 
@@ -54,6 +52,7 @@ Returns a pointer to a `CCapturedResult` object containing the captured items.
 | EC_FILE_NOT_FOUND | -10005 | The file is not found. |
 | EC_FILE_TYPE_NOT_SUPPORTED | -10006 | The file type is not supported. |
 | EC_TEMPLATE_NAME_INVALID | -10036 | The target template name is invalid. |
+| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
 | EC_MULTI_PAGES_NOT_SUPPORTED | -10066 | The api does not support multi-page files. Please use FileFetcher instead. |
 
 **Code Snippet**
@@ -71,7 +70,6 @@ else
     CCaptureVisionRouter* router = new CCaptureVisionRouter();
     CCapturedResult* result = router->Capture("path/to/file.png", "myTemplate");
     // other codes...
-    result->Release();
     delete router;
 }
 ```
@@ -79,71 +77,4 @@ else
 **See Also**
 
 [CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
-[CCapturedResult]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)
-
-## CaptureMultiPages
-
-Processes an image or file containing multiple pages to derive important information.
-
-```cpp
-CCapturedResultArray* CaptureMultiPages(const char* filePath, const char* templateName="");
-CCapturedResultArray* CaptureMultiPages(const unsigned char *fileBytes, int fileSize, const char* templateName="");
-```
-
-**Parameters**
-
-`[in] filePath` Specifies the path of the file to process.
-
-`[in] templateName` Specifies a `CaptureVisionTemplate` to use for capturing.
-
-`[in] fileBytes` Specifies the memory location containing the image to be processed.
-
-`[in] fileSize`  Specifies the size of the image in bytes.
-
-**Remarks**
-
-- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [InitSettings]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettings) / [InitSettingsFromFile]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
-- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `InitSettings` / `InitSettingsFromFile` and pass his own settings.
-- If parameter `templateName` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
-
-**Return Value**
-
-Returns a pointer to a `CCapturedResultArray` object containing the captured items.
-
-| Error Code | Value | Description |
-| :--------- | :---- | :---------- |
-| EC_NULL_POINTER | -10002 | The ImageData object is null. |
-| EC_FILE_NOT_FOUND | -10005 | The file is not found. |
-| EC_FILE_TYPE_NOT_SUPPORTED | -10006 | The file type is not supported. |
-| EC_TEMPLATE_NAME_INVALID | -10036 | The target template name is invalid. |
-
-**Code Snippet**
-
-```cpp
-int errorCode = 0;
-char szErrorMsg[256];
-errorCode = CLicenseManager::InitLicense("YOUR-LICENSE-KEY", szErrorMsg, 256);
-if (errorCode != ErrorCode::EC_OK && errorCode != ErrorCode::EC_LICENSE_CACHE_USED)
-{
-    cout << "License initialization failed: ErrorCode: " << errorCode << ", ErrorString: " << szErrorMsg << endl;
-}
-else
-{
-    CCaptureVisionRouter* router = new CCaptureVisionRouter();
-    CCapturedResultArray* resultArray = router->CaptureMultiPages("path/to/file.pdf", "myTemplate");
-    for (int i = 0; i < resultArray->GetResultsCount(); i++)
-    {
-        const CCapturedResult* result = resultArray->GetResult(i);
-        // other codes...
-    }
-    resultArray->Release();
-    delete router;
-}
-```
-
-**See Also**
-
-[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
-[CCapturedResultArray]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-array.html)
 [CCapturedResult]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)

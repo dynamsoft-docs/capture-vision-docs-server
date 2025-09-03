@@ -28,7 +28,6 @@ class CRect
 | [`left`](#left) | *int* |
 | [`right`](#right) | *int* |
 | [`bottom`](#bottom) | *int* |
-| [`id`](#id) | *int* |
 
 ### top
 
@@ -60,12 +59,4 @@ The bottom edge of the rectangle.
 
 ```cpp
 int bottom
-```
-
-### id
-
-The id of the rectangle.
-
-```cpp
-int id
 ```

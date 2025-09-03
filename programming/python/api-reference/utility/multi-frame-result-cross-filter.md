@@ -61,7 +61,7 @@ def enable_result_cross_verification(self, result_item_types: int, enabled: bool
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 ### is_result_cross_verification_enabled
 
@@ -81,7 +81,7 @@ Returns a bool value indicating whether result verification is enabled for the s
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 ### enable_result_deduplication
 
@@ -99,7 +99,7 @@ def enable_result_deduplication(self, result_item_types: int, enabled: bool) -> 
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 ### is_result_deduplication_enabled
 
@@ -119,7 +119,7 @@ Returns a bool value indicating whether result deduplication is enabled for the 
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 ### set_duplicate_forget_time
 
@@ -137,7 +137,7 @@ def set_duplicate_forget_time(self, result_item_types: int, time: int) -> None:
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 ### get_duplicate_forget_time
 
@@ -157,7 +157,7 @@ Returns the duplicate forget time for the specific captured result item type.
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 ### set_max_overlapping_frames
 
@@ -175,7 +175,7 @@ def set_max_overlapping_frames(self, result_item_types: int, max_overlapping_fra
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 ### get_max_overlapping_frames
 
@@ -195,7 +195,7 @@ Returns the max referencing frames count for the to-the-latest overlapping featu
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 
 ### enable_latest_overlapping
@@ -213,7 +213,7 @@ def enable_latest_overlapping(self, result_item_types: int, enabled: bool) -> No
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 
 ### is_latest_overlapping_enabled
 
@@ -233,5 +233,5 @@ Returns a bool value indicating whether the to-the-latest overlapping feature is
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=python)
 

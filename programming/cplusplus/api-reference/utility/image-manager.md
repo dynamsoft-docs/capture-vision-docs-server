@@ -4,7 +4,6 @@ title: class CImageManager - Dynamsoft Utility Module C++ Edition API Reference
 description: This page shows the C++ edition of the class CImageManager in Dynamsoft Utility Module.
 keywords: image manager, drawing on image, c++
 needAutoGenerateSidebar: true
-ignore: true
 ---
 
 # CImageManager

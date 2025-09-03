@@ -92,55 +92,41 @@ Returns an error code. Zero indicates success.
 Exports a specific template to a string.
 
 ```cpp
-char* OutputSettings(const char* templateName, bool includeDefaultValues = false, int* pErrorCode = NULL)
+char* OutputSettings(const char* templateName, int* pErrorCode = NULL)
 ```
 
 **Parameters**
 
-`[in] templateName` The name of the `CaptureVisionTemplate` to export.
-
-`[in] includeDefaultValues` Specifies whether to include default values in the exported template.
+`[in] templateName` The name of the template to export.
 
 `[out] pErrorCode` An error code.
 
-**Remarks**
-
-- It is supported to export all loaded templates by specifying the `templateName` as '*'.
-- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [InitSettings]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettings) / [InitSettingsFromFile]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
-- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `InitSettings` / `InitSettingsFromFile` and pass his own settings.
-
 **Return value**
 
-Returns a string containing the exported template. The string is allocated by the SDK and must be freed by calling [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes).
+Returns a string containing the exported template. The string is allocated by the SDK and must be freed by calling [`FreeString`](auxiliary-methods.md#freestring).
 
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |
 | EC_TEMPLATE_NAME_INVALID | -10036 | The target template name is invalid. |
+| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
 
+**Remarks**
+
+It is supported to export all loaded templates by specifying the `templateName` as '*'.
 
 ## OutputSettingsToFile
 
 Exports a specific template to a file.
 
 ```cpp
-int OutputSettingsToFile(const char* templateName, const char* filePath, bool includeDefaultValues = false)
+int OutputSettingsToFile(const char* templateName, const char* filePath)
 ```
 
 **Parameters**
 
-`[in] templateName` The name of the `CaptureVisionTemplate` to export.
+`[in] templateName` The name of the template to export.
 
 `[in] filePath` The path to the output file.
-
-`[in] includeDefaultValues` Specifies whether to include default values in the exported template.
-
-**Remarks**
-
-- It is supported to export all loaded templates by specifying the `templateName` as '*'.
-- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [InitSettings]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettings) / [InitSettingsFromFile]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
-- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `InitSettings` / `InitSettingsFromFile` and pass his own settings.
 
 **Return value**
 
@@ -149,6 +135,11 @@ Returns an error code. Zero indicates success.
 | Error Code | Value | Description |
 | :--------- | :---- | :---------- |
 | EC_FILE_SAVE_FAILED | -10058 | The file path is unavailable or the file can't be created for any other reasons. |
+| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
+
+**Remarks**
+
+It is supported to export all loaded templates by specifying the `templateName` as '*'.
 
 ## GetSimplifiedSettings
 
@@ -160,15 +151,9 @@ int GetSimplifiedSettings(const char* templateName, SimplifiedCaptureVisionSetti
 
 **Parameters**
 
-`[in] templateName` The name of the `CaptureVisionTemplate`.
+`[in] templateName` The name of the template.
 
 `[out] settings` A pointer to a `SimplifiedCaptureVisionSettings` object.
-
-**Remarks**
-
-- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [InitSettings]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettings) / [InitSettingsFromFile]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
-- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `InitSettings` / `InitSettingsFromFile` and pass his own settings.
 
 **Return value**
 
@@ -194,19 +179,13 @@ int UpdateSettings(const char* templateName, const SimplifiedCaptureVisionSettin
 
 **Parameters**
 
-`[in] templateName` The name of the `CaptureVisionTemplate` to update.
+`[in] templateName` The name of the template to update.
 
 `[in] settings` A pointer to a `SimplifiedCaptureVisionSettings` object.
 
 `[in] errorMsgBuffer` A buffer for error messages.
 
 `[in] errorMsgBufferLen` The length of the error message buffer.
-
-**Remarks**
-
-- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [InitSettings]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettings) / [InitSettingsFromFile]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
-- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `InitSettings` / `InitSettingsFromFile` and pass his own settings.
 
 **Return value**
 
@@ -216,6 +195,7 @@ Returns an error code. Zero indicates success.
 | :--------- | :---- | :---------- |
 | EC_TEMPLATE_NAME_INVALID | -10036 | The target template name is invalid. |
 | EC_PARAMETER_VALUE_INVALID | -10038 | There exists invalid parameter value in your `SimplifiedCaptureVisionSettings`. |
+| EC_CALL_REJECTED_WHEN_CAPTURING  | -10062 | Function call is rejected when capturing in progress. |
 
 **See Also**
 

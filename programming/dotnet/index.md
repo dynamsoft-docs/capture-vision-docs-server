@@ -34,12 +34,12 @@ The best way to begin with Dynamsoft Capture Vision .NET Edition is to follow th
 ## System Requirements
 
 - Windows:
-  - Supported Versions: Windows 8 and higher, or Windows Server 2012 and higher
+  - Supported Versions: Windows 7 and higher, or Windows Server 2003 and higher
   - Architecture: x64 and x86
   - Development Environment: Visual Studio 2012 or higher.
 
 - Linux:
-  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 7+
+  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 6+
   - Architectures: x64
   - Minimum GLIBC Version: GLIBC_2.18 or higher
 

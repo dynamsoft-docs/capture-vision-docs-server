@@ -14,16 +14,17 @@ The `ImageData` class represents image data, which contains the image bytes, wid
 
 *Namespace:* Dynamsoft.Core
 
+*Assembly:* Dynamsoft.Core.dll
 
 ```csharp
-public class ImageData : IDisposable
+public class ImageData 
 ```
 
 ## Methods
 
 | Method               | Description |
 |----------------------|-------------|
-| [`ImageData()`](#ImageData-constructor) | Constructs an empty image data object. |
+| [`ImageData()`](#ImageData-constructor4) | Constructs an empty image data object. |
 | [`ImageData(byte[] bytes, int width, int height, int stride, EnumImagePixelFormat format, int orientation = 0, ImageTag tag = null)`](#ImageData-constructor) | Constructs an image data object with the specified parameters. |
 | [`GetBytes`](#getbytes) | Gets the image byte array. |
 | [`GetWidth`](#getwidth) | Gets the width of the image. |
@@ -41,7 +42,6 @@ public class ImageData : IDisposable
 Constructs an image data object with the specified parameters.
 
 ```csharp
-ImageData()
 ImageData(byte[] bytes, int width, int height, int stride, EnumImagePixelFormat format, int orientation = 0, ImageTag tag = null)
 ```
 
@@ -63,7 +63,7 @@ ImageData(byte[] bytes, int width, int height, int stride, EnumImagePixelFormat 
 
 **See Also**
 
-[EnumImagePixelFormat]({{ site.dcvb_dotnet_api }}core/enum-image-pixel-format.html)
+[EnumImagePixelFormat]({{ site.dcvb_enumerations }}core/image-pixel-format.html?lang=dotnet)
 
 ### GetBytes
 
@@ -127,7 +127,7 @@ Returns the pixel format of the image.
 
 **See Also**
 
-[EnumImagePixelFormat]({{ site.dcvb_dotnet_api }}core/enum-image-pixel-format.html)
+[EnumImagePixelFormat]({{ site.dcvb_enumerations }}core/image-pixel-format.html?lang=dotnet)
 
 ### GetOrientation
 

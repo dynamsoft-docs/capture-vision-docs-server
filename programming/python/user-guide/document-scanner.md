@@ -30,7 +30,7 @@ To find out whether your environment is supported, please read the [System Requi
 Start terminal or command prompt to run the following command:
 
 ```
-pip install dynamsoft-capture-vision-bundle
+pip install dynamsoft_capture_vision_bundle
 ```
 
 ## Build Your Own Application
@@ -68,7 +68,7 @@ else:
 ### Create a CaptureVisionRouter Instance
 
 ```python
-cvr_instance = CaptureVisionRouter()
+cvr = CaptureVisionRouter()
 ```
 
 ### Detect and Save the Normalized Document
@@ -76,7 +76,7 @@ cvr_instance = CaptureVisionRouter()
 1. Apply detection and normalization for an image file.
 
 ```python
-result = cvr_instance.capture("[PATH-TO-THE-IMAGE-FILE]", EnumPresetTemplate.PT_DETECT_AND_NORMALIZE_DOCUMENT.value)
+result = cvr.capture("[PATH-TO-THE-IMAGE-FILE]", EnumPresetTemplate.PT_DETECT_AND_NORMALIZE_DOCUMENT.value)
 ```
 
 > Please change the `[PATH-TO-THE-IMAGE-FILE]` to a real image file path.

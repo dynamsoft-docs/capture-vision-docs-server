@@ -55,7 +55,7 @@ def __init__(self, *args):
 
 **See Also**
 
-[EnumImagePixelFormat]({{ site.dcvb_python_api }}core/enum-image-pixel-format.html)
+[EnumImagePixelFormat]({{ site.dcvb_enumerations }}core/image-pixel-format.html?lang=python)
 
 [ImageTag]({{ site.dcvb_python_api }}core/basic-classes/image-tag.html)
 
@@ -121,7 +121,7 @@ Returns the pixel format of the image.
 
 **See Also**
 
-[EnumImagePixelFormat]({{ site.dcvb_python_api }}core/enum-image-pixel-format.html)
+[EnumImagePixelFormat]({{ site.dcvb_enumerations }}core/image-pixel-format.html?lang=python)
 
 ### get_orientation
 

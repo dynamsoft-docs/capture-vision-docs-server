@@ -18,8 +18,6 @@ needGenerateH3Content: false
 | [`get_simplified_settings`](#get_simplified_settings) | Retrieves a `SimplifiedCaptureVisionSettings` object for a specific `CaptureVisionTemplate`. |
 | [`update_settings`](#update_settings)               | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.             |
 | [`reset_settings`](#reset_settings)                 | Resets all templates to factory settings.                                                    |
-| [`get_parameter_template_count`](#get_parameter_template_count)  | Gets the total number of available parameter templates.                                 |
-| [`get_parameter_template_name`](#get_parameter_template_name)    | Gets the name of a specific parameter template by its index.                            |
 
 ## init_settings
 
@@ -41,7 +39,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
 
 ## init_settings_from_file
 
@@ -63,29 +61,19 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
 
 ## output_settings
 
 Exports a specific template to a string.
 
 ```python
-def output_settings(self, template_name: str, include_default_values: bool = False) -> Tuple[int, str, str]:
+def output_settings(self, template_name: str) -> Tuple[int, str, str]:
 ```
 
 **Parameters**
 
-`template_name` The name of the `CaptureVisionTemplate` to be exported.
-
-`include_default_values` Specifies whether to include default values in the exported template.
-
-**Remarks**
-
-- It is supported to export all loaded templates by specifying the `template_name` as '*'.
-- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_python_api }}capture-vision-router/enum-preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [init_settings]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings) / [init_settings_from_file]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings_from_file).
-- When using a custom template, the parameter `template_name` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
-- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `init_settings` / `init_settings_from_file` and pass his own settings.
-- If parameter `template_name` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
+`template_name` The name of the template to be exported.
 
 **Return Value**
 
@@ -96,14 +84,18 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+
+**Remarks**
+
+It is supported to export all loaded templates by specifying the `template_name` as '*'.
 
 ## output_settings_to_file
 
 Exports a specific template to a file.
 
 ```python
-def output_settings_to_file(self, template_name: str, file_path: str, include_default_values: bool = False) -> Tuple[int, str]:
+def output_settings_to_file(self, template_name: str, file_path: str) -> Tuple[int, str]:
 ```
 
 **Parameters**
@@ -111,16 +103,6 @@ def output_settings_to_file(self, template_name: str, file_path: str, include_de
 `template_name` The name of the template to be exported.
 
 `file_path` The path to the output file.
-
-`include_default_values` Specifies whether to include default values in the exported template.
-
-**Remarks**
-
-- It is supported to export all loaded templates by specifying the `template_name` as '*'.
-- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_python_api }}capture-vision-router/enum-preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [init_settings]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings) / [init_settings_from_file]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings_from_file).
-- When using a custom template, the parameter `template_name` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
-- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `init_settings` / `init_settings_from_file` and pass his own settings.
-- If parameter `template_name` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
 
 **Return Value**
 
@@ -130,7 +112,11 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
+
+**Remarks**
+
+It is supported to export all loaded templates by specifying the `template_name` as '*'.
 
 ## get_simplified_settings
 
@@ -144,13 +130,6 @@ def get_simplified_settings(self, template_name: str) -> Tuple[int, str, Simplif
 
 `template_name` The name of the template.
 
-**Remarks**
-
-- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_python_api }}capture-vision-router/enum-preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [init_settings]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings) / [init_settings_from_file]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings_from_file).
-- When using a custom template, the parameter `template_name` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
-- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `init_settings` / `init_settings_from_file` and pass his own settings.
-- If parameter `template_name` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
-
 **Return Value**
 
 Returns a tuple containing following elements:
@@ -160,7 +139,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
 
 [SimplifiedCaptureVisionSettings]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
 
@@ -178,13 +157,6 @@ def update_settings(self, template_name: str, settings: SimplifiedCaptureVisionS
 
 `settings` A `SimplifiedCaptureVisionSettings` object.
 
-**Remarks**
-
-- There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_python_api }}capture-vision-router/enum-preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [init_settings]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings) / [init_settings_from_file]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings_from_file).
-- When using a custom template, the parameter `template_name` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
-- Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `init_settings` / `init_settings_from_file` and pass his own settings.
-- If parameter `template_name` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
-
 **Return Value**
 
 Returns a tuple containing following elements:
@@ -193,7 +165,7 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
 
 [SimplifiedCaptureVisionSettings]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
 
@@ -213,35 +185,5 @@ Returns a tuple containing following elements:
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)
-
-## get_parameter_template_count
-
-Gets the total number of available parameter templates.
-
-```python
-def get_parameter_template_count(self) -> int:
-```
-
-**Return value**
-
-Returns an integer representing the count of parameter templates.
-
-## get_parameter_template_name
-
-Gets the name of a specific parameter template by its index.
-
-```python
-def get_parameter_template_name(self, index: int) -> Tuple[int, str]:
-```
-
-**Parameters**
-
-`index` The index of the parameter template to get.
-
-**Return value**
-
-Returns a tuple containing following elements:
-- `error_code` <*int*>: The error code indicating the status of the operation.
-- `template_name` <*str*>: The name of the parameter template.
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=python)
 
