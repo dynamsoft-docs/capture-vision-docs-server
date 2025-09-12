@@ -6,6 +6,7 @@ searchIndexName: Crawler-DCV-Docs-New
 searchNeedFilter: true
 
 useVersionTree: true
+useJSVersionV3: true
 
 dcvb_introduction: /capture-vision/docs/core/introduction/
 dcvb_architecture: /capture-vision/docs/core/architecture/
@@ -31,6 +32,8 @@ dbr_cpp_api: /barcode-reader/docs/server/programming/cplusplus/api-reference/
 dlr_cpp_api: /label-recognition/docs/server/programming/cplusplus/api-reference/
 ddn_cpp_api: /document-normalizer/docs/server/programming/cplusplus/api-reference/
 dcp_cpp_api: /code-parser/docs/server/programming/cplusplus/api-reference/
+dcvb_cpp_release_notes_v2: /capture-vision/docs/v2/server/programming/cplusplus/release-notes/
+dcvb_cpp_release_notes_v3: /capture-vision/docs/server/programming/cplusplus/release-notes/
 
 dcvb_dotnet: /capture-vision/docs/server/programming/dotnet/
 dbr_dotnet: /barcode-reader/docs/server/programming/dotnet/
@@ -42,6 +45,8 @@ dbr_dotnet_api: /barcode-reader/docs/server/programming/dotnet/api-reference/
 dlr_dotnet_api: /label-recognition/docs/server/programming/dotnet/api-reference/
 ddn_dotnet_api: /document-normalizer/docs/server/programming/dotnet/api-reference/
 dcp_dotnet_api: /code-parser/docs/server/programming/dotnet/api-reference/
+dcvb_dotnet_release_notes_v2: /capture-vision/docs/v2/server/programming/dotnet/release-notes/
+dcvb_dotnet_release_notes_v3: /capture-vision/docs/server/programming/dotnet/release-notes/
 
 dcvb_java: /capture-vision/docs/server/programming/java/
 dcvb_java_api: /capture-vision/docs/server/programming/java/api-reference/
@@ -53,6 +58,7 @@ dbr_java_api: /barcode-reader/docs/server/programming/java/api-reference/
 dlr_java_api: /label-recognition/docs/server/programming/java/api-reference/
 ddn_java_api: /document-normalizer/docs/server/programming/java/api-reference/
 dcp_java_api: /code-parser/docs/server/programming/java/api-reference/
+dcvb_java_release_notes_v3: /capture-vision/docs/server/programming/java/release-notes/
 
 dcvb_python: /capture-vision/docs/server/programming/python/
 dbr_python: /barcode-reader/docs/server/programming/python/
@@ -64,6 +70,8 @@ dbr_python_api: /barcode-reader/docs/server/programming/python/api-reference/
 dlr_python_api: /label-recognition/docs/server/programming/python/api-reference/
 ddn_python_api: /document-normalizer/docs/server/programming/python/api-reference/
 dcp_python_api: /code-parser/docs/server/programming/python/api-reference/
+dcvb_python_release_notes_v2: /capture-vision/docs/v2/server/programming/python/release-notes/
+dcvb_python_release_notes_v3: /capture-vision/docs/server/programming/python/release-notes/
 
 dcvb_js: /capture-vision/docs/web/programming/javascript/
 dcvb_android: /capture-vision/docs/mobile/programming/android/
