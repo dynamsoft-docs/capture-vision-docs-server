@@ -11,16 +11,36 @@ needGenerateH3Content: false
 
 | Method                                                      | Description                                               |
 | ----------------------------------------------------------- | --------------------------------------------------------- |
-| [`AppendModelBuffer`](#appendmodelbuffer)                       | Appends a model to the model buffer. |
-| [`GetBufferedItemsManager`](#getbuffereditemsmanager)           | Gets the manager instance of buffered items.         |
-| [`GetIntermediateResultManager`](#getintermediateresultmanager) | Returns an `IntermediateResultManager` object.           |
+| [`SetGlobalIntraOpNumThreads`](#setglobalintraopnumthreads) | Sets the global number of threads used internally for model execution. |
+| [`AppendDLModelBuffer`](#appenddlmodelbuffer) | Appends a deep learning model to the memory buffer. |
+| [`ClearDLModelBuffers`](#cleardlmodelbuffers) | Clears all deep learning models from buffer to free up memory. |
+| [`GetBufferedItemsManager`](#getbuffereditemsmanager) | Gets the manager instance of buffered items. |
+| [`GetIntermediateResultManager`](#getintermediateresultmanager) | Returns an `IntermediateResultManager` object. |
+| [`AppendModelBuffer`](#appendmodelbuffer) | Deprecated. Will be removed in future versions. Use `AppendDLModelBuffer` instead. |
 
-## AppendModelBuffer
+## SetGlobalIntraOpNumThreads
 
-Appends a model to the model buffer.
+Sets the global number of threads used internally for model execution.
 
 ```csharp
-public static int AppendModelBuffer(string modelName, byte[] modelBytes, int maxModelInstances)
+public static void SetGlobalIntraOpNumThreads(int intraOpNumThreads = 0)
+```
+
+**Parameters**
+
+`[in] intraOpNumThreads` Number of threads used internally for model execution. Valid range: [0, 256]. 
+If the value is outside the range [0, 256], it will be treated as 0 (default).
+
+**Remarks**
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
+
+## AppendDLModelBuffer
+
+Appends a deep learning model to the memory buffer.
+
+```csharp
+public static int AppendDLModelBuffer(string modelName, byte[] modelBytes, int maxModelInstances)
 ```
 
 **Parameters**
@@ -35,12 +55,30 @@ public static int AppendModelBuffer(string modelName, byte[] modelBytes, int max
 
 Returns 0 if succeeds, nonzero otherwise.
 
+**Remarks**
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
+
+## ClearDLModelBuffers
+
+Clears all deep learning models from buffer to free up memory.
+
+```csharp
+public static void ClearDLModelBuffers()
+```
+
+**Remarks**
+
+- After calling this function, all `CaptureVisionRouter` instances created before the function call will not be able to use model-related features.
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
+
 ## GetBufferedItemsManager
 
 Gets the manager instance of buffered items.
 
 ```csharp
-BufferedItemsManager GetBufferedItemsManager();
+BufferedItemsManager GetBufferedItemsManager()
 ```
 
 **Return Value**
@@ -56,7 +94,7 @@ When the maximum number of buffered items is set to greater than 0, item bufferi
 Returns an [`IntermediateResultManager`](auxiliary-classes/intermediate-result-manager.md) object.
 
 ```csharp
-IntermediateResultManager* GetIntermediateResultManager();
+IntermediateResultManager GetIntermediateResultManager()
 ```
 
 **Parameters**
@@ -66,3 +104,11 @@ None.
 **Return Value**
 
 Returns the [`IntermediateResultManager`](auxiliary-classes/intermediate-result-manager.md) object.
+
+## AppendModelBuffer
+
+Deprecated. Will be removed in future versions. Use `AppendDLModelBuffer` instead.
+
+**Remarks**
+
+- Deprecated in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.

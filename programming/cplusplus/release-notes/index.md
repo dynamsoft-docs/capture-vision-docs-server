@@ -9,6 +9,7 @@ noTitleIndex: true
 
 # Release Notes - Dynamsoft Capture Vision CPP
 
+- [3.2.1000 (10/14/2025)]({{ site.dcvb_cpp_release_notes_v3 }}cpp-3.html#321000-10142025)
 - [3.0.6000 (08/06/2025)]({{ site.dcvb_cpp_release_notes_v3 }}cpp-3.html#306000-08062025)
 - [3.0.4000 (07/15/2025)]({{ site.dcvb_cpp_release_notes_v3 }}cpp-3.html#304000-07152025)
 - [3.0.3000 (05/13/2025)]({{ site.dcvb_cpp_release_notes_v3 }}cpp-3.html#303000-05132025)

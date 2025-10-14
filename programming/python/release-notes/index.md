@@ -9,6 +9,7 @@ noTitleIndex: true
 
 # Module Release Notes - Dynamsoft Capture Vision Python Edition
 
+- [3.2.1000 (10/14/2025)]({{ site.dcvb_python_release_notes_v3 }}python-3.html#321000-10142025)
 - [3.0.6000 (08/06/2025)]({{ site.dcvb_python_release_notes_v3 }}python-3.html#306000-08062025)
 - [3.0.4100 (07/16/2025)]({{ site.dcvb_python_release_notes_v3 }}python-3.html#304100-07162025)
 - [3.0.4000 (07/15/2025)]({{ site.dcvb_python_release_notes_v3 }}python-3.html#304000-07152025)

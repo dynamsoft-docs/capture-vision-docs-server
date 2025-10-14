@@ -67,11 +67,15 @@ public class CaptureVisionRouter : IDisposable
 | [`ResetSettings`](settings.md#resetsettings)                 | Resets all templates to factory settings.                                                    |
 | [`GetParameterTemplateCount`](settings.md#getparametertemplatecount)  | Retrieves the total number of available parameter templates.                                 |
 | [`GetParameterTemplateName`](settings.md#getparametertemplatename)    | Retrieves the name of a specific parameter template by its index.                            |
+| [`SwitchCapturingTemplate`](settings.md#switchcapturingtemplate)    | Switches the capturing template during the image processing workflow.                            |
 
 ## Auxiliary Methods
 
 | Method                                      | Description                                               |
 | --------------------------------------------- | --------------------------------------------------------- |
-| [`AppendModelBuffer`](auxiliary-methods.md#appendmodelbuffer) | Appends a model to the model buffer. |
 | [`GetBufferedItemsManager`](auxiliary-methods.md#getbuffereditemsmanager)                               | Gets the manager instance of buffered items. |
 | [`GetIntermediateResultManager`](auxiliary-methods.md#getintermediateresultmanager) | Returns an `IntermediateResultManager` object. |
+| [`SetGlobalIntraOpNumThreads`](auxiliary-methods.md#setglobalintraopnumthreads) | Sets the global number of threads used internally for model execution. |
+| [`AppendDLModelBuffer`](auxiliary-methods.md#appenddlmodelbuffer) | Appends a deep learning model to the memory buffer. |
+| [`ClearDLModelBuffers`](auxiliary-methods.md#cleardlmodelbuffers) | Clears all deep learning models from buffer to free up memory. |
+| [`AppendModelBuffer`](auxiliary-methods.md#appendmodelbuffer) | Deprecated. Will be removed in future versions. Use `AppendDLModelBuffer` instead. |

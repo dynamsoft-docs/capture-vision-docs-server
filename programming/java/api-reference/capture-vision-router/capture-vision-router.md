@@ -60,6 +60,9 @@ class CaptureVisionRouter
 | [`getSimplifiedSettings`](settings.md#getsimplifiedsettings) | Retrieves a `SimplifiedCaptureVisionSettings` object for a specific `CaptureVisionTemplate`. |
 | [`updateSettings`](settings.md#updatesettings)               | Updates a `CaptureVisionTemplate` with `SimplifiedCaptureVisionSettings` object.             |
 | [`resetSettings`](settings.md#resetsettings)                 | Resets all templates to factory settings.                                                    |
+| [`getParameterTemplateCount`](settings.md#getparametertemplatecount)  | Retrieves the total number of available parameter templates.                                 |
+| [`getParameterTemplateName`](settings.md#getparametertemplatename)    | Retrieves the name of a specific parameter template by its index.                            |
+| [`switchCapturingTemplate`](settings.md#switchcapturingtemplate)    | Switches the capturing template during the image processing workflow.                            |
 
 ## Buffered Items Methods
 
@@ -74,3 +77,12 @@ The following method returns an `IntermediateResultManager` object which allows 
 | API Name                                                                            | Description                                     |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------- |
 | [`getIntermediateResultManager`](intermediate-result.md#getintermediateresultmanager) | Returns an `IntermediateResultManager` object. |
+
+## Auxiliary Methods
+
+| Method                                      | Description                                               |
+| --------------------------------------------- | --------------------------------------------------------- |
+| [`setGlobalIntraOpNumThreads`](auxiliary-methods.md#setglobalintraopnumthreads) | Sets the global number of threads used internally for model execution. |
+| [`appendDLModelBuffer`](auxiliary-methods.md#appenddlmodelbuffer) | Appends a deep learning model to the memory buffer. |
+| [`clearDLModelBuffers`](auxiliary-methods.md#cleardlmodelbuffers) | Clears all deep learning models from buffer to free up memory. |
+| [`appendModelBuffer`](auxiliary-methods.md#appendmodelbuffer) | Deprecated. Will be removed in future versions. Use `appendDLModelBuffer` instead. |

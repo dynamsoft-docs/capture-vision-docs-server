@@ -47,6 +47,9 @@ The best way to begin with Dynamsoft Capture Vision .NET Edition is to follow th
   - .NET Framework 3.5 and above
   - .NET 6, 7, 8
 
+> [!NOTE]
+> Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
+
 ## API Reference
 
 For an overview of the APIs, see the [API Reference]({{ site.dcvb_dotnet_api }}).

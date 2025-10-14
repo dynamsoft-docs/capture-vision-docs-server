@@ -12,31 +12,36 @@ breadcrumbText: CVR C++ Auxiliary Methods
 
 | API Name                                                      | Description                                               |
 | ------------------------------------------------------------- | --------------------------------------------------------- |
-| [`FreeString`](#freestring)                                     | Frees the memory allocated for a string.                  |
-| [`AppendModelBuffer`](#appendmodelbuffer)                       | Appends a model to the model buffer. |
+| [`SetGlobalIntraOpNumThreads`](#setglobalintraopnumthreads) | Sets the global number of threads used internally for model execution. |
+| [`AppendDLModelBuffer`](#appenddlmodelbuffer) | Appends a deep learning model to the memory buffer. |
+| [`ClearDLModelBuffers`](#cleardlmodelbuffers) | Clears all deep learning models from buffer to free up memory. |
+| [`FreeString`](#freestring) | Deprecated. Will be removed in future versions. Use [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes) instead.|
+| [`AppendModelBuffer`](#appendmodelbuffer) | Deprecated. Will be removed in future versions. Use `AppendDLModelBuffer` instead. |
 
-## FreeString
 
-Frees the memory allocated for a string. The function is *deprecated*, use [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes) instead.
+## SetGlobalIntraOpNumThreads
+
+Sets the global number of threads used internally for model execution.
 
 ```cpp
-static void FreeString(char* content);
+static void SetGlobalIntraOpNumThreads(int intraOpNumThreads = 0);
 ```
 
 **Parameters**
 
-`[in] content` The string whose memory needs to be freed.
+`[in] intraOpNumThreads` Number of threads used internally for model execution. Valid range: [0, 256]. 
+If the value is outside the range [0, 256], it will be treated as 0 (default).
 
-**Return Value**
+**Remarks**
 
-This function does not return a value. It simply frees the memory allocated for the input string.
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
 
-## AppendModelBuffer
+## AppendDLModelBuffer
 
-Appends a model to the model buffer.
+Appends a deep learning model to the memory buffer.
 
 ```cpp
-static int AppendModelBuffer(const char* modelName, const unsigned char* modelBytes, int modelBytesLength, int maxModelInstances);
+static int AppendDLModelBuffer(const char* modelName, const unsigned char* modelBytes, int modelBytesLength, int maxModelInstances);
 ```
 
 **Parameters**
@@ -52,3 +57,34 @@ static int AppendModelBuffer(const char* modelName, const unsigned char* modelBy
 **Return Value**
 
 Returns 0 if succeeds, nonzero otherwise.
+
+**Remarks**
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
+
+## ClearDLModelBuffers
+
+Clears all deep learning models from buffer to free up memory.
+
+```cpp
+static void ClearDLModelBuffers(); 
+```
+
+**Remarks**
+
+- After calling this function, all `CaptureVisionRouter` instances created before the function call will not be able to use model-related features.
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
+
+## FreeString
+
+Deprecated. Will be removed in future versions. Use [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes) instead.
+
+
+## AppendModelBuffer
+
+Deprecated. Will be removed in future versions. Use `AppendDLModelBuffer` instead.
+
+**Remarks**
+
+- Deprecated in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.

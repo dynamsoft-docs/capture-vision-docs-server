@@ -68,6 +68,7 @@ class CCaptureVisionRouter
 | [`ResetSettings`](settings.md#resetsettings)                 | Resets all templates to factory settings.                                                    |
 | [`GetParameterTemplateCount`](settings.md#getparametertemplatecount)  | Retrieves the total number of available parameter templates.                                 |
 | [`GetParameterTemplateName`](settings.md#getparametertemplatename)    | Retrieves the name of a specific parameter template by its index.                            |
+| [`SwitchCapturingTemplate`](settings.md#switchcapturingtemplate)    | Switches the capturing template during the image processing workflow.                            |
 
 ## Intermediate Result
 
@@ -87,5 +88,8 @@ The following method returns an `CIntermediateResultManager` object which allows
 
 | API Name                                      | Description                                               |
 | --------------------------------------------- | --------------------------------------------------------- |
-| [`FreeString`](auxiliary-methods.md#freestring) | Frees the memory allocated for a string. The function is *deprecated*, use [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes) instead.                 |
-| [`AppendModelBuffer`](auxiliary-methods.md#appendmodelbuffer) | Appends a model to the model buffer. |
+| [`FreeString`](auxiliary-methods.md#freestring) | The function is *deprecated*, use [`CoreModule::FreeBytes`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html#freebytes) instead.                 |
+| [`SetGlobalIntraOpNumThreads`](auxiliary-methods.md#setglobalintraopnumthreads) | Sets the global number of threads used internally for model execution. |
+| [`AppendDLModelBuffer`](auxiliary-methods.md#appenddlmodelbuffer) | Appends a deep learning model to the memory buffer. |
+| [`ClearDLModelBuffers`](auxiliary-methods.md#cleardlmodelbuffers) | Clears all deep learning models from buffer to free up memory. |
+| [`AppendModelBuffer`](auxiliary-methods.md#appendmodelbuffer) | Deprecated. Will be removed in future versions. Use `AppendDLModelBuffer` instead. |
