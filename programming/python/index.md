@@ -41,6 +41,9 @@ For embedded or ARM-based platforms, we recommend using a device with performanc
   - 4 GB RAM
   - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
 
+> [!NOTE]
+> Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
+
 ## Getting Started with DCV Python Edition
 
 The best way to begin with Dynamsoft Capture Vision Python Edition is to follow the guides for specific use cases.

@@ -20,6 +20,7 @@ needGenerateH3Content: false
 | [`resetSettings`](#resetsettings)                 | Resets all templates to factory settings.                                                    |
 | [`getParameterTemplateCount`](#getparametertemplatecount)  | Gets the total number of available parameter templates.                                 |
 | [`getParameterTemplateName`](#getparametertemplatename)    | Gets the name of a specific parameter template by its index.                            |
+| [`switchCapturingTemplate`](#switchcapturingtemplate)      | Switches the capturing template during the image processing workflow.                            |
 
 ## initSettings
 
@@ -229,3 +230,22 @@ public String getParameterTemplateName(int index)
 
 Returns a string containing the name of the parameter template.
 
+## switchCapturingTemplate
+
+Switches the capturing template during the image processing workflow.
+
+```java
+public void switchCapturingTemplate(String templateName) throws CaptureVisionException
+```
+
+**Parameters**
+
+`templateName` The name of the new capturing template to apply.
+
+**Exceptions**
+
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
+
+**Remarks**
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.

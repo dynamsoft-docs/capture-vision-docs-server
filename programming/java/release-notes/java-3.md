@@ -8,6 +8,63 @@ needGenerateH3Content: false
 
 # Release Notes for Java Edition - 3.x
 
+## 3.2.1000 (10/14/2025)
+
+🎉 **Milestone Release** - This version introduces groundbreaking AI-powered enhancements that significantly improve accuracy and performance across all barcode and MRZ processing scenarios.
+
+### ✨ Key Highlights
+
+**AI-Powered Barcode Detection & Decoding**
+- 🧠 **First-to-Market AI Localization**: Revolutionary `OneDLocalization` and `DataMatrixQRCodeLocalization` neural network models for superior detection of **blurred/low-resolution 1D codes** and **DataMatrix/QR codes with missing or damaged finder patterns**
+- ⚡ **Specialized Decoders**: Cutting-edge `EAN13Decoder` and `Code128Decoder` models deliver unprecedented accuracy for **blurred and long-distance** scenarios
+- 🔍 **Enhanced Clarity Processing**: Completely redesigned `OneDDeblur` model with superior **motion blur and focus blur** recovery algorithms
+- 🎯 **Flexible Model Configuration**: Advanced `ModelNameArray` parameter enables on-demand model loading and precise selection for specific barcode scenarios
+
+**Precision Control**
+- ⚙️ **Granular Deblur Methods**: Fine-tuned `DM_DEEP_ANALYSIS` with specialized method control - `OneDGeneral`, `TwoDGeneral`, and `EAN13Enhanced` for targeted optimization
+- 🎯 **Smart Barcode Counting**: New `ExpectedBarcodesCount` parameter enables **format-specific quantity control** and **early termination optimization** for known-quantity scenarios
+- 🔍 **Advanced Region Detection**: New `RPM_GRAY_CONSISTENCY` mode enables precise region detection based on **grayscale uniformity** and **local consistency** for document and label processing
+
+
+**Enhanced Text Processing**
+- 🚀 **High-Speed and Precise MRZ Region Detection**: Revolutionary neural network `MRZLocalization` model delivers **42.7% faster processing** with enhanced region detection accuracy for passport and ID workflows
+- 🎛️ **Advanced Localization**: New `LocalizationModes` parameter provides unprecedented control over text line detection algorithms
+
+
+**Smart Document Capture**
+- 🎥 **Clarity-Based Frame Selection**: Intelligent frame selection automatically chooses the sharpest, highest-quality document images
+- 🔄 **Enhanced Cross-Frame Verification**: Advanced cross-frame verification algorithms significantly improve result reliability and accuracy
+
+
+### 💡 What This Means for You
+
+**For Challenging Barcode Scenarios**
+- **Blurred conditions**: 26.5% better read rates with 44% faster processing - ideal for handheld scanning and moving objects
+- **Extended distance capability**: Breakthrough support for reading distances beyond 75cm - revolutionizing warehouse automation and high-shelf scanning
+- **Damaged 2D codes**: Enhanced detection of DataMatrix and QR codes with missing or damaged finder patterns - perfect for manufacturing and logistics applications
+
+**For Document Processing Applications**
+- **Real-time video streams**: Optimized performance maintains smooth user experience in live capture scenarios
+- **Document quality assessment**: Intelligent clarity-based frame selection ensures highest quality document captures
+
+**For Enterprise Integration**
+- **Retail environments**: Enhanced performance for blurred handheld scanning and long-distance shelf reading
+- **Logistics & shipping**: Improved recognition for package tracking with better blur and long-distance scanning capabilities
+- **Manufacturing QC**: Improved 2D code reading on printed/etched parts with wear damage  
+- **Security applications**: Faster MRZ processing for high-throughput identity verification
+
+**For Developers**
+- **Backward Compatible**: Seamless upgrade with existing code and easy migration path
+- **Flexible Configuration**: Extensive parameter customization for specific use cases and comprehensive model configuration options
+- **Enterprise Ready**: Battle-tested stability for production environments
+
+### Changed
+
+- Updated the default value of parameter [`MaxThreadsInOneTask`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html) from 4 to 0 (auto-detection).
+- Updated the default value of parameter [`IncludeTrailingCheckDigit`]({{ site.dcvb_parameters_reference }}barcode-format-specification/include-trailing-check-digit.html) from 1 to 0.
+- Deprecated argument `DeblurModelNameArray` of parameter [`DeblurModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html), use `ModelNameArray` instead.
+- Deprecated method `appendModelBuffer` of class [`CaptureVisionRouter`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-router.html), use [`appendDLModelBuffer`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-methods.html#appenddlmodelbuffer) instead.
+
 ## 3.0.6100 (08/19/2025)
 
 ### Fixed

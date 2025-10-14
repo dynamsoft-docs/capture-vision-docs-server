@@ -5,7 +5,6 @@ description: This page introduces APIs related to the Settings of the CCaptureVi
 keywords: capture vision, router, settings, api reference, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
-breadcrumbText: CVR C++ Settings
 ---
 
 # Settings
@@ -21,6 +20,7 @@ breadcrumbText: CVR C++ Settings
 | [`ResetSettings`](#resetsettings)                          | Resets all templates to factory settings.                                                    |
 | [`GetParameterTemplateCount`](#getparametertemplatecount)  | Retrieves the total number of available parameter templates.                                 |
 | [`GetParameterTemplateName`](#getparametertemplatename)    | Retrieves the name of a specific parameter template by its index.                            |
+| [`SwitchCapturingTemplate`](#switchcapturingtemplate)      | Switches the capturing template during the image processing workflow.                            |
 
 ## InitSettings
 
@@ -268,3 +268,27 @@ int GetParameterTemplateName(const int index, char nameBuffer[], int nameBufferL
 **Return value**
 
 Returns an error code. Zero indicates success.
+
+## SwitchCapturingTemplate
+
+Switches the capturing template during the image processing workflow.
+
+```cpp
+int SwitchCapturingTemplate(const char* templateName, char errorMsgBuffer[] = NULL, const int errorMsgBufferLen = 0);
+```
+
+**Parameters**
+
+`[in] templateName` The name of the new capturing template to apply.
+
+`[in] errorMsgBuffer` A buffer for error messages.
+
+`[in] errorMsgBufferLen` The length of the error message buffer.
+
+**Return value**
+
+Returns an error code. Zero indicates success.
+
+**Remarks**
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
