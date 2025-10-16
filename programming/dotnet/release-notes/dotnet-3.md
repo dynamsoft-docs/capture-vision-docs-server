@@ -15,20 +15,20 @@ needGenerateH3Content: false
 ### ✨ Key Highlights
 
 **AI-Powered Barcode Detection & Decoding**
-- 🧠 **First-to-Market AI Localization**: Revolutionary `OneDLocalization` and `DataMatrixQRCodeLocalization` neural network models for superior detection of **blurred/low-resolution 1D codes** and **DataMatrix/QR codes with missing or damaged finder patterns**
-- ⚡ **Specialized Decoders**: Cutting-edge `EAN13Decoder` and `Code128Decoder` models deliver unprecedented accuracy for **blurred and long-distance** scenarios
-- 🔍 **Enhanced Clarity Processing**: Completely redesigned `OneDDeblur` model with superior **motion blur and focus blur** recovery algorithms
+- 🧠 **First-to-Market AI Localization**: Revolutionary [`OneDLocalization`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html#modelnamearray) and [`DataMatrixQRCodeLocalization`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html#modelnamearray) neural network models for superior detection of **blurred/low-resolution 1D codes** and **DataMatrix/QR codes with missing or damaged finder patterns**
+- ⚡ **Specialized Decoders**: Cutting-edge [`EAN13Decoder`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) and [`Code128Decoder`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) models deliver unprecedented accuracy for **blurred and long-distance** scenarios
+- 🔍 **Enhanced Clarity Processing**: Completely redesigned [`OneDDeblur`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) model with superior **motion blur and focus blur** recovery algorithms
 - 🎯 **Flexible Model Configuration**: Advanced `ModelNameArray` parameter enables on-demand model loading and precise selection for specific barcode scenarios
 
 **Precision Control**
-- ⚙️ **Granular Deblur Methods**: Fine-tuned `DM_DEEP_ANALYSIS` with specialized method control - `OneDGeneral`, `TwoDGeneral`, and `EAN13Enhanced` for targeted optimization
-- 🎯 **Smart Barcode Counting**: New `ExpectedBarcodesCount` parameter enables **format-specific quantity control** and **early termination optimization** for known-quantity scenarios
-- 🔍 **Advanced Region Detection**: New `RPM_GRAY_CONSISTENCY` mode enables precise region detection based on **grayscale uniformity** and **local consistency** for document and label processing
+- ⚙️ **Granular Deblur Methods**: Fine-tuned [`DM_DEEP_ANALYSIS`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#dm_deep_analysis) with specialized method control - `OneDGeneral`, `TwoDGeneral`, and `EAN13Enhanced` for targeted optimization
+- 🎯 **Smart Barcode Counting**: New [`ExpectedBarcodesCount`]({{ site.dcvb_parameters_reference }}barcode-format-specification/expected-barcodes-count.html) parameter enables **format-specific quantity control** and **early termination optimization** for known-quantity scenarios
+- 🔍 **Advanced Region Detection**: New [`RPM_GRAY_CONSISTENCY`]({{ site.dcvb_parameters_reference }}image-parameter/region-predetection-modes.html#rpm_gray_consistency) mode enables precise region detection based on **grayscale uniformity** and **local consistency** for document and label processing
 
 
 **Enhanced Text Processing**
-- 🚀 **High-Speed and Precise MRZ Region Detection**: Revolutionary neural network `MRZLocalization` model delivers **42.7% faster processing** with enhanced region detection accuracy for passport and ID workflows
-- 🎛️ **Advanced Localization**: New `LocalizationModes` parameter provides unprecedented control over text line detection algorithms
+- 🚀 **High-Speed and Precise MRZ Region Detection**: Revolutionary neural network [`MRZLocalization`]({{ site.dcvb_parameters_reference }}label-recognizer-task-settings/localization-modes.html#modelnamearray) model delivers **42.7% faster processing** with enhanced region detection accuracy for passport and ID workflows
+- 🎛️ **Advanced Localization**: New [`LocalizationModes`]({{ site.dcvb_parameters_reference }}label-recognizer-task-settings/localization-modes.html) parameter provides unprecedented control over text line detection algorithms
 
 
 **Smart Document Capture**
@@ -60,10 +60,14 @@ needGenerateH3Content: false
 
 ### Changed
 
-  - Updated the default value of parameter [`MaxThreadsInOneTask`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html) from 4 to 0 (auto-detection).
-  - Updated the default value of parameter [`IncludeTrailingCheckDigit`]({{ site.dcvb_parameters_reference }}barcode-format-specification/include-trailing-check-digit.html) from 1 to 0. This means Code128 barcode results will no longer include the trailing check digit in the decoded bytes by default, improving compatibility with industry standards.
-  - Deprecated argument `DeblurModelNameArray` of parameter [`DeblurModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html), use `ModelNameArray` instead.
-  - Deprecated method `AppendModelBuffer` of class [`CaptureVisionRouter`]({{ site.dcvb_dotnet_api }}capture-vision-router/capture-vision-router.html), use [`AppendDLModelBuffer`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-methods.html#appenddlmodelbuffer) instead.
+- Updated the default value of parameter [`MaxThreadsInOneTask`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html) from 4 to 0 (auto-detection).
+- Updated the default value of parameter [`IncludeTrailingCheckDigit`]({{ site.dcvb_parameters_reference }}barcode-format-specification/include-trailing-check-digit.html) from 1 to 0. This means Code128 barcode results will no longer include the trailing check digit in the decoded bytes by default, improving compatibility with industry standards.
+- Deprecated argument `DeblurModelNameArray` of parameter [`DeblurModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html), use `ModelNameArray` instead.
+- Deprecated method `AppendModelBuffer` of class [`CaptureVisionRouter`]({{ site.dcvb_dotnet_api }}capture-vision-router/capture-vision-router.html), use [`AppendDLModelBuffer`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-methods.html#appenddlmodelbuffer) instead.
+
+### Fixed
+
+- Fixed an issue where `MultiFrameResultCrossFilter` was not working properly.
 
 ## 3.0.6000 (08/06/2025)
 
