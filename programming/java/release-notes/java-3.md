@@ -8,6 +8,12 @@ needGenerateH3Content: false
 
 # Release Notes for Java Edition - 3.x
 
+## 3.2.1100 (10/28/2025)
+
+### Fixed
+
+- Resolved an initialization crash that occurred when running the SDK within the Spring Boot framework.
+
 ## 3.2.1000 (10/14/2025)
 
 ### 🎉Milestone Release
