@@ -92,8 +92,8 @@ def output_settings(self, template_name: str, include_default_values: bool = Fal
 
 Returns a tuple containing following elements:
 - `error_code` <*int*>: The error code indicating the status of the operation.
-- `error_message` <*str*>: A descriptive message explaining the error.
 - `template_content` <*str*>: A string containing the exported template.
+- `error_message` <*str*>: A descriptive message explaining the error.
 
 **See Also**
 
