@@ -47,11 +47,11 @@ typedef enum ImagePixelFormat
    IPF_ABGR_16161616,
    /** 24bit with BGR channel order stored in memory from high to low address. */
    IPF_BGR_888,
-   /** 0:Black, 255:White. */
+   /** 8-bit binary. 0:Black, 255:White. Foreground (bars) are black, background (spaces) are white. */
    IPF_BINARY_8,
    /**NV12 */
    IPF_NV12,
-   /**0:White, 255:Black */
+   /** 8-bit binary. 0:Black, 255:White. Foreground (bars) are white, background (spaces) are black. */
    IPF_BINARY_8_INVERTED
 }ImagePixelFormat;
 ```
