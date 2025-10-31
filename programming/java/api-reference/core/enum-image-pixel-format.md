@@ -39,11 +39,11 @@ public @interface EnumImagePixelFormat {
     int IPF_ABGR_16161616 = 11;
     //24bit with BGR channel order stored in memory from high to low address
     int IPF_BGR_888 = 12;
-    //0:Black, 255:White
+    //8-bit binary. 0:Black, 255:White. Foreground (bars) are black, background (spaces) are white.
     int IPF_BINARY_8 = 13;
     //NV12
     int IPF_NV12 = 14;
-    //0:White, 255:Black (inverted binary 8-bit)
+    //8-bit binary. 0:Black, 255:White. Foreground (bars) are white, background (spaces) are black.
     int IPF_BINARY_8_INVERTED = 15;
 }
 ```

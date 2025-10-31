@@ -24,9 +24,11 @@ class ImageIO : IDisposable
 | Method               | Description |
 |----------------------|-------------|
 | [`ReadFromBase64String`](#readfrombase64string) | Reads an image from a base64 encoded string. |
+| [`ReadFromBitmap`](#readfrombitmap) | Reads an image from a `Bitmap` instance. |
 | [`ReadFromFile`](#readfromfile) | Reads an image from a file. |
 | [`ReadFromMemory`](#readfrommemory) | Reads an image from a file in memory. |
 | [`SaveToBase64String`](#savetobase64string) | Saves an image to a base64 encoded string. |
+| [`SaveToBitmap`](#savetobitmap) | Saves an image into a `Bitmap` instance. |
 | [`SaveToFile`](#savetofile) | Saves an image to a file. |
 | [`SaveToMemory`](#savetomemory) | Saves an image to a file in memory. |
 
@@ -51,6 +53,28 @@ Returns an `ImageData` object representing the image if succeeds, null otherwise
 **Remarks**
 
 If the file format is gif, pdf or tiff, we read the first page of the image file.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+### ReadFromBitmap
+
+Reads an image from a `Bitmap` instance.
+
+```csharp
+ImageData ReadFromBitmap(Bitmap bitmap, out int errorCode)
+```
+
+**Parameters**
+
+`[in] bitmap` The source bitmap to read from.
+
+`[out] errorCode` The error code.
+
+**Return value**
+
+Returns an `ImageData` object representing the image if succeeds, null otherwise.
 
 **See Also**
 
@@ -138,6 +162,28 @@ Returns an integer indicating the success of the operation. 0 indicates success,
 [ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 [ImageFileFormat]({{ site.dcvb_dotnet_api }}core/enum-image-file-format.html)
+
+### SaveToBitmap
+
+Saves an image into a `Bitmap`.
+
+```csharp
+int SaveToBitmap(ImageData imageData, out Bitmap bitmap)
+```
+
+**Parameters**
+
+`[in] imageData` The image data to be saved.
+
+`[in] bitmap` A `Bitmap` instance that represents an image.
+
+**Return value**
+
+Returns an integer indicating the success of the operation. 0 indicates success, while a non-zero value indicates an error occurred.
+
+**See Also**
+
+[ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
 
 ### SaveToFile
 
