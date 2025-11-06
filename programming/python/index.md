@@ -25,7 +25,7 @@ Dynamsoft Capture Vision Bundle is an aggregating SDK of a series of specific fu
 - Operating Systems:
   - Windows x64
   - Linux x64, ARM 64-bit
-  - macOS (10.15+)
+  - macOS (Universal) 12+
 
 - Python Versions:
   - Python 3.13
