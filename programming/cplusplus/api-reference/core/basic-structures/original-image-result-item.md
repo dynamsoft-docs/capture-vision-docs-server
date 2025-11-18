@@ -18,19 +18,25 @@ The `COriginalImageResultItem` class represents a captured original image result
 
 *Assembly:* DynamsoftCore
 
+*Inheritance:* [CCapturedResultItem]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html) -> COriginalImageResultItem
+
 ```cpp
 class COriginalImageResultItem: public CCapturedResultItem
 ```
 
 ## Methods Summary
 
-| Method                          | Description                                      |
-| ------------------------------- | ------------------------------------------------ |
+| Method               | Description |
+|----------------------|-------------|
 | [`GetImageData`](#getimagedata) | Gets the image data for the `COriginalImageResultItem`. |
-
-### Inherited Methods
-
-{%- include inherited-methods/captured-result-item.md -%}
+| **Inherited Methods from [CCapturedResultItem]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html):** | |
+| [`GetType`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#gettype) | Gets the type of the captured result item. |
+| [`GetReferenceItem`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#getreferenceitem) | Gets a pointer to the referenced item in the captured result item. |
+| [`GetTargetROIDefName`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#gettargetroidefname) | Gets the name of the target ROI definition. |
+| [`GetTaskName`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#gettaskname) | Gets the name of the task. |
+| [`Retain`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#retain) | Increases the reference count of the captured result item. |
+| [`Release`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#release) | Decreases the reference count of the captured result item. |
+| [`Clone`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#clone) | Creates a copy of the captured result item. |
 
 ### GetImageData
 
