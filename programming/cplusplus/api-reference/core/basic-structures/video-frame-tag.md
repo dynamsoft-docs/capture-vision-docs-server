@@ -22,7 +22,7 @@ The `CVideoFrameTag` class represents a video frame tag, which is a type of imag
 class CVideoFrameTag: public CImageTag 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|
@@ -33,7 +33,7 @@ class CVideoFrameTag: public CImageTag
 | [`GetOriginalHeight`](#getoriginalheight) | Gets the original height of the video frame. |
 | [`CVideoFrameTag`](#cvideoframetag-constructor) | The constructor of the `CVideoFrameTag` class. |
 | [`~CVideoFrameTag`](#cvideoframetag-destructor) | The destructor of the `CVideoFrameTag` class. |
-| Inherited Methods from [CImageTag]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html): | |
+| **Methods Inherited from [CImageTag]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html):** | |
 | [`GetType`]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html#gettype) | Gets the type of the image tag. |
 | [`Clone`]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html#clone) | Creates a copy of the image tag. |
 

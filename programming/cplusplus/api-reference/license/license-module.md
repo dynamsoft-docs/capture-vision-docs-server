@@ -22,7 +22,7 @@ The `CLicenseModule` class defines general functions in the license module.
 class CLicenseModule 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |

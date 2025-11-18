@@ -20,7 +20,7 @@ The `CTextZone` class represents a single text zone.
 class CTextZone
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

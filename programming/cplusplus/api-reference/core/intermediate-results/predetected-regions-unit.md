@@ -22,7 +22,7 @@ The `CPredetectedRegionsUnit` class represents a unit that contains a collection
 class CPredetectedRegionsUnit : public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|
@@ -33,7 +33,7 @@ class CPredetectedRegionsUnit : public CIntermediateResultUnit
 | [`RemovePredetectedRegion`](#removepredetectedregion) | Removes a pre-detected region in the unit at the specified index. |
 | [`AddPredetectedRegion`](#addpredetectedregion) | Adds a pre-detected region in the unit. |
 | [`SetPredetectedRegion`](#setpredetectedregion) | Sets a pre-detected region in the unit at the specified index. |
-| Inherited Methods from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html): | |
+| **Methods Inherited from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html):** | |
 | [`GetHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#gethashid) | Gets the hash ID of the unit.|
 | [`GetOriginalImageHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagehashid) | Gets the hash ID of the original image. |
 | [`GetOriginalImageTag`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagetag) | Gets the image tag of the original image. |

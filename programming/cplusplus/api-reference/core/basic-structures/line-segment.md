@@ -20,7 +20,7 @@ The `CLineSegment` class represents a line segment in 2D space. It contains two 
 class CLineSegment 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                          | Description                                      |
 | ------------------------------- | ------------------------------------------------ |

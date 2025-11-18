@@ -22,7 +22,7 @@ The `CFileImageTag` class represents an image tag that is associated with a file
 class CFileImageTag : public CImageTag
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|
@@ -31,7 +31,7 @@ class CFileImageTag : public CImageTag
 | [`GetTotalPages`](#gettotalpages) | Gets the total page number of the Multi-Page image file. |
 | [`CFileImageTag`](#cfileimagetag-constructor) | The constructor of the CFileImageTag class. |
 | [`~CFileImageTag`](#cfileimagetag-destructor) | The destructor of the CFileImageTag class. |
-| Inherited Methods from [CImageTag]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html): | |
+| **Methods Inherited from [CImageTag]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html):** | |
 | [`GetType`]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html#gettype) | Gets the type of the image tag. |
 | [`Clone`]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html#clone) | Creates a copy of the image tag. |
 

@@ -20,7 +20,7 @@ The `CContour` class represents a contour in 2D space. It contains an array of C
 class CContour 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

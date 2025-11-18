@@ -19,7 +19,7 @@ The `EnhancedGrayscaleImageUnit` class represents an intermediate result unit th
 class EnhancedGrayscaleImageUnit  : IntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

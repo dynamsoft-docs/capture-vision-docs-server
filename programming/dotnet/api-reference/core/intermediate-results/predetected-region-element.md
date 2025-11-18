@@ -19,7 +19,7 @@ The `PredetectedRegionElement` class represents a region element that has been p
 class PredetectedRegionElement : RegionObjectElement
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

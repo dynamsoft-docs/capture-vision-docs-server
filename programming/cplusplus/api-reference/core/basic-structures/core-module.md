@@ -22,7 +22,7 @@ The `CCoreModule` class defines general functions in the core module.
 class CCoreModule 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |

@@ -19,7 +19,7 @@ The `LineSegment` class represents a line segment in 2D space. It contains two `
 class LineSegment 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                          | Description                                      |
 | ------------------------------- | ------------------------------------------------ |

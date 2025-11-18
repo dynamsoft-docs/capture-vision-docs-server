@@ -19,7 +19,7 @@ The `IntermediateResultReceiver` class is responsible for receiving intermediate
 public abstract class IntermediateResultReceiver 
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

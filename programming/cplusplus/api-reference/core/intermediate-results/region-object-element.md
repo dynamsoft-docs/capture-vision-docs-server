@@ -20,7 +20,7 @@ The `CRegionObjectElement` class represents an element of a region object in 2D 
 class CRegionObjectElement 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

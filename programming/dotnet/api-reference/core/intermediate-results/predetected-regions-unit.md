@@ -19,7 +19,7 @@ The `PredetectedRegionsUnit` class represents a unit that contains a collection 
 class PredetectedRegionsUnit : IntermediateResultUnit, IEnumerable<PredetectedRegionElement>
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

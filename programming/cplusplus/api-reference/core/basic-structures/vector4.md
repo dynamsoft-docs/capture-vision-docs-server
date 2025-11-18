@@ -20,7 +20,7 @@ The `CVector4` class represents a four-dimensional vector.
 class CVector4;
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

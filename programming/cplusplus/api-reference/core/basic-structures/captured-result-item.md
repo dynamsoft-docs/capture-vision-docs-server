@@ -20,7 +20,7 @@ The CCapturedResultItem class represents an item in a captured result. It is an 
 class CCapturedResultItem 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                         | Description|
 |--------------------------------|------------|

@@ -22,7 +22,7 @@ The `CCaptureVisionRouterModule` class defines general functions in the capture 
 class CCaptureVisionRouterModule 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |

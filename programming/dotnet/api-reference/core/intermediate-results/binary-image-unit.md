@@ -19,7 +19,7 @@ The `BinaryImageUnit` class represents a unit that contains a binary image. It i
 class BinaryImageUnit : IntermediateResultUnit 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

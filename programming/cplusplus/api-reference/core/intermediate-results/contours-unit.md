@@ -22,13 +22,13 @@ The `CContoursUnit` class represents a unit that contains contours as intermedia
 class CContoursUnit : public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method                    | Description |
 |---------------------------|---------------------------------------------|
 | [`GetContours`](#getcontours) | Gets the contours.  |
 | [`SetContours`](#setcontours) | Sets the contours.  |
-| **Inherited Methods from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html):** | |
+| **Methods Inherited from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html):** | |
 | [`GetHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#gethashid) | Gets the hash ID of the unit. |
 | [`GetOriginalImageHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagehashid) | Gets the hash ID of the original image. |
 | [`GetOriginalImageTag`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagetag) | Gets the tag of the original image. |

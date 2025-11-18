@@ -20,7 +20,7 @@ The `CPoint` class represents a point in 2D space. It contains an array of two i
 typedef DMPoint_<int> CPoint;
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

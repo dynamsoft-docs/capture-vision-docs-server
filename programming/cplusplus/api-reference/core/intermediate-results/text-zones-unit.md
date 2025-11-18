@@ -22,7 +22,7 @@ The `CTextZonesUnit` class represents a unit that contains text zones. It is der
 class CTextZonesUnit : public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|
@@ -32,7 +32,7 @@ class CTextZonesUnit : public CIntermediateResultUnit
 | [`RemoveTextZone`](#removetextzone) | Removes the text zone at the specified index. |
 | [`AddTextZone`](#addtextzone) | Adds a text zone to the unit. |
 | [`SetTextZone`](#settextzone) | Sets the text zone at the specified index. |
-| **Inherited Methods from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html):** | |
+| **Methods Inherited from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html):** | |
 | [`GetHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#gethashid) | Gets the hash ID of the unit. |
 | [`GetOriginalImageHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagehashid) | Gets the hash ID of the original image. |
 | [`GetOriginalImageTag`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagetag) | Gets the tag of the original image. |

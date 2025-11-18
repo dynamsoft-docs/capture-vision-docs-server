@@ -20,7 +20,7 @@ The `CObservationParameters` class is used to set filter conditions for the `CIn
 class CObservationParameters 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

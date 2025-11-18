@@ -20,7 +20,7 @@ The `CIntermediateResultManager` class manages intermediate results generated du
 class CIntermediateResultManager 
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

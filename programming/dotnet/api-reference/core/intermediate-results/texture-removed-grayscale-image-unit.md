@@ -19,7 +19,7 @@ The `TextureRemovedGrayscaleImageUnit` class represents an intermediate result u
 class TextureRemovedGrayscaleImageUnit : IntermediateResultUnit 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

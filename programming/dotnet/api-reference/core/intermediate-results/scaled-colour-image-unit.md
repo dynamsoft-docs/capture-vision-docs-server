@@ -19,7 +19,7 @@ The `ScaledColourImageUnit` class represents an intermediate result unit that co
 class ScaledColourImageUnit : IntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

@@ -22,7 +22,7 @@ The `CTextureDetectionResultUnit` class represents an intermediate result unit f
 class CTextureDetectionResultUnit : public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|
@@ -30,7 +30,7 @@ class CTextureDetectionResultUnit : public CIntermediateResultUnit
 | [`GetYSpacing`](#getyspacing) | Gets y-direction spacing of the texture stripes. |
 | [`SetXSpacing`](#setxspacing) | Sets x-direction spacing of the texture stripes. |
 | [`SetYSpacing`](#setyspacing) | Sets y-direction spacing of the texture stripes. |
-| **Inherited Methods from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html):** | |
+| **Methods Inherited from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html):** | |
 | [`GetHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#gethashid) | Gets the hash ID of the unit. |
 | [`GetOriginalImageHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagehashid) | Gets the hash ID of the original image. |
 | [`GetOriginalImageTag`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagetag) | Gets the tag of the original image. |
