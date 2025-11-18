@@ -27,7 +27,7 @@ class CQuadrilateral
 | [`points`](#points) | *CPoint* |
 | [`id`](#id) | *int* |
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

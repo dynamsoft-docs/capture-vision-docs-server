@@ -19,7 +19,7 @@ The `TransformedGrayscaleImageUnit` class is a subclass of `IntermediateResultUn
 class TransformedGrayscaleImageUnit : IntermediateResultUnit 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

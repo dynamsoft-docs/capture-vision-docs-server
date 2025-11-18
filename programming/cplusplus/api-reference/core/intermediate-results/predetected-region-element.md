@@ -16,11 +16,13 @@ The `CPredetectedRegionElement` class represents a region element that has been 
 
 *Assembly:* DynamsoftCore
 
+*Inheritance:* [CRegionObjectElement]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html) -> CPredetectedRegionElement
+
 ```cpp
 class CPredetectedRegionElement : public CRegionObjectElement
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|
@@ -28,10 +30,14 @@ class CPredetectedRegionElement : public CRegionObjectElement
 | [`SetLocation`](#setlocation)   | Sets the location of the region object element. |
 | [`GetLabelId`](#getlabelid)     | Gets the label id of the region object element. |
 | [`GetLabelName`](#getlabelname) | Gets the label name of the region object element. |
-
-### Inherited Methods
-
-{%- include inherited-methods/region-object-element.md -%}
+| **Methods Inherited from [CRegionObjectElement]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html):** | |
+| [`GetLocation`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getlocation) | Gets the location of the region object element. |
+| [`GetReferencedElement`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getreferencedelement) | Gets the referenced element that supports the capturing of this element. |
+| [`GetElementType`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getelementtype) | Gets the type of the region object element. |
+| [`GetImageData`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getimagedata) | Gets the image data for the element. |
+| [`Clone`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#clone) | Creates a copy of the region object element. |
+| [`Retain`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#retain) | Increases the reference count of the region object element. |
+| [`Release`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#release) | Decreases the reference count of the region object element. |
 
 ### GetModeName
 

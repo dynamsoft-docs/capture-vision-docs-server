@@ -20,7 +20,7 @@ The CCapturedResult class represents the result of a capture operation on an ima
 class CCapturedResult 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

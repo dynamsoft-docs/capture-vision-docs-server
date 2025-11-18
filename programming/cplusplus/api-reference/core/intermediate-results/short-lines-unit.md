@@ -20,7 +20,7 @@ The `CShortLinesUnit` class represents an intermediate result unit that contains
 class CShortLinesUnit : public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 | ------ | ----------- |

@@ -19,7 +19,7 @@ The `ColourImageUnit` class represents a unit that contains color image. It is d
 class ColourImageUnit : IntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

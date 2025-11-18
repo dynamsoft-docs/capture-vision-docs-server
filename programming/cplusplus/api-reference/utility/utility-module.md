@@ -22,7 +22,7 @@ The `CUtilityModule` class defines general functions in the utility module.
 class CUtilityModule 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |

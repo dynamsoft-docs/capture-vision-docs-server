@@ -22,7 +22,7 @@ The `CImageSourceStateListener` class is an abstract class that defines a listen
 class CImageSourceStateListener 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |

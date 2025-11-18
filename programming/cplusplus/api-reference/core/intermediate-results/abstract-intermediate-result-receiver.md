@@ -20,7 +20,7 @@ The `CAbstractIntermediateResultReceiver` class is responsible for receiving int
 class CAbstractIntermediateResultReceiver 
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

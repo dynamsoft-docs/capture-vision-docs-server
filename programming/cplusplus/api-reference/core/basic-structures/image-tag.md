@@ -20,7 +20,7 @@ The `CImageTag` class represents an image tag that can be attached to an image i
 class CImageTag 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

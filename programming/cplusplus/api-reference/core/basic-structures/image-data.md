@@ -20,7 +20,7 @@ The `CImageData` class represents image data, which contains the image bytes, wi
 class CImageData 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

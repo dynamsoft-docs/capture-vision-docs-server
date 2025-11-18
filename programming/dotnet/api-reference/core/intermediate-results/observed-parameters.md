@@ -19,7 +19,7 @@ The `ObservationParameters` class is used to set filter conditions for the `Inte
 public class ObservationParameters : IDisposable
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

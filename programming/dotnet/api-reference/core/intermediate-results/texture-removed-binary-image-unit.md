@@ -19,7 +19,7 @@ The `TextureRemovedBinaryImageUnit` class represents an intermediate result unit
 class TextureRemovedBinaryImageUnit : IntermediateResultUnit 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

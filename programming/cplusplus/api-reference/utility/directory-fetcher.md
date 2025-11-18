@@ -20,7 +20,7 @@ The `CDirectoryFetcher` class is a utility class that retrieves a list of files 
 class CDirectoryFetcher : public CProactiveImageSourceAdapter
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

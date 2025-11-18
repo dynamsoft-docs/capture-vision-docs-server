@@ -22,7 +22,7 @@ The `CImageProcessingModule` class defines general functions in the image proces
 class CImageProcessingModule 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |

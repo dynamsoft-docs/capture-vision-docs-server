@@ -18,7 +18,7 @@ The `IntermediateResultManager` class manages intermediate results generated dur
 public final class IntermediateResultManager 
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

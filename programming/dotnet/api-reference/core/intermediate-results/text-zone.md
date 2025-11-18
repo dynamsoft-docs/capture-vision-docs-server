@@ -19,7 +19,7 @@ The `TextZone` class represents a single text zone.
 class TextZone
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

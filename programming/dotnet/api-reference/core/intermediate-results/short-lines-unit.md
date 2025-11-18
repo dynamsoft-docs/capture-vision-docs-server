@@ -20,7 +20,7 @@ The `ShortLinesUnit` class represents an intermediate result unit that contains 
 class ShortLinesUnit : IntermediateResultUnit, IEnumerable<LineSegment>
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 | ------ | ----------- |

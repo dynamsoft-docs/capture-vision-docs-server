@@ -19,7 +19,7 @@ The `Vector4` class represents a four-dimensional vector.
 public class Vector4
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

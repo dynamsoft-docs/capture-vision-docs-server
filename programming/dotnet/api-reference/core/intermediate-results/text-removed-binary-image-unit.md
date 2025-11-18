@@ -19,7 +19,7 @@ The `TextRemovedBinaryImageUnit` class represents an intermediate result unit th
 class TextRemovedBinaryImageUnit : IntermediateResultUnit 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

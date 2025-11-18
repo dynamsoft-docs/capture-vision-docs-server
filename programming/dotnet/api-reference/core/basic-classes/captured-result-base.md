@@ -19,7 +19,7 @@ The `CapturedResultBase` class serves as a base class for all captured result ty
 public abstract class CapturedResultBase : IDisposable
 ```
 
-## Methods Summary
+## Methods
 
 | Method                         | Description|
 |--------------------------------|------------|

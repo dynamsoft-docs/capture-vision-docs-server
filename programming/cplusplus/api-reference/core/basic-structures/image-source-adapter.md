@@ -20,7 +20,7 @@ The `CImageSourceAdapter` class provides an interface for fetching and buffering
 class CImageSourceAdapter 
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

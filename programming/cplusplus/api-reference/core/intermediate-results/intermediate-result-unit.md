@@ -21,7 +21,7 @@ class CIntermediateResultUnit
 ```
 
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

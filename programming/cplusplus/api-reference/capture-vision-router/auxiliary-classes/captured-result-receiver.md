@@ -22,7 +22,7 @@ The `CCapturedResultReceiver` class is responsible for receiving captured result
 class CCapturedResultReceiver 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |

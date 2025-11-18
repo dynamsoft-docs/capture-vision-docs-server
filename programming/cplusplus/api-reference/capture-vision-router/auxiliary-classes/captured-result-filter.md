@@ -24,7 +24,7 @@ The `CCapturedResultFilter` class is responsible for filtering captured results.
 class CCapturedResultFilter 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |

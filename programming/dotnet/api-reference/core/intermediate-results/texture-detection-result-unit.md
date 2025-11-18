@@ -19,7 +19,7 @@ The `TextureDetectionResultUnit` class represents an intermediate result unit fo
 class TextureDetectionResultUnit : IntermediateResultUnit 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

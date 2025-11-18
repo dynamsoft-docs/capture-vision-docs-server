@@ -21,7 +21,7 @@ The `CImageSourceErrorListener` class is an abstract base class for receiving er
 class CImageSourceErrorListener 
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 | ------ | ----------- |

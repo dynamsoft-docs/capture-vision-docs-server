@@ -19,7 +19,7 @@ The `TextZonesUnit` class represents a unit that contains text zones. It is deri
 class TextZonesUnit : IntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

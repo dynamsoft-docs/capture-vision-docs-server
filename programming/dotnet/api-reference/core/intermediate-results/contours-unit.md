@@ -19,7 +19,7 @@ The `ContoursUnit` class represents a unit that contains contours as intermediat
 class ContoursUnit : IntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method                    | Description |
 |---------------------------|---------------------------------------------|

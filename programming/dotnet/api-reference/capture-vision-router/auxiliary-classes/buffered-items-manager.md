@@ -19,7 +19,7 @@ The `BufferedItemsManager` class is used to manage the buffered items. It provid
 public class BufferedItemsManager 
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

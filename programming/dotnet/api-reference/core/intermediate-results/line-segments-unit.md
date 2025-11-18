@@ -19,7 +19,7 @@ The `LineSegmentsUnit` class represents a collection of line segments in 2D spac
 public class LineSegmentsUnit : IntermediateResultUnit, IEnumerable<LineSegment>
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

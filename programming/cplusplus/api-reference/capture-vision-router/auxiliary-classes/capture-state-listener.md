@@ -22,7 +22,7 @@ The `CCaptureStateListener` class is an abstract class that defines a listener f
 class CCaptureStateListener
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                            | Description                            |
 | ------------------------------------------------- | -------------------------------------- |

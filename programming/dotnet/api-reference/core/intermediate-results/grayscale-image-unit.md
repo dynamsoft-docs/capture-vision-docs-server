@@ -19,7 +19,7 @@ The `GrayscaleImageUnit` class represents a grayscale image unit. It is derived 
 class GrayscaleImageUnit : IntermediateResultUnit 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

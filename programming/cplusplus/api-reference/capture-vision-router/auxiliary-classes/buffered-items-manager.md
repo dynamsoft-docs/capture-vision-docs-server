@@ -20,7 +20,7 @@ The `CBufferedItemsManager` class is used to manage the buffered items. It provi
 class CBufferedItemsManager 
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

@@ -20,7 +20,7 @@ The CCapturedResultBase class serves as a base class for all captured result typ
 class CCapturedResultBase 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                         | Description|
 |--------------------------------|------------|

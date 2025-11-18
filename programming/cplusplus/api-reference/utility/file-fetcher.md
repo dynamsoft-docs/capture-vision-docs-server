@@ -20,7 +20,7 @@ The `CFileFetcher` class is a utility class that partitions a multi-page image f
 class CFileFetcher : public CImageSourceAdapter
 ```
 
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|

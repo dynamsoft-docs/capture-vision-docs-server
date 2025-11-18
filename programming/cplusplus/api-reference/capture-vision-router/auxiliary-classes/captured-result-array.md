@@ -20,7 +20,7 @@ The `CCapturedResultArray` class represents a collection of captured results, ea
 class CCapturedResultArray 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

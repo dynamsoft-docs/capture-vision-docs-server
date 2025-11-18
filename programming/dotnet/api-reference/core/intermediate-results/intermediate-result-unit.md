@@ -19,7 +19,7 @@ The `IntermediateResultUnit` class represents an intermediate result unit used i
 class IntermediateResultUnit : IDisposable 
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

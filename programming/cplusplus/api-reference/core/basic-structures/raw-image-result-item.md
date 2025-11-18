@@ -22,7 +22,7 @@ The `CRawImageResultItem` class represents a captured raw image result item. It 
 class CRawImageResultItem: public CCapturedResultItem
 ```
 
-## Methods Summary
+## Methods
 
 | Method                          | Description                                      |
 | ------------------------------- | ------------------------------------------------ |

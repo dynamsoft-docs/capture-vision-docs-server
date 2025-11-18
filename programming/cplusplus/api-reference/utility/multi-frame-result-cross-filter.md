@@ -19,7 +19,7 @@ The `CMultiFrameResultCrossFilter` class is responsible for filtering captured r
 class CMultiFrameResultCrossFilter: public CCapturedResultFilter
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                            | Description                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------- |
