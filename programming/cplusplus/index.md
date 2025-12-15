@@ -64,12 +64,12 @@ For an overview of the APIs, see the [API Reference]({{ site.dcvb_cpp_api }}).
 
 For a peek of DCV C++ Edition history, check the [Release Notes]({{ site.dcvb_cpp }}release-notes/index.html).
 
-### License Subscription
+## License Subscription
 
 To develop and run your application with Dynamsoft Capture Vision SDK, you need an active license key:
 
 * <a href = "https://www.dynamsoft.com/customer/license/trialLicense?utm_source=docs&product=DCV&package=c_cpp" target = "_blank">Request a 30-day free trial license</a>
 
-### Contact Us
+## Contact Us
 
 <a href = "https://www.dynamsoft.com/company/customer-service/#contact" target = "_blank">Feel free to contact us if you have any questions.</a>

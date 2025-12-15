@@ -25,6 +25,7 @@ needGenerateH3Content: false
 | [`StopCapturing`](#stopcapturing)                                   | Stops the consecutive processing.                                          |
 | [`PauseCapturing`](#pausecapturing)                                 | Pauses the capture process. The current thread will be blocked until the capture process is resumed. |
 | [`ResumeCapturing`](#resumecapturing)                               | Resumes the capture process. The current thread will be unblocked after the capture process is resumed. |
+| [`SwitchCapturingTemplate`](#switchcapturingtemplate)      | Switches the capturing template during the image processing workflow.                            |
 
 ## SetInput
 
@@ -297,3 +298,22 @@ Resumes the capture process. The current thread will be unblocked after the capt
 void ResumeCapturing()
 ```
 
+## SwitchCapturingTemplate
+
+Switches the capturing template during the image processing workflow.
+
+```csharp
+public int SwitchCapturingTemplate(string templateName)
+```
+
+**Parameters**
+
+`[in] templateName` The name of the new capturing template to apply.
+
+**Return value**
+
+Returns an error code. Zero indicates success.
+
+**Remarks**
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.

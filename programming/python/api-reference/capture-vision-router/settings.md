@@ -20,7 +20,6 @@ needGenerateH3Content: false
 | [`reset_settings`](#reset_settings)                 | Resets all templates to factory settings.                                                    |
 | [`get_parameter_template_count`](#get_parameter_template_count)  | Gets the total number of available parameter templates.                                 |
 | [`get_parameter_template_name`](#get_parameter_template_name)    | Gets the name of a specific parameter template by its index.                            |
-| [`switch_capturing_template`](#switch_capturing_template)      | Switches the capturing template during the image processing workflow.                            |
 
 ## init_settings
 
@@ -246,28 +245,3 @@ Returns a tuple containing following elements:
 - `error_code` <*int*>: The error code indicating the status of the operation.
 - `template_name` <*str*>: The name of the parameter template.
 
-## switch_capturing_template
-
-Switches the capturing template during the image processing workflow.
-
-```python
-def switch_capturing_template(self, template_name: str) -> Tuple[int, str]:
-```
-
-**Parameters**
-
-`template_name` The name of the new capturing template to apply.
-
-**Return Value**
-
-Returns a tuple containing following elements:
-- `error_code` <*int*>: The error code indicating the status of the operation.
-- `error_message` <*str*>: A descriptive message explaining the error.
-
-**Remarks**
-
-- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
-
-**See Also**
-
-[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)

@@ -48,6 +48,7 @@ class CaptureVisionRouter
 | [`stop_capturing`](multiple-file-processing.md#stop_capturing)                                   | Stops the consecutive process.                                               |
 | [`pause_capturing`](multiple-file-processing.md#pause_capturing)                                 | Pauses the capture process. The current thread will be blocked until the capture process is resumed. |
 | [`resume_capturing`](multiple-file-processing.md#resume_capturing)                               | Resumes the capture process. The current thread will be unblocked after the capture process is resumed. |
+| [`switch_capturing_template`](multiple-file-processing.md#switch_capturing_template)    | Switches the capturing template during the image processing workflow.                            |
 
 ## Setting Methods
 
@@ -62,7 +63,6 @@ class CaptureVisionRouter
 | [`reset_settings`](settings.md#reset_settings)                 | Resets all templates to factory settings.                                                    |
 | [`get_parameter_template_count`](settings.md#get_parameter_template_count)  | Retrieves the total number of available parameter templates.                                 |
 | [`get_parameter_template_name`](settings.md#get_parameter_template_name)    | Retrieves the name of a specific parameter template by its index.                            |
-| [`switch_capturing_template`](settings.md#switch_capturing_template)    | Switches the capturing template during the image processing workflow.                            |
 
 ## Buffered Items Methods
 
