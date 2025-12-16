@@ -25,6 +25,7 @@ needGenerateH3Content: false
 | [`stop_capturing`](#stop_capturing)                                   | Stops the consecutive processing.                                          |
 | [`pause_capturing`](#pause_capturing)                                 | Pauses the capture process. The current thread will be blocked until the capture process is resumed. |
 | [`resume_capturing`](#resume_capturing)                               | Resumes the capture process. The current thread will be unblocked after the capture process is resumed. |
+| [`switch_capturing_template`](#switch_capturing_template)      | Switches the capturing template during the image processing workflow.                            |
 
 ## set_input
 
@@ -327,3 +328,28 @@ Resumes the capture process. The current thread will be unblocked after the capt
 def resume_capturing(self) -> None:
 ```
 
+## switch_capturing_template
+
+Switches the capturing template during the image processing workflow.
+
+```python
+def switch_capturing_template(self, template_name: str) -> Tuple[int, str]:
+```
+
+**Parameters**
+
+`template_name` The name of the new capturing template to apply.
+
+**Return Value**
+
+Returns a tuple containing following elements:
+- `error_code` <*int*>: The error code indicating the status of the operation.
+- `error_message` <*str*>: A descriptive message explaining the error.
+
+**Remarks**
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
+
+**See Also**
+
+[EnumErrorCode]({{ site.dcvb_python_api }}core/enum-error-code.html)

@@ -92,7 +92,7 @@ if normalized_images_result is None or len(normalized_images_result.get_items())
 else:
     items = normalized_images_result.get_items()
     print("Normalized", len(items), "documents.")
-    for index,item in enumerate(normalized_images_result.get_items()):                   
+    for index,item in enumerate(normalized_images_result.get_items()):
         out_path = "normalizedResult_" + str(index) + ".png"
         image_manager = ImageManager()
         image = item.get_image_data()

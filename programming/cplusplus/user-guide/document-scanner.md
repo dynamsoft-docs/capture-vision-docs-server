@@ -33,7 +33,7 @@ To find out whether your environment is supported, please read the [System Requi
 
 ## Installation
 
-If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-3.2.1000.251014.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
+If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-3.2.5000.251216.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
 
 > [!IMPORTANT]
 > For this tutorial, we unpack it to a pseudo directory `[INSTALLATION FOLDER]`, change it to your unpacking path for the following content.
@@ -175,24 +175,24 @@ CCaptureVisionRouter* router = new CCaptureVisionRouter();
         cout << "Error: " << result->GetErrorCode() << "," << result->GetErrorString() << endl;
     }
     CProcessedDocumentResult *processedDocumentResult = result->GetProcessedDocumentResult();
-    if (processedDocumentResult == nullptr || processedDocumentResult->GetDeskewedImageResultItemsCount() == 0)
+    if (processedDocumentResult == nullptr || processedDocumentResult->GetEnhancedImageResultItemsCount() == 0)
     {
         cout << "No document found." << endl;
     }
     else
     {
-        int count = processedDocumentResult->GetDeskewedImageResultItemsCount();
-        cout << "Deskewed " << count << " documents" << endl;
+        int count = processedDocumentResult->GetEnhancedImageResultItemsCount();
+        cout << "Normalized " << count << " documents" << endl;
         for (int i = 0; i < count; i++)
         {
-            const CDeskewedImageResultItem *deskewedImage = processedDocumentResult->GetDeskewedImageResultItem(i);
-            string outPath = "deskewedResult_";
+            const CEnhancedImageResultItem *enhancedImage = processedDocumentResult->GetEnhancedImageResultItem(i);
+            string outPath = "enhancedResult_";
             outPath += to_string(i) + ".png";
 
             CImageIO imageIO;
 
-            // 5.Save deskewed image to file.
-            errorCode = imageIO.SaveToFile(deskewedImage->GetImageData(), outPath.c_str());
+            // 5.Save normalized image to file.
+            errorCode = imageIO.SaveToFile(enhancedImage->GetImageData(), outPath.c_str());
             if (errorCode == 0)
             {
                 cout << "Document " << i << " file: " << outPath << endl;

@@ -47,10 +47,11 @@ Search for and install the `Dynamsoft.DotNet.CaptureVision.Bundle` nuget package
 Open the `Program.cs` file and add the following namespaces.
 
 ```csharp
-using Dynamsoft.Core;
 using Dynamsoft.CVR;
 using Dynamsoft.License;
-using Dynamsoft.DCP;
+using Dynamsoft.Core;
+using Dynamsoft.Utility;
+using Dynamsoft.DDN;
 ```
 
 ### Initialize the License Key
@@ -84,10 +85,8 @@ using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
 using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
 {
     string imageFile = "[PATH-TO-THE-IMAGE-FILE]";
-    using (CapturedResult? result = cvRouter.Capture(imageFile, PresetTemplate.PT_DETECT_AND_NORMALIZE_DOCUMENT))
-    {
-        //code for saving the normalized result as an image file
-    }
+    CapturedResult[] results = cvRouter.CaptureMultiPages(imageFile, PresetTemplate.PT_DETECT_AND_NORMALIZE_DOCUMENT)
+    //code for saving the normalized result as an image file
 }
 ```
 
@@ -96,32 +95,46 @@ using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
 2. Save the normalized result as an image file
 
 ```csharp
-if (result == null)
+if (results == null || results.Length == 0)
 {
     Console.WriteLine("No document detected.");
 }
 else
 {
-    if (result.GetErrorCode() != 0)
+    for (int index = 0; index < results.Length; index++)
     {
-        Console.WriteLine("Error: " + result.GetErrorCode() + ", " + result.GetErrorString());
-    }
-    NormalizedImagesResult? normalizedImagesResult = result.GetNormalizedImagesResult();
-    if (normalizedImagesResult != null)
-    {
-        NormalizedImageResultItem[] items = normalizedImagesResult.GetItems();
-        Console.WriteLine("Normalized " + items.Length + " documents");
-        foreach (NormalizedImageResultItem normalizedItem in items)
+        CapturedResult result = results[index];
+        if (result.GetErrorCode() == (int)EnumErrorCode.EC_UNSUPPORTED_JSON_KEY_WARNING)
         {
-            string outPath = "normalizedResult_" + Array.IndexOf(items, normalizedItem) + ".png";
-            ImageManager imageManager = new ImageManager();
-            var image = normalizedItem.GetImageData();
-            if (image != null)
+            Console.WriteLine("Warning: " + result.GetErrorCode() + ", " + result.GetErrorString());
+        }
+        else if (result.GetErrorCode() != (int)EnumErrorCode.EC_OK)
+        {
+            Console.WriteLine("Error: " + result.GetErrorCode() + ", " + result.GetErrorString());
+        }
+        FileImageTag tag = result.GetOriginalImageTag() as FileImageTag;
+        int pageNumber = tag != null ? tag.GetPageNumber() : index;
+        ProcessedDocumentResult processedDocumentResult = result.GetProcessedDocumentResult();
+        if (processedDocumentResult == null || processedDocumentResult.GetEnhancedImageResultItems().Length == 0)
+        {
+            Console.WriteLine("Page-" + (pageNumber + 1) + " No document found.");
+        }
+        else
+        {
+            EnhancedImageResultItem[] items = processedDocumentResult.GetEnhancedImageResultItems();
+            for (int i = 0; i < items.Length; i++)
             {
-                errorCode = imageManager.SaveToFile(image, outPath);
-                if (errorCode == 0)
+                EnhancedImageResultItem enhancedResult = items[i];
+                string outPath = "Page_" + (pageNumber + 1) + "enhancedResult_" + i + ".png";
+                ImageIO imageIo = new ImageIO();
+                var image = enhancedResult.GetImageData();
+                if (image != null)
                 {
-                    Console.WriteLine("Document " + Array.IndexOf(items, normalizedItem) + " file: " + outPath);
+                    errorCode = imageIo.SaveToFile(image, outPath);
+                    if (errorCode == 0)
+                    {
+                        Console.WriteLine("Document " + i + " file: " + outPath);
+                    }
                 }
             }
         }

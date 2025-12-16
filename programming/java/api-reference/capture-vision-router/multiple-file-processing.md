@@ -25,6 +25,7 @@ needGenerateH3Content: false
 | [`stopCapturing`](#stopcapturing)                                   | Stops the consecutive processing.                                          |
 | [`pauseCapturing`](#pausecapturing)                                 | Pauses the capture process. The current thread will be blocked until the capture process is resumed. |
 | [`resumeCapturing`](#resumecapturing)                               | Resumes the capture process. The current thread will be unblocked after the capture process is resumed. |
+| [`switchCapturingTemplate`](#switchcapturingtemplate)      | Switches the capturing template during the image processing workflow.                            |
 
 ## setInput
 
@@ -290,3 +291,22 @@ Resumes the capture process. The current thread will be unblocked after the capt
 public void resumeCapturing()
 ```
 
+## switchCapturingTemplate
+
+Switches the capturing template during the image processing workflow.
+
+```java
+public void switchCapturingTemplate(String templateName) throws CaptureVisionException
+```
+
+**Parameters**
+
+`templateName` The name of the new capturing template to apply.
+
+**Exceptions**
+
+[`CaptureVisionException`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-exception.html)
+
+**Remarks**
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.

@@ -53,6 +53,7 @@ public class CaptureVisionRouter : IDisposable
 | [`StopCapturing`](multiple-file-processing.md#stopcapturing)                                   | Stops the consecutive process.                                               |
 | [`PauseCapturing`](multiple-file-processing.md#pausecapturing)                                 | Pauses the capture process. The current thread will be blocked until the capture process is resumed. |
 | [`ResumeCapturing`](multiple-file-processing.md#resumecapturing)                               | Resumes the capture process. The current thread will be unblocked after the capture process is resumed. |
+| [`SwitchCapturingTemplate`](multiple-file-processing.md#switchcapturingtemplate)    | Switches the capturing template during the image processing workflow.                            |
 
 ## Setting Methods
 
@@ -67,7 +68,6 @@ public class CaptureVisionRouter : IDisposable
 | [`ResetSettings`](settings.md#resetsettings)                 | Resets all templates to factory settings.                                                    |
 | [`GetParameterTemplateCount`](settings.md#getparametertemplatecount)  | Retrieves the total number of available parameter templates.                                 |
 | [`GetParameterTemplateName`](settings.md#getparametertemplatename)    | Retrieves the name of a specific parameter template by its index.                            |
-| [`SwitchCapturingTemplate`](settings.md#switchcapturingtemplate)    | Switches the capturing template during the image processing workflow.                            |
 
 ## Auxiliary Methods
 

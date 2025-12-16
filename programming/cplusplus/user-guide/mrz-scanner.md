@@ -39,7 +39,7 @@ To find out whether your environment is supported, please read the [System Requi
 
 ## Installation
 
-If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-3.2.1000.251014.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
+If you haven't downloaded the SDK yet, <a href="https://download2.dynamsoft.com/dcv/dynamsoft-capture-vision-cpp-3.2.5000.251216.zip" target="_blank">download the `C/C++ Package`</a> now and unpack the package into a directory of your choice.
 
 > [!IMPORTANT]
 > For this tutorial, we unpack it to a pseudo directory `[INSTALLATION FOLDER]`, change it to your unpacking path for the following content.

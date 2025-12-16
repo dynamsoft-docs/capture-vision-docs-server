@@ -26,6 +26,7 @@ breadcrumbText: CVR C++ Multiple-File Processing
 | [`StopCapturing`](#stopcapturing)                                   | Stops the consecutive processing.                                          |
 | [`PauseCapturing`](#pausecapturing)                                 | Pauses the capture process. The current thread will be blocked until the capture process is resumed. |
 | [`ResumeCapturing`](#resumecapturing)                               | Resumes the capture process. The current thread will be unblocked after the capture process is resumed. |
+| [`SwitchCapturingTemplate`](#switchcapturingtemplate)      | Switches the capturing template during the image processing workflow.                            |
 
 ## SetInput
 
@@ -363,3 +364,27 @@ else
     delete filter, filter = NULL;;
 }
 ```
+
+## SwitchCapturingTemplate
+
+Switches the capturing template during the image processing workflow.
+
+```cpp
+int SwitchCapturingTemplate(const char* templateName, char errorMsgBuffer[] = NULL, const int errorMsgBufferLen = 0);
+```
+
+**Parameters**
+
+`[in] templateName` The name of the new capturing template to apply.
+
+`[in] errorMsgBuffer` A buffer for error messages.
+
+`[in] errorMsgBufferLen` The length of the error message buffer.
+
+**Return value**
+
+Returns an error code. Zero indicates success.
+
+**Remarks**
+
+- Introduced in Dynamsoft Barcode Reader SDK version 11.2.1000 and Dynamsoft Capture Vision version 3.2.1000.
