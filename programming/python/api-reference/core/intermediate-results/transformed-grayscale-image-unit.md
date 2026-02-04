@@ -12,7 +12,7 @@ The `TransformedGrayscaleImageUnit` class is a subclass of `IntermediateResultUn
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class TransformedGrayscaleImageUnit(IntermediateResultUnit)

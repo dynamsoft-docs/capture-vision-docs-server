@@ -12,7 +12,7 @@ The `TextZone` class represents a single text zone.
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class TextZone

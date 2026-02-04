@@ -12,7 +12,7 @@ The `ContoursUnit` class represents a unit that contains contours as intermediat
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class ContoursUnit(IntermediateResultUnit)

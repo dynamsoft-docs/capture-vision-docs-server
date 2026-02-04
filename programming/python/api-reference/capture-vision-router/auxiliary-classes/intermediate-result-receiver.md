@@ -12,7 +12,7 @@ The `IntermediateResultReceiver` class is responsible for receiving intermediate
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class IntermediateResultReceiver: 

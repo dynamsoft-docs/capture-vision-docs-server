@@ -13,7 +13,7 @@ Defines a listener for capture state changes.
 
 ## Definition
 
-*Namespace:* com.dynamsoft.cvr
+*Package:* com.dynamsoft.cvr
 
 ```java
 interface CaptureStateListener

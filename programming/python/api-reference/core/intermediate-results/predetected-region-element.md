@@ -11,7 +11,7 @@ The `PredetectedRegionElement` class represents a region element that has been p
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class PredetectedRegionElement(RegionObjectElement)

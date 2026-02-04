@@ -12,7 +12,7 @@ The `CapturedResult` class represents the result of a capture operation on an im
 
 ## Definition
 
-*Namespace:* com.dynamsoft.cvr
+*Package:* com.dynamsoft.cvr
 
 ```java
 class CapturedResult extends CapturedResultBase

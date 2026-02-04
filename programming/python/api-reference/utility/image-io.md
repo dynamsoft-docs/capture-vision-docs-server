@@ -12,7 +12,7 @@ The `ImageIO` class handles image reading and writing (from/to files and memory)
 
 ## Definition
 
-*Module:* dynamsoft_utility
+*Module:* utility
 
 ```python
 class ImageIO:

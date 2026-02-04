@@ -13,7 +13,7 @@ The `MultiFrameResultCrossFilter` class is responsible for filtering captured re
 
 ## Definition
 
-*Module:* dynamsoft_utility
+*Module:* utility
 
 *Inheritance:* [CapturedResultFilter]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) -> MultiFrameResultCrossFilter
 
@@ -36,6 +36,8 @@ class MultiFrameResultCrossFilter(dynamsoft_capture_vision_router.CapturedResult
 | [`get_max_overlapping_frames`](#get_max_overlapping_frames) | Gets the max referencing frames count for the to-the-latest overlapping feature. |
 | [`enable_latest_overlapping`](#enable_latest_overlapping) | Enables the to-the-latest overlapping feature. The output captured result will become a combination of the recent results if the latest frame is proved to be similar with the previous. |
 | [`is_latest_overlapping_enabled`](#is_latest_overlapping_enabled) | Determines whether the to-the-latest overlapping feature is enabled for the specific result item type. |
+| [`set_result_cross_verification_criteria`](#set_result_cross_verification_criteria) | Sets the cross-verification criteria for specified result item types. |
+| [`get_result_cross_verification_criteria`](#get_result_cross_verification_criteria) | Gets the cross-verification criteria for a specified result item type. |
 
 ### \_\_init\_\_
 
@@ -234,4 +236,52 @@ Returns a bool value indicating whether the to-the-latest overlapping feature is
 **See Also**
 
 [EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+
+### set_result_cross_verification_criteria
+
+Sets the cross-verification criteria for specified result item types. This method allows customization of the multi-frame verification parameters, controlling how many frames are analyzed and how many consistent results are required.
+
+```python
+def set_result_cross_verification_criteria(self, result_item_types: int, frame_window: int, min_consistent_frames: int) -> None:
+```
+
+**Parameters**
+
+`result_item_types` A bitwise OR combination of one or more values from the `EnumCapturedResultItemType` enumeration.
+
+`frame_window` The number of frames to consider for cross-verification.
+
+`min_consistent_frames` The minimum number of frames that must contain consistent results for verification to succeed.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
+
+### get_result_cross_verification_criteria
+
+Gets the cross-verification criteria for a specified result item type.
+
+```python
+def get_result_cross_verification_criteria(self, result_item_type: int) -> Tuple[int, int]:
+```
+
+**Parameters**
+
+`result_item_type` The result item type to query. It is a value from the `EnumCapturedResultItemType` enumeration.
+
+**Return value**
+
+Returns a tuple containing the frame window size and the minimum consistent frames.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 

@@ -12,7 +12,7 @@ The `CapturedResultItem` class represents an item in a captured result. It is an
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class CapturedResultItem

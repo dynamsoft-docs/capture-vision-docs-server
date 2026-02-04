@@ -79,7 +79,7 @@ Returns a pointer to a `CImageData` object representing the processed image.
 
 ### ConvertToBinaryGlobal
 
-Converts the grayscale image to binary image using a global threshold.
+Converts an input image to a binary image using a global threshold. Supports grayscale, color, and binary input images (color images are internally converted to grayscale before thresholding).
 
 ```cpp
 CImageData* ConvertToBinaryGlobal(const CImageData* pImageData, int threshold = -1, bool invert = false)
@@ -87,15 +87,15 @@ CImageData* ConvertToBinaryGlobal(const CImageData* pImageData, int threshold = 
 
 **Parameters**
 
-`[in] pImageData` A pointer to the image data to be processed.
+`[in] pImageData` Input image (grayscale, color, or binary).
 
-`[in] threshold` Global threshold for binarization(default is -1, automatic calculate the threshold).
+`[in] threshold` Global threshold for binarization. If set to -1 (default), the function will automatically compute an optimal threshold.
 
-`[in] invert` If true, invert the binary image (black becomes white and white becomes black).
+`[in] invert` If true, invert the output binary image.
 
 **Return value**
 
-Returns a pointer to a `CImageData` object representing the processed image.
+Returns a pointer to a `CImageData` object representing the binarized image.
 
 **See Also**
 
@@ -103,29 +103,33 @@ Returns a pointer to a `CImageData` object representing the processed image.
 
 ### ConvertToBinaryLocal
 
-Converts the grayscale image to binary image using local (adaptive) binarization.
+Converts an input image to a binary image using local (adaptive) thresholding. Supports grayscale, color, and binary input images (color images are internally converted to grayscale before thresholding).
 
 ```cpp
-CImageData* ConvertToBinaryLocal(const CImageData* pImageData, int blockSize = 0, int compensation = 0, bool invert = false)
+CImageData* ConvertToBinaryLocal(const CImageData* pImageData, int blockSize = 0, int compensation = 10, bool invert = false)
 ```
 
 **Parameters**
 
-`[in] pImageData` A pointer to the image data to be processed.
+`[in] pImageData` Input image (grayscale, color, or binary).
 
-`[in] blockSize` Size of the block for local binarization(default is 0).
+`[in] blockSize` Size of the local block used for adaptive thresholding. If set to 0 (default), a suitable block size will be chosen automatically.
 
-`[in] compensation` Adjustment value to modify the threshold (default is 0).
+`[in] compensation` Adjustment value applied to the computed local threshold (default is 10).
 
-`[in] invert` If true, invert the binary image (black becomes white and white becomes black).
+`[in] invert` If true, invert the output binary image.
 
 **Return value**
 
-Returns a pointer to a `CImageData` object representing the processed image.
+Returns a pointer to a `CImageData` object representing the locally binarized image.
 
 **See Also**
 
 [CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
+
+**Remarks**
+
+Changed default value of `compensation` parameter from 0 to 10 in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 
 ### ConvertToGray
 

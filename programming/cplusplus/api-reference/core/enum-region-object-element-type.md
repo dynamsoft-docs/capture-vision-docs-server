@@ -40,6 +40,8 @@ typedef enum RegionObjectElementType
    /**The type of subclass SourceImageElement.*/
    ROET_SOURCE_IMAGE,
    /**The type of subclass TargetROIElement.*/
-   ROET_TARGET_ROI
+   ROET_TARGET_ROI,
+   /**The type of subclass AuxiliaryRegionElement.*/
+   ROET_AUXILIARY_REGION
 } RegionObjectElementType;
 ```

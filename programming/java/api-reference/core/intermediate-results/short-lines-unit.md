@@ -12,7 +12,7 @@ The `ShortLinesUnit` class represents an intermediate result unit that contains 
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class ShortLinesUnit extends IntermediateResultUnit

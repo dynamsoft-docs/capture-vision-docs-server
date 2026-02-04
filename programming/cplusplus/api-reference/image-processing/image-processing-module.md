@@ -27,11 +27,12 @@ class CImageProcessingModule
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |
 | [GetVersion](#getversion)                                     | Returns the version of the image processing module. |
-| [CreatePredetectedRegionElement](#createpredetectedregionelement) | Create a Predetected Region Element object |
+| [CreatePredetectedRegionElement](#createpredetectedregionelement) | Create a Predetected Region Element object. |
+| [CreateAuxiliaryRegionElement](#createauxiliaryregionelement) | Create an Auxiliary Region Element object. |
 
 ## CreatePredetectedRegionElement
 
-Create a Predetected Region Element object
+Create a Predetected Region Element object.
 
 ```cpp
 static CPredetectedRegionElement* CreatePredetectedRegionElement();
@@ -39,7 +40,27 @@ static CPredetectedRegionElement* CreatePredetectedRegionElement();
 
 **Return Value**
 
-Returns an instance of CPredetectedRegionElement.
+Returns an instance of `CPredetectedRegionElement`.
+
+## CreateAuxiliaryRegionElement
+
+Create an Auxiliary Region Element object.
+
+```cpp
+static CAuxiliaryRegionElement* CreateAuxiliaryRegionElement();
+```
+
+**Return Value**
+
+Returns an instance of `CAuxiliaryRegionElement`.
+
+**See Also**
+
+[CAuxiliaryRegionElement]({{ site.dcvb_cpp_api }}core/intermediate-results/auxiliary-region-element.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Capture Vision version 3.4.1000.
 
 ## GetVersion
 

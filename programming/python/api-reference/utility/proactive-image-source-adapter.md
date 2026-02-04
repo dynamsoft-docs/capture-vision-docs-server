@@ -12,7 +12,7 @@ The `ProactiveImageSourceAdapter` class is an abstract class that extends the `I
 
 ## Definition
 
-*Module:* dynamsoft_utility
+*Module:* utility
 
 *Inheritance:* [ImageSourceAdapter]({{ site.dcvb_python_api }}core/basic-classes/image-source-adapter.html) -> ProactiveImageSourceAdapter
 

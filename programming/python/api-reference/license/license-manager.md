@@ -12,7 +12,7 @@ The `LicenseManager` class provides a set of APIs to manage SDK licensing.
 
 ## Definition
 
-*Module:* dynamsoft_license
+*Module:* license
 
 ```python
 class LicenseManager

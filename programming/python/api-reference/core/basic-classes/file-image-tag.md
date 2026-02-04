@@ -12,7 +12,7 @@ The `FileImageTag` class represents an image tag that is associated with a file.
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class FileImageTag(ImageTag)

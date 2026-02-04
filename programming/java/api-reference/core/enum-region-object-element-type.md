@@ -33,5 +33,7 @@ public @interface EnumRegionObjectElementType {
     int ROET_TARGET_ROI = 8;
     //The type of subclass EnhancedImageElement.
     int ROET_ENHANCED_IMAGE = 9;
+    //The type of subclass AuxiliaryRegionElement.
+    int ROET_AUXILIARY_REGION = 10;
 }
 ```

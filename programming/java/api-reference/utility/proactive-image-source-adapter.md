@@ -12,7 +12,7 @@ The `ProactiveImageSourceAdapter` class is an abstract class that extends the `I
 
 ## Definition
 
-*Namespace:* com.dynamsoft.utility
+*Package:* com.dynamsoft.utility
 
 *Inheritance:* [ImageSourceAdapter]({{ site.dcvb_java_api }}core/basic-classes/image-source-adapter.html) -> ProactiveImageSourceAdapter
 

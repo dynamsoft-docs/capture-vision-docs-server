@@ -12,7 +12,7 @@ The `Contour` class represents a contour in 2D space. It contains an array of `P
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class Contour 

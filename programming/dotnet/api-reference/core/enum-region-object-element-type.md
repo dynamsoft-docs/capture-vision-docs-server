@@ -35,6 +35,8 @@ public enum EnumRegionObjectElementType
    /**The type of subclass TargetROIElement.*/
    ROET_TARGET_ROI,
    /**The type of subclass EnhancedImageElement */
-   ROET_ENHANCED_IMAGE
+   ROET_ENHANCED_IMAGE,
+   /**The type of subclass AuxiliaryRegionElement.*/
+   ROET_AUXILIARY_REGION
 }
 ```

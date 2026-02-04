@@ -13,7 +13,7 @@ The `OriginalImageResultItem` class represents a captured original image result 
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class OriginalImageResultItem(CapturedResultItem)

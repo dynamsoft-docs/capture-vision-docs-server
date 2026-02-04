@@ -12,7 +12,7 @@ The `TextRemovedBinaryImageUnit` class represents an intermediate result unit th
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class TextRemovedBinaryImageUnit(IntermediateResultUnit)

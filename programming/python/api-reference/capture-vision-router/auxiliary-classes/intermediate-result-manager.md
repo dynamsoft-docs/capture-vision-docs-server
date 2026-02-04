@@ -12,7 +12,7 @@ The `IntermediateResultManager` class manages intermediate results generated dur
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class IntermediateResultManager 

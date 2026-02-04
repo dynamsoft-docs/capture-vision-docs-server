@@ -12,7 +12,7 @@ The `TextureRemovedBinaryImageUnit` class represents an intermediate result unit
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class TextureRemovedBinaryImageUnit extends IntermediateResultUnit

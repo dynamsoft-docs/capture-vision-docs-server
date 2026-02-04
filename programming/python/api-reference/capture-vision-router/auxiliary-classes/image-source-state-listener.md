@@ -15,7 +15,7 @@ Defines a listener for image source state changes.
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class ImageSourceStateListener(ABC)

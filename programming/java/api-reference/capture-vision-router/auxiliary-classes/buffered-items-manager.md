@@ -13,7 +13,7 @@ Defines a manager for buffered items in the capture vision workflow.
 
 ## Definition
 
-*Namespace:* com.dynamsoft.cvr
+*Package:* com.dynamsoft.cvr
 
 ```java
 class BufferedItemsManager

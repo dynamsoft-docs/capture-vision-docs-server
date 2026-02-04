@@ -12,7 +12,7 @@ The `CapturedResult` class represents the result of a capture operation on an im
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class CapturedResult 

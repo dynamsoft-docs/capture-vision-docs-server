@@ -13,7 +13,7 @@ The `LicenseModule` class defines general functions in the license module.
 
 ## Definition
 
-*Namespace:* com.dynamsoft.license
+*Package:* com.dynamsoft.license
 
 ```java
 public class LicenseModule 

@@ -13,7 +13,7 @@ The `CoreModule` class defines general functions in the core module.
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class CoreModule 

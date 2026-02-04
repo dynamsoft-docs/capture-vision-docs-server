@@ -12,7 +12,7 @@ The `PredetectedRegionsUnit` class represents a unit that contains a collection 
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class PredetectedRegionsUnit(IntermediateResultUnit)

@@ -12,7 +12,7 @@ The `VideoFrameTag` class represents a video frame tag, which is a type of image
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class VideoFrameTag(ImageTag) 

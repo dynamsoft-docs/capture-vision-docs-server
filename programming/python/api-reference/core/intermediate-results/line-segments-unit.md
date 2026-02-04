@@ -12,7 +12,7 @@ The `LineSegmentsUnit` class represents a collection of line segments in 2D spac
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class LineSegmentsUnit(IntermediateResultUnit)

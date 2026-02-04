@@ -37,6 +37,8 @@ public class MultiFrameResultCrossFilter : CapturedResultFilter
 | [`GetMaxOverlappingFrames`](#getmaxoverlappingframes) | Gets the max referencing frames count for the to-the-latest overlapping feature. |
 | [`EnableLatestOverlapping`](#enablelatestoverlapping) | Enables the to-the-latest overlapping feature. The output captured result will become a combination of the recent results if the latest frame is proved to be similar with the previous. |
 | [`IsLatestOverlappingEnabled`](#islatestoverlappingenabled) | Determines whether the to-the-latest overlapping feature is enabled for the specific result item type. |
+| [`SetResultCrossVerificationCriteria`](#setresultcrossverificationcriteria) | Sets the cross-verification criteria for specified result item types. |
+| [`GetResultCrossVerificationCriteria`](#getresultcrossverificationcriteria) | Gets the cross-verification criteria for a specified result item type. |
 
 ### MultiFrameResultCrossFilter
 
@@ -244,3 +246,52 @@ Returns a bool value indicating whether the to-the-latest overlapping feature is
 **See Also**
 
 [EnumCapturedResultItemType]({{ site.dcvb_dotnet_api }}core/enum-captured-result-item-type.html)
+
+### SetResultCrossVerificationCriteria
+
+Sets the cross-verification criteria for specified result item types. This method allows customization of the multi-frame verification parameters, controlling how many frames are analyzed and how many consistent results are required.
+
+```csharp
+void SetResultCrossVerificationCriteria(EnumCapturedResultItemType resultItemTypes, int frameWindow, int minConsistentFrames)
+```
+
+**Parameters**
+
+`[in] resultItemTypes` A bitwise OR combination of one or more values from the `EnumCapturedResultItemType` enumeration.
+
+`[in] frameWindow` The number of frames to consider for cross-verification.
+
+`[in] minConsistentFrames` The minimum number of frames that must contain consistent results for verification to succeed.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_dotnet_api }}core/enum-captured-result-item-type.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
+
+### GetResultCrossVerificationCriteria
+
+Gets the cross-verification criteria for a specified result item type.
+
+```csharp
+void GetResultCrossVerificationCriteria(EnumCapturedResultItemType resultItemType, out int frameWindow, out int minConsistentFrames)
+```
+
+**Parameters**
+
+`[in] resultItemType` The result item type to query.
+
+`[out] frameWindow` Returns the frame window size currently configured for this result type.
+
+`[out] minConsistentFrames` Returns the minimum consistent frames currently configured for this result type.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_dotnet_api }}core/enum-captured-result-item-type.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
+

@@ -15,7 +15,7 @@ Defines a listener for capture state changes.
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class CaptureStateListener(ABC)

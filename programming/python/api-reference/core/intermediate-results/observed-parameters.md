@@ -12,7 +12,7 @@ The `ObservationParameters` class is used to set filter conditions for the `Inte
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class ObservationParameters 

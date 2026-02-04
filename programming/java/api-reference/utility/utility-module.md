@@ -13,7 +13,7 @@ The `UtilityModule` class defines general functions in the utility module.
 
 ## Definition
 
-*Namespace:* com.dynamsoft.utility
+*Package:* com.dynamsoft.utility
 
 ```java
 public class UtilityModule

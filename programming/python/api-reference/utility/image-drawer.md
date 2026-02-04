@@ -12,7 +12,7 @@ The `ImageDrawer` class is a utility class for drawing various shapes on images.
 
 ## Definition
 
-*Module:* dynamsoft_utility
+*Module:* utility
 
 ```python
 class ImageDrawer:

@@ -12,7 +12,7 @@ The `TextureRemovedBinaryImageUnit` class represents an intermediate result unit
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class TextureRemovedBinaryImageUnit(IntermediateResultUnit)

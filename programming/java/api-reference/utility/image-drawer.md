@@ -12,7 +12,7 @@ The `ImageDrawer` class is a utility class for drawing various shapes on images.
 
 ## Definition
 
-*Namespace:* com.dynamsoft.utility
+*Package:* com.dynamsoft.utility
 
 ```java
 public class ImageDrawer

@@ -12,7 +12,7 @@ The `Point` class represents a point in 2D space. It contains an array of two in
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class Point

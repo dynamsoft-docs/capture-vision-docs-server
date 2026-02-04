@@ -15,7 +15,7 @@ The `CapturedResultFilter` class is responsible for filtering captured results. 
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class CapturedResultFilter 

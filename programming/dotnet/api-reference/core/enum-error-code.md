@@ -135,6 +135,8 @@ public enum EnumErrorCode
     EC_RECT_INVALID = -10080,
     /*The template version is incompatible. Please use a compatible template.*/
     EC_TEMPLATE_VERSION_INCOMPATIBLE = -10081,
+    /**The portrait zone could not be located on the identity document.*/
+    EC_PORTRAIT_ZONE_NOT_FOUND = -10082,
     /** -20000~-29999: DLS license error code. */
     /** No license. */
     EC_NO_LICENSE = -20000,

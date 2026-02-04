@@ -14,7 +14,7 @@ The `ImageSourceAdapter` class provides an class for fetching and buffering imag
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class ImageSourceAdapter(ABC) 

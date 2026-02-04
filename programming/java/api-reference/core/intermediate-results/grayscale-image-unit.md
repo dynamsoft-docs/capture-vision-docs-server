@@ -12,7 +12,7 @@ The `GrayscaleImageUnit` class represents a grayscale image unit. It is derived 
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class GrayscaleImageUnit extends IntermediateResultUnit

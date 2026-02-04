@@ -12,7 +12,7 @@ The `CapturedResultArray` class represents a collection of `CaptureResult`, each
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class CapturedResultArray

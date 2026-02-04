@@ -15,7 +15,7 @@ The `ImageSourceErrorListener` class defines a listener for receiving error noti
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class ImageSourceErrorListener(ABC) 

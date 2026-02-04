@@ -11,7 +11,7 @@ The `Rect` class represents a rectangle in 2D space. It contains four integer va
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class Rect

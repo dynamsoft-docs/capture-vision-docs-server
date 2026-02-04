@@ -30,4 +30,6 @@ class EnumRegionObjectElementType(IntEnum):
    ROET_SOURCE_IMAGE
    # The type of subclass TargetROIElement.
    ROET_TARGET_ROI
+   # The type of subclass AuxiliaryRegionElement.
+   ROET_AUXILIARY_REGION
 ```

@@ -78,7 +78,7 @@ Returns an `ImageData` object representing the processed image.
 
 ### ConvertToBinaryGlobal
 
-Converts the grayscale image to binary image using a global threshold.
+Converts an input image to a binary image using a global threshold. Supports grayscale, color, and binary input images (color images are internally converted to grayscale before thresholding).
 
 ```csharp
 ImageData ConvertToBinaryGlobal(ImageData imageData, int threshold = -1, bool invert = false)
@@ -86,15 +86,15 @@ ImageData ConvertToBinaryGlobal(ImageData imageData, int threshold = -1, bool in
 
 **Parameters**
 
-`[in] imageData` The image data to be processed.
+`[in] imageData` Input image (grayscale, color, or binary).
 
-`[in] threshold` Global threshold for binarization(default is -1, automatic calculate the threshold).
+`[in] threshold` Global threshold for binarization. If set to -1 (default), the function will automatically compute an optimal threshold.
 
-`[in] invert` If true, invert the binary image (black becomes white and white becomes black).
+`[in] invert` If true, invert the output binary image.
 
 **Return value**
 
-Returns an `ImageData` object representing the processed image.
+Returns an `ImageData` object representing the binarized image.
 
 **See Also**
 
@@ -102,29 +102,33 @@ Returns an `ImageData` object representing the processed image.
 
 ### ConvertToBinaryLocal
 
-Converts the grayscale image to binary image using local (adaptive) binarization.
+Converts an input image to a binary image using local (adaptive) thresholding. Supports grayscale, color, and binary input images (color images are internally converted to grayscale before thresholding).
 
 ```csharp
-ImageData ConvertToBinaryLocal(ImageData imageData, int blockSize = 0, int compensation = 0, bool invert = false)
+ImageData ConvertToBinaryLocal(ImageData imageData, int blockSize = 0, int compensation = 10, bool invert = false)
 ```
 
 **Parameters**
 
-`[in] imageData` The image data to be processed.
+`[in] imageData` Input image (grayscale, color, or binary).
 
-`[in] blockSize` Size of the block for local binarization(default is 0).
+`[in] blockSize` Size of the local block used for adaptive thresholding. If set to 0 (default), a suitable block size will be chosen automatically.
 
-`[in] compensation` Adjustment value to modify the threshold (default is 0).
+`[in] compensation` Adjustment value applied to the computed local threshold (default 10).
 
-`[in] invert` If true, invert the binary image (black becomes white and white becomes black).
+`[in] invert` If true, invert the output binary image.
 
 **Return value**
 
-Returns an `ImageData` object representing the processed image.
+Returns an `ImageData` object representing the locally binarized image.
 
 **See Also**
 
 [ImageData]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+
+**Remarks**
+
+Changed default value of `compensation` parameter from 0 to 10 in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 
 ### ConvertToGray
 
