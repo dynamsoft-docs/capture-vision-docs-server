@@ -12,7 +12,7 @@ The `ScaledDownColourImageUnit` class represents an intermediate result unit tha
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class ScaledDownColourImageUnit(IntermediateResultUnit)

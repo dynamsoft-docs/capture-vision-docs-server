@@ -12,7 +12,7 @@ The `TextureRemovedGrayscaleImageUnit` class represents an intermediate result u
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class TextureRemovedGrayscaleImageUnit(IntermediateResultUnit)

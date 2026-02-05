@@ -11,7 +11,7 @@ The `IntermediateResultUnit` class represents an intermediate result unit used i
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class IntermediateResultUnit 

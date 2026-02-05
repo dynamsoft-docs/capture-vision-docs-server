@@ -12,7 +12,7 @@ The `TextZone` class represents a single text zone.
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class TextZone

@@ -12,7 +12,7 @@ The `IntermediateResultExtraInfo` structure represents the extra information for
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class IntermediateResultExtraInfo

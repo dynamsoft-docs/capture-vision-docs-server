@@ -12,7 +12,7 @@ The `ImageProcessor` class is a utility class for applying advanced processing o
 
 ## Definition
 
-*Namespace:* com.dynamsoft.utility
+*Package:* com.dynamsoft.utility
 
 ```java
 public class ImageProcessor
@@ -86,7 +86,7 @@ Returns an `ImageData` object representing the processed image.
 
 ### convertToBinaryGlobal
 
-Converts the grayscale image to binary image using a global threshold.
+Converts an input image to a binary image using a global threshold. Supports grayscale, color, and binary input images (color images are internally converted to grayscale before thresholding).
 
 ```java
 ImageData convertToBinaryGlobal(ImageData imageData)
@@ -95,15 +95,15 @@ ImageData convertToBinaryGlobal(ImageData imageData, int threshold, boolean inve
 
 **Parameters**
 
-`imageData` The image data to be processed.
+`imageData` Input image (grayscale, color, or binary).
 
-`threshold` Global threshold for binarization(default is 0, automatic calculate the threshold).
+`threshold` Global threshold for binarization. If set to -1 (default), the function will automatically compute an optimal threshold.
 
-`invert` If true, invert the binary image (black becomes white and white becomes black).
+`invert` If true, invert the output binary image.
 
 **Return value**
 
-Returns an `ImageData` object representing the processed image.
+Returns an `ImageData` object representing the binarized image.
 
 **See Also**
 
@@ -111,7 +111,7 @@ Returns an `ImageData` object representing the processed image.
 
 ### convertToBinaryLocal
 
-Converts the grayscale image to binary image using local (adaptive) binarization.
+Converts an input image to a binary image using local (adaptive) thresholding. Supports grayscale, color, and binary input images (color images are internally converted to grayscale before thresholding).
 
 ```java
 ImageData convertToBinaryLocal(ImageData imageData)
@@ -120,21 +120,25 @@ ImageData convertToBinaryLocal(ImageData imageData, int blockSize, int compensat
 
 **Parameters**
 
-`imageData` The image data to be processed.
+`imageData` Input image (grayscale, color, or binary).
 
-`blockSize` Size of the block for local binarization(default is 0).
+`blockSize` Size of the local block used for adaptive thresholding. If set to 0 (default), a suitable block size will be chosen automatically.
 
-`compensation` Adjustment value to modify the threshold (default is 0).
+`compensation` Adjustment value applied to the computed local threshold (default 10).
 
-`invert` If true, invert the binary image (black becomes white and white becomes black).
+`invert` If true, invert the output binary image (default false).
 
 **Return value**
 
-Returns an `ImageData` object representing the processed image.
+Returns an `ImageData` object representing the locally binarized image.
 
 **See Also**
 
 [ImageData]({{ site.dcvb_java_api }}core/basic-classes/image-data.html)
+
+**Remarks**
+
+Changed default value of `compensation` parameter from 0 to 10 in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 
 ### convertToGray
 
@@ -230,6 +234,11 @@ Returns an `ImageData` object representing the processed image.
 
 [UtilityException]({{ site.dcvb_java_api }}utility/utility-exception.html)
 
+**Remarks**
+
+The function will automatically calculate the perspective transform matrix and use it to crop the image.  
+If the specified quadrilateral exceeds the image boundaries, white will be used to fill the exceeding area.
+
 **See Also**
 
 [ImageData]({{ site.dcvb_java_api }}core/basic-classes/image-data.html)
@@ -259,59 +268,4 @@ Returns an `ImageData` object representing the processed image.
 [ImageData]({{ site.dcvb_java_api }}core/basic-classes/image-data.html)
 
 [EnumFilterType]({{ site.dcvb_java_api }}utility/enum-filter-type.html)
-def crop_and_deskew_image(self, image_data: ImageData, crop_form: Quadrilateral, destination_width: int = 0, destination_height: int = 0, padding: int = 0) -> Tuple[int, ImageData]:
-```
-
-**Parameters**
-
-`[in] image_data` The source image to be cropped and deskewed.
-
-`[in] crop_form` A quadrilateral defining the region of interest to extract.
-
-`[in] destination_width` (Optional) The width of the output image. If set to 0, the width and height will be automatically calculated.
-
-`[in] destination_height` (Optional) The height of the output image. If set to 0, the width and height will be automatically calculated.
-
-`[in] padding` (Optional) Extra padding (in pixels) applied to expand the boundaries of the extracted region. Default is 0.
-
-**Return value**
-
-Returns a tuple containing following elements:
-- `error_code` <*int*>: The error code indicating the status of the operation.
-- `image_data` <*ImageData*>: An `ImageData` object representing the processed image.
-
-**Remarks**
-
-The function will automatically calculate the perspective transform matrix and use it to crop the image.  
-If the specified quadrilateral exceeds the image boundaries, white will be used to fill the exceeding area.
-
-**See Also**
-
-[ImageData]({{ site.dcvb_java_api }}core/basic-classes/image-data.html)
-
-[Quadrilateral]({{ site.dcvb_java_api }}core/basic-classes/quadrilateral.html)
-
-### filter_image
-
-Applies a specified image filter to an input image and returns the filtered result.
-
-```java
-def filter_image(self, image_data: ImageData, filter_type: FilterType) -> ImageData:
-```
-
-**Parameters**
-
-`image_data` The image data to be processed.
-
-`filter_type` Specifies the type of filter to apply to the input image.
-
-**Return value**
-
-Returns an `ImageData` object representing the processed image.
-
-**See Also**
-
-[ImageData]({{ site.dcvb_java_api }}core/basic-classes/image-data.html)
-
-[FilterType]({{ site.dcvb_cpp_api }}utility/enum-filter-type.html)
 

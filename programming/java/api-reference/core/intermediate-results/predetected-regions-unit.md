@@ -12,7 +12,7 @@ The `PredetectedRegionsUnit` class represents a unit that contains a collection 
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class PredetectedRegionsUnit extends IntermediateResultUnit

@@ -13,7 +13,7 @@ The `CapturedResultFilter` class is responsible for filtering captured results. 
 
 ## Definition
 
-*Namespace:* com.dynamsoft.cvr
+*Package:* com.dynamsoft.cvr
 
 ```java
 class CapturedResultFilter

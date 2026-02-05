@@ -13,7 +13,7 @@ Defines a listener for image source state changes.
 
 ## Definition
 
-*Namespace:* com.dynamsoft.cvr
+*Package:* com.dynamsoft.cvr
 
 ```java
 interface ImageSourceStateListener

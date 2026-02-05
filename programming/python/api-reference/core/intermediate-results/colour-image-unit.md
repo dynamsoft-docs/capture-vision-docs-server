@@ -12,7 +12,7 @@ The `ColourImageUnit` class represents a unit that contains color image. It is d
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class ColourImageUnit(IntermediateResultUnit)

@@ -12,7 +12,7 @@ The `DirectoryFetcher` class is a utility class that retrieves a list of files f
 
 ## Definition
 
-*Module:* dynamsoft_utility
+*Module:* utility
 
 *Inheritance:* [ProactiveImageSourceAdapter]({{ site.dcvb_python_api }}utility/proactive-image-source-adapter.html) -> DirectoryFetcher
 

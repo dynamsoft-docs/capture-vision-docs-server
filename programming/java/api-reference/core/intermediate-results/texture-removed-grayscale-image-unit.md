@@ -12,7 +12,7 @@ The `TextureRemovedGrayscaleImageUnit` class represents an intermediate result u
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class TextureRemovedGrayscaleImageUnit extends IntermediateResultUnit

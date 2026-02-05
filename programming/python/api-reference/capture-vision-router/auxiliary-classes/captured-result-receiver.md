@@ -13,7 +13,7 @@ The `CapturedResultReceiver` class is responsible for receiving captured results
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class CapturedResultReceiver

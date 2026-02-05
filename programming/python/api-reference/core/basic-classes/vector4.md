@@ -12,7 +12,7 @@ The `Vector4` class represents a four-dimensional vector.
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class Vector4

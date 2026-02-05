@@ -22,16 +22,16 @@ public final class IntermediateResultManager
 
 | Method | Description |
 |--------|-------------|
-| [`AddResultReceiver`](#addresultreceiver) | Adds an intermediate result receiver.|
+| [`addResultReceiver`](#addresultreceiver) | Adds an intermediate result receiver.|
 | [`removeResultReceiver`](#removeresultreceiver) | Removes an intermediate result receiver. |
 | [`getOriginalImage`](#getoriginalimage) | Gets the original image data using an image hash id. |
 
-### AddResultReceiver
+### addResultReceiver
 
 Adds an intermediate result receiver to the manager.
 
 ```java
-public void AddResultReceiver(IntermediateResultReceiver receiver) throws CaptureVisionException
+public void addResultReceiver(IntermediateResultReceiver receiver) throws CaptureVisionException
 ```
 
 **Parameters**

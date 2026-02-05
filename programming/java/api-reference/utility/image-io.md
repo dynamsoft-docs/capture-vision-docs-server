@@ -12,7 +12,7 @@ The `ImageIO` class handles image reading and writing (from/to files and memory)
 
 ## Definition
 
-*Namespace:* com.dynamsoft.utility
+*Package:* com.dynamsoft.utility
 
 ```java
 public class ImageIO

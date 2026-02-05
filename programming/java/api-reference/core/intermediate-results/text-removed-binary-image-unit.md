@@ -12,7 +12,7 @@ The `TextRemovedBinaryImageUnit` class represents an intermediate result unit th
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class TextRemovedBinaryImageUnit extends IntermediateResultUnit

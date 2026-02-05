@@ -12,7 +12,7 @@ The `DirectoryFetcher` class is a utility class that retrieves a list of files f
 
 ## Definition
 
-*Namespace:* com.dynamsoft.utility
+*Package:* com.dynamsoft.utility
 
 *Inheritance:* [ProactiveImageSourceAdapter]({{ site.dcvb_java_api }}utility/proactive-image-source-adapter.html) -> DirectoryFetcher
 

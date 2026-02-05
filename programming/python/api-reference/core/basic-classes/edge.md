@@ -12,7 +12,7 @@ The class `Edge` is a structure composed of two `Corner` points in an image. A `
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class Edge 

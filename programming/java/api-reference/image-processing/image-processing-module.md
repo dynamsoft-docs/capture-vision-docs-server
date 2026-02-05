@@ -13,7 +13,7 @@ The `ImageProcessingModule` class defines general functions in the image process
 
 ## Definition
 
-*Namespace:* com.dynamsoft.dip
+*Package:* com.dynamsoft.dip
 
 ```java
 public final class ImageProcessingModule

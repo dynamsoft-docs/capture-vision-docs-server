@@ -11,7 +11,7 @@ The `SimplifiedCaptureVisionSettings` class contains settings for capturing and 
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class SimplifiedCaptureVisionSettings

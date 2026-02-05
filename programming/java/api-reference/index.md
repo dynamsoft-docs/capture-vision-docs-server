@@ -56,6 +56,7 @@ needAutoGenerateSidebar: false
 - [`DecodedBarcodesUnit`]({{ site.dbr_java_api }}decoded-barcodes-unit.html)
 - [`DeformationResistedBarcodeImageUnit`]({{ site.dbr_java_api }}deformation-resisted-barcode-image-unit.html)
 - [`DeformationResistedBarcode`]({{ site.dbr_java_api }}deformation-resisted-barcode.html)
+- [`ECISegment`]({{ site.dbr_java_api }}eci-segment.html)
 - [`ExtendedBarcodeResult`]({{ site.dbr_java_api }}extended-barcode-result.html)
 - [`LocalizedBarcodeElement`]({{ site.dbr_java_api }}localized-barcode-element.html)
 - [`LocalizedBarcodesUnit`]({{ site.dbr_java_api }}localized-barcodes-unit.html)
@@ -140,6 +141,7 @@ needAutoGenerateSidebar: false
 ### Classes
 
 - [`AbstractIntermediateResultReceiver`]({{ site.dcvb_java_api }}core/intermediate-results/abstract-intermediate-result-receiver.html)
+- [`AuxiliaryRegionElement`]({{ site.dcvb_java_api }}core/intermediate-results/auxiliary-region-element.html)
 - [`BinaryImageUnit`]({{ site.dcvb_java_api }}core/intermediate-results/binary-image-unit.html)
 - [`CapturedResultBase`]({{ site.dcvb_java_api }}core/basic-classes/captured-result-base.html)
 - [`CapturedResultItem`]({{ site.dcvb_java_api }}core/basic-classes/captured-result-item.html)
@@ -231,3 +233,8 @@ needAutoGenerateSidebar: false
 
 - [`ImageProcessingModule`]({{ site.dcvb_java_api }}image-processing/image-processing-module.html)
 
+
+## DynamsoftIdentityUtility
+
+- [`IdentityUtilityModule`]({{ site.dcvb_java_api }}id-utility/identity-utility-module.html)
+- [`IdentityProcessor`]({{ site.dcvb_java_api }}id-utility/identity-processor.html)

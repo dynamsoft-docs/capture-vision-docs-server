@@ -13,7 +13,7 @@ The `LicenseModule` class defines general functions in the license module.
 
 ## Definition
 
-*Module:* dynamsoft_license
+*Module:* license
 
 ```python
 class LicenseModule 

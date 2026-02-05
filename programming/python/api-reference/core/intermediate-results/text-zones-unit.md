@@ -12,7 +12,7 @@ The `TextZonesUnit` class represents a unit that contains text zones. It is deri
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class TextZonesUnit(IntermediateResultUnit)

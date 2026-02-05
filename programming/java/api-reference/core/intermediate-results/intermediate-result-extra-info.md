@@ -12,7 +12,7 @@ The `IntermediateResultExtraInfo` class represents the extra information for gen
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core
+*Package:* com.dynamsoft.core
 
 ```java
 public class IntermediateResultExtraInfo

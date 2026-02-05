@@ -12,7 +12,7 @@ The `TextureDetectionResultUnit` class represents an intermediate result unit fo
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class TextureDetectionResultUnit(IntermediateResultUnit)

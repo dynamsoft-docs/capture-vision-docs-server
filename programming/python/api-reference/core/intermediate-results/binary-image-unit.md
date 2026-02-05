@@ -12,7 +12,7 @@ The `BinaryImageUnit` class represents a unit that contains a binary image. It i
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class BinaryImageUnit(IntermediateResultUnit)

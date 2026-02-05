@@ -13,7 +13,7 @@ BufferedItemsManager class is used to manage the buffered items. It provides met
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class BufferedItemsManager

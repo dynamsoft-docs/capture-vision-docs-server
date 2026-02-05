@@ -12,7 +12,7 @@ The `AbstractIntermediateResultReceiver` class is responsible for receiving inte
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class AbstractIntermediateResultReceiver(ABC)

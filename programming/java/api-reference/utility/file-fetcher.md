@@ -12,7 +12,7 @@ The `FileFetcher` class is a utility class that partitions a multi-page image fi
 
 ## Definition
 
-*Namespace:* com.dynamsoft.utility
+*Package:* com.dynamsoft.utility
 
 *Inheritance:* [ImageSourceAdapter]({{ site.dcvb_java_api }}core/basic-classes/image-source-adapter.html) -> FileFetcher
 

@@ -12,7 +12,7 @@ Corner is a structure in an image consisting of two line segments and intersecti
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class Corner 

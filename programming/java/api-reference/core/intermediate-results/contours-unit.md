@@ -12,7 +12,7 @@ The `ContoursUnit` class represents a unit that contains contours as intermediat
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class ContoursUnit extends IntermediateResultUnit

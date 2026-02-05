@@ -12,7 +12,7 @@ The `RegionObjectElement` class represents an element of a region object in 2D s
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class RegionObjectElement 

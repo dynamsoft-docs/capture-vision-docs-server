@@ -11,7 +11,7 @@ The `CapturedResultReceiver` class is responsible for receiving captured results
 
 ## Definition
 
-*Namespace:* com.dynamsoft.cvr
+*Package:* com.dynamsoft.cvr
 
 ```java
 class CapturedResultReceiver

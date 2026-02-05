@@ -11,7 +11,7 @@ The `Quadrilateral` class represents a quadrilateral shape in 2D space. It conta
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class Quadrilateral 

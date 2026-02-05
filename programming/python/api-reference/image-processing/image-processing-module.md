@@ -13,7 +13,7 @@ The `ImageProcessingModule` class defines general functions in the image process
 
 ## Definition
 
-*Module:* dynamsoft_image_processing
+*Module:* dip
 
 ```python
 class DynamsoftImageProcessingModule()

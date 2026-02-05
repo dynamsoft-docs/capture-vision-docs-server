@@ -12,7 +12,7 @@ The `ImageProcessor` class is a utility class for applying advanced processing o
 
 ## Definition
 
-*Module:* dynamsoft_utility
+*Module:* utility
 
 ```python
 class ImageProcessor:
@@ -77,7 +77,7 @@ Returns an `ImageData` object representing the processed image.
 
 ### convert_to_binary_global
 
-Converts the grayscale image to binary image using a global threshold.
+Converts an input image to a binary image using a global threshold. Supports grayscale, color, and binary input images (color images are internally converted to grayscale before thresholding).
 
 ```python
 def convert_to_binary_global(self, image_data: ImageData, threshold: int = -1, invert: bool = False) -> ImageData:
@@ -85,15 +85,15 @@ def convert_to_binary_global(self, image_data: ImageData, threshold: int = -1, i
 
 **Parameters**
 
-`image_data` The image data to be processed.
+`image_data` Input image (grayscale, color, or binary).
 
-`threshold` Global threshold for binarization(default is -1, automatic calculate the threshold).
+`threshold` Global threshold for binarization. If set to -1 (default), the function will automatically compute an optimal threshold.
 
-`invert` If true, invert the binary image (black becomes white and white becomes black).
+`invert` If true, invert the output binary image.
 
 **Return value**
 
-Returns an `ImageData` object representing the processed image.
+Returns an `ImageData` object representing the binarized image.
 
 **See Also**
 
@@ -101,29 +101,33 @@ Returns an `ImageData` object representing the processed image.
 
 ### convert_to_binary_local
 
-Converts the grayscale image to binary image using local (adaptive) binarization.
+Converts an input image to a binary image using local (adaptive) thresholding. Supports grayscale, color, and binary input images (color images are internally converted to grayscale before thresholding).
 
 ```python
-def convert_to_binary_local(self, image_data: ImageData, block_size: int = 0, compensation: int = 0, invert: bool = False) ->ImageData:
+def convert_to_binary_local(self, image_data: ImageData, block_size: int = 0, compensation: int = 10, invert: bool = False) ->ImageData:
 ```
 
 **Parameters**
 
-`image_data` The image data to be processed.
+`image_data` Input image (grayscale, color, or binary).
 
-`block_size` Size of the block for local binarization(default is 0).
+`block_size` Size of the local block used for adaptive thresholding. If set to 0 (default), a suitable block size will be chosen automatically.
 
-`compensation` Adjustment value to modify the threshold (default is 0).
+`compensation` Adjustment value applied to the computed local threshold (default 10).
 
-`invert` If true, invert the binary image (black becomes white and white becomes black).
+`invert` If true, invert the output binary image (default False).
 
 **Return value**
 
-Returns an `ImageData` object representing the processed image.
+Returns an `ImageData` object representing the locally binarized image.
 
 **See Also**
 
 [ImageData]({{ site.dcvb_python_api }}core/basic-classes/image-data.html)
+
+**Remarks**
+
+Changed default value of `compensation` parameter from 0 to 10 in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 
 ### convert_to_gray
 

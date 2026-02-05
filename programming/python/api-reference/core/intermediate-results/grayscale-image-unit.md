@@ -12,7 +12,7 @@ The `GrayscaleImageUnit` class represents a grayscale image unit. It is derived 
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class GrayscaleImageUnit(IntermediateResultUnit)

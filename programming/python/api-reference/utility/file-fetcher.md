@@ -12,7 +12,7 @@ The `FileFetcher` class is a utility class that partitions a multi-page image fi
 
 ## Definition
 
-*Module:* dynamsoft_utility
+*Module:* utility
 
 *Inheritance:* [ImageSourceAdapter]({{ site.dcvb_python_api }}core/basic-classes/image-source-adapter.html) -> FileFetcher
 

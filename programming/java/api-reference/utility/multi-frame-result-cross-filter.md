@@ -13,7 +13,7 @@ The `MultiFrameResultCrossFilter` class is responsible for filtering captured re
 
 ## Definition
 
-*Namespace:* com.dynamsoft.utility
+*Package:* com.dynamsoft.utility
 
 *Inheritance:* [CapturedResultFilter]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html) -> MultiFrameResultCrossFilter
 
@@ -35,6 +35,9 @@ public final class MultiFrameResultCrossFilter extends CapturedResultFilter
 | [`setMaxOverlappingFrames`](#setmaxoverlappingframes) | Sets the max referencing frames count for the to-the-latest overlapping feature. |
 | [`getMaxOverlappingFrames`](#getmaxoverlappingframes) | Gets the max referencing frames count for the to-the-latest overlapping feature. |
 | [`enableLatestOverlapping`](#enablelatestoverlapping) | Enables the to-the-latest overlapping feature. The output captured result will become a combination of the recent results if the latest frame is proved to be similar with the previous. |
+| [`isLatestOverlappingEnabled`](#islatestoverlappingenabled) | Determines whether the to-the-latest overlapping feature is enabled for the specific result item type. |
+| [`setResultCrossVerificationCriteria`](#setresultcrossverificationcriteria) | Sets the cross-verification criteria for specified result item types. |
+| [`getResultCrossVerificationCriteria`](#getresultcrossverificationcriteria) | Gets the cross-verification criteria for a specified result item type. |
 
 ### MultiFrameResultCrossFilter
 
@@ -223,139 +226,71 @@ void enableLatestOverlapping(int resultItemTypes, boolean enabled)
 
 [EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
 
-[EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
-
-### is_result_deduplication_enabled
-
-Determines whether the result deduplication feature is enabled for the specific result item type.
-
-```java
-def is_result_deduplication_enabled(self, type: int) -> bool:
-```
-
-**Parameters**
-
-`type` The specific captured result item type. It is a value from the `EnumCapturedResultItemType` enumeration.
-
-**Return Value**
-
-Returns a bool value indicating whether result deduplication is enabled for the specific result item type.
-
-**See Also**
-
-[EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
-
-### set_duplicate_forget_time
-
-Sets the duplicate forget time for the specific captured result item types. The same captured result item will be returned only once during the period if deduplication feature is enabled. The default value is 3000ms.
-
-```java
-def set_duplicate_forget_time(self, result_item_types: int, time: int) -> None:
-```
-
-**Parameters**
-
-`result_item_types` A bitwise OR combination of one or more values from the `EnumCapturedResultItemType` enumeration.
-
-`time` The duplicate forget time measured in milliseconds. The value rang is [1, 180000].
-
-**See Also**
-
-[EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
-
-### get_duplicate_forget_time
-
-Gets the duplicate forget time for a specific captured result item type.
-
-```java
-def get_duplicate_forget_time(self, type: int) -> int:
-```
-
-**Parameters**
-
-`type` The specific captured result item type. It is a value from the `EnumCapturedResultItemType` enumeration.
-
-**Return Value**
-
-Returns the duplicate forget time for the specific captured result item type.
-
-**See Also**
-
-[EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
-
-### set_max_overlapping_frames
-
-Sets the max referencing frames count for the to-the-latest overlapping feature.
-
-```java
-def set_max_overlapping_frames(self, result_item_types: int, max_overlapping_frames: int) -> None:
-```
-
-**Parameters**
-
-`result_item_types` The or value of the captured result item types.
-
-`max_overlapping_frames` The max referencing frames count for the to-the-latest overlapping feature.
-
-**See Also**
-
-[EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
-
-### get_max_overlapping_frames
-
-Gets the max referencing frames count for the to-the-latest overlapping feature.
-
-```java
-def get_max_overlapping_frames(self, type: int) -> int:
-```
-
-**Parameters**
-
-`type` Specifies a specific result item type, which can be defined using `EnumCapturedResultItemType`.
-
-**Return value**
-
-Returns the max referencing frames count for the to-the-latest overlapping feature.
-
-**See Also**
-
-[EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
-
-
-### enable_latest_overlapping
-
-Enables the to-the-latest overlapping feature. The output captured result will become a combination of the recent results if the latest frame is proved to be similar with the previous.
-
-```java
-def enable_latest_overlapping(self, result_item_types: int, enabled: bool) -> None:
-```
-
-**Parameters**
-
-`result_item_types` The or value of the captured result item types.  
-`enabled` Sets whether to enable the to-the-latest overlapping feature.
-
-**See Also**
-
-[EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
-
-### is_latest_overlapping_enabled
+### isLatestOverlappingEnabled
 
 Determines whether the to-the-latest overlapping feature is enabled for the specific result item type.
 
 ```java
-def is_latest_overlapping_enabled(self, type: int) -> bool:
+boolean isLatestOverlappingEnabled(@EnumCapturedResultItemType int type)
 ```
 
 **Parameters**
 
-`type` The specific captured result item type.
+`type` The specific captured result item type. It is a value from the `EnumCapturedResultItemType` enumeration.
 
-**Return value**
+**Return Value**
 
-Returns a bool value indicating whether the to-the-latest overlapping feature is enabled for the specific result item type.
+Returns a boolean value indicating whether to-the-latest overlapping is enabled for the specific captured result item type.
 
 **See Also**
 
 [EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
+
+### setResultCrossVerificationCriteria
+
+Sets the cross-verification criteria for specified result item types. This method allows customization of the multi-frame verification parameters, controlling how many frames are analyzed and how many consistent results are required.
+
+```java
+void setResultCrossVerificationCriteria(int resultItemTypes, int frameWindow, int minConsistentFrames)
+```
+
+**Parameters**
+
+`resultItemTypes` A bitwise OR combination of one or more values from the `EnumCapturedResultItemType` enumeration.
+
+`frameWindow` The number of frames to consider for cross-verification.
+
+`minConsistentFrames` The minimum number of frames that must contain consistent results for verification to succeed.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
+
+### getResultCrossVerificationCriteria
+
+Gets the cross-verification criteria for a specified result item type.
+
+```java
+int[] getResultCrossVerificationCriteria(@EnumCapturedResultItemType int resultItemType)
+```
+
+**Parameters**
+
+`resultItemType` The result item type to query. It is a value from the `EnumCapturedResultItemType` enumeration.
+
+**Return value**
+
+Returns an int array where the first element is the frame window size and the second element is the minimum consistent frames count.
+
+**See Also**
+
+[EnumCapturedResultItemType]({{ site.dcvb_java_api }}core/enum-captured-result-item-type.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 

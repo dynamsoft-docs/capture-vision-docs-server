@@ -12,7 +12,7 @@ The `CapturedResultBase` class serves as a base class for all captured result ty
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* core
 
 ```python
 class CapturedResultBase 

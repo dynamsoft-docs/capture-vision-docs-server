@@ -11,7 +11,7 @@ The `CaptureVisionRouter` class is what a user uses to interact with image-proce
 
 ## Definition
 
-*Module:* dynamsoft_capture_vision_router
+*Module:* cvr
 
 ```python
 class CaptureVisionRouter

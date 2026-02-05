@@ -11,7 +11,7 @@ The `PredetectedRegionElement` class represents a region element that has been p
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class PredetectedRegionElement extends RegionObjectElement

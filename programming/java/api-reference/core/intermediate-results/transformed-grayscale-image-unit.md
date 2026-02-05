@@ -12,7 +12,7 @@ The `TransformedGrayscaleImageUnit` class is a subclass of `IntermediateResultUn
 
 ## Definition
 
-*Namespace:* com.dynamsoft.core.intermediate_results
+*Package:* com.dynamsoft.core.intermediate_results
 
 ```java
 public class TransformedGrayscaleImageUnit extends IntermediateResultUnit

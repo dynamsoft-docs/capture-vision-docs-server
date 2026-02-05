@@ -13,7 +13,7 @@ The `UtilityModule` class defines general functions in the utility module.
 
 ## Definition
 
-*Module:* dynamsoft_utility
+*Module:* utility
 
 ```python
 class UtilityModule 

@@ -12,7 +12,7 @@ The `IntermediateResult` class represents a container containing a collection of
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class IntermediateResult

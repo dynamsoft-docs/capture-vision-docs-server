@@ -12,7 +12,7 @@ The `ShortLinesUnit` class represents an intermediate result unit that contains 
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class ShortLinesUnit(IntermediateResultUnit)

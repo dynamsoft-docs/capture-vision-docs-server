@@ -33,6 +33,8 @@ class CMultiFrameResultCrossFilter: public CCapturedResultFilter
 | [`GetMaxOverlappingFrames`](#getmaxoverlappingframes)         | Gets the max referencing frames count for the to-the-latest overlapping feature.     |
 | [`EnableLatestOverlapping`](#enablelatestoverlapping)               | Enables the to-the-latest overlapping feature. The output captured result will become a combination of the recent results if the latest frame is proved to be similar with the previous.                                          |
 | [`IsLatestOverlappingEnabled`](#islatestoverlappingenabled)              | Determines whether the to-the-latest overlapping feature is enabled for the specific result item type.                                           |
+| [`SetResultCrossVerificationCriteria`](#setresultcrossverificationcriteria) | Sets the cross-verification criteria for specified result item types. |
+| [`GetResultCrossVerificationCriteria`](#getresultcrossverificationcriteria) | Gets the cross-verification criteria for a specified result item type. |
 
 ### EnableResultCrossVerification
 
@@ -228,3 +230,52 @@ Returns a bool value indicating whether the to-the-latest overlapping feature is
 **See Also**
 
 [CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
+
+### SetResultCrossVerificationCriteria
+
+Sets the cross-verification criteria for specified result item types. This function allows customization of the multi-frame verification parameters, controlling how many frames are analyzed and how many consistent results are required.
+
+```cpp
+void SetResultCrossVerificationCriteria(int resultItemTypes, int frameWindow, int minConsistentFrames);
+```
+
+**Parameters**
+
+`[in] resultItemTypes` The result item types to apply the criteria to (can be a combination of `CapturedResultItemType` values).
+
+`[in] frameWindow` The number of frames to consider for cross-verification.
+
+`[in] minConsistentFrames` The minimum number of frames that must contain consistent results for verification to succeed.
+
+**See Also**
+
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
+
+### GetResultCrossVerificationCriteria
+
+Gets the cross-verification criteria for a specified result item type.
+
+```cpp
+void GetResultCrossVerificationCriteria(CapturedResultItemType resultItemType, int& frameWindow, int& minConsistentFrames);
+```
+
+**Parameters**
+
+`[in] resultItemType` The result item type to query (`CapturedResultItemType` value).
+
+`[out] frameWindow` Returns the frame window size currently configured for this result type.
+
+`[out] minConsistentFrames` Returns the minimum consistent frames currently configured for this result type.
+
+**See Also**
+
+[CapturedResultItemType]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?src=cpp&&lang=cpp)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
+

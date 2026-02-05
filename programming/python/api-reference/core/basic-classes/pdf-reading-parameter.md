@@ -12,7 +12,7 @@ The `PDFReadingParameter` class represents the parameters for reading a PDF file
 
 ## Definition
 
-*Module:* dynamsoft_core
+*Module:* core
 
 ```python
 class PDFReadingParameter

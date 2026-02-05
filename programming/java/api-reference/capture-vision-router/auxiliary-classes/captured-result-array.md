@@ -12,7 +12,7 @@ In the Java Edition, multiple `CapturedResult` objects are returned as a simple 
 
 ## Definition
 
-*Namespace:* com.dynamsoft.cvr
+*Package:* com.dynamsoft.cvr
 
 ```java
 CapturedResult[]
