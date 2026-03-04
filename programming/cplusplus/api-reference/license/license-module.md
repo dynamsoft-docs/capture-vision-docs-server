@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CLicenseModule - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CLicenseModule in Dynamsoft License Module.
+description: API reference for the CLicenseModule class in Dynamsoft License C++ Edition, providing version retrieval for the license module.
 keywords: license module, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

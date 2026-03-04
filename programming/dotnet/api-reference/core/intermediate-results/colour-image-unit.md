@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ColourImageUnit - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class ColourImageUnit in Dynamsoft Core Module.
+description: API reference for the ColourImageUnit class in Dynamsoft Core Module .NET Edition, which represents an intermediate result unit containing a colour image.
 keywords: colour image, .NET
 needAutoGenerateSidebar: true
 ---

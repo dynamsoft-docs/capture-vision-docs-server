@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TransformedGrayscaleImageUnit - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class TransformedGrayscaleImageUnit in Dynamsoft Core Module.
+description: API reference for the TransformedGrayscaleImageUnit class in Dynamsoft Core Module Python Edition, which represents an intermediate result unit containing a transformed grayscale image.
 keywords: transformed grayscale image, python
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ErrorCode - Dynamsoft Core .NET Enumerations
-description: The enumeration ErrorCode describes all error codes for .NET Edition.
+description: The enumeration ErrorCode in Dynamsoft Core .NET Edition lists all error codes returned by Dynamsoft Capture Vision SDK operations.
 keywords: Error code
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

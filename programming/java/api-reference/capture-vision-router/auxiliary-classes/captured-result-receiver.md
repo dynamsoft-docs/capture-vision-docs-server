@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CapturedResultReceiver Class - Dynamsoft Capture Vision Module Java Edition API Reference
-description: Definition of CapturedResultReceiver class in Dynamsoft Capture Vision Module Java Edition.
+description: API reference for the CapturedResultReceiver class in Dynamsoft Capture Vision Java Edition, which receives callbacks with captured results from image processing.
 keywords: captured result receiver, java
 ---
 

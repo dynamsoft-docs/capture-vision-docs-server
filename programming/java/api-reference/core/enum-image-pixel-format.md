@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ImagePixelFormat - Dynamsoft Core Java Enumerations
-description: The enumeration ImagePixelFormat of Dynamsoft Core describes all supported image pixel formats.
+description: The enumeration ImagePixelFormat in Dynamsoft Core Java Edition lists all supported pixel formats (grayscale, RGB, RGBA, etc.) for image data.
 keywords: Image pixel format
 codeAutoHeight: true
 ---

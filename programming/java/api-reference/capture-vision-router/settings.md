@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureVisionRouter Settings - Dynamsoft Capture Vision Router Module Java Edition API Reference
-description: Definition of CaptureVisionRouter class Setting Methods in Dynamsoft Capture Vision Router Module Java Edition.
+description: API reference for the settings methods of the CaptureVisionRouter class in Dynamsoft Capture Vision Java Edition, including template management and parameter configuration.
 keywords: capture vision, router, settings, api reference, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

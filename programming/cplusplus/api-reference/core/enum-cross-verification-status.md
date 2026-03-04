@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CrossVerificationStatus - Dynamsoft Core Enumerations
-description: The enumeration CrossVerificationStatus of Dynamsoft Core describes the status of the captured results.
+description: Reference for the CrossVerificationStatus enumeration in Dynamsoft Core C++ Edition, indicating whether a result has been cross-verified across multiple frames.
 keywords: cross verification status
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

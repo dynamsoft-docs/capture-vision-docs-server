@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ColourImageUnit - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the java edition of the class ColourImageUnit in Dynamsoft Core Module.
+description: API reference for the ColourImageUnit class in Dynamsoft Core Module Java Edition, which represents an intermediate result unit containing a colour image.
 keywords: colour image, java
 needAutoGenerateSidebar: true
 ---

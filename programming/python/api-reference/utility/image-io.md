@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ImageIO - Dynamsoft Utility Module Python Edition API Reference
-description: This page shows the Python Edition of the class ImageIO in Dynamsoft Utility Module.
+description: API reference for the ImageIO class in Dynamsoft Utility Module Python Edition, which provides methods for reading and saving image files.
 keywords: image io, python
 needAutoGenerateSidebar: true
 ---

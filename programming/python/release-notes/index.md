@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Module Release Notes index - Dynamsoft Capture Vision Python Edition
-description: The index of release notes - Dynamsoft Capture Vision Python Edition.
+description: Chronological release notes index for Dynamsoft Capture Vision Bundle Python Edition, covering all v3.x releases.
 keywords: release notes, index, python
 needAutoGenerateSidebar: true
 noTitleIndex: true

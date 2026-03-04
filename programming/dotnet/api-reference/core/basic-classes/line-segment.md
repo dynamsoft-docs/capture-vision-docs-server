@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class LineSegment - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class LineSegment in Dynamsoft Core Module.
+description: API reference for the LineSegment class in Dynamsoft Core Module .NET Edition, which represents a line segment defined by two endpoint coordinates.
 keywords: line segment, .NET
 needAutoGenerateSidebar: true
 ---

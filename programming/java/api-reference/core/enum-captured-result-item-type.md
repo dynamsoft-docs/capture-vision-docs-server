@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CapturedResultItemType - Dynamsoft Core Java Enumerations
-description: The enumeration CapturedResultItemType of Dynamsoft Core describes all types of captured result item.
+description: The enumeration CapturedResultItemType in Dynamsoft Core Java Edition lists all possible result item types produced by the capture process (barcode, text line, document quad, etc.).
 keywords: Captured result types
 codeAutoHeight: true
 ---

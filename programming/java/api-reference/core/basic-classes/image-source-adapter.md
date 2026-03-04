@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ImageSourceAdapter Class - Dynamsoft Core Module Java Edition API Reference
-description: Definition of ImageSourceAdapter class in Dynamsoft Core Module Java Edition.
+description: API reference for the ImageSourceAdapter class in Dynamsoft Core Module Java Edition, the abstract base class for providing images to the CaptureVisionRouter.
 keywords: image source adapter, java
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureVisionException Class - Dynamsoft Capture Vision Router Module Java Edition API Reference
-description: Definition of CaptureVisionException class in Dynamsoft Capture Vision Router Module Java Edition.
+description: API reference for the CaptureVisionException class in Dynamsoft Capture Vision Java Edition, the base exception class providing error code and message for CVR module errors.
 keywords: capture vision router module, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

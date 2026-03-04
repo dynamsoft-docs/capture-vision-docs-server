@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: BufferOverflowProtectionMode - Dynamsoft Core Enumerations
-description: The enumeration BufferOverflowProtectionMode of Dynamsoft Core describes the protection modes when the buffer of ImageSourceAdapter is overflow.
+description: Reference for the BufferOverflowProtectionMode enumeration in Dynamsoft Core C++ Edition, describing strategies when the image source buffer overflows (ignore new, update oldest).
 keywords: Buffer overflow protection mode 
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

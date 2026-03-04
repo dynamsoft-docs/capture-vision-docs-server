@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CEnhancedGrayscaleImageUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CEnhancedGrayscaleImageUnit in Dynamsoft Core Module.
+description: API reference for the CEnhancedGrayscaleImageUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing the grayscale image after enhancement processing.
 keywords: enhanced grayscale image, c++
 needAutoGenerateSidebar: true
 ---

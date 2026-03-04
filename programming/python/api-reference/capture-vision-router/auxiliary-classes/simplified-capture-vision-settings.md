@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: SimplifiedCaptureVisionSettings Class - Dynamsoft Capture Vision Module Python Edition API Reference
-description: Definition of SimplifiedCaptureVisionSettings class in Dynamsoft Capture Vision Module Python Edition.
+description: API reference for the SimplifiedCaptureVisionSettings class in Dynamsoft Capture Vision Python Edition, which contains simplified configuration options for capture tasks.
 keywords: class, python, SimplifiedCaptureVisionSettings
 ---
 

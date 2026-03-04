@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CImageData - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CImageData in Dynamsoft Core Module.
+description: API reference for the CImageData class in Dynamsoft Core C++ Edition, encapsulating raw image bytes, width, height, stride, pixel format, and orientation.
 keywords: image data, c++
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CIntermediateResultManager - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CIntermediateResultManager in Dynamsoft Core Module.
+description: API reference for the CIntermediateResultManager class in Dynamsoft Core C++ Edition, providing methods to observe and retrieve intermediate results during processing.
 keywords: intermediate result manager, c++
 needAutoGenerateSidebar: true
 ignore: true

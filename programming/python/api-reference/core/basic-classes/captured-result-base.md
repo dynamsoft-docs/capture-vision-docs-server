@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CapturedResultBase Class - Dynamsoft Capture Vision Module Python Edition API Reference
-description: Definition of CapturedResultBase class in Dynamsoft Capture Vision Module Python Edition.
+description: API reference for the CapturedResultBase class in Dynamsoft Core Module Python Edition, the base class for all captured result types.
 keywords: captured result, python
 needAutoGenerateSidebar: true
 ---

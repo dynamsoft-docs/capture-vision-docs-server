@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureVisionRouterModule Class - Dynamsoft Capture Vision Module Python Edition API Reference
-description: Definition of CaptureVisionRouterModule class in Dynamsoft Capture Vision Module Python Edition.
+description: API reference for the CaptureVisionRouterModule class in Dynamsoft Capture Vision Python Edition, which provides general functions for the CVR module.
 keywords: capture vision router module, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

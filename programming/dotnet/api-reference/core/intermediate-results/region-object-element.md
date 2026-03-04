@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class RegionObjectElement - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class RegionObjectElement in Dynamsoft Core Module.
+description: API reference for the RegionObjectElement class in Dynamsoft Core Module .NET Edition, the base class for all region-based intermediate result elements.
 keywords: region object element, .NET
 needAutoGenerateSidebar: true
 ---

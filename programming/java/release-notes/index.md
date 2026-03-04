@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Module Release Notes index - Dynamsoft Capture Vision Java Edition
-description: The index of release notes - Dynamsoft Capture Vision Java Edition.
+description: Chronological release notes index for Dynamsoft Capture Vision Bundle Java Edition, covering all v3.x releases.
 keywords: release notes, index, java
 needAutoGenerateSidebar: true
 noTitleIndex: true

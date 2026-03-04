@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: RegionObjectElementType - Dynamsoft Core .NET Enumerations
-description: The enumeration RegionObjectElementType describes the types of RegionObjectElement for .NET Edition.
+description: The enumeration RegionObjectElementType in Dynamsoft Core .NET Edition lists the types of region object elements (localized, recognized, etc.).
 keywords: Region object element type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

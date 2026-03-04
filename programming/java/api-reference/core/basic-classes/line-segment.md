@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class LineSegment - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the java edition of the class LineSegment in Dynamsoft Core Module.
+description: API reference for the LineSegment class in Dynamsoft Core Module Java Edition, which represents a line segment defined by two endpoint coordinates.
 keywords: line segment, java
 ---
 

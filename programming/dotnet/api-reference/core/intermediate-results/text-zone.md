@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TextZone- Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class TextZone in Dynamsoft Core Module.
+description: API reference for the TextZone class in Dynamsoft Core Module .NET Edition, which represents a detected text zone region within an image.
 keywords: text zones, .NET
 needAutoGenerateSidebar: true
 ---

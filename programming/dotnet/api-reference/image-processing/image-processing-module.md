@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ImageProcessingModule Class - Dynamsoft Capture Vision Module .NET Edition API Reference
-description: Definition of ImageProcessingModule class in Dynamsoft Image Processing Module .NET Edition.
+description: API reference for the ImageProcessingModule class in Dynamsoft Image Processing Module .NET Edition, which provides general functions for the Image Processing module.
 keywords: image processing module, .NET
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CCapturedResultArray - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCapturedResultArray in Dynamsoft Capture Vision Router Module.
+description: API reference for the CCapturedResultArray class in Dynamsoft Capture Vision C++ Edition, representing an array of CCapturedResult objects returned from multi-page or batch processing.
 keywords: captured result array, c++
 needAutoGenerateSidebar: true
 ---

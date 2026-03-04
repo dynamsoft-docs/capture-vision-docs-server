@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: TransformMatrixType - Dynamsoft Core Enumerations
-description: The enumeration TransformMatrixType of Dynamsoft Core describes transform matrix types.
+description: Reference for the TransformMatrixType enumeration in Dynamsoft Core C++ Edition, listing transformation matrix types used to convert between local and original image coordinate systems.
 keywords: Target type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

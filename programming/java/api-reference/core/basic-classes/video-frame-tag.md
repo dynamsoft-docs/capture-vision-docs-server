@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: VideoFrameTag Class - Dynamsoft Core Module Java Edition API Reference
-description: Definition of VideoFrameTag class in Dynamsoft Core Module Java Edition.
+description: API reference for the VideoFrameTag class in Dynamsoft Core Module Java Edition, which stores metadata tags for video frame images including quality and cropping status.
 keywords: video frame tag, java
 needAutoGenerateSidebar: true
 ---

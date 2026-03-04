@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CapturedResultBase Class - Dynamsoft Capture Vision Module Java Edition API Reference
-description: Definition of CapturedResultBase class in Dynamsoft Capture Vision Module Java Edition.
+description: API reference for the CapturedResultBase class in Dynamsoft Core Module Java Edition, the base class for all captured result types.
 keywords: captured result, java
 needAutoGenerateSidebar: true
 ---

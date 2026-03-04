@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class PredetectedRegionsUnit - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class PredetectedRegionsUnit in Dynamsoft Core Module.
+description: API reference for the PredetectedRegionsUnit class in Dynamsoft Core Module .NET Edition, which represents an intermediate result unit containing pre-detected regions.
 keywords: predetected regions, .NET
 needAutoGenerateSidebar: true
 ---

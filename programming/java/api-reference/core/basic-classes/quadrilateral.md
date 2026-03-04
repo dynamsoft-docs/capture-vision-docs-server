@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: Quadrilateral Class - Dynamsoft Core Module Java Edition API Reference
-description: Definition of Quadrilateral class in Dynamsoft Core Module Java Edition.
+description: API reference for the Quadrilateral class in Dynamsoft Core Module Java Edition, which represents a quadrilateral shape defined by four corner points.
 keywords: quadrilateral, java
 ---
 

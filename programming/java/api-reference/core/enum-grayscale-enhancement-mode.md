@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: GrayscaleEnhancementMode - Dynamsoft Core Java Enumerations
-description: The enumeration GrayscaleEnhancementMode of Dynamsoft Core describes all available grayscale enhancement modes.
+description: The enumeration GrayscaleEnhancementMode in Dynamsoft Core Java Edition lists available image enhancement algorithms applied to grayscale images before recognition.
 keywords: Grayscale enhancement modes
 codeAutoHeight: true
 ---

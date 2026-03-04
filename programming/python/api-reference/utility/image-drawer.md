@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ImageDrawer - Dynamsoft Utility Module Python Edition API Reference
-description: This page shows the Python Edition of the class ImageDrawer in Dynamsoft Utility Module.
+description: API reference for the ImageDrawer class in Dynamsoft Utility Module Python Edition, which provides methods for drawing overlays and annotations on images.
 keywords: image drawer, drawing on image, python
 needAutoGenerateSidebar: true
 ---

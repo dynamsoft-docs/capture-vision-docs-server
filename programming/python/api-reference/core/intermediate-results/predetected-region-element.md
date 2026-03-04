@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class PredetectedRegionElement - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class PredetectedRegionElement in Dynamsoft Core Module.
+description: API reference for the PredetectedRegionElement class in Dynamsoft Core Module Python Edition, which represents a pre-detected region element identified before further processing.
 keywords: predetected region element, python
 ---
 

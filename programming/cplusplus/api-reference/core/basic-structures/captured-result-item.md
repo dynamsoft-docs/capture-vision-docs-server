@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CCapturedResultItem - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CCapturedResultItem in Dynamsoft Core Module.
+description: API reference for the CCapturedResultItem class in Dynamsoft Core C++ Edition, the abstract base class for all types of captured result items.
 keywords: captured result item, c++
 needAutoGenerateSidebar: true
 ---

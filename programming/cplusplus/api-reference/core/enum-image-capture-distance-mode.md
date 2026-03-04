@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ImageCaptureDistanceMode - Dynamsoft Core Enumerations
-description: The enumeration ImageCaptureDistanceMode of Dynamsoft Core is used to distinguish the close-up images from the prospect images.
+description: Reference for the ImageCaptureDistanceMode enumeration in Dynamsoft Core C++ Edition, distinguishing close-up from long-distance image captures to optimize processing.
 keywords: Image capture distance
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

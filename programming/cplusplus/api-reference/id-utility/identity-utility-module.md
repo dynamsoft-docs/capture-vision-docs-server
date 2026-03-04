@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CIdentityUtilityModule - Dynamsoft Identity Utility Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CIdentityUtilityModule in Dynamsoft Identity Utility Module.
+description: API reference for the CIdentityUtilityModule class in Dynamsoft Identity Utility C++ Edition, providing module-level utilities such as version retrieval.
 keywords: identity utility module, c++
 ---
 

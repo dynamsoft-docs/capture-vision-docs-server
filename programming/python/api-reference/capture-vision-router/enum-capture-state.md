@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureState - Dynamsoft Vision Router Python Enumerations
-description: The enumeration CaptureState of Dynamsoft Vision Router describes the state of data capturing.
+description: The enumeration CaptureState in Dynamsoft Capture Vision Python Edition describes the possible states of the data capture process (started, stopped, paused, resumed).
 keywords: Capture state
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class LineSegmentsUnit - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class LineSegmentsUnit in Dynamsoft Core Module.
+description: API reference for the LineSegmentsUnit class in Dynamsoft Core Module Python Edition, which represents an intermediate result unit containing detected line segments.
 keywords: line segments, python
 needAutoGenerateSidebar: true
 ---

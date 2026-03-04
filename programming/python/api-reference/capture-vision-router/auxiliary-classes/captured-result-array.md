@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CapturedResultArray Class - Dynamsoft Capture Vision Module Python Edition API Reference
-description: Definition of CapturedResultArray class in Dynamsoft Capture Vision Module Python Edition.
+description: API reference for the CapturedResultArray class in Dynamsoft Capture Vision Python Edition, which holds an array of captured results from batch processing.
 keywords: captured result, python
 needAutoGenerateSidebar: true
 ---

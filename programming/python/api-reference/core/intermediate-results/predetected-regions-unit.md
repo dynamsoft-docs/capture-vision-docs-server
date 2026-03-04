@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class PredetectedRegionsUnit - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class PredetectedRegionsUnit in Dynamsoft Core Module.
+description: API reference for the PredetectedRegionsUnit class in Dynamsoft Core Module Python Edition, which represents an intermediate result unit containing pre-detected regions.
 keywords: predetected regions, python
 needAutoGenerateSidebar: true
 ---

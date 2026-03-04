@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: BufferOverflowProtectionMode - Dynamsoft Core Python Enumerations
-description: The enumeration BufferOverflowProtectionMode of Dynamsoft Core describes the protection modes when the buffer of ImageSourceAdapter is overflow.
+description: The enumeration BufferOverflowProtectionMode in Dynamsoft Core Python Edition describes the strategy applied when the ImageSourceAdapter image buffer overflows (ignore new or update oldest).
 keywords: Buffer overflow protection mode 
 codeAutoHeight: true
 ---

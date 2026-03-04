@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: LicenseManager Class - Dynamsoft License Module Python Edition API Reference
-description: Definition of LicenseManager class in Dynamsoft License Module Python Edition.
+description: API reference for the LicenseManager class in Dynamsoft License Module Python Edition, which handles license initialization and management.
 keywords: license manager, python
 needAutoGenerateSidebar: true
 ---

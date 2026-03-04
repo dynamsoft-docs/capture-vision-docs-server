@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CIntermediateResultReceiver - Dynamsoft Core Module C++ Edition API Reference
-description: The class CIntermediateResultReceiver of CaptureVisionRouter module C++ edition is responsible for receiving intermediate results.
+description: API reference for the CIntermediateResultReceiver class in Dynamsoft Capture Vision C++ Edition, a callback interface for receiving intermediate results during image processing.
 keywords: intermediate result receiver, c++
 needAutoGenerateSidebar: true
 ---

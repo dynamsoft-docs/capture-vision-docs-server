@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class Edge - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the java edition of the class Edge in Dynamsoft Core Module.
+description: API reference for the Edge class in Dynamsoft Core Module Java Edition, which represents an edge defined by two corner points.
 keywords: edge, java
 needAutoGenerateSidebar: true
 ---

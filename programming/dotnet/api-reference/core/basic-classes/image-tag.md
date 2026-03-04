@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ImageTag Class - Dynamsoft Core Module .NET Edition API Reference
-description: Definition of ImageTag class in Dynamsoft Core Module .NET Edition.
+description: API reference for the ImageTag class in Dynamsoft Core Module .NET Edition, the base class for storing metadata tags associated with images.
 keywords: image tag, .NET
 needAutoGenerateSidebar: true
 ---

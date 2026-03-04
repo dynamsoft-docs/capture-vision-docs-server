@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class BufferedItemsManager - Dynamsoft Capture Vision Router Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class BufferedItemsManager in Dynamsoft Capture Vision Router Module.
+description: API reference for the BufferedItemsManager class in Dynamsoft Capture Vision .NET Edition, which manages the buffer of captured result items for cross-frame verification.
 keywords: buffered items manager, .NET
 needAutoGenerateSidebar: true
 ---

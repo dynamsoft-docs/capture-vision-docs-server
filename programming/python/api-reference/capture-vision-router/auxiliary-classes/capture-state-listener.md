@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureStateListener Class - Dynamsoft Capture Vision Module Python Edition API Reference
-description: Definition of CaptureStateListener class in Dynamsoft Capture Vision Module Python Edition.
+description: API reference for the CaptureStateListener class in Dynamsoft Capture Vision Python Edition, which receives notifications when the capture state changes.
 keywords: capture state listener, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

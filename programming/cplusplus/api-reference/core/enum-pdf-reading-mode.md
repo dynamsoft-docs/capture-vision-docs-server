@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: PDFReadingMode - Dynamsoft Core Enumerations
-description: The enumeration PDFReadingMode of Dynamsoft Core describes all available PDF reading modes.
+description: Reference for the PDFReadingMode enumeration in Dynamsoft Core C++ Edition, listing modes for reading PDF files (raster, vector, auto).
 keywords: PDF Reading Mode
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

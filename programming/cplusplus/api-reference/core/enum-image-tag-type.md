@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ImageTagType - Dynamsoft Core Enumerations
-description: The enumeration ImageTagType of Dynamsoft Core describes the types of image tags.
+description: Reference for the ImageTagType enumeration in Dynamsoft Core C++ Edition, distinguishing between file-based and video-frame-based image tags.
 keywords: Image tag type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

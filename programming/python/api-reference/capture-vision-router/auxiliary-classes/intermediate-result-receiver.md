@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IntermediateResultReceiver - Dynamsoft Core Module Python Edition API Reference
-description: The class IntermediateResultReceiver of CaptureVisionRouter module Python Edition is responsible for receiving intermediate results.
+description: API reference for the IntermediateResultReceiver class in Dynamsoft Capture Vision Python Edition, which receives callbacks with intermediate results during image processing.
 keywords: intermediate result receiver, python
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ImageFileFormat - Dynamsoft Core Python Enumerations
-description: The enumeration ImageFileFormat of Dynamsoft Core describes the format of image files.
+description: The enumeration ImageFileFormat in Dynamsoft Core Python Edition lists the supported image file formats (JPEG, PNG, BMP, PDF, etc.).
 keywords: Image file format
 codeAutoHeight: true
 ---

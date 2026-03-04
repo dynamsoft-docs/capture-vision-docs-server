@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CornerType - Dynamsoft Core Enumerations
-description: The enumeration CornerType of Dynamsoft Core describes how the corner is formed by its sides.
+description: Reference for the CornerType enumeration in Dynamsoft Core C++ Edition, describing how a corner is geometrically formed by its two sides.
 keywords: Corner type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

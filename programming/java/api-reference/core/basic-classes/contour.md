@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class Contour - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the java edition of the class Contour in Dynamsoft Core Module.
+description: API reference for the Contour class in Dynamsoft Core Module Java Edition, which represents a contour composed of a set of points.
 keywords: contour, java
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: UtilityModule Class - Dynamsoft Capture Vision Module Python Edition API Reference
-description: Definition of UtilityModule class in Dynamsoft Utility Module Python Edition.
+description: API reference for the UtilityModule class in Dynamsoft Utility Module Python Edition, which provides general functions for the Utility module.
 keywords: utility module, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

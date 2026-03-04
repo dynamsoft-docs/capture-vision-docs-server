@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: RasterDataSource - Dynamsoft Core .NET Enumerations
-description: The enumeration RasterDataSource describes raster data source types for .NET Edition.
+description: The enumeration RasterDataSource in Dynamsoft Core .NET Edition specifies whether raster image data is sourced from pages or rendered PDFs.
 keywords: Target type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

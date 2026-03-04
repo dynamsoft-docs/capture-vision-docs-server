@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CVideoFrameTag - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CVideoFrameTag in Dynamsoft Core Module.
+description: API reference for the CVideoFrameTag class in Dynamsoft Core C++ Edition, tagging a video frame with its frame ID, quality, and timestamp.
 keywords: video frame tag, c++
 needAutoGenerateSidebar: true
 ---

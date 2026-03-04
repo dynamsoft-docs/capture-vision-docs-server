@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class BinaryImageUnit - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the java edition of the class BinaryImageUnit in Dynamsoft Core Module.
+description: API reference for the BinaryImageUnit class in Dynamsoft Core Module Java Edition, which represents an intermediate result unit containing a binary (black-and-white) image.
 keywords: binary image, java
 needAutoGenerateSidebar: true
 ---

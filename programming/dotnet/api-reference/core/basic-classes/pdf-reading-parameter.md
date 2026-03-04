@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: PDFReadingParameter Class - Dynamsoft Core Module .NET Edition API Reference
-description: Definition of PDFReadingParameter class in Dynamsoft Core Module .NET Edition.
+description: API reference for the PDFReadingParameter class in Dynamsoft Core Module .NET Edition, which configures PDF reading options such as mode, DPI, and raster data source.
 keywords: pdf reading parameter, .NET
 needAutoGenerateSidebar: true
 ---

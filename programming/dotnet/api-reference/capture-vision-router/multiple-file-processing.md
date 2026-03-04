@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureVisionRouter Multiple-File Processing Methods - Dynamsoft Capture Vision Router Module .NET Edition API Reference
-description: Definition of CaptureVisionRouter class Multiple-File Processing Methods in Dynamsoft Capture Vision Router Module .NET Edition.
+description: API reference for the multiple-file processing methods of the CaptureVisionRouter class in Dynamsoft Capture Vision .NET Edition.
 keywords: capture vision, multiple-file processing, api reference, .NET
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

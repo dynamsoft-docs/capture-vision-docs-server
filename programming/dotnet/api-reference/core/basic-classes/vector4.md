@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class Vector4 - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class Vector4 in Dynamsoft Core Module.
+description: API reference for the Vector4 class in Dynamsoft Core Module .NET Edition, which represents a 4-element vector used for transformation matrices.
 keywords: vector4, .NET
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Samples - Dynamsoft Capture Vision Bundle Java Edition
-description: Sample list page of Dynamsoft Capture Vision Bundle Java Edition.
+description: A list of Java code samples for Dynamsoft Capture Vision Bundle, including document scanner, MRZ scanner, and barcode reader demos.
 keywords: Java
 needAutoGenerateSidebar: false
 ---

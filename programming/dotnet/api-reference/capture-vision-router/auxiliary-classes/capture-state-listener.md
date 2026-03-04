@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ICaptureStateListener Interface - Dynamsoft Capture Vision Module .NET Edition API Reference
-description: Definition of ICaptureStateListener interface in Dynamsoft Capture Vision Module .NET Edition.
+description: API reference for the ICaptureStateListener interface in Dynamsoft Capture Vision .NET Edition, which receives notifications when the capture state changes.
 keywords: capture state listener, .NET
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

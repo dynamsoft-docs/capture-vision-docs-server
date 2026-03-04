@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: User Guide for Document Scanner with C++
-description: This is the user guide page of Document Scanner for C++ Language.
+description: Step-by-step guide to building a document scanning application with Dynamsoft Capture Vision C++ Edition, covering setup, capture, detection, and normalization.
 keywords: c++, user guide
 ---
 

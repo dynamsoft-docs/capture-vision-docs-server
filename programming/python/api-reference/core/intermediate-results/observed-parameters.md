@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ObservationParameters - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class ObservationParameters in Dynamsoft Core Module.
+description: API reference for the ObservationParameters class in Dynamsoft Core Module Python Edition, which configures what intermediate result types are observed and passed to the receiver.
 keywords: intermediate result, python
 needAutoGenerateSidebar: true
 ---

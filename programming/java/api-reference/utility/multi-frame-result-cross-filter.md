@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: MultiFrameResultCrossFilter Class - Dynamsoft Capture Vision Module Java Edition API Reference
-description: Definition of MultiFrameResultCrossFilter class in Dynamsoft Utility Module Java Edition.
+description: API reference for the MultiFrameResultCrossFilter class in Dynamsoft Utility Module Java Edition, which filters captured results across multiple frames to improve accuracy and reduce duplicates.
 keywords: multiple frame result cross filter, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

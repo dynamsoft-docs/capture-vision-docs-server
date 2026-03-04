@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CRect - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CRect in Dynamsoft Core Module.
+description: API reference for the CRect class in Dynamsoft Core C++ Edition, representing an axis-aligned rectangle with top, left, right, and bottom coordinates.
 keywords: rect, c++
 needAutoGenerateSidebar: true
 ---

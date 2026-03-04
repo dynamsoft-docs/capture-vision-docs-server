@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ImageIO - Dynamsoft Utility Module Java Edition API Reference
-description: This page shows the Java Edition of the class ImageIO in Dynamsoft Utility Module.
+description: API reference for the ImageIO class in Dynamsoft Utility Module Java Edition, which provides methods for reading and saving image files.
 keywords: image io, java
 needAutoGenerateSidebar: true
 ---

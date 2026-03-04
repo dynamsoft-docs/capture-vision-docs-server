@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CColourImageUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CColourImageUnit in Dynamsoft Core Module.
+description: API reference for the CColourImageUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing the colour image at a specific pipeline stage.
 keywords: colour image, c++
 needAutoGenerateSidebar: true
 ---

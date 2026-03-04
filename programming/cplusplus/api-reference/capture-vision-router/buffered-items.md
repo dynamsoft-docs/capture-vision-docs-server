@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureVisionRouter Buffered Items - Dynamsoft Capture Vision C++ Edition API
-description: This page introduces the method to return a buffered items manager. An API of the CCaptureVisionRouter class of Dynamsoft Capture Vision C++ Edition.
+description: API reference for the buffered items method of CCaptureVisionRouter in Dynamsoft Capture Vision C++ Edition, returning the BufferedItemsManager for managing buffered character items.
 keywords: capture vision, buffered items, instance, api reference, C++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

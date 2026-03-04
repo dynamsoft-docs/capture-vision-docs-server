@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: User Guide for MRZ Scanner with Python
-description: This is the user guide page of MRZ Scanner for python.
+description: A step-by-step guide to building an MRZ scanner application with Dynamsoft Capture Vision Python Edition.
 keywords: user guide, mrz scanner, python
 ---
 

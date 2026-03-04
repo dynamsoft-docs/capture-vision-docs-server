@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: LicenseManager Class - Dynamsoft License Module Java Edition API Reference
-description: Definition of LicenseManager class in Dynamsoft License Module Java Edition.
+description: API reference for the LicenseManager class in Dynamsoft License Module Java Edition, which handles license initialization and management.
 keywords: license manager, java
 needAutoGenerateSidebar: true
 ---

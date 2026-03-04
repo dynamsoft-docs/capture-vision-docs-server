@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureVisionRouter Buffered Items - Dynamsoft Capture Vision Router Module Python Edition API Reference
-description: Definition of CaptureVisionRouter class Buffered Items Processing Methods in Dynamsoft Capture Vision Router Module Python Edition..
+description: API reference for the buffered items processing methods of the CaptureVisionRouter class in Dynamsoft Capture Vision Python Edition.
 keywords: capture vision, buffered items, api reference, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

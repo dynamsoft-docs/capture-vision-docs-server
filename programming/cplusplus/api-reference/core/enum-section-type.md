@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: SectionType - Dynamsoft Core Enumerations
-description: The enumeration SectionType of Dynamsoft Core describes the section of the algorithm.
+description: Reference for the SectionType enumeration in Dynamsoft Core C++ Edition, identifying the processing section (region detection, barcode localization, barcode decoding, etc.) that produced a result.
 keywords: Section type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

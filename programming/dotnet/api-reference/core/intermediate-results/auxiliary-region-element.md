@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class AuxiliaryRegionElement - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class AuxiliaryRegionElement in Dynamsoft Core Module.
+description: API reference for the AuxiliaryRegionElement class in Dynamsoft Core Module .NET Edition, which represents an auxiliary region element in the intermediate result.
 keywords: auxiliary region element, .NET
 ---
 

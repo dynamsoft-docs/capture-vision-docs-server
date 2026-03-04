@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CEdge - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CEdge in Dynamsoft Core Module.
+description: API reference for the CEdge class in Dynamsoft Core C++ Edition, representing a line segment edge defined by its start and end points.
 keywords: edge, c++
 needAutoGenerateSidebar: true
 ---

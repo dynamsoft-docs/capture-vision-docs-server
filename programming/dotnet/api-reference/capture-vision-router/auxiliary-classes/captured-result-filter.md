@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CapturedResultFilter Class - Dynamsoft Capture Vision Module .NET Edition API Reference
-description: Definition of CapturedResultFilter class in Dynamsoft Capture Vision Module .NET Edition.
+description: API reference for the CapturedResultFilter class in Dynamsoft Capture Vision .NET Edition, which filters specific result types from the captured results.
 keywords: captured result receiver, .NET
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

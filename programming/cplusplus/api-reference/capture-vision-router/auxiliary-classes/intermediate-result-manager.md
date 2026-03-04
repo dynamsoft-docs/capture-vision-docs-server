@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CIntermediateResultManager - Dynamsoft Capture Vision Router C++ Edition API Reference
-description: This page shows the C++ edition of the class CIntermediateResultManager in Dynamsoft Capture Vision Router Module.
+description: API reference for the CIntermediateResultManager class in Dynamsoft Capture Vision C++ Edition, managing registration and retrieval of intermediate processing results.
 keywords: intermediate result manager, c++
 needAutoGenerateSidebar: true
 ---

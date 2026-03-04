@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ErrorCode - Dynamsoft Core Enumerations
-description: The enumeration ErrorCode of Dynamsoft Core describes all error codes.
+description: Reference for the ErrorCode enumeration in Dynamsoft Core C++ Edition, listing all error codes returned by Dynamsoft Capture Vision SDK operations.
 keywords: Error code
 codeAutoHeight: true
 ---

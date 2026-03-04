@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CQuadrilateral - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CQuadrilateral in Dynamsoft Core Module.
+description: API reference for the CQuadrilateral class in Dynamsoft Core C++ Edition, representing a four-vertex polygon used to describe the location of detected objects.
 keywords: quadrilateral, c++
 needAutoGenerateSidebar: true
 ---

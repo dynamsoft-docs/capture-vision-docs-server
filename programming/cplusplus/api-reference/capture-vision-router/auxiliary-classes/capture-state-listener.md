@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CCaptureStateListener - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCaptureStateListener in Dynamsoft Capture Vision Router Module.
+description: API reference for the CCaptureStateListener class in Dynamsoft Capture Vision C++ Edition, a callback interface notified when the capture state changes.
 keywords: capture state listener, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

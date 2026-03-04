@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CScaledColourImageUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CScaledColourImageUnit in Dynamsoft Core Module.
+description: API reference for the CScaledColourImageUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing the colour image after scaling.
 keywords: scaled down colour image, c++
 needAutoGenerateSidebar: true
 ---

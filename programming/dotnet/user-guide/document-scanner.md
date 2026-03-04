@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: User Guide for Document Scanner with .NET
-description: This is the user guide page of Document Scanner for .NET Edition.
+description: A step-by-step guide to building a document scanner application with Dynamsoft Capture Vision .NET Edition.
 keywords: user guide index, .NET
 ---
 

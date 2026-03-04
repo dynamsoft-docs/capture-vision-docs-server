@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureVisionRouter Constructor and Destructor - Dynamsoft Capture Vision Router Module .NET Edition API Reference
-description: Definition of CaptureVisionRouter class Constructor and Destructor in Dynamsoft Capture Vision Router Module .NET Edition.
+description: API reference for the constructor and destructor of the CaptureVisionRouter class in Dynamsoft Capture Vision .NET Edition.
 keywords: capture vision, router, instance, api reference, .NET, Constructor, Destructor
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

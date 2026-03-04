@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ShortLinesUnit - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class ShortLinesUnit in Dynamsoft Core Module.
+description: API reference for the ShortLinesUnit class in Dynamsoft Core Module .NET Edition, which represents an intermediate result unit containing detected short line segments.
 keywords: Short lines, .NET
 needAutoGenerateSidebar: true
 ---

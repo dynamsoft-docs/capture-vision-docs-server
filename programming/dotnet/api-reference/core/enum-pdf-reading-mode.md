@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: PDFReadingMode - Dynamsoft Core .NET Enumerations
-description: The enumeration PDFReadingMode describes all available PDF reading modes for .NET Edition.
+description: The enumeration PDFReadingMode in Dynamsoft Core .NET Edition lists the available modes for reading PDF files (raster, vector, auto).
 keywords: PDF Reading Mode
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

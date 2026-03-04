@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: FileFetcher Class - Dynamsoft Utility Module .NET Edition API Reference
-description: Definition of FileFetcher class in Dynamsoft Utility Module .NET Edition.
+description: API reference for the FileFetcher class in Dynamsoft Utility Module .NET Edition, which loads image files from specified file paths as an image source.
 keywords: file fetcher, .NET
 needAutoGenerateSidebar: true
 ---

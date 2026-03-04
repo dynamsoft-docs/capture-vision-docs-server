@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CShortLinesUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CShortLinesUnit in Dynamsoft Core Module.
+description: API reference for the CShortLinesUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing detected short line segments.
 keywords: Short lines, c++
 needAutoGenerateSidebar: true
 ---

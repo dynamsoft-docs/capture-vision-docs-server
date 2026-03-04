@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CPredetectedRegionsUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CPredetectedRegionsUnit in Dynamsoft Core Module.
+description: API reference for the CPredetectedRegionsUnit class in Dynamsoft Core C++ Edition, an intermediate result unit holding all pre-detected regions found in an image.
 keywords: predetected regions, c++
 needAutoGenerateSidebar: true
 ---

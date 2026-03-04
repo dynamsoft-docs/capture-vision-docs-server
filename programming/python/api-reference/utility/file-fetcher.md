@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: FileFetcher Class - Dynamsoft Utility Module Python Edition API Reference
-description: Definition of FileFetcher class in Dynamsoft Utility Module Python Edition.
+description: API reference for the FileFetcher class in Dynamsoft Utility Module Python Edition, which loads image files from specified file paths as an image source.
 keywords: file fetcher, python
 needAutoGenerateSidebar: true
 ---

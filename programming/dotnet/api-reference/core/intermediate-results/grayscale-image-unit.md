@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class GrayscaleImageUnit - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class GrayscaleImageUnit in Dynamsoft Core Module.
+description: API reference for the GrayscaleImageUnit class in Dynamsoft Core Module .NET Edition, which represents an intermediate result unit containing a grayscale image.
 keywords: grayscale image, .NET
 needAutoGenerateSidebar: true
 ---

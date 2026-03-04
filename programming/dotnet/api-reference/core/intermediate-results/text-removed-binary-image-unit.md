@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TextRemovedBinaryImageUnit - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class TextRemovedBinaryImageUnit in Dynamsoft Core Module.
+description: API reference for the TextRemovedBinaryImageUnit class in Dynamsoft Core Module .NET Edition, which represents an intermediate result unit containing a binary image with text regions removed.
 keywords: text removed binary image, .NET
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CoreError Class - Dynamsoft Core Module Java Edition API Reference
-description: Definition of CoreError class in Dynamsoft Core Module Java Edition.
+description: API reference for the CoreError class in Dynamsoft Core Module Java Edition, which defines error codes specific to the Core module.
 keywords: core module, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: PresetTemplate Class - Dynamsoft Capture Vision Module .NET Edition API Reference
-description: Definition of PresetTemplate class in Dynamsoft Capture Vision Module .NET Edition.
+description: API reference for the PresetTemplate class in Dynamsoft Capture Vision .NET Edition, which defines built-in template names for common capture scenarios.
 keywords: preset template, .NET
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

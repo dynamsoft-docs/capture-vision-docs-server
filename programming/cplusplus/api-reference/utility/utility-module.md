@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CUtilityModule - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CUtilityModule in Dynamsoft Utility Module.
+description: API reference for the CUtilityModule class in Dynamsoft Utility C++ Edition, providing module-level utilities such as version retrieval.
 keywords: utility module, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

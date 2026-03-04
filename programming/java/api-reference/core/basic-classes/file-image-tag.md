@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: FileImageTag Class - Dynamsoft Core Module Java Edition API Reference
-description: Definition of FileImageTag class in Dynamsoft Core Module Java Edition.
+description: API reference for the FileImageTag class in Dynamsoft Core Module Java Edition, which stores image tag information for file-sourced images including file path and page index.
 keywords: file image tag, java
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CaptureVisionRouter Auxiliary Methods - Dynamsoft Capture Vision C++ Edition API
-description: This page introduces auxiliary methods of the CCaptureVisionRouter class of the Dynamsoft Capture Vision C++ Edition.
+description: API reference for auxiliary methods of CCaptureVisionRouter in Dynamsoft Capture Vision C++ Edition, including utility and supplementary operations.
 keywords: capture vision, auxiliary, instance, api reference, C++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

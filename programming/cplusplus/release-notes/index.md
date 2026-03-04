@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Release Notes index - Dynamsoft Capture Vision CPP Edition
-description: The index of release notes - Dynamsoft Capture Vision CPP Edition.
+description: Chronological release notes index for Dynamsoft Capture Vision Bundle C++ Edition.
 keywords: release notes, index, CPP
 needAutoGenerateSidebar: true
 noTitleIndex: true

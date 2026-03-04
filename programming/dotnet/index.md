@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Index - Dynamsoft Capture Vision .NET Edition
-description: The introduction of Dynamsoft Capture Vision .NET Edition.
+description: Overview of Dynamsoft Capture Vision .NET Edition, covering feature highlights, system requirements, and links to the user guide, API reference, and release notes.
 keywords: API reference, index, .NET
 needAutoGenerateSidebar: true
 ---

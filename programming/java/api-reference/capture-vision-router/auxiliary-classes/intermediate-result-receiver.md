@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IntermediateResultReceiver - Dynamsoft Core Module Java Edition API Reference
-description: The class IntermediateResultReceiver of CaptureVisionRouter module Java Edition is responsible for receiving intermediate results.
+description: API reference for the IntermediateResultReceiver class in Dynamsoft Capture Vision Java Edition, which receives callbacks with intermediate results during image processing.
 keywords: intermediate result receiver, java
 needAutoGenerateSidebar: true
 ---

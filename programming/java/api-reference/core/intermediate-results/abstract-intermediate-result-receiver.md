@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class AbstractIntermediateResultReceiver - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the java edition of the class AbstractIntermediateResultReceiver in Dynamsoft Core Module.
+description: API reference for the AbstractIntermediateResultReceiver class in Dynamsoft Core Module Java Edition, the base class for receiving intermediate results during image processing.
 keywords: abstractintermediate result receiver, java
 needAutoGenerateSidebar: true
 ---

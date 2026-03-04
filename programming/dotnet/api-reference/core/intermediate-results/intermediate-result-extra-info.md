@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IntermediateResultExtraInfo - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the struct IntermediateResultExtraInfo in Dynamsoft Core Module.
+description: API reference for the IntermediateResultExtraInfo struct in Dynamsoft Core Module .NET Edition, which provides extra metadata about an intermediate result unit.
 keywords: intermediate result, .NET
 needAutoGenerateSidebar: true
 ---

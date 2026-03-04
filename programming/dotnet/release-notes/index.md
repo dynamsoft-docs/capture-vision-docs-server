@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Module Release Notes index - Dynamsoft Capture Vision .NET Edition
-description: The index of release notes - Dynamsoft Capture Vision .NET Edition.
+description: Chronological release notes index for Dynamsoft Capture Vision Bundle .NET Edition, covering all v3.x releases.
 keywords: release notes, index, .NET
 needAutoGenerateSidebar: true
 noTitleIndex: true

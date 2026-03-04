@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IdentityProcessor - Dynamsoft Identity Utility Module Java Edition API Reference
-description: This page shows the Java edition of the class IdentityProcessor in Dynamsoft Identity Utility Module.
+description: API reference for the IdentityProcessor class in Dynamsoft Identity Utility Module Java Edition, which provides methods for processing identity documents.
 keywords: identity processor, java
 ---
 

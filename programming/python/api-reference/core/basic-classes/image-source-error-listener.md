@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ImageSourceErrorListener Class - Dynamsoft Capture Vision Module Python Edition API Reference
-description: Definition of ImageSourceErrorListener class in Dynamsoft Core Module Python Edition.
+description: API reference for the ImageSourceErrorListener class in Dynamsoft Core Module Python Edition, which receives error notifications from the image source.
 keywords: imagesource error listener, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

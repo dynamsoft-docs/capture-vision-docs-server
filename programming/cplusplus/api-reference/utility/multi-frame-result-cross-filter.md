@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: class CMultiFrameResultCrossFilter - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CMultiFrameResultCrossFilter in Utility Module.
+description: API reference for the CMultiFrameResultCrossFilter class in Dynamsoft Utility C++ Edition, filtering captured results across multiple frames to improve reliability and reduce duplicates.
 keywords: multiple frame result cross filter, c++
 ---
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CoreModule Class - Dynamsoft Core Module .NET Edition API Reference
-description: Definition of CoreModule class in Dynamsoft Core Module .NET Edition.
+description: API reference for the CoreModule class in Dynamsoft Core Module .NET Edition, which provides general functions for the Core module such as version info.
 keywords: core module, .NET
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

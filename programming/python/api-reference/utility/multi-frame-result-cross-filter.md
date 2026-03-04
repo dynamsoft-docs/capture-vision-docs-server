@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: MultiFrameResultCrossFilter Class - Dynamsoft Capture Vision Module Python Edition API Reference
-description: Definition of MultiFrameResultCrossFilter class in Dynamsoft Utility Module Python Edition.
+description: API reference for the MultiFrameResultCrossFilter class in Dynamsoft Utility Module Python Edition, which filters captured results across multiple frames to improve accuracy and reduce duplicates.
 keywords: multiple frame result cross filter, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

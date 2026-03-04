@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: RegionObjectElementType - Dynamsoft Core Python Enumerations
-description: The enumeration RegionObjectElementType of Dynamsoft Core describes the types of RegionObjectElement.
+description: The enumeration RegionObjectElementType in Dynamsoft Core Python Edition lists the types of region object elements (localized, recognized, etc.).
 keywords: Region object element type
 codeAutoHeight: true
 ---

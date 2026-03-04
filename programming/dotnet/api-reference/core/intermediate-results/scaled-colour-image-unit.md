@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ScaledColourImageUnit - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class ScaledColourImageUnit in Dynamsoft Core Module.
+description: API reference for the ScaledColourImageUnit class in Dynamsoft Core Module .NET Edition, which represents an intermediate result unit containing a scaled colour image.
 keywords: scaled down colour image, .NET
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: ColourChannelUsageType - Dynamsoft Core Enumerations
-description: The enumeration ColourChannelUsageType of Dynamsoft Core describes how the color channel is used in the image.
+description: Reference for the ColourChannelUsageType enumeration in Dynamsoft Core C++ Edition, describing how colour channels are used during image processing.
 keywords: Corner type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

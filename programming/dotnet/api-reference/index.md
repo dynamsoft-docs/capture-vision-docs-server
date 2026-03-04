@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Index - Dynamsoft Capture Vision Module .NET Edition API Reference
-description: The index of Dynamsoft Capture Vision .NET Edition API reference.
+description: Full API reference index for Dynamsoft Capture Vision .NET Edition, listing all classes, interfaces, and enumerations across the CVR, Core, License, Utility, and other modules.
 keywords: API reference, index, .NET
 needAutoGenerateSidebar: false
 ---

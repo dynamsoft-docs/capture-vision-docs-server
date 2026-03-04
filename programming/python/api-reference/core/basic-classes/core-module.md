@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: CoreModule Class - Dynamsoft Core Module Python Edition API Reference
-description: Definition of CoreModule class in Dynamsoft Core Module Python Edition.
+description: API reference for the CoreModule class in Dynamsoft Core Module Python Edition, which provides general functions for the Core module such as version info.
 keywords: core module, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

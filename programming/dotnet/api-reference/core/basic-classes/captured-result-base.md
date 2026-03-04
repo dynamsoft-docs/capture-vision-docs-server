@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CapturedResultBase - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class CapturedResultBase in Dynamsoft Core Module.
+description: API reference for the CapturedResultBase class in Dynamsoft Core Module .NET Edition, the base class for all captured result types.
 keywords: captured result base, .NET
 needAutoGenerateSidebar: true
 ---

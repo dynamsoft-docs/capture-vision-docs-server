@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class RegionObjectElement - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class RegionObjectElement in Dynamsoft Core Module.
+description: API reference for the RegionObjectElement class in Dynamsoft Core Module Python Edition, the base class for all region-based intermediate result elements.
 keywords: region object element, python
 needAutoGenerateSidebar: true
 ---

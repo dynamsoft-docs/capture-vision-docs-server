@@ -1,7 +1,7 @@
----
+﻿---
 layout: default-layout
 title: GrayscaleEnhancementMode - Dynamsoft Core Python Enumerations
-description: The enumeration GrayscaleEnhancementMode of Dynamsoft Core describes all available grayscale enhancement modes.
+description: The enumeration GrayscaleEnhancementMode in Dynamsoft Core Python Edition lists available image enhancement algorithms applied to grayscale images before recognition.
 keywords: Grayscale enhancement modes
 codeAutoHeight: true
 ---
