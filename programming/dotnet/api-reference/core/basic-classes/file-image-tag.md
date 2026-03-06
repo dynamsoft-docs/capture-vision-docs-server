@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: FileImageTag Class - Dynamsoft Core Module .NET Edition API Reference
 description: API reference for the FileImageTag class in Dynamsoft Core Module .NET Edition, which stores image tag information for file-sourced images including file path and page index.

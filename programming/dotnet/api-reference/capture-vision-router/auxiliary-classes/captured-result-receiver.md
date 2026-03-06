@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CapturedResultReceiver Class - Dynamsoft Capture Vision Module .NET Edition API Reference
 description: API reference for the CapturedResultReceiver class in Dynamsoft Capture Vision .NET Edition, which receives callbacks with captured results from image processing.

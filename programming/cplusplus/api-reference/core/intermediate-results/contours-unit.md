@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CContoursUnit - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CContoursUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing contours and hierarchical data of detected regions.

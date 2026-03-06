@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CaptureState - Dynamsoft Vision Router Java Enumerations
 description: The enumeration CaptureState in Dynamsoft Capture Vision Java Edition describes the possible states of the data capture process (started, stopped, paused, resumed).

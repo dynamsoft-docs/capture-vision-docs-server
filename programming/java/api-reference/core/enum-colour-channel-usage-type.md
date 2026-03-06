@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ColourChannelUsageType - Dynamsoft Core Java Enumerations
 description: The enumeration ColourChannelUsageType in Dynamsoft Core Java Edition describes how colour channels are used during image processing.

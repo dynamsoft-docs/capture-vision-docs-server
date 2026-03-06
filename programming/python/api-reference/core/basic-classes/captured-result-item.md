@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CapturedResultItem Class - Dynamsoft Core Module Python Edition API Reference
 description: API reference for the CapturedResultItem class in Dynamsoft Core Module Python Edition, the base class for all types of captured result items.

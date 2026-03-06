@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CrossVerificationStatus - Dynamsoft Core .NET Enumerations
 description: The enumeration CrossVerificationStatus in Dynamsoft Core .NET Edition indicates whether a captured result has been cross-verified across multiple frames.

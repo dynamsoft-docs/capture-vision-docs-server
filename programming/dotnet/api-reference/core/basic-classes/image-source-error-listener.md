@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: IImageSourceErrorListener Interface - Dynamsoft Capture Vision Module .NET Edition API Reference
 description: API reference for the IImageSourceErrorListener interface in Dynamsoft Core Module .NET Edition, which receives error notifications from the image source.

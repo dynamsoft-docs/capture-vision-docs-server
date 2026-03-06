@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CTextureRemovedBinaryImageUnit - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CTextureRemovedBinaryImageUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing the binary image with background texture removed.

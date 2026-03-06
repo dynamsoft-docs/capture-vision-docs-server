@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: LicenseModule Class - Dynamsoft Capture Vision Module Java Edition API Reference
 description: API reference for the LicenseModule class in Dynamsoft License Module Java Edition, which provides general functions for the License module.

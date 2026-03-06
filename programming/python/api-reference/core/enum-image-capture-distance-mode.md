@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageCaptureDistanceMode - Dynamsoft Core Python Enumerations
 description: The enumeration ImageCaptureDistanceMode in Dynamsoft Core Python Edition distinguishes close-up captures from long-distance captures to optimize image processing.

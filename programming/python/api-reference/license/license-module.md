@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: LicenseModule Class - Dynamsoft Capture Vision Module Python Edition API Reference
 description: API reference for the LicenseModule class in Dynamsoft License Module Python Edition, which provides general functions for the License module.

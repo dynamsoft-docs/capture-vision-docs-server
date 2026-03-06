@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CImageProcessor - Dynamsoft Utility Module C++ Edition API Reference
 description: API reference for the CImageProcessor class in Dynamsoft Utility C++ Edition, providing image conversion methods such as grayscale conversion and binarization.

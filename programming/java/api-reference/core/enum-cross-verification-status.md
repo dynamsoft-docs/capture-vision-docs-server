@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CrossVerificationStatus - Dynamsoft Core Java Enumerations
 description: The enumeration CrossVerificationStatus in Dynamsoft Core Java Edition indicates whether a captured result has been cross-verified across multiple frames.

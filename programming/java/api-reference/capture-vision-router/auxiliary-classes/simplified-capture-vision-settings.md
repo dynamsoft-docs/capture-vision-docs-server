@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: SimplifiedCaptureVisionSettings Class - Dynamsoft Capture Vision Module Java Edition API Reference
 description: API reference for the SimplifiedCaptureVisionSettings class in Dynamsoft Capture Vision Java Edition, which contains simplified configuration options for capture tasks.

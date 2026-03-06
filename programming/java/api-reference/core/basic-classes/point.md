@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: Point Class - Dynamsoft Core Module Java Edition API Reference
 description: API reference for the Point class in Dynamsoft Core Module Java Edition, which represents a 2D point with x and y coordinates.

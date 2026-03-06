@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageSourceState - Dynamsoft Vision Router Java Enumerations
 description: The enumeration ImageSourceState in Dynamsoft Capture Vision Java Edition describes the possible states of the ImageSourceAdapter (exhausted or buffered).

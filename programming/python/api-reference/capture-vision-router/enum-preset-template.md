@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: PresetTemplate - Dynamsoft Vision Router Python Enumerations
 description: The enumeration PresetTemplate in Dynamsoft Capture Vision Python Edition lists the built-in preset templates available for common capture scenarios.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: BufferedItemsManager Class - Dynamsoft Capture Vision Router Module Python Edition API Reference
 description: API reference for the BufferedItemsManager class in Dynamsoft Capture Vision Python Edition, which manages the buffer of captured result items for cross-frame verification.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: GrayscaleTransformationMode - Dynamsoft Core Enumerations
 description: Reference for the GrayscaleTransformationMode enumeration in Dynamsoft Core C++ Edition, describing transformations (invert, original) applied when converting a colour image to grayscale.

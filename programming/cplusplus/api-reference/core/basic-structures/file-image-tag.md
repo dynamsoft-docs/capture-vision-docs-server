@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CFileImageTag - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CFileImageTag class in Dynamsoft Core C++ Edition, tagging an image with its source file path and page number.

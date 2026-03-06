@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CBufferedItemsManager - Dynamsoft Capture Vision Router Module C++ Edition API Reference
 description: API reference for the CBufferedItemsManager class in Dynamsoft Capture Vision C++ Edition, managing the buffer of recognized character items for cross-frame verification.

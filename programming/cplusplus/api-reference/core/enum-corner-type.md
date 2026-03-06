@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CornerType - Dynamsoft Core Enumerations
 description: Reference for the CornerType enumeration in Dynamsoft Core C++ Edition, describing how a corner is geometrically formed by its two sides.

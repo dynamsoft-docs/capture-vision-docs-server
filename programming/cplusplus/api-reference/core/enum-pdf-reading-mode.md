@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: PDFReadingMode - Dynamsoft Core Enumerations
 description: Reference for the PDFReadingMode enumeration in Dynamsoft Core C++ Edition, listing modes for reading PDF files (raster, vector, auto).

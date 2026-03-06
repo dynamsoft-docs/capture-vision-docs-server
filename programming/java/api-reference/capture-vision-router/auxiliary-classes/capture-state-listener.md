@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CaptureStateListener Interface - Dynamsoft Capture Vision Module Java Edition API Reference
 description: API reference for the CaptureStateListener interface in Dynamsoft Capture Vision Java Edition, which receives notifications when the capture state changes.

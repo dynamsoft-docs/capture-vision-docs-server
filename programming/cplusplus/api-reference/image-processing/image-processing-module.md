@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CImageProcessingModule - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the CImageProcessingModule class in Dynamsoft Image Processing C++ Edition, providing module-level utilities such as version retrieval.

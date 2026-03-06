@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CPredetectedRegionElement - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CPredetectedRegionElement class in Dynamsoft Core C++ Edition, representing a pre-detected region of interest found in an image.

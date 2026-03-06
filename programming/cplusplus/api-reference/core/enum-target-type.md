@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: TargetType - Dynamsoft Core Enumerations
 description: Reference for the TargetType enumeration in Dynamsoft Core C++ Edition, specifying the type of capture target (page or object).

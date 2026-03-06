@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CImageSourceAdapter - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CImageSourceAdapter class in Dynamsoft Core C++ Edition, the abstract base class for all image source adapters that feed images into the capture pipeline.

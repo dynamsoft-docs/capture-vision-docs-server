@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ProactiveImageSourceAdapter Class - Dynamsoft Utility Module .NET Edition API Reference
 description: API reference for the ProactiveImageSourceAdapter class in Dynamsoft Utility Module .NET Edition, which actively fetches images at defined intervals for processing.

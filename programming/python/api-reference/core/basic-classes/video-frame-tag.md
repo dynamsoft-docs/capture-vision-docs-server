@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: VideoFrameTag Class - Dynamsoft Core Module Python Edition API Reference
 description: API reference for the VideoFrameTag class in Dynamsoft Core Module Python Edition, which stores metadata tags for video frame images including quality and cropping status.

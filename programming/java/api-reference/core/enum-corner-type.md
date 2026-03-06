@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CornerType - Dynamsoft Core Java Enumerations
 description: The enumeration CornerType in Dynamsoft Core Java Edition describes how a corner is geometrically formed by its two sides.

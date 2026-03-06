@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageSourceState - Dynamsoft Core C++ Enumerations
 description: Reference for the ImageSourceState enumeration in Dynamsoft Capture Vision C++ Edition, describing the states of the ImageSourceAdapter (exhausted, buffered).

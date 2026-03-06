@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CoreException Class - Dynamsoft Core Module Java Edition API Reference
 description: API reference for the CoreException class in Dynamsoft Core Module Java Edition, the base exception class providing error code and message for Core module errors.

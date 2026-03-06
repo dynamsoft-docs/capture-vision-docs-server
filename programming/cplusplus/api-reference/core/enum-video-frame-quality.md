@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: VideoFrameQuality - Dynamsoft Core Enumerations
 description: Reference for the VideoFrameQuality enumeration in Dynamsoft Core C++ Edition, classifying video frame quality (high or low) to control which frames are processed.

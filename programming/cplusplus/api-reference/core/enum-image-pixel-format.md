@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImagePixelFormat - Dynamsoft Core Enumerations
 description: Reference for the ImagePixelFormat enumeration in Dynamsoft Core C++ Edition, listing all supported pixel formats (grayscale, RGB, RGBA, etc.) for image data.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: TransformMatrixType - Dynamsoft Core Python Enumerations
 description: The enumeration TransformMatrixType in Dynamsoft Core Python Edition lists transformation matrix types used to convert between local and original image coordinate systems.

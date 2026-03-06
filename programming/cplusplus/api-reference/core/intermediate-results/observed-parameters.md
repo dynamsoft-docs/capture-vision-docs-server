@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CObservationParameters - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CObservationParameters class in Dynamsoft Core C++ Edition, specifying which intermediate result unit types and sections to observe during processing.

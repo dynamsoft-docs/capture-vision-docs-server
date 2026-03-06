@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: UtilityException Class - Dynamsoft Utility Module Java Edition API Reference
 description: API reference for the UtilityException class in Dynamsoft Utility Module Java Edition, the exception class for Utility module errors.

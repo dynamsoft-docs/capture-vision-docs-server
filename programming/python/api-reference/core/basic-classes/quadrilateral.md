@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: Quadrilateral Class - Dynamsoft Core Module Python Edition API Reference
 description: API reference for the Quadrilateral class in Dynamsoft Core Module Python Edition, which represents a quadrilateral shape defined by four corner points.

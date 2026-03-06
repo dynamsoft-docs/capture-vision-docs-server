@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CLicenseManager - Dynamsoft License Module C++ Edition API Reference
 description: API reference for the CLicenseManager class in Dynamsoft License C++ Edition, providing methods to initialize and validate Dynamsoft SDK licenses.

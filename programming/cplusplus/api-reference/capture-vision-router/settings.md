@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CaptureVisionRouter Settings - Dynamsoft Capture Vision C++ Edition API
 description: API reference for the settings methods of CCaptureVisionRouter in Dynamsoft Capture Vision C++ Edition, covering template loading, output settings, and simplified settings.

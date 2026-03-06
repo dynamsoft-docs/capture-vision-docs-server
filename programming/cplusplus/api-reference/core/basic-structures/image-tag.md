@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CImageTag - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CImageTag class in Dynamsoft Core C++ Edition, the abstract base class for tagging images with source metadata (file or video frame).

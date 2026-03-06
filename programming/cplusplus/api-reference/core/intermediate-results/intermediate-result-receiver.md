@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CIntermediateResultReceiver - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CIntermediateResultReceiver class in Dynamsoft Core C++ Edition, a callback base class for receiving specific types of intermediate results.

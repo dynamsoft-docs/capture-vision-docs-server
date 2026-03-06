@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: IntermediateResultUnitType - Dynamsoft Core Enumerations
 description: Reference for the IntermediateResultUnitType enumeration in Dynamsoft Core C++ Edition, listing all types of intermediate result units produced during image processing.

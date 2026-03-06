@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: GrayscaleEnhancementMode - Dynamsoft Core .NET Enumerations
 description: The enumeration GrayscaleEnhancementMode in Dynamsoft Core .NET Edition lists available image enhancement algorithms applied to grayscale images before recognition.

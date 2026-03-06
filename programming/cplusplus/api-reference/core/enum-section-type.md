@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: SectionType - Dynamsoft Core Enumerations
 description: Reference for the SectionType enumeration in Dynamsoft Core C++ Edition, identifying the processing section (region detection, barcode localization, barcode decoding, etc.) that produced a result.

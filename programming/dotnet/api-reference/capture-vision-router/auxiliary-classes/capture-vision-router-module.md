@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CaptureVisionRouterModule Class - Dynamsoft Capture Vision Module .NET Edition API Reference
 description: API reference for the CaptureVisionRouterModule class in Dynamsoft Capture Vision .NET Edition, which provides general functions for the CVR module.

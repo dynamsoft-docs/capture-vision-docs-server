@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: LicenseModule Class - Dynamsoft Capture Vision Module .NET Edition API Reference
 description: API reference for the LicenseModule class in Dynamsoft License Module .NET Edition, which provides general functions for the License module.

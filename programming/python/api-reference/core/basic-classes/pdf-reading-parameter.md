@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: PDFReadingParameter Class - Dynamsoft Core Module Python Edition API Reference
 description: API reference for the PDFReadingParameter class in Dynamsoft Core Module Python Edition, which configures PDF reading options such as mode, DPI, and raster data source.

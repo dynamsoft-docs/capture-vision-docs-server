@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageData Class - Dynamsoft Core Module .NET Edition API Reference
 description: API reference for the ImageData class in Dynamsoft Core Module .NET Edition, which holds image pixel data along with width, height, stride, and pixel format information.

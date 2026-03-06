@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CAbstractIntermediateResultReceiver - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CAbstractIntermediateResultReceiver class in Dynamsoft Core C++ Edition, the abstract base class for all intermediate result receiver implementations.

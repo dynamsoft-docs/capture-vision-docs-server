@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CRawImageResultItem - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the CRawImageResultItem class in Dynamsoft Core C++ Edition, a captured result item containing raw image data with its associated tag.

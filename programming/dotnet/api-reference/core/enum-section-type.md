@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: SectionType - Dynamsoft Core .NET Enumerations
 description: The enumeration SectionType in Dynamsoft Core .NET Edition identifies the processing section (region detection, barcode localization, barcode decoding, etc.) that produced a result.

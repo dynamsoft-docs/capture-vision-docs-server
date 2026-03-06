@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CTransformedGrayscaleImageUnit - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CTransformedGrayscaleImageUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing the grayscale image after transformation (e.g., inversion).

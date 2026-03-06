@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: BufferOverflowProtectionMode - Dynamsoft Core Enumerations
 description: Reference for the BufferOverflowProtectionMode enumeration in Dynamsoft Core C++ Edition, describing strategies when the image source buffer overflows (ignore new, update oldest).

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ErrorCode - Dynamsoft Core Python Enumerations
 description: The enumeration ErrorCode in Dynamsoft Core Python Edition lists all error codes returned by Dynamsoft Capture Vision SDK operations.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CCoreModule - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the CCoreModule class in Dynamsoft Core C++ Edition, providing module-level utilities such as version retrieval.

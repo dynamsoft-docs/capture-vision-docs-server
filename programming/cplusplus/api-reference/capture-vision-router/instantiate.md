@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CCaptureVisionRouter Constructor and Destructor - Dynamsoft Capture Vision C++ Edition API
 description: API reference for the constructor and destructor of the CCaptureVisionRouter class in Dynamsoft Capture Vision C++ Edition.

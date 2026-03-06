@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CapturedResult Class - Dynamsoft Capture Vision Module Java Edition API Reference
 description: API reference for the CapturedResult class in Dynamsoft Capture Vision Java Edition, which holds all result items returned from an image capture and processing task.

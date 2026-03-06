@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: Point Class - Dynamsoft Core Module Python Edition API Reference
 description: API reference for the Point class in Dynamsoft Core Module Python Edition, which represents a 2D point with x and y coordinates.

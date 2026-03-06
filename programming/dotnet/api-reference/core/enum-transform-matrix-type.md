@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: TransformMatrixType - Dynamsoft Core .NET Enumerations
 description: The enumeration TransformMatrixType in Dynamsoft Core .NET Edition lists transformation matrix types used to convert between local and original image coordinate systems.

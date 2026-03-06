@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImagePixelFormat - Dynamsoft Core .NET Enumerations
 description: The enumeration ImagePixelFormat in Dynamsoft Core .NET Edition lists all supported pixel formats (grayscale, RGB, RGBA, etc.) for image data.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: VideoFrameQuality - Dynamsoft Core Enumerations
 description: The enumeration VideoFrameQuality in Dynamsoft Core Python Edition classifies video frame quality (high or low) to control which frames are processed.

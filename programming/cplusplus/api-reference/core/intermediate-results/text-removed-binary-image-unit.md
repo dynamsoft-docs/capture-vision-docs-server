@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CTextRemovedBinaryImageUnit - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CTextRemovedBinaryImageUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing the binary image with text regions removed.

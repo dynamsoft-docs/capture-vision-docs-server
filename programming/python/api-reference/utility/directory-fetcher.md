@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: DirectoryFetcher Class - Dynamsoft Utility Module Python Edition API Reference
 description: API reference for the DirectoryFetcher class in Dynamsoft Utility Module Python Edition, which loads image files from a specified directory as an image source.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageSourceStateListener Interface - Dynamsoft Capture Vision Router Module Java Edition API Reference
 description: API reference for the ImageSourceStateListener interface in Dynamsoft Capture Vision Java Edition, which receives notifications when the image source state changes.

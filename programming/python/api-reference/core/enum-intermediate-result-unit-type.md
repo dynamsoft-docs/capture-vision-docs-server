@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: IntermediateResultUnitType - Dynamsoft Core Python Enumerations
 description: The enumeration IntermediateResultUnitType in Dynamsoft Core Python Edition lists all types of intermediate result units produced during image processing.

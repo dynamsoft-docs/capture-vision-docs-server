@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CBinaryImageUnit - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CBinaryImageUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing the binarized (black-and-white) image.

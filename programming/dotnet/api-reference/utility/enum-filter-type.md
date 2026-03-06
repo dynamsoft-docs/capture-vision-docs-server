@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: FilterType - Dynamsoft Utility .NET Enumerations
 description: The enumeration FilterType in Dynamsoft Utility .NET Edition specifies the type of image filter applied during image processing operations.

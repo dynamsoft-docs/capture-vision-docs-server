@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CImageSourceStateListener - Dynamsoft Capture Vision Router Module C++ Edition API Reference
 description: API reference for the CImageSourceStateListener class in Dynamsoft Capture Vision C++ Edition, a callback interface notified when the image source state changes.

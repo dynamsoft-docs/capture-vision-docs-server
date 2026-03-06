@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CaptureVisionRouter Auxiliary Processing Methods - Dynamsoft Capture Vision Router Module .NET Edition API Reference
 description: API reference for auxiliary methods of the CaptureVisionRouter class in Dynamsoft Capture Vision .NET Edition.

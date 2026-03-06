@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: OriginalImageResultItem Class - Dynamsoft Capture Vision Module Python Edition API Reference
 description: API reference for the OriginalImageResultItem class in Dynamsoft Core Module Python Edition, which represents the original input image as a captured result item.

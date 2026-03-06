@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: OriginalImageResultItem Class - Dynamsoft Capture Vision Module Java Edition API Reference
 description: API reference for the OriginalImageResultItem class in Dynamsoft Core Module Java Edition, which represents the original input image as a captured result item.

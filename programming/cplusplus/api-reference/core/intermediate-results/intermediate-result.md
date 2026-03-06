@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CIntermediateResult - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CIntermediateResult class in Dynamsoft Core C++ Edition, representing a collection of intermediate result units from a single processing step.

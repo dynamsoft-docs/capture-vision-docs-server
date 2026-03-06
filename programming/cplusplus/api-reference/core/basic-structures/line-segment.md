@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CLineSegment - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CLineSegment class in Dynamsoft Core C++ Edition, representing a line segment defined by its two endpoint coordinates.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CapturedResultItemType - Dynamsoft Core .NET Enumerations
 description: The enumeration CapturedResultItemType in Dynamsoft Core .NET Edition lists all possible result item types produced by the capture process (barcode, text line, document quad, etc.).

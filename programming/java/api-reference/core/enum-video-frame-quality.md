@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: VideoFrameQuality - Dynamsoft Core Java Enumerations
 description: The enumeration VideoFrameQuality in Dynamsoft Core Java Edition classifies video frame quality (high or low) to control which frames are processed.

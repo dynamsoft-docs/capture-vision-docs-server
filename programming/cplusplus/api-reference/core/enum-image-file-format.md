@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageFileFormat - Dynamsoft Core Enumerations
 description: Reference for the ImageFileFormat enumeration in Dynamsoft Core C++ Edition, listing supported image file formats (JPEG, PNG, BMP, PDF, etc.).

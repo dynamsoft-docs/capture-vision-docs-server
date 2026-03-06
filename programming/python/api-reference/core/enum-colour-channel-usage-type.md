@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ColourChannelUsageType - Dynamsoft Core Python Enumerations
 description: The enumeration ColourChannelUsageType in Dynamsoft Core Python Edition describes how colour channels are used during image processing.

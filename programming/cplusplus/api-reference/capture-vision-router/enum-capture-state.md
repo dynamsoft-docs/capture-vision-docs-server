@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CaptureState - Dynamsoft Vision Router C++ Enumerations
 description: Reference for the CaptureState enumeration in Dynamsoft Capture Vision C++ Edition, describing the possible states of the data capture process (started, stopped).

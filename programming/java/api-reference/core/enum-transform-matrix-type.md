@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: TransformMatrixType - Dynamsoft Core Java Enumerations
 description: The enumeration TransformMatrixType in Dynamsoft Core Java Edition lists transformation matrix types used to convert between local and original image coordinate systems.

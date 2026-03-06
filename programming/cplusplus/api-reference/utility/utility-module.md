@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CUtilityModule - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the CUtilityModule class in Dynamsoft Utility C++ Edition, providing module-level utilities such as version retrieval.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CornerType - Dynamsoft Core Python Enumerations
 description: The enumeration CornerType in Dynamsoft Core Python Edition describes how a corner is geometrically formed by its two sides.

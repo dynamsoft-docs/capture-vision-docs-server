@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageCaptureDistanceMode - Dynamsoft Core Enumerations
 description: Reference for the ImageCaptureDistanceMode enumeration in Dynamsoft Core C++ Edition, distinguishing close-up from long-distance image captures to optimize processing.

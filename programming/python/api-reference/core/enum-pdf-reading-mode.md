@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: PDFReadingMode - Dynamsoft Core Python Enumerations
 description: The enumeration PDFReadingMode in Dynamsoft Core Python Edition lists the available modes for reading PDF files (raster, vector, auto).

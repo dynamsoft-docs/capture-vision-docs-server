@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CImageIO - Dynamsoft Utility Module C++ Edition API Reference
 description: API reference for the CImageIO class in Dynamsoft Utility C++ Edition, providing methods to read images from files and save images to files.

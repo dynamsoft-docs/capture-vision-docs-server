@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: struct SimplifiedCaptureVisionSettings - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the SimplifiedCaptureVisionSettings struct in Dynamsoft Capture Vision C++ Edition, covering configurable fields such as output settings, ROI, timeout, and task priority.

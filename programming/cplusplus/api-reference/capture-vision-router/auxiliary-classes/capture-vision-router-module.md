@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CCaptureVisionRouterModule - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the CCaptureVisionRouterModule class in Dynamsoft Capture Vision C++ Edition, providing module-level utilities such as version retrieval.

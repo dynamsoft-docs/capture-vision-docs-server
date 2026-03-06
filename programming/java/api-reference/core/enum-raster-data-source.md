@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: RasterDataSource - Dynamsoft Core Java Enumerations
 description: The enumeration RasterDataSource in Dynamsoft Core Java Edition specifies whether raster image data is sourced from pages or rendered PDFs.

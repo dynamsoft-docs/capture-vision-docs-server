@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: RegionObjectElementType - Dynamsoft Core Enumerations
 description: Reference for the RegionObjectElementType enumeration in Dynamsoft Core C++ Edition, listing the types of region object elements (localized, recognized, etc.).

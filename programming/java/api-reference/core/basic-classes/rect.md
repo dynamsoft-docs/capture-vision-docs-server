@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: Rect Class - Dynamsoft Core Module Java Edition API Reference
 description: API reference for the Rect class in Dynamsoft Core Module Java Edition, which represents a rectangle defined by its top-left point, width, and height.

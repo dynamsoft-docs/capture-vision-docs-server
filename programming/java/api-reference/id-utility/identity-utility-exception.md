@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: IdentityUtilityException Class - Dynamsoft Identity Utility Module Java Edition API Reference
 description: API reference for the IdentityUtilityException class in Dynamsoft Identity Utility Module Java Edition, the exception class for Identity Utility module errors.

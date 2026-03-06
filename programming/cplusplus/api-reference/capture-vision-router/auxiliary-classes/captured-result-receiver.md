@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CCapturedResultReceiver - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the CCapturedResultReceiver class in Dynamsoft Capture Vision C++ Edition, a callback interface for receiving captured results from the router.

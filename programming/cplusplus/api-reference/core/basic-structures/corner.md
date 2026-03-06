@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CCorner - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CCorner class in Dynamsoft Core C++ Edition, representing a corner point with its type and the two intersecting edges.

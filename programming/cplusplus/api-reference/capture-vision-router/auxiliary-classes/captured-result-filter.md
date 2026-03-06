@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CCapturedResultFilter - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the CCapturedResultFilter class in Dynamsoft Capture Vision C++ Edition, defining rules to filter captured results by confidence, barcode format, and other criteria.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CaptureVisionError Class - Dynamsoft Capture Vision Router Module Java Edition API Reference
 description: API reference for the CaptureVisionError class in Dynamsoft Capture Vision Java Edition, which defines error codes specific to the Capture Vision Router module.

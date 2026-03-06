@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageTagType - Dynamsoft Core .NET Enumerations
 description: The enumeration ImageTagType in Dynamsoft Core .NET Edition distinguishes between file-based and video-frame-based image tags.

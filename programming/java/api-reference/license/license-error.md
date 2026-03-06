@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: LicenseError Class - Dynamsoft License Module Java Edition API Reference
 description: API reference for the LicenseError class in Dynamsoft License Module Java Edition, which defines error codes specific to the License module.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CCapturedResultBase - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CCapturedResultBase class in Dynamsoft Core C++ Edition, the abstract base class for all captured result collection classes.

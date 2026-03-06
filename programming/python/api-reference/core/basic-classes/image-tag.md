@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageTag Class - Dynamsoft Core Module Python Edition API Reference
 description: API reference for the ImageTag class in Dynamsoft Core Module Python Edition, the base class for storing metadata tags associated with images.

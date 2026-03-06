@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CapturedResultItemType - Dynamsoft Core Python Enumerations
 description: The enumeration CapturedResultItemType in Dynamsoft Core Python Edition lists all possible result item types produced by the capture process (barcode, text line, document quad, etc.).

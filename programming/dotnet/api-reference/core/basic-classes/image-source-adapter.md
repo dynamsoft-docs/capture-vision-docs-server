@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageSourceAdapter Class - Dynamsoft Core Module .NET Edition API Reference
 description: API reference for the ImageSourceAdapter class in Dynamsoft Core Module .NET Edition, the abstract base class for providing images to the CaptureVisionRouter.

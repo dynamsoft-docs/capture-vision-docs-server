@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CPresetTemplate - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the CPresetTemplate class in Dynamsoft Capture Vision C++ Edition, providing string constants for built-in preset template names.

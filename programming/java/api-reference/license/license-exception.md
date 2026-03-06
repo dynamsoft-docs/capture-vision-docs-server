@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: LicenseException Class - Dynamsoft License Module Java Edition API Reference
 description: API reference for the LicenseException class in Dynamsoft License Module Java Edition, the exception class for license-related errors.

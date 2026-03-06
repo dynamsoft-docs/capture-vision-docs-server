@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CaptureVisionRouter Single-File Processing Methods - Dynamsoft Capture Vision Router Module Java Edition API Reference
 description: API reference for the single-file processing methods of the CaptureVisionRouter class in Dynamsoft Capture Vision Java Edition.

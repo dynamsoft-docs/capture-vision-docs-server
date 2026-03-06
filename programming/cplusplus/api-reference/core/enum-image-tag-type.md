@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageTagType - Dynamsoft Core Enumerations
 description: Reference for the ImageTagType enumeration in Dynamsoft Core C++ Edition, distinguishing between file-based and video-frame-based image tags.

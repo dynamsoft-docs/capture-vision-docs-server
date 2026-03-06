@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: LicenseManager Class - Dynamsoft License Module .NET Edition API Reference
 description: API reference for the LicenseManager class in Dynamsoft License Module .NET Edition, which handles license initialization and management.

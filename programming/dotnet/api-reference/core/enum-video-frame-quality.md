@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: VideoFrameQuality - Dynamsoft Core .NET Enumerations
 description: The enumeration VideoFrameQuality in Dynamsoft Core .NET Edition classifies video frame quality (high or low) to control which frames are processed.

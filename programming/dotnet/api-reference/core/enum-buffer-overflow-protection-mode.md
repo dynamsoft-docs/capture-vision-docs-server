@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: BufferOverflowProtectionMode - Dynamsoft Core .NET Enumerations
 description: The enumeration BufferOverflowProtectionMode in Dynamsoft Core .NET Edition describes the strategy applied when the ImageSourceAdapter image buffer overflows (ignore new or update oldest).

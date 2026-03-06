@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CapturedResult Array - Dynamsoft Capture Vision Module Java Edition API Reference
 description: API reference for the CapturedResult array in Dynamsoft Capture Vision Java Edition, which holds an array of captured results from batch processing.

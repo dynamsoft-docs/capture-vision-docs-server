@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CCaptureStateListener - Dynamsoft Capture Vision C++ Edition API Reference
 description: API reference for the CCaptureStateListener class in Dynamsoft Capture Vision C++ Edition, a callback interface notified when the capture state changes.

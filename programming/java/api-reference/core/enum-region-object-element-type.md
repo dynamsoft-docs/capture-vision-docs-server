@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: RegionObjectElementType - Dynamsoft Core Java Enumerations
 description: The enumeration RegionObjectElementType in Dynamsoft Core Java Edition lists the types of region object elements (localized, recognized, etc.).

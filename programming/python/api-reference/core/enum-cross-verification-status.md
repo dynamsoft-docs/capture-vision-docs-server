@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: CrossVerificationStatus - Dynamsoft Core Enumerations
 description: The enumeration CrossVerificationStatus in Dynamsoft Core Python Edition indicates whether a captured result has been cross-verified across multiple frames.

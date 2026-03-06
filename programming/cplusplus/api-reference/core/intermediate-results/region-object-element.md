@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: class CRegionObjectElement - Dynamsoft Core Module C++ Edition API Reference
 description: API reference for the CRegionObjectElement class in Dynamsoft Core C++ Edition, the abstract base class for all region-based result elements with location and transform data.

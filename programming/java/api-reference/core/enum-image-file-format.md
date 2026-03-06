@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default-layout
 title: ImageFileFormat - Dynamsoft Core Java Enumerations
 description: The enumeration ImageFileFormat in Dynamsoft Core Java Edition lists the supported image file formats (JPEG, PNG, BMP, PDF, etc.).
