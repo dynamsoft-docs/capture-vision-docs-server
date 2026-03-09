@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Class- Dynamsoft Capture Vision Router Module Java Edition API Reference
-description: This page is about the CaptureVisionRouter Class of Dynamsoft Capture Vision Router Module Java Edition.
+description: API reference for the CaptureVisionRouter class in Dynamsoft Capture Vision Java Edition, the central class for managing image capture and recognition workflows.
 keywords: capture vision router, router, java, api reference
 ---
 

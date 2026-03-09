@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Intermediate Result - Dynamsoft Capture Vision Python Edition API
-description: This page introduces the method to return an Intermediate Result Manager. An API of the CaptureVisionRouter class of Dynamsoft Capture Vision Python Edition.
+description: API reference for the intermediate result method of the CaptureVisionRouter class in Dynamsoft Capture Vision Python Edition, which returns an IntermediateResultManager instance.
 keywords: capture vision, intermediate result, instance, api reference, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

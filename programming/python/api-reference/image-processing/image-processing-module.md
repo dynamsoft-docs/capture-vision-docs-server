@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ImageProcessingModule Class - Dynamsoft Capture Vision Module Python Edition API Reference
-description: Definition of ImageProcessingModule class in Dynamsoft Image Processing Module Python Edition.
+description: API reference for the ImageProcessingModule class in Dynamsoft Image Processing Module Python Edition, which provides general functions for the Image Processing module.
 keywords: image processing module, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

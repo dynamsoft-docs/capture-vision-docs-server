@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ImageProcessingModule Class - Dynamsoft Capture Vision Module Java Edition API Reference
-description: Definition of ImageProcessingModule class in Dynamsoft Image Processing Module Java Edition.
+description: API reference for the ImageProcessingModule class in Dynamsoft Image Processing Module Java Edition, which provides general functions for the Image Processing module.
 keywords: image processing module, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

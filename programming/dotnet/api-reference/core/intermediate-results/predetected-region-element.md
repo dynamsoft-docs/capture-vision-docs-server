@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class PredetectedRegionElement - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class PredetectedRegionElement in Dynamsoft Core Module.
+description: API reference for the PredetectedRegionElement class in Dynamsoft Core Module .NET Edition, which represents a pre-detected region element identified before further processing.
 keywords: predetected region element, .NET
 needAutoGenerateSidebar: true
 ---

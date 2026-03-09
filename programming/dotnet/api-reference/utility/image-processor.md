@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ImageProcessor - Dynamsoft Utility Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class ImageProcessor in Dynamsoft Utility Module.
+description: API reference for the ImageProcessor class in Dynamsoft Utility Module .NET Edition, which provides methods for image processing operations.
 keywords: image processor, .NET
 needAutoGenerateSidebar: true
 ---

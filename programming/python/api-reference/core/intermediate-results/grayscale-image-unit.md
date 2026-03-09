@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class GrayscaleImageUnit - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class GrayscaleImageUnit in Dynamsoft Core Module.
+description: API reference for the GrayscaleImageUnit class in Dynamsoft Core Module Python Edition, which represents an intermediate result unit containing a grayscale image.
 keywords: grayscale image, python
 needAutoGenerateSidebar: true
 ---

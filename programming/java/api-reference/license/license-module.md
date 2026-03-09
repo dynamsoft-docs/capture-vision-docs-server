@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: LicenseModule Class - Dynamsoft Capture Vision Module Java Edition API Reference
-description: Definition of LicenseModule class in Dynamsoft License Module Java Edition.
+description: API reference for the LicenseModule class in Dynamsoft License Module Java Edition, which provides general functions for the License module.
 keywords: license module, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: FileFetcher Class - Dynamsoft Utility Module Java Edition API Reference
-description: Definition of FileFetcher class in Dynamsoft Utility Module Java Edition.
+description: API reference for the FileFetcher class in Dynamsoft Utility Module Java Edition, which loads image files from specified file paths as an image source.
 keywords: file fetcher, java
 needAutoGenerateSidebar: true
 ---

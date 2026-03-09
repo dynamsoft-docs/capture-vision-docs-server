@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: GrayscaleTransformationMode - Dynamsoft Core Java Enumerations
-description: The enumeration GrayscaleTransformationMode of Dynamsoft Core describes all available grayscale transformation modes.
+description: The enumeration GrayscaleTransformationMode in Dynamsoft Core Java Edition describes the transformations (invert or keep original) applied when converting a colour image to grayscale.
 keywords: Grayscale transformation modes
 codeAutoHeight: true
 ---

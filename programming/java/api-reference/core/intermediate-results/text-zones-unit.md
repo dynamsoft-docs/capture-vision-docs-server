@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TextZonesUnit - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the Java edition of the class TextZonesUnit in Dynamsoft Core Module.
+description: API reference for the TextZonesUnit class in Dynamsoft Core Module Java Edition, which represents an intermediate result unit containing detected text zones.
 keywords: text zones, java
 needAutoGenerateSidebar: true
 ---

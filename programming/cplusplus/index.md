@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Index - Dynamsoft Capture Vision C++ Edition
-description: The introduction of Dynamsoft Capture Vision C++ edition.
+description: Overview of Dynamsoft Capture Vision C++ Edition, including feature highlights, supported modules, system requirements, and links to the user guide, API reference, and release notes.
 keywords: API reference, index, c++
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CTextZonesUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CTextZonesUnit in Dynamsoft Core Module.
+description: API reference for the CTextZonesUnit class in Dynamsoft Core C++ Edition, an intermediate result unit holding detected text zones within the image.
 keywords: text zones, c++
 needAutoGenerateSidebar: true
 ---

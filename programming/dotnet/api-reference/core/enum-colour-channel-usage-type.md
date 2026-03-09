@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ColourChannelUsageType - Dynamsoft Core .NET Enumerations
-description: The enumeration ColourChannelUsageType describes how the color channel is used in the image for .NET Edition.
+description: The enumeration ColourChannelUsageType in Dynamsoft Core .NET Edition describes how colour channels are used during image processing.
 keywords: Corner type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

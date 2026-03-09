@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Buffered Items - Dynamsoft Capture Vision Router Module Java Edition API Reference
-description: Definition of CaptureVisionRouter class Buffered Items Processing Methods in Dynamsoft Capture Vision Router Module Java Edition.
+description: API reference for the buffered items processing methods of the CaptureVisionRouter class in Dynamsoft Capture Vision Java Edition.
 keywords: capture vision, buffered items, api reference, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

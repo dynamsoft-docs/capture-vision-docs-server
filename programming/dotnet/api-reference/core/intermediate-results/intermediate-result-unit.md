@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IntermediateResultUnit - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class IntermediateResultUnit in Dynamsoft Core Module.
+description: API reference for the IntermediateResultUnit class in Dynamsoft Core Module .NET Edition, the base class for all intermediate result units produced during image processing.
 keywords: intermediate result, .NET
 needAutoGenerateSidebar: true
 ---

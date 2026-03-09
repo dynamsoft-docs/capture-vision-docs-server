@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Class- Dynamsoft Capture Vision Router Module .NET Edition API Reference
-description: This page is about the CaptureVisionRouter Class of Dynamsoft Capture Vision Router Module .NET Edition.
+description: API reference for the CaptureVisionRouter class in Dynamsoft Capture Vision .NET Edition, the central class for managing image capture and recognition workflows.
 keywords: capture vision router, router, .NET, api reference
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

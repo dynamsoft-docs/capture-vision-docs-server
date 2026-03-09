@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Release Notes v3.x - Dynamsoft Capture Vision Bundle Java Edition
-description: This is the release notes page of Dynamsoft Capture Vision Bundle Java Edition v3.x.
+description: Release notes for Dynamsoft Capture Vision Bundle Java Edition v3.x, detailing new features, API changes, and bug fixes across all v3 releases.
 keywords: release notes, java
 needGenerateH3Content: false
 ---

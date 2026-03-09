@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IdentityProcessor - Dynamsoft Identity Utility Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class IdentityProcessor in Dynamsoft Identity Utility Module.
+description: API reference for the IdentityProcessor class in Dynamsoft Identity Utility Module .NET Edition, which provides methods for processing identity documents.
 keywords: identity processor, .NET
 ---
 

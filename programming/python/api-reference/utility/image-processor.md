@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ImageProcessor - Dynamsoft Utility Module Python Edition API Reference
-description: This page shows the Python Edition of the class ImageProcessor in Dynamsoft Utility Module.
+description: API reference for the ImageProcessor class in Dynamsoft Utility Module Python Edition, which provides methods for image processing operations.
 keywords: image processor, python
 needAutoGenerateSidebar: true
 ---

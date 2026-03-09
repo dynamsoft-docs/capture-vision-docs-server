@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CPresetTemplate - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CPresetTemplate in Dynamsoft Capture Vision Router Module.
+description: API reference for the CPresetTemplate class in Dynamsoft Capture Vision C++ Edition, providing string constants for built-in preset template names.
 keywords: preset template, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ScaledColourImageUnit - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the Java edition of the class ScaledColourImageUnit in Dynamsoft Core Module.
+description: API reference for the ScaledColourImageUnit class in Dynamsoft Core Module Java Edition, which represents an intermediate result unit containing a scaled colour image.
 keywords: scaled colour image, java
 needAutoGenerateSidebar: true
 ---

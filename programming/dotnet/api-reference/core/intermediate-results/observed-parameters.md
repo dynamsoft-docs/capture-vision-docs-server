@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ObservationParameters - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class ObservationParameters in Dynamsoft Core Module.
+description: API reference for the ObservationParameters class in Dynamsoft Core Module .NET Edition, which configures what intermediate result types are observed and passed to the IntermediateResultReceiver.
 keywords: intermediate result, .NET
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IntermediateResultExtraInfo - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the Java edition of the class IntermediateResultExtraInfo in Dynamsoft Core Module.
+description: API reference for the IntermediateResultExtraInfo class in Dynamsoft Core Module Java Edition, which provides extra metadata about an intermediate result unit.
 keywords: intermediate result, java
 needAutoGenerateSidebar: true
 ---

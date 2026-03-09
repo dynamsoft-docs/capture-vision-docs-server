@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: C++ User Guide - Dynamsoft Capture Vision
-description: This is the user guide page of Dynamsoft Capture Vision for C++ Language.
+description: Index page for Dynamsoft Capture Vision C++ Edition user guide, linking to document scanner, MRZ scanner, and other scenario guides.
 keywords: c++, user guide
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

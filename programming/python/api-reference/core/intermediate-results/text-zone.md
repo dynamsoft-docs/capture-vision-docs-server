@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TextZone- Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class TextZone in Dynamsoft Core Module.
+description: API reference for the TextZone class in Dynamsoft Core Module Python Edition, which represents a detected text zone region within an image.
 keywords: text zones, python
 needAutoGenerateSidebar: true
 ---

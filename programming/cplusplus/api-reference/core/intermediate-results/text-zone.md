@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CTextZone- Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CTextZone in Dynamsoft Core Module.
+description: API reference for the CTextZone class in Dynamsoft Core C++ Edition, representing a single detected text zone with its location and character count hint.
 keywords: text zones, c++
 needAutoGenerateSidebar: true
 ---

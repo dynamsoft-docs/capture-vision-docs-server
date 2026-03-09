@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ErrorCode - Dynamsoft Core Java Enumerations
-description: The enumeration ErrorCode of Dynamsoft Core describes all error codes.
+description: The enumeration ErrorCode in Dynamsoft Core Java Edition lists all error codes returned by Dynamsoft Capture Vision SDK operations.
 keywords: Error code
 codeAutoHeight: true
 ---

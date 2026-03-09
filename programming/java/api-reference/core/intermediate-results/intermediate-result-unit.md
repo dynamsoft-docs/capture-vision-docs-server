@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IntermediateResultUnit - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the java edition of the class IntermediateResultUnit in Dynamsoft Core Module.
+description: API reference for the IntermediateResultUnit class in Dynamsoft Core Module Java Edition, the base class for all intermediate result units produced during image processing.
 keywords: intermediate result, java
 ---
 

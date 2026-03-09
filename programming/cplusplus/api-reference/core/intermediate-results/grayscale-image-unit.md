@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CGrayscaleImageUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CGrayscaleImageUnit in Dynamsoft Core Module.
+description: API reference for the CGrayscaleImageUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing the grayscale-converted image.
 keywords: grayscale image, c++
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: FileImageTag Class - Dynamsoft Core Module Python Edition API Reference
-description: Definition of FileImageTag class in Dynamsoft Core Module Python Edition.
+description: API reference for the FileImageTag class in Dynamsoft Core Module Python Edition, which stores image tag information for file-sourced images including file path and page index.
 keywords: file image tag, python
 needAutoGenerateSidebar: true
 ---

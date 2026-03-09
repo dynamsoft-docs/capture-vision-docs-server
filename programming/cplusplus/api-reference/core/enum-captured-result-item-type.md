@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CapturedResultItemType - Dynamsoft Core Enumerations
-description: The enumeration CapturedResultItemType of Dynamsoft Core describes all types of captured result item.
+description: Reference for the CapturedResultItemType enumeration in Dynamsoft Core C++ Edition, listing all possible result item types (barcode, text line, document quad, etc.).
 keywords: Captured result types
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

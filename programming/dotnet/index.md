@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Index - Dynamsoft Capture Vision .NET Edition
-description: The introduction of Dynamsoft Capture Vision .NET Edition.
+description: Overview of Dynamsoft Capture Vision .NET Edition, covering feature highlights, system requirements, and links to the user guide, API reference, and release notes.
 keywords: API reference, index, .NET
 needAutoGenerateSidebar: true
 ---
@@ -45,7 +45,7 @@ The best way to begin with Dynamsoft Capture Vision .NET Edition is to follow th
 
 - Supported .NET versions
   - .NET Framework 3.5 and above
-  - .NET 6, 7, 8
+  - .NET 6 and above
 
 > [!NOTE]
 > Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.

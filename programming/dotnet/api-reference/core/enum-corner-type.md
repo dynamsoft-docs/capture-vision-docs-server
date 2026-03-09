@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CornerType - Dynamsoft Core .NET Enumerations
-description: The enumeration CornerType describes how the corner is formed by its sides for .NET Edition.
+description: The enumeration CornerType in Dynamsoft Core .NET Edition describes how a corner is geometrically formed by its two sides.
 keywords: Corner type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class LineSegmentsUnit - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class LineSegmentsUnit in Dynamsoft Core Module.
+description: API reference for the LineSegmentsUnit class in Dynamsoft Core Module .NET Edition, which represents an intermediate result unit containing detected line segments.
 keywords: line segments, .NET
 needAutoGenerateSidebar: true
 ---

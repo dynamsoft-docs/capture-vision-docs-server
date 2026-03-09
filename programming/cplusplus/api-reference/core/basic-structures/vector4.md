@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CVector4 - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CVector4 in Dynamsoft Core Module.
+description: API reference for the CVector4 class in Dynamsoft Core C++ Edition, representing a 4-element integer vector used for transform matrix data.
 keywords: vector4, c++
 needAutoGenerateSidebar: true
 ---

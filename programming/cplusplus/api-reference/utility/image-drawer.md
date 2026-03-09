@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CImageDrawer - Dynamsoft Utility Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CImageDrawer in Dynamsoft Utility Module.
+description: API reference for the CImageDrawer class in Dynamsoft Utility C++ Edition, providing methods to draw result overlays (bounding boxes, text) onto images.
 keywords: image drawer, drawing on image, c++
 needAutoGenerateSidebar: true
 ---

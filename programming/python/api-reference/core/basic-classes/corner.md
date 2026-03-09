@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class Corner - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class Corner in Dynamsoft Core Module.
+description: API reference for the Corner class in Dynamsoft Core Module Python Edition, which represents a corner point formed by two line segments.
 keywords: corner, python
 needAutoGenerateSidebar: true
 ---

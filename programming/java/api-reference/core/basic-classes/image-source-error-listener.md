@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ImageSourceErrorListener Class - Dynamsoft Capture Vision Module Java Edition API Reference
-description: Definition of ImageSourceErrorListener class in Dynamsoft Core Module Java Edition.
+description: API reference for the ImageSourceErrorListener interface in Dynamsoft Core Module Java Edition, which receives error notifications from the image source.
 keywords: imagesource error listener, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

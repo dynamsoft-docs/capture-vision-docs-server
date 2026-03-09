@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: .NET Edition User Guide Index
-description: This is the user guide page of MRZ Scanner for .NET.
+description: A step-by-step guide to building an MRZ scanner application with Dynamsoft Capture Vision .NET Edition.
 keywords: user guide index, .NET
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Intermediate Result - Dynamsoft Capture Vision C++ Edition API
-description: This page introduces the method to return an Intermediate Result Manager. An API of the CCaptureVisionRouter class of Dynamsoft Capture Vision C++ Edition.
+description: API reference for the intermediate result method of CCaptureVisionRouter in Dynamsoft Capture Vision C++ Edition, returning the IntermediateResultManager for accessing processing intermediates.
 keywords: capture vision, intermediate result, instance, api reference, C++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CIdentityProcessor - Dynamsoft Identity Utility Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CIdentityProcessor in Dynamsoft Identity Utility Module.
+description: API reference for the CIdentityProcessor class in Dynamsoft Identity Utility C++ Edition, providing methods for identity document processing and field extraction.
 keywords: identity processor, c++
 ---
 

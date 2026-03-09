@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class Corner - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class Corner in Dynamsoft Core Module.
+description: API reference for the Corner class in Dynamsoft Core Module .NET Edition, which represents a corner point formed by two line segments.
 keywords: corner, .NET
 needAutoGenerateSidebar: true
 ---

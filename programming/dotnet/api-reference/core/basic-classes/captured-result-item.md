@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CapturedResultItem Class - Dynamsoft Core Module .NET Edition API Reference
-description: Definition of CapturedResultItem class in Dynamsoft Core Module .NET Edition.
+description: API reference for the CapturedResultItem class in Dynamsoft Core Module .NET Edition, the base class for all types of captured result items.
 keywords: captured result item, .NET
 needAutoGenerateSidebar: true
 ---

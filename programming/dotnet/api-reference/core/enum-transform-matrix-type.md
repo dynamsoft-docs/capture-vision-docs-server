@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: TransformMatrixType - Dynamsoft Core .NET Enumerations
-description: The enumeration TransformMatrixType describes transform matrix types for .NET Edition.
+description: The enumeration TransformMatrixType in Dynamsoft Core .NET Edition lists transformation matrix types used to convert between local and original image coordinate systems.
 keywords: Target type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

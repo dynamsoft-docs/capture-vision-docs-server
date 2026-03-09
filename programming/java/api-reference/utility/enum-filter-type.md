@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: FilterType - Dynamsoft Utility Enumerations
-description: The enumeration FilterType of Dynamsoft Utility describes the specified image filter applied to an input image.
+description: The enumeration FilterType in Dynamsoft Utility Java Edition specifies the type of image filter applied during image processing operations.
 keywords: image filter
 codeAutoHeight: true
 ---

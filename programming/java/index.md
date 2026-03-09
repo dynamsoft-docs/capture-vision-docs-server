@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Index - Dynamsoft Capture Vision Java Edition
-description: The introduction of Dynamsoft Capture Vision Java Edition.
+description: Overview of Dynamsoft Capture Vision Java Edition, covering feature highlights, system requirements, and links to the user guide, API reference, and release notes.
 keywords: API reference, index, java
 needAutoGenerateSidebar: true
 ---

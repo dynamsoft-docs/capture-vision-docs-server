@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IdentityProcessor - Dynamsoft Identity Utility Module Python Edition API Reference
-description: This page shows the Python edition of the class IdentityProcessor in Dynamsoft Identity Utility Module.
+description: API reference for the IdentityProcessor class in Dynamsoft Identity Utility Module Python Edition, which provides methods for processing identity documents.
 keywords: identity processor, python
 ---
 

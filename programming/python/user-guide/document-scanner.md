@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: User Guide for Document Scanner with Python
-description: This is the user guide page of Document Scanner for Python Edition.
+description: A step-by-step guide to building a document scanner application with Dynamsoft Capture Vision Python Edition.
 keywords: user guide, document scanner, python
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ContoursUnit - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the Java edition of the class ContoursUnit in Dynamsoft Core Module.
+description: API reference for the ContoursUnit class in Dynamsoft Core Module Java Edition, which represents an intermediate result unit containing detected contours.
 keywords: contours, java
 needAutoGenerateSidebar: true
 ---

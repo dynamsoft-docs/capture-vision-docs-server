@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Single-File Processing Methods - Dynamsoft Capture Vision Router Module .NET Edition API Reference
-description: Definition of CaptureVisionRouter class Single-File Processing Methods in Dynamsoft Capture Vision Router Module .NET Edition.
+description: API reference for the single-file processing methods of the CaptureVisionRouter class in Dynamsoft Capture Vision .NET Edition.
 keywords: capture vision, capture, image processing, api reference, .NET, single-file
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

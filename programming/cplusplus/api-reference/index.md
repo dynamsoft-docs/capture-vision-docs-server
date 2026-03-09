@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Index - Dynamsoft Capture Vision C++ Edition API Reference
-description: The index of Dynamsoft Capture Vision C++ edition API reference.
+description: Full API reference index for Dynamsoft Capture Vision C++ Edition, listing all classes and enumerations across the CaptureVisionRouter, Core, Utility, License, and other modules.
 keywords: API reference, index, c++
 needAutoGenerateSidebar: false
 ---

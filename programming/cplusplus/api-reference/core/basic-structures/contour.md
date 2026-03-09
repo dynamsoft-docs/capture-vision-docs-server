@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CContour - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CContour in Dynamsoft Core Module.
+description: API reference for the CContour class in Dynamsoft Core C++ Edition, representing a contour as a set of points outlining the boundary of a detected region.
 keywords: contour, c++
 needAutoGenerateSidebar: true
 ---

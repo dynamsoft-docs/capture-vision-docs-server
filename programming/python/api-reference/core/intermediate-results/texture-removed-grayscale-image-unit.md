@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TextureRemovedGrayscaleImageUnit - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class TextureRemovedGrayscaleImageUnit in Dynamsoft Core Module.
+description: API reference for the TextureRemovedGrayscaleImageUnit class in Dynamsoft Core Module Python Edition, which represents an intermediate result unit containing a grayscale image with texture removed.
 keywords: text removed grayscale image, python
 needAutoGenerateSidebar: true
 ---

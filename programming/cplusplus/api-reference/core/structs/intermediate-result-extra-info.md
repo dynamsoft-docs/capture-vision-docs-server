@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: struct IntermediateResultExtraInfo - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the struct IntermediateResultExtraInfo in Dynamsoft Core Module.
+description: API reference for the IntermediateResultExtraInfo struct in Dynamsoft Core C++ Edition, storing supplementary metadata (task name, section type, stage) for intermediate results.
 keywords: intermediate result, c++
 needAutoGenerateSidebar: true
 ---

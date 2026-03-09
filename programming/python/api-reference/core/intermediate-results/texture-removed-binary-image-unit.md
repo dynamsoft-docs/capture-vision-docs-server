@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TextureRemovedBinaryImageUnit - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class TextureRemovedBinaryImageUnit in Dynamsoft Core Module.
+description: API reference for the TextureRemovedBinaryImageUnit class in Dynamsoft Core Module Python Edition, which represents an intermediate result unit containing a binary image with texture removed.
 keywords: texture removed binary image, python
 needAutoGenerateSidebar: true
 ---

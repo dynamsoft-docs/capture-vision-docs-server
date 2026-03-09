@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CLineSegmentsUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CLineSegmentsUnit in Dynamsoft Core Module.
+description: API reference for the CLineSegmentsUnit class in Dynamsoft Core C++ Edition, an intermediate result unit holding all detected line segments in the image.
 keywords: line segments, c++
 needAutoGenerateSidebar: true
 ---

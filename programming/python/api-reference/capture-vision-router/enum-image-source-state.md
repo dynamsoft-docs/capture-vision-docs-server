@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ImageSourceState - Dynamsoft Vision Router Python Enumerations
-description: The enumeration ImageSourceState of Dynamsoft Vision Router describes the state of ImageSourceAdapter.
+description: The enumeration ImageSourceState in Dynamsoft Capture Vision Python Edition describes the possible states of the ImageSourceAdapter (exhausted or buffered).
 keywords: Image source state
 codeAutoHeight: true
 ---

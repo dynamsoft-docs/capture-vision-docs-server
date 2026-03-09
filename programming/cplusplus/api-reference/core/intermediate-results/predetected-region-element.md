@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CPredetectedRegionElement - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CPredetectedRegionElement in Dynamsoft Core Module.
+description: API reference for the CPredetectedRegionElement class in Dynamsoft Core C++ Edition, representing a pre-detected region of interest found in an image.
 keywords: predetected region element, c++
 needAutoGenerateSidebar: true
 ---

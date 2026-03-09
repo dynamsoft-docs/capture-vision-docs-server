@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: User Guide for MRZ Scanner with C++
-description: This is the user guide page of MRZ Scanner for C++ Language.
+description: Step-by-step guide to building an MRZ (Machine Readable Zone) scanning application with Dynamsoft Capture Vision C++ Edition.
 keywords: c++, user guide
 ---
 

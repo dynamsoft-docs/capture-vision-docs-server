@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: SimplifiedCaptureVisionSettings Class - Dynamsoft Capture Vision Module .NET Edition API Reference
-description: Definition of SimplifiedCaptureVisionSettings class in Dynamsoft Capture Vision Module .NET Edition.
+description: API reference for the SimplifiedCaptureVisionSettings class (v10.4.2000) in Dynamsoft Capture Vision .NET Edition, which contains simplified configuration options for capture tasks.
 keywords: class, .NET, SimplifiedCaptureVisionSettings
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

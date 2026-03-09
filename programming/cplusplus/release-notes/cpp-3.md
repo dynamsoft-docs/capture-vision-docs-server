@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Release Notes v3.x - Dynamsoft Capture Vision Bundle C++ Edition
-description: This is the release notes page of Dynamsoft Capture Vision Bundle C++ Edition v3.x.
+description: Release notes for Dynamsoft Capture Vision Bundle C++ Edition v3.x, covering new features, AI model updates, and bug fixes.
 keywords: release notes, C++
 needGenerateH3Content: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class Contour - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class Contour in Dynamsoft Core Module.
+description: API reference for the Contour class in Dynamsoft Core Module .NET Edition, which represents a contour composed of a set of points.
 keywords: contour, .NET
 needAutoGenerateSidebar: true
 ---

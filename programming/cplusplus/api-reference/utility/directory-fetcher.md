@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CDirectoryFetcher - Dynamsoft Utility Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CDirectoryFetcher in Dynamsoft Utility Module.
+description: API reference for the CDirectoryFetcher class in Dynamsoft Utility C++ Edition, providing an image source adapter that feeds image files from a specified directory into the capture pipeline.
 keywords: directory fetcher, c++
 needAutoGenerateSidebar: true
 ---

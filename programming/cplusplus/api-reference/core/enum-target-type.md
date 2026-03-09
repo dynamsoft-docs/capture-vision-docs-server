@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: TargetType - Dynamsoft Core Enumerations
-description: The enumeration TargetType of Dynamsoft Core describes target types.
+description: Reference for the TargetType enumeration in Dynamsoft Core C++ Edition, specifying the type of capture target (page or object).
 keywords: Target type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class Vector4 - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the java edition of the class Vector4 in Dynamsoft Core Module.
+description: API reference for the Vector4 class in Dynamsoft Core Module Java Edition, which represents a 4-element vector used for transformation matrices.
 keywords: vector4, java
 needAutoGenerateSidebar: true
 ---

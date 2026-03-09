@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ProactiveImageSourceAdapter Class - Dynamsoft Utility Module Java Edition API Reference
-description: Definition of ProactiveImageSourceAdapter class in Dynamsoft Utility Module Java Edition.
+description: API reference for the ProactiveImageSourceAdapter class in Dynamsoft Utility Module Java Edition, which actively fetches images at defined intervals for processing.
 keywords: proactive image source adapter, java
 needAutoGenerateSidebar: true
 ---

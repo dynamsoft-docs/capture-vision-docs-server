@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TextZonesUnit - Dynamsoft Core Module Python Edition API Reference
-description: This page shows the python edition of the class TextZonesUnit in Dynamsoft Core Module.
+description: API reference for the TextZonesUnit class in Dynamsoft Core Module Python Edition, which represents an intermediate result unit containing detected text zones.
 keywords: text zones, python
 needAutoGenerateSidebar: true
 ---

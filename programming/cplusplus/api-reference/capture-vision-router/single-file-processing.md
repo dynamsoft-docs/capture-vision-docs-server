@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Single-File Processing - Dynamsoft Capture Vision C++ Edition API
-description: This page introduces APIs related to Single-File Processing by the CCaptureVisionRouter class of the Dynamsoft Capture Vision C++ Edition.
+description: API reference for single-file processing methods of CCaptureVisionRouter in Dynamsoft Capture Vision C++ Edition, including capture and decode operations on individual images or files.
 keywords: capture vision, capture, image processing, api reference, C++, single-file
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

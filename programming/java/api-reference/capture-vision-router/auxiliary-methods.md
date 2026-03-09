@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Auxiliary Methods - Dynamsoft Capture Vision Java Edition API
-description: This page introduces auxiliary methods of the CaptureVisionRouter class of the Dynamsoft Capture Vision Java Edition.
+description: API reference for auxiliary methods of the CaptureVisionRouter class in Dynamsoft Capture Vision Java Edition.
 keywords: capture vision, auxiliary, instance, api reference, Java
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ImageFileFormat - Dynamsoft Core .NET Enumerations
-description: The enumeration ImageFileFormat describes the format of image files for .NET Edition.
+description: The enumeration ImageFileFormat in Dynamsoft Core .NET Edition lists the supported image file formats (JPEG, PNG, BMP, PDF, etc.).
 keywords: Image file format
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

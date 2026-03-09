@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CapturedResultItem Class - Dynamsoft Core Module Java Edition API Reference
-description: Definition of CapturedResultItem class in Dynamsoft Core Module Java Edition.
+description: API reference for the CapturedResultItem class in Dynamsoft Core Module Java Edition, the base class for all types of captured result items.
 keywords: captured result item, java
 needAutoGenerateSidebar: true
 ---

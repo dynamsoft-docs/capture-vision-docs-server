@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CTextureRemovedGrayscaleImageUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CTextureRemovedGrayscaleImageUnit in Dynamsoft Core Module.
+description: API reference for the CTextureRemovedGrayscaleImageUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing the grayscale image with background texture removed.
 keywords: text removed grayscale image, c++
 needAutoGenerateSidebar: true
 ---

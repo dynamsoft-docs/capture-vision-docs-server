@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IdentityUtilityModule - Dynamsoft Identity Utility Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class IdentityUtilityModule in Dynamsoft Identity Utility Module.
+description: API reference for the IdentityUtilityModule class in Dynamsoft Identity Utility Module .NET Edition, which provides general functions for the Identity Utility module.
 keywords: identity utility module, .NET
 ---
 

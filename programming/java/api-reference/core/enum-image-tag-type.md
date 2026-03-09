@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ImageTagType - Dynamsoft Core Java Enumerations
-description: The enumeration ImageTagType of Dynamsoft Core describes the types of image tags.
+description: The enumeration ImageTagType in Dynamsoft Core Java Edition distinguishes between file-based and video-frame-based image tags.
 keywords: Image tag type
 codeAutoHeight: true
 ---

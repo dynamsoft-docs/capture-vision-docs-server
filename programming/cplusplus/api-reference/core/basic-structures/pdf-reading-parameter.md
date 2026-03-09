@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CPDFReadingParameter - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CPDFReadingParameter in Dynamsoft Core Module.
+description: API reference for the CPDFReadingParameter class in Dynamsoft Core C++ Edition, configuring PDF reading mode, DPI, and raster data source for PDF processing.
 keywords: pdf reading parameter, c++
 needAutoGenerateSidebar: true
 ---

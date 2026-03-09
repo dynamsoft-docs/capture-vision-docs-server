@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CRawImageResultItem - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CRawImageResultItem in Dynamsoft Capture Vision Router Module.
+description: API reference for the CRawImageResultItem class in Dynamsoft Core C++ Edition, a captured result item containing raw image data with its associated tag.
 keywords: raw image, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

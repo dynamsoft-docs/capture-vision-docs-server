@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Python Edition User Guide Index
-description: This is the user guide index page of Dynamsoft Capture Vision Python Edition.
+description: Index page for the Dynamsoft Capture Vision Python Edition user guide, linking to getting started, document scanner, and MRZ scanner tutorials.
 keywords: user guide index, python
 ---
 

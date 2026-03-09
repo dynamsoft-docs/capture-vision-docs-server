@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CAuxiliaryRegionElement - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CAuxiliaryRegionElement in Dynamsoft Core Module.
+description: API reference for the CAuxiliaryRegionElement class in Dynamsoft Core C++ Edition, representing an auxiliary region element used for supplementary spatial analysis.
 keywords: auxiliary region element, c++
 ---
 

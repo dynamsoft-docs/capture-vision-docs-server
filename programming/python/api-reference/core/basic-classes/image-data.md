@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ImageData Class - Dynamsoft Core Module Python Edition API Reference
-description: Definition of ImageData class in Dynamsoft Core Module Python Edition.
+description: API reference for the ImageData class in Dynamsoft Core Module Python Edition, which holds image pixel data along with width, height, stride, and pixel format information.
 keywords: image data, python
 needAutoGenerateSidebar: true
 ---

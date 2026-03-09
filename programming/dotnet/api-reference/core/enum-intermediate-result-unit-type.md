@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: IntermediateResultUnitType - Dynamsoft Core .NET Enumerations
-description: The enumeration IntermediateResultUnitType describes the type of the intermediate result unit for .NET Edition.
+description: The enumeration IntermediateResultUnitType in Dynamsoft Core .NET Edition lists all types of intermediate result units produced during image processing.
 keywords: Intermediate result unit type
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

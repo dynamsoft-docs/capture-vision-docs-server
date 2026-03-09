@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TextureDetectionResultUnit - Dynamsoft Core Module .NET Edition API Reference
-description: This page shows the .NET Edition of the class TextureDetectionResultUnit in Dynamsoft Core Module.
+description: API reference for the TextureDetectionResultUnit class in Dynamsoft Core Module .NET Edition, which represents an intermediate result unit containing texture detection results.
 keywords: texture detection result, .NET
 needAutoGenerateSidebar: true
 ---

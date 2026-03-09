@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CCapturedResult - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCapturedResult in Dynamsoft Capture Vision Router Module.
+description: API reference for the CCapturedResult class in Dynamsoft Capture Vision C++ Edition, representing the collection of all result items from a single image capture.
 keywords: captured result, c++
 needAutoGenerateSidebar: true
 ---

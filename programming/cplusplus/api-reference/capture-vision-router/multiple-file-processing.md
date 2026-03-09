@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Multiple-File Processing - Dynamsoft Capture Vision Router Module C++ Edition API
-description: This page introduces APIs related to Multiple-File Processing by the CCaptureVisionRouter class of the Dynamsoft Capture Vision C++ Edition.
+description: API reference for multiple-file processing methods of CCaptureVisionRouter in Dynamsoft Capture Vision C++ Edition, covering start/stop capture and image source management.
 keywords: capture vision, multiple-file processing, api reference, C++
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

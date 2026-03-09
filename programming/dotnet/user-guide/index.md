@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: .NET Edition User Guide Index
-description: This is the user guide index page of Dynamsoft Capture Vision .NET Edition.
+description: Index page for the Dynamsoft Capture Vision .NET Edition user guide, linking to getting started, document scanner, and MRZ scanner tutorials.
 keywords: user guide index, .NET
 ---
 

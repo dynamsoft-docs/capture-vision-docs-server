@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Index - Dynamsoft Capture Vision Module Python Edition API Reference
-description: The index of Dynamsoft Capture Vision Python Edition API reference.
+description: Full API reference index for Dynamsoft Capture Vision Python Edition, listing all classes, interfaces, and enumerations across the CVR, Core, License, Utility, and other modules.
 keywords: API reference, index, python
 needAutoGenerateSidebar: false
 ---

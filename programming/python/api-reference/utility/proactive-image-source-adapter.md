@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ProactiveImageSourceAdapter Class - Dynamsoft Utility Module Python Edition API Reference
-description: Definition of ProactiveImageSourceAdapter class in Dynamsoft Utility Module Python Edition.
+description: API reference for the ProactiveImageSourceAdapter class in Dynamsoft Utility Module Python Edition, which actively fetches images at defined intervals for processing.
 keywords: proactive image source adapter, python
 needAutoGenerateSidebar: true
 ---

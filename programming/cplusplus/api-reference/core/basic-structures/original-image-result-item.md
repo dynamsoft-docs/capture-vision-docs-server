@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class COriginalImageResultItem - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class COriginalImageResultItem in Dynamsoft Capture Vision Router Module.
+description: API reference for the COriginalImageResultItem class in Dynamsoft Core C++ Edition, a captured result item containing the original image that was processed.
 keywords: original image, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

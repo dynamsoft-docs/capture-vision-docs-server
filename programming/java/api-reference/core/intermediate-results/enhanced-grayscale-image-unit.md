@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class EnhancedGrayscaleImageUnit - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the Java edition of the class EnhancedGrayscaleImageUnit in Dynamsoft Core Module.
+description: API reference for the EnhancedGrayscaleImageUnit class in Dynamsoft Core Module Java Edition, which represents an intermediate result unit containing an enhanced grayscale image.
 keywords: enhanced grayscale image, java
 needAutoGenerateSidebar: true
 ---

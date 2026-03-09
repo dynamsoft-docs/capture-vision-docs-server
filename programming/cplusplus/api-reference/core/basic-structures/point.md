@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CPoint - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CPoint in Dynamsoft Core Module.
+description: API reference for the CPoint class in Dynamsoft Core C++ Edition, representing a 2D coordinate point with x and y values.
 keywords: point, c++
 needAutoGenerateSidebar: true
 ---

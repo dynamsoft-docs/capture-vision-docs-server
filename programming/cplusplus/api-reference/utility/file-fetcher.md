@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CFileFetcher - Dynamsoft Utility Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CFileFetcher in Dynamsoft Utility Module.
+description: API reference for the CFileFetcher class in Dynamsoft Utility C++ Edition, providing an image source adapter that feeds a single image file into the capture pipeline.
 keywords: file fetcher, c++
 needAutoGenerateSidebar: true
 ---

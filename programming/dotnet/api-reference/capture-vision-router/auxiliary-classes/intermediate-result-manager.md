@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class IntermediateResultManager - Dynamsoft Capture Vision Router .NET Edition API Reference
-description: This page shows the .NET Edition of the class IntermediateResultManager in Dynamsoft Capture Vision Router Module.
+description: API reference for the IntermediateResultManager class in Dynamsoft Capture Vision .NET Edition, which manages access to intermediate results during image processing.
 keywords: intermediate result manager, .NET
 needAutoGenerateSidebar: true
 ---

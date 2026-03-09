@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: PresetTemplate - Dynamsoft Vision Router Java Enumerations
-description: The enumeration PresetTemplate of Dynamsoft Vision Router describes the preset template.
+description: The enumeration PresetTemplate in Dynamsoft Capture Vision Java Edition lists the built-in preset templates available for common capture scenarios.
 keywords: Capture state
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: GrayscaleTransformationMode - Dynamsoft Core .NET Enumerations
-description: The enumeration GrayscaleTransformationMode describes all available grayscale transformation modes for .NET Edition.
+description: The enumeration GrayscaleTransformationMode in Dynamsoft Core .NET Edition describes the transformations (invert or keep original) applied when converting a colour image to grayscale.
 keywords: Grayscale transformation modes
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

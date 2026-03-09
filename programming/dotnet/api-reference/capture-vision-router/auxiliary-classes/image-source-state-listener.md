@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: IImageSourceStateListener Interface - Dynamsoft Capture Vision Router Module .NET Edition API Reference
-description: Definition of IImageSourceStateListener interface in Dynamsoft Capture Vision Module .NET Edition.
+description: API reference for the IImageSourceStateListener interface in Dynamsoft Capture Vision .NET Edition, which receives notifications when the image source state changes.
 keywords: image source state listener, .NET
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

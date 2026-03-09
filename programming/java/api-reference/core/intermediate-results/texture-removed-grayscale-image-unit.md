@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class TextureRemovedGrayscaleImageUnit - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the Java edition of the class TextureRemovedGrayscaleImageUnit in Dynamsoft Core Module.
+description: API reference for the TextureRemovedGrayscaleImageUnit class in Dynamsoft Core Module Java Edition, which represents an intermediate result unit containing a grayscale image with texture removed.
 keywords: text removed grayscale image, java
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class ObservationParameters - Dynamsoft Core Module Java Edition API Reference
-description: This page shows the java edition of the class ObservationParameters in Dynamsoft Core Module.
+description: API reference for the ObservationParameters class in Dynamsoft Core Module Java Edition, which configures what intermediate result types are observed and passed to the receiver.
 keywords: intermediate result, java
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CProactiveImageSourceAdapter - Dynamsoft Utility Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CProactiveImageSourceAdapter in Dynamsoft Utility Module.
+description: API reference for the CProactiveImageSourceAdapter class in Dynamsoft Utility C++ Edition, an image source adapter that proactively fetches images from a buffer for continuous processing.
 keywords: proactive image source adapter, c++
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CImageSourceErrorListener - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CImageSourceErrorListener in Core Module.
+description: API reference for the CImageSourceErrorListener class in Dynamsoft Core C++ Edition, a callback interface for receiving errors from image source adapters.
 keywords: imagesource error listener, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

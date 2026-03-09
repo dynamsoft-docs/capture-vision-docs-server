@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureVisionRouter Auxiliary Methods - Dynamsoft Capture Vision Python Edition API
-description: This page introduces auxiliary methods of the CaptureVisionRouter class of the Dynamsoft Capture Vision Python Edition.
+description: API reference for auxiliary methods of the CaptureVisionRouter class in Dynamsoft Capture Vision Python Edition.
 keywords: capture vision, auxiliary, instance, api reference, Python
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ImageSourceState - Dynamsoft Vision Router .NET Enumerations
-description: The enumeration ImageSourceState describes the state of ImageSourceAdapter for .NET Edition.
+description: The enumeration ImageSourceState in Dynamsoft Capture Vision .NET Edition describes the possible states of the ImageSourceAdapter (exhausted or buffered).
 keywords: Image source state
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

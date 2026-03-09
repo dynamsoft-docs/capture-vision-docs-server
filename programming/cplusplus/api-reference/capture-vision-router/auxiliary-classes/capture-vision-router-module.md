@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CCaptureVisionRouterModule - Dynamsoft Capture Vision C++ Edition API Reference
-description: This page shows the C++ edition of the class CCaptureVisionRouterModule in Dynamsoft Capture Vision Router Module.
+description: API reference for the CCaptureVisionRouterModule class in Dynamsoft Capture Vision C++ Edition, providing module-level utilities such as version retrieval.
 keywords: capture vision router module, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

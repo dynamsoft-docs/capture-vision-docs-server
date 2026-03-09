@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ImageTag Class - Dynamsoft Core Module Java Edition API Reference
-description: Definition of ImageTag class in Dynamsoft Core Module Java Edition.
+description: API reference for the ImageTag class in Dynamsoft Core Module Java Edition, the base class for storing metadata tags associated with images.
 keywords: image tag, java
 needAutoGenerateSidebar: true
 ---

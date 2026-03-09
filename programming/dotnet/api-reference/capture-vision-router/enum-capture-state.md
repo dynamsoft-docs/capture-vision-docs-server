@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CaptureState - Dynamsoft Vision Router .NET Enumerations
-description: The enumeration CaptureState describes the state of data capturing for .NET Edition.
+description: The enumeration CaptureState in Dynamsoft Capture Vision .NET Edition describes the possible states of the data capture process (started, stopped, paused, resumed).
 keywords: Capture state
 needGenerateH3Content: true
 needAutoGenerateSidebar: true

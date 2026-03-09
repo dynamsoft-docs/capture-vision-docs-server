@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: class CTextureDetectionResultUnit - Dynamsoft Core Module C++ Edition API Reference
-description: This page shows the C++ edition of the class CTextureDetectionResultUnit in Dynamsoft Core Module.
+description: API reference for the CTextureDetectionResultUnit class in Dynamsoft Core C++ Edition, an intermediate result unit containing detected texture patterns in the image.
 keywords: texture detection result, c++
 needAutoGenerateSidebar: true
 ---
