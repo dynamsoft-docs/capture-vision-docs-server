@@ -1,0 +1,45 @@
+---
+layout: null
+sitemap: false
+---
+
+# Workflow Layer - Server Editions (v11.x)
+
+> Root Documentation: https://www.dynamsoft.com/barcode-reader/docs/llms.txt
+> This Layer URL: https://www.dynamsoft.com/capture-vision/docs/server/
+
+This documentation covers Dynamsoft Barcode Reader SDK v11.x. It defines the Workflow Layer APIs for server-side language editions.
+
+**Language Editions:**
+- Python: https://www.dynamsoft.com/capture-vision/docs/server/programming/python/
+- Java: https://www.dynamsoft.com/capture-vision/docs/server/programming/java/
+- .NET: https://www.dynamsoft.com/capture-vision/docs/server/programming/dotnet/
+- C++: https://www.dynamsoft.com/capture-vision/docs/server/programming/cplusplus/
+
+## LLM Guidance
+
+- This layer contains the SDK entry point (CaptureVisionRouter) and shared infrastructure. Users cannot perform barcode/text/document tasks using this layer alone - Feature Layer modules must also be loaded.
+- CaptureVisionRouter.Capture() / CaptureVisionRouter.StartCapturing() are the primary APIs; they require a template name (defined in the Core Concepts & Parameter Layer) to know what tasks to execute.
+- ImageSourceAdapter is the abstract interface for image input; DirectoryFetcher and Camera Enhancer are concrete implementations.
+- CapturedResultReceiver provides callbacks for final results; IntermediateResultReceiver provides in-process data access.
+- API shapes are equivalent across language editions; C++ uses pointers, Java/.NET use managed objects, Python uses Pythonic wrappers.
+
+## Related Layers
+
+**Barcode Recognition Feature Layer APIs:**
+- Server Editions: https://www.dynamsoft.com/barcode-reader/docs/server/llms.txt
+- Web Editions: https://www.dynamsoft.com/barcode-reader/docs/web/llms.txt
+- Mobile Editions: https://www.dynamsoft.com/barcode-reader/docs/mobile/llms.txt
+
+**Core Concepts & Parameter Layer:**
+- Parameter & Architecture Reference: https://www.dynamsoft.com/capture-vision/docs/core/llms.txt
+- Barcode Knowledge Base: https://www.dynamsoft.com/barcode-reader/docs/core/llms.txt
+
+**Other Workflow Layer Language Editions:**
+- Web Editions: https://www.dynamsoft.com/capture-vision/docs/web/llms.txt
+- Mobile Editions: https://www.dynamsoft.com/capture-vision/docs/mobile/llms.txt
+
+## Pages
+
+{% for article in site.pages %}{% if article.title %}- [{{article.title}}](https://www.dynamsoft.com{{ article.url | relative_url }}): {{ article.description }}{% endif %}
+{% endfor %}
