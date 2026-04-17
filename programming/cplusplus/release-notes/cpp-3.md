@@ -8,6 +8,12 @@ needGenerateH3Content: false
 
 # Release Notes for C++ Edition - 3.x
 
+## 3.4.2001 (04/17/2026)
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
 ## 3.4.2000 (03/18/2026)
 
 ### Security Updates

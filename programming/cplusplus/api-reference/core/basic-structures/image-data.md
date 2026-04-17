@@ -68,7 +68,7 @@ CImageData(int _bytesLength, const unsigned char* _bytes, int _width, int _heigh
 
 `_format` The pixel format of the image.
 
-`_orientation` The orientation of the image.
+`_orientation` The orientation of the image. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
 
 `_tag` The tag of the image.
 
@@ -96,7 +96,7 @@ CImageData(unsigned long long _bytesLength, const unsigned char* _bytes, FreeByt
 
 `_format` The pixel format of the image.
 
-`_orientation` The orientation of the image.
+`_orientation` The orientation of the image. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
 
 `_tag` The tag of the image.
 
@@ -194,7 +194,7 @@ int GetOrientation() const
 
 **Return value**
 
-Returns the orientation of the image.
+Returns the orientation of the image. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
 
 ### GetImageTag
 
