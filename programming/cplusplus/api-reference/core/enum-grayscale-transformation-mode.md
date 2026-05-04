@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: GrayscaleTransformationMode - Dynamsoft Core Enumerations
+title: GrayscaleTransformationMode – Capture Vision C++ Enum Ref
 description: Reference for the GrayscaleTransformationMode enumeration in Dynamsoft Core C++ Edition, describing transformations (invert, original) applied when converting a colour image to grayscale.
 keywords: Grayscale transformation modes
 needGenerateH3Content: true

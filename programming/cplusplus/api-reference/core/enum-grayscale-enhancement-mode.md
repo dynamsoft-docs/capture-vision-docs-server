@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: GrayscaleEnhancementMode - Dynamsoft Core Enumerations
+title: GrayscaleEnhancementMode – Capture Vision C++ Enum Reference
 description: Reference for the GrayscaleEnhancementMode enumeration in Dynamsoft Core C++ Edition, listing available image enhancement algorithms applied to grayscale images before recognition.
 keywords: Grayscale enhancement modes
 needGenerateH3Content: true

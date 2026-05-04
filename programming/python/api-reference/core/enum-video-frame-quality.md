@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: VideoFrameQuality - Dynamsoft Core Enumerations
+title: VideoFrameQuality Enum – Capture Vision Python SDK Reference
 description: The enumeration VideoFrameQuality in Dynamsoft Core Python Edition classifies video frame quality (high or low) to control which frames are processed.
 keywords: Video frame quality
 needGenerateH3Content: true

@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: ColourChannelUsageType - Dynamsoft Core Enumerations
+title: ColourChannelUsageType – Dynamsoft Capture Vision C++ Enum Ref
 description: Reference for the ColourChannelUsageType enumeration in Dynamsoft Core C++ Edition, describing how colour channels are used during image processing.
 keywords: Corner type
 needGenerateH3Content: true

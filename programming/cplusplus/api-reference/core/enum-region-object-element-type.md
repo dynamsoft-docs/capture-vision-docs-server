@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: RegionObjectElementType - Dynamsoft Core Enumerations
+title: RegionObjectElementType – Capture Vision C++ Enum Reference
 description: Reference for the RegionObjectElementType enumeration in Dynamsoft Core C++ Edition, listing the types of region object elements (localized, recognized, etc.).
 keywords: Region object element type
 needGenerateH3Content: true
