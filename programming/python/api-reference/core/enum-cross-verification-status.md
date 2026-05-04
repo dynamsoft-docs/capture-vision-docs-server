@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: CrossVerificationStatus - Dynamsoft Core Enumerations
+title: CrossVerificationStatus Enum – Capture Vision Python SDK Ref
 description: The enumeration CrossVerificationStatus in Dynamsoft Core Python Edition indicates whether a captured result has been cross-verified across multiple frames.
 keywords: cross verification status
 codeAutoHeight: true

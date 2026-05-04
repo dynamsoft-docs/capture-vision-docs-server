@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: ImagePixelFormat - Dynamsoft Core Enumerations
+title: ImagePixelFormat – Dynamsoft Capture Vision C++ Enum Ref
 description: Reference for the ImagePixelFormat enumeration in Dynamsoft Core C++ Edition, listing all supported pixel formats (grayscale, RGB, RGBA, etc.) for image data.
 keywords: Image pixel format
 needGenerateH3Content: true

@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: SectionType - Dynamsoft Core Enumerations
+title: SectionType Enum – Dynamsoft Capture Vision C++ API Reference
 description: Reference for the SectionType enumeration in Dynamsoft Core C++ Edition, identifying the processing section (region detection, barcode localization, barcode decoding, etc.) that produced a result.
 keywords: Section type
 needGenerateH3Content: true

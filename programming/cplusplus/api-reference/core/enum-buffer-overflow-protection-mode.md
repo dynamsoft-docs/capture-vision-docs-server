@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: BufferOverflowProtectionMode - Dynamsoft Core Enumerations
+title: BufferOverflowProtectionMode – Capture Vision C++ Enum Reference
 description: Reference for the BufferOverflowProtectionMode enumeration in Dynamsoft Core C++ Edition, describing strategies when the image source buffer overflows (ignore new, update oldest).
 keywords: Buffer overflow protection mode 
 needGenerateH3Content: true

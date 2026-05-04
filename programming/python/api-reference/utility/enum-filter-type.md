@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: FilterType - Dynamsoft Utility Enumerations
+title: FilterType Enum – Dynamsoft Capture Vision Python Utility API
 description: The enumeration FilterType in Dynamsoft Utility Python Edition specifies the type of image filter applied during image processing operations.
 keywords: image filter
 codeAutoHeight: true

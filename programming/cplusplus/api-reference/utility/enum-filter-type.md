@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: FilterType - Dynamsoft Utility Enumerations
+title: FilterType Enum – Dynamsoft Capture Vision C++ Utility API
 description: Reference for the FilterType enumeration in Dynamsoft Utility C++ Edition, specifying the image filter type applied during image processing operations.
 keywords: image filter
 codeAutoHeight: true

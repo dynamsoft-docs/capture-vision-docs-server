@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: IntermediateResultUnitType - Dynamsoft Core Enumerations
+title: IntermediateResultUnitType – Capture Vision C++ Enum Reference
 description: Reference for the IntermediateResultUnitType enumeration in Dynamsoft Core C++ Edition, listing all types of intermediate result units produced during image processing.
 keywords: Intermediate result unit type
 needGenerateH3Content: true
