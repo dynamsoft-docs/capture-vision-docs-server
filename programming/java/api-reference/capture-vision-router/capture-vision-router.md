@@ -17,6 +17,12 @@ The `CaptureVisionRouter` class is what a user uses to interact with image-proce
 class CaptureVisionRouter
 ```
 
+## Thread Safety
+
+Instances of `CaptureVisionRouter` are not thread-safe.  
+Do not access the same `CaptureVisionRouter` instance from multiple threads concurrently.  
+Create a separate instance for each thread if concurrent processing is required.
+
 ## Constructor Methods
 
 | Method | Description |
