@@ -22,6 +22,12 @@ Default constructor of a `CCaptureVisionRouter` object.
 ```cpp
 CCaptureVisionRouter::CCaptureVisionRouter()
 ```
+ 
+> [!IMPORTANT]
+> Instances of `CCaptureVisionRouter` are not thread-safe.  
+> Do not access the same `CCaptureVisionRouter` instance from multiple threads concurrently.  
+> Create a separate instance for each thread if concurrent processing is required.
+
 
 ## ~CCaptureVisionRouter
 
