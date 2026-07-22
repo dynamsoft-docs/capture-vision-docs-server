@@ -39,7 +39,7 @@ needGenerateH3Content: false
 
 ### New
 
-- Added [`PDFRM_MULTIMODAL`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) value to [`PDFReadingMode`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) enumeration for multimodal PDF content extraction. [`PDFRM_VECTOR`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) is now deprecated.
+- Added [`PDFRM_MULTIMODAL`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) value to [`PDFReadingMode`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) enumeration for multimodal PDF content extraction.
 
 - Added [`AutoDetectColorInversion`]({{ site.dcvb_parameters_reference }}barcode-format-specification/auto-detect-color-inversion.html) parameter for `BarcodeFormatSpecification` to support automatic color-inversion detection for DataMatrix barcodes.
 

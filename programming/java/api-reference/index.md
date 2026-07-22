@@ -22,12 +22,11 @@ needAutoGenerateSidebar: false
 ### Classes
 
 - [`BufferedItemsManager`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/buffered-items-manager.html)
-- [`CaptureStateListener`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
-- [`CaptureVisionRouterModule`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
-- [`CapturedResultArray`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result-array.html)
+- [`CapturedResult`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result.html)
 - [`CapturedResultFilter`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 - [`CapturedResultReceiver`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
-- [`CapturedResult`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result.html)
+- [`CaptureStateListener`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+- [`CaptureVisionRouterModule`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
 - [`ImageSourceStateListener`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 - [`IntermediateResultManager`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/intermediate-result-manager.html)
 - [`IntermediateResultReceiver`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html)
