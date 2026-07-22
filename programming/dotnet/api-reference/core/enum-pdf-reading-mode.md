@@ -16,13 +16,16 @@ codeAutoHeight: true
 ```csharp
 public enum EnumPDFReadingMode
 {
-   /** Outputs vector data found in the PDFs. */
+   /** Deprecated. Covered by PDFRM_MULTIMODAL. */
    PDFRM_VECTOR = 0x01,
-   /** The default value.
-    * Outputs raster data found in the PDFs.
-    * Depending on the argument Resolution, the SDK may rasterize the PDF pages.
-    * Check the template for available argument settings. */
+   /** Renders the entire page as a bitmap regardless of object type. */
    PDFRM_RASTER = 0x02,
+   /**
+    * Extracts multimodal information from a PDF, including vector graphics,
+    * text content, and embedded images, which can be used for subsequent
+    * tasks such as barcode reading, text recognition, and document analysis.
+    */
+   PDFRM_MULTIMODAL = 0x03,
    /** Reserved setting for PDF reading mode.*/
    PDFRM_REV = -2147483648,
 }

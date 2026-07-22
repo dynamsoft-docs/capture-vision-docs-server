@@ -88,6 +88,7 @@ Processes an image or file containing multiple pages to derive important informa
 ```cpp
 CCapturedResultArray* CaptureMultiPages(const char* filePath, const char* templateName="");
 CCapturedResultArray* CaptureMultiPages(const unsigned char *fileBytes, int fileSize, const char* templateName="");
+CCapturedResultArray* CaptureMultiPages(utility::CFileFetcher* fileFetcher, const char* templateName="");
 ```
 
 **Parameters**
@@ -99,6 +100,8 @@ CCapturedResultArray* CaptureMultiPages(const unsigned char *fileBytes, int file
 `[in] fileBytes` Specifies the memory location containing the image to be processed.
 
 `[in] fileSize`  Specifies the size of the image in bytes.
+
+`[in] fileFetcher` Specifies a `CFileFetcher` instance that provides the files to process.
 
 **Remarks**
 
@@ -147,3 +150,4 @@ else
 [CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 [CCapturedResultArray]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-array.html)
 [CCapturedResult]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)
+[CFileFetcher]({{ site.dcvb_cpp_api }}utility/file-fetcher.html)

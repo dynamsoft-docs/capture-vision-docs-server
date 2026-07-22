@@ -63,6 +63,8 @@ public CapturedResult[] captureMultiPages(String filePath)
 public CapturedResult[] captureMultiPages(String filePath, String templateName)
 public CapturedResult[] captureMultiPages(byte[] fileBytes)
 public CapturedResult[] captureMultiPages(byte[] fileBytes, String templateName)
+public CapturedResult[] captureMultiPages(FileFetcher fileFetcher)
+public CapturedResult[] captureMultiPages(FileFetcher fileFetcher, String templateName)
 ```
 
 **Parameters**
@@ -70,6 +72,8 @@ public CapturedResult[] captureMultiPages(byte[] fileBytes, String templateName)
 `filePath` <*String*>: Specifies the path of the file containing multiple pages to process.
 
 `fileBytes` <*byte[]*>: Specifies the image file bytes in memory containing multiple pages to process.
+
+`fileFetcher` <*FileFetcher*>: Specifies a `FileFetcher` instance that provides the files to process.
 
 `templateName` <*String*, optional>: Specifies a `CaptureVisionTemplate` to use for capturing.
 

@@ -62,7 +62,13 @@ def set_device_friendly_name(name: str) -> Tuple[int, str]:
 
 **Parameters**
 
-`name` The friendly name of the device.
+`name` The friendly name of the device. It must satisfy all of the following constraints:
+
+- Maximum length: 64 characters.
+- Allowed characters: are letters (a-z, A-Z), digits (0-9), hyphen (-), underscore (_), and period (.)
+- Must start and end with a letter or digit (not `-`, `_`, or `.`).
+
+If the name does not meet these requirements, the returned `error_code` will be `EnumErrorCode.EC_PARAMETER_VALUE_INVALID`(-10038).
 
 **Return Value**
 

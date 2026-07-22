@@ -5,7 +5,6 @@ description: Index page for Dynamsoft Capture Vision C++ Edition user guide, lin
 keywords: c++, user guide
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-permalink: /programming/cplusplus/user-guide/index.html
 ---
 
 # Dynamsoft Capture Vision C++ Edition User Guides

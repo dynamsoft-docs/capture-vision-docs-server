@@ -13,11 +13,17 @@ codeAutoHeight: true
 ```java
 @Retention(RetentionPolicy.CLASS)
 public @interface EnumPDFReadingMode {
-    //Vector PDF reading mode.
+    /** Deprecated. Covered by PDFRM_MULTIMODAL. */
     int PDFRM_VECTOR = 0x01;
-    //Raster PDF reading mode.
+    /** Renders the entire page as a bitmap regardless of object type. */
     int PDFRM_RASTER = 0x02;
-    //Reserved PDF reading mode.
+    /**
+     * Extracts multimodal information from a PDF, including vector graphics,
+     * text content, and embedded images, which can be used for subsequent
+     * tasks such as barcode reading, text recognition, and document analysis.
+     */
+    int PDFRM_MULTIMODAL = 0x03;
+    /** Reserved PDF reading mode. */
     int PDFRM_REV = 0x80000000;
 }
 ```

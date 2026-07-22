@@ -43,7 +43,7 @@ def __init__(self):
 **Remarks**
 
 This constructor initializes the properties with default values:
-- `mode`: 2 (EnumPDFReadingMode.PDFRM_RASTER.value)
+- `mode`: `EnumPDFReadingMode.PDFRM_MULTIMODAL`
 - `dpi`: 300
-- `raster_data_source`: 0 (EnumRasterDataSource.RDS_RASTERIZED_PAGES.value)
+- `raster_data_source`: `EnumRasterDataSource.RDS_RASTERIZED_PAGES`
 
