@@ -54,4 +54,4 @@ LayoutElementSource source = LES_NONE;
 
 **See Also**
 
-[LayoutElementSource]({{ site.dcvb_cpp_api }}utility/enum-layout-element-source.html?lang=cpp)
+[LayoutElementSource]({{ site.dcvb_cpp_api }}utility/enum-layout-element-source.html)

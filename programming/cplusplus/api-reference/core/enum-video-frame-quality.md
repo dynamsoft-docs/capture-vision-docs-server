@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `VideoFrameQuality` describes the quality of video frames.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum VideoFrameQuality {
    /**The frame quality is measured to be high.*/

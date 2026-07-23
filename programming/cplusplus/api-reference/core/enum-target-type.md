@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `TargetType` describes the target types.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum TargetType
 {

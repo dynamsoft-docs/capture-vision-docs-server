@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `GrayscaleTransformationMode` specifies the method employed to transform images in grayscale.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum GrayscaleTransformationMode
 {

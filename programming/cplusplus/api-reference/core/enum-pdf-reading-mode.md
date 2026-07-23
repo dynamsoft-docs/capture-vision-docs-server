@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `PDFReadingMode` describes the PDF reading modes.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum PDFReadingMode
 {

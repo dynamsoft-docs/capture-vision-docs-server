@@ -13,10 +13,6 @@ codeAutoHeight: true
 
 `LayoutPattern` defines the strategy for the layout engine to organize quadrilaterals.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum LayoutPattern
 {

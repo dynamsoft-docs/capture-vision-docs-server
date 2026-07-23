@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `CrossVerificationStatus` describes the status of the captured results.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum CrossVerificationStatus
 {

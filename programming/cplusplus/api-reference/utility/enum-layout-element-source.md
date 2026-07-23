@@ -13,10 +13,6 @@ codeAutoHeight: true
 
 `LayoutElementSource` indicates the origin of a layout element.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum LayoutElementSource
 {

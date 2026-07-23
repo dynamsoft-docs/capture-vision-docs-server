@@ -46,7 +46,7 @@ LayoutPattern pattern = LP_UNKNOWN;
 
 **See Also**
 
-[LayoutPattern]({{ site.dcvb_cpp_api }}utility/enum-layout-pattern.html?lang=cpp)
+[LayoutPattern]({{ site.dcvb_cpp_api }}utility/enum-layout-pattern.html)
 
 ### axes
 

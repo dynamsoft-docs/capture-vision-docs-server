@@ -15,10 +15,6 @@ codeAutoHeight: true
 `ImageFileFormat` categorizes the possible formats of image files.
 
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum ImageFileFormat
 {

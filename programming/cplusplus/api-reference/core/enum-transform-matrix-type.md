@@ -13,10 +13,6 @@ breadcrumbText: TransformMatrixType
 
 `TransformMatrixType` describes the transform matrix types.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum TransformMatrixType
 {

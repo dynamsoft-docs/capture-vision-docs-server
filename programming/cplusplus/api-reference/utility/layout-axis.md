@@ -96,4 +96,4 @@ MeasureUnit spacingUnit = MU_PIXEL;
 
 **See Also**
 
-[MeasureUnit]({{ site.dcvb_cpp_api }}core/enum-measure-unit.html?lang=cpp)
+[MeasureUnit]({{ site.dcvb_cpp_api }}core/enum-measure-unit.html)

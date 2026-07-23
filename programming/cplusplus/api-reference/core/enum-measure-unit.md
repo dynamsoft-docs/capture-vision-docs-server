@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `MeasureUnit` specifies how a numeric value should be interpreted relative to a reference dimension. It is used wherever a numeric parameter (e.g., spacing, ROI coordinates) can be expressed either as an absolute pixel count or as a proportion of a reference size.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum MeasureUnit
 {

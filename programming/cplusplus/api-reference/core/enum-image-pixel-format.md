@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `ImagePixelFormat` defines the range of pixel formats that an image can have, specifying how color and transparency data are represented in each pixel of the image.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum ImagePixelFormat
 {
