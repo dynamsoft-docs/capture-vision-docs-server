@@ -9,6 +9,7 @@ noTitleIndex: true
 
 # Module Release Notes - Dynamsoft Capture Vision .NET Edition
 
+- [3.6.1000 (07/23/2026)]({{ site.dcvb_dotnet_release_notes }}dotnet-3.html#361000-07232026)
 - [3.4.3000 (06/30/2026)]({{ site.dcvb_dotnet_release_notes }}dotnet-3.html#343000-06302026)
 - [3.4.2001 (04/17/2026)]({{ site.dcvb_dotnet_release_notes }}dotnet-3.html#342001-04172026)
 - [3.4.2000 (03/18/2026)]({{ site.dcvb_dotnet_release_notes }}dotnet-3.html#342000-03182026)

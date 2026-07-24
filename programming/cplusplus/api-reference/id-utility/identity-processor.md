@@ -40,6 +40,14 @@ int FindPortraitZone(const CScaledColourImageUnit* scaledColourImgUnit,
                      const CDetectedQuadsUnit* detectedQuadsUnit,
                      const CDeskewedImageUnit* deskewedImageUnit,
                      CQuadrilateral& portraitZone);
+
+int FindPortraitZone(const CScaledColourImageUnit* scaledColourImgUnit,
+                     const CLocalizedTextLinesUnit* localizedTextLinesUnit,
+                     const CRecognizedTextLinesUnit* recognizedTextLinesUnit,
+                     const CDetectedQuadsUnit* detectedQuadsUnit,
+                     const CDeskewedImageUnit* deskewedImageUnit,
+                     CQuadrilateral& portraitZone,
+                     bool& isBlankPortrait);
 ```
 
 **Parameters**
@@ -55,6 +63,8 @@ int FindPortraitZone(const CScaledColourImageUnit* scaledColourImgUnit,
 `[in] deskewedImageUnit` The deskewed image unit for coordinate transformation.
 
 `[out] portraitZone` The output quadrilateral representing the portrait zone location. Returns an empty quadrilateral if not found.
+
+`[out] isBlankPortrait` A boolean indicating whether the portrait zone is considered blank.
 
 **Return Value**
 

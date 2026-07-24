@@ -36,7 +36,7 @@ class PDFReadingParameter
 
 ### mode
 
-The mode used for PDF reading.
+The mode used for PDF reading. Defaults to `PDFRM_MULTIMODAL`.
 
 ```java
 public @EnumPDFReadingMode int mode

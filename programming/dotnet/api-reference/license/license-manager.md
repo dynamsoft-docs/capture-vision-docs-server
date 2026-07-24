@@ -61,11 +61,22 @@ static int SetDeviceFriendlyName(string name)
 
 **Parameters**
 
-`[in] name` The friendly name of the device.
+`[in] name` The friendly name of the device. It must satisfy all of the following constraints:
+
+- Maximum length: 64 characters.
+- Allowed characters: are letters (a-z, A-Z), digits (0-9), hyphen (-), underscore (_), and period (.)
+- Must start and end with a letter or digit (not `-`, `_`, or `.`).
+
+If the name does not meet these requirements, the function returns the error code `EC_PARAMETER_VALUE_INVALID`.
 
 **Return Value**
 
 Returns 0 if the friendly name is set successfully, a negative value indicating an error otherwise.
+
+| Error Code | Value | Description |
+|---|---|---|
+| `EC_OK` | 0 | The friendly name is set successfully. |
+| `EC_PARAMETER_VALUE_INVALID` | -10038 | The name is invalid. It is either empty, exceeds 64 characters, contains disallowed characters, or starts/ends with a symbol. |
 
 **Remarks**
 

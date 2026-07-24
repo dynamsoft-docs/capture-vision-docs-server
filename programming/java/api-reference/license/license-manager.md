@@ -62,7 +62,13 @@ static void setDeviceFriendlyName(String name) throws LicenseException
 
 **Parameters**
 
-`name` The friendly name of the device.
+`name` The friendly name of the device. It must satisfy all of the following constraints:
+
+- Maximum length: 64 characters.
+- Allowed characters: are letters (a-z, A-Z), digits (0-9), hyphen (-), underscore (_), and period (.)
+- Must start and end with a letter or digit (not `-`, `_`, or `.`).
+
+If the name does not meet these requirements, a `LicenseException` is thrown with the error code `EC_PARAMETER_VALUE_INVALID`(-10038).
 
 **Exception**
 

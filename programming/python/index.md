@@ -22,25 +22,45 @@ Dynamsoft Capture Vision Bundle is an aggregating SDK of a series of specific fu
 
 ## System Requirements
 
-- Operating Systems:
-  - Windows x64
-  - Linux x64, ARM 64-bit
-  - macOS (Universal) 12+
+### Supported Platforms
 
-- Python Versions:
-  - Python 3.14
-  - Python 3.13
-  - Python 3.12
-  - Python 3.11
-  - Python 3.10
-  - Python 3.9
-  - Python 3.8
+**Windows**
+- Supported Versions: Windows 8 and higher, or Windows Server 2012 and higher
+- Architectures: x64
 
-- For Embedded Devices:
-For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4GB RAM). Minimum recommended specs:
-  - Quad-core ARM Cortex-A72 processor (or equivalent)
-  - 4 GB RAM
-  - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
+**Linux**
+- **x64**
+	- Supported Distributions: Ubuntu 16.04+ LTS, Debian 8+, CentOS 7+
+	- Dependencies: glibc 2.17
+- **ARM64**
+	- Supported Distributions: Ubuntu 18.04+ LTS, Debian 10+, CentOS/RHEL 8+
+	- Dependencies: glibc 2.27
+
+**macOS**
+- Supported Versions: macOS 12 (Monterey) and higher
+- Architectures: universal (x64, Apple Silicon)
+
+### Supported Python Versions
+
+- Python 3.14
+- Python 3.13
+- Python 3.12
+- Python 3.11
+- Python 3.10
+- Python 3.9
+- Python 3.8
+- Python 3.7 (for versions below DBR 9.6.40.2)
+- Python 3.6 (for versions below DBR 9.6.40.2)
+- Python 3.5 (for versions below DBR 7.5)
+- Python 2.7 (for versions below DBR 7.2.2.3)
+
+### Embedded Devices
+
+For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4 GB RAM). Minimum recommended specs:
+
+- Quad-core ARM Cortex-A72 processor or equivalent
+- 4 GB RAM
+- Linux-based OS, such as Raspberry Pi OS or Ubuntu Server
 
 > [!NOTE]
 > Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.

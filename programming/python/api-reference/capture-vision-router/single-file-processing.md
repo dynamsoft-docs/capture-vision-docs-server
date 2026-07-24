@@ -55,14 +55,15 @@ Returns a `CapturedResult` object containing the captured items.
 Processes an image or file containing multiple pages to derive important information. It can optionally use a specified template for the capture.
 
 ```python
-def capture_multi_pages(self, file: Union[str, bytes], template_name: str = "") -> CapturedResultArray:
+def capture_multi_pages(self, file: Union[str, bytes, "FileFetcher"], template_name: str = "") -> CapturedResultArray:
 ```
 
 **Parameters**
 
-- `file` <*Union[str, bytes]*>: The input file containing multiple pages. It can be:
+- `file` <*Union[str, bytes, FileFetcher]*>: The input source. It can be:
   - A file path <*str*> pointing to a multi-page image (e.g., PDF, TIFF).
   - A byte stream <*bytes*> representing the file content.
+  - A `FileFetcher` instance that provides the files to process.
 - `template_name` <*str*, optional>: Specifies a `CaptureVisionTemplate` to use for capturing.
 
 **Remarks**

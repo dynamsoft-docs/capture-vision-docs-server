@@ -87,12 +87,15 @@ Returns an error code. Zero indicates success.
 Exports a specific template to a string.
 
 ```csharp
-string OutputSettings(string templateName, out int errorCode)
+string OutputSettings(string templateName, bool includeDefaultValues = false)
+string OutputSettings(string templateName, bool includeDefaultValues, out int errorCode)
 ```
 
 **Parameters**
 
 `[in] templateName` The name of the `CaptureVisionTemplate` to export.
+
+`[in] includeDefaultValues` Specifies whether to include parameters with default values in the exported template. Default: `false`.
 
 `[out] errorCode` An error code generated during the process.
 
@@ -117,7 +120,7 @@ Returns a string containing the exported template.
 Exports a specific template to a file.
 
 ```csharp
-int OutputSettingsToFile(string templateName, string filePath)
+int OutputSettingsToFile(string templateName, string filePath, bool includeDefaultValues = false)
 ```
 
 **Parameters**
@@ -125,6 +128,8 @@ int OutputSettingsToFile(string templateName, string filePath)
 `[in] templateName` The name of the `CaptureVisionTemplate` to export.
 
 `[in] filePath` The path to the output file.
+
+`[in] includeDefaultValues` Specifies whether to include parameters with default values in the exported template. Default: `false`.
 
 **Remarks**
 

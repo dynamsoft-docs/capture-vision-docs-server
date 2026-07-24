@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `GrayscaleEnhancementMode` specifies the method employed to enhance images in grayscale.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum GrayscaleEnhancementMode
 {

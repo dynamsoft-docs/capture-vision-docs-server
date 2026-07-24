@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `CornerType` categorizes the nature of a corner based on the intersection of its adjoining sides.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum CornerType
 {

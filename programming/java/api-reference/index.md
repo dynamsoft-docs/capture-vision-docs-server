@@ -22,12 +22,11 @@ needAutoGenerateSidebar: false
 ### Classes
 
 - [`BufferedItemsManager`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/buffered-items-manager.html)
-- [`CaptureStateListener`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
-- [`CaptureVisionRouterModule`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
-- [`CapturedResultArray`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result-array.html)
+- [`CapturedResult`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result.html)
 - [`CapturedResultFilter`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 - [`CapturedResultReceiver`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
-- [`CapturedResult`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/captured-result.html)
+- [`CaptureStateListener`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+- [`CaptureVisionRouterModule`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
 - [`ImageSourceStateListener`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 - [`IntermediateResultManager`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/intermediate-result-manager.html)
 - [`IntermediateResultReceiver`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html)
@@ -200,6 +199,7 @@ needAutoGenerateSidebar: false
 - [`EnumImageTagType`]({{ site.dcvb_java_api }}core/enum-image-tag-type.html)
 - [`IntermediateResultUnitType`]({{ site.dcvb_java_api }}core/enum-intermediate-result-unit-type.html)
 - [`EnumPDFReadingMode`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html)                
+- [`EnumMeasureUnit`]({{ site.dcvb_java_api }}core/enum-measure-unit.html)
 - [`EnumRasterDataSource`]({{ site.dcvb_java_api }}core/enum-raster-data-source.html)
 - [`EnumRegionObjectElementType`]({{ site.dcvb_java_api }}core/enum-region-object-element-type.html)
 - [`EnumSectionType`]({{ site.dcvb_java_api }}core/enum-section-type.html)
@@ -215,6 +215,11 @@ needAutoGenerateSidebar: false
 - [`ImageIO`]({{ site.dcvb_java_api }}utility/image-io.html)
 - [`ImageProcessor`]({{ site.dcvb_java_api }}utility/image-processor.html)
 - [`ImageDrawer`]({{ site.dcvb_java_api }}utility/image-drawer.html)
+- [`LayoutAnalyzer`]({{ site.dcvb_java_api }}utility/layout-analyzer.html)
+- [`LayoutAxis`]({{ site.dcvb_java_api }}utility/layout-axis.html)
+- [`LayoutAnalysisParameter`]({{ site.dcvb_java_api }}utility/layout-analysis-parameter.html)
+- [`LayoutElement`]({{ site.dcvb_java_api }}utility/layout-element.html)
+- [`LayoutAnalysisResult`]({{ site.dcvb_java_api }}utility/layout-analysis-result.html)
 - [`MultiFrameResultCrossFilter`]({{ site.dcvb_java_api }}utility/multi-frame-result-cross-filter.html)
 - [`ProactiveImageSourceAdapter`]({{ site.dcvb_java_api }}utility/proactive-image-source-adapter.html)
 - [`UtilityModule`]({{ site.dcvb_java_api }}utility/utility-module.html)
@@ -222,6 +227,8 @@ needAutoGenerateSidebar: false
 ### Enums
 
 - [`FilterType`]({{ site.dcvb_java_api }}utility/enum-filter-type.html)
+- [`EnumLayoutPattern`]({{ site.dcvb_java_api }}utility/enum-layout-pattern.html)
+- [`EnumLayoutElementSource`]({{ site.dcvb_java_api }}utility/enum-layout-element-source.html)
 
 ## DynamsoftLicense
 
@@ -230,6 +237,8 @@ needAutoGenerateSidebar: false
 
 
 ## DynamsoftImageProcessing
+
+### Classes
 
 - [`ImageProcessingModule`]({{ site.dcvb_java_api }}image-processing/image-processing-module.html)
 

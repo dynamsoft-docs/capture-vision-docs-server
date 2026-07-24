@@ -15,10 +15,6 @@ codeAutoHeight: true
 `SectionType` categorizes the distinct segments within the image processing algorithm, pinpointing the exact phase responsible for generating a specific `IntermediateResult`.
 
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum SectionType
 {

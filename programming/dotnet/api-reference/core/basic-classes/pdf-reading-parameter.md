@@ -29,7 +29,7 @@ public class PDFReadingParameter
 
 ### mode
 
-The mode of PDF reading.
+The mode of PDF reading. Defaults to `PDFRM_MULTIMODAL`.
 
 ```csharp
 EnumPDFReadingMode mode;

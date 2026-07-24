@@ -204,6 +204,7 @@ needAutoGenerateSidebar: false
 - [`EnumImageTagType`]({{ site.dcvb_dotnet_api }}core/enum-image-tag-type.html)
 - [`EnumIntermediateResultUnitType`]({{ site.dcvb_dotnet_api }}core/enum-intermediate-result-unit-type.html)
 - [`EnumPDFReadingMode`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html)                
+- [`MeasureUnit`]({{ site.dcvb_dotnet_api }}core/enum-measure-unit.html)
 - [`EnumRasterDataSource`]({{ site.dcvb_dotnet_api }}core/enum-raster-data-source.html)
 - [`EnumRegionObjectElementType`]({{ site.dcvb_dotnet_api }}core/enum-region-object-element-type.html)
 - [`EnumSectionType`]({{ site.dcvb_dotnet_api }}core/enum-section-type.html)
@@ -217,6 +218,11 @@ needAutoGenerateSidebar: false
 - [`ImageIO`]({{ site.dcvb_dotnet_api }}utility/image-io.html)
 - [`ImageProcessor`]({{ site.dcvb_dotnet_api }}utility/image-processor.html)
 - [`ImageDrawer`]({{ site.dcvb_dotnet_api }}utility/image-drawer.html)
+- [`LayoutAnalyzer`]({{ site.dcvb_dotnet_api }}utility/layout-analyzer.html)
+- [`LayoutAxis`]({{ site.dcvb_dotnet_api }}utility/layout-axis.html)
+- [`LayoutAnalysisParameter`]({{ site.dcvb_dotnet_api }}utility/layout-analysis-parameter.html)
+- [`LayoutElement`]({{ site.dcvb_dotnet_api }}utility/layout-element.html)
+- [`LayoutAnalysisResult`]({{ site.dcvb_dotnet_api }}utility/layout-analysis-result.html)
 - [`MultiFrameResultCrossFilter`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html)
 - [`ProactiveImageSourceAdapter`]({{ site.dcvb_dotnet_api }}utility/proactive-image-source-adapter.html)
 - [`UtilityModule`]({{ site.dcvb_dotnet_api }}utility/utility-module.html)
@@ -224,6 +230,8 @@ needAutoGenerateSidebar: false
 ### Enums
 
 - [`EnumFilterType`]({{ site.dcvb_dotnet_api }}utility/enum-filter-type.html)
+- [`LayoutPattern`]({{ site.dcvb_dotnet_api }}utility/enum-layout-pattern.html)
+- [`LayoutElementSource`]({{ site.dcvb_dotnet_api }}utility/enum-layout-element-source.html)
 
 ## DynamsoftLicense
 
@@ -232,6 +240,8 @@ needAutoGenerateSidebar: false
 
 
 ## DynamsoftImageProcessing
+
+### Classes
 
 - [`ImageProcessingModule`]({{ site.dcvb_dotnet_api }}image-processing/image-processing-module.html)
 

@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `CapturedResultItemType` defines the various categories of items that can be recognized and captured.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum CapturedResultItemType
 {

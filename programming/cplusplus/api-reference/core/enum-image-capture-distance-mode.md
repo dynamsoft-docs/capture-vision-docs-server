@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `ImageCaptureDistanceMode` describes the shooting mode of the image. It is used in the `overlap` mode of `Panorama`.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum ImageCaptureDistanceMode
 {

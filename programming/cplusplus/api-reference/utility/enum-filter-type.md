@@ -10,10 +10,6 @@ codeAutoHeight: true
 
 `FilterType` describes the specified image filter applied to an input image.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum FilterType
 {

@@ -13,10 +13,6 @@ breadcrumbText: CaptureState
 
 `CaptureState` describes the state of data capturing.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum CaptureState
 {

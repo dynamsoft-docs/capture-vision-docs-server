@@ -64,7 +64,8 @@ Processes an image or file containing multiple pages to derive important informa
 
 ```csharp
 CapturedResult[] CaptureMultiPages(string filePath, string templateName = "");
-CapturedResult[] CaptureMultiPages(byte[] fileBytes, string templateName = "")
+CapturedResult[] CaptureMultiPages(byte[] fileBytes, string templateName = "");
+CapturedResult[] CaptureMultiPages(FileFetcher fileFetcher, string templateName = "")
 ```
 
 **Parameters**
@@ -74,6 +75,8 @@ CapturedResult[] CaptureMultiPages(byte[] fileBytes, string templateName = "")
 `[in] templateName` Specifies a `CaptureVisionTemplate` to use for capturing.
 
 `[in] fileBytes` Specifies the memory location containing the image to be processed.
+
+`[in] fileFetcher` Specifies a `FileFetcher` instance that provides the files to process.
 
 **Remarks**
 

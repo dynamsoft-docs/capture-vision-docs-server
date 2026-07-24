@@ -14,10 +14,6 @@ codeAutoHeight: true
 
 `ImageTagType` categorizes images based on their source, distinguishing between images extracted from video streams (video frame) and those loaded from static files (file image).
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum ImageTagType
 {

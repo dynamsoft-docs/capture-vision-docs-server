@@ -12,7 +12,12 @@ codeAutoHeight: true
 
 ```python
 class EnumPDFReadingMode(IntEnum):
+    # Deprecated. Covered by PDFRM_MULTIMODAL.
     PDFRM_VECTOR = 0x01
+    # Renders the entire page as a bitmap regardless of object type.
     PDFRM_RASTER = 0x02
+    # Extracts multimodal information from a PDF, including vector graphics,
+    # text content, and embedded images.
+    PDFRM_MULTIMODAL = 0x03
     PDFRM_REV = -2147483648
 ```
