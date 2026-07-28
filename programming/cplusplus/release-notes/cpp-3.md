@@ -35,7 +35,8 @@ needGenerateH3Content: false
 
 #### Text Line Orientation Detection
 
-- **Support text lines in arbitrary orientations more automatically** - Added [`OrientationDetectionModes`]({{ site.dcvb_parameters_reference }}label-recognizer-task-settings/orientation-detection-modes.html) to automatically detect text line orientation and correct the orientation of text lines for further processing. Two modes are available: `ODM_SPATIAL_REFERENCES` and `ODM_CHARS_ORIENTATION_NEURAL_NETWORK`.
+- **Improved handling of rotated text lines** - Added [`OrientationDetectionModes`]({{ site.dcvb_parameters_reference }}label-recognizer-task-settings/orientation-detection-modes.html) to detect text line orientation and correct it for further processing. Two modes are available: `ODM_SPATIAL_REFERENCES` and `ODM_CHARS_ORIENTATION_NEURAL_NETWORK`.
+- **Current limitations** - This capability is currently effective only in MRZ scenarios and supports only upright and upside-down text lines (0 degrees and 180 degrees). It does not yet handle 90 degrees, 270 degrees, or arbitrary rotation angles.
 
 ### New
 
