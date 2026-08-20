@@ -9,6 +9,7 @@ noTitleIndex: true
 
 # Module Release Notes - Dynamsoft Capture Vision Java Edition
 
+- [3.6.3000 (08/20/2026)]({{ site.dcvb_java_release_notes }}java-3.html#363000-08202026)
 - [3.6.1000 (07/23/2026)]({{ site.dcvb_java_release_notes }}java-3.html#361000-07232026)
 - [3.4.3000 (06/30/2026)]({{ site.dcvb_java_release_notes }}java-3.html#343000-06302026)
 - [3.4.2001 (04/17/2026)]({{ site.dcvb_java_release_notes }}java-3.html#342001-04172026)
