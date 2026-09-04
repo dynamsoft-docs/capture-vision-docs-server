@@ -110,7 +110,7 @@ Returns a tuple containing following elements:
 
 ### save_to_file
 
-Saves an image to a file.
+Saves an image to a file in JPEG, PNG, BMP or PDF format.
 
 ```python
 def save_to_file(self, image_data: ImageData, path: str, overwrite: bool = True) -> Tuple[int, str]:

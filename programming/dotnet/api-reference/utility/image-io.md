@@ -187,7 +187,7 @@ Returns an integer indicating the success of the operation. 0 indicates success,
 
 ### SaveToFile
 
-Saves an image to a file.
+Saves an image to a file in JPEG, PNG, BMP or PDF format.
 
 ```csharp
 int SaveToFile(ImageData imageData, string path, bool overwrite = true)
