@@ -120,7 +120,7 @@ Returns an `ImageData` object representing the image.
 
 ### saveToFile
 
-Saves an image to a file.
+Saves an image to a file in JPEG, PNG, BMP or PDF format.
 
 ```java
 void saveToFile(ImageData imageData, String path) throws UtilityException
