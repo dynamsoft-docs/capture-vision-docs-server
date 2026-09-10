@@ -100,7 +100,7 @@ void removePredetectedRegion(int index) throws CoreException
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 ### addPredetectedRegion
 
@@ -119,7 +119,7 @@ void addPredetectedRegion(PredetectedRegionElement element, double[] matrixToOri
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 **See Also**
 
@@ -144,7 +144,7 @@ void setPredetectedRegion(int index, PredetectedRegionElement element, double[] 
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 **See Also**
 

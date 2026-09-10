@@ -166,7 +166,7 @@ int AddResultReceiver(CCapturedResultReceiver* receiver);
 
 **Parameters**
 
-`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`](../core/basic-structures/captured-result-receiver.md) to be added.
+`[in] receiver` Specifies a receiver object of the type [`CCapturedResultReceiver`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html) to be added.
 
 **Return Value**
 

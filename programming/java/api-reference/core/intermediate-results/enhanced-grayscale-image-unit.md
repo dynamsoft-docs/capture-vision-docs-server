@@ -55,7 +55,7 @@ void setImageData(ImageData imgData) throws CoreException
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 **See Also**
 

@@ -44,7 +44,7 @@ Returns the contours in the unit.
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 ### getHierarchies
 
@@ -64,7 +64,7 @@ Returns the hierarchies of the contours in the unit.
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 ### setContours
 
@@ -85,7 +85,7 @@ void setContours(Contour[] contours, Vector4[] hierarchies, double[] matrixToOri
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 **See Also**
 
