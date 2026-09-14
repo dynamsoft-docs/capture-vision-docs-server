@@ -88,7 +88,7 @@ public String outputSettings(String templateName, boolean includeDefaultValues) 
 
 - It is supported to export all loaded templates by specifying the `templateName` as '*'.
 - There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_java_api }}capture-vision-router/enum-preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [initSettings]({{ site.dcvb_java_api }}capture-vision-router/settings.html#initsettings) / [initSettingsFromFile]({{ site.dcvb_java_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
+- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters_reference }}capture-vision-template/index.html) in the JSON template file.
 - Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `initSettings` / `initSettingsFromFile` and pass his own settings.
 - If parameter `templateName` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
 
@@ -121,7 +121,7 @@ public void outputSettingsToFile(String templateName, String filePath, boolean i
 
 - It is supported to export all loaded templates by specifying the `templateName` as '*'.
 - There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_java_api }}capture-vision-router/enum-preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [initSettings]({{ site.dcvb_java_api }}capture-vision-router/settings.html#initsettings) / [initSettingsFromFile]({{ site.dcvb_java_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
+- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters_reference }}capture-vision-template/index.html) in the JSON template file.
 - Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `initSettings` / `initSettingsFromFile` and pass his own settings.
 - If parameter `templateName` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
 
@@ -144,7 +144,7 @@ public SimplifiedCaptureVisionSettings getSimplifiedSettings(String templateName
 **Remarks**
 
 - There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_java_api }}capture-vision-router/enum-preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [initSettings]({{ site.dcvb_java_api }}capture-vision-router/settings.html#initsettings) / [initSettingsFromFile]({{ site.dcvb_java_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
+- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters_reference }}capture-vision-template/index.html) in the JSON template file.
 - Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `initSettings` / `initSettingsFromFile` and pass his own settings.
 - If parameter `templateName` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
 
@@ -177,7 +177,7 @@ public void updateSettings(String templateName, SimplifiedCaptureVisionSettings 
 **Remarks**
 
 - There are two types of `CaptureVisionTemplate`: the [preset ones]({{ site.dcvb_java_api }}capture-vision-router/enum-preset-template.html) which come with the SDK and the custom ones that get initialized when the user calls [initSettings]({{ site.dcvb_java_api }}capture-vision-router/settings.html#initsettings) / [initSettingsFromFile]({{ site.dcvb_java_api }}capture-vision-router/settings.html#initsettingsfromfile).
-- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters }}file/capture-vision-template.html) in the JSON template file.
+- When using a custom template, the parameter `templateName` should be the name of the [`CaptureVisionTemplate` object]({{ site.dcvb_parameters_reference }}capture-vision-template/index.html) in the JSON template file.
 - Please be aware that the preset `CaptureVisionTemplates` will be overwritten should the user call `initSettings` / `initSettingsFromFile` and pass his own settings.
 - If parameter `templateName` is not specified, the preset one named 'Default' will be used. However, if the preset ones have been overwritten as described above, the first `CaptureVisionTemplate` from the user's own settings will be used instead.
 
