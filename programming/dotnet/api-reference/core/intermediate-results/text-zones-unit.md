@@ -67,7 +67,7 @@ Returns 0 if the operation succeeds, or a nonzero error code if the operation fa
 
 **See Also**
 
-[TextZone]({{ site.dcvb_dotnet_api }}core/basic-classes/text-zone.html)
+[TextZone]({{ site.dcvb_dotnet_api }}core/intermediate-results/text-zone.html)
 
 ### GetTextZones
 
@@ -87,7 +87,7 @@ Returns 0 if the operation succeeds, or a nonzero error code if the operation fa
 
 **See Also**
 
-[TextZone]({{ site.dcvb_dotnet_api }}core/basic-classes/text-zone.html)
+[TextZone]({{ site.dcvb_dotnet_api }}core/intermediate-results/text-zone.html)
 
 ### RemoveAllTextZones
 
@@ -133,7 +133,7 @@ Returns 0 if the operation succeeds, or a nonzero error code if the operation fa
 
 **See Also**
 
-[TextZone]({{ site.dcvb_dotnet_api }}core/basic-classes/text-zone.html)
+[TextZone]({{ site.dcvb_dotnet_api }}core/intermediate-results/text-zone.html)
 
 ### SetTextZone
 
@@ -157,4 +157,4 @@ Returns 0 if the operation succeeds, or a nonzero error code if the operation fa
 
 **See Also**
 
-[TextZone]({{ site.dcvb_dotnet_api }}core/basic-classes/text-zone.html)
+[TextZone]({{ site.dcvb_dotnet_api }}core/intermediate-results/text-zone.html)

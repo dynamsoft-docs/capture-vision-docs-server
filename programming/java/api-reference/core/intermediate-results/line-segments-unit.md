@@ -100,7 +100,7 @@ void removeLineSegment(int index) throws CoreException
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 ### addLineSegment
 
@@ -119,7 +119,7 @@ void addLineSegment(LineSegment line, double[] matrixToOriginalImage) throws Cor
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 **See Also**
 
@@ -144,7 +144,7 @@ void setLineSegment(int index, LineSegment line, double[] matrixToOriginalImage)
 
 **Exception**
 
-[CoreException]({{ site.dcvb_java_api }}core/basic-classes/core-exception.html)
+[CoreException]({{ site.dcvb_java_api }}core/core-exception.html)
 
 **See Also**
 

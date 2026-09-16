@@ -150,5 +150,5 @@ void replace(IntermediateResultUnit unit) throws CoreException
 
 **Exception**
 
-[`CoreException`]({{ site.dcvb_java_api }}core/exceptions/core-exception.html)
+[`CoreException`]({{ site.dcvb_java_api }}core/core-exception.html)
 
