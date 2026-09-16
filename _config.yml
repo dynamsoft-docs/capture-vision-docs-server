@@ -17,9 +17,6 @@ dcp_code_types: /capture-vision/docs/core/code-types/
 dcvb_license_activation: /capture-vision/docs/core/license/
 
 dbr_introduction: /barcode-reader/docs/core/introduction/
-dlr_introduction: /capture-vision/docs/core/introduction/
-ddn_introduction: /capture-vision/docs/core/introduction/
-dcp_introduction: /capture-vision/docs/core/introduction/
 
 
 dcvb_cpp: /capture-vision/docs/server/programming/cplusplus/
