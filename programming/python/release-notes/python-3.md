@@ -8,6 +8,25 @@ needGenerateH3Content: false
 
 # Release Notes for Python Edition - 3.x
 
+## 3.6.4000 (10/15/2026)
+
+### Improved
+
+- Improved GS1 Composite decoding success rate in challenging black-on-dark-background scenarios.
+- Improved passport front-side document extraction accuracy.
+
+### Fixed
+
+- Refined descriptions for `EC_LICENSE_WARNING` and `EC_LICENSE_CACHE_USED` to improve diagnostic clarity.
+- Fixed a crash in `capture()` when input byte data cannot be parsed.
+- Fixed an angle calculation issue during postal code processing.
+- Fixed an issue in the Code Parser module where the Field Name property might be missing in certain South African driver's license processing scenarios.
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
+
 ## 3.6.3000 (08/20/2026)
 
 ### Improved
