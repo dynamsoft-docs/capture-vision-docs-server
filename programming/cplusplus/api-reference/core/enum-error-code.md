@@ -143,7 +143,7 @@ typedef enum ErrorCode
     EC_LICENSE_BUFFER_FAILED = -20002,
     /** Failed to synchronize license info with license server. */
     EC_LICENSE_SYNC_FAILED = -20003,
-    /** Device dose not match with buffer. */
+    /** Device does not match with buffer. */
     EC_DEVICE_NOT_MATCH = -20004,
     /** Failed to bind device. */
     EC_BIND_DEVICE_FAILED = -20005,
