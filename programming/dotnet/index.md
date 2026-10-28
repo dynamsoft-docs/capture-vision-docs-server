@@ -50,7 +50,7 @@ The best way to begin with Dynamsoft Capture Vision .NET Edition is to follow th
 - .NET 6, 7, 8, 9, 10
 
 > [!NOTE]
-> Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
+> ARM-based and embedded platforms are not supported in the .NET Edition. Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are also not supported.
 
 ## API Reference
 
