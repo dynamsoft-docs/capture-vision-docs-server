@@ -47,7 +47,7 @@ The best way to begin with Dynamsoft Capture Vision .NET Edition is to follow th
 ### Runtime Environment
 
 - .NET Framework 3.5 and above
-- .NET 6, 7, 8, 9, 10
+- .NET 6, 7, 8, 9, 10, 11
 
 > [!NOTE]
 > ARM-based and embedded platforms are not supported in the .NET Edition. Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are also not supported.
