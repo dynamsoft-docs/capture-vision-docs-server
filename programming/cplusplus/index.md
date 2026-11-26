@@ -48,7 +48,7 @@ The best way to begin with Dynamsoft Capture Vision C++ Edition is to follow the
 	- Supported Distributions: Ubuntu 18.04+ LTS, Debian 10+, CentOS/RHEL 8+
 	- Dependencies: glibc 2.27
 
-**macOS** (contact us to get the SDK)
+**macOS**
 - Supported Versions: macOS 12 (Monterey) and higher
 - Architectures: universal (x64, Apple Silicon)
 

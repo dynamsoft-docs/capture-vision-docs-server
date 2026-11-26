@@ -8,6 +8,24 @@ needGenerateH3Content: false
 
 # Release Notes for Java Edition - 3.x
 
+## 3.6.6000 (11/26/2026)
+
+### New
+
+- Added [`isInverted()`]({{ site.dbr_java_api }}barcode-result-item.html#isinverted) to `BarcodeResultItem` and [`DecodedBarcodeElement`]({{ site.dbr_java_api }}decoded-barcode-element.html#isinverted) to expose the decoded barcode's color inversion status.
+
+### Improved
+
+- Improved decoding performance for 1D barcodes with perspective distortion.
+
+### Fixed
+
+- Fixed various minor bugs and improved overall stability.
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
 ## 3.6.5000 (10/29/2026)
 
 ### Fixed
